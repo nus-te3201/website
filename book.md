@@ -31,7 +31,6 @@
   * [Refactoring](#refactoring)
   * [Documentation](#documentation)
   * [Error Handling](#error-handling)
-  * [Integration](#integration)
   * [Reuse](#reuse)
 * [**SECTION: QUALITY ASSURANCE**](#section-quality-assurance) 
   * [Quality Assurance](#quality-assurance)
@@ -264,44 +263,202 @@
 <include src="book/reuse/cloudComputing/what/print.md" />
 <include src="book/reuse/cloudComputing/services/print.md" />
 
-<!--
-
 <hr>
 
 # SECTION: QUALITY ASSURANCE
 
-<include src="book/qualityAssurance/print.md#main" />
-<include src="book/testing/print.md#main" />
-<include src="book/testCaseDesign/print.md#main" />
+# Quality Assurance
+
+## Introduction
+
+<include src="book/qualityAssurance/introduction/what/print.md" />
+<include src="book/qualityAssurance/introduction/validationVsVerification/print.md" />
+
+## Code Reviews
+
+<include src="book/qualityAssurance/codeReviews/what/print.md" />
+
+## Static Analysis
+
+<include src="book/qualityAssurance/staticAnalysis/what/print.md" />
+
+## Formal Verification
+
+<include src="book/qualityAssurance/formalVerification/what/print.md" />
+
+
+# Testing
+
+## Introduction
+
+<include src="book/testing/introduction/what/print.md" />
+
+## Testing Types
+
+### Unit Testing
+
+<include src="book/testing/testingTypes/unitTesting/what/print.md" />
+
+### Integration Testing
+
+<include src="book/testing/testingTypes/integrationTesting/what/print.md" />
+
+### System Testing
+
+<include src="book/testing/testingTypes/systemTesting/what/print.md" />
+
+### Alpha-Beta Testing
+
+<include src="book/testing/testingTypes/alphaBetaTesting/what/print.md" />
+
+### Developer Testing
+
+<include src="book/testing/testingTypes/developerTesting/what/print.md" />
+<include src="book/testing/testingTypes/developerTesting/why/print.md" />
+
+### Acceptance Testing
+
+<include src="book/testing/testingTypes/acceptanceTesting/what/print.md" />
+<include src="book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/print.md" />
+
+### Regression Testing
+
+<include src="book/testing/testingTypes/regressionTesting/what/print.md" />
+
+## Test Automation
+
+<include src="book/testing/testAutomation/what/print.md" />
+<include src="book/testing/testAutomation/testingTextUis/print.md" />
+
+# Test Case Design
+
+## Introduction
+
+<include src="book/testCaseDesign/introduction/what/print.md" />
+<include src="book/testCaseDesign/introduction/blackVsGlass/print.md" />
+
+## Equivalence Partitions
+
+<include src="book/testCaseDesign/equivalencePartitions/what/print.md" />
+<include src="book/testCaseDesign/equivalencePartitions/basic/print.md" />
+<include src="book/testCaseDesign/equivalencePartitions/intermediate/print.md" />
+
+## Boundary Value Analysis
+
+<include src="book/testCaseDesign/boundaryValueAnalysis/what/print.md" />
+<include src="book/testCaseDesign/boundaryValueAnalysis/how/print.md" />
 
 <hr>
 
+
 # SECTION: PROJECT MANAGEMENT
 
-<include src="book/revisionControl/print.md#main" />
-<include src="book/projectPlanning/print.md#main" />
-<include src="book/teamwork/print.md#main" />
-<include src="book/processModels/print.md#main" />
+# Revision Control
+
+<include src="book/revisionControl/what/print.md" />
+
+# Project Planning
+
+<include src="book/projectPlanning/workBreakdownStructure/print.md" />
+<include src="book/projectPlanning/milestones/print.md" />
+<include src="book/projectPlanning/buffers/print.md" />
+<include src="book/projectPlanning/issueTrackers/print.md" />
+<include src="book/projectPlanning/ganttCharts/print.md" />
+<include src="book/projectPlanning/pertCharts/print.md" />
+
+
+# Teamwork
+
+<include src="book/teamwork/teamStructures/print.md" />
+
+
+# SDLC Process Models
+
+## Introduction
+
+<include src="book/processModels/introduction/what/print.md" />
+<include src="book/processModels/introduction/sequentialModels/print.md" />
+<include src="book/processModels/introduction/iterativeModels/print.md" />
+<include src="book/processModels/introduction/agileModels/print.md" />
+
+## Example Process Models
+
+<include src="book/processModels/exampleProcessModels/xp/print.md" />
+<include src="book/processModels/exampleProcessModels/scrum/print.md" />
+<include src="book/processModels/exampleProcessModels/unifiedProcess/print.md" />
+
+## More
+
+<include src="book/processModels/more/cmmi/print.md" />
 
 <hr>
 
 # SECTION: TOOLS
 
-<include src="book/uml/print.md#main" />
-<include src="book/intellij/print.md#main" />
-<include src="book/gitAndGithub/print.md#main" />
-<include src="book/javaTools/print.md#main" />
-<include src="book/junit/print.md#main" />
 
-<hr>
+# UML
 
-# SECTION: SUPPLEMENTARY
+## Class Diagrams
 
-<include src="book/principles/print.md#main" />
+### Introduction
 
-<!-- TODO: add review --> 
+<include src="book/uml/classDiagrams/introduction/what/print.md" />
 
--->
+### Classes
+
+<include src="book/uml/classDiagrams/classes/what/print.md" />
+
+### Associations
+
+<include src="book/uml/classDiagrams/associations/basic/print.md" />
+<include src="book/uml/classDiagrams/associations/navigability/print.md" />
+<include src="book/uml/classDiagrams/associations/roles/print.md" />
+<include src="book/uml/classDiagrams/associations/labels/print.md" />
+<include src="book/uml/classDiagrams/associations/multiplicity/print.md" />
+
+### Associations as Attributes
+
+<include src="book/uml/classDiagrams/associationsAsAttributes/what/print.md" />
+
+### Class Level Members
+
+<include src="book/uml/classDiagrams/classLevelMembers/what/print.md" />
+
+### Composition
+
+<include src="book/uml/classDiagrams/composition/what/print.md" />
+
+### Aggregation
+
+<include src="book/uml/classDiagrams/aggregation/what/print.md" />
+
+### Class Inheritance
+
+<include src="book/uml/classDiagrams/classInheritance/what/print.md" />
+
+## Object Diagrams
+
+<include src="book/uml/objectDiagrams/introduction/print.md" />
+<include src="book/uml/objectDiagrams/objects/print.md" />
+<include src="book/uml/objectDiagrams/associations/what/print.md" />
+
+## Activity Diagrams
+
+### Introduction
+
+<include src="book/uml/activityDiagrams/introduction/what/print.md" />
+
+### Basic Notations
+
+<include src="book/uml/activityDiagrams/basicNotations/linearPaths/print.md" />
+<include src="book/uml/activityDiagrams/basicNotations/alternatePaths/print.md" />
+<include src="book/uml/activityDiagrams/basicNotations/parallelPaths/print.md" />
+<include src="book/uml/activityDiagrams/basicNotations/rakes/print.md" />
+<include src="book/uml/activityDiagrams/basicNotations/swimlanes/print.md" />
+
+## Notes
+
+<include src="book/uml/notes/notes/print.md" />
 
 <hr>
 
