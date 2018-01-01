@@ -43,12 +43,6 @@
   * [SDLC Process Models](#sdlc-process-models)
 * [**SECTION: TOOLS**](#section-tools) 
   * [UML](#uml)
-  * [Intellij IDEA](#intellij-idea)
-  * [Git and Github](#git-and-github)
-  * [Java](#java)
-  * [JUnit](#junit)
-* [**SECTION: SUPPLEMENTARY**](#section-supplementary) 
-  * [Principles](#principles)
 
 # SECTION: INTRODUCTION
 
