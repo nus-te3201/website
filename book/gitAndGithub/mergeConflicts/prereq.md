@@ -1,0 +1,1 @@
+<dynamic-panel src="../branch/full.md" header=":mortar_board: %%Tools → Git & GitHub → Branching%%" />
