@@ -27,143 +27,11 @@
     },
     {
       "src": "book/about/acknowledgements.md",
-      "title": "SEforSDL - About: Acknowledgements"
+      "title": "TE3201 Textbook - About: Acknowledgements"
     },
     {
       "src": "book/about/usage.md",
-      "title": "SEforSDL - About: Usage"
-    },
-    {
-      "src": "book/intellij/print.md",
-      "title": "TE3201 Textbook - Intellij IDEA [Printable]"
-    },
-    {
-      "src": "book/intellij/projectSetup/index.md",
-      "title": "TE3201 Textbook - Intellij IDEA: Project Setup"
-    },
-    {
-      "src": "book/intellij/codeNavigation/index.md",
-      "title": "TE3201 Textbook - Intellij IDEA: Code Navigation"
-    },
-    {
-      "src": "book/intellij/productivityShortcuts/index.md",
-      "title": "TE3201 Textbook - Intellij IDEA: Productivity Shortcuts"
-    },
-    {
-      "src": "book/intellij/debuggingBasic/index.md",
-      "title": "TE3201 Textbook - Intellij IDEA: Debugging - Basic"
-    },
-    {
-      "src": "book/intellij/refactoring/index.md",
-      "title": "TE3201 Textbook - Intellij IDEA: Refactoring"
-    },
-    {
-      "src": "book/javaTools/index.md",
-      "title": "TE3201 Textbook - Java"
-    },
-    {
-      "src": "book/javaTools/print.md",
-      "title": "TE3201 Textbook - Java [Printable]"
-    },
-    {
-      "src": "book/javaTools/collections/index.md",
-      "title": "TE3201 Textbook - Java: Use Collections"
-    },
-    {
-      "src": "book/javaTools/enums/index.md",
-      "title": "TE3201 Textbook - Java: Use Enums"
-    },
-    {
-      "src": "book/javaTools/varargs/index.md",
-      "title": "TE3201 Textbook - Java: Use Varargs"
-    },
-    {
-      "src": "book/javaTools/javaFXBasic/index.md",
-      "title": "TE3201 Textbook - Java: JavaFX - Basic"
-    },
-    {
-      "src": "book/javaTools/streamsBasic/index.md",
-      "title": "TE3201 Textbook - Java: Streams - Basic"
-    },
-    {
-      "src": "book/junit/index.md",
-      "title": "TE3201 Textbook - JUnit"
-    },
-    {
-      "src": "book/junit/print.md",
-      "title": "TE3201 Textbook - JUnit [Printable]"
-    },
-    {
-      "src": "book/junit/basic/index.md",
-      "title": "TE3201 Textbook - JUnit: Basic"
-    },
-    {
-      "src": "book/junit/intermediate/index.md",
-      "title": "TE3201 Textbook - JUnit: Intermediate"
-    },
-    {
-      "src": "book/gitAndGithub/index.md",
-      "title": "TE3201 Textbook - Git and Github"
-    },
-    {
-      "src": "book/gitAndGithub/print.md",
-      "title": "TE3201 Textbook - Git and Github [Printable]"
-    },
-    {
-      "src": "book/gitAndGithub/init/index.md",
-      "title": "TE3201 Textbook - Git and Github: Init"
-    },
-    {
-      "src": "book/gitAndGithub/commit/index.md",
-      "title": "TE3201 Textbook - Git and Github: Commit"
-    },
-    {
-      "src": "book/gitAndGithub/ignore/index.md",
-      "title": "TE3201 Textbook - Git and Github: Ignore"
-    },
-    {
-      "src": "book/gitAndGithub/tag/index.md",
-      "title": "TE3201 Textbook - Git and Github: Tag"
-    },
-    {
-      "src": "book/gitAndGithub/checkout/index.md",
-      "title": "TE3201 Textbook - Git and Github: Checkout"
-    },
-    {
-      "src": "book/gitAndGithub/stash/index.md",
-      "title": "TE3201 Textbook - Git and Github: Stash"
-    },
-    {
-      "src": "book/gitAndGithub/clone/index.md",
-      "title": "TE3201 Textbook - Git and Github: Clone"
-    },
-    {
-      "src": "book/gitAndGithub/pull/index.md",
-      "title": "TE3201 Textbook - Git and Github: Pull"
-    },
-    {
-      "src": "book/gitAndGithub/push/index.md",
-      "title": "TE3201 Textbook - Git and Github: Push"
-    },
-    {
-      "src": "book/gitAndGithub/branch/index.md",
-      "title": "TE3201 Textbook - Git and Github: Branch"
-    },
-    {
-      "src": "book/gitAndGithub/mergeConflicts/index.md",
-      "title": "TE3201 Textbook - Git and Github: Merge Conflicts"
-    },
-    {
-      "src": "book/gitAndGithub/createPRs/index.md",
-      "title": "TE3201 Textbook - Git and Github: Create PRs"
-    },
-    {
-      "src": "book/gitAndGithub/managePRs/index.md",
-      "title": "TE3201 Textbook - Git and Github: Manage PRs"
-    },
-    {
-      "src": "book/gitAndGithub/forkingWorkflow/index.md",
-      "title": "TE3201 Textbook - Git and Github: Forking Workflow"
+      "title": "TE3201 Textbook - About: Usage"
     },
     {
       "src": "book/testing/index.md",
@@ -294,42 +162,6 @@
       "title": "TE3201 Textbook - Testing: Test Automation: Automated Testing of GUIs"
     },
     {
-      "src": "book/testing/testCoverage/index.md",
-      "title": "TE3201 Textbook - Testing: Test Coverage"
-    },
-    {
-      "src": "book/testing/testCoverage/what/index.md",
-      "title": "TE3201 Textbook - Testing: Test Coverage: What"
-    },
-    {
-      "src": "book/testing/testCoverage/how/index.md",
-      "title": "TE3201 Textbook - Testing: Test Coverage: How"
-    },
-    {
-      "src": "book/testing/dependencyInjection/index.md",
-      "title": "TE3201 Textbook - Testing: Dependency Injection"
-    },
-    {
-      "src": "book/testing/dependencyInjection/what/index.md",
-      "title": "TE3201 Textbook - Testing: Dependency Injection: What"
-    },
-    {
-      "src": "book/testing/dependencyInjection/how/index.md",
-      "title": "TE3201 Textbook - Testing: Dependency Injection: How"
-    },
-    {
-      "src": "book/testing/tdd/index.md",
-      "title": "TE3201 Textbook - Testing: TDD"
-    },
-    {
-      "src": "book/testing/tdd/what/index.md",
-      "title": "TE3201 Textbook - Testing: TDD: What"
-    },
-    {
-      "src": "book/testing/tdd/how/index.md",
-      "title": "TE3201 Textbook - Testing: TDD: How"
-    },
-    {
       "src": "book/softwareEngineering/index.md",
       "title": "TE3201 Textbook - Software Engineering"
     },
@@ -442,22 +274,6 @@
       "title": "TE3201 Textbook - Test Case Design: Combining Test Inputs"
     },
     {
-      "src": "book/testCaseDesign/combiningTestInputs/why/index.md",
-      "title": "TE3201 Textbook - Test Case Design: Combining Test Inputs: Why"
-    },
-    {
-      "src": "book/testCaseDesign/combiningTestInputs/heuristicValid/index.md",
-      "title": "TE3201 Textbook - Test Case Design: Combining Test Inputs: Heuristic: Each valid input at least once in a positive test case"
-    },
-    {
-      "src": "book/testCaseDesign/combiningTestInputs/heuristicInvalid/index.md",
-      "title": "TE3201 Textbook - Test Case Design: Combining Test Inputs: Heuristic: No more than one invalid input in a test case"
-    },
-    {
-      "src": "book/testCaseDesign/combiningTestInputs/mix/index.md",
-      "title": "TE3201 Textbook - Test Case Design: Combining Test Inputs: Mix"
-    },
-    {
       "src": "book/testCaseDesign/more/index.md",
       "title": "TE3201 Textbook - Test Case Design: More"
     },
@@ -478,62 +294,6 @@
       "title": "TE3201 Textbook - Test Case Design: Summary: Exercises"
     },
     {
-      "src": "book/principles/index.md",
-      "title": "TE3201 Textbook - Principles"
-    },
-    {
-      "src": "book/principles/print.md",
-      "title": "TE3201 Textbook - Principles [Printable]"
-    },
-    {
-      "src": "book/principles/singleResponsibilityPrinciple/index.md",
-      "title": "TE3201 Textbook - Principles: Single Responsibility Principle"
-    },
-    {
-      "src": "book/principles/interfaceSegregationPrinciple/index.md",
-      "title": "TE3201 Textbook - Principles: Interface Segregation Principle"
-    },
-    {
-      "src": "book/principles/liskovSubstitutionPrinciple/index.md",
-      "title": "TE3201 Textbook - Principles: Liskov Substitution Principle"
-    },
-    {
-      "src": "book/principles/dependencyInversionPrinciple/index.md",
-      "title": "TE3201 Textbook - Principles: Dependency Inversion Principle"
-    },
-    {
-      "src": "book/principles/openClosedPrinciple/index.md",
-      "title": "TE3201 Textbook - Software Design Principles: Open-Closed Principle"
-    },
-    {
-      "src": "book/principles/openClosedPrinciple/index.md",
-      "title": "TE3201 Textbook - Software Design Principles: Open-Closed Principle: What"
-    },
-    {
-      "src": "book/principles/solidPrinciples/index.md",
-      "title": "TE3201 Textbook - Principles: SOLID Principles"
-    },
-    {
-      "src": "book/principles/separationOfConcernsPrinciple/index.md",
-      "title": "TE3201 Textbook - Principles: Separation of Concerns Principle"
-    },
-    {
-      "src": "book/principles/lawOfDemeter/index.md",
-      "title": "TE3201 Textbook - Principles: Law of Demeter"
-    },
-    {
-      "src": "book/principles/brooksLaw/index.md",
-      "title": "TE3201 Textbook - Principles: Brooks' Law"
-    },
-    {
-      "src": "book/principles/yagniPrinciple/index.md",
-      "title": "TE3201 Textbook - Principles: YAGNI Principle"
-    },
-    {
-      "src": "book/principles/dryPrinciple/index.md",
-      "title": "TE3201 Textbook - Principles: DRY Principle"
-    },
-    {
       "src": "book/teamwork/index.md",
       "title": "TE3201 Textbook - Teamwork"
     },
@@ -544,54 +304,6 @@
     {
       "src": "book/teamwork/teamStructures/index.md",
       "title": "TE3201 Textbook - Teamwork: Team Structures"
-    },
-    {
-      "src": "book/revisionControl/index.md",
-      "title": "TE3201 Textbook - Revision Control"
-    },
-    {
-      "src": "book/revisionControl/print.md",
-      "title": "TE3201 Textbook - Revision Control [Printable]"
-    },
-    {
-      "src": "book/revisionControl/what/index.md",
-      "title": "TE3201 Textbook - Revision Control: What"
-    },
-    {
-      "src": "book/revisionControl/repositories/index.md",
-      "title": "TE3201 Textbook - Revision Control: Repositories"
-    },
-    {
-      "src": "book/revisionControl/savingHistory/index.md",
-      "title": "TE3201 Textbook - Revision Control: Saving History"
-    },
-    {
-      "src": "book/revisionControl/usingHistory/index.md",
-      "title": "TE3201 Textbook - Revision Control: Using History"
-    },
-    {
-      "src": "book/revisionControl/remoteRepositories/index.md",
-      "title": "TE3201 Textbook - Revision Control: Remote Repositories"
-    },
-    {
-      "src": "book/revisionControl/branching/index.md",
-      "title": "TE3201 Textbook - Revision Control: Branching"
-    },
-    {
-      "src": "book/revisionControl/drcsVsCrcs/index.md",
-      "title": "TE3201 Textbook - Revision Control: DRCS vs CRCS"
-    },
-    {
-      "src": "book/revisionControl/forkingWorkflow/index.md",
-      "title": "TE3201 Textbook - Revision Control: Forking Workflow"
-    },
-    {
-      "src": "book/revisionControl/featureBranchFlow/index.md",
-      "title": "TE3201 Textbook - Revision Control: Feature Branch Flow"
-    },
-    {
-      "src": "book/revisionControl/centralizedFlow/index.md",
-      "title": "TE3201 Textbook - Revision Control: Centralized Flow"
     },
     {
       "src": "book/processModels/index.md",
@@ -830,14 +542,6 @@
       "title": "TE3201 Textbook - Object Oriented Programming: Interfaces"
     },
     {
-      "src": "book/oopImplementation/abstractClasses/index.md",
-      "title": "TE3201 Textbook - Object Oriented Programming: Abstract Classes"
-    },
-    {
-      "src": "book/oopImplementation/polymorphism/index.md",
-      "title": "TE3201 Textbook - Object Oriented Programming: Polymorphism"
-    },
-    {
       "src": "book/modeling/index.md",
       "title": "TE3201 Textbook - Modeling"
     },
@@ -886,22 +590,6 @@
       "title": "TE3201 Textbook - Modeling: Modeling Structures: Object Oriented Domain Models"
     },
     {
-      "src": "book/modeling/modelingStructures/deploymentDiagrams/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Structures: Deployment Diagrams"
-    },
-    {
-      "src": "book/modeling/modelingStructures/componentDiagrams/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Structures: Component Diagrams"
-    },
-    {
-      "src": "book/modeling/modelingStructures/packageDiagrams/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Structures: Package Diagrams"
-    },
-    {
-      "src": "book/modeling/modelingStructures/compositeStructureDiagrams/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Structures: Composite Structure Diagrams"
-    },
-    {
       "src": "book/modeling/modelingBehaviors/index.md",
       "title": "TE3201 Textbook - Modeling: Modeling Behaviors"
     },
@@ -910,96 +598,8 @@
       "title": "TE3201 Textbook - Modeling: Modeling Behaviors: Activity Diagrams"
     },
     {
-      "src": "book/modeling/modelingBehaviors/sequenceDiagramsBasic/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Behaviors: Sequence Diagrams - Basic"
-    },
-    {
-      "src": "book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Behaviors: Sequence Diagrams - Intermediate"
-    },
-    {
-      "src": "book/modeling/modelingBehaviors/sequenceDiagramsAdvanced/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Behaviors: Sequence Diagrams - Advanced"
-    },
-    {
       "src": "book/modeling/modelingBehaviors/useCaseDiagrams/index.md",
       "title": "TE3201 Textbook - Modeling: Modeling Behaviors: Use Case Diagrams"
-    },
-    {
-      "src": "book/modeling/modelingBehaviors/timingDiagrams/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Behaviors: Timing Diagrams"
-    },
-    {
-      "src": "book/modeling/modelingBehaviors/interactionOverviewDiagrams/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Behaviors: Interaction Overview Diagrams"
-    },
-    {
-      "src": "book/modeling/modelingBehaviors/communicationDiagrams/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Behaviors: Communication Diagrams"
-    },
-    {
-      "src": "book/modeling/modelingBehaviors/stateMachineDiagrams/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling Behaviors: State Machine Diagrams"
-    },
-    {
-      "src": "book/modeling/modelingASolution/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling a Solution"
-    },
-    {
-      "src": "book/modeling/modelingASolution/introduction/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling a Solution: Introduction"
-    },
-    {
-      "src": "book/modeling/modelingASolution/basic/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling a Solution: Basic"
-    },
-    {
-      "src": "book/modeling/modelingASolution/intermediate/index.md",
-      "title": "TE3201 Textbook - Modeling: Modeling a Solution: Intermediate"
-    },
-    {
-      "src": "book/integration/index.md",
-      "title": "TE3201 Textbook - Integration"
-    },
-    {
-      "src": "book/integration/print.md",
-      "title": "TE3201 Textbook - Integration [Printable]"
-    },
-    {
-      "src": "book/integration/introduction/index.md",
-      "title": "TE3201 Textbook - Integration: Introduction"
-    },
-    {
-      "src": "book/integration/introduction/what/index.md",
-      "title": "TE3201 Textbook - Integration: Introduction: What"
-    },
-    {
-      "src": "book/integration/approaches/index.md",
-      "title": "TE3201 Textbook - Integration: Approaches"
-    },
-    {
-      "src": "book/integration/approaches/lateVsEarly/index.md",
-      "title": "TE3201 Textbook - Integration: Approaches: 'Late and One Time' vs 'Early and Frequent'"
-    },
-    {
-      "src": "book/integration/approaches/bigBangVsIncremental/index.md",
-      "title": "TE3201 Textbook - Integration: Approaches: Big Bang vs Incremental Integration"
-    },
-    {
-      "src": "book/integration/approaches/topDownVsBottomUp/index.md",
-      "title": "TE3201 Textbook - Integration: Approaches: Top-Down vs Bottom-Up Integration"
-    },
-    {
-      "src": "book/integration/buildAutomation/index.md",
-      "title": "TE3201 Textbook - Integration: Build Automation"
-    },
-    {
-      "src": "book/integration/buildAutomation/what/index.md",
-      "title": "TE3201 Textbook - Integration: Build Automation: What"
-    },
-    {
-      "src": "book/integration/buildAutomation/continuousIntegrationDeployment/index.md",
-      "title": "TE3201 Textbook - Integration: Build Automation: Continuous Integration/Continuous Deployment"
     },
     {
       "src": "book/ides/index.md",
@@ -1058,22 +658,6 @@
       "title": "TE3201 Textbook - Error Handling: Exceptions: When"
     },
     {
-      "src": "book/errorHandling/assertions/index.md",
-      "title": "TE3201 Textbook - Error Handling: Assertions"
-    },
-    {
-      "src": "book/errorHandling/assertions/what/index.md",
-      "title": "TE3201 Textbook - Error Handling: Assertions: What"
-    },
-    {
-      "src": "book/errorHandling/assertions/how/index.md",
-      "title": "TE3201 Textbook - Error Handling: Assertions: How"
-    },
-    {
-      "src": "book/errorHandling/assertions/when/index.md",
-      "title": "TE3201 Textbook - Error Handling: Assertions: When"
-    },
-    {
       "src": "book/errorHandling/logging/index.md",
       "title": "TE3201 Textbook - Error Handling: Logging"
     },
@@ -1084,38 +668,6 @@
     {
       "src": "book/errorHandling/logging/how/index.md",
       "title": "TE3201 Textbook - Error Handling: Logging: How"
-    },
-    {
-      "src": "book/errorHandling/defensiveProgramming/index.md",
-      "title": "TE3201 Textbook - Error Handling: Defensive Programming"
-    },
-    {
-      "src": "book/errorHandling/defensiveProgramming/what/index.md",
-      "title": "TE3201 Textbook - Error Handling: Defensive Programming: What"
-    },
-    {
-      "src": "book/errorHandling/defensiveProgramming/compulsoryAssociations/index.md",
-      "title": "TE3201 Textbook - Error Handling: Defensive Programming: Enforcing Compulsory Associations"
-    },
-    {
-      "src": "book/errorHandling/defensiveProgramming/1to1Associations/index.md",
-      "title": "TE3201 Textbook - Error Handling: Defensive Programming: Enforcing 1-to-1 Associations"
-    },
-    {
-      "src": "book/errorHandling/defensiveProgramming/referentialIntegrity/index.md",
-      "title": "TE3201 Textbook - Error Handling: Defensive Programming: Enforcing Referential Integrity"
-    },
-    {
-      "src": "book/errorHandling/defensiveProgramming/when/index.md",
-      "title": "TE3201 Textbook - Error Handling: Defensive Programming: When"
-    },
-    {
-      "src": "book/errorHandling/designByContract/index.md",
-      "title": "TE3201 Textbook - Error Handling: Design-by-Contract Approach"
-    },
-    {
-      "src": "book/errorHandling/designByContract/what/index.md",
-      "title": "TE3201 Textbook - Error Handling: Design-by-Contract Approach: What"
     },
     {
       "src": "book/documentation/index.md",
@@ -1136,22 +688,6 @@
     {
       "src": "book/documentation/guidelines/index.md",
       "title": "TE3201 Textbook - Documentation: Guidelines"
-    },
-    {
-      "src": "book/documentation/guidelines/goTopDown/index.md",
-      "title": "TE3201 Textbook - Documentation: Guidelines: Go Top-down, Not Bottom-up"
-    },
-    {
-      "src": "book/documentation/guidelines/goTopDown/what/index.md",
-      "title": "TE3201 Textbook - Documentation: Go Top-down, Not Bottom-up: What"
-    },
-    {
-      "src": "book/documentation/guidelines/goTopDown/why/index.md",
-      "title": "TE3201 Textbook - Documentation: Go Top-down, Not Bottom-up: Why"
-    },
-    {
-      "src": "book/documentation/guidelines/goTopDown/how/index.md",
-      "title": "TE3201 Textbook - Documentation: Go Top-down, Not Bottom-up: How"
     },
     {
       "src": "book/documentation/guidelines/aimForComprehensibility/index.md",
@@ -1178,134 +714,6 @@
       "title": "TE3201 Textbook - Documentation: Document Minimally, but Sufficiently: How"
     },
     {
-      "src": "book/documentation/tools/index.md",
-      "title": "TE3201 Textbook - Documentation: Tools"
-    },
-    {
-      "src": "book/documentation/tools/javaDoc/index.md",
-      "title": "TE3201 Textbook - Documentation: Tools: JavaDoc"
-    },
-    {
-      "src": "book/documentation/tools/javaDoc/what/index.md",
-      "title": "TE3201 Textbook - Documentation: JavaDoc: What"
-    },
-    {
-      "src": "book/documentation/tools/javaDoc/how/index.md",
-      "title": "TE3201 Textbook - Documentation: JavaDoc: How"
-    },
-    {
-      "src": "book/documentation/tools/markdown/index.md",
-      "title": "TE3201 Textbook - Documentation: Tools: Markdown"
-    },
-    {
-      "src": "book/documentation/tools/markdown/what/index.md",
-      "title": "TE3201 Textbook - Documentation: Markdown: What"
-    },
-    {
-      "src": "book/documentation/tools/markdown/how/index.md",
-      "title": "TE3201 Textbook - Documentation: Markdown: How"
-    },
-    {
-      "src": "book/documentation/tools/asciiDoc/index.md",
-      "title": "TE3201 Textbook - Documentation: Tools: AsciiDoc"
-    },
-    {
-      "src": "book/documentation/tools/asciiDoc/what/index.md",
-      "title": "TE3201 Textbook - Documentation: AsciiDoc: What"
-    },
-    {
-      "src": "book/architecture/index.md",
-      "title": "TE3201 Textbook - Software Architecture"
-    },
-    {
-      "src": "book/architecture/print.md",
-      "title": "TE3201 Textbook - Software Architecture [Printable]"
-    },
-    {
-      "src": "book/architecture/introduction/index.md",
-      "title": "TE3201 Textbook - Software Architecture: Introduction"
-    },
-    {
-      "src": "book/architecture/introduction/what/index.md",
-      "title": "TE3201 Textbook - Software Architecture: Introduction: What"
-    },
-    {
-      "src": "book/architecture/architectureDiagrams/index.md",
-      "title": "TE3201 Textbook - Software Architecture: Architecture Diagrams"
-    },
-    {
-      "src": "book/architecture/architectureDiagrams/reading/index.md",
-      "title": "TE3201 Textbook - Software Architecture: Architecture Diagrams: Reading"
-    },
-    {
-      "src": "book/architecture/architectureDiagrams/drawing/index.md",
-      "title": "TE3201 Textbook - Software Architecture: Architecture Diagrams: Drawing"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/index.md",
-      "title": "TE3201 Textbook - Software Architecture: Architectural Styles"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/introduction/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Introduction"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/introduction/what/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Introduction: What"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/nTier/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: n-tier Architectural Style"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/nTier/what/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: n-tier Architectural Style: What"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/clientServer/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Client-Server Architectural Style"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/clientServer/what/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Client-Server Architectural Style: What"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/transactionProcessing/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Transaction Processing Architectural Style"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/transactionProcessing/what/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Transaction Processing Architectural Style: What"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/serviceOriented/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Service-Oriented Architectural Style"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/serviceOriented/what/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Service-Oriented Architectural Style: What"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/eventDriven/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Event-Driven Architectural Style"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/eventDriven/what/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: Event-Driven Architectural Style: What"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/more/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: More"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/more/moreStyles/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: More: More Architectural Styles"
-    },
-    {
-      "src": "book/architecture/architecturalStyles/more/usingStyles/index.md",
-      "title": "TE3201 Textbook - Architectural Styles: More: Using Architectural Styles"
-    },
-    {
       "src": "book/design/index.md",
       "title": "TE3201 Textbook - Software Design"
     },
@@ -1326,18 +734,6 @@
       "title": "TE3201 Textbook - Design Approaches"
     },
     {
-      "src": "book/designApproaches/multilevelDesign/what/index.md",
-      "title": "TE3201 Textbook - Design Approaches: Multi-Level Design"
-    },
-    {
-      "src": "book/designApproaches/topDownBottomUp/what/index.md",
-      "title": "TE3201 Textbook - Design Approaches: Top-Down and Bottom-Up Design"
-    },
-    {
-      "src": "book/designApproaches/agileDesign/what/index.md",
-      "title": "TE3201 Textbook - Design Approaches: Agile Design"
-    },
-    {
       "src": "book/designFundamentals/index.md",
       "title": "TE3201 Textbook - Software Design Fundamentals"
     },
@@ -1352,34 +748,6 @@
     {
       "src": "book/designFundamentals/abstraction/what/index.md",
       "title": "TE3201 Textbook - Software Design Fundamentals: Abstraction: What"
-    },
-    {
-      "src": "book/designFundamentals/coupling/index.md",
-      "title": "TE3201 Textbook - Software Design Fundamentals: Coupling"
-    },
-    {
-      "src": "book/designFundamentals/coupling/what/index.md",
-      "title": "TE3201 Textbook - Software Design Fundamentals: Coupling: What"
-    },
-    {
-      "src": "book/designFundamentals/coupling/how/index.md",
-      "title": "TE3201 Textbook - Software Design Fundamentals: Coupling: How"
-    },
-    {
-      "src": "book/designFundamentals/coupling/types/index.md",
-      "title": "TE3201 Textbook - Software Design Fundamentals: Coupling: Types of Coupling"
-    },
-    {
-      "src": "book/designFundamentals/cohesion/index.md",
-      "title": "TE3201 Textbook - Software Design Fundamentals: Cohesion"
-    },
-    {
-      "src": "book/designFundamentals/cohesion/what/index.md",
-      "title": "TE3201 Textbook - Software Design Fundamentals: Cohesion: What"
-    },
-    {
-      "src": "book/designFundamentals/cohesion/how/index.md",
-      "title": "TE3201 Textbook - Software Design Fundamentals: Cohesion: How"
     },
     {
       "src": "book/codeQuality/index.md",
@@ -1410,14 +778,6 @@
       "title": "TE3201 Textbook - Code Quality: [Guideline] Maximise Readability: Basic"
     },
     {
-      "src": "book/codeQuality/maximiseReadability/intermediate/index.md",
-      "title": "TE3201 Textbook - Code Quality: [Guideline] Maximise Readability: Intermediate"
-    },
-    {
-      "src": "book/codeQuality/maximiseReadability/advanced/index.md",
-      "title": "TE3201 Textbook - Code Quality: [Guideline] Maximise Readability: Advanced"
-    },
-    {
       "src": "book/codeQuality/followStandard/index.md",
       "title": "TE3201 Textbook - Code Quality: [Guideline] Follow a Standard"
     },
@@ -1428,10 +788,6 @@
     {
       "src": "book/codeQuality/followStandard/basic/index.md",
       "title": "TE3201 Textbook - Code Quality: [Guideline] Follow a Standard: Basic"
-    },
-    {
-      "src": "book/codeQuality/followStandard/intermediate/index.md",
-      "title": "TE3201 Textbook - Code Quality: [Guideline] Follow a Standard: Intermediate"
     },
     {
       "src": "book/codeQuality/nameWell/index.md",
@@ -1446,10 +802,6 @@
       "title": "TE3201 Textbook - Code Quality: [Guideline] Name Well: Basic"
     },
     {
-      "src": "book/codeQuality/nameWell/intermediate/index.md",
-      "title": "TE3201 Textbook - Code Quality: [Guideline] Name Well: Intermediate"
-    },
-    {
       "src": "book/codeQuality/avoidShortcuts/index.md",
       "title": "TE3201 Textbook - Code Quality: [Guideline] Avoid Unsafe Shortcuts"
     },
@@ -1462,10 +814,6 @@
       "title": "TE3201 Textbook - Code Quality: [Guideline] Avoid Unsafe Shortcuts: Basic"
     },
     {
-      "src": "book/codeQuality/avoidShortcuts/intermediate/index.md",
-      "title": "TE3201 Textbook - Code Quality: [Guideline] Avoid Unsafe Shortcuts: Intermediate"
-    },
-    {
       "src": "book/codeQuality/commentMinimally/index.md",
       "title": "TE3201 Textbook - Code Quality: [Guideline] Comment Minimally, but Sufficiently"
     },
@@ -1476,10 +824,6 @@
     {
       "src": "book/codeQuality/commentMinimally/basic/index.md",
       "title": "TE3201 Textbook - Code Quality: [Guideline] Comment Minimally, but Sufficiently: Basic"
-    },
-    {
-      "src": "book/codeQuality/commentMinimally/intermediate/index.md",
-      "title": "TE3201 Textbook - Code Quality: [Guideline] Comment Minimally, but Sufficiently: Intermediate"
     },
     {
       "src": "book/codeQuality/practices/index.md",
@@ -1592,106 +936,6 @@
     {
       "src": "book/java/style/rule-lineLength/index.md",
       "title": "TE3201 Textbook - Java: Code Style : [Rule] Line Length"
-    },
-    {
-      "src": "book/designPatterns/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns"
-    },
-    {
-      "src": "book/designPatterns/print.md",
-      "title": "TE3201 Textbook - Software Design Patterns [Printable]"
-    },
-    {
-      "src": "book/designPatterns/introduction/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Introduction"
-    },
-    {
-      "src": "book/designPatterns/introduction/what/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Introduction: What"
-    },
-    {
-      "src": "book/designPatterns/introduction/format/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Introduction: Format"
-    },
-    {
-      "src": "book/designPatterns/singleton/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Singleton"
-    },
-    {
-      "src": "book/designPatterns/singleton/what/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Singleton: What"
-    },
-    {
-      "src": "book/designPatterns/singleton/implementation/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Singleton: Implementation"
-    },
-    {
-      "src": "book/designPatterns/singleton/evaluation/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Singleton: Evaluation"
-    },
-    {
-      "src": "book/designPatterns/abstractionOccurrence/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Abstraction Occurrence"
-    },
-    {
-      "src": "book/designPatterns/abstractionOccurrence/what/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Abstraction Occurrence: What"
-    },
-    {
-      "src": "book/designPatterns/facade/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Facade"
-    },
-    {
-      "src": "book/designPatterns/facade/what/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Facade: What"
-    },
-    {
-      "src": "book/designPatterns/command/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Command"
-    },
-    {
-      "src": "book/designPatterns/command/what/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Command: What"
-    },
-    {
-      "src": "book/designPatterns/modelViewController/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Model View Controller"
-    },
-    {
-      "src": "book/designPatterns/modelViewController/what/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Model View Controller: What"
-    },
-    {
-      "src": "book/designPatterns/observer/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Observer"
-    },
-    {
-      "src": "book/designPatterns/observer/what/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: Observer: What"
-    },
-    {
-      "src": "book/designPatterns/more/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: More"
-    },
-    {
-      "src": "book/designPatterns/more/combiningDesignPatterns/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: More: Combining Design Patterns"
-    },
-    {
-      "src": "book/designPatterns/more/otherDesignPatterns/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: More: Other Design Patterns"
-    },
-    {
-      "src": "book/designPatterns/more/usingDesignPatterns/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: More: Using Design Patterns"
-    },
-    {
-      "src": "book/designPatterns/more/otherTypesOfPatterns/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: More: Other Types of Patterns"
-    },
-    {
-      "src": "book/designPatterns/more/vsPrinciples/index.md",
-      "title": "TE3201 Textbook - Software Design Patterns: More: Patterns vs Principles"
     },
     {
       "src": "book/gatheringRequirements/index.md",
@@ -1946,84 +1190,12 @@
       "title": "TE3201 Textbook - UML: Class Diagrams: Dependencies: What"
     },
     {
-      "src": "book/uml/classDiagrams/enumerations/index.md",
-      "title": "TE3201 Textbook - UML: Class Diagrams: Enumerations"
-    },
-    {
-      "src": "book/uml/classDiagrams/enumerations/what/index.md",
-      "title": "TE3201 Textbook - UML: Class Diagrams: Enumerations: What"
-    },
-    {
-      "src": "book/uml/classDiagrams/interfaces/index.md",
-      "title": "TE3201 Textbook - UML: Class Diagrams: Interfaces"
-    },
-    {
-      "src": "book/uml/classDiagrams/interfaces/what/index.md",
-      "title": "TE3201 Textbook - UML: Class Diagrams: Interfaces: What"
-    },
-    {
-      "src": "book/uml/classDiagrams/abstractClasses/index.md",
-      "title": "TE3201 Textbook - UML: Class Diagrams: Abstract Classes"
-    },
-    {
-      "src": "book/uml/classDiagrams/abstractClasses/what/index.md",
-      "title": "TE3201 Textbook - UML: Class Diagrams: Abstract Classes: What"
-    },
-    {
       "src": "book/uml/classDiagrams/introduction/index.md",
       "title": "TE3201 Textbook - UML: Class Diagrams: Introduction"
     },
     {
       "src": "book/uml/classDiagrams/introduction/what/index.md",
       "title": "TE3201 Textbook - UML: Class Diagrams: Introduction: What"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/alternativePaths/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Alternative Paths"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/basic/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Basic Notation"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/introduction/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Introduction"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/loops/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Loops"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/minimalNotation/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Minimal Notation"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/objectCreation/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Object Creation"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/objectDeletion/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Object Deletion"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/optionalPaths/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Optional Paths"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/parallelPaths/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Parallel Paths"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/referenceFrames/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Reference Frames"
-    },
-    {
-      "src": "book/uml/sequenceDiagrams/selfInvocation/index.md",
-      "title": "TE3201 Textbook - UML: Sequence Diagrams: Self Invocation"
     },
     {
       "src": "book/uml/objectDiagrams/index.md",
@@ -2092,10 +1264,6 @@
     {
       "src": "book/uml/notes/notes/index.md",
       "title": "TE3201 Textbook - UML: Notes: Notes"
-    },
-    {
-      "src": "book/uml/notes/constraints/index.md",
-      "title": "TE3201 Textbook - UML: Notes: Constraints"
     },
     {
       "src": "book/oopDesign/index.md",
@@ -2168,10 +1336,6 @@
     {
       "src": "book/oopDesign/associations/aggregation/index.md",
       "title": "TE3201 Textbook - Object Oriented Programming: Associations: Aggregation"
-    },
-    {
-      "src": "book/oopDesign/associations/associationClasses/index.md",
-      "title": "TE3201 Textbook - Object Oriented Programming: Associations: Association Classes"
     },
     {
       "src": "book/oopDesign/inheritance/index.md",
