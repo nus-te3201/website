@@ -14,15 +14,13 @@
 
 * [**SECTION: INTRODUCTION**](#section-introduction)
   * [Software Engineering](#software-engineering)
-* [**SECTION: OOP (with UML)**](#section-oop-with-uml) 
-  * [OOP - Concepts](#object-oriented-programming)
-  * [OOP - Implementation](#implementing-oop)
 * [**SECTION: REQUIREMENTS**](#section-requirements) 
   * [Requirements](#requirements)
   * [Gathering Requirements](#gathering-requirements)
   * [Specifying Requirements](#specifying-requirements)
 * [**SECTION: DESIGN**](#section-design) 
   * [Design](#design)
+  * [Object-Orient Programming](#object-oriented-programming)
   * [Design Fundamentals](#design-fundamentals)
   * [Modeling](#modeling)
 * [**SECTION: IMPLEMENTATION**](#section-implementation) 
@@ -49,13 +47,6 @@
 # Software Engineering
 
 <include src="book/softwareEngineering/prosAndCons/print.md" />
-
-<hr>
-
-# SECTION: OOP (with UML)
-
-<!-- include src="book/oopDesign/print.md#main" /-->
-<!-- include src="book/oopImplementation/print.md#main" /-->
 
 <hr>
 
@@ -113,7 +104,6 @@
 <hr>
 
 
-
 # SECTION: DESIGN
 
 # Design
@@ -121,6 +111,52 @@
 ## Introduction
 
 <include src="book/design/introduction/what/print.md" />
+
+# Object-Oriented Programming
+
+## Introduction
+
+<include src="book/oopDesign/introduction/print.md" />
+
+## Objects
+
+<include src="book/oopDesign/objects/basic/print.md" />
+<include src="book/oopDesign/objects/abstraction/print.md" />
+<include src="book/oopDesign/objects/encapsulation/print.md" />
+
+## Classes
+
+<include src="book/oopDesign/classes/basic/print.md" />
+<include src="book/oopImplementation/classes/print.md" />
+<include src="book/oopDesign/classes/classLevelMembers/print.md" />
+<include src="book/oopImplementation/classLevelMembers/print.md" />
+
+## Associations
+
+<include src="book/oopDesign/associations/basic/print.md" />
+<include src="book/oopDesign/associations/navigability/print.md" />
+<include src="book/oopDesign/associations/multiplicity/print.md" />
+<include src="book/oopImplementation/associations/print.md" />
+
+<include src="book/oopDesign/associations/dependencies/print.md" />
+<include src="book/oopImplementation/dependencies/print.md" />
+
+<include src="book/oopDesign/associations/composition/print.md" />
+<include src="book/oopImplementation/composition/print.md" />
+
+<include src="book/oopDesign/associations/aggregation/print.md" />
+<include src="book/oopImplementation/aggregation/print.md" />
+
+## Inheritance
+
+<include src="book/oopDesign/inheritance/what/print.md" />
+<include src="book/oopImplementation/inheritance/print.md" />
+
+<include src="book/oopDesign/inheritance/overriding/print.md" />
+<include src="book/oopImplementation/overriding/print.md" />
+
+<include src="book/oopDesign/inheritance/overloading/print.md" />
+<include src="book/oopImplementation/overloading/print.md" />
 
 
 # Design Fundamentals
