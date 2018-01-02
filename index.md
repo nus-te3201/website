@@ -1,3 +1,3 @@
-<include src="schedule/index.md" />
+<include src="admin/index.md" />
 
 
