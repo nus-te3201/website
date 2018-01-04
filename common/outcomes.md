@@ -6,7 +6,10 @@
 
 <include src="../book/softwareEngineering/prosAndCons/outcomes.md" />
 
+* Can explain computer programs
 * Can write code using variables
+* Can use basic (scalar) data types
+* Can use strings
 
 # Week 2
 
@@ -27,8 +30,8 @@
 <include src="../book/specifyingRequirements/userStories/details/outcomes.md" />
 <include src="../book/specifyingRequirements/userStories/usage/outcomes.md" />
 
-* Can use data types
 * Can use lists
+* Can use other basic data structures
 
 # Week 3
 
@@ -52,13 +55,14 @@
 <include src="../book/oopDesign/objects/encapsulation/outcomes.md" />
 <include src="../book/oopDesign/classes/basic/outcomes.md" />
 <include src="../book/oopImplementation/classes/outcomes.md" />
-<include src="../book/oopDesign/classes/classLevelMembers/outcomes.md" />
-<include src="../book/oopImplementation/classLevelMembers/outcomes.md" />
+<include src="../book/uml/classDiagrams/introduction/what/outcomes.md" />
+<include src="../book/uml/classDiagrams/classes/what/outcomes.md" />
 
 * Can use methods
-
+* Can use packages
 
 # Week 5
+
 
 <include src="../book/ides/introduction/what/outcomes.md" />
 <include src="../book/ides/debugging/what/outcomes.md" />
@@ -71,11 +75,12 @@
 <include src="../book/projectPlanning/pertCharts/outcomes.md" />
 <include src="../book/teamwork/teamStructures/outcomes.md" />
 
-* Can use packages
 * Can use classes
 
 
 # Week 6
+<include src="../book/oopDesign/classes/classLevelMembers/outcomes.md" />
+<include src="../book/oopImplementation/classLevelMembers/outcomes.md" />
 
 <include src="../book/oopDesign/associations/basic/outcomes.md" />
 <include src="../book/oopDesign/associations/navigability/outcomes.md" />
@@ -87,12 +92,28 @@
 <include src="../book/oopImplementation/composition/outcomes.md" />
 <include src="../book/oopDesign/associations/aggregation/outcomes.md" />
 <include src="../book/oopImplementation/aggregation/outcomes.md" />
+<include src="../book/uml/classDiagrams/associations/basic/outcomes.md" />
+<include src="../book/uml/classDiagrams/associations/navigability/outcomes.md" />
+<include src="../book/uml/classDiagrams/associations/roles/outcomes.md" />
+<include src="../book/uml/classDiagrams/associations/labels/outcomes.md" />
+<include src="../book/uml/classDiagrams/associations/multiplicity/outcomes.md" />
+<include src="../book/uml/classDiagrams/associationsAsAttributes/what/outcomes.md" />
+<include src="../book/uml/classDiagrams/classLevelMembers/what/outcomes.md" />
+<include src="../book/uml/classDiagrams/composition/what/outcomes.md" />
+<include src="../book/uml/classDiagrams/aggregation/what/outcomes.md" />
+
+<include src="../book/uml/objectDiagrams/introduction/outcomes.md" />
+<include src="../book/uml/objectDiagrams/objects/outcomes.md" />
+<include src="../book/uml/objectDiagrams/associations/what/outcomes.md" />
+
 <include src="../book/oopDesign/inheritance/what/outcomes.md" />
 <include src="../book/oopImplementation/inheritance/outcomes.md" />
 <include src="../book/oopDesign/inheritance/overriding/outcomes.md" />
 <include src="../book/oopImplementation/overriding/outcomes.md" />
 <include src="../book/oopDesign/inheritance/overloading/outcomes.md" />
 <include src="../book/oopImplementation/overloading/outcomes.md" />
+<include src="../book/uml/classDiagrams/classInheritance/what/outcomes.md" />
+
 
 * Can use inheritance
 
@@ -158,6 +179,15 @@
 <include src="../book/refactoring/what/outcomes.md" />
 
 
+<include src="../book/reuse/introduction/what/outcomes.md" />
+<include src="../book/reuse/introduction/when/outcomes.md" />
+<include src="../book/reuse/apis/what/outcomes.md" />
+<include src="../book/reuse/libraries/what/outcomes.md" />
+<include src="../book/reuse/libraries/how/outcomes.md" />
+<include src="../book/reuse/frameworks/what/outcomes.md" />
+<include src="../book/reuse/frameworks/frameworksVsLibraries/outcomes.md" />
+<include src="../book/reuse/platforms/what/outcomes.md" />
+
 # Week 11
 
 <include src="../book/designFundamentals/abstraction/what/outcomes.md" />
@@ -167,17 +197,16 @@
 <include src="../book/modeling/modelingStructures/classDiagramsBasic/outcomes.md" />
 <include src="../book/modeling/modelingStructures/objectDiagrams/outcomes.md" />
 <include src="../book/modeling/modelingStructures/objectOrientedDomainModels/outcomes.md" />
+
 <include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
 <include src="../book/modeling/modelingBehaviors/useCaseDiagrams/outcomes.md" />
+<include src="../book/uml/activityDiagrams/introduction/what/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/linearPaths/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/alternatePaths/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/parallelPaths/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/rakes/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/swimlanes/outcomes.md" />
 
-<include src="../book/reuse/introduction/what/outcomes.md" />
-<include src="../book/reuse/introduction/when/outcomes.md" />
-<include src="../book/reuse/apis/what/outcomes.md" />
-<include src="../book/reuse/libraries/what/outcomes.md" />
-<include src="../book/reuse/libraries/how/outcomes.md" />
-<include src="../book/reuse/frameworks/what/outcomes.md" />
-<include src="../book/reuse/frameworks/frameworksVsLibraries/outcomes.md" />
-<include src="../book/reuse/platforms/what/outcomes.md" />
 <include src="../book/reuse/cloudComputing/what/outcomes.md" />
 <include src="../book/reuse/cloudComputing/services/outcomes.md" />
 
@@ -201,35 +230,6 @@
 
 
 
-
-
-
-
-
-
-
-
-<include src="../book/uml/classDiagrams/introduction/what/outcomes.md" />
-<include src="../book/uml/classDiagrams/classes/what/outcomes.md" />
-<include src="../book/uml/classDiagrams/associations/basic/outcomes.md" />
-<include src="../book/uml/classDiagrams/associations/navigability/outcomes.md" />
-<include src="../book/uml/classDiagrams/associations/roles/outcomes.md" />
-<include src="../book/uml/classDiagrams/associations/labels/outcomes.md" />
-<include src="../book/uml/classDiagrams/associations/multiplicity/outcomes.md" />
-<include src="../book/uml/classDiagrams/associationsAsAttributes/what/outcomes.md" />
-<include src="../book/uml/classDiagrams/classLevelMembers/what/outcomes.md" />
-<include src="../book/uml/classDiagrams/composition/what/outcomes.md" />
-<include src="../book/uml/classDiagrams/aggregation/what/outcomes.md" />
-<include src="../book/uml/classDiagrams/classInheritance/what/outcomes.md" />
-<include src="../book/uml/objectDiagrams/introduction/outcomes.md" />
-<include src="../book/uml/objectDiagrams/objects/outcomes.md" />
-<include src="../book/uml/objectDiagrams/associations/what/outcomes.md" />
-<include src="../book/uml/activityDiagrams/introduction/what/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/linearPaths/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/alternatePaths/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/parallelPaths/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/rakes/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/swimlanes/outcomes.md" />
 <include src="../book/uml/notes/notes/outcomes.md" />
 
 </div>
