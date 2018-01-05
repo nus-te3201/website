@@ -2,22 +2,27 @@
 
 ### Learning Outcomes
 
-### Software Engineering
+#### Software Engineering
 
-<panel type="success" header="`W1.1` **Can explain pros and cons of software engineering**" no-close>
+<panel type="success" header="`W1._` **Can explain pros and cons of software engineering**" no-close>
   <include src="../../book/softwareEngineering/prosAndCons/full.md" />
 </panel>
 
-### Programing Basics
+#### Programing Basics
 
-<panel type="success" header="`W1.2` **Can explain computer programs**" no-close>
-  <include src="../../programming/explainPrograms/text.md" />
+<panel type="success" header="`W1._` **Can explain computer programs**" no-close>
+  <include src="../../programming/programs/text.md" />
 </panel>
-<panel type="success" header="`W1.3` **Can set up a programming environment**" no-close>
+<panel type="success" header="`W1._` **Can set up a programming environment**" no-close>
+  <include src="../../programming/environment/text.md" />
 </panel>
-<panel type="success" header="`W1.4` **Can use variables**" no-close>
+<panel type="success" header="`W1._` **Can work with an interactive shell**" no-close>
+  <include src="../../programming/shell/text.md" />
 </panel>
-<panel type="success" header="`W1.5` **Can use basic data types**" no-close>
+<panel type="success" header="`W1._` **Can use variables**" no-close>
+  <include src="../../programming/variables/text.md" />
+</panel>
+<panel type="success" header="`W1._` **Can use basic data types**" no-close>
 </panel>
 
 ### Lecture

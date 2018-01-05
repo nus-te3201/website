@@ -10,5 +10,3 @@ Points to note:
 @[youtube](FCMxA3m_Imc)
 
 </panel>
-
-</div>

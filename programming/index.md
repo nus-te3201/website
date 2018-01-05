@@ -4,7 +4,9 @@
 
 # Programming Basics (with Python)
 
-<include src="explainPrograms/text.md" />
-<include src="setupEnvironment/text.md" />
+<include src="programs/text.md" />
+<include src="environment/text.md" />
+<include src="shell/text.md" />
+<include src="variables/text.md" />
 
 </div>
