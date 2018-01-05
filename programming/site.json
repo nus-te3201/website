@@ -1,0 +1,16 @@
+{
+  "baseUrl": "/programming",
+  "pages": [
+    {
+      "src": "index.md",
+      "title": "Programming Basics"
+    }
+  ],
+  "ignore": [
+    "_site/*",
+    "site.json"
+  ],
+  "deploy": {
+    "message": "Site Update."
+  }
+}
