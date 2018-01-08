@@ -1,4 +1,4 @@
-#### Computer Programs
+### Computer Programs
 
 **A _computer program_ is a collection of instructions that a computer can follow to perform a specific task.** A _software_ is a collection of programs wrapped up as a product that can be used %%&nbsp;e.g. Microsoft Office%%. A software _application_ is a software that is meant to be used by an end user, %%&nbsp;as opposed to software used by other software (e.g. the software that drives a hard disk)%%. _Programming_ is the task of writing programs. _Software Engineering_ is the task of creating software.
 

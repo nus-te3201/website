@@ -1,6 +1,6 @@
-#### Setting up the Programming Environment
+### Setting up the Programming Environment
 
-Programming requires some specialized tools most of which are specific to the programming language being used. Some of these tools may come pre-installed in your computer, but often you need to install and configure them yourself.
+Programming requires certain specialized tools most of which are specific to the programming language being used. Some of these tools may come pre-installed in your computer, but often you need to install and configure them yourself.
 
 <tabs> 
   <tab header="Python">
@@ -11,10 +11,10 @@ In the initial stages you can use an online programming environment to practice 
 
 <tip-box> 
 
-:package: One online Python programming tool you can use is [repl.it](https://repl.it/repls):
+:package: An example online Python programming tool you can use is [repl.it](https://repl.it/repls):
 
-* Go to [repl.it](https://repl.it/repls) and signup for a free account
-* Go to [https://repl.it/languages/python3](https://repl.it/languages/python3) to enter the online Python environment
+1. Go to [repl.it](https://repl.it/repls) and signup for a free account
+1. Go to [https://repl.it/languages/python3](https://repl.it/languages/python3) (or choose _Python 3_ from the options in the web page) to enter the online Python environment
 
 </tip-box>
 
