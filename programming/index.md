@@ -4,10 +4,12 @@
 
 # Programming Basics (with Python)
 
-<include src="programs/text.md" />
-<include src="environment/text.md" />
-<include src="shell/text.md" />
-<include src="variables/text.md" />
-<include src="types/text.md" />
+<include src="programs/text.md" /><hr><hr>
+<include src="environment/text.md" /><hr><hr>
+<include src="shell/text.md" /><hr><hr>
+<include src="variables/text.md" /><hr><hr>
+<include src="types/text.md" /><hr><hr>
+<include src="operators/text.md" /><hr><hr>
+<include src="exercises/circle.md" /><hr><hr>
 
 </div>
