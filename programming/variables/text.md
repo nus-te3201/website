@@ -31,10 +31,11 @@ Here are some more examples:
 max_bag_count = 2
 price = 10.50
 is_new = True
-name = "John Doe"
 ```
 
-#### Variable names
+<tip-box> 
+
+**Variable names**
 
 Python variable names typically use lower case letters with `_` separating words. 
 ```python
@@ -52,3 +53,29 @@ Traceback (most recent call last):
    Height
 NameError: name 'Height' is not defined
 ``` 
+</tip-box>
+
+**Variables can be reassigned**. In the example below, `height` was initially 5 but the value is reassigned later to be 1 more than the previous value.
+
+```
+>>> height = 5
+>>> height
+5
+>>> height = height + 1
+>>> height
+6
+>>> 
+```
+
+**Value of one variable can be assigned to another variable.** In the example below, the value of variable `height` is assigned to the variable `width`.
+```
+>>> height = 5
+>>> width = height
+>>> width
+5
+>>> height + width
+10
+>>> height = 10
+>>> width
+5
+```

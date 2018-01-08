@@ -8,5 +8,6 @@
 <include src="environment/text.md" />
 <include src="shell/text.md" />
 <include src="variables/text.md" />
+<include src="types/text.md" />
 
 </div>
