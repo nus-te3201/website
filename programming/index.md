@@ -19,4 +19,8 @@
 <include src="variables/text.md" /><hr><hr>
 <include src="exercises/circle.md" /><hr><hr>
 
+<include src="scripts/text.md" /><hr><hr>
+<include src="comments/text.md" /><hr><hr>
+<include src="usingFunctions/text.md" /><hr><hr>
+
 </div>

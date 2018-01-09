@@ -32,8 +32,7 @@
 
 * scripts
 * print() len() str() int()
-* Can use lists
-* Can use other basic data structures
+* Can use functions
 
 # Week 3
 
@@ -45,9 +44,11 @@
 <include src="../book/specifyingRequirements/supplementaryRequirements/what/outcomes.md" />
 <include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
 
-* Can use functions
+
 * Can use conditionals
 * Can use repetitions
+* Can use lists
+* Can use other basic data structures
 
 # Week 4
 

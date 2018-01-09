@@ -92,20 +92,3 @@ NameError: name 'Height' is not defined
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
-
-**Python is a _dynamically typed_ language.** That means a value has a type %%&nbsp;e.g., `int`, `float`, `bool` etc.%%  but the variable itself does not have a type. The variable takes the type of whatever value it holds. Note how the type of `x` changes from `int` to `float` in the example below.
-```
->>> x = 3
->>> type(x)
-< class 'int' >
->>> x = 34.5
->>> type(x)
-< class 'float' >
-
-```
-
-<panel type="seamless" header="%%_Statically typed_ languages%%">
-
-In contrast, a variable in a _statically typed_ language (e.g., Java) has a type and the type of a variable cannot change over time. For example, an integer variable cannot hold a boolean values later.
-
-</panel><p/>
