@@ -30,6 +30,8 @@
 <include src="../book/specifyingRequirements/userStories/details/outcomes.md" />
 <include src="../book/specifyingRequirements/userStories/usage/outcomes.md" />
 
+* scripts
+* print() len() str() int()
 * Can use lists
 * Can use other basic data structures
 
@@ -41,9 +43,11 @@
 <include src="../book/specifyingRequirements/useCases/usage/outcomes.md" />
 <include src="../book/specifyingRequirements/glossary/what/outcomes.md" />
 <include src="../book/specifyingRequirements/supplementaryRequirements/what/outcomes.md" />
+<include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
 
 * Can use functions
 * Can use conditionals
+* Can use repetitions
 
 # Week 4
 
@@ -125,6 +129,7 @@
 <include src="../book/errorHandling/exceptions/when/outcomes.md" />
 
 * Can use exceptions
+  * Types of errors: syntax, semantic, runtime 
 
 <include src="../book/documentation/introduction/what/outcomes.md" />
 <include src="../book/documentation/guidelines/aimForComprehensibility/what/outcomes.md" />
@@ -198,7 +203,6 @@
 <include src="../book/modeling/modelingStructures/objectDiagrams/outcomes.md" />
 <include src="../book/modeling/modelingStructures/objectOrientedDomainModels/outcomes.md" />
 
-<include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
 <include src="../book/modeling/modelingBehaviors/useCaseDiagrams/outcomes.md" />
 <include src="../book/uml/activityDiagrams/introduction/what/outcomes.md" />
 <include src="../book/uml/activityDiagrams/basicNotations/linearPaths/outcomes.md" />
