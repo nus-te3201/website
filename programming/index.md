@@ -23,11 +23,15 @@
 <include src="variables/text.md" /><hr><hr>
 <include src="exercises/circle.md" /><hr><hr>
 
-# Writing Python Programs
+# Python Programs
 
 <include src="scripts/text.md" /><hr><hr>
 <include src="comments/text.md" /><hr><hr>
 <include src="usingFunctions/text.md" /><hr><hr>
+
+# Program Flow Control
+
 <include src="booleans/text.md" /><hr><hr>
+<include src="if/text.md" /><hr><hr>
 
 </div>
