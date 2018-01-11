@@ -1,6 +1,6 @@
 ### Scripts (Programs)
 
-While the interactive shell is good for testing out small code bits, longer Python programs (also called _scripts_) are written as text files with the `.py` extension. Python _<tooltip content="the tool that interprets the code and executes it">interpreter</tooltip>_ reads the program from the top and executes statements from top to bottom.
+While the interactive shell is good for testing out small code bits, longer Python programs (also called _scripts_) are written as text files with the `.py` extension. Python _<tooltip content="the tool that interprets the code and executes it">interpreter</tooltip>_ reads the program and executes statements from top to bottom.
 
 Let's create and run a Python program:
 

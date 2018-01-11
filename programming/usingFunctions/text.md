@@ -1,6 +1,6 @@
 ### Using Functions
 
-**A _function_ is like a small program that you can execute from another program. A function has a name and might take some inputs** (called _parameters_ or _arguments_). The statement to _execute_ (other names: _call_, _invoke_) a function takes the form `function_name(parameters)` %%&nbsp;e.g., `foo(1, 'hello')` calls a function named `foo` with parameters `1` and `'hello'`%% 
+**A _function_ is like a small program that you can execute from another program. A function has a name. Some functions take inputs** (called _arguments_ or _parameters_). The statement to _execute_ (other names: _call_, _invoke_) a function takes the form `function_name(arguments)` %%&nbsp;e.g., `foo(1, 'hello')` calls a function named `foo` with arguments `1` and `'hello'`%% 
 
 Python comes with many built-in functions you can use right away. 
 
@@ -30,11 +30,11 @@ Bye my friend
 
 **Some functions return a value.**
 
-:package: `int`, `float`, `str` functions can be used to convert a data of one type to another.
+:package: `int`, `float`, `str` functions can be used to convert a data value of one type to another.
 
 ```python
-age = 25
-print('My age is ' + str(age))
+age = 25 # age is of integer type
+print('My age is ' + str(age)) # convert age to a string before printing
 ```
 
 :package: `input` function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user ==as a string==.
@@ -42,15 +42,15 @@ print('My age is ' + str(age))
 ```python
 # read current price
 print('What is the current price?')
-price = input()
+price = input() # price is of type string because input() always return a string
 
 # print current price
 print() # print an empty line
-print('Current price is $' + price)
+print('Current price is $' + price) # no need to convert; price is already a string
 
 # calculate and show discounted price
-discounted_price = float(price)*0.5
-print('Price after 50% discount is $' + str(discounted_price))
+discounted_price = float(price)*0.5 # convert to float type first
+print('Price after 50% discount is $' + str(discounted_price)) # convert back to string
 ```
 
 <panel type="seamless" header="%%:arrow_forward: Try above code online%%">
@@ -59,7 +59,7 @@ print('Price after 50% discount is $' + str(discounted_price))
 
 </panel>
 
-<panel type="seamless" header="%%:tv: Explanation of a small Python program%%">
+<panel type="seamless" header="%%:tv: Explanation of a similar Python program%%">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe>
 

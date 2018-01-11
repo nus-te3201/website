@@ -1,6 +1,6 @@
 ### Comments
 
-You can use comments to provide more information about the code to the reader. Any text that follows `#` (until the end of the line)is considered as a comment by the Python interpreter, and is ignored.
+You can use comments to provide more information about the code to the reader. Any text that follows `#` (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.
 
 ```python
 # this is a simple hello world program
