@@ -33,6 +33,7 @@
 * scripts
 * print() len() str() int()
 * Can use functions
+* Can use conditionals
 
 # Week 3
 
@@ -45,7 +46,6 @@
 <include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
 
 
-* Can use conditionals
 * Can use repetitions
 * Can use lists
 * Can use other basic data structures
