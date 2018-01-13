@@ -1,6 +1,6 @@
 ### Setting up the Programming Environment
 
-Programming requires certain specialized tools most of which are specific to the programming language being used. Some of these tools may come pre-installed in your computer, but often you need to install and configure them yourself.
+**Programming requires certain specialized tools** most of which are specific to the programming language being used. While some of these tools may come pre-installed in your computer, often you need to install and configure them yourself.
 
 <tabs> 
   <tab header="Python">
