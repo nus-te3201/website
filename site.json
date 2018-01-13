@@ -10,8 +10,16 @@
       "title": "TE3201 Admin Info"
     },
     {
-      "src": "book.md",
+      "src": "book-adapted/index.md",
       "title": "TE3201 Text Book"
+    },
+    {
+      "src": "book-adapted/print.md",
+      "title": "TE3201 Text Book - Printer Friendly"
+    },
+    {
+      "src": "programming/index.md",
+      "title": "TE3201 Programming Basics"
     },
     {
       "src": "common/outcomes.md",
