@@ -8,12 +8,15 @@
 
 * [Lectures](#lectures)
 * [Project](#project)
+* [Learning Materials](#learning-materials)
 * [Exam](#exam)
 * [Grading](#grading)
 
 ## Lectures 
 
-TUE 1800-2130 in E3‐06‐02  
+TUE 1800-2130 in E3‐06‐02
+
+<include src="learningMaterials.md" />
 
 ## Project
 

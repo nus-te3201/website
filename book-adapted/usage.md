@@ -154,7 +154,7 @@ The book currently does not have a _search_ feature. The workaround is to load t
 1. Click on the `Print` option in Chrome’s menu.
 
 1. Set the destination to `Save as PDF`, then click `Save` to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below.<br/>
-  <img src="{{baseUrl}}/about/images/chromeSaveAsPdf.png" />
+  <img src="{{baseUrl}}/book/about/images/chromeSaveAsPdf.png" />
 
 </div>
 <div id="printing">
