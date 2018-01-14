@@ -47,4 +47,5 @@ At this point you should be able to do something similar to this exercise (in yo
 
 ### Lecture
 
-Slides (will be given after the lecture)
+This lecture covers an introduction to the module and an introduction to Python.<br>
+All of you are ==encouraged to attend the first lecture==, even if you plan to skip future lectures.
