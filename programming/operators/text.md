@@ -7,7 +7,7 @@ Operator | Operation | Example | Evaluates to...
 `+` | Addition | `2 + 2` | `4`
 `-` | Subtraction | `5 - 2` | `3`
 `*` | Multiplication | `3 * 5` | `15`
-`/` | Division | `22 / 8` | 2.7`5`
+`/` | Division | `22 / 8` | `2.75`
 `**` | Exponent | `2 ** 3` | `8`
 `%` | Modulus/remainder | `22 % 8` | `6`
 `//` | Integer division | `22 // 8` | `2`
