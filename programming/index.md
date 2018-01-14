@@ -14,6 +14,24 @@
 **License:&nbsp;** [Creative Commons](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 </tip-box>
 
+**Table of contents**
+
+* [**Expressions, Data Types, Variables**](#expressions-data-types-variables)
+  * [Computer Programs](#computer-programs)
+  * [Setting up the Programming Environment](#setting-up-the-programming-environment)
+  * [Working with an Interactive Shell](#working-with-an-interactive-shell)
+  * [Operators](#operators)
+  * [Data Types](#data-types)
+  * [Variables](#variables)
+* [**Python Programs**](#python-programs)
+  * [Scripts (Programs)](#scripts-programs)
+  * [Comments](#comments)
+  * [Using Functions](#using-functions)
+* [**Profram Flow Control**](#program-flow-control)
+  * [Booleans](#booleans)
+  * [Flow Control Using `if`](#flow-control-using-if)
+* More topics to be added ...
+
 
 # Expressions, Data Types, Variables
 
