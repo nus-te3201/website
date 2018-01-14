@@ -1,4 +1,4 @@
-### Flow control using `if`
+### Flow Control Using `if`
 
 Python uses the `if` statement to indicate that some code should only be executed if a certain condition is true.
 
