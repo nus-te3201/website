@@ -16,6 +16,14 @@
 
 TUE 1800-2130 in E3‐06‐02
 
+* :worried: No webcast (Reason: the lecture venue does not have the webcast facility)
+
+* The lecture will be broken into small segments (about 30 minutes) of fairly independent parts so that late comers can still follow the remainder of the lecture.
+
+* First 15 minutes will be a recap of previous lecture or free-flow discussion so that those slightly late will not miss the beginning of the lecture proper.
+
+* Python topics will be in the 2nd half of the lecture so that those not interested in learning Python can leave early.
+
 <include src="learningMaterials.md" />
 
 ## Project
