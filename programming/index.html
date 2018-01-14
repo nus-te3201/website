@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Programming Basics</title>
+    <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\markbind\css\markbind.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website/programming/css/programming.css">
+<div class="website-content">
+  <h1 id="programming-basics-with-python">Programming Basics (with Python)</h1>
+  <tip-box>
+    <p><strong>Target audience and scope</strong>: This learning resource targets students with minimal or no prior programming experience. As a result, it covers only a minimal set of concepts and at times present a simplified view (i.e., the reality may
+      be more complex).</p>
+    <p><strong>Acknowledgements:</strong></p>
+    <ul>
+      <li>The first few sections of this learning resource follows a similar path as, and at times borrows/adapts content from or refers to companion videos of, the excellent Python resource <a href="http://automatetheboringstuff.com/"><em>Automate the Boring Stuff with Python</em> by Al Sweigart</a>.
+        Readers can refer to the same book for a more detailed version of these topics.</li>
+    </ul>
+    <p><strong>License: </strong><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a></p>
+  </tip-box>
+  <p><strong>Table of contents</strong></p>
+  <ul>
+    <li><a href="#expressions-data-types-variables"><strong>Expressions, Data Types, Variables</strong></a>
+      <ul>
+        <li><a href="#computer-programs">Computer Programs</a></li>
+        <li><a href="#setting-up-the-programming-environment">Setting up the Programming Environment</a></li>
+        <li><a href="#working-with-an-interactive-shell">Working with an Interactive Shell</a></li>
+        <li><a href="#operators">Operators</a></li>
+        <li><a href="#data-types">Data Types</a></li>
+        <li><a href="#variables">Variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#python-programs"><strong>Python Programs</strong></a>
+      <ul>
+        <li><a href="#scripts-programs">Scripts (Programs)</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#using-functions">Using Functions</a></li>
+      </ul>
+    </li>
+    <li><a href="#program-flow-control"><strong>Profram Flow Control</strong></a>
+      <ul>
+        <li><a href="#booleans">Booleans</a></li>
+        <li><a href="#flow-control-using-if">Flow Control Using <code>if</code></a></li>
+      </ul>
+    </li>
+    <li>More topics to be added ...</li>
+  </ul>
+  <h1 id="expressions-data-types-variables">Expressions, Data Types, Variables</h1>
+  <div>
+    <h3 id="computer-programs">Computer Programs</h3>
+    <p><strong>A <em>computer program</em> is a collection of instructions that a computer can follow to perform a specific task.</strong> A <em>software</em> is a collection of programs wrapped up as a product that can be used <span class="dimmed"> e.g. Microsoft Office</span>.
+      A software <em>application</em> is a software that is meant to be used by an end user, <span class="dimmed"> as opposed to software used by other software (e.g. the software that drives a hard disk)</span>. <em>Programming</em> is the task of writing
+      programs. <em>Software Engineering</em> is the task of creating software.</p>
+    <p>Points to note:</p>
+    <ul>
+      <li>A computer can simply follow instructions exactly. It cannot think for itself although there are software that can simulate thinking-like behavior (in which case it is the software that is doing the 'thinking', not the computer).</li>
+    </ul>
+    <panel type="seamless" header="%%:tv: What is programming (a 2-minute intro from Khan Academy):%%">
+      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+    </panel>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="setting-up-the-programming-environment">Setting up the Programming Environment</h3>
+    <p><strong>Programming requires certain specialized tools</strong> most of which are specific to the programming language being used. While some of these tools may come pre-installed in your computer, often you need to install and configure them yourself.</p>
+    <tabs>
+      <tab header="Python">
+        <p><strong>Option 1. use an online python programming environment</strong></p>
+        <p>In the initial stages you can use an online programming environment to practice Python.</p>
+        <tip-box>
+          <p>📦 An example online Python programming tool you can use is <a href="https://repl.it/repls">repl.it</a>:</p>
+          <ol>
+            <li>Go to <a href="https://repl.it/repls">repl.it</a> and signup for a free account</li>
+            <li>Go to <a href="https://repl.it/languages/python3">https://repl.it/languages/python3</a> (or choose <em>Python 3</em> from the options in the web page) to enter the online Python environment</li>
+          </ol>
+        </tip-box>
+        <p><strong>Option 2. install python on your computer</strong></p>
+        <p>❗️ We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)</p>
+        <panel type="seamless" header=":tv: How to install Python on Windows">
+          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+        </panel>
+        <p></p>
+      </tab>
+      <tab header="Java">
+        <p>Programming in Java requires minimally the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html"><em>Java Development Kit (JDK)</em></a> to be installed in your computer. The JDK includes tools useful for
+          developing and testing programs written in the Java programming language and running on the Java platform.</p>
+        <p></p>
+      </tab>
+    </tabs>
+    <hr>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="working-with-an-interactive-shell">Working with an Interactive Shell</h3>
+    <p><strong>Some programming environments provide an <em><tooltip content="a tool which allows you to type commands in, and get back output for each command">interactive shell</tooltip></em>.</strong> In the python interactive shell you can type in python
+      <em>expressions</em> and get the shell to evaluate the expression.</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; 2 + 3
+5
+&gt;&gt;&gt; 2 * 4 * 3
+24
+&gt;&gt;&gt;
+</code></pre>
+    <panel type="seamless" header="%%:tv: Python interactive shell in action:%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="operators">Operators</h3>
+    <p><strong>An expression normally contains <em>operators</em> that combine with values.</strong> Here are some common operators used in Python:</p>
+    <table class="markbind-table table">
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Operation</th>
+          <th>Example</th>
+          <th>Evaluates to...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>+</code></td>
+          <td>Addition</td>
+          <td><code>2 + 2</code></td>
+          <td><code>4</code></td>
+        </tr>
+        <tr>
+          <td><code>-</code></td>
+          <td>Subtraction</td>
+          <td><code>5 - 2</code></td>
+          <td><code>3</code></td>
+        </tr>
+        <tr>
+          <td><code>*</code></td>
+          <td>Multiplication</td>
+          <td><code>3 * 5</code></td>
+          <td><code>15</code></td>
+        </tr>
+        <tr>
+          <td><code>/</code></td>
+          <td>Division</td>
+          <td><code>22 / 8</code></td>
+          <td>2.7<code>5</code></td>
+        </tr>
+        <tr>
+          <td><code>**</code></td>
+          <td>Exponent</td>
+          <td><code>2 ** 3</code></td>
+          <td><code>8</code></td>
+        </tr>
+        <tr>
+          <td><code>%</code></td>
+          <td>Modulus/remainder</td>
+          <td><code>22 % 8</code></td>
+          <td><code>6</code></td>
+        </tr>
+        <tr>
+          <td><code>//</code></td>
+          <td>Integer division</td>
+          <td><code>22 // 8</code></td>
+          <td><code>2</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>When there are multiple operators in an expression, normal operator precedence apply. You can force your own precedence using parentheses.</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; 2 + 4 * 5
+22
+&gt;&gt;&gt; (2 + 4) * 5
+30
+</code></pre>
+    <panel type="seamless" header="%%:tv: Operators%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
+    <panel type="seamless" header="%%:computer: Try some expressions using an online interactive shell%%">
+      <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p><iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%"
+        height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="data-types">Data Types</h3>
+    <p><strong>A data value has a <em>type</em>.</strong> Here is a summary of three basic data types used in Python often:</p>
+    <table class="markbind-table table">
+      <thead>
+        <tr>
+          <th>Type name</th>
+          <th>Description</th>
+          <th>Examples</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>int</code></td>
+          <td>whole numbers (integers)</td>
+          <td><code>-23</code><code>-22</code><code>-1</code><code>0</code><code>1</code><code>65</code><code>66</code></td>
+        </tr>
+        <tr>
+          <td><code>float</code></td>
+          <td>numbers with decimal points (floating point numbers)</td>
+          <td><code>-34.576</code><code>436.0</code></td>
+        </tr>
+        <tr>
+          <td><code>str</code></td>
+          <td>sequence of characters (strings)</td>
+          <td><code>adam</code><code>What can it be?</code><code>x</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>String values are denoted by enclosing them in double quotes or single quotes.</p>
+    <pre class="hljs"><code>'Hello'
+&quot;What's going on?&quot;
+</code></pre>
+    <p>Some operators can be used on strings as well.</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; 'hello'
+'hello'
+
+&gt;&gt;&gt; 'Hello' + ' ' + 'World!'
+'Hello World!'
+
+&gt;&gt;&gt; 'Bye' + ('!' * 10)
+'Bye!!!!!!!!!!'
+</code></pre>
+    <p>To find the type of a value, you can use the built-in function <code>type()</code>.</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; type(-4)
+&lt; class 'int' &gt;
+
+&gt;&gt;&gt; type(44.0)
+&lt; class 'float' &gt;
+
+&gt;&gt;&gt; type('hello')
+&lt; class 'str' &gt;
+</code></pre>
+    <panel type="seamless" header="%%:tv: Data types%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
+    <panel type="seamless" header="%%:computer: Try your own%%"><iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="variables">Variables</h3>
+    <blockquote>
+      <p><strong>Variables are used to store information to be referenced and manipulated in a computer program.</strong> They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves.
+        It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program. <sub>--<a href="https://launchschool.com/books/ruby/read/variables">https://launchschool.com/books/ruby/read/variables</a> (emphasis added)</sub></p>
+    </blockquote>
+    <p>The following statement <em><tooltip content="creates">declares</tooltip></em> a variable named <code>v</code> and <em>assigns</em> it a value <code>5</code> (the operator <code>=</code> is called the <em>assignment operator</em>):</p>
+    <pre><code class="hljs python">v = <span class="hljs-number">5</span>
+</code></pre>
+    <tip-box>
+      <p><strong>Statements</strong></p>
+      <p>Note that we called <code>v = 5</code> a <em>statement</em>. <strong>Unlike expressions that evaluates to a single value, a statement does not evaluates to a value.</strong> However, a statement can contain an expression e.g. <code>v = 5 + 8</code>.
+      </p>
+    </tip-box>
+    <p>If you enter the above statement in the interactive shell, it causes the shell to remember the variable name <code>v</code> and its value.</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; v = 5
+&gt;&gt;&gt; 
+</code></pre>
+    <p>Now, you can ask the shell to recall the value by simply typing in the variable name as an expression.</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; v
+5
+</code></pre>
+    <p>You can even use the variable in expressions.</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; v * 4
+20
+</code></pre>
+    <tip-box>
+      <p>📦 Here are some examples of variables being declared, assigned, and being used:</p>
+      <pre class="hljs"><code>&gt;&gt;&gt; max_bag_count = 2
+&gt;&gt;&gt; max_bag_count
+2
+
+&gt;&gt;&gt; price = 10.0
+&gt;&gt;&gt; discount_percentage = 5
+&gt;&gt;&gt; discount = price * discount_percentage / 100
+&gt;&gt;&gt; price - discount
+9.5
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+    </tip-box>
+    <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
+    <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
+</code></pre>
+    <p><strong>Variable names are case sensitive.</strong> In the example below, you can see how Python prints an error message if you try to access the variable <code>height</code> using the name <code>Height</code></p>
+    <pre class="hljs"><code>&gt;&gt;&gt; height = 12.0
+
+&gt;&gt;&gt; height
+12.0
+
+&gt;&gt;&gt; Height
+Traceback (most recent call last):
+ File &quot;&lt; pyshell#5 &gt;&quot;, line 1, in &lt; module &gt;
+   Height
+NameError: name 'Height' is not defined
+</code></pre>
+    <p><strong>Variables can be overwritten</strong>. In the example below, <code>height</code> was initially <code>5</code> but the value is reassigned later to be <code>1</code> more than the previous value.</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; height = 5
+&gt;&gt;&gt; height
+5
+
+&gt;&gt;&gt; height = height + 1
+&gt;&gt;&gt; height
+6
+</code></pre>
+    <p><strong>Value of one variable can be assigned to another variable.</strong></p>
+    <tip-box>
+      <p>📦 In the example below, the value of variable <code>height</code> is assigned to the variable <code>width</code>.</p>
+      <pre class="hljs"><code>&gt;&gt;&gt; height = 5
+&gt;&gt;&gt; width = height
+&gt;&gt;&gt; width
+5
+
+&gt;&gt;&gt; height + width
+10
+
+&gt;&gt;&gt; height = 10
+&gt;&gt;&gt; width
+5
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+    </tip-box>
+    <panel type="seamless" header="%%:tv: Variables%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+    </panel>
+    <p></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <p><strong>Exercise : Circle Circumference</strong></p>
+    <ol>
+      <li>Declare variables to represent the radius of a circle, and assign it value <code>7</code>.</li>
+      <li>Declare a variable to represent PI and assign it <code>3.14</code></li>
+      <li>Calculate and assign the circumference of the circle to a new variable.</li>
+      <li>Use the previous variables to output the text <code>If radius is R, the circumference is C</code> where <code>R</code> and <code>C</code> are the radius and the circumference respectively <span class="dimmed"> e.g. <code>If radius is 7, the circumference is 43.96</code></span>.</li>
+    </ol>
+  </div>
+  <hr>
+  <hr>
+  <h1 id="python-programs">Python Programs</h1>
+  <div>
+    <h3 id="scripts-programs">Scripts (Programs)</h3>
+    <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em><tooltip content="the tool that interprets the code and executes it">interpreter</tooltip></em>      reads the program and executes statements from top to bottom.</p>
+    <p>Let's create and run a Python program:</p>
+    <tabs>
+      <tab header="Using Repl.it (no need to save as a file)">
+        <p>Press the ▶️ button to run the code. You can edit the code and run again!</p><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"
+          sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </tab>
+      <tab header="Using IDLE (need to save as a `.py` file)">
+        <ol>
+          <li>Open the IDLE tool.</li>
+          <li>Choose <code>File</code> → <code>New File</code></li>
+          <li>In the new window that opens up, enter the following code (don't worry about the meaning of the code).
+            <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
+print(<span class="hljs-string">'Bye!'</span>)
+</code></pre>
+          </li>
+          <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
+          <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
+        </ol>
+        <panel type="seamless" header="%%:tv: Writing your first Python program%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=2&end=168&version=3" frameborder="0" allowfullscreen></iframe></panel>
+        <p></p>
+      </tab>
+    </tabs>
+    <hr>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="comments">Comments</h3>
+    <p>You can use comments to provide more information about the code to the reader. Any text that follows <code>#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
+    <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
+
+print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># start with a greeting</span>
+
+<span class="hljs-comment"># read user's name from the keyboard</span>
+print(<span class="hljs-string">'What is your name?'</span>)
+name = input()
+</code></pre>
+    <p>💡 Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the readability of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="using-functions">Using Functions</h3>
+    <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em> or <em>parameters</em>). The statement to <em>execute</em> (other
+      names: <em>call</em>, <em>invoke</em>) a function takes the form <code>function_name(arguments)</code><span class="dimmed"> e.g., <code>foo(1, 'hello')</code> calls a function named <code>foo</code> with arguments <code>1</code> and <code>'hello'</code></span></p>
+    <p>Python comes with many built-in functions you can use right away.</p>
+    <p>📦 To find the type of a value, you can use the built-in function <code>type</code>.</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; type(-4)
+&lt; class 'int' &gt;
+
+&gt;&gt;&gt; type(44.0)
+&lt; class 'float' &gt;
+
+&gt;&gt;&gt; type('hello')
+&lt; class 'str' &gt;
+</code></pre>
+    <p>📦 To print some content, you can use the <code>print</code> function which can take one or more string arguments:</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; print('Hello World')
+Hello World
+
+&gt;&gt;&gt; print ('Bye', 'my', 'friend')
+Bye my friend
+</code></pre>
+    <p>💡 A call to <code>print</code> without any arguments (i.e. <code>print()</code>) prints an empty line.</p>
+    <p><strong>Some functions return a value.</strong></p>
+    <p>📦 <code>int</code>, <code>float</code>, <code>str</code> functions can be used to convert a data value of one type to another.</p>
+    <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
+print(<span class="hljs-string">'My age is '</span> + str(age)) <span class="hljs-comment"># convert age to a string before printing</span>
+</code></pre>
+    <p>📦 <code>input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user <mark>as a string</mark>.</p>
+    <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
+print(<span class="hljs-string">'What is the current price?'</span>)
+price = input() <span class="hljs-comment"># price is of type string because input() always return a string</span>
+
+<span class="hljs-comment"># print current price</span>
+print() <span class="hljs-comment"># print an empty line</span>
+print(<span class="hljs-string">'Current price is $'</span> + price) <span class="hljs-comment"># no need to convert; price is already a string</span>
+
+<span class="hljs-comment"># calculate and show discounted price</span>
+discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span>
+print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span>
+</code></pre>
+    <panel type="seamless" header="%%:arrow_forward: Try above code online%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+    <panel
+      type="seamless" header="%%:tv: Explanation of a similar Python program%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
+  </div>
+  <hr>
+  <hr>
+  <h1 id="program-flow-control">Program Flow Control</h1>
+  <div>
+    <h3 id="booleans">Booleans</h3>
+    <p><strong>The <code>bool</code> data type is used to represent <em>boolean</em> values</strong> (i.e. true/false values). They are useful when the program execution needs to vary based on a certain condition <span class="dimmed"> e.g., print 'old' if age is greater than 100.</span></p>
+    <p>The <code>bool</code> data type can hold only two values <code>True</code> and <code>False</code> (case sensitive).</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; type(True)
+&lt; class 'bool' &gt;
+
+&gt;&gt;&gt; type(False)
+&lt; class 'bool' &gt;
+
+&gt;&gt;&gt; type('True')
+&lt; class 'str' &gt;
+
+&gt;&gt;&gt; type(true)
+...
+NameError: name 'true' is not defined
+</code></pre>
+    <p>You can <strong>use comparison <em>operators</em> to create expressions that evaluate to a boolean result</strong>.</p>
+    <table class="markbind-table table">
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Meaning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>==</td>
+          <td>Equal to (different from the assignment operator <code>=</code>)</td>
+        </tr>
+        <tr>
+          <td>!=</td>
+          <td>Not equal to</td>
+        </tr>
+        <tr>
+          <td>&lt;</td>
+          <td>Less than</td>
+        </tr>
+        <tr>
+          <td>&gt;</td>
+          <td>Greater than</td>
+        </tr>
+        <tr>
+          <td>&lt;=</td>
+          <td>Less than or equal to</td>
+        </tr>
+        <tr>
+          <td>&gt;=</td>
+          <td>Greater than or equal to</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>📦 Here are some examples</p>
+    <pre><code class="hljs python">print(<span class="hljs-string">'hello'</span> == <span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># False</span>
+print(<span class="hljs-string">'dog'</span> != <span class="hljs-string">'cat'</span>) <span class="hljs-comment"># True</span>
+print(<span class="hljs-keyword">True</span> == <span class="hljs-keyword">True</span>) <span class="hljs-comment"># True</span>
+print(<span class="hljs-keyword">True</span> != <span class="hljs-keyword">False</span>) <span class="hljs-comment"># True</span>
+print(<span class="hljs-number">42</span> == <span class="hljs-number">42.0</span>) <span class="hljs-comment"># True (they are different types of numbers, but of same value)</span>
+print(<span class="hljs-number">42</span> == <span class="hljs-string">'42'</span>) <span class="hljs-comment"># False</span>
+print(<span class="hljs-number">42</span> == int(<span class="hljs-string">'42'</span>)) <span class="hljs-comment"># True</span>
+print(<span class="hljs-number">20</span> &gt; <span class="hljs-number">10</span>) <span class="hljs-comment"># True</span>
+</code></pre>
+    <p>In contrast, <strong><em>boolean operators</em> (<code>and</code>, <code>or</code> and <code>not</code>) work only on boolean values</strong>. Here is how they work.</p>
+    <table class="markbind-table table">
+      <thead>
+        <tr>
+          <th>Expression</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>True</code><strong><code>and</code></strong><code>True</code></td>
+          <td><code>True</code></td>
+        </tr>
+        <tr>
+          <td><code>True</code><strong><code>and</code></strong><code>False</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td><code>False</code><strong><code>and</code></strong><code>True</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td><code>False</code><strong><code>and</code></strong><code>False</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>True</code><strong><code>or</code></strong><code>True</code></td>
+          <td><code>True</code></td>
+        </tr>
+        <tr>
+          <td><code>True</code><strong><code>or</code></strong><code>False</code></td>
+          <td><code>True</code></td>
+        </tr>
+        <tr>
+          <td><code>False</code><strong><code>or</code></strong><code>True</code></td>
+          <td><code>True</code></td>
+        </tr>
+        <tr>
+          <td><code>False</code><strong><code>or</code></strong><code>False</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong><code>not</code></strong><code>True</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td><strong><code>not</code></strong><code>False</code></td>
+          <td><code>True</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>You can mix both types of operators. Some examples below:</p>
+    <pre><code class="hljs python">result = (<span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">or</span> (<span class="hljs-number">10</span> &lt; <span class="hljs-number">20</span>) <span class="hljs-comment"># True</span>
+result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</span>) <span class="hljs-keyword">and</span> (<span class="hljs-number">3</span> != <span class="hljs-number">3</span>) <span class="hljs-comment"># False</span>
+</code></pre>
+    <panel type="seamless" header="%%:tv: Booleans%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/4XA9CKJJbr4?rel=0&showinfo=0&start=65&version=3" frameborder="0" allowfullscreen></iframe></panel>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="flow-control-using-if">Flow Control Using <code>if</code></h3>
+    <p>Python uses the <code>if</code> statement to indicate that some code should only be executed if a certain condition is true.</p>
+    <p>Format:</p>
+    <pre class="hljs"><code>if condition :
+    statements_to_execute_if_true
+</code></pre>
+    <p>📦 The code below has two <code>if</code> statements; one evaluates to <code>true</code> while the other doesn't.</p>
+    <pre><code class="hljs python">price = <span class="hljs-number">55</span>
+print(price)
+<span class="hljs-keyword">if</span> price &gt; <span class="hljs-number">50</span>:
+    print(<span class="hljs-string">'Expensive'</span>)
+weight = <span class="hljs-number">45</span>
+print(weight)
+<span class="hljs-keyword">if</span> price &gt; <span class="hljs-number">100</span>:
+    print(<span class="hljs-string">'Heavy'</span>)
+print(<span class="hljs-string">'Done'</span>)
+</code></pre>
+    <p>Output ⤵️
+      <trigger trigger="click" for="modal:simpelIf-pyTutor"><span class="dimmed">[Click here to visualize execution]</span></trigger>
+    </p>
+    <pre class="hljs"><code>50
+Expensive
+45
+Done
+</code></pre>
+    <modal large="" title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
+      <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20price%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+    <p>Note how the code to execute if the condition is true is indented (usually by 4 spaces). <strong>Python uses indentation to indicate code <em>blocks</em></strong> (aka <em>clauses</em>) <span class="dimmed"> i.e., a sequence of statements that belong together</span>.
+      In the example below, lines 2-4 are in the same block because they are all indented by one level; if the condition is true, all three are executed; if the condition is false, all three are omitted. Line 5 goes back to the previous indentation level,
+      indicating the end of the code block.</p>
+    <pre><code class="hljs python"><span class="hljs-keyword">if</span> name == <span class="hljs-string">'Blue'</span>:          <span class="hljs-comment"># line 1</span>
+    print(<span class="hljs-string">"It's a color"</span>)   <span class="hljs-comment"># line 2</span>
+    print(<span class="hljs-string">"It's a feeling"</span>) <span class="hljs-comment"># line 3</span>
+    print(<span class="hljs-string">"It's a word"</span>)    <span class="hljs-comment"># line 4</span>
+print(<span class="hljs-string">'Done'</span>)               <span class="hljs-comment"># line 5</span>
+</code></pre>
+    <p>If statements can be nested, using deeper indentation.</p>
+    <pre><code class="hljs python">age = <span class="hljs-number">13</span>
+gender = <span class="hljs-string">'F'</span>
+<span class="hljs-keyword">if</span> (age &gt; <span class="hljs-number">12</span>) <span class="hljs-keyword">and</span> (age &lt; <span class="hljs-number">20</span>):          
+    print(<span class="hljs-string">"Teenager"</span>)  <span class="hljs-comment"># indented one level - new code block starts here </span>
+    <span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
+        print(<span class="hljs-string">'Female'</span>)<span class="hljs-comment"># indented two levels - this block is nested within the first block</span>
+        print(<span class="hljs-string">'Girl'</span>)  
+    <span class="hljs-keyword">if</span> gender == <span class="hljs-string">'M'</span>:
+        print(<span class="hljs-string">'Male'</span>) <span class="hljs-comment"># another block nested within the first block</span>
+        print(<span class="hljs-string">'Boy'</span>)
+    print(<span class="hljs-string">'Gender code is '</span> + gender) 
+print(<span class="hljs-string">'Age is '</span> + str(age))               
+</code></pre>
+    <p>⤵️
+      <trigger trigger="click" for="modal:nestedIf-pyTutor"><span class="dimmed">[visualize]</span></trigger>
+    </p>
+    <pre class="hljs"><code>Teenager
+Female
+Girl
+Gender code is F
+Age is 13
+</code></pre>
+    <modal large="" title="Nested blocks" id="modal:nestedIf-pyTutor"><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=age%20%3D%2013%0Agender%20%3D%20'F'%0Aif%20%28age%20%3E%2012%29%20and%20%28age%20%3C%2020%29%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20print%28%22Teenager%22%29%20%20%23%20indented%20one%20level%20-%20new%20code%20block%20starts%20here%20%0A%20%20%20%20if%20gender%20%3D%3D%20'F'%3A%0A%20%20%20%20%20%20%20%20print%28'Female'%29%23%20indented%20two%20levels%20-%20this%20block%20is%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Girl'%29%20%20%0A%20%20%20%20if%20gender%20%3D%3D%20'M'%3A%0A%20%20%20%20%20%20%20%20print%28'Male'%29%20%23%20another%20block%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Boy'%29%0A%20%20%20%20print%28'Gender%20code%20is%20'%20%2B%20gender%29%20%0Aprint%28'Age%20is%20'%20%2B%20str%28age%29%29%20&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+    <panel
+      type="seamless" header="%%:tv: Using `if`%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=7&end=253&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+      </panel>
+      <p></p>
+      <p>If a situation has only two
+        <tooltip content="no more than one of them can be true at any time">mutually exclusive</tooltip> possibilities <span class="dimmed"> e.g. the value of <code>gender</code> can only be <code>M</code> or <code>F</code></span>, we can use the <code>else</code> statement to deal with both conditions together.</p>
+      <p>📦 In the example below, the entire <code>block</code> will be skipped if the <code>if</code> condition is true.</p>
+      <pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
+    print(<span class="hljs-string">'Female'</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'Not Female'</span>)               
+</code></pre>
+      <panel type="seamless" header="%%:tv: Using `else`%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=254&end=336&version=3" frameborder="0" allowfullscreen></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+      <p>If a situation has more than two mutually exclusive possibilities, we can bring in <code>elif</code> (an abbreviation of <em>else if</em>) blocks too.</p>
+      <p>📦 The example below shows how to use an <code>if-elif-else</code> construct to control the flow of the execution.</p>
+      <pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
+    print(<span class="hljs-string">'Female'</span>)
+<span class="hljs-keyword">elif</span> gender == <span class="hljs-string">'M'</span>:
+    print(<span class="hljs-string">'Male'</span>)
+<span class="hljs-keyword">elif</span> gender == <span class="hljs-string">'O'</span>:
+    print(<span class="hljs-string">'Other'</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'Unrecognized value'</span>)             
+</code></pre>
+      <p>Note that in an <code>if-elif-else</code> construct no more than one block (the first one whose condition is true) will be executed.</p>
+      <panel type="seamless" header="%%:tv: Using `elif`%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=354&end=483&version=3" frameborder="0" allowfullscreen></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+  </div>
+  <hr>
+  <hr>
+</div>
+</div>
+</body>
+<script src="..\markbind\js\vue.min.js"></script>
+<script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\setup.js"></script>
+</html>

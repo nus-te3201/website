@@ -4,8 +4,11 @@
 
 <div class="website-content">
 
-# TE3201 Schedule
-TBD
+<panel header=":exclamation: Week 1 [Jan 15]" expanded no-close>
+  <include src="week1/index.md"/>
+</panel><p/>
+
+%%Remaining weeks will be added incrementally over the semester.%%
 
 </div>
 

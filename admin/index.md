@@ -8,18 +8,21 @@
 
 * [Lectures](#lectures)
 * [Project](#project)
+* [Learning Materials](#learning-materials)
 * [Exam](#exam)
 * [Grading](#grading)
 
 ## Lectures 
 
-TUE 1800-2130 in E3‐06‐02  
+TUE 1800-2130 in E3‐06‐02
+
+<include src="learningMaterials.md" />
 
 ## Project
 
 To be done in teams of 3-4 members.
 
-Programming language: The recommended language is Python but other Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.
+Programming language: The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.
 
 Software to build: A simple text-based desktop software. More details to be released later.
 
