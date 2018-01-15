@@ -2,7 +2,7 @@
 
 #### Info to read:
 
-<panel type="info" header="Admin » Where to find learning materials" no-close>
+<panel header="Admin » Where to find learning materials" no-close>
   <include src="../../admin/learningMaterials.md" />
 </panel><p/>
 
@@ -11,7 +11,7 @@
 #### Programing Basics
 
 
-<panel type="danger" header="`W1.1` **Can perfom small computations programmatically**" no-close>
+<panel type="warning" header="`W1.1` **Can perfom small computations programmatically**" no-close>
 
 <panel type="warning" header="`W1.1a` Can explain computer programs" no-close>
   <include src="../../programming/programs/text.md" />
@@ -40,7 +40,7 @@ At this point you should be able to do something similar to this exercise (in yo
 
 #### Software Engineering
 
-<panel type="success" header="`W1.2` **Can explain pros and cons of software engineering**" no-close>
+<panel type="info" header="`W1.2` **Can explain pros and cons of software engineering**" no-close>
   <include src="../../book/softwareEngineering/prosAndCons/full.md" />
 </panel>
 
