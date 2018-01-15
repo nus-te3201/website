@@ -2,7 +2,7 @@
 
 #### Info to read:
 
-<panel type="danger" header="Admin » Where to find learning materials" no-close>
+<panel type="info" header="Admin » Where to find learning materials" no-close>
   <include src="../../admin/learningMaterials.md" />
 </panel><p/>
 
