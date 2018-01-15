@@ -4,9 +4,9 @@
 
 Type name | Description | Examples 
 --------- | ----------- | ------
-`int` | whole numbers (integers) |  `-23` `-22`  `-1` `0` `1` `65` `66`
-`float` | numbers with decimal points (floating point numbers) |  `-34.576`  `436.0` 
-`str` | sequence of characters (strings) | `adam` `What can it be?` `x`
+`int` | whole numbers (integers) |  `-23`, `-22`, `-1`, `0`, `1`, `65`, `66`
+`float` | numbers with decimal points (floating point numbers) |  `-34.576`, `436.0` 
+`str` | sequence of characters (strings) | `adam` `What can it be?`, `x`
 
 
 String values are denoted by enclosing them in double quotes or single quotes.

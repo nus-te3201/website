@@ -206,7 +206,7 @@
               <tip-box>
                 <p>📦 This assertion will fail with the message <code>x should be 0</code> if <code>x</code> is not 0 at this point.</p>
                 <pre><code class="hljs java">x = getX();
-<span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;`
+<span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;
 ...
 </code></pre>
               </tip-box>
@@ -222,7 +222,7 @@
                 <p>💡 Enable assertions in Intellij (<a href="https://stackoverflow.com/questions/18168257/where-to-add-compiler-options-like-ea-in-intellij-idea">how?</a>) and get an assertion to fail temporarily (e.g. insert an <code>assert false</code>                  into the code temporarily) to confirm assertions are being verified.</p>
               </tip-box>
               <tip-box type="info">
-                <p><strong>Java <code>asset</code> vs JUnit assertions</strong>: They are similar in purpose but JUnit assertions are more powerful and customized for testing. In addition, JUnit assertions are not disabled by default. We recommend you use
+                <p><strong>Java <code>assert</code> vs JUnit assertions</strong>: They are similar in purpose but JUnit assertions are more powerful and customized for testing. In addition, JUnit assertions are not disabled by default. We recommend you use
                   JUnit assertions in test code and Java <code>assert</code> in functional code.</p>
               </tip-box>
             </div>
@@ -280,11 +280,11 @@
                     <panel header=":lock::key: Assertions failure in Calculator">
                       <question>
                         <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
-                        <ul radio-group="b4uqi" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="b4uqi" type="radio"> a. This is a correct use of assertions.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="b4uqi" type="radio"> b. The application should have terminated with an exception instead.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="b4uqi" type="radio"> c. The program has a bug.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="b4uqi" type="radio"> d. All statements above are incorrect.</label></li>
+                        <ul radio-group="dnfo1" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="dnfo1" type="radio"> a. This is a correct use of assertions.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="dnfo1" type="radio"> b. The application should have terminated with an exception instead.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="dnfo1" type="radio"> c. The program has a bug.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="dnfo1" type="radio"> d. All statements above are incorrect.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(c)</p>
@@ -350,11 +350,11 @@
                     <panel header=":lock::key: Logging vs blackbox">
                       <question>
                         <p>Why is logging like having the 'black box' in an airplane?</p>
-                        <ul radio-group="kr42l" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="kr42l" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="kr42l" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="kr42l" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="kr42l" type="radio"> d. Because they are hard to open by normal users.</label></li>
+                        <ul radio-group="6oaju" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="6oaju" type="radio"> a. Because they can be used to find more info about how the system behaved before/during an ‘incident’.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="6oaju" type="radio"> b. Because they are hidden from the view of normal users.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="6oaju" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="6oaju" type="radio"> d. Because they are hard to open by normal users.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -656,9 +656,9 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
 }
 </code></pre>
                         <p>This is a defensive implementation of the association.</p>
-                        <ul radio-group="d0n84" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="d0n84" type="radio"> True</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="d0n84" type="radio"> False</label></li>
+                        <ul radio-group="ifkgl" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="ifkgl" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="ifkgl" type="radio"> False</label></li>
                         </ul>
                         <div slot="answer">
                           <p>False</p>
@@ -1023,9 +1023,9 @@ r1.setPlayer(p2);
                     <panel header=":lock::key: True or False?">
                       <question>
                         <p>Bidirectional associations, if not implemented properly, can result in referential integrity violations.</p>
-                        <ul radio-group="50h60" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="50h60" type="radio"> True</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="50h60" type="radio"> False</label></li>
+                        <ul radio-group="prrp2" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="prrp2" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="prrp2" type="radio"> False</label></li>
                         </ul>
                         <div slot="answer">
                           <p>True</p>
