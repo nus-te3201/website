@@ -7,16 +7,16 @@ Let's create and run a Python program:
 <tabs> 
   <tab header="Using Repl.it (no need to save as a file)">
 
-Press the :arrow_forward: button to run the code. You can edit the code and run again!
+Press the :arrow_forward: button to run the code %%&nbsp;(don't worry about the meaning of the code)%%. You can edit the code and run again!
    
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
    
   </tab>
   <tab header="Using IDLE (need to save as a `.py` file)">
 
-1. Open the IDLE tool.
+1. <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.
 1. Choose `File` → `New File`
-1. In the new window that opens up, enter the following code (don't worry about the meaning of the code).
+1. In the new window that opens up, enter the following code %%&nbsp;(don't worry about the meaning of the code)%%.
    ```python
    print('Hello world!')
    print('Bye!')
@@ -32,6 +32,12 @@ Press the :arrow_forward: button to run the code. You can edit the code and run 
 
   </tab>
 </tabs><hr>
+
+<modal title=":tv: Opening IDEL in Windows 10" id="modal:scripts-openIdle">
+  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe>
+
+</modal>
 
 
 

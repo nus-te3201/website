@@ -12,4 +12,4 @@ print('What is your name?')
 name = input()
 ```
 
-:bulb: Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the readability of the code %%&nbsp;e.g., by using a blank line to separate one group of statements from another%%
+:bulb: Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the <tooltip content="ease of reading">readability</tooltip> of the code %%&nbsp;e.g., by using a blank line to separate one group of statements from another%% 
