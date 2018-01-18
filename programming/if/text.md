@@ -45,7 +45,7 @@ if name == 'Blue':          # line 1
 print('Done')               # line 5
 ```
 
-If statements can be nested, using deeper indentation.
+`if` statements can be <tooltip content="one _if_ statement within another">nested</tooltip>, using deeper indentation.
 
 ```python
 age = 13
@@ -84,7 +84,7 @@ Age is 13
 
 If a situation has only two <tooltip content="no more than one of them can be true at any time">mutually exclusive</tooltip> possibilities %%&nbsp;e.g. the value of `gender` can only be `M` or `F`%%, we can use the `else` statement to deal with both conditions together.
 
-:package: In the example below, the entire `block` will be skipped if the `if` condition is true.
+:package: In the example below, the entire `else` block will be skipped if the `if` condition is true.
 ```python
 if gender == 'F':
     print('Female')
@@ -110,6 +110,11 @@ elif gender == 'O':
 else:
     print('Unrecognized value')             
 ```
+<panel type="seamless" header="%%:computer: Try your own%%">
+
+<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/gender-if?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+</panel><p/>
 
 Note that in an `if-elif-else` construct no more than one block (the first one whose condition is true) will be executed.
 

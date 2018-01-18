@@ -4,40 +4,68 @@
 
 Python comes with many built-in functions you can use right away. 
 
-:package: To find the type of a value, you can use the built-in function `type`.
-```
->>> type(-4)
-< class 'int' >
+:package: To print some content, you can use the `print` function which can take one or more arguments:
 
->>> type(44.0)
-< class 'float' >
-
->>> type('hello')
-< class 'str' >
-```
-
-:package: To print some content, you can use the `print` function which can take one or more string arguments:
+<tabs> 
+  <tab header="Using the shell">
 
 ```
 >>> print('Hello World')
 Hello World
 
->>> print ('Bye', 'my', 'friend')
+>>> print('Bye', 'my', 'friend')
 Bye my friend
 ```
 
-:bulb: A call to `print` without any arguments (i.e. `print()`) prints an empty line.
+  </tab>
+  <tab header="Running as a script">
+
+```python
+print('Hello World')
+print('Bye', 'my', 'friend')
+```
+:arrow_heading_down:
+```
+Hello World
+Bye my friend
+```
+
+  </tab>
+</tabs>
+
+<panel type="seamless" header="%%:computer: Try your own%%">
+
+<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+</panel><p/>
+
 
 **Some functions return a value.**
 
-:package: `int`, `float`, `str` functions can be used to convert a data value of one type to another.
+:package: `int`, `float`, `str` functions can be used to convert a data value of one type to another. The built-in function `type` tells you the type of a value.
 
 ```python
 age = 25 # age is of integer type
 print('My age is ' + str(age)) # convert age to a string before printing
-```
 
-:package: `input` function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user ==as a string==.
+print(type(-4)) # print the type of value -4
+print(type('-4')) # print the type of value '-4'
+print(type(float('5.0'))) # convert string '5.0' to a float and print the type
+```
+:arrow_heading_down:
+```
+My age is 25
+< class 'int' >
+< class 'str' >
+< class 'float' >
+```
+<panel type="seamless" header="%%:computer: Try your own%%">
+
+<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/return-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+</panel><p/>
+
+:package: `input` function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user ==as a string==. :bulb: Note how a call to the `print` without any arguments (i.e. `print()`) prints an empty line.
 
 ```python
 # read current price
