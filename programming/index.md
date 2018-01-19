@@ -53,5 +53,6 @@
 
 <include src="booleans/text.md" /><hr><hr>
 <include src="if/text.md" /><hr><hr>
+<include src="exercises/grades.md" /><hr><hr>
 
 </div>
