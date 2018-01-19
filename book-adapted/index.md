@@ -13,35 +13,8 @@
 
 * [Acknowledgements](#acknowledgements)
 * [Using This Book](#using-this-book)
-* [**SECTION 1: INTRODUCTION**](#section-introduction)
-  * [Ch 1. Software Engineering](#software-engineering)
-* [**SECTION 2: REQUIREMENTS**](#section-requirements) 
-  * [Ch 1. Requirements](#requirements)
-  * [Ch 2. Gathering Requirements](#gathering-requirements)
-  * [Ch 3. Specifying Requirements](#specifying-requirements)
-* [**SECTION 3: DESIGN**](#section-design) 
-  * [Ch 1. Design](#design)
-  * [Ch 2. Object-Orient Programming](#object-oriented-programming)
-  * [Ch 3. Design Fundamentals](#design-fundamentals)
-  * [Ch 4. Modeling](#modeling)
-* [**SECTION 4: IMPLEMENTATION**](#section-implementation) 
-  * [Ch 1. IDEs](#ides)
-  * [Ch 2. Code Quality](#code-quality)
-  * [Ch 3. Refactoring](#refactoring)
-  * [Ch 4. Documentation](#documentation)
-  * [Ch 5. Error Handling](#error-handling)
-  * [Ch 6. Reuse](#reuse)
-* [**SECTION 5: QUALITY ASSURANCE**](#section-quality-assurance) 
-  * [Ch 1. Quality Assurance](#quality-assurance)
-  * [Ch 2. Testing](#testing)
-  * [Ch 3. Test Case Design](#test-case-design)
-* [**SECTION 6: PROJECT MANAGEMENT**](#section-project-management) 
-  * [Ch 1. Revision Control](#revision-control)
-  * [Ch 2. Project Planning](#project-planning)
-  * [Ch 3. Teamwork](#teamwork)
-  * [Ch 4. SDLC Process Models](#sdlc-process-models)
-* [**SECTION 7: TOOLS**](#section-tools) 
-  * [Ch 1. UML](#uml)
+
+<include src="toc.md" />
 
 <include src="../book/about/acknowledgements.md#body" />
 
@@ -488,8 +461,6 @@
 <include src="../book/uml/activityDiagrams/basicNotations/linearPaths/full.md" />
 <include src="../book/uml/activityDiagrams/basicNotations/alternatePaths/full.md" />
 <include src="../book/uml/activityDiagrams/basicNotations/parallelPaths/full.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/rakes/full.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/swimlanes/full.md" />
 
 ## Notes
 

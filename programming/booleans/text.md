@@ -22,12 +22,12 @@ You can **use comparison _operators_ to create expressions that evaluate to a bo
 
 Operator | Meaning
 -------- | -------
-== | Equal to (different from the assignment operator `=`)
-!= | Not equal to
-< | Less than
-> | Greater than
-&lt;= | Less than or equal to
->= | Greater than or equal to
+`==` | Equal to (different from the assignment operator `=`)
+`!=` | Not equal to
+`<` | Less than
+`>` | Greater than
+`< =` | Less than or equal to (no space between the two symbols)
+`> =` | Greater than or equal to (no space between the two symbols)
 
 :package: Here are some examples
 

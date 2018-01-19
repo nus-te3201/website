@@ -475,28 +475,24 @@ NameError: name 'true' is not defined
       </thead>
       <tbody>
         <tr>
-          <td>==</td>
+          <td><code>==</code></td>
           <td>Equal to (different from the assignment operator <code>=</code>)</td>
         </tr>
         <tr>
-          <td>!=</td>
+          <td><code>!=</code></td>
           <td>Not equal to</td>
         </tr>
         <tr>
-          <td>&lt;</td>
-          <td>Less than</td>
+          <td><code>&lt;</code></td>
+          <td>=&quot;&quot; Less=&quot;&quot; than=&quot;&quot; <code>=&quot;&quot;&gt;</code></td>
         </tr>
         <tr>
-          <td>&gt;</td>
-          <td>Greater than</td>
+          <td><code>&lt; =</code></td>
+          <td>Less than or equal to (no space between the two symbols)</td>
         </tr>
         <tr>
-          <td>&lt;=</td>
-          <td>Less than or equal to</td>
-        </tr>
-        <tr>
-          <td>&gt;=</td>
-          <td>Greater than or equal to</td>
+          <td><code>&gt; =</code></td>
+          <td>Greater than or equal to (no space between the two symbols)</td>
         </tr>
       </tbody>
     </table>
@@ -574,6 +570,7 @@ print(<span class="hljs-number">20</span> &gt; <span class="hljs-number">10</spa
 result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</span>) <span class="hljs-keyword">and</span> (<span class="hljs-number">3</span> != <span class="hljs-number">3</span>) <span class="hljs-comment"># False</span>
 </code></pre>
     <panel type="seamless" header="%%:tv: Booleans%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/4XA9CKJJbr4?rel=0&showinfo=0&start=65&version=3" frameborder="0" allowfullscreen></iframe></panel>
+    <p>&lt;/`&gt;</p>
   </div>
   <hr>
   <hr>
@@ -676,6 +673,37 @@ Age is 13
         <p></p>
       </panel>
       <p></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <p><strong>Exercise : Grade Analyzer</strong></p>
+    <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
+    <pre><code class="hljs python">Enter project score:
+<span class="hljs-number">30</span>
+
+Enter exam score:
+<span class="hljs-number">40</span>
+
+Total: <span class="hljs-number">70</span>
+
+Project : ======
+Exam    : ========
+Total   : ==============
+Grade   : A
+</code></pre>
+    <ul>
+      <li>Note how the colons are aligned.</li>
+      <li>Note the extra blank lines in the expected output.</li>
+      <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+    </ul>
+    <p>Grading rules:</p>
+    <ul>
+      <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
+      <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
+      <li><code>C</code>: at least 40 in total</li>
+      <li><code>D</code>: otherwise</li>
+    </ul>
   </div>
   <hr>
   <hr>

@@ -352,11 +352,11 @@
                     <panel header=":lock::key: Difference between a class diagram and and an OO domain model?">
                       <question>
                         <p>What is the main difference between a class diagram and and an OO domain model?</p>
-                        <ul radio-group="x3p43" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="x3p43" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="x3p43" type="radio"> b. One has more classes than the other.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="x3p43" type="radio"> c. One shows more details than the other.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="x3p43" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
+                        <ul radio-group="z38b0" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="z38b0" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="z38b0" type="radio"> b. One has more classes than the other.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="z38b0" type="radio"> c. One shows more details than the other.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="z38b0" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -479,13 +479,53 @@
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <p><strong>Activity diagrams model workflows.</strong></p>
+              <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the flow or a connected sequence of steps in which a process or a set of tasks is executed.</p>
+              <tip-box>
+                <p>📦 A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
+                <p>📦 The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
+              </tip-box>
+              <p>Understanding such workflows is important for the success of the software project. <strong>A UML Activity diagram (AD) can model workflows. </strong><span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams is the UML equivalent of flow charts.</span></p>
               <tip-box>
                 <p>📦 An example activity diagram:</p>
                 <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br><sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
               </tip-box>
+              <p>The most basic activity diagram is simply a linear sequence of actions. An AD shows such a linear path using action nodes connected using directed edges, starting from a <em>start</em> node, ending with an <em>end</em> node.</p>
+              <p>
+                <panel src="/website\book\uml\activityDiagrams\basicNotations\linearPaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Linear Paths" expanded=""></panel>
+              </p>
+              <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition. ADs use <em>branch</em> and <em>merge</em> nodes to show such alternate paths.</p>
+              <p>
+                <panel src="/website\book\uml\activityDiagrams\basicNotations\alternatePaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Alternative Paths" expanded=""></panel>
+              </p>
+              <p>In some workflows, multiple paths happen in parallel. ADs use <em>fork</em> and <em>join</em> nodes to show such paths.</p>
+              <p>
+                <panel src="/website\book\uml\activityDiagrams\basicNotations\parallelPaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Parallel Paths" expanded=""></panel>
+              </p>
             </div>
-            <div></div>
+            <div>
+              <div>
+                <panel header=":muscle: Exercises" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which sequences are not allowed?">
+                      <question>
+                        <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
+                        </ul><img src="/website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
+                        <p></p>
+                        <div slot="answer">
+                          <p>(iv)</p>
+                          <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
+            </div>
           </div>
         </panel>
       </div>
@@ -1003,16 +1043,16 @@
                     <p></p>
                     <question>
                       Choose the incorrect statement.
-                      <ul radio-group="z8bwq" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="z8bwq" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="z8bwq" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="z8bwq" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="z8bwq" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="z8bwq" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
+                      <ul radio-group="00z5l" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="00z5l" type="radio"> a. An object diagrams models the structure of an OO system at a given time.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="00z5l" type="radio"> b. A class diagrams models the general structure of an OO solution.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="00z5l" type="radio"> c. A class diagram can correspond to many object diagrams.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="00z5l" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="00z5l" type="radio"> e. Sequence diagrams can be used to find APIs for classes.</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="xt26u" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="xt26u" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
+                        <ul radio-group="c95fk" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="c95fk" type="radio"> d. A sequence diagram represents how objects are connected to each other.</label></li>
                         </ul>
                         <p>Explanation: A sequence diagram is a behavior diagram, not a structure diagram. An SD can represent how objects interact with each other (i.e., behavior), not how they are connected to each other (i.e. structure).</p>
                       </div>
@@ -1031,16 +1071,16 @@
                     <p></p>
                     <question>
                       Which one of these is the most useful to model a workflow?
-                      <ul radio-group="4mhzj" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="4mhzj" type="radio"> a. class diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="4mhzj" type="radio"> b. object diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="4mhzj" type="radio"> c. activity diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="4mhzj" type="radio"> d. state machine diagram</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="4mhzj" type="radio"> e. use case diagram</label></li>
+                      <ul radio-group="e55hl" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e55hl" type="radio"> a. class diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e55hl" type="radio"> b. object diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e55hl" type="radio"> c. activity diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e55hl" type="radio"> d. state machine diagram</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="e55hl" type="radio"> e. use case diagram</label></li>
                       </ul>
                       <div slot="answer">
-                        <ul radio-group="bwway" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="bwway" type="radio"> c. activity diagram</label></li>
+                        <ul radio-group="0oahn" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" checked name="0oahn" type="radio"> c. activity diagram</label></li>
                         </ul>
                       </div>
                     </question>
