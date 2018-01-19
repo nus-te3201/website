@@ -34,9 +34,9 @@
 </panel>
 <p/>
 
-At this point you should be able to do something similar to this exercise (in your programming language/environment of choice):
-
-<include src="../../programming/exercises/grades.md" />
+<panel type="danger" header=":dart: Evidence of achieving the LO" no-close expanded>
+  <include src="../../programming/exercises/grades.md" />
+</panel>
   
 </panel>
 

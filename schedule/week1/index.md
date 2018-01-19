@@ -37,9 +37,11 @@
   <include src="../../programming/variables/text.md" />
 </panel><p/>
 
-At this point you should be able to do something similar to this exercise (in your programming language/environment of choice):
+At this point you should be able to do something similar to the exercise given below (in your programming language/environment of choice):
 
-<include src="../../programming/exercises/circle.md" />
+<panel type="danger" header=":dart: Evidence of achieving the LO" no-close expanded>
+  <include src="../../programming/exercises/circle.md" />
+</panel>
   
 </panel>
 
