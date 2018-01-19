@@ -483,8 +483,6 @@
 <include src="../book/uml/activityDiagrams/basicNotations/linearPaths/print.md" />
 <include src="../book/uml/activityDiagrams/basicNotations/alternatePaths/print.md" />
 <include src="../book/uml/activityDiagrams/basicNotations/parallelPaths/print.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/rakes/print.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/swimlanes/print.md" />
 
 ## Notes
 
