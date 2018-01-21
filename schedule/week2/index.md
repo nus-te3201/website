@@ -15,21 +15,21 @@
 #### Programing Basics
 
 
-<panel type="warning" header="`W1.1` **Can write a program with conditional execution paths**" no-close>
+<panel type="warning" header="`W2.2` **Can write a program with conditional execution paths**" no-close>
 
-<panel type="warning" header="`W1.1a` Can explain scripts/programs" no-close>
+<panel type="warning" header="`W2.2a` Can explain scripts/programs" no-close>
   <include src="../../programming/scripts/text.md" />
 </panel>
-<panel type="warning" header="`W1.1b` Can use comments" no-close>
+<panel type="warning" header="`W2.2b` Can use comments" no-close>
   <include src="../../programming/comments/text.md" />
 </panel>
-<panel type="warning" header="`W1.1c` Can use existing functions" no-close>
+<panel type="warning" header="`W2.2c` Can use existing functions" no-close>
   <include src="../../programming/usingFunctions/text.md" />
 </panel>
-<panel type="warning" header="`W1.1d` Can use booleans" no-close>
+<panel type="warning" header="`W2.2d` Can use booleans" no-close>
   <include src="../../programming/booleans/text.md" />
 </panel>
-<panel type="warning" header="`W1.1e` Can use `if` statements" no-close>
+<panel type="warning" header="`W2.2e` Can use `if` statements" no-close>
   <include src="../../programming/types/text.md" />
 </panel>
 <p/>
