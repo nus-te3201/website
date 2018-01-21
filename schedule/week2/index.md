@@ -30,7 +30,7 @@
   <include src="../../programming/booleans/text.md" />
 </panel>
 <panel type="warning" header="`W2.2e` Can use `if` statements" no-close>
-  <include src="../../programming/types/text.md" />
+  <include src="../../programming/if/text.md" />
 </panel>
 <p/>
 

@@ -24,8 +24,8 @@ Operator | Meaning
 -------- | -------
 `==` | Equal to (different from the assignment operator `=`)
 `!=` | Not equal to
-`<` | Less than
-`>` | Greater than
+` < ` | Less than
+` > ` | Greater than
 `< =` | Less than or equal to (no space between the two symbols)
 `> =` | Greater than or equal to (no space between the two symbols)
 
