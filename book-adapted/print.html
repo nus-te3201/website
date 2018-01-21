@@ -697,7 +697,7 @@
           <div>
             <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
               Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML
-              is currently the <em>de facto</em> modeling notation used in the industry.</p>
+              is currently the <em>de facto</em> modeling notation used in the software industry.</p>
           </div>
         </modal>
         <p></p><img src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250">
@@ -2184,28 +2184,36 @@
         <h4 id="activity-diagrams-two">Activity Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
       <div>
-        <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the flow or a connected sequence of steps in which a process or a set of tasks is executed.</p>
+        <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the
+          <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.</p>
         <tip-box>
+          <p>Some examples in which a certain workflow is relevant to software project:</p>
           <p>📦 A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
           <p>📦 The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
         </tip-box>
-        <p>Understanding such workflows is important for the success of the software project. <strong>A UML Activity diagram (AD) can model workflows. </strong><span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams is the UML equivalent of flow charts.</span></p>
-        <tip-box>
-          <p>📦 An example activity diagram:</p>
-          <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br><sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
-        </tip-box>
-        <p>The most basic activity diagram is simply a linear sequence of actions. An AD shows such a linear path using action nodes connected using directed edges, starting from a <em>start</em> node, ending with an <em>end</em> node.</p>
-        <p>
-          <panel src="/website\book\uml\activityDiagrams\basicNotations\linearPaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Linear Paths" expanded=""></panel>
-        </p>
-        <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition. ADs use <em>branch</em> and <em>merge</em> nodes to show such alternate paths.</p>
-        <p>
-          <panel src="/website\book\uml\activityDiagrams\basicNotations\alternatePaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Alternative Paths" expanded=""></panel>
-        </p>
-        <p>In some workflows, multiple paths happen in parallel. ADs use <em>fork</em> and <em>join</em> nodes to show such paths.</p>
-        <p>
-          <panel src="/website\book\uml\activityDiagrams\basicNotations\parallelPaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Parallel Paths" expanded=""></panel>
-        </p>
+        <p>Understanding such workflows is important for the success of the software project. <strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger><em> activity diagrams</em> (AD) can model workflows. </strong><span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
+        <modal
+          title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
+          <div>
+            <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
+              Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML
+              is currently the <em>de facto</em> modeling notation used in the software industry.</p>
+          </div>
+          </modal>
+          <tip-box>
+            <p>📦 An example activity diagram <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub>:</p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg" width="430"></tip-box>
+          <p>The most basic activity diagram is simply a linear sequence of actions.</p>
+          <p>
+            <panel src="/website\book\uml\activityDiagrams\basicNotations\linearPaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Linear Paths" expanded=""></panel>
+          </p>
+          <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition.</p>
+          <p>
+            <panel src="/website\book\uml\activityDiagrams\basicNotations\alternatePaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Alternative Paths" expanded=""></panel>
+          </p>
+          <p>In some workflows, multiple paths happen in parallel.</p>
+          <p>
+            <panel src="/website\book\uml\activityDiagrams\basicNotations\parallelPaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Parallel Paths" expanded=""></panel>
+          </p>
       </div>
     </div>
     <div>
@@ -3454,7 +3462,7 @@ send();
                 <div id="def-uml">
                   <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
                     Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML).
-                    UML is currently the <em>de facto</em> modeling notation used in the industry.</p>
+                    UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                 </div>
                 <div id="def-use-case">
                   <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
@@ -4813,7 +4821,7 @@ Invalid command format: add
     <div>
       <p>An activity diagram (AD) captures an <em>activity</em> of <em>actions</em> and <em>control flows</em> that makes up the activity.</p>
       <ul>
-        <li>An <em>action</em> is a single step in an activity. It is shown as a rectangle with <strong>rounded</strong> edges.</li>
+        <li>An <em>action</em> is a single step in an activity. It is shown as a rectangle with <mark>rounded corners</mark>.</li>
         <li>A <em>control flow</em> shows the flow of control from one action to the next. It is shown by drawing a line with an arrow-head to show the direction of the flow.</li>
       </ul><img src="/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/notation.png" height="180">
       <p>Note the slight difference between the <em>start node</em> and the <em>end node</em> which represent the start and the end of the activity, respectively.</p>
@@ -4826,10 +4834,10 @@ Invalid command format: add
       <h4 id="alternate-paths-two">Alternate Paths <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
     </div>
     <div>
-      <p><strong><em>Branch nodes</em> shows the start of alternate paths.</strong> Each control flow exiting a branch node has a <em>guard condition</em> : a boolean condition that should be true for execution to take that path. Only one of the guard condition
+      <p><strong>A <em>branch node</em> shows the start of alternate paths.</strong> Each control flow exiting a branch node has a <em>guard condition</em> : a boolean condition that should be true for execution to take that path. Only one of the guard condition
         can be true at any time.</p>
-      <p><strong><em>Merge nodes</em> show the end of alternate paths.</strong></p>
-      <p>Both branch nodes and merge nodes are diamond shapes.</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/notation.png" height="180">
+      <p><strong>A <em>merge node</em> shows the end of alternate paths.</strong></p>
+      <p>Both branch nodes and merge nodes are <mark>diamond shapes</mark>. Guard conditions must be in <mark>square brackets</mark>.</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/notation.png" height="180">
       <tip-box>
         <p>📦 The AD below shows alternate paths involved in the workflow of the activity <em>shop for product</em>:</p><img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/example.png" height="240">
         <p></p>
