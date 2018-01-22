@@ -41,7 +41,6 @@
 <include src="operators/text.md" /><hr><hr>
 <include src="types/text.md" /><hr><hr>
 <include src="variables/text.md" /><hr><hr>
-<include src="exercises/circle.md" /><hr><hr>
 
 # Python Programs
 
@@ -53,6 +52,5 @@
 
 <include src="booleans/text.md" /><hr><hr>
 <include src="if/text.md" /><hr><hr>
-<include src="exercises/grades.md" /><hr><hr>
 
 </div>
