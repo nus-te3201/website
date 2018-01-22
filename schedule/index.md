@@ -4,7 +4,7 @@
 
 <div class="website-content">
 
-<panel header=":exclamation: Week 1 [Jan 15]" expanded no-close>
+<panel header=":white_check_mark: Week 1 [Jan 15]" no-close>
   <include src="week1/index.md"/>
 </panel><p/>
 
@@ -12,7 +12,7 @@
   <include src="week2/index.md"/>
 </panel><p/>
 
-%%Remaining weeks will be added incrementally over the semester.%%
+%%:construction: Remaining weeks will be added incrementally over the semester.%%
 
 </div>
 

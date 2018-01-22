@@ -47,6 +47,10 @@ if name == 'Blue':          # line 1
 print('Done')               # line 5
 ```
 
+<panel header=":muscle: Exercise: Even Numbers" expanded>
+  <include src="e-even.md" />
+</panel><p/>
+
 `if` statements can be <tooltip content="one _if_ statement within another">nested</tooltip>, using deeper indentation.
 
 ```python
