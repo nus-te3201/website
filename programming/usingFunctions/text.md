@@ -92,3 +92,7 @@ print('Price after 50% discount is $' + str(discounted_price)) # convert back to
 <iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel>
+
+<panel header=":muscle: Exercise: Length of Names" expanded>
+  <include src="e-lengthOfName.md" />
+</panel><p/>

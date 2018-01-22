@@ -19,6 +19,7 @@ Grade   : A
 * Note how the colons are aligned.
 * Note the extra blank lines in the expected output.
 * The bar chart has one `=` for each 5 marks %%&nbsp;24 marks should be shown as `====`.%%
+* Assume all inputs are positive integers.
 
 Grading rules: 
 * `A`: at least 25 marks for each component and at least 60 in total

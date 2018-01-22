@@ -115,3 +115,7 @@ NameError: name 'Height' is not defined
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
+
+<panel header=":muscle: Exercise: Circle Circumference" expanded>
+  <include src="e-circle.md" />
+</panel>

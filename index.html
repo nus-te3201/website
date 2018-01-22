@@ -29,7 +29,7 @@
     </navbar>
   </div>
   <div class="website-content">
-    <panel header=":exclamation: Week 1 [Jan 15]" expanded="" no-close="">
+    <panel header=":white_check_mark: Week 1 [Jan 15]" no-close="">
       <div>
         <h3 id="todo">Todo</h3>
         <h4 id="info-to-read">Info to read:</h4>
@@ -669,13 +669,25 @@ NameError: name 'Height' is not defined
                 <p></p>
               </panel>
               <p></p>
+              <panel header=":muscle: Exercise: Circle Circumference" expanded="">
+                <div>
+                  <h4 id="exercise-circle-circumference">Exercise : Circle Circumference</h4>
+                  <ol>
+                    <li>Declare variables to represent the radius of a circle, and assign it value <code>7</code>.</li>
+                    <li>Declare a variable to represent PI and assign it <code>3.14</code></li>
+                    <li>Calculate and assign the circumference of the circle to a new variable.</li>
+                    <li>Use the previous variables to output the text <code>If radius is R, the circumference is C</code> where <code>R</code> and <code>C</code> are the radius and the circumference respectively <span class="dimmed"> e.g. <code>If radius is 7, the circumference is 43.96</code></span>.</li>
+                  </ol>
+                </div>
+              </panel>
             </div>
           </panel>
           <p></p>
-          <p>At this point you should be able to do something similar to the exercise given below (in your programming language/environment of choice):</p>
-          <panel type="danger" header=":dart: Evidence of achieving the LO" no-close="" expanded="">
+          <p>🎯 At the end of this week you should be able to do something similar to the exercise given below (in your programming language/environment of choice):</p>
+          <panel header="Evidence of achieving the LO" no-close="">
+            <p><strong>Exercise from <code>W1.2f</code>:</strong><br></p>
             <div>
-              <h4 id="exercise-circle-circumference">Exercise : Circle Circumference</h4>
+              <h4 id="exercise-circle-circumference-2">Exercise : Circle Circumference</h4>
               <ol>
                 <li>Declare variables to represent the radius of a circle, and assign it value <code>7</code>.</li>
                 <li>Declare a variable to represent PI and assign it <code>3.14</code></li>
@@ -883,6 +895,18 @@ print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(dis
               <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
               <panel
                 type="seamless" header="%%:tv: Explanation of a similar Python program%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
+          <panel header=":muscle: Exercise: Length of Names" expanded="">
+            <div>
+              <h4 id="exercise-length-of-name">Exercise : Length of Name</h4>
+              <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
+              <pre><code class="hljs python">What <span class="hljs-keyword">is</span> your name?
+John Doe
+The length of your name <span class="hljs-keyword">is</span> <span class="hljs-number">8</span>
+</code></pre>
+              <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed"> e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
+            </div>
+          </panel>
+          <p></p>
           </div>
         </panel>
         <panel type="warning" header="`W2.2d` Can use booleans" no-close="">
@@ -1054,6 +1078,22 @@ Done
     print(<span class="hljs-string">"It's a word"</span>)    <span class="hljs-comment"># line 4</span>
 print(<span class="hljs-string">'Done'</span>)               <span class="hljs-comment"># line 5</span>
 </code></pre>
+            <panel header=":muscle: Exercise: Even Numbers" expanded="">
+              <div>
+                <h4 id="exercise-even-numbers">Exercise : Even Numbers</h4>
+                <p>Write a program to read an integer from the keyboard and print 'Even' only if it is an even number. Follow the example below:</p>
+                <pre><code class="hljs python">Enter an integer:
+<span class="hljs-number">4</span>
+Even number
+Done
+</code></pre>
+                <pre><code class="hljs python">Enter an integer:
+<span class="hljs-number">7</span>
+Done
+</code></pre>
+              </div>
+            </panel>
+            <p></p>
             <p><code>if</code> statements can be
               <tooltip content="one _if_ statement within another">nested</tooltip>, using deeper indentation.</p>
             <pre><code class="hljs python">age = <span class="hljs-number">13</span>
@@ -1116,12 +1156,46 @@ Age is 13
           <p></p>
         </panel>
         <p></p>
+        <panel header=":muscle: Exercise: Grade Analyzer" expanded="">
+          <div>
+            <h4 id="exercise-grade-analyzer">Exercise : Grade Analyzer</h4>
+            <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
+            <pre><code class="hljs python">Enter project score:
+<span class="hljs-number">30</span>
+
+Enter exam score:
+<span class="hljs-number">40</span>
+
+Total: <span class="hljs-number">70</span>
+
+Project : ======
+Exam    : ========
+Total   : ==============
+Grade   : A
+</code></pre>
+            <ul>
+              <li>Note how the colons are aligned.</li>
+              <li>Note the extra blank lines in the expected output.</li>
+              <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+              <li>Assume all inputs are positive integers.</li>
+            </ul>
+            <p>Grading rules:</p>
+            <ul>
+              <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
+              <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
+              <li><code>C</code>: at least 40 in total</li>
+              <li><code>D</code>: otherwise</li>
+            </ul>
+          </div>
+        </panel>
         </div>
     </panel>
     <p></p>
-    <panel type="danger" header=":dart: Evidence of achieving the LO" no-close="" expanded="">
+    <p>🎯 At the end of this week you should be able to do something similar to the exercise given below (in your programming language/environment of choice):</p>
+    <panel header=" Evidence of achieving the LO" no-close="">
+      <p><strong>Exercise from <code>W2.2e</code>:</strong><br></p>
       <div>
-        <h4 id="exercise-grade-analyzer">Exercise : Grade Analyzer</h4>
+        <h4 id="exercise-grade-analyzer-2">Exercise : Grade Analyzer</h4>
         <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
         <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>
@@ -1140,6 +1214,7 @@ Grade   : A
           <li>Note how the colons are aligned.</li>
           <li>Note the extra blank lines in the expected output.</li>
           <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+          <li>Assume all inputs are positive integers.</li>
         </ul>
         <p>Grading rules:</p>
         <ul>
@@ -1156,7 +1231,7 @@ Grade   : A
     </div>
     </panel>
     <p></p>
-    <p><span class="dimmed">Remaining weeks will be added incrementally over the semester.</span></p>
+    <p><span class="dimmed">🚧 Remaining weeks will be added incrementally over the semester.</span></p>
   </div>
 </div>
 </div>

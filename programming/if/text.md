@@ -47,6 +47,10 @@ if name == 'Blue':          # line 1
 print('Done')               # line 5
 ```
 
+<panel header=":muscle: Exercise: Even Numbers" expanded>
+  <include src="e-even.md" />
+</panel><p/>
+
 `if` statements can be <tooltip content="one _if_ statement within another">nested</tooltip>, using deeper indentation.
 
 ```python
@@ -124,3 +128,7 @@ Note that in an `if-elif-else` construct no more than one block (the first one w
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=354&end=483&version=3" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
+
+<panel header=":muscle: Exercise: Grade Analyzer" expanded>
+  <include src="e-grades.md" />
+</panel>

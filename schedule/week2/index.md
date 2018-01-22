@@ -34,8 +34,12 @@
 </panel>
 <p/>
 
-<panel type="danger" header=":dart: Evidence of achieving the LO" no-close expanded>
-  <include src="../../programming/exercises/grades.md" />
+:dart: At the end of this week you should be able to do something similar to the exercise given below (in your programming language/environment of choice):
+
+<panel header=" Evidence of achieving the LO" no-close>
+
+**Exercise from `W2.2e`:**<br>
+  <include src="../../programming/if/e-grades.md" />
 </panel>
   
 </panel>
