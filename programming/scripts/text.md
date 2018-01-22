@@ -7,7 +7,7 @@ Let's create and run a Python program:
 <tabs> 
   <tab header="Using Repl.it (no need to save as a file)">
 
-Press the :arrow_forward: button to run the code %%&nbsp;(don't worry about the meaning of the code)%%. You can edit the code and run again!
+Press the :computer: button to run the code %%&nbsp;(don't worry about the meaning of the code)%%. You can edit the code and run again!
    
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
    

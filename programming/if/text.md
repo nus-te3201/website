@@ -14,10 +14,12 @@ price = 55
 print(price)
 if price > 50:
     print('Expensive')
+
 weight = 45
 print(weight)
-if price > 100:
+if weight > 100:
     print('Heavy')
+    
 print('Done')
 ```
 Output :arrow_heading_down: <trigger trigger="click" for="modal:simpelIf-pyTutor">%%[Click here to visualize execution]%%</trigger>
@@ -31,7 +33,7 @@ Done
 
 Use the `Back` and `Forward` buttons to visualize execution one step at a time. 
 
-<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20price%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 </modal>
 

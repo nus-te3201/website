@@ -26,8 +26,8 @@ Operator | Meaning
 `!=` | Not equal to
 ` < ` | Less than
 ` > ` | Greater than
-`< =` | Less than or equal to (no space between the two symbols)
-`> =` | Greater than or equal to (no space between the two symbols)
+`< =` | Less than or equal to ==(no space between the two symbols)==
+`> =` | Greater than or equal to ==(no space between the two symbols)==
 
 :package: Here are some examples
 

@@ -675,7 +675,7 @@ NameError: name 'Height' is not defined
           <p>At this point you should be able to do something similar to the exercise given below (in your programming language/environment of choice):</p>
           <panel type="danger" header=":dart: Evidence of achieving the LO" no-close="" expanded="">
             <div>
-              <p><strong>Exercise : Circle Circumference</strong></p>
+              <h4 id="exercise-circle-circumference">Exercise : Circle Circumference</h4>
               <ol>
                 <li>Declare variables to represent the radius of a circle, and assign it value <code>7</code>.</li>
                 <li>Declare a variable to represent PI and assign it <code>3.14</code></li>
@@ -776,7 +776,7 @@ NameError: name 'Height' is not defined
               <p>Let's create and run a Python program:</p>
               <tabs>
                 <tab header="Using Repl.it (no need to save as a file)">
-                  <p>Press the ▶️ button to run the code <span class="dimmed"> (don't worry about the meaning of the code)</span>. You can edit the code and run again!</p><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true"
+                  <p>Press the 💻 button to run the code <span class="dimmed"> (don't worry about the meaning of the code)</span>. You can edit the code and run again!</p><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true"
                     scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                   <p></p>
                 </tab>
@@ -880,7 +880,7 @@ print(<span class="hljs-string">'Current price is $'</span> + price) <span class
 discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span>
 print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span>
 </code></pre>
-              <panel type="seamless" header="%%:arrow_forward: Try above code online%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+              <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
               <panel
                 type="seamless" header="%%:tv: Explanation of a similar Python program%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
           </div>
@@ -930,11 +930,11 @@ NameError: name 'true' is not defined
                 </tr>
                 <tr>
                   <td><code>&lt; =</code></td>
-                  <td>Less than or equal to (no space between the two symbols)</td>
+                  <td>Less than or equal to <mark>(no space between the two symbols)</mark></td>
                 </tr>
                 <tr>
                   <td><code>&gt; =</code></td>
-                  <td>Greater than or equal to (no space between the two symbols)</td>
+                  <td>Greater than or equal to <mark>(no space between the two symbols)</mark></td>
                 </tr>
               </tbody>
             </table>
@@ -1027,10 +1027,12 @@ result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</spa
 print(price)
 <span class="hljs-keyword">if</span> price &gt; <span class="hljs-number">50</span>:
     print(<span class="hljs-string">'Expensive'</span>)
+
 weight = <span class="hljs-number">45</span>
 print(weight)
-<span class="hljs-keyword">if</span> price &gt; <span class="hljs-number">100</span>:
+<span class="hljs-keyword">if</span> weight &gt; <span class="hljs-number">100</span>:
     print(<span class="hljs-string">'Heavy'</span>)
+    
 print(<span class="hljs-string">'Done'</span>)
 </code></pre>
             <p>Output ⤵️
@@ -1042,7 +1044,7 @@ Expensive
 Done
 </code></pre>
             <modal large="" title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
-              <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20price%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+              <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
             <p>Note how the code to execute if the condition is true is indented (usually by 4 spaces). <strong>Python uses indentation to indicate code <em>blocks</em></strong> (aka <em>clauses</em>) <span class="dimmed"> i.e., a sequence of statements that belong together</span>.
               In the example below, lines 2-4 are in the same block because they are all indented by one level; if the condition is true, all three are executed; if the condition is false, all three are omitted. Line 5 goes back to the previous indentation
               level, indicating the end of the code block.</p>
@@ -1119,7 +1121,7 @@ Age is 13
     <p></p>
     <panel type="danger" header=":dart: Evidence of achieving the LO" no-close="" expanded="">
       <div>
-        <p><strong>Exercise : Grade Analyzer</strong></p>
+        <h4 id="exercise-grade-analyzer">Exercise : Grade Analyzer</h4>
         <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
         <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>

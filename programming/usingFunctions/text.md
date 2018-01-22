@@ -81,7 +81,7 @@ discounted_price = float(price)*0.5 # convert to float type first
 print('Price after 50% discount is $' + str(discounted_price)) # convert back to string
 ```
 
-<panel type="seamless" header="%%:arrow_forward: Try above code online%%">
+<panel type="seamless" header="%%:computer: Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
