@@ -1,4 +1,4 @@
-**Exercise : Circle Circumference**
+#### Exercise : Circle Circumference
 
 1. Declare variables to represent the radius of a circle, and assign it value `7`.
 1. Declare a variable to represent PI and assign it `3.14`
