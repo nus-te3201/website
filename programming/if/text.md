@@ -132,3 +132,6 @@ Note that in an `if-elif-else` construct no more than one block (the first one w
 <panel header=":muscle: Exercise: Grade Analyzer" expanded>
   <include src="e-grades.md" />
 </panel>
+<panel header=":muscle: Exercise: Grade Analyzer (extended)" expanded>
+  <include src="e-gradeAnalyzerExtended.md" />
+</panel>
