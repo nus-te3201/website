@@ -39,7 +39,8 @@
 <panel header=" Evidence of achieving the LO" no-close>
 
 **Exercise from `W2.2e`:**<br>
-  <include src="../../programming/if/e-grades.md" />
+  <include src="../../programming/if/e-grades.md" /><p/>
+  <include src="../../programming/if/e-gradeAnalyzerExtended.md" />
 </panel>
   
 </panel>
