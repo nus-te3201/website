@@ -30,6 +30,7 @@
 * [**Profram Flow Control**](#program-flow-control)
   * [Booleans](#booleans)
   * [Flow Control Using `if`](#flow-control-using-if)
+  * [Flow Control Using `while`](#flow-control-using-while)
 * More topics to be added ...
 
 
@@ -52,5 +53,6 @@
 
 <include src="booleans/text.md" /><hr><hr>
 <include src="if/text.md" /><hr><hr>
+<include src="while/text.md" /><hr><hr>
 
 </div>
