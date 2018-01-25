@@ -31,6 +31,7 @@
   * [Booleans](#booleans)
   * [Flow Control Using `if`](#flow-control-using-if)
   * [Flow Control Using `while`](#flow-control-using-while)
+  * [Flow Control Using `for`](#flow-control-using-for)
 * More topics to be added ...
 
 
@@ -54,5 +55,6 @@
 <include src="booleans/text.md" /><hr><hr>
 <include src="if/text.md" /><hr><hr>
 <include src="while/text.md" /><hr><hr>
+<include src="for/text.md" /><hr><hr>
 
 </div>
