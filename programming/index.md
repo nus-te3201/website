@@ -29,9 +29,11 @@
   * [Using Functions](#using-functions)
 * [**Profram Flow Control**](#program-flow-control)
   * [Booleans](#booleans)
-  * [Flow Control Using `if`](#flow-control-using-if)
-  * [Flow Control Using `while`](#flow-control-using-while)
-  * [Flow Control Using `for`](#flow-control-using-for)
+  * [`if` Statements](#flow-control-using-if)
+  * [`while` Statements](#flow-control-using-while)
+  * [`for` Statements](#flow-control-using-for)
+  * [Importing Modules](#importing-modules)
+  * [Early Termination](#early-termination)
 * More topics to be added ...
 
 
@@ -56,5 +58,7 @@
 <include src="if/text.md" /><hr><hr>
 <include src="while/text.md" /><hr><hr>
 <include src="for/text.md" /><hr><hr>
+<include src="import/text.md" /><hr><hr>
+<include src="exit/text.md" /><hr><hr>
 
 </div>

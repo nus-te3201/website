@@ -1,4 +1,4 @@
-### Flow Control Using `while`
+### `while` Statements
 
 **Python uses the `while` statement to repeat a code block until a certain condition is true. Such an execution path is also known as a _loop_ and each execution of the code block is called an _iteration_.**
 

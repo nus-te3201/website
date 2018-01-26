@@ -1,4 +1,4 @@
-### Flow Control Using `for`
+### `for` Statements
 
 You can **use a `for` statement, together with the `range()` function, to repeat a code block a pre-determined number of times.** 
 
