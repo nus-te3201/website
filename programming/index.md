@@ -38,6 +38,8 @@
   * [Writing Functions](#writing-functions)
   * [Function Arguments](#function-arguments)
   * [Return Value](#return-value)
+* [**Lists**](#lists)
+  * [The List Data Structure](#the-list-data-structure)
 * More topics to be added ...
 
 
@@ -66,8 +68,13 @@
 <include src="exit/text.md" /><hr><hr>
 
 # Functions
+
 <include src="functions-def/text.md" /><hr><hr>
 <include src="functions-arguments/text.md" /><hr><hr>
 <include src="functions-return/text.md" /><hr><hr>
+
+# Lists
+
+<include src="lists-intro/text.md" /><hr><hr>
 
 </div>

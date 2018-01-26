@@ -58,7 +58,6 @@
 
 # Week 4
 
-
 <include src="../book/design/introduction/what/outcomes.md" />
 <include src="../book/oopDesign/introduction/outcomes.md" />
 <include src="../book/oopDesign/objects/basic/outcomes.md" />
@@ -71,7 +70,8 @@
 
 
 * Can use scope
-* Can use methods
+* Can use methods: more list methods
+* More string methods
 * Can use modules
 * Can use other basic data structures
 
