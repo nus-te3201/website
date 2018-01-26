@@ -27,13 +27,17 @@
   * [Scripts (Programs)](#scripts-programs)
   * [Comments](#comments)
   * [Using Functions](#using-functions)
-* [**Profram Flow Control**](#program-flow-control)
+* [**Program Flow Control**](#program-flow-control)
   * [Booleans](#booleans)
   * [`if` Statements](#flow-control-using-if)
   * [`while` Statements](#flow-control-using-while)
   * [`for` Statements](#flow-control-using-for)
   * [Importing Modules](#importing-modules)
   * [Early Termination](#early-termination)
+* [**Functions**](#functions)
+  * [Writing Functions](#writing-functions)
+  * [Function Arguments](#function-arguments)
+  * [Return Value](#return-value)
 * More topics to be added ...
 
 
@@ -60,5 +64,10 @@
 <include src="for/text.md" /><hr><hr>
 <include src="import/text.md" /><hr><hr>
 <include src="exit/text.md" /><hr><hr>
+
+# Functions
+<include src="functions-def/text.md" /><hr><hr>
+<include src="functions-arguments/text.md" /><hr><hr>
+<include src="functions-return/text.md" /><hr><hr>
 
 </div>
