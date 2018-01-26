@@ -12,6 +12,10 @@
   <include src="week2/index.md"/>
 </panel><p/>
 
+<panel header=":exclamation: Week 3 [Jan 29]" expanded no-close>
+  <include src="week3/index.md"/>
+</panel><p/>
+
 %%:construction: Remaining weeks will be added incrementally over the semester.%%
 
 </div>
