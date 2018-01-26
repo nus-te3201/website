@@ -13,6 +13,14 @@
 
 # Week 2
 
+<include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
+
+* scripts
+* can use built-in functions: print() len() str() int()
+* Can use conditionals
+
+# Week 3
+
 <include src="../book/requirements/introduction/outcomes.md" />
 <include src="../book/requirements/nonFunctionalRequirements/outcomes.md" />
 <include src="../book/requirements/prioritizing/outcomes.md" />
@@ -29,26 +37,16 @@
 <include src="../book/specifyingRequirements/userStories/introduction/outcomes.md" />
 <include src="../book/specifyingRequirements/userStories/details/outcomes.md" />
 <include src="../book/specifyingRequirements/userStories/usage/outcomes.md" />
-
-* scripts
-* print() len() str() int()
-* Can use functions
-* Can use conditionals
-
-# Week 3
-
 <include src="../book/specifyingRequirements/useCases/introduction/outcomes.md" />
 <include src="../book/specifyingRequirements/useCases/identifying/outcomes.md" />
 <include src="../book/specifyingRequirements/useCases/details/outcomes.md" />
 <include src="../book/specifyingRequirements/useCases/usage/outcomes.md" />
 <include src="../book/specifyingRequirements/glossary/what/outcomes.md" />
 <include src="../book/specifyingRequirements/supplementaryRequirements/what/outcomes.md" />
-<include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
 
-
-* Can use repetitions
+* Can use repetitions: while, for, break, continue
+* Can write functions: def, return
 * Can use lists
-* Can use other basic data structures
 
 # Week 4
 
@@ -63,8 +61,11 @@
 <include src="../book/uml/classDiagrams/introduction/what/outcomes.md" />
 <include src="../book/uml/classDiagrams/classes/what/outcomes.md" />
 
+* Can import modules
+* Can use scope
 * Can use methods
 * Can use packages
+* Can use other basic data structures
 
 # Week 5
 
