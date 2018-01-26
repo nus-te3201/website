@@ -14,6 +14,12 @@
 # Week 2
 
 <include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
+<include src="../book/uml/activityDiagrams/introduction/what/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/linearPaths/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/alternatePaths/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/parallelPaths/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/rakes/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/swimlanes/outcomes.md" />
 
 * scripts
 * can use built-in functions: print() len() str() int()
@@ -45,7 +51,9 @@
 <include src="../book/specifyingRequirements/supplementaryRequirements/what/outcomes.md" />
 
 * Can use repetitions: while, for, break, continue
-* Can write functions: def, return
+* Can import modules
+* Can terminate early: sys.exit()
+* Can write functions: def, arguments, return
 * Can use lists
 
 # Week 4
@@ -61,10 +69,10 @@
 <include src="../book/uml/classDiagrams/introduction/what/outcomes.md" />
 <include src="../book/uml/classDiagrams/classes/what/outcomes.md" />
 
-* Can import modules
+
 * Can use scope
 * Can use methods
-* Can use packages
+* Can use modules
 * Can use other basic data structures
 
 # Week 5
@@ -206,12 +214,7 @@
 <include src="../book/modeling/modelingStructures/objectOrientedDomainModels/outcomes.md" />
 
 <include src="../book/modeling/modelingBehaviors/useCaseDiagrams/outcomes.md" />
-<include src="../book/uml/activityDiagrams/introduction/what/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/linearPaths/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/alternatePaths/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/parallelPaths/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/rakes/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/swimlanes/outcomes.md" />
+
 
 <include src="../book/reuse/cloudComputing/what/outcomes.md" />
 <include src="../book/reuse/cloudComputing/services/outcomes.md" />
