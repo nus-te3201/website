@@ -21,6 +21,8 @@
 
 <hr>
 
+<div id="handout-requirements">
+
 # SECTION: REQUIREMENTS
 
 # Requirements
@@ -71,6 +73,8 @@
 ## Supplementary Requirements
 
 <include src="../book/specifyingRequirements/supplementaryRequirements/what/print.md" />
+
+</div>
 
 <hr>
 
