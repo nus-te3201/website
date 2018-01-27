@@ -51,7 +51,7 @@ Done
 
 </tip-box>
 
-<tip-box> 
+<tip-box>
 
 **:exclamation: Infinite Loops**: Sometimes programming mistakes can result in _infinite loops_ %%&nbsp;i.e., loops that never terminate.%% In the example below, the condition `counter < 3` always evaluates to `True` (because the statement to increment `counter` has been left out by mistake)
 
@@ -64,6 +64,13 @@ while counter < 3:
 :bulb: When using IDLE, if a bug in your code caused it to go into an infinite loop,  you can use `Ctrl + C` to force it to stop executing.
 
 </tip-box>
+
+<panel header=":muscle: Exercise: Vending Machine - Add Loop" expanded no-close>
+  <include src="e-vending-oneCoin.md" />
+</panel>
+<panel header=":muscle: Exercise: Vending Machine - Accept Multiple Coins" expanded no-close>
+  <include src="e-vending-multipleCoins.md" />
+</panel><p/>  
 
 **You can use a `break` statement to break out of a loop.**
 
@@ -88,6 +95,10 @@ print('Password correct. You may proceed.')
 </panel><p/>
 
 </tip-box>
+
+<panel header=":muscle: Exercise: Vending Machine - Allow Abort" expanded no-close>
+  <include src="e-vending-allowAbort.md" />
+</panel><p/> 
 
 **You can use a `continue` statement to skip the remainder of the current iteration** and go back to the `while` condition.
 
@@ -115,3 +126,7 @@ print('Accepted words: ' + accepted_words)
 </panel><p/>
 
 </tip-box>
+
+<panel header=":muscle: Exercise: Vending Machine - Legit Coins" expanded no-close>
+  <include src="e-vending-legitCoins.md" />
+</panel><p/>
