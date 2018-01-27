@@ -67,7 +67,9 @@ ABC 3 4.50
 
 </tip-box>
 
-
+<panel header=":muscle: Exercise: Multiplication Table" expanded no-close>
+  <include src="e-multiplicationTable.md" />
+</panel><p/>
 
 **You can use `break` and `continue` in `for` loops as well**, with similar effects as in `while` loops.
 
