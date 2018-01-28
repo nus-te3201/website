@@ -13,7 +13,52 @@ print('You have entered:', coin_value)
 print('Here is the product')
 print('Your balance:', coin_value - price)
 ```
-:bulb: When you give a string argument to the `input` function e.g., `input('Enter a coin:')`, it shows the string to the user and reads the input from the user.
+:bulb: Note how the above code uses `input` function with a string argument e.g., `input('Enter a coin:')` to show the string to the user and read the input from the user at the same time.
+
+<table>
+<tr>
+  <td>
+  
+```python
+name = input('Input a name:')
+
+```
+  </td>
+  <td>&nbsp;is same as&nbsp;</td>
+  <td>
+  
+```python
+print('Input a name:')
+name = input()
+```
+  </td>
+</tr>
+</table>
+
+:bulb: Also note how the above code uses `print()` with two parameters, one an integer and one a string. The `print()` method can take multiple parameters and the parameters can be of different types. Note that the ==output will have a space between each parameter==. 
+
+<table>
+<tr>
+  <td>
+  
+```python
+print('ABC', 3, 4.50)
+print('ABC' + str(3) + str(4.50))
+print('ABC' + ' ' + str(3) + ' ' + str(4.50))
+```
+  </td>
+  <td>&nbsp;→&nbsp;</td>
+  <td>
+  
+```
+
+ABC 3 4.50
+ABC34.50
+ABC 3 4.50
+```
+  </td>
+</tr>
+</table>
 
 Example output from the code:
 ```python

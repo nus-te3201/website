@@ -39,32 +39,6 @@ for i in range(3):
 
 </panel><p/>
 
-:bulb: Note how the above example uses `print()` with two parameters, one an integer and one a string. The `print()` method can take multiple parameters and the parameters can be of different types. Note that the ==output will have a space between each parameter==. 
-
-<table>
-<tr>
-  <td>
-  
-```python
-print('ABC', 3, 4.50)
-print('ABC' + str(3) + str(4.50))
-print('ABC' + ' ' + str(3) + ' ' + str(4.50))
-```
-  </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
-  
-```
-
-ABC 3 4.50
-ABC34.50
-ABC 3 4.50
-```
-  </td>
-</tr>
-</table>
-
-
 </tip-box>
 
 <panel type="danger" header=":muscle: Exercise: Multiplication Table" expanded no-close>
