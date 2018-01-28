@@ -93,3 +93,7 @@ print(v1)
 ```
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Grader `print_score` function" expanded no-close>
+  <include src="e-grader-printScoreFunction.md" />
+</panel><p/>

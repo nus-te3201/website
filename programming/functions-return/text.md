@@ -64,3 +64,10 @@ print_all_products(0,2,3)
 </panel><p/>
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Grader - `calculate_grade` function" expanded no-close>
+  <include src="e-grader-calculateGradeFunction.md" />
+</panel><p/>
+<panel type="danger" header=":muscle: Exercise: Grader - Analyze Grades in a Loop" expanded no-close>
+  <include src="e-grader-analyzeInLoop.md" />
+</panel><p/>
