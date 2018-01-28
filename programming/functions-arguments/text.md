@@ -1,6 +1,6 @@
 ### Function Arguments
 
-**You can configure a function to take arguments**. The arguments can be used by the code inside the function. That means we can use arguments to affect the behavior of a function so that the function behaves differently each time the function is executed. 
+**You can configure a function to take arguments**. The arguments can be used by the code inside the function. That means we can use arguments to affect the behavior of a function so that the function behaves differently each time it is executed. 
 
 Format:
 ```

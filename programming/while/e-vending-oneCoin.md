@@ -21,15 +21,30 @@ print('Your balance:', coin_value - price)
   
 ```python
 name = input('Input a name:')
-
 ```
   </td>
-  <td>&nbsp;is same as&nbsp;</td>
+  <td>&nbsp;→&nbsp;</td>
+  <td>
+  
+```python
+Input a name: John
+```
+  </td>
+</tr>
+<tr>
   <td>
   
 ```python
 print('Input a name:')
 name = input()
+```
+  </td>
+  <td>&nbsp;→&nbsp;</td>
+  <td>
+  
+```python
+Input a name:
+John
 ```
   </td>
 </tr>

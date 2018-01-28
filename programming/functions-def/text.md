@@ -79,7 +79,6 @@ def say_hello():
 print('Going to say hello ...')
 
 say_hello()
-
 ```
   </td>
   <td>&nbsp;→&nbsp;</td>
@@ -88,17 +87,20 @@ say_hello()
 :-1: this doesn't work
 ```python
 print('starting ...')
+print('Going to say hello ...')
 
 # call appears before definition
 say_hello() 
 
 def say_hello():
   print('Hello!')
-
-print('Going to say hello ...')
 ```
   </td>
 </tr>
 </table>
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Hip Hip Hooray!" expanded no-close>
+  <include src="e-hooray.md" />
+</panel><p/>
