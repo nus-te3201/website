@@ -65,10 +65,10 @@ while counter < 3:
 
 </tip-box>
 
-<panel header=":muscle: Exercise: Vending Machine - Add Loop" expanded no-close>
+<panel type="danger" type="danger" header=":muscle: Exercise: Vending Machine - Add Loop" expanded no-close>
   <include src="e-vending-oneCoin.md" />
 </panel>
-<panel header=":muscle: Exercise: Vending Machine - Accept Multiple Coins" expanded no-close>
+<panel type="danger" header=":muscle: Exercise: Vending Machine - Accept Multiple Coins" expanded no-close>
   <include src="e-vending-multipleCoins.md" />
 </panel><p/>  
 
@@ -96,7 +96,7 @@ print('Password correct. You may proceed.')
 
 </tip-box>
 
-<panel header=":muscle: Exercise: Vending Machine - Allow Abort" expanded no-close>
+<panel type="danger" header=":muscle: Exercise: Vending Machine - Allow Abort" expanded no-close>
   <include src="e-vending-allowAbort.md" />
 </panel><p/> 
 
@@ -127,6 +127,6 @@ print('Accepted words: ' + accepted_words)
 
 </tip-box>
 
-<panel header=":muscle: Exercise: Vending Machine - Legit Coins" expanded no-close>
+<panel type="danger" header=":muscle: Exercise: Vending Machine - Legit Coins" expanded no-close>
   <include src="e-vending-legitCoins.md" />
 </panel><p/>

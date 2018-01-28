@@ -49,7 +49,7 @@ if name == 'Blue':          # line 1
 print('Done')               # line 5
 ```
 
-<panel header=":muscle: Exercise: Even Numbers" expanded>
+<panel type="danger" header=":muscle: Exercise: Even Numbers" expanded>
   <include src="e-even.md" />
 </panel><p/>
 
@@ -131,9 +131,9 @@ Note that in an `if-elif-else` construct no more than one block (the first one w
 
 </panel><p/>
 
-<panel header=":muscle: Exercise: Grade Analyzer" expanded>
+<panel type="danger" header=":muscle: Exercise: Grade Analyzer" expanded>
   <include src="e-grades.md" />
 </panel>
-<panel header=":muscle: Exercise: Grade Analyzer (extended)" expanded>
+<panel type="danger" header=":muscle: Exercise: Grade Analyzer (extended)" expanded>
   <include src="e-gradeAnalyzerExtended.md" />
 </panel>

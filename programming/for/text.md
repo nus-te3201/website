@@ -67,7 +67,7 @@ ABC 3 4.50
 
 </tip-box>
 
-<panel header=":muscle: Exercise: Multiplication Table" expanded no-close>
+<panel type="danger" header=":muscle: Exercise: Multiplication Table" expanded no-close>
   <include src="e-multiplicationTable.md" />
 </panel><p/>
 
