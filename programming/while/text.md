@@ -51,6 +51,11 @@ Done
 
 </tip-box>
 
+<panel type="seamless" header="%%:tv: Basic `while` loops%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=8&end=107&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel><p/>
+
 <tip-box>
 
 **:exclamation: Infinite Loops**: Sometimes programming mistakes can result in _infinite loops_ %%&nbsp;i.e., loops that never terminate.%% In the example below, the condition `counter < 3` always evaluates to `True` (because the statement to increment `counter` has been left out by mistake)
@@ -62,6 +67,11 @@ while counter < 3:
 ```
 
 :bulb: When using IDLE, if a bug in your code caused it to go into an infinite loop,  you can use `Ctrl + C` to force it to stop executing.
+
+<panel type="seamless" header="%%:tv: Infinite loops%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel>
 
 </tip-box>
 
@@ -96,6 +106,11 @@ print('Password correct. You may proceed.')
 
 </tip-box>
 
+<panel type="seamless" header="%%:tv: `break` inside `while` loops%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel>
+
 <panel type="danger" header=":muscle: Exercise: Vending Machine - Allow Abort" expanded no-close>
   <include src="e-vending-allowAbort.md" />
 </panel><p/> 
@@ -126,6 +141,11 @@ print('Accepted words: ' + accepted_words)
 </panel><p/>
 
 </tip-box>
+
+<panel type="seamless" header="%%:tv: `continue` inside `while` loops%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=449&end=545&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel><p/>
 
 <panel type="danger" header=":muscle: Exercise: Vending Machine - Legit Coins" expanded no-close>
   <include src="e-vending-legitCoins.md" />

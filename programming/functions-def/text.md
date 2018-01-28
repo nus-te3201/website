@@ -101,6 +101,11 @@ def say_hello():
 
 </tip-box>
 
+<panel type="seamless" header="%%:tv: Defining your own functions%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=13&end=199&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel><p/>
+
 <panel type="danger" header=":muscle: Exercise: Hip Hip Hooray!" expanded no-close>
   <include src="e-hooray.md" />
 </panel><p/>

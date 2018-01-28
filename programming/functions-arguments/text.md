@@ -1,16 +1,18 @@
 ### Function Arguments
 
-**You can configure a function to take arguments**. The arguments can be used by the code inside the function. That means we can use arguments to affect the behavior of a function so that the function behaves differently each time it is executed. 
+**You can configure a function to have _parameters_**. The parameters can be used by the code inside the function like a variable. That means we can pass arguments (i.e., values for those parameters) to affect the behavior of a function so that the function behaves differently each time it is executed. 
 
 Format:
 ```
-def function_name(argument1_name, argument2_name, ...):
+def function_name(parameter1_name, parameter2_name, ...):
     ...
 ```
 
+A note about terminology: a function can have _parameters_ and when we call the function we can assign _arguments_ (i.e. values) to each of those parameters.
+
 <tip-box> 
 
-:package: The `say_hello` function below takes one argument.
+:package: The `say_hello` function below takes one parameter. The first time we call it we pass the argument `Gina` to that parameter, and the next time we pass a different argument `John` to the same parameter.
 
 <table>
 <tr>
@@ -47,7 +49,7 @@ How are you John ?
 
 </panel><p/>
 
-:package: The code below has one function that takes one argument and one that takes two. Furthermore, note how one function calls the other.
+:package: The code below has one function that takes one parameter and one that takes two. Furthermore, note how one function calls the other.
 
 ```python
 def say_hello(name):
@@ -79,7 +81,7 @@ say_hello('Sheldon')
 
 <tip-box> 
 
-:package: The code below produces an error because argument `v1` is not available after the function has returned.
+:package: The code below produces an error because variable `v1` is not available after the function has returned.
 
 ```python
 def print_uniqueness(v1, v2, v3):
@@ -93,6 +95,11 @@ print(v1)
 ```
 
 </tip-box>
+
+<panel type="seamless" header="%%:tv: Function parameters%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=199&end=315&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel><p/>
 
 <panel type="danger" header=":muscle: Exercise: Grader `print_score` function" expanded no-close>
   <include src="e-grader-printScoreFunction.md" />

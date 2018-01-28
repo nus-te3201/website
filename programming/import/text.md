@@ -47,6 +47,11 @@ for i in range(5):
 
 :bulb: It is common practice to put the `import` statements at the top of the program code.
 
+<panel type="seamless" header="%%:tv: Importing modules%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=7&end=116&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel><p/>
+
 <panel type="danger" header=":muscle: Exercise: Circle Area" expanded no-close>
   <include src="e-circleArea.md" />
 </panel><p/>

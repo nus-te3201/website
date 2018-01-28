@@ -41,6 +41,11 @@ for i in range(3):
 
 </tip-box>
 
+<panel type="seamless" header="%%:tv: Basic `for` statements%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HFQGxh1jY3g?rel=0&showinfo=0&start=8&end=372&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel><p/>
+
 <panel type="danger" header=":muscle: Exercise: Multiplication Table" expanded no-close>
   <include src="e-multiplicationTable.md" />
 </panel><p/>
@@ -105,7 +110,7 @@ for i in range(2, 5):
 
 <panel type="seamless" header="%%:computer: Try your own%%">
 
-<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/for-manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 </panel><p/>
 

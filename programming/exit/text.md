@@ -27,5 +27,10 @@ for i in range(n):
 </panel><p/>
 
 </tip-box>
+
+<panel type="seamless" header="%%:tv: Early termination%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=155&end=223&version=3" frameborder="0" allowfullscreen></iframe>
+
+</panel>
  
 
