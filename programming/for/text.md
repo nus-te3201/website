@@ -84,3 +84,33 @@ print('Grand total of non-negative numbers:', str(total))
 </panel><p/>
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Multiplication Table (Extended)" expanded no-close>
+  <include src="e-multiplicationTableExtended.md" />
+</panel><p/>
+
+**Loops can be nested.**
+
+<tip-box> 
+
+:package: The code below use two nested `for` loops to print multiplication tables for 2, 3, and 4.
+
+
+```python
+for i in range(2, 5):
+  print('Multiplication table for', i)
+  for j in range(1, 11):
+    print(i, 'x', j, '=', i*j)
+```
+
+<panel type="seamless" header="%%:computer: Try your own%%">
+
+<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+</panel><p/>
+
+</tip-box>
+
+<panel type="danger" header=":muscle: Exercise: All Combinations" expanded no-close>
+  <include src="e-threeDiceThrows.md" />
+</panel><p/>
