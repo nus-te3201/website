@@ -1,4 +1,4 @@
-### Function Arguments
+### Function Parameters
 
 **You can configure a function to have _parameters_**. The parameters can be used by the code inside the function like a variable. That means we can pass arguments (i.e., values for those parameters) to affect the behavior of a function so that the function behaves differently each time it is executed. 
 
@@ -36,9 +36,14 @@ How are you Gina ?
 Hello John
 How are you John ?
 
-
-
 ```
+<trigger trigger="click" for="modal:sayHelloFunctionWithName-pyTutor">%%[Visualize execution]%%</trigger> 
+
+<modal large title="Calling functions with arguments" id="modal:sayHelloFunctionWithName-pyTutor">
+
+<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28name%29%3A%0A%20%20print%28'Hello%20'%20%2B%20name%29%0A%20%20print%28'How%20are%20you',%20name,%20'%3F'%29%0A%20%20%0Asay_hello%28'Gina'%29%0Asay_hello%28'John'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</modal>
   </td>
 </tr>
 </table>

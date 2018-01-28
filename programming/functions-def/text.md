@@ -44,9 +44,14 @@ Hello!
 How are you?
 Nice to meet you.
 
-
-
 ```
+<trigger trigger="click" for="modal:sayHelloFunction-pyTutor">%%[Visualize execution]%%</trigger> 
+
+<modal large title="Calling functions" id="modal:sayHelloFunction-pyTutor">
+
+<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28%29%3A%0A%20%20print%28'Hello!'%29%0A%20%20print%28'How%20are%20you%3F'%29%0A%20%20print%28'Nice%20to%20meet%20you.'%29%0A%20%20%0A%23%20call%20the%20function%20twice%0Aprint%28'Going%20to%20call%20the%20function%20...'%29%0Asay_hello%28%29%0Aprint%28'Going%20to%20repeat%20...'%29%0Asay_hello%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</modal>
   </td>
 </tr>
 </table>

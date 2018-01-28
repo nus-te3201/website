@@ -36,7 +36,7 @@
   * [Early Termination](#early-termination)
 * [**Functions**](#functions)
   * [Writing Functions](#writing-functions)
-  * [Function Arguments](#function-arguments)
+  * [Function Parameters](#function-parameters)
   * [Return Value](#return-value)
 * [**Lists**](#lists)
   * [The List Data Structure](#the-list-data-structure)
@@ -70,7 +70,7 @@
 # Functions
 
 <include src="functions-def/text.md" /><hr><hr>
-<include src="functions-arguments/text.md" /><hr><hr>
+<include src="functions-parameters/text.md" /><hr><hr>
 <include src="functions-return/text.md" /><hr><hr>
 
 # Lists

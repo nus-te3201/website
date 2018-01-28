@@ -157,8 +157,8 @@
   <panel type="warning" header="`W3.6a` Can define a simple function" no-close>
     <include src="../../programming/functions-def/text.md" />
   </panel>
-  <panel type="warning" header="`W3.6b` Can write a function that takes arguments" no-close>
-    <include src="../../programming/functions-arguments/text.md" />
+  <panel type="warning" header="`W3.6b` Can write a function that has parameters" no-close>
+    <include src="../../programming/functions-parameters/text.md" />
   </panel>
   <panel type="warning" header="`W3.6c` Can write a function that returns a value" no-close>
     <include src="../../programming/functions-return/text.md" />
