@@ -44,36 +44,10 @@
 * More topics to be added ...
 
 
-# Expressions, Data Types, Variables
-
-<include src="programs/text.md" /><hr><hr>
-<include src="environment/text.md" /><hr><hr>
-<include src="shell/text.md" /><hr><hr>
-<include src="operators/text.md" /><hr><hr>
-<include src="types/text.md" /><hr><hr>
-<include src="variables/text.md" /><hr><hr>
-
-# Python Programs
-
-<include src="scripts/text.md" /><hr><hr>
-<include src="comments/text.md" /><hr><hr>
-<include src="usingFunctions/text.md" /><hr><hr>
-
-# Program Flow Control
-
-<include src="booleans/text.md" /><hr><hr>
-<include src="if/text.md" /><hr><hr>
-<include src="while/text.md" /><hr><hr>
-<include src="for/text.md" /><hr><hr>
-<include src="import/text.md" /><hr><hr>
-<include src="exit/text.md" /><hr><hr>
-
-# Functions
-
-<include src="functions-def/text.md" /><hr><hr>
-<include src="functions-parameters/text.md" /><hr><hr>
-<include src="functions-return/text.md" /><hr><hr>
-<include src="functions-scope/text.md" /><hr><hr>
+<include src="toc/expressions-types-variables.md#main" />
+<include src="toc/programs.md#main" />
+<include src="toc/flowcontrol.md#main" />
+<include src="toc/functions.md#main" />
 
 # Lists
 

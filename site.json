@@ -22,6 +22,22 @@
       "title": "TE3201 Programming Basics"
     },
     {
+      "src": "programming/toc/expressions-types-variables.md",
+      "title": "TE3201 Programming Basics: Expressions, Types, Variables"
+    },
+    {
+      "src": "programming/toc/programs.md",
+      "title": "TE3201 Programming Basics: Programs"
+    },
+    {
+      "src": "programming/toc/flowcontrol.md",
+      "title": "TE3201 Programming Basics: Flow Control"
+    },
+    {
+      "src": "programming/toc/functions.md",
+      "title": "TE3201 Programming Basics: Functions"
+    },
+    {
       "src": "common/outcomes.md",
       "title": "TE3201 Learning Outcomes"
     },
