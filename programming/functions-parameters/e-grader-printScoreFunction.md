@@ -4,21 +4,21 @@ The code below prints the grade based on exam and project score, somewhat simila
 ```python
 project_score = int(input('Enter project score:'))
 exam_score = int(input('Enter exam score:'))
-total = project_score + exam_score
-print('Total:', total)
+total_score = project_score + exam_score
+print('Total:', total_score)
 
-if total >= 60 and project_score >= 25 and exam_score >= 25:
+if total_score >= 60 and project_score >= 25 and exam_score >= 25:
     grade = 'A'
-elif (total >= 50) and (project_score >= 25 or exam_score >= 25):
+elif (total_score >= 50) and (project_score >= 25 or exam_score >= 25):
     grade = 'B'
-elif total >= 40:
+elif total_score >= 40:
     grade = 'C'
 else:
     grade = 'D'
 
 print('Project :', '=' * (project_score//5))
 print('Exam    :', '=' * (exam_score//5))
-print('Total   :', '=' * (total//5))
+print('Total   :', '=' * (total_score//5))
 print('Grade   :', grade)
 ```
 Add a `print_score` function to the code and replace the following three lines,
@@ -26,7 +26,7 @@ Add a `print_score` function to the code and replace the following three lines,
 ```python
 print('Project :', '=' * (project_score//5))
 print('Exam    :', '=' * (exam_score//5))
-print('Total   :', '=' * (total//5))
+print('Total   :', '=' * (total_score//5))
 ```
 
 with these three lines
@@ -34,7 +34,7 @@ with these three lines
 ```python
 print_score('Project :', project_score)
 print_score('Exam    :', exam_score)
-print_score('Total   :', total)
+print_score('Total   :', total_score)
 ```
 without changing the external behavior of the program.
 

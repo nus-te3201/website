@@ -1,5 +1,3 @@
-### Todo
-
 ### Learning Outcomes
 
 #### Requirements
@@ -163,7 +161,16 @@
   <panel type="warning" header="`W3.6c` Can write a function that returns a value" no-close>
     <include src="../../programming/functions-return/text.md" />
   </panel>
+  <panel type="warning" header="`W3.6d` Can use global and local scope" no-close>
+    <include src="../../programming/functions-scope/text.md" />
+  </panel>
   
-</panel>
+</panel><br><br>
 
-### Lecture
+:dart: At the end of this week you should be able to do something similar to the exercise given below (in your programming language/environment of choice):
+
+<panel header=" Evidence of achieving the LO" no-close>
+
+**Exercise from `W3.6d`:**<br>
+  <include src="../../programming/functions-scope/e-grader-analyzeInLoop.md" /><p/>
+</panel>
