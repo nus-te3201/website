@@ -4,17 +4,12 @@
 
 <div class="website-content">
 
-<panel header=":white_check_mark: Week 1 [Jan 15]" no-close>
-  <include src="week1/index.md"/>
-</panel><p/>
-
-<panel header=":exclamation: Week 2 [Jan 22]" expanded no-close>
-  <include src="week2/index.md"/>
-</panel><p/>
+<dynamic-panel src="week1/index.md" header=":white_check_mark: Week 1 [Jan 15]" no-close />
+<dynamic-panel src="week2/index.md" header=":white_check_mark: Week 2 [Jan 22]" no-close />
 
 <panel header=":exclamation: Week 3 [Jan 29]" expanded no-close>
   <include src="week3/index.md"/>
-</panel><p/>
+</panel>
 
 %%:construction: Remaining weeks will be added incrementally over the semester.%%
 
