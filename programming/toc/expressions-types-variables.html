@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Programming Basics: Expressions, Types, Variables</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website/programming/css/programming.css">
+<div class="website-content">
+  <div id="main">
+    <h1 id="expressions-data-types-variables">Expressions, Data Types, Variables</h1>
+    <div>
+      <h3 id="computer-programs">Computer Programs</h3>
+      <p><strong>A <em>computer program</em> is a collection of instructions that a computer can follow to perform a specific task.</strong> A <em>software</em> is a collection of programs wrapped up as a product that can be used <span class="dimmed"> e.g. Microsoft Office</span>.
+        A software <em>application</em> is a software that is meant to be used by an end user, <span class="dimmed"> as opposed to software used by other software (e.g. the software that drives a hard disk)</span>. <em>Programming</em> is the task of
+        writing programs. <em>Software Engineering</em> is the task of creating software.</p>
+      <p>Points to note:</p>
+      <ul>
+        <li>A computer can simply follow instructions exactly. It cannot think for itself although there are software that can simulate thinking-like behavior (in which case it is the software that is doing the 'thinking', not the computer).</li>
+      </ul>
+      <panel type="seamless" header="%%:tv: What is programming (a 2-minute intro from Khan Academy):%%">
+        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/FCMxA3m_Imc" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+      </panel>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="setting-up-the-programming-environment">Setting up the Programming Environment</h3>
+      <p><strong>Programming requires certain specialized tools</strong> most of which are specific to the programming language being used. While some of these tools may come pre-installed in your computer, often you need to install and configure them yourself.</p>
+      <tabs>
+        <tab header="Python">
+          <p><strong>Option 1. use an online python programming environment</strong></p>
+          <p>In the initial stages you can use an online programming environment to practice Python.</p>
+          <tip-box>
+            <p>📦 An example online Python programming tool you can use is <a href="https://repl.it/repls">repl.it</a>:</p>
+            <ol>
+              <li>Go to <a href="https://repl.it/repls">repl.it</a> and signup for a free account</li>
+              <li>Go to <a href="https://repl.it/languages/python3">https://repl.it/languages/python3</a> (or choose <em>Python 3</em> from the options in the web page) to enter the online Python environment</li>
+            </ol>
+          </tip-box>
+          <p><strong>Option 2. install python on your computer</strong></p>
+          <p>❗️ We recommend installing the latest Python <code>3.*</code> version (not the <code>2.*</code> version)</p>
+          <panel type="seamless" header=":tv: How to install Python on Windows">
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/dX2-V2BocqQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </panel>
+          <p></p>
+        </tab>
+        <tab header="Java">
+          <p>Programming in Java requires minimally the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html"><em>Java Development Kit (JDK)</em></a> to be installed in your computer. The JDK includes tools useful
+            for developing and testing programs written in the Java programming language and running on the Java platform.</p>
+          <p></p>
+        </tab>
+      </tabs>
+      <hr>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="working-with-an-interactive-shell">Working with an Interactive Shell</h3>
+      <p><strong>Some programming environments provide an <em><tooltip content="a tool which allows you to type commands in, and get back output for each command">interactive shell</tooltip></em>.</strong> In the python interactive shell you can type in
+        python <em>expressions</em> and get the shell to evaluate the expression.</p>
+      <pre class="hljs"><code>&gt;&gt;&gt; 2 + 3
+5
+&gt;&gt;&gt; 2 * 4 * 3
+24
+&gt;&gt;&gt;
+</code></pre>
+      <panel type="seamless" header="%%:tv: Python interactive shell in action:%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="operators">Operators</h3>
+      <p><strong>An expression normally contains <em>operators</em> that combine with values.</strong> Here are some common operators used in Python:</p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Operator</th>
+            <th>Operation</th>
+            <th>Example</th>
+            <th>Evaluates to...</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>+</code></td>
+            <td>Addition</td>
+            <td><code>2 + 2</code></td>
+            <td><code>4</code></td>
+          </tr>
+          <tr>
+            <td><code>-</code></td>
+            <td>Subtraction</td>
+            <td><code>5 - 2</code></td>
+            <td><code>3</code></td>
+          </tr>
+          <tr>
+            <td><code>*</code></td>
+            <td>Multiplication</td>
+            <td><code>3 * 5</code></td>
+            <td><code>15</code></td>
+          </tr>
+          <tr>
+            <td><code>/</code></td>
+            <td>Division</td>
+            <td><code>22 / 8</code></td>
+            <td><code>2.75</code></td>
+          </tr>
+          <tr>
+            <td><code>**</code></td>
+            <td>Exponent</td>
+            <td><code>2 ** 3</code></td>
+            <td><code>8</code></td>
+          </tr>
+          <tr>
+            <td><code>%</code></td>
+            <td>Modulus/remainder</td>
+            <td><code>22 % 8</code></td>
+            <td><code>6</code></td>
+          </tr>
+          <tr>
+            <td><code>//</code></td>
+            <td>Integer division</td>
+            <td><code>22 // 8</code></td>
+            <td><code>2</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>When there are multiple operators in an expression, normal operator precedence apply. You can force your own precedence using parentheses.</p>
+      <pre class="hljs"><code>&gt;&gt;&gt; 2 + 4 * 5
+22
+&gt;&gt;&gt; (2 + 4) * 5
+30
+</code></pre>
+      <panel type="seamless" header="%%:tv: Operators%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
+      <panel type="seamless" header="%%:computer: Try some expressions using an online interactive shell%%">
+        <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p><iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%"
+          height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="data-types">Data Types</h3>
+      <p><strong>A data value has a <em>type</em>.</strong> Here is a summary of three basic data types used in Python often:</p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Type name</th>
+            <th>Description</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>int</code></td>
+            <td>whole numbers (integers)</td>
+            <td><code>-23</code>, <code>-22</code>, <code>-1</code>, <code>0</code>, <code>1</code>, <code>65</code>, <code>66</code></td>
+          </tr>
+          <tr>
+            <td><code>float</code></td>
+            <td>numbers with decimal points (floating point numbers)</td>
+            <td><code>-34.576</code>, <code>436.0</code></td>
+          </tr>
+          <tr>
+            <td><code>str</code></td>
+            <td>sequence of characters (strings)</td>
+            <td><code>adam</code><code>What can it be?</code>, <code>x</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>String values are denoted by enclosing them in double quotes or single quotes.</p>
+      <pre class="hljs"><code>'Hello'
+&quot;What's going on?&quot;
+</code></pre>
+      <p>Some operators can be used on strings as well.</p>
+      <pre class="hljs"><code>&gt;&gt;&gt; 'hello'
+'hello'
+
+&gt;&gt;&gt; 'Hello' + ' ' + 'World!'
+'Hello World!'
+
+&gt;&gt;&gt; 'Bye' + ('!' * 10)
+'Bye!!!!!!!!!!'
+</code></pre>
+      <panel type="seamless" header="%%:tv: Data types%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="variables">Variables</h3>
+      <blockquote>
+        <p><strong>Variables are used to store information to be referenced and manipulated in a computer program.</strong> They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and
+          ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program. <sub>--<a href="https://launchschool.com/books/ruby/read/variables">https://launchschool.com/books/ruby/read/variables</a> (emphasis added)</sub></p>
+      </blockquote>
+      <p>The following statement <em><tooltip content="creates">declares</tooltip></em> a variable named <code>v</code> and <em>assigns</em> it a value <code>5</code> (the operator <code>=</code> is called the <em>assignment operator</em>):</p>
+      <pre><code class="hljs python">v = <span class="hljs-number">5</span>
+</code></pre>
+      <tip-box>
+        <p><strong>Statements</strong></p>
+        <p>Note that we called <code>v = 5</code> a <em>statement</em>. <strong>Unlike expressions that evaluates to a single value, a statement does not evaluates to a value.</strong> However, a statement can contain an expression e.g. <code>v = 5 + 8</code>.
+        </p>
+      </tip-box>
+      <p>If you enter the above statement in the interactive shell, it causes the shell to remember the variable name <code>v</code> and its value.</p>
+      <pre class="hljs"><code>&gt;&gt;&gt; v = 5
+&gt;&gt;&gt; 
+</code></pre>
+      <p>Now, you can ask the shell to recall the value by simply typing in the variable name as an expression.</p>
+      <pre class="hljs"><code>&gt;&gt;&gt; v
+5
+</code></pre>
+      <p>You can even use the variable in expressions.</p>
+      <pre class="hljs"><code>&gt;&gt;&gt; v * 4
+20
+</code></pre>
+      <tip-box>
+        <p>📦 Here are some examples of variables being declared, assigned, and being used:</p>
+        <pre class="hljs"><code>&gt;&gt;&gt; max_bag_count = 2
+&gt;&gt;&gt; max_bag_count
+2
+
+&gt;&gt;&gt; price = 10.0
+&gt;&gt;&gt; discount_percentage = 5
+&gt;&gt;&gt; discount = price * discount_percentage / 100
+&gt;&gt;&gt; price - discount
+9.5
+</code></pre>
+        <panel type="seamless" header="%%:computer: Try your own%%"><iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+      </tip-box>
+      <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
+      <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
+</code></pre>
+      <p><strong>Variable names are case sensitive.</strong> In the example below, you can see how Python prints an error message if you try to access the variable <code>height</code> using the name <code>Height</code></p>
+      <pre class="hljs"><code>&gt;&gt;&gt; height = 12.0
+
+&gt;&gt;&gt; height
+12.0
+
+&gt;&gt;&gt; Height
+Traceback (most recent call last):
+ File &quot;&lt; pyshell#5 &gt;&quot;, line 1, in &lt; module &gt;
+   Height
+NameError: name 'Height' is not defined
+</code></pre>
+      <p><strong>Variables can be overwritten</strong>. In the example below, <code>height</code> was initially <code>5</code> but the value is reassigned later to be <code>1</code> more than the previous value.</p>
+      <pre class="hljs"><code>&gt;&gt;&gt; height = 5
+&gt;&gt;&gt; height
+5
+
+&gt;&gt;&gt; height = height + 1
+&gt;&gt;&gt; height
+6
+</code></pre>
+      <p><strong>Value of one variable can be assigned to another variable.</strong></p>
+      <tip-box>
+        <p>📦 In the example below, the value of variable <code>height</code> is assigned to the variable <code>width</code>.</p>
+        <pre class="hljs"><code>&gt;&gt;&gt; height = 5
+&gt;&gt;&gt; width = height
+&gt;&gt;&gt; width
+5
+
+&gt;&gt;&gt; height + width
+10
+
+&gt;&gt;&gt; height = 10
+&gt;&gt;&gt; width
+5
+</code></pre>
+        <panel type="seamless" header="%%:computer: Try your own%%"><iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+      </tip-box>
+      <panel type="seamless" header="%%:tv: Variables%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+      <panel type="danger" header=":muscle: Exercise: Circle Circumference" expanded="">
+        <div>
+          <h4 id="exercise-circle-circumference">Exercise : Circle Circumference</h4>
+          <ol>
+            <li>Declare variables to represent the radius of a circle, and assign it value <code>7</code>.</li>
+            <li>Declare a variable to represent PI and assign it <code>3.14</code></li>
+            <li>Calculate and assign the circumference of the circle to a new variable.</li>
+            <li>Use the previous variables to output the text <code>If radius is R, the circumference is C</code> where <code>R</code> and <code>C</code> are the radius and the circumference respectively <span class="dimmed"> e.g. <code>If radius is 7, the circumference is 43.96</code></span>.</li>
+          </ol>
+        </div>
+      </panel>
+    </div>
+    <hr>
+    <hr>
+  </div>
+</div>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>
