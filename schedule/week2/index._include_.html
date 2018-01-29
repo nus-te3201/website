@@ -1,0 +1,572 @@
+<h3 id="todo">Todo</h3>
+<ul>
+  <li>If you miss lecture 1, go through the learning outcomes in week 1 and ensure you have achieved all of them. If you face any difficulties, you can post in IVLE forum or ask the prof at the beginning of week 2 lecture.</li>
+</ul>
+<h3 id="learning-outcomes">Learning Outcomes</h3>
+<h4 id="activity-diagrams">Activity Diagrams</h4>
+<panel type="success" header="`W2.1` **Can use basic activity diagrams**" no-close="">
+  <div>
+    <p><span class="dimmed"><strong><span>Design → Modeling →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="activity-diagrams-two">Activity Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the
+          <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.</p>
+        <tip-box>
+          <p>Some examples in which a certain workflow is relevant to software project:</p>
+          <p>📦 A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
+          <p>📦 The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
+        </tip-box>
+        <p>Understanding such workflows is important for the success of the software project. <strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger><em> activity diagrams</em> (AD) can model workflows. </strong><span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
+        <modal
+          title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
+          <div>
+            <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
+              Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML
+              is currently the <em>de facto</em> modeling notation used in the software industry.</p>
+          </div>
+          </modal>
+          <tip-box>
+            <p>📦 An example activity diagram <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub>:</p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg" width="430"></tip-box>
+          <p>The most basic activity diagram is simply a linear sequence of actions.</p>
+          <p>
+            <panel src="/website\book\uml\activityDiagrams\basicNotations\linearPaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Linear Paths" expanded=""></panel>
+          </p>
+          <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition.</p>
+          <p>
+            <panel src="/website\book\uml\activityDiagrams\basicNotations\alternatePaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Alternative Paths" expanded=""></panel>
+          </p>
+          <p>In some workflows, multiple paths happen in parallel.</p>
+          <p>
+            <panel src="/website\book\uml\activityDiagrams\basicNotations\parallelPaths\full._include_.html" header=":mortar_board: UML → Activity Diagrams → Basic Notations → Parallel Paths" expanded=""></panel>
+          </p>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: Which sequences are not allowed?">
+                <question>
+                  <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
+                  <ul class="task-list">
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
+                  </ul><img src="/website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
+                  <p></p>
+                  <div slot="answer">
+                    <p>(iv)</p>
+                    <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                  </div>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+</panel>
+<h4 id="programing-basics">Programing Basics</h4>
+<panel type="warning" header="`W2.2` **Can write a program with conditional execution paths**" no-close="">
+  <panel type="warning" header="`W2.2a` Can explain scripts/programs" no-close="">
+    <div>
+      <h3 id="scripts-programs">Scripts (Programs)</h3>
+      <p>While the interactive shell is good for testing out small code bits, longer Python programs (also called <em>scripts</em>) are written as text files with the <code>.py</code> extension. Python <em><tooltip content="the tool that interprets the code and executes it">interpreter</tooltip></em>        reads the program and executes statements from top to bottom.</p>
+      <p>Let's create and run a Python program:</p>
+      <tabs>
+        <tab header="Using Repl.it (no need to save as a file)">
+          <p>Press the 💻 button to run the code <span class="dimmed"> (don't worry about the meaning of the code)</span>. You can edit the code and run again!</p><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true"
+            scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+          <p></p>
+        </tab>
+        <tab header="Using IDLE (need to save as a `.py` file)">
+          <ol>
+            <li>
+              <trigger trigger="click" for="modal:scripts-openIdle">Open the IDLE tool</trigger>.</li>
+            <li>Choose <code>File</code> → <code>New File</code></li>
+            <li>In the new window that opens up, enter the following code <span class="dimmed"> (don't worry about the meaning of the code)</span>.
+              <pre><code class="hljs python">print(<span class="hljs-string">'Hello world!'</span>)
+print(<span class="hljs-string">'Bye!'</span>)
+</code></pre>
+            </li>
+            <li>Save the file by choosing <code>File</code> → <code>Save as</code>. You can give a name such as <code>hello.py</code></li>
+            <li><code>Run</code> → <code>Run Module (F5)</code>. The output will show up in the IDLE shell.</li>
+          </ol>
+          <panel type="seamless" header="%%:tv: Writing your first Python program%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=2&end=168&version=3" frameborder="0" allowfullscreen></iframe></panel>
+          <p></p>
+        </tab>
+      </tabs>
+      <hr>
+      <modal title=":tv: Opening IDEL in Windows 10" id="modal:scripts-openIdle"><iframe width="560" height="315" src="https://www.youtube.com/embed/dX2-V2BocqQ?rel=0&showinfo=0&start=247&end=270&version=3" frameborder="0" allowfullscreen></iframe></modal>
+    </div>
+  </panel>
+  <panel type="warning" header="`W2.2b` Can use comments" no-close="">
+    <div>
+      <h3 id="comments">Comments</h3>
+      <p>You can use comments to provide more information about the code to the reader. Any text that follows <code>#</code> (until the end of the line) is considered as a comment by the Python interpreter, and is ignored.</p>
+      <pre><code class="hljs python"><span class="hljs-comment"># this is a simple hello world program</span>
+
+print(<span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># start with a greeting</span>
+
+<span class="hljs-comment"># read user's name from the keyboard</span>
+print(<span class="hljs-string">'What is your name?'</span>)
+name = input()
+</code></pre>
+      <p>💡 Blank lines too are ignored by the Python interpreter. You can use blank lines to improve the
+        <tooltip content="ease of reading">readability</tooltip> of the code <span class="dimmed"> e.g., by using a blank line to separate one group of statements from another</span></p>
+    </div>
+  </panel>
+  <panel type="warning" header="`W2.2c` Can use existing functions" no-close="">
+    <div>
+      <h3 id="using-functions">Using Functions</h3>
+      <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em>). The statement to <em>execute</em> (other names: <em>call</em>,
+        <em>invoke</em>) a function takes the form <code>function_name(arguments)</code><span class="dimmed"> e.g., <code>foo(1, 'hello')</code> calls a function named <code>foo</code> with arguments <code>1</code> and <code>'hello'</code></span></p>
+      <p>Python comes with many built-in functions you can use right away.</p>
+      <p>📦 To print some content, you can use the <code>print</code> function which can take one or more arguments:</p>
+      <tabs>
+        <tab header="Using the shell">
+          <pre class="hljs"><code>&gt;&gt;&gt; print('Hello World')
+Hello World
+
+&gt;&gt;&gt; print('Bye', 'my', 'friend')
+Bye my friend
+</code></pre>
+          <p></p>
+        </tab>
+        <tab header="Running as a script">
+          <pre><code class="hljs python">print(<span class="hljs-string">'Hello World'</span>)
+print(<span class="hljs-string">'Bye'</span>, <span class="hljs-string">'my'</span>, <span class="hljs-string">'friend'</span>)
+</code></pre>
+          <p>⤵️</p>
+          <pre class="hljs"><code>Hello World
+Bye my friend
+</code></pre>
+          <p></p>
+        </tab>
+      </tabs>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/helloworld?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+      <p><strong>Some functions return a value.</strong></p>
+      <p>📦 <code>int</code>, <code>float</code>, <code>str</code> functions can be used to convert a data value of one type to another. The built-in function <code>type</code> tells you the type of a value.</p>
+      <pre><code class="hljs python">age = <span class="hljs-number">25</span> <span class="hljs-comment"># age is of integer type</span>
+print(<span class="hljs-string">'My age is '</span> + str(age)) <span class="hljs-comment"># convert age to a string before printing</span>
+
+print(type(<span class="hljs-number">-4</span>)) <span class="hljs-comment"># print the type of value -4</span>
+print(type(<span class="hljs-string">'-4'</span>)) <span class="hljs-comment"># print the type of value '-4'</span>
+print(type(float(<span class="hljs-string">'5.0'</span>))) <span class="hljs-comment"># convert string '5.0' to a float and print the type</span>
+</code></pre>
+      <p>⤵️</p>
+      <pre class="hljs"><code>My age is 25
+&lt; class 'int' &gt;
+&lt; class 'str' &gt;
+&lt; class 'float' &gt;
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/return-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+      <p>📦 <code>input</code> function can be used to read input from the keyboard. It waits for user input (until the user hits <kbd>Enter</kbd>) and returns all text entered by the user <mark>as a string</mark>. 💡 Note how a call to the <code>print</code>        without any arguments (i.e. <code>print()</code>) prints an empty line.</p>
+      <pre><code class="hljs python"><span class="hljs-comment"># read current price</span>
+print(<span class="hljs-string">'What is the current price?'</span>)
+price = input() <span class="hljs-comment"># price is of type string because input() always return a string</span>
+
+<span class="hljs-comment"># print current price</span>
+print() <span class="hljs-comment"># print an empty line</span>
+print(<span class="hljs-string">'Current price is $'</span> + price) <span class="hljs-comment"># no need to convert; price is already a string</span>
+
+<span class="hljs-comment"># calculate and show discounted price</span>
+discounted_price = float(price)*<span class="hljs-number">0.5</span> <span class="hljs-comment"># convert to float type first</span>
+print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(discounted_price)) <span class="hljs-comment"># convert back to string</span>
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+      <panel
+        type="seamless" header="%%:tv: Explanation of a similar Python program%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
+  <panel type="danger" header=":muscle: Exercise: Length of Names" expanded="">
+    <div>
+      <h4 id="exercise-length-of-name">Exercise : Length of Name</h4>
+      <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
+      <pre><code class="hljs python">What <span class="hljs-keyword">is</span> your name?
+John Doe
+The length of your name <span class="hljs-keyword">is</span> <span class="hljs-number">8</span>
+</code></pre>
+      <p>💡 In addition to functions <code>print</code> and <code>input</code>, you may need the <code>len</code> function <span class="dimmed"> e.g., <code>len('abc')</code> returns <code>3</code></span>.</p>
+    </div>
+  </panel>
+  <p></p>
+  </div>
+</panel>
+<panel type="warning" header="`W2.2d` Can use booleans" no-close="">
+  <div>
+    <h3 id="booleans">Booleans</h3>
+    <p><strong>The <code>bool</code> data type is used to represent <em>boolean</em> values</strong> (i.e. true/false values). They are useful when the program execution needs to vary based on a certain condition <span class="dimmed"> e.g., print 'old' if age is greater than 100.</span></p>
+    <p>The <code>bool</code> data type can hold only two values <code>True</code> and <code>False</code> (case sensitive).</p>
+    <pre class="hljs"><code>&gt;&gt;&gt; type(True)
+&lt; class 'bool' &gt;
+
+&gt;&gt;&gt; type(False)
+&lt; class 'bool' &gt;
+
+&gt;&gt;&gt; type('True')
+&lt; class 'str' &gt;
+
+&gt;&gt;&gt; type(true)
+...
+NameError: name 'true' is not defined
+</code></pre>
+    <p>You can <strong>use comparison <em>operators</em> to create expressions that evaluate to a boolean result</strong>.</p>
+    <table class="markbind-table table">
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Meaning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>==</code></td>
+          <td>Equal to (different from the assignment operator <code>=</code>)</td>
+        </tr>
+        <tr>
+          <td><code>!=</code></td>
+          <td>Not equal to</td>
+        </tr>
+        <tr>
+          <td><code>&lt;</code></td>
+          <td>Less than</td>
+        </tr>
+        <tr>
+          <td><code>&gt;</code></td>
+          <td>Greater than</td>
+        </tr>
+        <tr>
+          <td><code>&lt; =</code></td>
+          <td>Less than or equal to <mark>(no space between the two symbols)</mark></td>
+        </tr>
+        <tr>
+          <td><code>&gt; =</code></td>
+          <td>Greater than or equal to <mark>(no space between the two symbols)</mark></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>📦 Here are some examples</p>
+    <pre><code class="hljs python">print(<span class="hljs-string">'hello'</span> == <span class="hljs-string">'Hello'</span>) <span class="hljs-comment"># False</span>
+print(<span class="hljs-string">'dog'</span> != <span class="hljs-string">'cat'</span>) <span class="hljs-comment"># True</span>
+print(<span class="hljs-keyword">True</span> == <span class="hljs-keyword">True</span>) <span class="hljs-comment"># True</span>
+print(<span class="hljs-keyword">True</span> != <span class="hljs-keyword">False</span>) <span class="hljs-comment"># True</span>
+print(<span class="hljs-number">42</span> == <span class="hljs-number">42.0</span>) <span class="hljs-comment"># True (they are different types of numbers, but of same value)</span>
+print(<span class="hljs-number">42</span> == <span class="hljs-string">'42'</span>) <span class="hljs-comment"># False</span>
+print(<span class="hljs-number">42</span> == int(<span class="hljs-string">'42'</span>)) <span class="hljs-comment"># True</span>
+print(<span class="hljs-number">20</span> &gt; <span class="hljs-number">10</span>) <span class="hljs-comment"># True</span>
+</code></pre>
+    <p>In contrast, <strong><em>boolean operators</em> (<code>and</code>, <code>or</code> and <code>not</code>) work only on boolean values</strong>. Here is how they work.</p>
+    <table class="markbind-table table">
+      <thead>
+        <tr>
+          <th>Expression</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>True</code><strong><code>and</code></strong><code>True</code></td>
+          <td><code>True</code></td>
+        </tr>
+        <tr>
+          <td><code>True</code><strong><code>and</code></strong><code>False</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td><code>False</code><strong><code>and</code></strong><code>True</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td><code>False</code><strong><code>and</code></strong><code>False</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>True</code><strong><code>or</code></strong><code>True</code></td>
+          <td><code>True</code></td>
+        </tr>
+        <tr>
+          <td><code>True</code><strong><code>or</code></strong><code>False</code></td>
+          <td><code>True</code></td>
+        </tr>
+        <tr>
+          <td><code>False</code><strong><code>or</code></strong><code>True</code></td>
+          <td><code>True</code></td>
+        </tr>
+        <tr>
+          <td><code>False</code><strong><code>or</code></strong><code>False</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong><code>not</code></strong><code>True</code></td>
+          <td><code>False</code></td>
+        </tr>
+        <tr>
+          <td><strong><code>not</code></strong><code>False</code></td>
+          <td><code>True</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>You can mix both types of operators. Some examples below:</p>
+    <pre><code class="hljs python">result = (<span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">or</span> (<span class="hljs-number">10</span> &lt; <span class="hljs-number">20</span>) <span class="hljs-comment"># True</span>
+result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</span>) <span class="hljs-keyword">and</span> (<span class="hljs-number">3</span> != <span class="hljs-number">3</span>) <span class="hljs-comment"># False</span>
+</code></pre>
+    <panel type="seamless" header="%%:tv: Booleans%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/4XA9CKJJbr4?rel=0&showinfo=0&start=65&version=3" frameborder="0" allowfullscreen></iframe></panel>
+  </div>
+</panel>
+<panel type="warning" header="`W2.2e` Can use `if` statements" no-close="">
+  <div>
+    <h3 id="if-statements"><code>if</code> Statements</h3>
+    <p>Python uses the <code>if</code> statement to indicate that some code should only be executed if a certain condition is true.</p>
+    <p>Format:</p>
+    <pre class="hljs"><code>if condition :
+    statements_to_execute_if_true
+</code></pre>
+    <p>📦 The code below has two <code>if</code> statements; one evaluates to <code>true</code> while the other doesn't.</p>
+    <pre><code class="hljs python">price = <span class="hljs-number">55</span>
+print(price)
+<span class="hljs-keyword">if</span> price &gt; <span class="hljs-number">50</span>:
+    print(<span class="hljs-string">'Expensive'</span>)
+
+weight = <span class="hljs-number">45</span>
+print(weight)
+<span class="hljs-keyword">if</span> weight &gt; <span class="hljs-number">100</span>:
+    print(<span class="hljs-string">'Heavy'</span>)
+    
+print(<span class="hljs-string">'Done'</span>)
+</code></pre>
+    <p>Output ⤵️
+      <trigger trigger="click" for="modal:simpelIf-pyTutor"><span class="dimmed">[Click here to visualize execution]</span></trigger>
+    </p>
+    <pre class="hljs"><code>50
+Expensive
+45
+Done
+</code></pre>
+    <modal large="" title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
+      <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p>
+      <p>If the space below is blank, you may need to configure your browser to allow loading the required javascript file. Alternatively you can go to <a href="http://pythontutor.com/visualize.html#mode=edit">PythonTutor.com</a>, copy-paste the above Python
+        code there to see the execution steps.</p><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+    <p>Note how the code to execute if the condition is true is indented (usually by 4 spaces). <strong>Python uses indentation to indicate code <em>blocks</em></strong> (aka <em>clauses</em>) <span class="dimmed"> i.e., a sequence of statements that belong together</span>.
+      In the example below, lines 2-4 are in the same block because they are all indented by one level; if the condition is true, all three are executed; if the condition is false, all three are omitted. Line 5 goes back to the previous indentation level,
+      indicating the end of the code block.</p>
+    <pre><code class="hljs python"><span class="hljs-keyword">if</span> name == <span class="hljs-string">'Blue'</span>:          <span class="hljs-comment"># line 1</span>
+    print(<span class="hljs-string">"It's a color"</span>)   <span class="hljs-comment"># line 2</span>
+    print(<span class="hljs-string">"It's a feeling"</span>) <span class="hljs-comment"># line 3</span>
+    print(<span class="hljs-string">"It's a word"</span>)    <span class="hljs-comment"># line 4</span>
+print(<span class="hljs-string">'Done'</span>)               <span class="hljs-comment"># line 5</span>
+</code></pre>
+    <panel type="danger" header=":muscle: Exercise: Even Numbers" expanded="">
+      <div>
+        <h4 id="exercise-even-numbers">Exercise : Even Numbers</h4>
+        <p>Write a program to read an integer from the keyboard and print 'Even' only if it is an even number. Follow the example below:</p>
+        <pre><code class="hljs python">Enter an integer:
+<span class="hljs-number">4</span>
+Even number
+Done
+</code></pre>
+        <pre><code class="hljs python">Enter an integer:
+<span class="hljs-number">7</span>
+Done
+</code></pre>
+      </div>
+    </panel>
+    <p></p>
+    <p><code>if</code> statements can be
+      <tooltip content="one _if_ statement within another">nested</tooltip>, using deeper indentation.</p>
+    <pre><code class="hljs python">age = <span class="hljs-number">13</span>
+gender = <span class="hljs-string">'F'</span>
+<span class="hljs-keyword">if</span> (age &gt; <span class="hljs-number">12</span>) <span class="hljs-keyword">and</span> (age &lt; <span class="hljs-number">20</span>):          
+    print(<span class="hljs-string">"Teenager"</span>)  <span class="hljs-comment"># indented one level - new code block starts here </span>
+    <span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
+        print(<span class="hljs-string">'Female'</span>)<span class="hljs-comment"># indented two levels - this block is nested within the first block</span>
+        print(<span class="hljs-string">'Girl'</span>)  
+    <span class="hljs-keyword">if</span> gender == <span class="hljs-string">'M'</span>:
+        print(<span class="hljs-string">'Male'</span>) <span class="hljs-comment"># another block nested within the first block</span>
+        print(<span class="hljs-string">'Boy'</span>)
+    print(<span class="hljs-string">'Gender code is '</span> + gender) 
+print(<span class="hljs-string">'Age is '</span> + str(age))               
+</code></pre>
+    <p>⤵️
+      <trigger trigger="click" for="modal:nestedIf-pyTutor"><span class="dimmed">[visualize]</span></trigger>
+    </p>
+    <pre class="hljs"><code>Teenager
+Female
+Girl
+Gender code is F
+Age is 13
+</code></pre>
+    <modal large="" title="Nested blocks" id="modal:nestedIf-pyTutor"><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=age%20%3D%2013%0Agender%20%3D%20'F'%0Aif%20%28age%20%3E%2012%29%20and%20%28age%20%3C%2020%29%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20print%28%22Teenager%22%29%20%20%23%20indented%20one%20level%20-%20new%20code%20block%20starts%20here%20%0A%20%20%20%20if%20gender%20%3D%3D%20'F'%3A%0A%20%20%20%20%20%20%20%20print%28'Female'%29%23%20indented%20two%20levels%20-%20this%20block%20is%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Girl'%29%20%20%0A%20%20%20%20if%20gender%20%3D%3D%20'M'%3A%0A%20%20%20%20%20%20%20%20print%28'Male'%29%20%23%20another%20block%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Boy'%29%0A%20%20%20%20print%28'Gender%20code%20is%20'%20%2B%20gender%29%20%0Aprint%28'Age%20is%20'%20%2B%20str%28age%29%29%20&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+    <panel
+      type="seamless" header="%%:tv: Using `if`%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=7&end=253&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+</panel>
+<p></p>
+<p>If a situation has only two
+  <tooltip content="no more than one of them can be true at any time">mutually exclusive</tooltip> possibilities <span class="dimmed"> e.g. the value of <code>gender</code> can only be <code>M</code> or <code>F</code></span>, we can use the <code>else</code> statement to deal with both conditions together.</p>
+<p>📦 In the example below, the entire <code>else</code> block will be skipped if the <code>if</code> condition is true.</p>
+<pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
+    print(<span class="hljs-string">'Female'</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'Not Female'</span>)               
+</code></pre>
+<panel type="seamless" header="%%:tv: Using `else`%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=254&end=336&version=3" frameborder="0" allowfullscreen></iframe>
+  <p></p>
+</panel>
+<p></p>
+<p>If a situation has more than two mutually exclusive possibilities, we can bring in <code>elif</code> (an abbreviation of <em>else if</em>) blocks too.</p>
+<p>📦 The example below shows how to use an <code>if-elif-else</code> construct to control the flow of the execution.</p>
+<pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
+    print(<span class="hljs-string">'Female'</span>)
+<span class="hljs-keyword">elif</span> gender == <span class="hljs-string">'M'</span>:
+    print(<span class="hljs-string">'Male'</span>)
+<span class="hljs-keyword">elif</span> gender == <span class="hljs-string">'O'</span>:
+    print(<span class="hljs-string">'Other'</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'Unrecognized value'</span>)             
+</code></pre>
+<panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/gender-if?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+  <p></p>
+</panel>
+<p></p>
+<p>Note that in an <code>if-elif-else</code> construct no more than one block (the first one whose condition is true) will be executed.</p>
+<panel type="seamless" header="%%:tv: Using `elif`%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=354&end=483&version=3" frameborder="0" allowfullscreen></iframe>
+  <p></p>
+</panel>
+<p></p>
+<panel type="danger" header=":muscle: Exercise: Grade Analyzer" expanded="">
+  <div>
+    <h4 id="exercise-grade-analyzer">Exercise : Grade Analyzer</h4>
+    <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
+    <pre><code class="hljs python">Enter project score:
+<span class="hljs-number">30</span>
+
+Enter exam score:
+<span class="hljs-number">40</span>
+
+Total: <span class="hljs-number">70</span>
+
+Project : ======
+Exam    : ========
+Total   : ==============
+Grade   : A
+</code></pre>
+    <ul>
+      <li>Note how the colons are aligned.</li>
+      <li>Note the extra blank lines in the expected output.</li>
+      <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+      <li>Assume all inputs are positive integers.</li>
+    </ul>
+    <p>Grading rules:</p>
+    <ul>
+      <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
+      <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
+      <li><code>C</code>: at least 40 in total</li>
+      <li><code>D</code>: otherwise</li>
+    </ul>
+  </div>
+</panel>
+<panel type="danger" header=":muscle: Exercise: Grade Analyzer (extended)" expanded="">
+  <div>
+    <h4 id="exercise-grade-analyzer-extended">Exercise : Grade Analyzer (Extended)</h4>
+    <p>Extend the code you wrote for the exercise <em>Grade Analyzer</em> with the following additional feature.</p>
+    <p>If the grade is determined to be <code>D</code> ask the user if the grade should be withheld. If the user agrees, show the grade as <code>NA</code> instead of <code>D</code>.</p>
+    <pre><code class="hljs python">Enter project score
+<span class="hljs-number">10</span>
+
+Enter exam score
+<span class="hljs-number">20</span>
+
+Total: <span class="hljs-number">30</span>
+
+Grade <span class="hljs-keyword">is</span> low. Withhold? y/n?
+y
+ 
+Project : ==
+Exam    : ====
+Total   : ======
+Grade   : NA
+</code></pre>
+  </div>
+</panel>
+</div>
+</panel>
+<p></p>
+<p>🎯 At the end of this week you should be able to do something similar to the exercise given below (in your programming language/environment of choice):</p>
+<panel header=" Evidence of achieving the LO" no-close="">
+  <p><strong>Exercise from <code>W2.2e</code>:</strong><br></p>
+  <div>
+    <h4 id="exercise-grade-analyzer-2">Exercise : Grade Analyzer</h4>
+    <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
+    <pre><code class="hljs python">Enter project score:
+<span class="hljs-number">30</span>
+
+Enter exam score:
+<span class="hljs-number">40</span>
+
+Total: <span class="hljs-number">70</span>
+
+Project : ======
+Exam    : ========
+Total   : ==============
+Grade   : A
+</code></pre>
+    <ul>
+      <li>Note how the colons are aligned.</li>
+      <li>Note the extra blank lines in the expected output.</li>
+      <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+      <li>Assume all inputs are positive integers.</li>
+    </ul>
+    <p>Grading rules:</p>
+    <ul>
+      <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
+      <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
+      <li><code>C</code>: at least 40 in total</li>
+      <li><code>D</code>: otherwise</li>
+    </ul>
+  </div>
+  <p></p>
+  <div>
+    <h4 id="exercise-grade-analyzer-extended-2">Exercise : Grade Analyzer (Extended)</h4>
+    <p>Extend the code you wrote for the exercise <em>Grade Analyzer</em> with the following additional feature.</p>
+    <p>If the grade is determined to be <code>D</code> ask the user if the grade should be withheld. If the user agrees, show the grade as <code>NA</code> instead of <code>D</code>.</p>
+    <pre><code class="hljs python">Enter project score
+<span class="hljs-number">10</span>
+
+Enter exam score
+<span class="hljs-number">20</span>
+
+Total: <span class="hljs-number">30</span>
+
+Grade <span class="hljs-keyword">is</span> low. Withhold? y/n?
+y
+ 
+Project : ==
+Exam    : ====
+Total   : ======
+Grade   : NA
+</code></pre>
+  </div>
+</panel>
+</panel>
+<h3 id="lecture">Lecture</h3>
+<p>You are recommended to bring a computer if you wish to take part in Python coding activities.</p>
