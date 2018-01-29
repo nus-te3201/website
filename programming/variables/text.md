@@ -116,6 +116,6 @@ NameError: name 'Height' is not defined
 
 </panel><p/>
 
-<panel header=":muscle: Exercise: Circle Circumference" expanded>
+<panel type="danger" header=":muscle: Exercise: Circle Circumference" expanded>
   <include src="e-circle.md" />
 </panel>

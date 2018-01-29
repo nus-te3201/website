@@ -1,4 +1,4 @@
-### Flow Control Using `if`
+### `if` Statements
 
 Python uses the `if` statement to indicate that some code should only be executed if a certain condition is true.
 
@@ -33,6 +33,8 @@ Done
 
 Use the `Back` and `Forward` buttons to visualize execution one step at a time. 
 
+If the space below is blank, you may need to configure your browser to allow loading the required javascript file. Alternatively you can go to [PythonTutor.com](http://pythontutor.com/visualize.html#mode=edit), copy-paste the above Python code there to see the execution steps.
+
 <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 </modal>
@@ -47,7 +49,7 @@ if name == 'Blue':          # line 1
 print('Done')               # line 5
 ```
 
-<panel header=":muscle: Exercise: Even Numbers" expanded>
+<panel type="danger" header=":muscle: Exercise: Even Numbers" expanded>
   <include src="e-even.md" />
 </panel><p/>
 
@@ -129,9 +131,9 @@ Note that in an `if-elif-else` construct no more than one block (the first one w
 
 </panel><p/>
 
-<panel header=":muscle: Exercise: Grade Analyzer" expanded>
+<panel type="danger" header=":muscle: Exercise: Grade Analyzer" expanded>
   <include src="e-grades.md" />
 </panel>
-<panel header=":muscle: Exercise: Grade Analyzer (extended)" expanded>
+<panel type="danger" header=":muscle: Exercise: Grade Analyzer (extended)" expanded>
   <include src="e-gradeAnalyzerExtended.md" />
 </panel>

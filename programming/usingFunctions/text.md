@@ -1,6 +1,6 @@
 ### Using Functions
 
-**A _function_ is like a small program that you can execute from another program. A function has a name. Some functions take inputs** (called _arguments_ or _parameters_). The statement to _execute_ (other names: _call_, _invoke_) a function takes the form `function_name(arguments)` %%&nbsp;e.g., `foo(1, 'hello')` calls a function named `foo` with arguments `1` and `'hello'`%% 
+**A _function_ is like a small program that you can execute from another program. A function has a name. Some functions take inputs** (called _arguments_). The statement to _execute_ (other names: _call_, _invoke_) a function takes the form `function_name(arguments)` %%&nbsp;e.g., `foo(1, 'hello')` calls a function named `foo` with arguments `1` and `'hello'`%% 
 
 Python comes with many built-in functions you can use right away. 
 
@@ -93,6 +93,6 @@ print('Price after 50% discount is $' + str(discounted_price)) # convert back to
 
 </panel>
 
-<panel header=":muscle: Exercise: Length of Names" expanded>
+<panel type="danger" header=":muscle: Exercise: Length of Names" expanded>
   <include src="e-lengthOfName.md" />
 </panel><p/>

@@ -27,9 +27,20 @@
   * [Scripts (Programs)](#scripts-programs)
   * [Comments](#comments)
   * [Using Functions](#using-functions)
-* [**Profram Flow Control**](#program-flow-control)
+* [**Program Flow Control**](#program-flow-control)
   * [Booleans](#booleans)
-  * [Flow Control Using `if`](#flow-control-using-if)
+  * [`if` Statements](#if-statements)
+  * [`while` Statements](#while-statements)
+  * [`for` Statements](#for-statements)
+  * [Importing Modules](#importing-modules)
+  * [Early Termination](#early-termination)
+* [**Functions**](#functions)
+  * [Writing Functions](#writing-functions)
+  * [Function Parameters](#function-parameters)
+  * [Return Value](#return-value)
+  * [Local and Global Scope](#local-and-global-scope)
+* [**Lists**](#lists)
+  * [The List Data Structure](#the-list-data-structure)
 * More topics to be added ...
 
 
@@ -52,5 +63,20 @@
 
 <include src="booleans/text.md" /><hr><hr>
 <include src="if/text.md" /><hr><hr>
+<include src="while/text.md" /><hr><hr>
+<include src="for/text.md" /><hr><hr>
+<include src="import/text.md" /><hr><hr>
+<include src="exit/text.md" /><hr><hr>
+
+# Functions
+
+<include src="functions-def/text.md" /><hr><hr>
+<include src="functions-parameters/text.md" /><hr><hr>
+<include src="functions-return/text.md" /><hr><hr>
+<include src="functions-scope/text.md" /><hr><hr>
+
+# Lists
+
+<include src="lists-intro/text.md" /><hr><hr>
 
 </div>

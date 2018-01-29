@@ -7,7 +7,7 @@
 
 #### Activity Diagrams
 
-<panel type="info" header="`W2.1` **Can use basic activity diagrams**" no-close>
+<panel type="success" header="`W2.1` **Can use basic activity diagrams**" no-close>
   <include src="../../book/modeling/modelingBehaviors/activityDiagrams/full.md" />
 </panel>
 

@@ -43,10 +43,27 @@
         <li><a href="#using-functions">Using Functions</a></li>
       </ul>
     </li>
-    <li><a href="#program-flow-control"><strong>Profram Flow Control</strong></a>
+    <li><a href="#program-flow-control"><strong>Program Flow Control</strong></a>
       <ul>
         <li><a href="#booleans">Booleans</a></li>
-        <li><a href="#flow-control-using-if">Flow Control Using <code>if</code></a></li>
+        <li><a href="#if-statements"><code>if</code> Statements</a></li>
+        <li><a href="#while-statements"><code>while</code> Statements</a></li>
+        <li><a href="#for-statements"><code>for</code> Statements</a></li>
+        <li><a href="#importing-modules">Importing Modules</a></li>
+        <li><a href="#early-termination">Early Termination</a></li>
+      </ul>
+    </li>
+    <li><a href="#functions"><strong>Functions</strong></a>
+      <ul>
+        <li><a href="#writing-functions">Writing Functions</a></li>
+        <li><a href="#function-parameters">Function Parameters</a></li>
+        <li><a href="#return-value">Return Value</a></li>
+        <li><a href="#local-and-global-scope">Local and Global Scope</a></li>
+      </ul>
+    </li>
+    <li><a href="#lists"><strong>Lists</strong></a>
+      <ul>
+        <li><a href="#the-list-data-structure">The List Data Structure</a></li>
       </ul>
     </li>
     <li>More topics to be added ...</li>
@@ -315,7 +332,7 @@ NameError: name 'Height' is not defined
       <p></p>
     </panel>
     <p></p>
-    <panel header=":muscle: Exercise: Circle Circumference" expanded="">
+    <panel type="danger" header=":muscle: Exercise: Circle Circumference" expanded="">
       <div>
         <h4 id="exercise-circle-circumference">Exercise : Circle Circumference</h4>
         <ol>
@@ -380,8 +397,8 @@ name = input()
   <hr>
   <div>
     <h3 id="using-functions">Using Functions</h3>
-    <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em> or <em>parameters</em>). The statement to <em>execute</em> (other
-      names: <em>call</em>, <em>invoke</em>) a function takes the form <code>function_name(arguments)</code><span class="dimmed"> e.g., <code>foo(1, 'hello')</code> calls a function named <code>foo</code> with arguments <code>1</code> and <code>'hello'</code></span></p>
+    <p><strong>A <em>function</em> is like a small program that you can execute from another program. A function has a name. Some functions take inputs</strong> (called <em>arguments</em>). The statement to <em>execute</em> (other names: <em>call</em>, <em>invoke</em>)
+      a function takes the form <code>function_name(arguments)</code><span class="dimmed"> e.g., <code>foo(1, 'hello')</code> calls a function named <code>foo</code> with arguments <code>1</code> and <code>'hello'</code></span></p>
     <p>Python comes with many built-in functions you can use right away.</p>
     <p>📦 To print some content, you can use the <code>print</code> function which can take one or more arguments:</p>
     <tabs>
@@ -444,7 +461,7 @@ print(<span class="hljs-string">'Price after 50% discount is $'</span> + str(dis
     <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/discounted?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
     <panel
       type="seamless" header="%%:tv: Explanation of a similar Python program%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/buMTH6ICnqk?rel=0&showinfo=0&start=169&version=3" frameborder="0" allowfullscreen></iframe></panel>
-      <panel header=":muscle: Exercise: Length of Names" expanded="">
+      <panel type="danger" header=":muscle: Exercise: Length of Names" expanded="">
         <div>
           <h4 id="exercise-length-of-name">Exercise : Length of Name</h4>
           <p>Write a program to read a name from the keyboard and print the length of the name. Follow the example below:</p>
@@ -590,7 +607,7 @@ result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</spa
   <hr>
   <hr>
   <div>
-    <h3 id="flow-control-using-if">Flow Control Using <code>if</code></h3>
+    <h3 id="if-statements"><code>if</code> Statements</h3>
     <p>Python uses the <code>if</code> statement to indicate that some code should only be executed if a certain condition is true.</p>
     <p>Format:</p>
     <pre class="hljs"><code>if condition :
@@ -618,7 +635,9 @@ Expensive
 Done
 </code></pre>
     <modal large="" title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
-      <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+      <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p>
+      <p>If the space below is blank, you may need to configure your browser to allow loading the required javascript file. Alternatively you can go to <a href="http://pythontutor.com/visualize.html#mode=edit">PythonTutor.com</a>, copy-paste the above Python
+        code there to see the execution steps.</p><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
     <p>Note how the code to execute if the condition is true is indented (usually by 4 spaces). <strong>Python uses indentation to indicate code <em>blocks</em></strong> (aka <em>clauses</em>) <span class="dimmed"> i.e., a sequence of statements that belong together</span>.
       In the example below, lines 2-4 are in the same block because they are all indented by one level; if the condition is true, all three are executed; if the condition is false, all three are omitted. Line 5 goes back to the previous indentation level,
       indicating the end of the code block.</p>
@@ -628,7 +647,7 @@ Done
     print(<span class="hljs-string">"It's a word"</span>)    <span class="hljs-comment"># line 4</span>
 print(<span class="hljs-string">'Done'</span>)               <span class="hljs-comment"># line 5</span>
 </code></pre>
-    <panel header=":muscle: Exercise: Even Numbers" expanded="">
+    <panel type="danger" header=":muscle: Exercise: Even Numbers" expanded="">
       <div>
         <h4 id="exercise-even-numbers">Exercise : Even Numbers</h4>
         <p>Write a program to read an integer from the keyboard and print 'Even' only if it is an even number. Follow the example below:</p>
@@ -706,7 +725,7 @@ Age is 13
         <p></p>
       </panel>
       <p></p>
-      <panel header=":muscle: Exercise: Grade Analyzer" expanded="">
+      <panel type="danger" header=":muscle: Exercise: Grade Analyzer" expanded="">
         <div>
           <h4 id="exercise-grade-analyzer">Exercise : Grade Analyzer</h4>
           <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
@@ -738,7 +757,7 @@ Grade   : A
           </ul>
         </div>
       </panel>
-      <panel header=":muscle: Exercise: Grade Analyzer (extended)" expanded="">
+      <panel type="danger" header=":muscle: Exercise: Grade Analyzer (extended)" expanded="">
         <div>
           <h4 id="exercise-grade-analyzer-extended">Exercise : Grade Analyzer (Extended)</h4>
           <p>Extend the code you wrote for the exercise <em>Grade Analyzer</em> with the following additional feature.</p>
@@ -761,6 +780,1101 @@ Grade   : NA
 </code></pre>
         </div>
       </panel>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="while-statements"><code>while</code> Statements</h3>
+    <p><strong>Python uses the <code>while</code> statement to repeat a code block until a certain condition is true. Such an execution path is also known as a <em>loop</em> and each execution of the code block is called an <em>iteration</em>.</strong></p>
+    <p>Format:</p>
+    <pre class="hljs"><code>while condition :
+    statements_to_execute_if_condition_is_true
+</code></pre>
+    <tip-box>
+      <p>📦 the code below prints 'Hello' 3 times (i.e., the loop is executed for 3 iterations), followed by 'Done'.</p>
+      <table>
+        <tr>
+          <td>
+            <pre><code class="hljs python">counter = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> counter &lt; <span class="hljs-number">3</span>:
+    print(<span class="hljs-string">'Hello'</span>)
+    counter = counter + <span class="hljs-number">1</span>
+print(<span class="hljs-string">'Done'</span>)
+</code></pre>
+          </td>
+          <td>&nbsp;→&nbsp;</td>
+          <td>
+            <pre class="hljs"><code>Hello
+Hello
+Hello
+Done
+</code></pre>
+            <p>
+              <trigger trigger="click" for="modal:multipleHello-pyTutor"><span class="dimmed">[Visualize execution]</span></trigger>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <modal large="" title="Code with a simple `if` condition" id="modal:multipleHello-pyTutor"><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=10&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+      <panel
+        type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+        </panel>
+        <p></p>
+    </tip-box>
+    <panel type="seamless" header="%%:tv: Basic `while` loops%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=8&end=107&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+    </panel>
+    <p></p>
+    <tip-box>
+      <p><strong>❗️ Infinite Loops</strong>: Sometimes programming mistakes can result in <em>infinite loops</em><span class="dimmed"> i.e., loops that never terminate.</span> In the example below, the condition <code>counter &lt; 3</code> always evaluates
+        to <code>True</code> (because the statement to increment <code>counter</code> has been left out by mistake)</p>
+      <pre><code class="hljs python">counter = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> counter &lt; <span class="hljs-number">3</span>:
+    print(<span class="hljs-string">'Hello'</span>)
+</code></pre>
+      <p>💡 When using IDLE, if a bug in your code caused it to go into an infinite loop, you can use <code>Ctrl + C</code> to force it to stop executing.</p>
+      <panel type="seamless" header="%%:tv: Infinite loops%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe></panel>
+    </tip-box>
+    <panel type="danger" header=":muscle: Exercise: Vending Machine - Add Loop" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-vending-machine-add-loop">Exercise : Vending Machine - Add Loop</h4>
+        <p>The code below simulates a vending machine that asks for a coin and gives out the product and the balance.</p>
+        <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+coin_value = <span class="hljs-number">0</span>
+
+print(<span class="hljs-string">'Price:'</span>, price)
+
+coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+print(<span class="hljs-string">'You have entered:'</span>, coin_value)
+
+print(<span class="hljs-string">'Here is the product'</span>)
+print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
+</code></pre>
+        <p>💡 Note how the above code uses <code>input</code> function with a string argument e.g., <code>input('Enter a coin:')</code> to show the string to the user and read the input from the user at the same time.</p>
+        <table>
+          <tr>
+            <td>
+              <pre><code class="hljs python">name = input(<span class="hljs-string">'Input a name:'</span>)
+</code></pre>
+            </td>
+            <td>&nbsp;→&nbsp;</td>
+            <td>
+              <pre><code class="hljs python">Input a name: John
+</code></pre>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre><code class="hljs python">print(<span class="hljs-string">'Input a name:'</span>)
+name = input()
+</code></pre>
+            </td>
+            <td>&nbsp;→&nbsp;</td>
+            <td>
+              <pre><code class="hljs python">Input a name:
+John
+</code></pre>
+            </td>
+          </tr>
+        </table>
+        <p>💡 Also note how the above code uses <code>print()</code> with two parameters, one an integer and one a string. The <code>print()</code> method can take multiple parameters and the parameters can be of different types. Note that the <mark>output will have a space between each parameter</mark>.</p>
+        <table>
+          <tr>
+            <td>
+              <pre><code class="hljs python">print(<span class="hljs-string">'ABC'</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4.50</span>)
+print(<span class="hljs-string">'ABC'</span> + str(<span class="hljs-number">3</span>) + str(<span class="hljs-number">4.50</span>))
+print(<span class="hljs-string">'ABC'</span> + <span class="hljs-string">' '</span> + str(<span class="hljs-number">3</span>) + <span class="hljs-string">' '</span> + str(<span class="hljs-number">4.50</span>))
+</code></pre>
+            </td>
+            <td>&nbsp;→&nbsp;</td>
+            <td>
+              <pre class="hljs"><code>
+ABC 3 4.50
+ABC34.50
+ABC 3 4.50
+</code></pre>
+            </td>
+          </tr>
+        </table>
+        <p>Example output from the code:</p>
+        <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">200</span>
+You have entered: <span class="hljs-number">200</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">100</span>
+</code></pre>
+        <p>As you can see, this code does not consider the case where the inserted coin is less than the price of the product, resulting in the following incorrect behavior.</p>
+        <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">50</span>
+You have entered: <span class="hljs-number">50</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">-50</span>
+</code></pre>
+        <p>Modify the code to repeat these two lines until the coin entered is enough to pay for the product.</p>
+        <pre><code class="hljs python">coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+print(<span class="hljs-string">'You have entered:'</span>, coin_value)
+</code></pre>
+        <p>The output should be something like this:</p>
+        <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">50</span>
+You have entered: <span class="hljs-number">50</span>
+Enter a coin: <span class="hljs-number">100</span>
+You have entered: <span class="hljs-number">100</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">0</span>
+</code></pre>
+      </div>
+    </panel>
+    <panel type="danger" header=":muscle: Exercise: Vending Machine - Accept Multiple Coins" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-vending-machine-accept-multiple-coins">Exercise : Vending Machine - Accept Multiple Coins</h4>
+        <p>The vending machine you wrote in the previous exercise (an example solution given below) can accept only one coin as the payment. If the coin is not enough, it rejects the coin and request the user to insert a new coin.</p>
+        <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+coin_value = <span class="hljs-number">0</span>
+
+print(<span class="hljs-string">'Price:'</span>, price)
+
+<span class="hljs-keyword">while</span> price &gt; coin_value:
+  coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+  print(<span class="hljs-string">'You have entered:'</span>, coin_value)
+
+print(<span class="hljs-string">'Here is the product'</span>)
+print(<span class="hljs-string">'Your balance:'</span>, coin_value - price)
+</code></pre>
+        <p>Modify the code so that it can accumulate coins until there is enough to pay for the product. An example output is given below:</p>
+        <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">20</span>
+You have entered: <span class="hljs-number">20</span>
+Enter a coin: <span class="hljs-number">50</span>
+You have entered: <span class="hljs-number">70</span>
+Enter a coin: <span class="hljs-number">50</span>
+You have entered: <span class="hljs-number">120</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">20</span>
+</code></pre>
+        <panel type="seamless" header=":bulb: see hint">
+          <pre><code class="hljs python">...
+coin_sum = <span class="hljs-number">0</span>
+...
+  coin_sum = coin_sum + coin_value
+...
+</code></pre>
+        </panel>
+      </div>
+    </panel>
+    <p></p>
+    <p><strong>You can use a <code>break</code> statement to break out of a loop.</strong></p>
+    <tip-box>
+      <p>📦 The code below uses the <code>break</code> statement to break out of the loop when the password given is <code>abcd</code>. Without the <code>break</code> statement, the loop will repeat forever because the condition in <code>while True:</code>        is always <code>True</code>.</p>
+      <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+  password = input(<span class="hljs-string">'What is the password?'</span>)
+  <span class="hljs-keyword">if</span> password == <span class="hljs-string">'abcd'</span>:
+    <span class="hljs-keyword">break</span> <span class="hljs-comment"># exit the loop</span>
+  <span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'Password incorrect. Try again.'</span>)
+print(<span class="hljs-string">'Password correct. You may proceed.'</span>)
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/password-loop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <panel type="seamless" header="%%:tv: `break` inside `while` loops%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe></panel>
+    <panel type="danger" header=":muscle: Exercise: Vending Machine - Allow Abort"
+      expanded="" no-close="">
+      <div>
+        <h4 id="exercise-vending-machine-allow-abort">Exercise : Vending Machine - Allow Abort</h4>
+        <p>The vending machine you wrote in the previous exercise (an example solution given below) does not allow the user to abort the purchase and get the money back.</p>
+        <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+coin_sum = <span class="hljs-number">0</span>
+
+print(<span class="hljs-string">'Price:'</span>, price)
+
+<span class="hljs-keyword">while</span> price &gt; coin_sum:
+  coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+  coin_sum = coin_sum + coin_value
+  print(<span class="hljs-string">'You have entered:'</span>, coin_sum)
+
+print(<span class="hljs-string">'Here is the product'</span>)
+print(<span class="hljs-string">'Your balance:'</span>, coin_sum - price)
+</code></pre>
+        <p>Modify the code so that the user can abort the purchase by entering <code>0</code> as the coin value:</p>
+        <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">20</span>
+You have entered: <span class="hljs-number">20</span>
+Enter a coin: <span class="hljs-number">0</span>
+Your balance: <span class="hljs-number">20</span>
+</code></pre>
+        <panel type="seamless" header=":bulb: see hint">
+          <pre><code class="hljs python">...
+is_aborting = <span class="hljs-keyword">False</span>
+...
+  <span class="hljs-keyword">if</span> coin_value == <span class="hljs-number">0</span>:
+    is_aborting = <span class="hljs-keyword">True</span>
+    <span class="hljs-keyword">break</span>
+<span class="hljs-meta">... </span>
+<span class="hljs-keyword">if</span> is_aborting:
+  print(<span class="hljs-string">'Your balance:'</span>, coin_sum)
+</code></pre>
+        </panel>
+      </div>
+    </panel>
+    <p></p>
+    <p><strong>You can use a <code>continue</code> statement to skip the remainder of the current iteration</strong> and go back to the <code>while</code> condition.</p>
+    <tip-box>
+      <p>📦 The code below is for reading three words from the user and printing all three at the end. It uses the <code>continue</code> statement to skip the remainder of the iteration if the word entered is too short (i.e., shorter than 4 letters).</p>
+      <pre><code class="hljs python">count = <span class="hljs-number">0</span>
+accepted_words = <span class="hljs-string">''</span>
+<span class="hljs-keyword">while</span> count &lt; <span class="hljs-number">3</span>:
+  word = input(<span class="hljs-string">'Enter a word (with 4 letters or more):'</span>)
+  <span class="hljs-keyword">if</span> len(word) &lt; <span class="hljs-number">4</span>:
+    print(<span class="hljs-string">'Too short. Ignored.'</span>)
+    <span class="hljs-keyword">continue</span> <span class="hljs-comment"># skip the remainder of the iteration</span>
+  count = count + <span class="hljs-number">1</span>
+  accepted_words = accepted_words + <span class="hljs-string">' '</span> + word
+print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/three-words?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <panel type="seamless" header="%%:tv: `continue` inside `while` loops%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=449&end=545&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+    </panel>
+    <p></p>
+    <panel type="danger" header=":muscle: Exercise: Vending Machine - Legit Coins" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-vending-machine-legit-coins">Exercise : Vending Machine - Legit Coins</h4>
+        <p>The vending machine you wrote in the previous exercise (an example solution given below) accepts any value as the coin value. However, coins come in only certain values only.</p>
+        <pre><code class="hljs python">price = <span class="hljs-number">100</span>
+coin_sum = <span class="hljs-number">0</span>
+is_aborting = <span class="hljs-keyword">False</span>
+
+print(<span class="hljs-string">'Price:'</span>, price)
+
+<span class="hljs-keyword">while</span> price &gt; coin_sum:
+  coin_value = int(input(<span class="hljs-string">'Enter a coin:'</span>))
+  <span class="hljs-keyword">if</span> coin_value == <span class="hljs-number">0</span>:
+    is_aborting = <span class="hljs-keyword">True</span>
+    <span class="hljs-keyword">break</span>
+  coin_sum = coin_sum + coin_value
+  print(<span class="hljs-string">'You have entered:'</span>, coin_sum)
+
+<span class="hljs-keyword">if</span> is_aborting:
+  print(<span class="hljs-string">'Your balance:'</span>, coin_sum)
+<span class="hljs-keyword">else</span>:
+  print(<span class="hljs-string">'Here is the product'</span>)
+  print(<span class="hljs-string">'Your balance:'</span>, coin_sum - price)
+</code></pre>
+        <p>Modify the code so that it accepts coins of value 20, 50, 100 only:</p>
+        <pre><code class="hljs python">Price: <span class="hljs-number">100</span>
+Enter a coin: <span class="hljs-number">30</span>
+Coin <span class="hljs-keyword">not</span> recognized
+Enter a coin: <span class="hljs-number">100</span>
+You have entered: <span class="hljs-number">100</span>
+Here <span class="hljs-keyword">is</span> the product
+Your balance: <span class="hljs-number">0</span>
+</code></pre>
+        <panel type="seamless" header=":bulb: see hint">
+          <pre><code class="hljs python">...
+<span class="hljs-keyword">if</span> coin_value != <span class="hljs-number">10</span> <span class="hljs-keyword">and</span> ... :
+    ...
+    <span class="hljs-keyword">continue</span>
+...
+</code></pre>
+        </panel>
+      </div>
+    </panel>
+    <p></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="for-statements"><code>for</code> Statements</h3>
+    <p>You can <strong>use a <code>for</code> statement, together with the <code>range()</code> function, to repeat a code block a pre-determined number of times.</strong></p>
+    <p>Format:</p>
+    <pre class="hljs"><code>for variable_used_as_index in range(number_of_times_to_repeat) :
+    statements_to_repeat
+</code></pre>
+    <tip-box>
+      <p>📦 the code below use a <code>for</code> loop to iterate three times. Note how the variable <code>i</code> is used as an indexing variable and how <code>i in range(3)</code> causes <code>i</code> to take values <code>0, 1, 2</code> over the three
+        iterations.</p>
+      <table>
+        <tr>
+          <td>
+            <pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+    print(i, <span class="hljs-string">'Knock knock, Penny!'</span>)
+</code></pre>
+          </td>
+          <td>&nbsp;→&nbsp;</td>
+          <td>
+            <pre class="hljs"><code>0 Knock knock, Penny!
+1 Knock knock, Penny!
+2 Knock knock, Penny!
+</code></pre>
+          </td>
+        </tr>
+      </table>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/penny-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <panel type="seamless" header="%%:tv: Basic `for` statements%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/HFQGxh1jY3g?rel=0&showinfo=0&start=8&end=372&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+    </panel>
+    <p></p>
+    <panel type="danger" header=":muscle: Exercise: Multiplication Table" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-multiplication-table">Exercise : Multiplication Table</h4>
+        <p>Write a program to read in an integer and generate the multiplication table (for <code>1</code> to <code>10</code>) for that number. An example is given below:</p>
+        <pre><code class="hljs python">Enter a number: <span class="hljs-number">7</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">1</span> = <span class="hljs-number">7</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">2</span> = <span class="hljs-number">14</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">3</span> = <span class="hljs-number">21</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">4</span> = <span class="hljs-number">28</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">5</span> = <span class="hljs-number">35</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">6</span> = <span class="hljs-number">42</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">7</span> = <span class="hljs-number">49</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">8</span> = <span class="hljs-number">56</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">9</span> = <span class="hljs-number">63</span>
+<span class="hljs-number">7</span> x <span class="hljs-number">10</span> = <span class="hljs-number">70</span>
+</code></pre>
+        <panel type="seamless" header=":bulb: see hint">
+          <p><code>for i in range(10)</code> iterates from <code>0</code> to <code>9</code>. You can use <code>range(1, 11)</code> to iterate from <code>1</code> to <code>10</code>.</p>
+        </panel>
+      </div>
+    </panel>
+    <p></p>
+    <p><strong>You can use <code>break</code> and <code>continue</code> in <code>for</code> loops as well</strong>, with similar effects as in <code>while</code> loops.</p>
+    <tip-box>
+      <p>📦 The code below totals the numbers entered by the user. It uses <code>range(5)</code> to limit the number of entries to 5. It uses a <code>break</code> to exit the loop if user hits <kbd>Enter</kbd> without entering a value. It uses a <code>continue</code>        statement to skip negative numbers entered by the user.</p>
+      <pre><code class="hljs python">total = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> range (<span class="hljs-number">5</span>):
+  number_as_string = input(<span class="hljs-string">'Enter a number (press enter to exit):'</span>)
+  
+  <span class="hljs-comment"># exit if user input is empty</span>
+  <span class="hljs-keyword">if</span> number_as_string == <span class="hljs-string">''</span>:
+    print(<span class="hljs-string">'Exiting as per user request...'</span>)
+    <span class="hljs-keyword">break</span>
+    
+  <span class="hljs-comment"># convert the input into an integer</span>
+  number_as_int = int(number_as_string)
+  
+  <span class="hljs-comment"># skip if the number is negative</span>
+  <span class="hljs-keyword">if</span> number_as_int &lt; <span class="hljs-number">0</span> :
+    print(<span class="hljs-string">'Negative number, skipped'</span>)
+    <span class="hljs-keyword">continue</span> 
+    
+  <span class="hljs-comment"># update the total and print the running total</span>
+  total = total + number_as_int
+  print(<span class="hljs-string">'Running total:'</span> + str(total))
+
+print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, str(total))
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/addup-positive?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <panel type="danger" header=":muscle: Exercise: Multiplication Table (Extended)" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-multiplication-table-extended">Exercise : Multiplication Table (Extended)</h4>
+        <p>Modify the code a program to,</p>
+        <ul>
+          <li>print multiplication values of up to <code>x 20</code> (not up to <code>x 10</code> as before)</li>
+          <li>omit squares (i.e. <code>n*n</code>). Note how <code>8 x 8</code> has been omitted in the example below. Recommended: use a <code>continue</code> statement to achieve this.</li>
+          <li>not print rows that has a value higher than 100. Note how the printing stops after <code>8 x 12 = 96</code> in the example below. Recommended: use a <code>break</code> statement for this.</li>
+        </ul>
+        <pre><code class="hljs python">Enter a number: <span class="hljs-number">8</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">1</span> = <span class="hljs-number">8</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">2</span> = <span class="hljs-number">16</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">3</span> = <span class="hljs-number">24</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">4</span> = <span class="hljs-number">32</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">5</span> = <span class="hljs-number">40</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">6</span> = <span class="hljs-number">48</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">7</span> = <span class="hljs-number">56</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">9</span> = <span class="hljs-number">72</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">10</span> = <span class="hljs-number">80</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">11</span> = <span class="hljs-number">88</span>
+<span class="hljs-number">8</span> x <span class="hljs-number">12</span> = <span class="hljs-number">96</span>
+</code></pre>
+      </div>
+    </panel>
+    <p></p>
+    <p><strong>Loops can be nested.</strong></p>
+    <tip-box>
+      <p>📦 The code below use two nested <code>for</code> loops to print multiplication tables for 2, 3, and 4.</p>
+      <pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>):
+  print(<span class="hljs-string">'Multiplication table for'</span>, i)
+  <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">11</span>):
+    print(i, <span class="hljs-string">'x'</span>, j, <span class="hljs-string">'='</span>, i*j)
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/for-manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <panel type="danger" header=":muscle: Exercise: All Combinations" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-three-die-throws">Exercise : Three Die Throws</h4>
+        <p>Write a program to generate all possible results you can get by throwing a
+          <trigger for="pop:exerciseThreeDiceThrows-dice">6-sided dice</trigger> three times. The expected result (partial) is given below.</p>
+        <pre><code class="hljs python"><span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">1</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">3</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">4</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">5</span>
+<span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">6</span>
+<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">1</span>
+<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span>
+...
+</code></pre>
+        <popover id="pop:exerciseThreeDiceThrows-dice" title="" placement="top">
+          <div slot="content">
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"><br><sub>source: wikipedia</sub></p>
+            <p></p>
+          </div>
+        </popover>
+        <panel type="seamless" header=":bulb: see hint">
+          <p>Use three nested <code>for</code> loops.</p>
+        </panel>
+      </div>
+    </panel>
+    <p></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="importing-modules">Importing Modules</h3>
+    <p>In addition to <em>built-in</em> functions such as <code>print()</code>, <code>input()</code>, and <code>len()</code>, <strong>Python has a set of functions called the <em>standard library</em>.</strong> Functions in the standard library are divided
+      in to modules. <strong>A <em>module</em> is a python program that contains a related group of functions</strong>. You can think of it as a file containing some python functions.</p>
+    <tip-box>
+      <p>📦 Some example modules in the Python standard library:</p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>What it contains</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>math</code></td>
+            <td>mathematics-related functions</td>
+          </tr>
+          <tr>
+            <td><code>random</code></td>
+            <td>random number–related functions</td>
+          </tr>
+          <tr>
+            <td><code>sys</code></td>
+            <td>provides ways to interact with the Python interpreter</td>
+          </tr>
+        </tbody>
+      </table>
+    </tip-box>
+    <p>Unlike built-in functions which you can use simply use in your code, <strong>to use a function in the standard library you need to <em>import</em> the corresponding module first.</strong></p>
+    <p>Format: <code>import module_name(s)</code></p>
+    <p>📦 Some examples:</p>
+    <ul>
+      <li><code>import math</code> (imports the <code>math</code> module)</li>
+      <li><code>import math, sys, random</code> (imports all three modules in one statement)</li>
+    </ul>
+    <p>Furthermore, to use a function from an imported module, you should use the <code>module_name.function_name()</code> format.</p>
+    <tip-box>
+      <p>📦 the code below imports the <code>random</code> module and uses its <code>randint()</code> function to generate a number between 1 and 10.</p>
+      <pre><code class="hljs python"><span class="hljs-keyword">import</span> random
+
+print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 10'</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+    print(random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>))
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/five-randoms?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <p>💡 It is common practice to put the <code>import</code> statements at the top of the program code.</p>
+    <panel type="seamless" header="%%:tv: Importing modules%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=7&end=116&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+    </panel>
+    <p></p>
+    <panel type="danger" header=":muscle: Exercise: Circle Area" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-circle-area">Exercise : Circle Area</h4>
+        <p>Write a program to read the radius of a circle (a float number) from the input and print the area of the circle, rounded to five decimal places.</p>
+        <p>💡 some useful hints:</p>
+        <ul>
+          <li>Area = PI * radius<sup>2</sup></li>
+          <li>You can use <code>math.pi</code> as the value of PI.</li>
+          <li>You can use the built-in function <code>round</code> to round off a number to a specified number of decimal places. e.g., <code>round(1.12345, 2)</code> returns <code>1.12</code></li>
+        </ul>
+        <pre><code class="hljs python">Enter radius: <span class="hljs-number">4.5</span>
+Area: <span class="hljs-number">63.61725</span>
+</code></pre>
+      </div>
+    </panel>
+    <p></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="early-termination">Early Termination</h3>
+    <p>At times you may need to terminate a program execution early <span class="dimmed"> i.e., without reaching the end of the code</span>. <strong>You can use the <code>exit()</code> function in the <code>system</code> module to terminate a program early.</strong></p>
+    <tip-box>
+      <p>📦 The code below prints out the factorials of <code>1</code> to <code>n</code> where <code>n</code> is specified by the user. If <code>n</code> is <code>0</code>, it uses <code>sys.exit()</code> to terminate the program immediately.</p>
+      <pre><code class="hljs python"><span class="hljs-keyword">import</span> math, sys
+
+n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</span>))
+
+<span class="hljs-keyword">if</span> n == <span class="hljs-number">0</span>:
+  print(<span class="hljs-string">'Terminating as requested...'</span>)
+  sys.exit()
+  
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):
+    print(math.factorial(i+<span class="hljs-number">1</span>)) <span class="hljs-comment"># use i+1 because i starts from 0</span>
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-factorials?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <panel type="seamless" header="%%:tv: Early termination%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=155&end=223&version=3" frameborder="0" allowfullscreen></iframe></panel>
+  </div>
+  <hr>
+  <hr>
+  <h1 id="functions">Functions</h1>
+  <div>
+    <h3 id="writing-functions">Writing Functions</h3>
+    <p><strong>You can write your own functions in Python.</strong> Function are useful when you want to execute a bunch of statements multiple times at different points of a program.</p>
+    <p>Format:</p>
+    <pre class="hljs"><code>def function_name():
+    statement_1
+    statement_2
+    ...
+</code></pre>
+    <tip-box>
+      <p>📦 The code below defines a function named <code>say_hello</code> and calls it twice.</p>
+      <table>
+        <tr>
+          <td>
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">()</span>:</span>
+  print(<span class="hljs-string">'Hello!'</span>)
+  print(<span class="hljs-string">'How are you?'</span>)
+  print(<span class="hljs-string">'Nice to meet you.'</span>)
+  
+<span class="hljs-comment"># call the function twice</span>
+print(<span class="hljs-string">'Going to call the function ...'</span>)
+say_hello()
+print(<span class="hljs-string">'Going to repeat ...'</span>)
+say_hello()
+</code></pre>
+          </td>
+          <td>&nbsp;→&nbsp;</td>
+          <td>
+            <pre class="hljs"><code>Going to call the function ...
+Hello!
+How are you?
+Nice to meet you.
+Going to repeat ...
+Hello!
+How are you?
+Nice to meet you.
+
+</code></pre>
+            <p>
+              <trigger trigger="click" for="modal:sayHelloFunction-pyTutor"><span class="dimmed">[Visualize execution]</span></trigger>
+            </p>
+            <modal large="" title="Calling functions" id="modal:sayHelloFunction-pyTutor"><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28%29%3A%0A%20%20print%28'Hello!'%29%0A%20%20print%28'How%20are%20you%3F'%29%0A%20%20print%28'Nice%20to%20meet%20you.'%29%0A%20%20%0A%23%20call%20the%20function%20twice%0Aprint%28'Going%20to%20call%20the%20function%20...'%29%0Asay_hello%28%29%0Aprint%28'Going%20to%20repeat%20...'%29%0Asay_hello%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+          </td>
+        </tr>
+      </table>
+      <p>Note how the statements inside the function are not executed unless the method is called.</p>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-function?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <p>The function definition should appear in the code <em>before</em> it is called.</p>
+    <tip-box>
+      <table>
+        <tr>
+          <td>
+            <p>👍 this works</p>
+            <pre><code class="hljs python">print(<span class="hljs-string">'starting ...'</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">()</span>:</span>
+  print(<span class="hljs-string">'Hello!'</span>)
+
+print(<span class="hljs-string">'Going to say hello ...'</span>)
+
+say_hello()
+</code></pre>
+          </td>
+          <td>&nbsp;→&nbsp;</td>
+          <td>
+            <p>👎 this doesn't work</p>
+            <pre><code class="hljs python">print(<span class="hljs-string">'starting ...'</span>)
+print(<span class="hljs-string">'Going to say hello ...'</span>)
+
+<span class="hljs-comment"># call appears before definition</span>
+say_hello() 
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">()</span>:</span>
+  print(<span class="hljs-string">'Hello!'</span>)
+</code></pre>
+          </td>
+        </tr>
+      </table>
+    </tip-box>
+    <panel type="seamless" header="%%:tv: Defining your own functions%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=13&end=199&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+    </panel>
+    <p></p>
+    <panel type="danger" header=":muscle: Exercise: Hip Hip Hooray!" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-hip-hip-hooray">Exercise : Hip Hip Hooray</h4>
+        <p>Define the missing functions in the code below so that it produces the given output:</p>
+        <table>
+          <tr>
+            <td>
+              <pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+  say_hip()
+  say_hip()
+  say_horray()
+  print() <span class="hljs-comment"># print empty line</span>
+  
+  
+  
+  
+  
+</code></pre>
+            </td>
+            <td>&nbsp;→&nbsp;</td>
+            <td>
+              <pre class="hljs"><code>Hip
+Hip
+Hooray!
+
+Hip
+Hip
+Hooray!
+
+Hip
+Hip
+Hooray!
+</code></pre>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </panel>
+    <p></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="function-parameters">Function Parameters</h3>
+    <p><strong>You can configure a function to have <em>parameters</em></strong>. The parameters can be used by the code inside the function like a variable. That means we can pass arguments (i.e., values for those parameters) to affect the behavior of a
+      function so that the function behaves differently each time it is executed.</p>
+    <p>Format:</p>
+    <pre class="hljs"><code>def function_name(parameter1_name, parameter2_name, ...):
+    ...
+</code></pre>
+    <p>A note about terminology: a function can have <em>parameters</em> and when we call the function we can assign <em>arguments</em> (i.e. values) to each of those parameters.</p>
+    <tip-box>
+      <p>📦 The <code>say_hello</code> function below takes one parameter. The first time we call it we pass the argument <code>Gina</code> to that parameter, and the next time we pass a different argument <code>John</code> to the same parameter.</p>
+      <table>
+        <tr>
+          <td>
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">(name)</span>:</span>
+  print(<span class="hljs-string">'Hello '</span> + name)
+  print(<span class="hljs-string">'How are you'</span>, name, <span class="hljs-string">'?'</span>)
+  
+say_hello(<span class="hljs-string">'Gina'</span>)
+say_hello(<span class="hljs-string">'John'</span>)
+</code></pre>
+          </td>
+          <td>&nbsp;→&nbsp;</td>
+          <td>
+            <pre class="hljs"><code>Hello Gina
+How are you Gina ?
+Hello John
+How are you John ?
+
+</code></pre>
+            <p>
+              <trigger trigger="click" for="modal:sayHelloFunctionWithName-pyTutor"><span class="dimmed">[Visualize execution]</span></trigger>
+            </p>
+            <modal large="" title="Calling functions with arguments" id="modal:sayHelloFunctionWithName-pyTutor"><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28name%29%3A%0A%20%20print%28'Hello%20'%20%2B%20name%29%0A%20%20print%28'How%20are%20you',%20name,%20'%3F'%29%0A%20%20%0Asay_hello%28'Gina'%29%0Asay_hello%28'John'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+          </td>
+        </tr>
+      </table>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+      <p>📦 The code below has one function that takes one parameter and one that takes two. Furthermore, note how one function calls the other.</p>
+      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_hello</span><span class="hljs-params">(name)</span>:</span>
+  print(<span class="hljs-string">'Knock knock '</span> + name)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">repeat_hello</span><span class="hljs-params">(name, times)</span>:</span>
+  print(<span class="hljs-string">'Greeting '</span>, name, times, <span class="hljs-string">'times'</span>)
+  <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(times):
+    say_hello(name)
+  
+repeat_hello(<span class="hljs-string">'Penny'</span>, <span class="hljs-number">3</span>)
+say_hello(<span class="hljs-string">'Sheldon'</span>)
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-given-times?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+      <panel type="seamless" header="%%:laughing: See human version of the above code%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/jrzUsHNGZHc?rel=0&showinfo=0&start=0&end=15&version=3" frameborder="0" allowfullscreen></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <p><strong>Parameter values are are forgotten after the function returns</strong>.</p>
+    <tip-box>
+      <p>📦 The code below produces an error because variable <code>v1</code> is not available after the function has returned.</p>
+      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_uniqueness</span><span class="hljs-params">(v1, v2, v3)</span>:</span>
+  print(v1 != v2 <span class="hljs-keyword">and</span> v2 != v3 <span class="hljs-keyword">and</span> v3 != v1)
+  
+print_uniqueness(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>) <span class="hljs-comment"># True</span>
+print_uniqueness(<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>) <span class="hljs-comment"># False</span>
+
+<span class="hljs-comment"># Error. v1 is not available after function returns</span>
+print(v1) 
+</code></pre>
+    </tip-box>
+    <panel type="seamless" header="%%:tv: Function parameters%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=199&end=315&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+    </panel>
+    <p></p>
+    <panel type="danger" header=":muscle: Exercise: Grader `print_score` function" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-grader-print-score-function">Exercise : Grader - <code>print_score</code> Function</h4>
+        <p>The code below prints the grade based on exam and project score, somewhat similar to
+          <trigger trigger="click" for="modal:printScoreFunction-gradeAnalyzer">a previous exercise you did</trigger>.</p>
+        <pre><code class="hljs python">project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
+exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
+total_score = project_score + exam_score
+print(<span class="hljs-string">'Total:'</span>, total_score)
+
+<span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+    grade = <span class="hljs-string">'A'</span>
+<span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
+    grade = <span class="hljs-string">'B'</span>
+<span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
+    grade = <span class="hljs-string">'C'</span>
+<span class="hljs-keyword">else</span>:
+    grade = <span class="hljs-string">'D'</span>
+
+print(<span class="hljs-string">'Project :'</span>, <span class="hljs-string">'='</span> * (project_score//<span class="hljs-number">5</span>))
+print(<span class="hljs-string">'Exam    :'</span>, <span class="hljs-string">'='</span> * (exam_score//<span class="hljs-number">5</span>))
+print(<span class="hljs-string">'Total   :'</span>, <span class="hljs-string">'='</span> * (total_score//<span class="hljs-number">5</span>))
+print(<span class="hljs-string">'Grade   :'</span>, grade)
+</code></pre>
+        <p>Add a <code>print_score</code> function to the code and replace the following three lines,</p>
+        <pre><code class="hljs python">print(<span class="hljs-string">'Project :'</span>, <span class="hljs-string">'='</span> * (project_score//<span class="hljs-number">5</span>))
+print(<span class="hljs-string">'Exam    :'</span>, <span class="hljs-string">'='</span> * (exam_score//<span class="hljs-number">5</span>))
+print(<span class="hljs-string">'Total   :'</span>, <span class="hljs-string">'='</span> * (total_score//<span class="hljs-number">5</span>))
+</code></pre>
+        <p>with these three lines</p>
+        <pre><code class="hljs python">print_score(<span class="hljs-string">'Project :'</span>, project_score)
+print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
+print_score(<span class="hljs-string">'Total   :'</span>, total_score)
+</code></pre>
+        <p>without changing the external behavior of the program.</p>
+        <modal large="" title="" id="modal:printScoreFunction-gradeAnalyzer">
+          <div>
+            <h4 id="exercise-grade-analyzer-2">Exercise : Grade Analyzer</h4>
+            <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
+            <pre><code class="hljs python">Enter project score:
+<span class="hljs-number">30</span>
+
+Enter exam score:
+<span class="hljs-number">40</span>
+
+Total: <span class="hljs-number">70</span>
+
+Project : ======
+Exam    : ========
+Total   : ==============
+Grade   : A
+</code></pre>
+            <ul>
+              <li>Note how the colons are aligned.</li>
+              <li>Note the extra blank lines in the expected output.</li>
+              <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+              <li>Assume all inputs are positive integers.</li>
+            </ul>
+            <p>Grading rules:</p>
+            <ul>
+              <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
+              <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
+              <li><code>C</code>: at least 40 in total</li>
+              <li><code>D</code>: otherwise</li>
+            </ul>
+          </div>
+        </modal>
+      </div>
+    </panel>
+    <p></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="return-value">Return Value</h3>
+    <p><strong>You can use a <code>return</code> statement to make a function return a value</strong>.</p>
+    <tip-box>
+      <p>📦 The <code>play()</code> function below returns one of the strings <code>Rock</code>, <code>Paper</code>, <code>Scissors</code> randomly.</p>
+      <pre><code class="hljs python"><span class="hljs-keyword">import</span> random
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">play</span><span class="hljs-params">()</span>:</span>
+  value = random.randint(<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)
+  <span class="hljs-keyword">if</span> value == <span class="hljs-number">1</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Rock'</span>
+  <span class="hljs-keyword">elif</span> value == <span class="hljs-number">2</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Paper'</span>
+  <span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Scissors'</span>
+  
+print(<span class="hljs-string">'Player1 response : '</span> + play())
+print(<span class="hljs-string">'Player2 response : '</span> + play())
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/rps-play-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <p><strong>You can use an empty <code>return</code> statement to return from the function without executing the remainder of the function</strong>.</p>
+    <tip-box>
+      <p>📦 The <code>print_all_products</code> function below uses an empty <code>return</code> statement to return from the function early if one of the arguments is <code>0</code>:</p>
+      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_product</span><span class="hljs-params">(a, b)</span>:</span>
+  print(a, <span class="hljs-string">'x'</span>, b, <span class="hljs-string">'='</span>, a*b)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_all_products</span><span class="hljs-params">(n1, n2, n3)</span>:</span>
+  <span class="hljs-comment"># return early if any value is 0</span>
+  <span class="hljs-keyword">if</span> n1 == <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> n2 == <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> n3 == <span class="hljs-number">0</span>:
+    print(<span class="hljs-string">'Values cannot be zeros'</span>)
+    <span class="hljs-keyword">return</span>
+  
+  <span class="hljs-comment"># print all possible products</span>
+  print_product(n1, n2)
+  print_product(n2, n3)
+  print_product(n3, n1)
+  
+  
+print_all_products(<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>)
+print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
+</code></pre>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-all-products?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <panel type="seamless" header="%%:tv: Returning values from functions%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=315&end=462&version=3" frameborder="0" allowfullscreen></iframe>
+      <p></p>
+    </panel>
+    <p></p>
+    <panel type="danger" header=":muscle: Exercise: Grader - `calculate_grade` function" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-grader-calculate-grade-function">Exercise : Grader - <code>calculate_grade</code> Function</h4>
+        <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
+        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
+  print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
+  <span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam &gt;= <span class="hljs-number">25</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'A'</span>
+  <span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam &gt;= <span class="hljs-number">25</span>):
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'B'</span>
+  <span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'C'</span>
+  <span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'D'</span>
+
+project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
+exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
+
+total_score = project_score + exam_score
+print(<span class="hljs-string">'Total:'</span>, total_score)
+
+grade = calculate_grade(project_score, exam_score)
+
+print_score(<span class="hljs-string">'Project :'</span>, project_score)
+print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
+print_score(<span class="hljs-string">'Total   :'</span>, total_score)
+print(<span class="hljs-string">'Grade   :'</span>, grade)
+</code></pre>
+        <p>Add a <code>calculate_grade</code> function to the code and replace the following lines,</p>
+        <pre><code class="hljs python"><span class="hljs-keyword">if</span> total &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+    grade = <span class="hljs-string">'A'</span>
+<span class="hljs-keyword">elif</span> (total &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
+    grade = <span class="hljs-string">'B'</span>
+<span class="hljs-keyword">elif</span> total &gt;= <span class="hljs-number">40</span>:
+    grade = <span class="hljs-string">'C'</span>
+<span class="hljs-keyword">else</span>:
+    grade = <span class="hljs-string">'D'</span>
+</code></pre>
+        <p>with the line,</p>
+        <pre><code class="hljs python">grade = calculate_grade(project_score, exam_score)
+</code></pre>
+        <p>without changing the external behavior of the program.</p>
+      </div>
+    </panel>
+    <p></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <h3 id="local-and-global-scope">Local and Global Scope</h3>
+    <p><strong>The <em>scope</em> of a variable is which part of the code it can be read/modified.</strong> Think of a scope as a container for variables. When a scope is destroyed, all the values stored in the scope’s variables are forgotten.</p>
+    <p><strong>The <em>global scope</em> is the scope that is applicable to the entire program.</strong> There is only one global scope, and it is created when your program begins. When your program terminates, the global scope is destroyed, and all its
+      variables are forgotten. Otherwise, the next time you ran your program, the variables would remember their values from the last time you ran it. <strong>A variable that exists in the global scope is called a <em>global variable</em>.</strong></p>
+    <p><strong>A <em>local scope</em> is a scope that applies only during the execution of a function.</strong> A local scope is created whenever a function is called. Parameters and variables that are assigned in the called function are said to exist in
+      that function’s local scope. <strong>A variable that exists in a local scope is called a <em>local variable</em>.</strong> When the function returns, the local scope is destroyed, and these variables are forgotten. The next time you call this function,
+      the local variables will not remember the values stored in them from the last time the function was called.</p>
+    <p>A variable must be in the global scope or the local scope; it cannot be in both.</p>
+    <p><sub><span class="dimmed">[Some parts of the above explanation were adapted from <a href="https://automatetheboringstuff.com/chapter3/"><em>Automate the Boring Stuff</em></a>]</span></sub></p>
+    <p>Consider the code given below, apparently from a program related to a farm, with the global scope and the local scope of each function indicated by shaded areas.<br><img src="/website/programming/functions-scope/images/scopeAsShadedAreas.png" width="500"></p>
+    <p>Note the following rules about scope:</p>
+    <ul>
+      <li>Rule 1: <strong>Local scopes can read global variables</strong> e.g., <code>raise_chicken</code> function can access the global variable <code>total_chickens</code> (see line 6).</li>
+      <li>Rule 2: <strong>Global scope cannot read/write local variables</strong> e.g., line 11 will be rejected because it reads the local variable <code>eggs</code>.</li>
+      <li>Rule 3: <strong>Local scopes cannot read/write variables of other local scopes</strong> e.g., line 15 will be rejected because it reads the local variable <code>eggs</code>.</li>
+      <li>Rule 4: <strong>If a variable is <mark><em>assigned</em></mark> in a local scope, it becomes a local variable</strong> even if a global variable has the same name. That is, there can be separate global and local variables with the same name. e.g.,
+        line 16 (<code>total_cows = 10</code>) creates a local variable <code>total_cows</code> although there is also a global variable <code>total_cows</code>; the line 19 prints <code>5</code> because the <code>total_cows</code> global variable remains
+        <code>5</code> and the local variable <code>total_cows</code> which has the value <code>10</code> is destroyed after the function <code>milk_cows</code> is executed.</li>
+    </ul>
+    <p><strong>To modify a global variable within a local scope, use the <code>global</code> statement on that variable.</strong></p>
+    <tip-box>
+      <p>📦 The <code>breed_cows</code> function below can increase the global variable <code>total_cows</code> to <code>10</code> from the local scope because it has a <code>global total_cows</code> statement. If you remove that statement, the last print
+        statement will print <code>5</code> instead of <code>10</code></p>
+      <pre><code class="hljs python">total_cows = <span class="hljs-number">5</span>
+print(<span class="hljs-string">'total cows before breeding:'</span>, total_cows)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">breed_cows</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">global</span> total_cows
+    print(<span class="hljs-string">'breeding cows'</span>)
+    total_cows = <span class="hljs-number">10</span>
+    print(<span class="hljs-string">'total cows at the end of breeding:'</span>, total_cows)
+
+breed_cows()
+print(<span class="hljs-string">'total cows after breeding:'</span>, total_cows) <span class="hljs-comment"># prints 10</span>
+</code></pre>
+      <table>
+        <tr>
+          <td>
+            <p>⤵️</p>
+            <pre class="hljs"><code>total cows before breeding: 5
+breeding cows
+total cows at the end of breeding: 10
+total cows after breeding: 10
+</code></pre>
+          </td>
+          <td>&nbsp;&nbsp;</td>
+          <td>
+            <p>⤵️ without the <code>global total_cows</code> statement</p>
+            <pre class="hljs"><code>total cows before breeding: 5
+breeding cows
+total cows at the end of breeding: 10
+total cows after breeding: 5
+</code></pre>
+          </td>
+        </tr>
+      </table>
+      <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/functions-breedCows?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <p></p>
+      </panel>
+      <p></p>
+    </tip-box>
+    <panel type="danger" header=":muscle: Exercise: Grader - Analyze Grades in a Loop" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-grader-analyze-grades-in-a-loop">Exercise : Grader - Analyze Grades in a Loop</h4>
+        <p>Write a program to analyze grades of multiple students. The grade analysis can be similar to
+          <trigger trigger="click" for="modal:analyzeGradesInLoop-gradeAnalyzer">a grade analyzer you wrote in a previous exercise</trigger> but the program needs to repeat the process until the user chooses to stop.</p>
+        <pre><code class="hljs python">Enter project score: <span class="hljs-number">10</span>
+Enter exam score: <span class="hljs-number">50</span>
+Total: <span class="hljs-number">60</span>
+Project : ==
+Exam    : ==========
+Total   : ============
+Grade   : B
+Continue y/n? y
+Enter project score: <span class="hljs-number">50</span>
+Enter exam score: <span class="hljs-number">49</span>
+Total: <span class="hljs-number">99</span>
+Project : ==========
+Exam    : =========
+Total   : ===================
+Grade   : A
+Continue y/n? n
+</code></pre>
+        <p>You are <mark>required to divide your code into multiple functions</mark>.</p>
+        <modal large="" title="" id="modal:analyzeGradesInLoop-gradeAnalyzer">
+          <div>
+            <h4 id="exercise-grade-analyzer-3">Exercise : Grade Analyzer</h4>
+            <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
+            <pre><code class="hljs python">Enter project score:
+<span class="hljs-number">30</span>
+
+Enter exam score:
+<span class="hljs-number">40</span>
+
+Total: <span class="hljs-number">70</span>
+
+Project : ======
+Exam    : ========
+Total   : ==============
+Grade   : A
+</code></pre>
+            <ul>
+              <li>Note how the colons are aligned.</li>
+              <li>Note the extra blank lines in the expected output.</li>
+              <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+              <li>Assume all inputs are positive integers.</li>
+            </ul>
+            <p>Grading rules:</p>
+            <ul>
+              <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
+              <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
+              <li><code>C</code>: at least 40 in total</li>
+              <li><code>D</code>: otherwise</li>
+            </ul>
+          </div>
+        </modal>
+      </div>
+    </panel>
+    <p></p>
+  </div>
+  <hr>
+  <hr>
+  <h1 id="lists">Lists</h1>
+  <div>
+    <h3 id="the-list-data-structure">The List Data Structure</h3>
+    <p><strong>A <em>data structure</em> contains data that are more complex than a single data value</strong> such as an integer. Lists are one such very useful data structure in Python. <strong>A list contains a sequence of <em>items</em>.</strong> Python
+      uses square brackets to indicate lists.</p>
+    <tip-box>
+      <p>📦 Some list examples:</p>
+      <pre><code class="hljs python">friends = [] <span class="hljs-comment"># an empty list</span>
+fruits = [<span class="hljs-string">'apple'</span>, <span class="hljs-string">'banana'</span>, <span class="hljs-string">'orange'</span>] <span class="hljs-comment"># a list containing 3 string items</span>
+values = [<span class="hljs-number">0</span>, <span class="hljs-number">3.4</span>, <span class="hljs-string">'High'</span>, <span class="hljs-keyword">True</span>] <span class="hljs-comment"># a list containing items of different types</span>
+print(friends, fruits, values)
+
+everything = [friends, fruits, values] <span class="hljs-comment"># a list containing other lists</span>
+print(everything)
+</code></pre>
+      <p>⤵️</p>
+      <pre class="hljs"><code>[] ['apple', 'banana', 'orange'] [0, 3.4, 'High', True]
+[[], ['apple', 'banana', 'orange'], [0, 3.4, 'High', True]]
+</code></pre>
+    </tip-box>
   </div>
   <hr>
   <hr>

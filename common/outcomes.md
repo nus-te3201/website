@@ -13,6 +13,20 @@
 
 # Week 2
 
+<include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
+<include src="../book/uml/activityDiagrams/introduction/what/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/linearPaths/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/alternatePaths/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/parallelPaths/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/rakes/outcomes.md" />
+<include src="../book/uml/activityDiagrams/basicNotations/swimlanes/outcomes.md" />
+
+* scripts
+* can use built-in functions: print() len() str() int()
+* Can use conditionals
+
+# Week 3
+
 <include src="../book/requirements/introduction/outcomes.md" />
 <include src="../book/requirements/nonFunctionalRequirements/outcomes.md" />
 <include src="../book/requirements/prioritizing/outcomes.md" />
@@ -29,29 +43,20 @@
 <include src="../book/specifyingRequirements/userStories/introduction/outcomes.md" />
 <include src="../book/specifyingRequirements/userStories/details/outcomes.md" />
 <include src="../book/specifyingRequirements/userStories/usage/outcomes.md" />
-
-* scripts
-* print() len() str() int()
-* Can use functions
-* Can use conditionals
-
-# Week 3
-
 <include src="../book/specifyingRequirements/useCases/introduction/outcomes.md" />
 <include src="../book/specifyingRequirements/useCases/identifying/outcomes.md" />
 <include src="../book/specifyingRequirements/useCases/details/outcomes.md" />
 <include src="../book/specifyingRequirements/useCases/usage/outcomes.md" />
 <include src="../book/specifyingRequirements/glossary/what/outcomes.md" />
 <include src="../book/specifyingRequirements/supplementaryRequirements/what/outcomes.md" />
-<include src="../book/modeling/modelingBehaviors/activityDiagrams/outcomes.md" />
 
-
-* Can use repetitions
+* Can use repetitions: while, for, break, continue
+* Can import modules
+* Can terminate early: sys.exit()
+* Can write functions: def, arguments, return
 * Can use lists
-* Can use other basic data structures
 
 # Week 4
-
 
 <include src="../book/design/introduction/what/outcomes.md" />
 <include src="../book/oopDesign/introduction/outcomes.md" />
@@ -63,8 +68,12 @@
 <include src="../book/uml/classDiagrams/introduction/what/outcomes.md" />
 <include src="../book/uml/classDiagrams/classes/what/outcomes.md" />
 
-* Can use methods
-* Can use packages
+
+* Can use scope
+* Can use methods: more list methods
+* More string methods
+* Can use modules
+* Can use other basic data structures
 
 # Week 5
 
@@ -205,12 +214,7 @@
 <include src="../book/modeling/modelingStructures/objectOrientedDomainModels/outcomes.md" />
 
 <include src="../book/modeling/modelingBehaviors/useCaseDiagrams/outcomes.md" />
-<include src="../book/uml/activityDiagrams/introduction/what/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/linearPaths/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/alternatePaths/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/parallelPaths/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/rakes/outcomes.md" />
-<include src="../book/uml/activityDiagrams/basicNotations/swimlanes/outcomes.md" />
+
 
 <include src="../book/reuse/cloudComputing/what/outcomes.md" />
 <include src="../book/reuse/cloudComputing/services/outcomes.md" />

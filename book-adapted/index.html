@@ -461,17 +461,17 @@
           <p><strong>A <em>software requirement</em> specifies a need to be fulfilled by the software product.</strong></p>
           <p>A software project may be,</p>
           <ul>
-            <li>a <em>brown-field</em> project: develop a product to replace/update an existing software product</li>
-            <li>a <em>green-field</em> project: develop a totally new system with no precedent</li>
+            <li>a <em>brown-field</em> project i.e., develop a product to replace/update an existing software product</li>
+            <li>a <em>green-field</em> project i.e., develop a totally new system with no precedent</li>
           </ul>
-          <p>In either case, requirements gathered, analyzed, specified, and managed.</p>
-          <p>Requirements come from <em>stakeholders</em>.</p>
+          <p>In either case, requirements need to be gathered, analyzed, specified, and managed.</p>
+          <p><strong>Requirements come from <em>stakeholders</em>.</strong></p>
           <tip-box type="info">
             <div>
               <p><strong>Stakeholder</strong>: A party that is potentially affected by the software project. e.g. users, sponsors, developers, interest groups, government agencies, etc.</p>
             </div>
           </tip-box>
-          <p>Identifying requirements is not as straightforward as it sounds. It is not as simple as writing a wish list.</p>
+          <p>Identifying requirements is often not easy. For example, stakeholders may not be aware of their precise needs, may not know how to communicate their requirements correctly, may not be willing to spend effort in identifying requirements, etc.</p>
         </div>
         <div></div>
       </div>
@@ -496,12 +496,14 @@
           <tip-box>
             <p>📦 Some examples of non-functional requirement categories:</p>
             <ul>
-              <li>Data requirements e.g. size, volatility, persistency etc.,</li>
+              <li>Data requirements e.g. size,
+                <tooltip content="how often do data change">volatility</tooltip>,
+                <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
               <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
               <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
                 Scalability, Security, Stability, Testability, and more ...</li>
             </ul>
-            <panel type="seamless" header=":package: Some concrete examples of NFRs">
+            <panel type="seamless" header=":package: Some concrete examples of NFRs" expanded="">
               <ul>
                 <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                 <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5 million.</li>
@@ -515,7 +517,10 @@
               </ul>
             </panel>
           </tip-box>
-          <p><strong>Non-functional requirements are easier to miss.</strong> We should spend extra effort in digging them out as early as possible because sometimes they are critical to the success of the software. <span class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></p>
+          <p>We should spend extra effort in digging NFRs out as early as possible because <strong>NFRs are easier to miss</strong><span class="dimmed"> e.g., stakeholders tend to think of functional requirements first</span> and sometimes <strong>they are critical to the success of the software.</strong>
+            <span
+              class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span>
+          </p>
         </div>
         <div>
           <div>
@@ -563,7 +568,7 @@
           <tip-box>
             <p>📦 An example scheme for categorizing requirements:</p>
             <ul>
-              <li><code>Essential</code>: The product must have this requirement fulfilled else it does not get user acceptance</li>
+              <li><code>Essential</code>: The product must have this requirement fulfilled or else it does not get user acceptance</li>
               <li><code>Typical</code>: Most similar systems have this feature although the product can survive without it.</li>
               <li><code>Novel</code>: New features that could differentiate this product from the rest.</li>
             </ul>
@@ -571,14 +576,15 @@
             <ul>
               <li><code>High</code>, <code>Medium</code>, <code>Low</code></li>
               <li><code>Must-have</code>, <code>Nice-to-have</code>, <code>Unlikely-to-have</code></li>
+              <li><code>Level 0</code>, <code>Level 1</code>, <code>Level 2</code>, ...</li>
             </ul>
           </tip-box>
-          <p><strong>Some requirements can be discarded if they are considered ‘out of scope’.</strong></p>
+          <p><strong>Some requirements can be discarded if they are considered ‘out of <em><tooltip content="the extent to which the software features should go">scope</tooltip></em>’.</strong></p>
           <tip-box>
-            <p>📦 The requirement given below is for a Calendar application. Stakeholder of the software (e.g. product designers) might decide that keeping track of the time taken for tasks is not in the scope of the software.</p>
-            <ul>
-              <li>The software records the actual time taken by each task and show the difference between the <em>actual</em> and <em>scheduled</em> time for the task.</li>
-            </ul>
+            <p>📦 The requirement given below is for a Calendar application. Stakeholder of the software (e.g. product designers) might decide the following requirement is not in the scope of the software.</p>
+            <blockquote>
+              <p>The software records the actual time taken by each task and show the difference between the <em>actual</em> and <em>scheduled</em> time for the task.</p>
+            </blockquote>
           </tip-box>
         </div>
         <div></div>
@@ -657,11 +663,11 @@
                 <panel header=":lock::key: Characteristic of brainstorming">
                   <question>
                     <p>What is the key characteristic about brainstorming?</p>
-                    <ul radio-group="71xjj" class="radio-list">
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="71xjj" type="radio"> a. There should be at least 5 participants.</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="71xjj" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="71xjj" type="radio"> c. Only the best people in the team should take part.</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="71xjj" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                    <ul radio-group="co832" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="co832" type="radio"> a. There should be at least 5 participants.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="co832" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="co832" type="radio"> c. Only the best people in the team should take part.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="co832" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                     </ul>
                     <div slot="answer">
                       <p>(b)</p>
@@ -721,7 +727,14 @@
       </div>
       <div id="main">
         <div>
-          <p><strong>Interviewing stakeholders and domain experts can give us useful information that project requirements.</strong></p>
+          <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can give us useful information that project requirements.</strong></p>
+          <popover id="pop:interviews-domainExpert" title="" placement="top">
+            <div slot="content">
+              <div>
+                <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed"> e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
+              </div>
+            </div>
+          </popover>
         </div>
         <div></div>
       </div>
@@ -744,10 +757,9 @@
           <p></p>
           <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product, advertisement,
             etc.</p>
-          <div v-closeable="" alt="video about focus groups">
-            <p>📺: How do focus groups work? - Hector Lanz <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"></p>
+          <panel type="seamless" header="%%:tv:: How do focus groups work? - Hector Lanz :zero:%%">
             <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3TwgVQIZPsw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-          </div>
+          </panel>
         </div>
         <div></div>
       </div>
@@ -779,23 +791,21 @@
             them.</p>
           <tip-box>
             <panel header=":package: Simple text UI prototype for a primitive CLI (Command Line Interface) Minesweeper:" type="seamless" expanded="">
-              <p><img src="/website/book/gatheringRequirements/prototyping/images/textPrototypeCLI.png" height="350">
+              <p><img src="/website/book/gatheringRequirements/prototyping/images/textPrototypeCLI.png" height="320">
                 <p></p>
               </p>
             </panel>
             <panel header=":package: A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless">
-              <p><img src="/website/book/gatheringRequirements/prototyping/images/guiPrototypeMinesweeper.jpg" height="250">
+              <p><img src="/website/book/gatheringRequirements/prototyping/images/guiPrototypeMinesweeper.jpg" height="220">
                 <p></p>
               </p>
             </panel>
-            <panel header=":package: A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless"><img src="/website/book/gatheringRequirements/prototyping/images/balsamiqPrototypeGUI.jpg" height="500">
+            <panel header=":package: A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless"><img src="/website/book/gatheringRequirements/prototyping/images/balsamiqPrototypeGUI.jpg" height="450">
               <p><span class="dimmed"><sup>[source: <a href="http://balsamiq.com/products/mockups">http://balsamiq.com/products/mockups</a>]</sup></span></p>
             </panel>
           </tip-box>
           <p></p>
-          <tip-box type="tip">
-            <p>Prototyping can be used for <em>discovering</em> as well as <em>specifying</em> requirements <span class="dimmed"> e.g. a UI prototype can serve as a specification of what to build</span>.</p>
-          </tip-box>
+          <p>💡 Prototyping can be used for <em>discovering</em> as well as <em>specifying</em> requirements <span class="dimmed"> e.g. a UI prototype can serve as a specification of what to build</span>.</p>
         </div>
         <div></div>
       </div>
@@ -839,14 +849,11 @@
           <tip-box>
             <p>📦 The product vision of the <a href="https://github.com/TEAMMATES/teammates">TEAMMATES Project</a> given below is described using prose.</p>
             <blockquote>
-              <h2 id="vision">Vision</h2>
               <p>TEAMMATES aims to become <strong>the biggest student project in the world</strong> (<em>biggest</em> here refers to 'many contributors, many users, large code base, evolving over a long period'). Furthermore, it aims to serve as a training
                 tool for Software Engineering students who want to learn SE skills in the context of <strong>a non-trivial real software product</strong>.</p>
             </blockquote>
           </tip-box>
-          <tip-box type="warning">
-            <p>Avoid using lengthy prose to describe requirements; they can be hard to follow.</p>
-          </tip-box>
+          <p>❗️ Avoid using lengthy prose to describe requirements; they can be hard to follow.</p>
         </div>
         <div></div>
       </div>
@@ -913,7 +920,7 @@
             </div>
           </tip-box>
           <tip-box>
-            <p>📦 Examples (from a Learning Management System):</p>
+            <p>📦 Examples (from a <em>Learning Management System</em>):</p>
             <ol>
               <li>As a student, I can download files uploaded by lecturers, so that I can get my own copy of the files</li>
               <li>As a lecturer, I can create discussion forums, so that students can discuss things online</li>
@@ -921,7 +928,8 @@
             </ol>
           </tip-box>
           <p></p>
-          <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software such as <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>            to manage user stories digitally.</p>
+          <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>,
+            Trello, Google Docs, ...) to manage user stories digitally.</p>
           <panel header="%%User stories in use%%" expanded="">
             <panel header="With sticky notes" type="seamless" expanded=""><img src="/website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
               <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
@@ -1008,9 +1016,7 @@
         <tip-box>
           <p>As a user, I can login to the system <s>so that I can access my data</s></p>
         </tip-box>
-        <tip-box type="warning">
-          <p>It is recommended to confirm there is a concrete benefit even if you omit it from the user story. If not, we could end up adding features that have no real benefit.</p>
-        </tip-box>
+        <p>❗️ It is recommended to confirm there is a concrete benefit even if you omit it from the user story. If not, we could end up adding features that have no real benefit.</p>
         <p>We can add more characteristics to the <code>{user role}</code> to provide more context to the user story.</p>
         <tip-box>
           <ul>
@@ -1253,7 +1259,8 @@
               <li>System:
                 <popover effect="fade" placement="right" content="Automated Teller Machine">
                   ATM </popover>
-                Actor: Customer</li>
+              </li>
+              <li>Actor: Customer</li>
               <li>Use Case: Check account balance
                 <ol>
                   <li>User inserts an ATM card</li>
@@ -1935,15 +1942,13 @@
         <tip-box>
           <p>📦 In this example, actor <code>Blogger</code> can do all the use cases the actor <code>Guest</code> can do, as a result of the actor generalization relationship given in the diagram.</p><img src="/website/book/specifyingRequirements/useCases/usage/images/actorGeneralisation.png"
             height="250"></tip-box>
-        <tip-box type="tip">
-          Do not over-complicate use case diagrams by trying to include everything possible. A use case diagram is a brief summary of the use cases that is used as a starting point. Details of the use cases can be given in the use case descriptions.
-        </tip-box>
+        <p>💡 Do not over-complicate use case diagrams by trying to include everything possible. A use case diagram is a brief summary of the use cases that is used as a starting point. Details of the use cases can be given in the use case descriptions.</p>
         <p><strong>Some include ‘System’ as an actor to indicate that something is done by the system itself without being initiated by a user or an external system.</strong></p>
         <tip-box>
           <p>📦 The diagram below can be used to indicate that the system generates daily reports at midnight.</p><img src="/website/book/specifyingRequirements/useCases/usage/images/systemAsActor.jpg" height="200"></tip-box>
         <p>However, others argue that only use cases providing value to an external user/system should be shown in the use case diagram. For example, they argue that ‘view daily report’ should be the use case and <code>generate daily report</code> is not
           to be shown in the use case diagram because it is simply something the system has to do to support the <code>view daily report</code> use case.</p>
-        <p>We recommend that you follow the latter view (i.e. not to use System as a user). Limit use cases for Modeling Behaviors that involve an external actor.</p>
+        <p>We recommend that you follow the latter view (i.e. not to use System as a user). Limit use cases for modeling behaviors that involve an external actor.</p>
         <p><strong>UML is not very specific about the text contents of a use case.</strong> Hence, there are many styles for writing use cases. For example, the steps can be written as a continuous paragraph. Use cases should be easy to read. Note that there
           is no strict rule about writing all details of all steps or a need to use all the elements of a use case.</p>
         <p><strong>There are some advantages of documenting system requirements as use cases:</strong></p>
@@ -2015,7 +2020,7 @@
           </div>
         </tip-box>
         <tip-box>
-          <p>📦 Here is a partial glossary from a variant of the Snakes and Ladders game:</p>
+          <p>📦 Here is a partial glossary from a variant of the <em>Snakes and Ladders</em> game:</p>
           <ul>
             <li>Conditional square: A square that specifies a specific face value which a player has to throw before his/her piece can leave the square.</li>
             <li>Normal square: a normal square does not have any conditions, snakes, or ladders in it.</li>
@@ -2038,9 +2043,9 @@
     </div>
     <div id="main">
       <div>
-        <p><strong>A <mark><em>supplementary requirements</em></mark> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most
+        <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most
           <trigger trigger="click" for="modal:supplementary-nfr">Non Functional Requirements</trigger> will be listed.</p>
-        <modal title="" id="modal:supplementary-nfr">
+        <modal large="" title="" id="modal:supplementary-nfr">
           <div>
             <div></div>
             <p></p>
@@ -2061,12 +2066,14 @@
                 <tip-box>
                   <p>📦 Some examples of non-functional requirement categories:</p>
                   <ul>
-                    <li>Data requirements e.g. size, volatility, persistency etc.,</li>
+                    <li>Data requirements e.g. size,
+                      <tooltip content="how often do data change">volatility</tooltip>,
+                      <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
                     <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                     <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
                       Scalability, Security, Stability, Testability, and more ...</li>
                   </ul>
-                  <panel type="seamless" header=":package: Some concrete examples of NFRs">
+                  <panel type="seamless" header=":package: Some concrete examples of NFRs" expanded="">
                     <ul>
                       <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                       <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5
@@ -2081,7 +2088,10 @@
                     </ul>
                   </panel>
                 </tip-box>
-                <p><strong>Non-functional requirements are easier to miss.</strong> We should spend extra effort in digging them out as early as possible because sometimes they are critical to the success of the software. <span class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></p>
+                <p>We should spend extra effort in digging NFRs out as early as possible because <strong>NFRs are easier to miss</strong><span class="dimmed"> e.g., stakeholders tend to think of functional requirements first</span> and sometimes <strong>they are critical to the success of the software.</strong>
+                  <span
+                    class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span>
+                </p>
               </div>
               <div>
                 <div>
@@ -2236,9 +2246,9 @@
               <panel header=":lock::key: procedural vs OOP">
                 <question>
                   <p>OO is a higher level mechanism than the procedural paradigm.</p>
-                  <ul radio-group="m8t71" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="m8t71" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="m8t71" type="radio"> False</label></li>
+                  <ul radio-group="0tqp0" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="0tqp0" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="0tqp0" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>True.</p>
@@ -2764,10 +2774,10 @@
               <panel header=":lock::key: What does the navigability given by this diagram mean?">
                 <question><img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
                   <p></p>
-                  <ul radio-group="772w5" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="772w5" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="772w5" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="772w5" type="radio"> c. Depends on the programming language</label></li>
+                  <ul radio-group="4gtdz" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="4gtdz" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="4gtdz" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="4gtdz" type="radio"> c. Depends on the programming language</label></li>
                   </ul>
                   <div slot="answer">
                     <p>(a)</p>
@@ -3134,9 +3144,9 @@
               <panel header=":lock::key: Which one is not recommended to use?">
                 <question>
                   <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
-                  <ul radio-group="dzowi" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="dzowi" type="radio"> a. Composition symbol</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="dzowi" type="radio"> b. Aggregation symbol</label></li>
+                  <ul radio-group="trklj" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="trklj" type="radio"> a. Composition symbol</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="trklj" type="radio"> b. Aggregation symbol</label></li>
                   </ul>
                   <div slot="answer">
                     <p>(b)</p>
@@ -3944,11 +3954,11 @@
               <panel header=":lock::key: Difference between a class diagram and and an OO domain model?">
                 <question>
                   <p>What is the main difference between a class diagram and and an OO domain model?</p>
-                  <ul radio-group="sw809" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="sw809" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="sw809" type="radio"> b. One has more classes than the other.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="sw809" type="radio"> c. One shows more details than the other.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="sw809" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
+                  <ul radio-group="jks24" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="jks24" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="jks24" type="radio"> b. One has more classes than the other.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="jks24" type="radio"> c. One shows more details than the other.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="jks24" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
                   </ul>
                   <div slot="answer">
                     <p>(a)</p>
@@ -4371,11 +4381,11 @@
               <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                 <question>
                   <p>What is the recommended approach regarding coding standards?</p>
-                  <ul radio-group="xw7xq" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="xw7xq" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="xw7xq" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="xw7xq" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="xw7xq" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                  <ul radio-group="ra8xz" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="ra8xz" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="ra8xz" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="ra8xz" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="ra8xz" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                   </ul>
                   <div slot="answer">
                     <p>c</p>
@@ -5112,9 +5122,9 @@ send();
               <panel header=":lock::key: True or False?">
                 <question>
                   <p>Defining component APIs early is useful for developing components in parallel.</p>
-                  <ul radio-group="pf5d5" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="pf5d5" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="pf5d5" type="radio"> False</label></li>
+                  <ul radio-group="4i13o" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="4i13o" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="4i13o" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>True</p>
@@ -5273,11 +5283,11 @@ send();
               <panel header=":lock::key: Which are frameworks?">
                 <question>
                   <p>Which one of these are frameworks ?</p>
-                  <ul radio-group="of3ks" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="of3ks" type="radio"> a. JUnit</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="of3ks" type="radio"> b. Eclipse</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="of3ks" type="radio"> c. Drupal</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="of3ks" type="radio"> d. Ruby on Rails</label></li>
+                  <ul radio-group="9ipci" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="9ipci" type="radio"> a. JUnit</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="9ipci" type="radio"> b. Eclipse</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="9ipci" type="radio"> c. Drupal</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="9ipci" type="radio"> d. Ruby on Rails</label></li>
                   </ul>
                   <div slot="answer">
                     <p>(a)(b)(c)(d)</p>
@@ -5617,9 +5627,9 @@ send();
               <panel header=":lock::key: Absence of errors">
                 <question>
                   <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
-                  <ul radio-group="qburn" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="qburn" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="qburn" type="radio"> False</label></li>
+                  <ul radio-group="4j1xc" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="4j1xc" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="4j1xc" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>True</p>
@@ -5926,9 +5936,9 @@ send();
               <panel header=":lock::key: Cost of bug fixing over time">
                 <question>
                   <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                  <ul radio-group="knnti" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="knnti" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="knnti" type="radio"> False</label></li>
+                  <ul radio-group="7p8mq" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="7p8mq" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="7p8mq" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>False. The cost goes up over time.</p>
@@ -6178,10 +6188,10 @@ send();
               <panel header=":lock::key: Regression Testing defintion T/F?">
                 <question>
                   <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                  <ul radio-group="2728p" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="2728p" type="radio"> a. True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="2728p" type="radio"> b. False</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="2728p" type="radio"> c. Partially true</label></li>
+                  <ul radio-group="52nw7" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="52nw7" type="radio"> a. True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="52nw7" type="radio"> b. False</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="52nw7" type="radio"> c. Partially true</label></li>
                   </ul>
                   <div slot="answer">
                     <p>c.</p>
@@ -6644,18 +6654,18 @@ Enter side 1:
                     <p>Description: returns true if <code>s</code> is not <code>null</code> and not longer than 50 characters.</p>
                   </tip-box>
                   <p>A. Which one of these is least likely to be an equivalence partition for the parameter s of the isValidName method given below?</p>
-                  <ul radio-group="n3hbr" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="n3hbr" type="radio"> a. null.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="n3hbr" type="radio"> b. strings having more than 50 characters.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="n3hbr" type="radio"> c. strings having 50 or fewer characters.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="n3hbr" type="radio"> d. strings consisting of numbers instead of letters.</label></li>
+                  <ul radio-group="zg3qy" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="zg3qy" type="radio"> a. null.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="zg3qy" type="radio"> b. strings having more than 50 characters.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="zg3qy" type="radio"> c. strings having 50 or fewer characters.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="zg3qy" type="radio"> d. strings consisting of numbers instead of letters.</label></li>
                   </ul>
                   <p>B. If you had to choose 3 test cases from the 4 given below, which one will you leave out based on the EP technique?</p>
-                  <ul radio-group="ppc2i" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ppc2i" type="radio"> a. A string that is 50 characters long</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ppc2i" type="radio"> b. A string that is 51 characters long</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ppc2i" type="radio"> c. A string that is 40 characters long</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="ppc2i" type="radio"> d. null</label></li>
+                  <ul radio-group="dkhqx" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="dkhqx" type="radio"> a. A string that is 50 characters long</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="dkhqx" type="radio"> b. A string that is 51 characters long</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="dkhqx" type="radio"> c. A string that is 40 characters long</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="dkhqx" type="radio"> d. null</label></li>
                   </ul>
                   <div slot="answer">
                     <p>A. (d)</p>
@@ -6770,9 +6780,9 @@ Enter side 1:
               <panel header=":lock::key: What BVA recommends">
                 <question>
                   <p>Boundary value analysis recommends testing <em>only</em> values that reside on the equivalence class boundary.</p>
-                  <ul radio-group="4wp5a" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="4wp5a" type="radio"> True</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="4wp5a" type="radio"> False</label></li>
+                  <ul radio-group="ylv0s" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="ylv0s" type="radio"> True</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="ylv0s" type="radio"> False</label></li>
                   </ul>
                   <div slot="answer">
                     <p>False</p>
@@ -7121,12 +7131,12 @@ Enter side 1:
               <panel header=":lock::key: Which one is not a well-defined task?">
                 <question>
                   <p>Which one these is not well-defined task? Context: These are tasks to be put in the issue tracker of your project.</p>
-                  <ul radio-group="3cerx" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="3cerx" type="radio"> a. Implement the ‘delete’ feature.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="3cerx" type="radio"> b. Fix Issue 23 in the bug tracker.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="3cerx" type="radio"> c. Do some more testing.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="3cerx" type="radio"> d. Choose a tool to draw UML diagrams.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="3cerx" type="radio"> e. Clarify submission requirements with the professor.</label></li>
+                  <ul radio-group="bphk8" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="bphk8" type="radio"> a. Implement the ‘delete’ feature.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="bphk8" type="radio"> b. Fix Issue 23 in the bug tracker.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="bphk8" type="radio"> c. Do some more testing.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="bphk8" type="radio"> d. Choose a tool to draw UML diagrams.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="bphk8" type="radio"> e. Clarify submission requirements with the professor.</label></li>
                   </ul>
                   <div slot="answer">
                     <p>(c)</p>
@@ -7349,10 +7359,10 @@ Enter side 1:
             <panel header=":lock::key: Which team structure is the most suitable for a school project?">
               <question>
                 <p>Which team structure is the most suitable for a school project?</p>
-                <ul radio-group="adnna" class="radio-list">
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="adnna" type="radio"> a. Egoless</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="adnna" type="radio"> b. Chief programmer</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="adnna" type="radio"> c. Strict hierarchy</label></li>
+                <ul radio-group="f0bwt" class="radio-list">
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="f0bwt" type="radio"> a. Egoless</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="f0bwt" type="radio"> b. Chief programmer</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="f0bwt" type="radio"> c. Strict hierarchy</label></li>
                 </ul>
                 <div slot="answer">
                   <p>(a)</p>

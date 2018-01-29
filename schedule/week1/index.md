@@ -10,7 +10,7 @@
 
 #### Software Engineering
 
-<panel type="info" header="`W1.1` **Can explain pros and cons of software engineering**" no-close>
+<panel type="success" header="`W1.1` **Can explain pros and cons of software engineering**" no-close>
   <include src="../../book/softwareEngineering/prosAndCons/full.md" />
 </panel>
 

@@ -1646,17 +1646,17 @@ AcademicStaff academicStaff = staff; // Not OK
           <p><strong>A <em>software requirement</em> specifies a need to be fulfilled by the software product.</strong></p>
           <p>A software project may be,</p>
           <ul>
-            <li>a <em>brown-field</em> project: develop a product to replace/update an existing software product</li>
-            <li>a <em>green-field</em> project: develop a totally new system with no precedent</li>
+            <li>a <em>brown-field</em> project i.e., develop a product to replace/update an existing software product</li>
+            <li>a <em>green-field</em> project i.e., develop a totally new system with no precedent</li>
           </ul>
-          <p>In either case, requirements gathered, analyzed, specified, and managed.</p>
-          <p>Requirements come from <em>stakeholders</em>.</p>
+          <p>In either case, requirements need to be gathered, analyzed, specified, and managed.</p>
+          <p><strong>Requirements come from <em>stakeholders</em>.</strong></p>
           <tip-box type="info">
             <div>
               <p><strong>Stakeholder</strong>: A party that is potentially affected by the software project. e.g. users, sponsors, developers, interest groups, government agencies, etc.</p>
             </div>
           </tip-box>
-          <p>Identifying requirements is not as straightforward as it sounds. It is not as simple as writing a wish list.</p>
+          <p>Identifying requirements is often not easy. For example, stakeholders may not be aware of their precise needs, may not know how to communicate their requirements correctly, may not be willing to spend effort in identifying requirements, etc.</p>
         </div>
       </div>
       <div>
@@ -1672,12 +1672,14 @@ AcademicStaff academicStaff = staff; // Not OK
           <tip-box>
             <p>📦 Some examples of non-functional requirement categories:</p>
             <ul>
-              <li>Data requirements e.g. size, volatility, persistency etc.,</li>
+              <li>Data requirements e.g. size,
+                <tooltip content="how often do data change">volatility</tooltip>,
+                <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
               <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
               <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
                 Scalability, Security, Stability, Testability, and more ...</li>
             </ul>
-            <panel type="seamless" header=":package: Some concrete examples of NFRs">
+            <panel type="seamless" header=":package: Some concrete examples of NFRs" expanded="">
               <ul>
                 <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                 <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5 million.</li>
@@ -1691,7 +1693,10 @@ AcademicStaff academicStaff = staff; // Not OK
               </ul>
             </panel>
           </tip-box>
-          <p><strong>Non-functional requirements are easier to miss.</strong> We should spend extra effort in digging them out as early as possible because sometimes they are critical to the success of the software. <span class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></p>
+          <p>We should spend extra effort in digging NFRs out as early as possible because <strong>NFRs are easier to miss</strong><span class="dimmed"> e.g., stakeholders tend to think of functional requirements first</span> and sometimes <strong>they are critical to the success of the software.</strong>
+            <span
+              class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span>
+          </p>
         </div>
       </div>
       <div>
@@ -1704,7 +1709,7 @@ AcademicStaff academicStaff = staff; // Not OK
           <tip-box>
             <p>📦 An example scheme for categorizing requirements:</p>
             <ul>
-              <li><code>Essential</code>: The product must have this requirement fulfilled else it does not get user acceptance</li>
+              <li><code>Essential</code>: The product must have this requirement fulfilled or else it does not get user acceptance</li>
               <li><code>Typical</code>: Most similar systems have this feature although the product can survive without it.</li>
               <li><code>Novel</code>: New features that could differentiate this product from the rest.</li>
             </ul>
@@ -1712,14 +1717,15 @@ AcademicStaff academicStaff = staff; // Not OK
             <ul>
               <li><code>High</code>, <code>Medium</code>, <code>Low</code></li>
               <li><code>Must-have</code>, <code>Nice-to-have</code>, <code>Unlikely-to-have</code></li>
+              <li><code>Level 0</code>, <code>Level 1</code>, <code>Level 2</code>, ...</li>
             </ul>
           </tip-box>
-          <p><strong>Some requirements can be discarded if they are considered ‘out of scope’.</strong></p>
+          <p><strong>Some requirements can be discarded if they are considered ‘out of <em><tooltip content="the extent to which the software features should go">scope</tooltip></em>’.</strong></p>
           <tip-box>
-            <p>📦 The requirement given below is for a Calendar application. Stakeholder of the software (e.g. product designers) might decide that keeping track of the time taken for tasks is not in the scope of the software.</p>
-            <ul>
-              <li>The software records the actual time taken by each task and show the difference between the <em>actual</em> and <em>scheduled</em> time for the task.</li>
-            </ul>
+            <p>📦 The requirement given below is for a Calendar application. Stakeholder of the software (e.g. product designers) might decide the following requirement is not in the scope of the software.</p>
+            <blockquote>
+              <p>The software records the actual time taken by each task and show the difference between the <em>actual</em> and <em>scheduled</em> time for the task.</p>
+            </blockquote>
           </tip-box>
         </div>
       </div>
@@ -1798,7 +1804,14 @@ AcademicStaff academicStaff = staff; // Not OK
           <h4 id="interviews-one">Interviews <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <div>
-          <p><strong>Interviewing stakeholders and domain experts can give us useful information that project requirements.</strong></p>
+          <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can give us useful information that project requirements.</strong></p>
+          <popover id="pop:interviews-domainExpert" title="" placement="top">
+            <div slot="content">
+              <div>
+                <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed"> e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
+              </div>
+            </div>
+          </popover>
         </div>
       </div>
       <div>
@@ -1812,10 +1825,9 @@ AcademicStaff academicStaff = staff; // Not OK
           <p></p>
           <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product, advertisement,
             etc.</p>
-          <div v-closeable="" alt="video about focus groups">
-            <p>📺: How do focus groups work? - Hector Lanz <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0030-20e3.png"></p>
+          <panel type="seamless" header="%%:tv:: How do focus groups work? - Hector Lanz :zero:%%">
             <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3TwgVQIZPsw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-          </div>
+          </panel>
         </div>
       </div>
       <div>
@@ -1838,23 +1850,21 @@ AcademicStaff academicStaff = staff; // Not OK
             them.</p>
           <tip-box>
             <panel header=":package: Simple text UI prototype for a primitive CLI (Command Line Interface) Minesweeper:" type="seamless" expanded="">
-              <p><img src="/website/book/gatheringRequirements/prototyping/images/textPrototypeCLI.png" height="350">
+              <p><img src="/website/book/gatheringRequirements/prototyping/images/textPrototypeCLI.png" height="320">
                 <p></p>
               </p>
             </panel>
             <panel header=":package: A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless">
-              <p><img src="/website/book/gatheringRequirements/prototyping/images/guiPrototypeMinesweeper.jpg" height="250">
+              <p><img src="/website/book/gatheringRequirements/prototyping/images/guiPrototypeMinesweeper.jpg" height="220">
                 <p></p>
               </p>
             </panel>
-            <panel header=":package: A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless"><img src="/website/book/gatheringRequirements/prototyping/images/balsamiqPrototypeGUI.jpg" height="500">
+            <panel header=":package: A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless"><img src="/website/book/gatheringRequirements/prototyping/images/balsamiqPrototypeGUI.jpg" height="450">
               <p><span class="dimmed"><sup>[source: <a href="http://balsamiq.com/products/mockups">http://balsamiq.com/products/mockups</a>]</sup></span></p>
             </panel>
           </tip-box>
           <p></p>
-          <tip-box type="tip">
-            <p>Prototyping can be used for <em>discovering</em> as well as <em>specifying</em> requirements <span class="dimmed"> e.g. a UI prototype can serve as a specification of what to build</span>.</p>
-          </tip-box>
+          <p>💡 Prototyping can be used for <em>discovering</em> as well as <em>specifying</em> requirements <span class="dimmed"> e.g. a UI prototype can serve as a specification of what to build</span>.</p>
         </div>
       </div>
       <div>
@@ -1882,14 +1892,11 @@ AcademicStaff academicStaff = staff; // Not OK
           <tip-box>
             <p>📦 The product vision of the <a href="https://github.com/TEAMMATES/teammates">TEAMMATES Project</a> given below is described using prose.</p>
             <blockquote>
-              <h2 id="vision">Vision</h2>
               <p>TEAMMATES aims to become <strong>the biggest student project in the world</strong> (<em>biggest</em> here refers to 'many contributors, many users, large code base, evolving over a long period'). Furthermore, it aims to serve as a training
                 tool for Software Engineering students who want to learn SE skills in the context of <strong>a non-trivial real software product</strong>.</p>
             </blockquote>
           </tip-box>
-          <tip-box type="warning">
-            <p>Avoid using lengthy prose to describe requirements; they can be hard to follow.</p>
-          </tip-box>
+          <p>❗️ Avoid using lengthy prose to describe requirements; they can be hard to follow.</p>
         </div>
       </div>
       <h2 id="feature-list">Feature List</h2>
@@ -1938,7 +1945,7 @@ AcademicStaff academicStaff = staff; // Not OK
             </div>
           </tip-box>
           <tip-box>
-            <p>📦 Examples (from a Learning Management System):</p>
+            <p>📦 Examples (from a <em>Learning Management System</em>):</p>
             <ol>
               <li>As a student, I can download files uploaded by lecturers, so that I can get my own copy of the files</li>
               <li>As a lecturer, I can create discussion forums, so that students can discuss things online</li>
@@ -1946,7 +1953,8 @@ AcademicStaff academicStaff = staff; // Not OK
             </ol>
           </tip-box>
           <p></p>
-          <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software such as <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>            to manage user stories digitally.</p>
+          <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>,
+            Trello, Google Docs, ...) to manage user stories digitally.</p>
           <panel header="%%User stories in use%%" expanded="">
             <panel header="With sticky notes" type="seamless" expanded=""><img src="/website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
               <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
@@ -1969,9 +1977,7 @@ AcademicStaff academicStaff = staff; // Not OK
           <tip-box>
             <p>As a user, I can login to the system <s>so that I can access my data</s></p>
           </tip-box>
-          <tip-box type="warning">
-            <p>It is recommended to confirm there is a concrete benefit even if you omit it from the user story. If not, we could end up adding features that have no real benefit.</p>
-          </tip-box>
+          <p>❗️ It is recommended to confirm there is a concrete benefit even if you omit it from the user story. If not, we could end up adding features that have no real benefit.</p>
           <p>We can add more characteristics to the <code>{user role}</code> to provide more context to the user story.</p>
           <tip-box>
             <ul>
@@ -2162,7 +2168,8 @@ AcademicStaff academicStaff = staff; // Not OK
                 <li>System:
                   <popover effect="fade" placement="right" content="Automated Teller Machine">
                     ATM </popover>
-                  Actor: Customer</li>
+                </li>
+                <li>Actor: Customer</li>
                 <li>Use Case: Check account balance
                   <ol>
                     <li>User inserts an ATM card</li>
@@ -2497,15 +2504,13 @@ AcademicStaff academicStaff = staff; // Not OK
           <tip-box>
             <p>📦 In this example, actor <code>Blogger</code> can do all the use cases the actor <code>Guest</code> can do, as a result of the actor generalization relationship given in the diagram.</p><img src="/website/book/specifyingRequirements/useCases/usage/images/actorGeneralisation.png"
               height="250"></tip-box>
-          <tip-box type="tip">
-            Do not over-complicate use case diagrams by trying to include everything possible. A use case diagram is a brief summary of the use cases that is used as a starting point. Details of the use cases can be given in the use case descriptions.
-          </tip-box>
+          <p>💡 Do not over-complicate use case diagrams by trying to include everything possible. A use case diagram is a brief summary of the use cases that is used as a starting point. Details of the use cases can be given in the use case descriptions.</p>
           <p><strong>Some include ‘System’ as an actor to indicate that something is done by the system itself without being initiated by a user or an external system.</strong></p>
           <tip-box>
             <p>📦 The diagram below can be used to indicate that the system generates daily reports at midnight.</p><img src="/website/book/specifyingRequirements/useCases/usage/images/systemAsActor.jpg" height="200"></tip-box>
           <p>However, others argue that only use cases providing value to an external user/system should be shown in the use case diagram. For example, they argue that ‘view daily report’ should be the use case and <code>generate daily report</code> is not
             to be shown in the use case diagram because it is simply something the system has to do to support the <code>view daily report</code> use case.</p>
-          <p>We recommend that you follow the latter view (i.e. not to use System as a user). Limit use cases for Modeling Behaviors that involve an external actor.</p>
+          <p>We recommend that you follow the latter view (i.e. not to use System as a user). Limit use cases for modeling behaviors that involve an external actor.</p>
           <p><strong>UML is not very specific about the text contents of a use case.</strong> Hence, there are many styles for writing use cases. For example, the steps can be written as a continuous paragraph. Use cases should be easy to read. Note that
             there is no strict rule about writing all details of all steps or a need to use all the elements of a use case.</p>
           <p><strong>There are some advantages of documenting system requirements as use cases:</strong></p>
@@ -2530,7 +2535,7 @@ AcademicStaff academicStaff = staff; // Not OK
             </div>
           </tip-box>
           <tip-box>
-            <p>📦 Here is a partial glossary from a variant of the Snakes and Ladders game:</p>
+            <p>📦 Here is a partial glossary from a variant of the <em>Snakes and Ladders</em> game:</p>
             <ul>
               <li>Conditional square: A square that specifies a specific face value which a player has to throw before his/her piece can leave the square.</li>
               <li>Normal square: a normal square does not have any conditions, snakes, or ladders in it.</li>
@@ -2544,9 +2549,9 @@ AcademicStaff academicStaff = staff; // Not OK
           <h4 id="what-one-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <div>
-          <p><strong>A <mark><em>supplementary requirements</em></mark> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most
+          <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most
             <trigger trigger="click" for="modal:supplementary-nfr">Non Functional Requirements</trigger> will be listed.</p>
-          <modal title="" id="modal:supplementary-nfr">
+          <modal large="" title="" id="modal:supplementary-nfr">
             <div>
               <div></div>
               <p></p>
@@ -2567,12 +2572,14 @@ AcademicStaff academicStaff = staff; // Not OK
                   <tip-box>
                     <p>📦 Some examples of non-functional requirement categories:</p>
                     <ul>
-                      <li>Data requirements e.g. size, volatility, persistency etc.,</li>
+                      <li>Data requirements e.g. size,
+                        <tooltip content="how often do data change">volatility</tooltip>,
+                        <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
                       <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                       <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
                         Scalability, Security, Stability, Testability, and more ...</li>
                     </ul>
-                    <panel type="seamless" header=":package: Some concrete examples of NFRs">
+                    <panel type="seamless" header=":package: Some concrete examples of NFRs" expanded="">
                       <ul>
                         <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                         <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5
@@ -2587,7 +2594,10 @@ AcademicStaff academicStaff = staff; // Not OK
                       </ul>
                     </panel>
                   </tip-box>
-                  <p><strong>Non-functional requirements are easier to miss.</strong> We should spend extra effort in digging them out as early as possible because sometimes they are critical to the success of the software. <span class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></p>
+                  <p>We should spend extra effort in digging NFRs out as early as possible because <strong>NFRs are easier to miss</strong><span class="dimmed"> e.g., stakeholders tend to think of functional requirements first</span> and sometimes <strong>they are critical to the success of the software.</strong>
+                    <span
+                      class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span>
+                  </p>
                 </div>
                 <div>
                   <div>
@@ -7145,9 +7155,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="541mw" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="541mw" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="541mw" type="radio"> False</label></li>
+                          <ul radio-group="97727" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="97727" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="97727" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -7281,9 +7291,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Purpose of stubs">
                         <question>
                           <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                          <ul radio-group="kht09" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kht09" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="kht09" type="radio"> False</label></li>
+                          <ul radio-group="awywj" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="awywj" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="awywj" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>True</p>
@@ -8783,9 +8793,9 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: statements about exploratory and scripted testing">
                         <question>
                           <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
-                          <ul radio-group="a5wna" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="a5wna" type="radio"> True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="a5wna" type="radio"> False</label></li>
+                          <ul radio-group="hz5hg" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="hz5hg" type="radio"> True</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="hz5hg" type="radio"> False</label></li>
                           </ul>
                           <div slot="answer">
                             <p>A) False</p>
@@ -8798,12 +8808,12 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                       <panel header=":lock::key: Which testing technique is better?">
                         <question>
                           <p>Which testing technique is better?</p>
-                          <ul radio-group="qpiww" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="qpiww" type="radio"> a. error guessing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="qpiww" type="radio"> b. bug hunting</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="qpiww" type="radio"> c. attack-based testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="qpiww" type="radio"> d. reactive testing</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="qpiww" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
+                          <ul radio-group="js7os" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="js7os" type="radio"> a. error guessing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="js7os" type="radio"> b. bug hunting</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="js7os" type="radio"> c. attack-based testing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="js7os" type="radio"> d. reactive testing</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="js7os" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(e)</p>
@@ -12217,11 +12227,11 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <panel header=":lock::key: Meaning of OCP">
                       <question>
                         <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                        <ul radio-group="ff3pt" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="ff3pt" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="ff3pt" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="ff3pt" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="ff3pt" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                        <ul radio-group="b2vaz" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="b2vaz" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="b2vaz" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="b2vaz" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="b2vaz" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>(a)</p>
@@ -12350,9 +12360,9 @@ AcademicStaff academicStaff = staff; // Not OK
                     <panel header=":lock::key: Is this LSP?">
                       <question>
                         <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
-                        <ul radio-group="gs8ao" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="gs8ao" type="radio"> True</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="gs8ao" type="radio"> False</label></li>
+                        <ul radio-group="xovmd" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="xovmd" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="xovmd" type="radio"> False</label></li>
                         </ul>
                         <div slot="answer">
                           <p>True.</p>
