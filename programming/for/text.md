@@ -116,6 +116,6 @@ for i in range(2, 5):
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: All Combinations" expanded no-close>
+<panel type="danger" header=":muscle: Exercise: Three Dice Throws" expanded no-close>
   <include src="e-threeDiceThrows.md" />
 </panel><p/>
