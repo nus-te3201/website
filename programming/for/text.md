@@ -18,7 +18,7 @@ for variable_used_as_index in range(number_of_times_to_repeat) :
   
 ```python
 for i in range(3):
-    print(i, 'Knock knock, Penny!')
+  print(i, 'Knock knock, Penny!')
 ```
   </td>
   <td>&nbsp;→&nbsp;</td>
@@ -32,6 +32,14 @@ for i in range(3):
   </td>
 </tr>
 </table>
+
+:bulb: Note how the above `for` loop is equivalent to the following `while` loop but more concise.
+```python
+i = 0
+while i < 3:
+  print(i, 'Knock knock, Penny!')
+  i = i + 1
+```
 
 <panel type="seamless" header="%%:computer: Try your own%%">
 
