@@ -4,16 +4,6 @@ In a previous exercise you wrote a function to print scores (an example solution
 ```python
 def print_score(name, value):
   print(name, '=' * (value//5))
-  
-def calculate_grade(project, exam):
-  if total_score >= 60 and project >= 25 and exam >= 25:
-    return 'A'
-  elif (total_score >= 50) and (project >= 25 or exam >= 25):
-    return 'B'
-  elif total_score >= 40:
-    return 'C'
-  else:
-    return 'D'
 
 project_score = int(input('Enter project score:'))
 exam_score = int(input('Enter exam score:'))
@@ -21,7 +11,14 @@ exam_score = int(input('Enter exam score:'))
 total_score = project_score + exam_score
 print('Total:', total_score)
 
-grade = calculate_grade(project_score, exam_score)
+if total_score >= 60 and project_score >= 25 and exam_score >= 25:
+    grade = 'A'
+elif (total_score >= 50) and (project_score >= 25 or exam_score >= 25):
+    grade = 'B'
+elif total_score >= 40:
+    grade = 'C'
+else:
+    grade = 'D'
 
 print_score('Project :', project_score)
 print_score('Exam    :', exam_score)

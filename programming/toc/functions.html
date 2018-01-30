@@ -356,16 +356,6 @@ print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">
           <p>In a previous exercise you wrote a function to print scores (an example solution is given below).</p>
           <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_score</span><span class="hljs-params">(name, value)</span>:</span>
   print(name, <span class="hljs-string">'='</span> * (value//<span class="hljs-number">5</span>))
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_grade</span><span class="hljs-params">(project, exam)</span>:</span>
-  <span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam &gt;= <span class="hljs-number">25</span>:
-    <span class="hljs-keyword">return</span> <span class="hljs-string">'A'</span>
-  <span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam &gt;= <span class="hljs-number">25</span>):
-    <span class="hljs-keyword">return</span> <span class="hljs-string">'B'</span>
-  <span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
-    <span class="hljs-keyword">return</span> <span class="hljs-string">'C'</span>
-  <span class="hljs-keyword">else</span>:
-    <span class="hljs-keyword">return</span> <span class="hljs-string">'D'</span>
 
 project_score = int(input(<span class="hljs-string">'Enter project score:'</span>))
 exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
@@ -373,7 +363,14 @@ exam_score = int(input(<span class="hljs-string">'Enter exam score:'</span>))
 total_score = project_score + exam_score
 print(<span class="hljs-string">'Total:'</span>, total_score)
 
-grade = calculate_grade(project_score, exam_score)
+<span class="hljs-keyword">if</span> total_score &gt;= <span class="hljs-number">60</span> <span class="hljs-keyword">and</span> project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">and</span> exam_score &gt;= <span class="hljs-number">25</span>:
+    grade = <span class="hljs-string">'A'</span>
+<span class="hljs-keyword">elif</span> (total_score &gt;= <span class="hljs-number">50</span>) <span class="hljs-keyword">and</span> (project_score &gt;= <span class="hljs-number">25</span> <span class="hljs-keyword">or</span> exam_score &gt;= <span class="hljs-number">25</span>):
+    grade = <span class="hljs-string">'B'</span>
+<span class="hljs-keyword">elif</span> total_score &gt;= <span class="hljs-number">40</span>:
+    grade = <span class="hljs-string">'C'</span>
+<span class="hljs-keyword">else</span>:
+    grade = <span class="hljs-string">'D'</span>
 
 print_score(<span class="hljs-string">'Project :'</span>, project_score)
 print_score(<span class="hljs-string">'Exam    :'</span>, exam_score)
