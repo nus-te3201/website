@@ -23,7 +23,7 @@ else:
   print('Your balance:', coin_sum - price)
 ```
 
-Modify the code so that it accepts coins of value 20, 50, 100 only:
+Modify the code so that it accepts coins of value 10, 20, 50, 100 only:
 
 ```python
 Price: 100
