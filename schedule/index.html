@@ -266,11 +266,11 @@
                       <panel header=":lock::key: Characteristic of brainstorming">
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
-                          <ul radio-group="rsw1t" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rsw1t" type="radio"> a. There should be at least 5 participants.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rsw1t" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rsw1t" type="radio"> c. Only the best people in the team should take part.</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="rsw1t" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
+                          <ul radio-group="wzrge" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="wzrge" type="radio"> a. There should be at least 5 participants.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="wzrge" type="radio"> b. All ideas are welcome. There are no <em>bad</em> ideas.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="wzrge" type="radio"> c. Only the best people in the team should take part.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="wzrge" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                           </ul>
                           <div slot="answer">
                             <p>(b)</p>
@@ -2014,15 +2014,15 @@ is_aborting = <span class="hljs-keyword">False</span>
       <p><strong>You can use a <code>continue</code> statement to skip the remainder of the current iteration</strong> and go back to the <code>while</code> condition.</p>
       <tip-box>
         <p>📦 The code below is for reading three words from the user and printing all three at the end. It uses the <code>continue</code> statement to skip the remainder of the iteration if the word entered is too short (i.e., shorter than 4 letters).</p>
-        <pre><code class="hljs python">count = <span class="hljs-number">0</span>
-accepted_words = <span class="hljs-string">''</span>
+        <pre><code class="hljs python">accepted_words = <span class="hljs-string">''</span>
+count = <span class="hljs-number">0</span>
 <span class="hljs-keyword">while</span> count &lt; <span class="hljs-number">3</span>:
   word = input(<span class="hljs-string">'Enter a word (with 4 letters or more):'</span>)
   <span class="hljs-keyword">if</span> len(word) &lt; <span class="hljs-number">4</span>:
     print(<span class="hljs-string">'Too short. Ignored.'</span>)
     <span class="hljs-keyword">continue</span> <span class="hljs-comment"># skip the remainder of the iteration</span>
-  count = count + <span class="hljs-number">1</span>
   accepted_words = accepted_words + <span class="hljs-string">' '</span> + word
+  count = count + <span class="hljs-number">1</span>
 print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
 </code></pre>
         <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/three-words?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
@@ -2095,7 +2095,7 @@ Your balance: <span class="hljs-number">0</span>
             <tr>
               <td>
                 <pre><code class="hljs python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
-    print(i, <span class="hljs-string">'Knock knock, Penny!'</span>)
+  print(i, <span class="hljs-string">'Knock knock, Penny!'</span>)
 </code></pre>
               </td>
               <td>&nbsp;→&nbsp;</td>
@@ -2107,6 +2107,12 @@ Your balance: <span class="hljs-number">0</span>
               </td>
             </tr>
           </table>
+          <p>💡 Note how the above <code>for</code> loop is equivalent to the following <code>while</code> loop but more concise.</p>
+          <pre><code class="hljs python">i = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">3</span>:
+  print(i, <span class="hljs-string">'Knock knock, Penny!'</span>)
+  i = i + <span class="hljs-number">1</span>
+</code></pre>
           <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/penny-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
             <p></p>
           </panel>

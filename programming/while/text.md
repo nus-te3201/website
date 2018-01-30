@@ -122,15 +122,15 @@ print('Password correct. You may proceed.')
 :package: The code below is for reading three words from the user and printing all three at the end. It uses the `continue` statement to skip the remainder of the iteration if the word entered is too short (i.e., shorter than 4 letters). 
 
 ```python
-count = 0
 accepted_words = ''
+count = 0
 while count < 3:
   word = input('Enter a word (with 4 letters or more):')
   if len(word) < 4:
     print('Too short. Ignored.')
     continue # skip the remainder of the iteration
-  count = count + 1
   accepted_words = accepted_words + ' ' + word
+  count = count + 1
 print('Accepted words: ' + accepted_words)
 ```
 
