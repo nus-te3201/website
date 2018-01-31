@@ -6,6 +6,7 @@
 # Lists
 
 <include src="../lists-intro/text.md" /><hr><hr>
+<include src="../lists-workingWith/text.md" /><hr><hr>
 
 </div>
 </div>

@@ -41,6 +41,7 @@
   * [Local and Global Scope](#local-and-global-scope)
 * [**Lists**](#lists)
   * [The List Data Structure](#the-list-data-structure)
+  * [Working with Lists](#working-with-lists)
 * More topics to be added ...
 
 
