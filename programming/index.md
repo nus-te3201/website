@@ -48,9 +48,6 @@
 <include src="toc/programs.md#main" />
 <include src="toc/flowcontrol.md#main" />
 <include src="toc/functions.md#main" />
-
-# Lists
-
-<include src="lists-intro/text.md" /><hr><hr>
+<include src="toc/lists.md#main" />
 
 </div>
