@@ -94,7 +94,7 @@ Here is the product
 Your balance: -50
 ```
 
-Modify the code to repeat these two lines until the coin entered is enough to pay for the product.
+Modify the code to repeat these two lines until the coin entered is enough to pay for the product. Note that you ==don't need to add up all the coins entered.== Instead, assume the vending machine can accept only one coin for a purchase and keeps rejecting coins until a big-enough coin is entered.
 ```python
 coin_value = int(input('Enter a coin:'))
 print('You have entered:', coin_value)
