@@ -126,5 +126,3 @@ print(spam)
 </panel><p/>
 
 </tip-box>
-
-**You can use `len` function to find the number of items in a list** %%&nbsp;e.g., `len(['a','b'])` evaluates to `2` as the list has 2 items%%.
