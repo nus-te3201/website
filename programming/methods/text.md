@@ -29,13 +29,19 @@ some-simple-words
 </tr>
 </table>
 
+<panel type="seamless" header="%%:computer: Try your own%%">
+
+<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+</panel>
+
 </tip-box>
 
 Some methods return an object. In such cases another method can be called on the returned object immediately. Such **calling of methods on the returned object is called _method chaining_.**
 
 <tip-box> 
 
-:package: In the example of method chaining given below, `'aa bb cc  '.strip()` returns a string object `'aa bb cc'` on which the `replace(' ','_')` method is called. That returns a string object `'aa_bb_cc'` on which the `upper()` method is called. That method converts the string into its upper case, giving us the final output of `'AA_BB_CC'` 
+:package: In the example of method chaining given below, `'aa bb cc  '.strip()` returns a string object `'aa bb cc'` on which the `replace(' ', '_')` method is called. That returns a string object `'aa_bb_cc'` on which the `upper()` method is called. That method converts the string into its upper case, giving us the final output of `'AA_BB_CC'` 
 
 <table> 
 <tr>
@@ -55,6 +61,12 @@ AA_BB_CC
   </td>
 </tr>
 </table>
+
+<panel type="seamless" header="%%:computer: Try your own%%">
+
+<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+</panel>
 
 </tip-box>
 
