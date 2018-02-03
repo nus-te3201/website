@@ -12,6 +12,8 @@ Method | Description
 
 <tip-box> 
 
+:package: Here are some examples of how those list methods can be used:
+
 ```python
 pets = ['Cats', 'Dogs', 'Hamsters']
 print('Hamster is at', pets.index('Hamsters'))
@@ -95,4 +97,7 @@ for animal in pets:
 
 </tip-box>
  
+<panel type="seamless" header="%%:tv: List methods%%">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z9IxxW7428A?rel=0&showinfo=0&start=11&end=666&version=11" frameborder="0" allowfullscreen></iframe>
 
+</panel><p/>
