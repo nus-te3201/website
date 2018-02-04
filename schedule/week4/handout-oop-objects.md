@@ -2,7 +2,7 @@
 <div class="website-content">
 <div id="main">
 
-<include src="../../book-adapted/print.md#handout-requirements" />
+<include src="../../book-adapted/print.md#handout-oop-objects" />
 
 </div>
 </div>
