@@ -1,7 +1,7 @@
 #### Exercise : Expand to Fill
 
 Complete the functions as described below:
-* `expand_to_fill`: returns a list containing a total of `length` items, where the items are repetitions of the items in the `item_list`.
+* `expand_to_fill(item_list, length)`: returns a list containing a total of `length` items, where the items are repetitions of the items in the `item_list`.
 
 :bulb: hints
 * full_repetitions_needed = `length` `//` length_of_item_list

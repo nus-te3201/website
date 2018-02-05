@@ -1,8 +1,8 @@
 #### Exercise : Delete Head, Delete Tail
 
 Complete the functions as described below:
-* `delete_head`: deletes the first item in the list passed as `item_list` parameter.
-* `delete_tail`: deletes the last item in the list passed as `item_list` parameter.
+* `delete_head(item_list)`: deletes the first item in the list passed as `item_list` parameter.
+* `delete_tail(item_list)`: deletes the last item in the list passed as `item_list` parameter.
 
 :bulb: `pass` is a dummy statement that does nothing. We use it here because Python does not accept empty functions.
 

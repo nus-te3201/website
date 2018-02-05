@@ -160,6 +160,10 @@ Tea is already in the list
 
 </panel><p/>
 
+<panel type="danger" header=":muscle: Exercise: XOR" expanded no-close>
+  <include src="e-xor.md" />
+</panel><p/>
+
 **You can traverse through items in a list using the `for item_name in list_name:` notation**.
 
 <tip-box> 
@@ -195,6 +199,10 @@ Do you sell Hamsters?
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Print Card Deck" expanded no-close>
+  <include src="e-printCardDeck.md" />
+</panel><p/>
+
 **The `enumerate` function can help you easily maintain an iteration counter while traversing a list**.
 
 <tip-box> 
@@ -229,3 +237,7 @@ for i, animal in enumerate(pets):
 </panel>
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: First Quarter" expanded no-close>
+  <include src="e-firstQuarter.md" />
+</panel><p/>

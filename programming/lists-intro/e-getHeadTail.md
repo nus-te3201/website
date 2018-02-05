@@ -1,8 +1,8 @@
 #### Exercise : Get Head, Get Tail
 
 Complete the functions as described below:
-* `get_head`: returns the first item of the list received as the `item_list` parameter.
-* `get_tail`: returns the last item of the list received as the `item_list` parameter.
+* `get_head(item_list)`: returns the first item of the list received as the `item_list` parameter.
+* `get_tail(item_list)`: returns the last item of the list received as the `item_list` parameter.
 
 <table>
 <tr>

@@ -1,9 +1,9 @@
 #### Exercise : Get Body
 
 Complete the functions as described below:
-* `get_body`: returns a sublist of `item_list` parameter, without the first and the last items.
-* `get_without_head`: returns a sublist of `item_list` parameter, without the first item.
-* `get_without_tail`: returns a sublist of `item_list` parameter, without the last item.
+* `get_body(item_list)`: returns a sublist of `item_list` parameter, without the first and the last items.
+* `get_without_head(item_list)`: returns a sublist of `item_list` parameter, without the first item.
+* `get_without_tail(item_list)`: returns a sublist of `item_list` parameter, without the last item.
 
 <table>
 <tr>
