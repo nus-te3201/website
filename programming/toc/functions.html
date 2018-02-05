@@ -13,6 +13,18 @@
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/programming/css/programming.css">
 <div class="website-content">
+  <div id="toc">
+    <ul>
+      <li><a href="#functions"><strong>Functions</strong></a>
+        <ul>
+          <li><a href="#writing-functions">Writing Functions</a></li>
+          <li><a href="#function-parameters">Function Parameters</a></li>
+          <li><a href="#return-value">Return Value</a></li>
+          <li><a href="#local-and-global-scope">Local and Global Scope</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
   <div id="main">
     <h1 id="functions">Functions</h1>
     <div>
@@ -56,12 +68,14 @@ Nice to meet you.
               <p>
                 <trigger trigger="click" for="modal:sayHelloFunction-pyTutor"><span class="dimmed">[Visualize execution]</span></trigger>
               </p>
-              <modal large="" title="Calling functions" id="modal:sayHelloFunction-pyTutor"><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28%29%3A%0A%20%20print%28'Hello!'%29%0A%20%20print%28'How%20are%20you%3F'%29%0A%20%20print%28'Nice%20to%20meet%20you.'%29%0A%20%20%0A%23%20call%20the%20function%20twice%0Aprint%28'Going%20to%20call%20the%20function%20...'%29%0Asay_hello%28%29%0Aprint%28'Going%20to%20repeat%20...'%29%0Asay_hello%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+              <modal large="" title="Calling functions" id="modal:sayHelloFunction-pyTutor">
+                <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28%29%3A%0A%20%20print%28'Hello!'%29%0A%20%20print%28'How%20are%20you%3F'%29%0A%20%20print%28'Nice%20to%20meet%20you.'%29%0A%20%20%0A%23%20call%20the%20function%20twice%0Aprint%28'Going%20to%20call%20the%20function%20...'%29%0Asay_hello%28%29%0Aprint%28'Going%20to%20repeat%20...'%29%0Asay_hello%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
             </td>
           </tr>
         </table>
         <p>Note how the statements inside the function are not executed unless the method is called.</p>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-function?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-function?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
@@ -98,7 +112,8 @@ say_hello()
           </tr>
         </table>
       </tip-box>
-      <panel type="seamless" header="%%:tv: Defining your own functions%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=13&end=199&version=3" frameborder="0" allowfullscreen></iframe>
+      <panel type="seamless" header="%%:tv: Defining your own functions%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=13&end=199&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
       </panel>
       <p></p>
@@ -177,11 +192,13 @@ How are you John ?
               <p>
                 <trigger trigger="click" for="modal:sayHelloFunctionWithName-pyTutor"><span class="dimmed">[Visualize execution]</span></trigger>
               </p>
-              <modal large="" title="Calling functions with arguments" id="modal:sayHelloFunctionWithName-pyTutor"><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28name%29%3A%0A%20%20print%28'Hello%20'%20%2B%20name%29%0A%20%20print%28'How%20are%20you',%20name,%20'%3F'%29%0A%20%20%0Asay_hello%28'Gina'%29%0Asay_hello%28'John'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+              <modal large="" title="Calling functions with arguments" id="modal:sayHelloFunctionWithName-pyTutor">
+                <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20say_hello%28name%29%3A%0A%20%20print%28'Hello%20'%20%2B%20name%29%0A%20%20print%28'How%20are%20you',%20name,%20'%3F'%29%0A%20%20%0Asay_hello%28'Gina'%29%0Asay_hello%28'John'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
             </td>
           </tr>
         </table>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-name?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
@@ -197,11 +214,13 @@ How are you John ?
 repeat_hello(<span class="hljs-string">'Penny'</span>, <span class="hljs-number">3</span>)
 say_hello(<span class="hljs-string">'Sheldon'</span>)
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-given-times?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-given-times?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
-        <panel type="seamless" header="%%:laughing: See human version of the above code%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/jrzUsHNGZHc?rel=0&showinfo=0&start=0&end=15&version=3" frameborder="0" allowfullscreen></iframe>
+        <panel type="seamless" header="%%:laughing: See human version of the above code%%">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jrzUsHNGZHc?rel=0&showinfo=0&start=0&end=15&version=3" frameborder="0" allowfullscreen></iframe>
           <p></p>
         </panel>
         <p></p>
@@ -219,7 +238,8 @@ print_uniqueness(<span class="hljs-number">1</span>,<span class="hljs-number">1<
 print(v1) 
 </code></pre>
       </tip-box>
-      <panel type="seamless" header="%%:tv: Function parameters%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=199&end=315&version=3" frameborder="0" allowfullscreen></iframe>
+      <panel type="seamless" header="%%:tv: Function parameters%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=199&end=315&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
       </panel>
       <p></p>
@@ -259,6 +279,7 @@ print_score(<span class="hljs-string">'Total   :'</span>, total_score)
 </code></pre>
           <p>without changing the external behavior of the program.</p>
           <modal large="" title="" id="modal:printScoreFunction-gradeAnalyzer">
+          
             <div>
               <h4 id="exercise-grade-analyzer">Exercise : Grade Analyzer</h4>
               <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
@@ -315,7 +336,8 @@ Grade   : A
 print(<span class="hljs-string">'Player1 response : '</span> + play())
 print(<span class="hljs-string">'Player2 response : '</span> + play())
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/rps-play-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/rps-play-only?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
@@ -341,12 +363,14 @@ print(<span class="hljs-string">'Player2 response : '</span> + play())
 print_all_products(<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>)
 print_all_products(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-all-products?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-all-products?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
       </tip-box>
-      <panel type="seamless" header="%%:tv: Returning values from functions%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=315&end=462&version=3" frameborder="0" allowfullscreen></iframe>
+      <panel type="seamless" header="%%:tv: Returning values from functions%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WB4hJJkfhLU?rel=0&showinfo=0&start=315&end=462&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
       </panel>
       <p></p>
@@ -407,7 +431,8 @@ print(<span class="hljs-string">'Grade   :'</span>, grade)
         function, the local variables will not remember the values stored in them from the last time the function was called.</p>
       <p>A variable must be in the global scope or the local scope; it cannot be in both.</p>
       <p><sub><span class="dimmed">[Some parts of the above explanation were adapted from <a href="https://automatetheboringstuff.com/chapter3/"><em>Automate the Boring Stuff</em></a>]</span></sub></p>
-      <p>Consider the code given below, apparently from a program related to a farm, with the global scope and the local scope of each function indicated by shaded areas.<br><img src="/website/programming/functions-scope/images/scopeAsShadedAreas.png" width="500"></p>
+      <p>Consider the code given below, apparently from a program related to a farm, with the global scope and the local scope of each function indicated by shaded areas.<br>
+        <img src="/website/programming/functions-scope/images/scopeAsShadedAreas.png" width="500"></p>
       <p>Note the following rules about scope:</p>
       <ul>
         <li>Rule 1: <strong>Local scopes can read global variables</strong> e.g., <code>raise_chicken</code> function can access the global variable <code>total_chickens</code> (see line 6).</li>
@@ -454,7 +479,8 @@ total cows after breeding: 5
             </td>
           </tr>
         </table>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/functions-breedCows?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/functions-breedCows?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
@@ -483,6 +509,7 @@ Continue y/n? n
 </code></pre>
           <p>You are <mark>required to divide your code into multiple functions</mark>.</p>
           <modal large="" title="" id="modal:analyzeGradesInLoop-gradeAnalyzer">
+          
             <div>
               <h4 id="exercise-grade-analyzer-2">Exercise : Grade Analyzer</h4>
               <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>

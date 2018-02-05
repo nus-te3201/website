@@ -54,7 +54,7 @@
 * Can import modules
 * Can terminate early: sys.exit()
 * Can write functions: def, arguments, return
-* Can use lists
+* Can use scope
 
 # Week 4
 
@@ -69,8 +69,8 @@
 <include src="../book/uml/classDiagrams/classes/what/outcomes.md" />
 
 
-* Can use scope
-* Can use methods: more list methods
+* Can use lists
+* Can use methods
 * More string methods
 * Can use modules
 * Can use other basic data structures

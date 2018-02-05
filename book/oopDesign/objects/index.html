@@ -44,6 +44,7 @@
                 a certain network of certain structure.</p>
             </tip-box>
             <p><strong>OOP solutions try to create a similar object network inside the computer’s memory</strong> – a sort of a virtual simulation of the corresponding real world scenario – <strong>so that a similar result can be achieved programmatically.</strong></p>
+
             <p><strong>OOP does not demand that the virtual world object network follow the real world <em>exactly</em>.</strong></p>
             <tip-box>
               <p>📦 Our previous example can be tweaked a bit as follows:</p>
@@ -53,54 +54,66 @@
               </ul>
             </tip-box>
             <p><strong>Every object has both state (data) and behavior (operations on data).</strong></p>
-            <table class="markbind-table table">
-              <thead>
-                <tr>
-                  <th style="text-align:center">Object</th>
-                  <th style="text-align:center">Real World?</th>
-                  <th style="text-align:center">Virtual World?</th>
-                  <th style="text-align:center">Example of State (i.e. Data)</th>
-                  <th style="text-align:center">Examples of Behavior (i.e. Operations)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align:center">Adam</td>
-                  <td style="text-align:center">x</td>
-                  <td style="text-align:center">x</td>
-                  <td style="text-align:center">Name, Date of Birth</td>
-                  <td style="text-align:center">Calculate age based on birthday</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Pen</td>
-                  <td style="text-align:center">x</td>
-                  <td style="text-align:center"></td>
-                  <td style="text-align:center">Ink color, Amount of ink remaining</td>
-                  <td style="text-align:center">Write</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">AgeList</td>
-                  <td style="text-align:center"></td>
-                  <td style="text-align:center">x</td>
-                  <td style="text-align:center">Recorded ages</td>
-                  <td style="text-align:center">Give the number of entries, Accept an entry to record</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">Calculator</td>
-                  <td style="text-align:center">x</td>
-                  <td style="text-align:center">x</td>
-                  <td style="text-align:center">Numbers already entered</td>
-                  <td style="text-align:center">Calculate the sum, divide</td>
-                </tr>
-                <tr>
-                  <td style="text-align:center">You/Main</td>
-                  <td style="text-align:center">x</td>
-                  <td style="text-align:center">x</td>
-                  <td style="text-align:center">Average age, Sum of ages</td>
-                  <td style="text-align:center">Use other objects to calculate</td>
-                </tr>
-              </tbody>
-            </table>
+            <tip-box>
+              <table class="markbind-table table">
+                <thead>
+                  <tr>
+                    <th style="text-align:center">Object</th>
+                    <th style="text-align:center">Real World?</th>
+                    <th style="text-align:center">Virtual World?</th>
+                    <th style="text-align:center">Example of State (i.e. Data)</th>
+                    <th style="text-align:center">Examples of Behavior (i.e. Operations)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">Adam</td>
+                    <td style="text-align:center"><strong>🗸</strong></td>
+                    <td style="text-align:center"><strong>🗸</strong></td>
+                    <td style="text-align:center">Name, Date of Birth</td>
+                    <td style="text-align:center">Calculate age based on birthday</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Pen</td>
+                    <td style="text-align:center"><strong>🗸</strong></td>
+                    <td style="text-align:center"><span class="dimmed">-</span></td>
+                    <td style="text-align:center">Ink color, Amount of ink remaining</td>
+                    <td style="text-align:center">Write</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">AgeList</td>
+                    <td style="text-align:center"><span class="dimmed">-</span></td>
+                    <td style="text-align:center"><strong>🗸</strong></td>
+                    <td style="text-align:center">Recorded ages</td>
+                    <td style="text-align:center">Give the number of entries, Accept an entry to record</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Calculator</td>
+                    <td style="text-align:center"><strong>🗸</strong></td>
+                    <td style="text-align:center"><strong>🗸</strong></td>
+                    <td style="text-align:center">Numbers already entered</td>
+                    <td style="text-align:center">Calculate the sum, divide</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">You/Main</td>
+                    <td style="text-align:center"><strong>🗸</strong></td>
+                    <td style="text-align:center"><strong>🗸</strong></td>
+                    <td style="text-align:center">Average age, Sum of ages</td>
+                    <td style="text-align:center">Use other objects to calculate</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </tip-box>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"></td>
+
+
+
             <p><strong>Every object has an interface and an implementation.</strong></p>
             <p>Every real world object has an interface that other objects can interact with and an implementation that supports the interface but may not be accessible to the other object.</p>
             <tip-box>
@@ -174,6 +187,7 @@
           <div>
             <div>
               <panel header=":muscle: Exercises" expandable="">
+
                 <div>
                   <panel header=":lock: Describe objects in the given scenario">
                     <question has-input="true">
@@ -235,7 +249,7 @@
         <div>
           <div>
             <blockquote>
-              <p>Encapsulation protects an implementation from unintended actions and from inadvertent access.<br><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple </sub></p>
+              <p>Encapsulation protects an implementation from unintended actions and from inadvertent access.<br> <sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple </sub></p>
             </blockquote>
             <p><strong>An object is an <em>encapsulation</em> of some data and related behavior in two aspects:</strong></p>
             <p><strong>1. The <em>packaging</em> aspect:</strong> An object packages data and related behavior together into one self-contained unit.</p>
@@ -253,12 +267,12 @@
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
                       </ul>
                       <div slot="hint">
-                        <p>Don't confuse encapsulation with abstraction_.</p>
+                        <p>Don't confuse encapsulation with abstraction.</p>
                       </div>
                       <div slot="answer">
                         <p>Choose the correct statement</p>
                         <p>(a)</p>
-                        <p>Explanation: The second statement should be: An object is an <strong>abstraction</strong><s>encapsulation</s> because it lets ..._</p>
+                        <p>Explanation: The second statement should be: An object is an <strong>abstraction</strong> <s>encapsulation</s> because it lets ...</p>
                       </div>
                     </question>
                   </panel>

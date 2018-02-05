@@ -33,12 +33,11 @@
                 <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
               </blockquote>
               <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
-              <popover
-                id="pop:production-code" title=":mag: Production Code" placement="top">
+              <popover id="pop:production-code" title=":mag: Production Code" placement="top">
                 <div slot="content">
                   Code being used in an actual product with actual users
                 </div>
-                </popover>
+              </popover>
             </div>
             <div></div>
           </div>
@@ -135,7 +134,8 @@
                     </blockquote>
                     <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
                     <tip-box>
-                      <p>Example:</p><img src="/website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
+                      <p>Example:</p>
+                      <img src="/website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
                       <p></p>
                     </tip-box>
                   </div>
@@ -288,8 +288,8 @@
                     <blockquote>
                       <p>Premature optimization is the root of all evil in programming. <sub>--<a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a></sub></p>
                     </blockquote>
-                    <p>Note that <strong>there are cases where optimizing takes priority over other things</strong><span class="dimmed">e.g. when writing code for resource-constrained environments</span>. This guideline simply a caution that you should optimize
-                      only when it is really needed.</p>
+                    <p>Note that <strong>there are cases where optimizing takes priority over other things</strong> <span class="dimmed">e.g. when writing code for resource-constrained environments</span>. This guideline simply a caution that you should
+                      optimize only when it is really needed.</p>
                   </div>
                 </div>
               </panel>
@@ -313,6 +313,7 @@ displayResult();
 </code></pre>
                     </tip-box>
                     <modal title="" id="modal:slap-abstraction">
+                    
                       <div>
                         <div></div>
                         <p></p>
@@ -364,9 +365,9 @@ displayResult();
                     <panel header=":lock::key: Small methods or lengthy methods?">
                       <question>
                         <p>Putting all details in one place can create lengthy methods, but it is preferred over creating many small methods because it makes the code easier to understand.</p>
-                        <ul radio-group="eflxg" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="eflxg" type="radio"> True</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="eflxg" type="radio"> False</label></li>
+                        <ul radio-group="8b65f" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="8b65f" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="8b65f" type="radio"> False</label></li>
                         </ul>
                         <div slot="answer">
                           <p>False</p>
@@ -396,10 +397,10 @@ displayResult();
                     <panel header=":lock::key: Common saying: Make it fast,...">
                       <question>
                         <p>This is a common saying among programmers</p>
-                        <ul radio-group="ba1fc" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="ba1fc" type="radio"> a. Make it fast, make it right, make it work</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="ba1fc" type="radio"> b. Make it work, make it right, make it fast</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="ba1fc" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
+                        <ul radio-group="1dbc3" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1dbc3" type="radio"> a. Make it fast, make it right, make it work</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1dbc3" type="radio"> b. Make it work, make it right, make it fast</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1dbc3" type="radio"> c. Make it fast, make it right, now make it faster</label></li>
                         </ul>
                         <div slot="answer">
                           <p>b</p>
@@ -502,10 +503,9 @@ exit();
               <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening
                 and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard is not generally
                 inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
-              <tip-box
-                type="tip">
+              <tip-box type="tip">
                 <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
-                </tip-box>
+              </tip-box>
             </div>
             <div>
               <div>
@@ -514,11 +514,11 @@ exit();
                     <panel header=":lock::key: What is the recommended approach regarding coding standards?">
                       <question>
                         <p>What is the recommended approach regarding coding standards?</p>
-                        <ul radio-group="0ymd7" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="0ymd7" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="0ymd7" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="0ymd7" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="0ymd7" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                        <ul radio-group="5c5a1" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                         </ul>
                         <div slot="answer">
                           <p>c</p>
@@ -578,12 +578,12 @@ exit();
                     <panel header=":lock::key: Unsuitable variable name">
                       <question>
                         <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                        <ul radio-group="3xhxm" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="3xhxm" type="radio"> a. integer variable name: totalPeople</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="3xhxm" type="radio"> b. boolean variable name: checkWeight</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="3xhxm" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="3xhxm" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="3xhxm" type="radio"> e. String variable name: description</label></li>
+                        <ul radio-group="1c05d" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> a. integer variable name: totalPeople</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> b. boolean variable name: checkWeight</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> e. String variable name: description</label></li>
                         </ul>
                         <div slot="answer">
                           <p>b</p>
@@ -667,8 +667,8 @@ exit();
                     <p><strong>Distinguish clearly between single valued and multivalued variables.</strong></p>
                     <tip-box>
                       <p>Examples:</p>
-                      <p><code>Person student</code><br><code>ArrayList&lt;Person&gt; students</code></p>
-                      <p></p>
+                      <p><code>Person student</code><br>
+                        <code>ArrayList&lt;Person&gt; students</code></p>
                     </tip-box>
                   </div>
                 </div>
@@ -676,7 +676,7 @@ exit();
               <panel header="**Use Standard Words**" type="seamless" alt="indentation" expanded="">
                 <div>
                   <div>
-                    <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong><span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
+                    <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong> <span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
                   </div>
                 </div>
               </panel>
@@ -789,7 +789,7 @@ exit();
                       <p>This is misleading because <code>colorBlue</code> is named similar to <code>colorWhite</code> and <code>colorBlack</code> but has a different purpose while <code>hexForRed</code> is named differently but has very similar purpose
                         to the first two variables. The following is better:</p>
                       <ul>
-                        <li><code>hexForBlack</code><code>hexForWhite</code><code>hexForRed</code></li>
+                        <li><code>hexForBlack</code> <code>hexForWhite</code> <code>hexForRed</code></li>
                         <li><code>blueColorCount</code></li>
                       </ul>
                     </tip-box>
@@ -817,13 +817,13 @@ exit();
                             <td>Hard to pronounce</td>
                           </tr>
                           <tr>
-                            <td><code>right</code><code>left</code><code>wrong</code></td>
-                            <td><code>rightDirection</code><code>leftDirection</code><code>wrongResponse</code></td>
+                            <td><code>right</code> <code>left</code> <code>wrong</code></td>
+                            <td><code>rightDirection</code> <code>leftDirection</code> <code>wrongResponse</code></td>
                             <td><code>right</code> is for 'correct' or 'opposite of 'left'?</td>
                           </tr>
                           <tr>
-                            <td><code>redBooks</code><code>readBooks</code></td>
-                            <td><code>redColorBooks</code><code>booksRead</code></td>
+                            <td><code>redBooks</code> <code>readBooks</code></td>
+                            <td><code>redColorBooks</code> <code>booksRead</code></td>
                             <td><code>red</code> and <code>read</code> (past tense) sounds the same</td>
                           </tr>
                           <tr>
@@ -998,13 +998,13 @@ return isProper;
         <panel type="seamless" header=" %%- - - - - - - - - -%%">
           <div>
             <div>
-              <panel header="**Minimise Scope of Variables**" type="seamless">
+              <panel header="**Minimise Scope of Variables**" type="seamless" expanded="">
                 <div>
                   <div>
                     <p><strong>Minimize global variables</strong>. Global variables may be the most convenient way to pass information around, but they do create implicit links between code segments that use the global variable. Avoid them as much as possible.</p>
                     <p><strong>Define variables in the least possible scope</strong>. For example, if the variable is used only within the <code>if</code> block of the conditional statement, it should be declared inside that <code>if</code> block.</p>
                     <blockquote>
-                      <p><strong>The most powerful technique for minimizing the scope of a local variable is to declare it where it is first used.</strong><sub>-- <em>Effective Java</em>, by Joshua Bloch</sub></p>
+                      <p><strong>The most powerful technique for minimizing the scope of a local variable is to declare it where it is first used.</strong> <sub>-- <em>Effective Java</em>, by Joshua Bloch</sub></p>
                     </blockquote>
                     <p>📎 Resources:</p>
                     <ul>
@@ -1013,7 +1013,7 @@ return isProper;
                   </div>
                 </div>
               </panel>
-              <panel header="**Minimise Code Duplication**" type="seamless">
+              <panel header="**Minimise Code Duplication**" type="seamless" expanded="">
                 <div>
                   <div>
                     <p><strong>Code duplication, especially when you copy-paste-modify code, often indicates a poor quality implementation.</strong> While it may not be possible to have zero duplication, always think twice before duplicating code; most often
@@ -1117,7 +1117,7 @@ trimInput();
                   <div>
                     <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for
                       a class or an operation to explain its purpose.</p>
-                    <p><img src="/website/book/images/Bad.png" alt="" title="Bad"><span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                    <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
                     <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
@@ -1172,11 +1172,11 @@ compact(input);
                     <p>👎 <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
                     <tip-box>
                       <p>📦 Example:</p>
-                      <p><img src="/website/book/images/Bad.png" alt="" title="Bad"><span class="dimmed">Reason: Comment explains how the code works.</span></p>
+                      <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
                       <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
 <span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);
 </code></pre>
-                      <p><img src="/website/book/images/Good.png" alt="" title="Good"><span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
+                      <p><img src="/website/book/images/Good.png" alt="" title="Good"> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
                       <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;
 <span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;

@@ -78,6 +78,7 @@
 
 <hr>
 
+<div id="handout-oop-objects">
 
 # SECTION: DESIGN
 
@@ -93,11 +94,15 @@
 
 <include src="../book/oopDesign/introduction/print.md" />
 
+<p style="page-break-after: always;">&nbsp;</p>
+
 ## Objects
 
 <include src="../book/oopDesign/objects/basic/print.md" />
 <include src="../book/oopDesign/objects/abstraction/print.md" />
 <include src="../book/oopDesign/objects/encapsulation/print.md" />
+
+</div> <!-- handout--oop-objects -->
 
 ## Classes
 

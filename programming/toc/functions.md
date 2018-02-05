@@ -1,6 +1,15 @@
 <link rel="stylesheet" href="{{baseUrl}}/css/programming.css">
 
 <div class="website-content">
+<div id="toc">
+
+* [**Functions**](#functions)
+  * [Writing Functions](#writing-functions)
+  * [Function Parameters](#function-parameters)
+  * [Return Value](#return-value)
+  * [Local and Global Scope](#local-and-global-scope)
+  
+</div>
 <div id="main">
 
 # Functions

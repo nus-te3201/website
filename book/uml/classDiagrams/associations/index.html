@@ -28,10 +28,12 @@
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
           <div>
-            <p>We use a solid line to show an association between two classes.</p><img src="/website/book/uml/classDiagrams/associations/basic/images/notation.png" width="300">
+            <p>We use a solid line to show an association between two classes.</p>
+            <img src="/website/book/uml/classDiagrams/associations/basic/images/notation.png" width="300">
             <p></p>
             <tip-box>
-              <p>📦 This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br><img src="/website/book/uml/classDiagrams/associations/basic/images/example.png" width="300"></p>
+              <p>📦 This example shows an association between the <code>Admin</code> class and the <code>Student</code> class:<br>
+                <img src="/website/book/uml/classDiagrams/associations/basic/images/example.png" width="300"></p>
             </tip-box>
           </div>
           <div></div>
@@ -52,7 +54,8 @@
           <div>
             <p><strong>We use arrow heads to indication the navigability of an association.</strong></p>
             <tip-box>
-              <p>📦 <code>Logic</code> is aware of <code>Minefield</code>, but <code>Minefield</code> is not aware of <code>Logic</code></p><img src="/website/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
+              <p>📦 <code>Logic</code> is aware of <code>Minefield</code>, but <code>Minefield</code> is not aware of <code>Logic</code></p>
+              <img src="/website/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
               <p></p>
               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
     Minefield minefield;
@@ -62,6 +65,7 @@
     ...
 }
 </code></pre>
+
               <p><strong>Navigability can be shown in class diagrams as well as object diagrams</strong>.</p>
             </tip-box>
           </div>
@@ -81,11 +85,12 @@
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
           <div>
-            <p><strong><em>Association Role</em> labels are used to indicate the role played by the classes in the association.</strong></p><img src="/website/book/uml/classDiagrams/associations/roles/images/association.png" height="120">
+            <p><strong><em>Association Role</em> labels are used to indicate the role played by the classes in the association.</strong></p>
+            <img src="/website/book/uml/classDiagrams/associations/roles/images/association.png" height="120">
             <p></p>
             <tip-box>
-              <p>📦 This association represents a marriage between a <code>Man</code> object and a <code>Woman</code> object. The respective roles played by objects of these two classes are <code>husband</code> and <code>wife</code>.</p><img src="/website/book/uml/classDiagrams/associations/roles/images/husbandWife.png"
-                width="300">
+              <p>📦 This association represents a marriage between a <code>Man</code> object and a <code>Woman</code> object. The respective roles played by objects of these two classes are <code>husband</code> and <code>wife</code>.</p>
+              <img src="/website/book/uml/classDiagrams/associations/roles/images/husbandWife.png" width="300">
               <p></p>
               <p>Note how the variable names match closely with the association roles.</p>
               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
@@ -98,14 +103,13 @@
 </code></pre>
             </tip-box>
             <tip-box>
-              <p>📦 The role of <code>Student</code> objects in this association is <code>charges</code><span class="dimmed">(i.e. Admin is in charge of students)</span></p><img src="/website/book/uml/classDiagrams/associations/roles/images/adminStudent.png"
-                height="70">
+              <p>📦 The role of <code>Student</code> objects in this association is <code>charges</code> <span class="dimmed">(i.e. Admin is in charge of students)</span></p>
+              <img src="/website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
               <p></p>
               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
     List&lt;Student&gt; charges;
 }
 </code></pre>
-              <p></p>
             </tip-box>
           </div>
           <div></div>
@@ -124,11 +128,12 @@
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
           <div>
-            <p><strong><em>Association labels</em> describe the meaning of the association.</strong> The arrow head indicates the direction in which the label is to be read.</p><img src="/website/book/uml/classDiagrams/associations/labels/images/association.png"
-              width="400">
+            <p><strong><em>Association labels</em> describe the meaning of the association.</strong> The arrow head indicates the direction in which the label is to be read.</p>
+            <img src="/website/book/uml/classDiagrams/associations/labels/images/association.png" width="400">
             <p></p>
             <tip-box>
-              <p>📦 In this example, the same association is described using two different labels.</p><img src="/website/book/uml/classDiagrams/associations/labels/images/adminStudent.png" width="600">
+              <p>📦 In this example, the same association is described using two different labels.</p>
+              <img src="/website/book/uml/classDiagrams/associations/labels/images/adminStudent.png" width="600">
               <p></p>
               <ul>
                 <li>Diagram on the left: <code>Admin</code> class is associated with <code>Student</code> class because an <code>Admin</code> object <em>uses</em> a <code>Student</code> object.</li>
@@ -151,7 +156,8 @@
       </tip-box>
       <panel type="seamless" header=" %%- - - - - - - - - -%%">
         <div>
-          <div><img src="/website/book/uml/classDiagrams/associations/multiplicity/images/association.png" height="120">
+          <div>
+            <img src="/website/book/uml/classDiagrams/associations/multiplicity/images/association.png" height="120">
             <p></p>
             <p>Commonly used multiplicities:</p>
             <ul>
@@ -161,8 +167,8 @@
               <li><code>n..m</code> : the number of linked objects must be <code>n</code> to <code>m</code> inclusive</li>
             </ul>
             <tip-box>
-              <p>📦 In the diagram below, an <code>Admin</code> object administers (in charge of) any number of students but a <code>Student</code> object must always be under the charge of exactly one <code>Admin</code> object</p><img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png"
-                width="300"></tip-box>
+              <p>📦 In the diagram below, an <code>Admin</code> object administers (in charge of) any number of students but a <code>Student</code> object must always be under the charge of exactly one <code>Admin</code> object</p>
+              <img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminStudent.png" width="300"></tip-box>
             <tip-box>
               <p>📦 In the diagram below,</p>
               <ul>
@@ -170,7 +176,8 @@
                 <li>A professor cannot supervise more than 5 students but can have no students to supervise.</li>
                 <li>An admin can handle any number of professors and any number of students, including none.</li>
                 <li>A professor/student can be handled by any number of admins, including none.</li>
-              </ul><img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70"></tip-box>
+              </ul>
+              <img src="/website/book/uml/classDiagrams/associations/multiplicity/images/adminProfessorStudent.png" height="70"></tip-box>
           </div>
           <div></div>
         </div>

@@ -13,6 +13,20 @@
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/programming/css/programming.css">
 <div class="website-content">
+  <div id="toc">
+    <ul>
+      <li><a href="#program-flow-control"><strong>Program Flow Control</strong></a>
+        <ul>
+          <li><a href="#booleans">Booleans</a></li>
+          <li><a href="#if-statements"><code>if</code> Statements</a></li>
+          <li><a href="#while-statements"><code>while</code> Statements</a></li>
+          <li><a href="#for-statements"><code>for</code> Statements</a></li>
+          <li><a href="#importing-modules">Importing Modules</a></li>
+          <li><a href="#early-termination">Early Termination</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
   <div id="main">
     <h1 id="program-flow-control">Program Flow Control</h1>
     <div>
@@ -20,13 +34,13 @@
       <p><strong>The <code>bool</code> data type is used to represent <em>boolean</em> values</strong> (i.e. true/false values). They are useful when the program execution needs to vary based on a certain condition <span class="dimmed"> e.g., print 'old' if age is greater than 100.</span></p>
       <p>The <code>bool</code> data type can hold only two values <code>True</code> and <code>False</code> (case sensitive).</p>
       <pre class="hljs"><code>&gt;&gt;&gt; type(True)
-&lt; class 'bool' &gt;
+&lt;class 'bool'&gt;
 
 &gt;&gt;&gt; type(False)
-&lt; class 'bool' &gt;
+&lt;class 'bool'&gt;
 
 &gt;&gt;&gt; type('True')
-&lt; class 'str' &gt;
+&lt;class 'str'&gt;
 
 &gt;&gt;&gt; type(true)
 ...
@@ -58,12 +72,12 @@ NameError: name 'true' is not defined
             <td>Greater than</td>
           </tr>
           <tr>
-            <td><code>&lt; =</code></td>
-            <td>Less than or equal to <mark>(no space between the two symbols)</mark></td>
+            <td><code>&lt;=</code></td>
+            <td>Less than or equal to</td>
           </tr>
           <tr>
-            <td><code>&gt; =</code></td>
-            <td>Greater than or equal to <mark>(no space between the two symbols)</mark></td>
+            <td><code>&gt;=</code></td>
+            <td>Greater than or equal to</td>
           </tr>
         </tbody>
       </table>
@@ -87,19 +101,19 @@ print(<span class="hljs-number">20</span> &gt; <span class="hljs-number">10</spa
         </thead>
         <tbody>
           <tr>
-            <td><code>True</code><strong><code>and</code></strong><code>True</code></td>
+            <td><code>True</code> <strong><code>and</code></strong> <code>True</code></td>
             <td><code>True</code></td>
           </tr>
           <tr>
-            <td><code>True</code><strong><code>and</code></strong><code>False</code></td>
+            <td><code>True</code> <strong><code>and</code></strong> <code>False</code></td>
             <td><code>False</code></td>
           </tr>
           <tr>
-            <td><code>False</code><strong><code>and</code></strong><code>True</code></td>
+            <td><code>False</code> <strong><code>and</code></strong> <code>True</code></td>
             <td><code>False</code></td>
           </tr>
           <tr>
-            <td><code>False</code><strong><code>and</code></strong><code>False</code></td>
+            <td><code>False</code> <strong><code>and</code></strong> <code>False</code></td>
             <td><code>False</code></td>
           </tr>
           <tr>
@@ -107,19 +121,19 @@ print(<span class="hljs-number">20</span> &gt; <span class="hljs-number">10</spa
             <td></td>
           </tr>
           <tr>
-            <td><code>True</code><strong><code>or</code></strong><code>True</code></td>
+            <td><code>True</code> <strong><code>or</code></strong> <code>True</code></td>
             <td><code>True</code></td>
           </tr>
           <tr>
-            <td><code>True</code><strong><code>or</code></strong><code>False</code></td>
+            <td><code>True</code> <strong><code>or</code></strong> <code>False</code></td>
             <td><code>True</code></td>
           </tr>
           <tr>
-            <td><code>False</code><strong><code>or</code></strong><code>True</code></td>
+            <td><code>False</code> <strong><code>or</code></strong> <code>True</code></td>
             <td><code>True</code></td>
           </tr>
           <tr>
-            <td><code>False</code><strong><code>or</code></strong><code>False</code></td>
+            <td><code>False</code> <strong><code>or</code></strong> <code>False</code></td>
             <td><code>False</code></td>
           </tr>
           <tr>
@@ -127,11 +141,11 @@ print(<span class="hljs-number">20</span> &gt; <span class="hljs-number">10</spa
             <td></td>
           </tr>
           <tr>
-            <td><strong><code>not</code></strong><code>True</code></td>
+            <td><strong><code>not</code></strong> <code>True</code></td>
             <td><code>False</code></td>
           </tr>
           <tr>
-            <td><strong><code>not</code></strong><code>False</code></td>
+            <td><strong><code>not</code></strong> <code>False</code></td>
             <td><code>True</code></td>
           </tr>
         </tbody>
@@ -140,7 +154,8 @@ print(<span class="hljs-number">20</span> &gt; <span class="hljs-number">10</spa
       <pre><code class="hljs python">result = (<span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">or</span> (<span class="hljs-number">10</span> &lt; <span class="hljs-number">20</span>) <span class="hljs-comment"># True</span>
 result = (<span class="hljs-number">2</span> == <span class="hljs-number">2</span>) <span class="hljs-keyword">and</span> (<span class="hljs-number">3</span> != <span class="hljs-number">3</span>) <span class="hljs-comment"># False</span>
 </code></pre>
-      <panel type="seamless" header="%%:tv: Booleans%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/4XA9CKJJbr4?rel=0&showinfo=0&start=65&version=3" frameborder="0" allowfullscreen></iframe></panel>
+      <panel type="seamless" header="%%:tv: Booleans%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4XA9CKJJbr4?rel=0&showinfo=0&start=65&version=3" frameborder="0" allowfullscreen></iframe></panel>
     </div>
     <hr>
     <hr>
@@ -175,7 +190,8 @@ Done
       <modal large="" title="Code with a simple `if` condition" id="modal:simpelIf-pyTutor">
         <p>Use the <code>Back</code> and <code>Forward</code> buttons to visualize execution one step at a time.</p>
         <p>If the space below is blank, you may need to configure your browser to allow loading the required javascript file. Alternatively you can go to <a href="http://pythontutor.com/visualize.html#mode=edit">PythonTutor.com</a>, copy-paste the above
-          Python code there to see the execution steps.</p><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+          Python code there to see the execution steps.</p>
+        <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=price%20%3D%2055%0Aprint%28price%29%0Aif%20price%20%3E%2050%3A%0A%20%20%20%20print%28'Expensive'%29%0Aweight%20%3D%2045%0Aprint%28weight%29%0Aif%20weight%20%3E%20100%3A%0A%20%20%20%20print%28'Heavy'%29%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
       <p>Note how the code to execute if the condition is true is indented (usually by 4 spaces). <strong>Python uses indentation to indicate code <em>blocks</em></strong> (aka <em>clauses</em>) <span class="dimmed"> i.e., a sequence of statements that belong together</span>.
         In the example below, lines 2-4 are in the same block because they are all indented by one level; if the condition is true, all three are executed; if the condition is false, all three are omitted. Line 5 goes back to the previous indentation
         level, indicating the end of the code block.</p>
@@ -225,27 +241,29 @@ Girl
 Gender code is F
 Age is 13
 </code></pre>
-      <modal large="" title="Nested blocks" id="modal:nestedIf-pyTutor"><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=age%20%3D%2013%0Agender%20%3D%20'F'%0Aif%20%28age%20%3E%2012%29%20and%20%28age%20%3C%2020%29%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20print%28%22Teenager%22%29%20%20%23%20indented%20one%20level%20-%20new%20code%20block%20starts%20here%20%0A%20%20%20%20if%20gender%20%3D%3D%20'F'%3A%0A%20%20%20%20%20%20%20%20print%28'Female'%29%23%20indented%20two%20levels%20-%20this%20block%20is%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Girl'%29%20%20%0A%20%20%20%20if%20gender%20%3D%3D%20'M'%3A%0A%20%20%20%20%20%20%20%20print%28'Male'%29%20%23%20another%20block%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Boy'%29%0A%20%20%20%20print%28'Gender%20code%20is%20'%20%2B%20gender%29%20%0Aprint%28'Age%20is%20'%20%2B%20str%28age%29%29%20&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
-      <panel
-        type="seamless" header="%%:tv: Using `if`%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=7&end=253&version=3" frameborder="0" allowfullscreen></iframe>
+      <modal large="" title="Nested blocks" id="modal:nestedIf-pyTutor">
+        <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=age%20%3D%2013%0Agender%20%3D%20'F'%0Aif%20%28age%20%3E%2012%29%20and%20%28age%20%3C%2020%29%3A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20print%28%22Teenager%22%29%20%20%23%20indented%20one%20level%20-%20new%20code%20block%20starts%20here%20%0A%20%20%20%20if%20gender%20%3D%3D%20'F'%3A%0A%20%20%20%20%20%20%20%20print%28'Female'%29%23%20indented%20two%20levels%20-%20this%20block%20is%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Girl'%29%20%20%0A%20%20%20%20if%20gender%20%3D%3D%20'M'%3A%0A%20%20%20%20%20%20%20%20print%28'Male'%29%20%23%20another%20block%20nested%20within%20the%20first%20block%0A%20%20%20%20%20%20%20%20print%28'Boy'%29%0A%20%20%20%20print%28'Gender%20code%20is%20'%20%2B%20gender%29%20%0Aprint%28'Age%20is%20'%20%2B%20str%28age%29%29%20&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+      <panel type="seamless" header="%%:tv: Using `if`%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=7&end=253&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
-        </panel>
-        <p></p>
-        <p>If a situation has only two
-          <tooltip content="no more than one of them can be true at any time">mutually exclusive</tooltip> possibilities <span class="dimmed"> e.g. the value of <code>gender</code> can only be <code>M</code> or <code>F</code></span>, we can use the <code>else</code> statement to deal with both conditions together.</p>
-        <p>📦 In the example below, the entire <code>else</code> block will be skipped if the <code>if</code> condition is true.</p>
-        <pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
+      </panel>
+      <p></p>
+      <p>If a situation has only two
+        <tooltip content="no more than one of them can be true at any time">mutually exclusive</tooltip> possibilities <span class="dimmed"> e.g. the value of <code>gender</code> can only be <code>M</code> or <code>F</code></span>, we can use the <code>else</code> statement to deal with both conditions together.</p>
+      <p>📦 In the example below, the entire <code>else</code> block will be skipped if the <code>if</code> condition is true.</p>
+      <pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
     print(<span class="hljs-string">'Female'</span>)
 <span class="hljs-keyword">else</span>:
     print(<span class="hljs-string">'Not Female'</span>)               
 </code></pre>
-        <panel type="seamless" header="%%:tv: Using `else`%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=254&end=336&version=3" frameborder="0" allowfullscreen></iframe>
-          <p></p>
-        </panel>
+      <panel type="seamless" header="%%:tv: Using `else`%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=254&end=336&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
-        <p>If a situation has more than two mutually exclusive possibilities, we can bring in <code>elif</code> (an abbreviation of <em>else if</em>) blocks too.</p>
-        <p>📦 The example below shows how to use an <code>if-elif-else</code> construct to control the flow of the execution.</p>
-        <pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
+      </panel>
+      <p></p>
+      <p>If a situation has more than two mutually exclusive possibilities, we can bring in <code>elif</code> (an abbreviation of <em>else if</em>) blocks too.</p>
+      <p>📦 The example below shows how to use an <code>if-elif-else</code> construct to control the flow of the execution.</p>
+      <pre><code class="hljs python"><span class="hljs-keyword">if</span> gender == <span class="hljs-string">'F'</span>:
     print(<span class="hljs-string">'Female'</span>)
 <span class="hljs-keyword">elif</span> gender == <span class="hljs-string">'M'</span>:
     print(<span class="hljs-string">'Male'</span>)
@@ -254,20 +272,22 @@ Age is 13
 <span class="hljs-keyword">else</span>:
     print(<span class="hljs-string">'Unrecognized value'</span>)             
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/gender-if?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-          <p></p>
-        </panel>
+      <panel type="seamless" header="%%:computer: Try your own%%">
+        <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/gender-if?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
         <p></p>
-        <p>Note that in an <code>if-elif-else</code> construct no more than one block (the first one whose condition is true) will be executed.</p>
-        <panel type="seamless" header="%%:tv: Using `elif`%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=354&end=483&version=3" frameborder="0" allowfullscreen></iframe>
-          <p></p>
-        </panel>
+      </panel>
+      <p></p>
+      <p>Note that in an <code>if-elif-else</code> construct no more than one block (the first one whose condition is true) will be executed.</p>
+      <panel type="seamless" header="%%:tv: Using `elif`%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lWeCgEbk-Ro?rel=0&showinfo=0&start=354&end=483&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
-        <panel type="danger" header=":muscle: Exercise: Grade Analyzer" expanded="">
-          <div>
-            <h4 id="exercise-grade-analyzer">Exercise : Grade Analyzer</h4>
-            <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
-            <pre><code class="hljs python">Enter project score:
+      </panel>
+      <p></p>
+      <panel type="danger" header=":muscle: Exercise: Grade Analyzer" expanded="">
+        <div>
+          <h4 id="exercise-grade-analyzer">Exercise : Grade Analyzer</h4>
+          <p>Write a program to read project score and exam score from the keyboard and print a bar chart of the scores and a grade. Follow the example below:</p>
+          <pre><code class="hljs python">Enter project score:
 <span class="hljs-number">30</span>
 
 Enter exam score:
@@ -280,27 +300,27 @@ Exam    : ========
 Total   : ==============
 Grade   : A
 </code></pre>
-            <ul>
-              <li>Note how the colons are aligned.</li>
-              <li>Note the extra blank lines in the expected output.</li>
-              <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
-              <li>Assume all inputs are positive integers.</li>
-            </ul>
-            <p>Grading rules:</p>
-            <ul>
-              <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
-              <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
-              <li><code>C</code>: at least 40 in total</li>
-              <li><code>D</code>: otherwise</li>
-            </ul>
-          </div>
-        </panel>
-        <panel type="danger" header=":muscle: Exercise: Grade Analyzer (extended)" expanded="">
-          <div>
-            <h4 id="exercise-grade-analyzer-extended">Exercise : Grade Analyzer (Extended)</h4>
-            <p>Extend the code you wrote for the exercise <em>Grade Analyzer</em> with the following additional feature.</p>
-            <p>If the grade is determined to be <code>D</code> ask the user if the grade should be withheld. If the user agrees, show the grade as <code>NA</code> instead of <code>D</code>.</p>
-            <pre><code class="hljs python">Enter project score
+          <ul>
+            <li>Note how the colons are aligned.</li>
+            <li>Note the extra blank lines in the expected output.</li>
+            <li>The bar chart has one <code>=</code> for each 5 marks <span class="dimmed"> 24 marks should be shown as <code>====</code>.</span></li>
+            <li>Assume all inputs are positive integers.</li>
+          </ul>
+          <p>Grading rules:</p>
+          <ul>
+            <li><code>A</code>: at least 25 marks for each component and at least 60 in total</li>
+            <li><code>B</code>: at least one component has 25 or more marks and at least 50 in total</li>
+            <li><code>C</code>: at least 40 in total</li>
+            <li><code>D</code>: otherwise</li>
+          </ul>
+        </div>
+      </panel>
+      <panel type="danger" header=":muscle: Exercise: Grade Analyzer (extended)" expanded="">
+        <div>
+          <h4 id="exercise-grade-analyzer-extended">Exercise : Grade Analyzer (Extended)</h4>
+          <p>Extend the code you wrote for the exercise <em>Grade Analyzer</em> with the following additional feature.</p>
+          <p>If the grade is determined to be <code>D</code> ask the user if the grade should be withheld. If the user agrees, show the grade as <code>NA</code> instead of <code>D</code>.</p>
+          <pre><code class="hljs python">Enter project score
 <span class="hljs-number">10</span>
 
 Enter exam score
@@ -316,8 +336,8 @@ Exam    : ====
 Total   : ======
 Grade   : NA
 </code></pre>
-          </div>
-        </panel>
+        </div>
+      </panel>
     </div>
     <hr>
     <hr>
@@ -353,26 +373,29 @@ Done
             </td>
           </tr>
         </table>
-        <modal large="" title="Code with a simple `if` condition" id="modal:multipleHello-pyTutor"><iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=10&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
-        <panel
-          type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <modal large="" title="Code with a simple `if` condition" id="modal:multipleHello-pyTutor">
+          <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=counter%20%3D%200%0Awhile%20counter%20%3C%203%3A%0A%20%20%20%20print%28'Hello'%29%0A%20%20%20%20counter%20%3D%20counter%20%2B%201%0Aprint%28'Done'%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=10&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/hello-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
-          </panel>
-          <p></p>
+        </panel>
+        <p></p>
       </tip-box>
-      <panel type="seamless" header="%%:tv: Basic `while` loops%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=8&end=107&version=3" frameborder="0" allowfullscreen></iframe>
+      <panel type="seamless" header="%%:tv: Basic `while` loops%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=8&end=107&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
       </panel>
       <p></p>
       <tip-box>
-        <p><strong>❗️ Infinite Loops</strong>: Sometimes programming mistakes can result in <em>infinite loops</em><span class="dimmed"> i.e., loops that never terminate.</span> In the example below, the condition <code>counter &lt; 3</code> always evaluates
+        <p><strong>❗️ Infinite Loops</strong>: Sometimes programming mistakes can result in <em>infinite loops</em> <span class="dimmed"> i.e., loops that never terminate.</span> In the example below, the condition <code>counter &lt; 3</code> always evaluates
           to <code>True</code> (because the statement to increment <code>counter</code> has been left out by mistake)</p>
         <pre><code class="hljs python">counter = <span class="hljs-number">0</span>
 <span class="hljs-keyword">while</span> counter &lt; <span class="hljs-number">3</span>:
     print(<span class="hljs-string">'Hello'</span>)
 </code></pre>
         <p>💡 When using IDLE, if a bug in your code caused it to go into an infinite loop, you can use <code>Ctrl + C</code> to force it to stop executing.</p>
-        <panel type="seamless" header="%%:tv: Infinite loops%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe></panel>
+        <panel type="seamless" header="%%:tv: Infinite loops%%">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=297&end=340&version=3" frameborder="0" allowfullscreen></iframe></panel>
       </tip-box>
       <panel type="danger" header=":muscle: Exercise: Vending Machine - Add Loop" expanded="" no-close="">
         <div>
@@ -514,14 +537,15 @@ coin_sum = <span class="hljs-number">0</span>
     print(<span class="hljs-string">'Password incorrect. Try again.'</span>)
 print(<span class="hljs-string">'Password correct. You may proceed.'</span>)
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/password-loop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/password-loop?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
       </tip-box>
-      <panel type="seamless" header="%%:tv: `break` inside `while` loops%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe></panel>
-      <panel type="danger" header=":muscle: Exercise: Vending Machine - Allow Abort"
-        expanded="" no-close="">
+      <panel type="seamless" header="%%:tv: `break` inside `while` loops%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=346&end=409&version=3" frameborder="0" allowfullscreen></iframe></panel>
+      <panel type="danger" header=":muscle: Exercise: Vending Machine - Allow Abort" expanded="" no-close="">
         <div>
           <h4 id="exercise-vending-machine-allow-abort">Exercise : Vending Machine - Allow Abort</h4>
           <p>The vending machine you wrote in the previous exercise (an example solution given below) does not allow the user to abort the purchase and get the money back.</p>
@@ -574,12 +598,14 @@ count = <span class="hljs-number">0</span>
   count = count + <span class="hljs-number">1</span>
 print(<span class="hljs-string">'Accepted words: '</span> + accepted_words)
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/three-words?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/three-words?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
       </tip-box>
-      <panel type="seamless" header="%%:tv: `continue` inside `while` loops%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=449&end=545&version=3" frameborder="0" allowfullscreen></iframe>
+      <panel type="seamless" header="%%:tv: `continue` inside `while` loops%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/885qKiiKisI?rel=0&showinfo=0&start=449&end=545&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
       </panel>
       <p></p>
@@ -662,12 +688,14 @@ Your balance: <span class="hljs-number">0</span>
   print(i, <span class="hljs-string">'Knock knock, Penny!'</span>)
   i = i + <span class="hljs-number">1</span>
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/penny-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/penny-thrice?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
       </tip-box>
-      <panel type="seamless" header="%%:tv: Basic `for` statements%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/HFQGxh1jY3g?rel=0&showinfo=0&start=8&end=372&version=3" frameborder="0" allowfullscreen></iframe>
+      <panel type="seamless" header="%%:tv: Basic `for` statements%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HFQGxh1jY3g?rel=0&showinfo=0&start=8&end=372&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
       </panel>
       <p></p>
@@ -719,7 +747,8 @@ Your balance: <span class="hljs-number">0</span>
 
 print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, str(total))
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/addup-positive?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/addup-positive?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
@@ -757,7 +786,8 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
   <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">11</span>):
     print(i, <span class="hljs-string">'x'</span>, j, <span class="hljs-string">'='</span>, i*j)
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/for-manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/for-manyMultiplicationTables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
@@ -778,8 +808,10 @@ print(<span class="hljs-string">'Grand total of non-negative numbers:'</span>, s
 ...
 </code></pre>
           <popover id="pop:exerciseThreeDiceThrows-dice" title="" placement="top">
+          
             <div slot="content">
-              <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"><br><sub>source: wikipedia</sub></p>
+              <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/6sided_dice.jpg" width="200"><br>
+                <sub>source: wikipedia</sub></p>
               <p></p>
             </div>
           </popover>
@@ -837,13 +869,15 @@ print(<span class="hljs-string">'Going to print 5 random numbers between 1 and 1
 <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
     print(random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>))
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/five-randoms?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/five-randoms?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
       </tip-box>
       <p>💡 It is common practice to put the <code>import</code> statements at the top of the program code.</p>
-      <panel type="seamless" header="%%:tv: Importing modules%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=7&end=116&version=3" frameborder="0" allowfullscreen></iframe>
+      <panel type="seamless" header="%%:tv: Importing modules%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=7&end=116&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
       </panel>
       <p></p>
@@ -882,12 +916,14 @@ n = int(input(<span class="hljs-string">'Number of factorials (0 to exit):'</spa
 <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(n):
     print(math.factorial(i+<span class="hljs-number">1</span>)) <span class="hljs-comment"># use i+1 because i starts from 0</span>
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-factorials?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/print-factorials?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           <p></p>
         </panel>
         <p></p>
       </tip-box>
-      <panel type="seamless" header="%%:tv: Early termination%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=155&end=223&version=3" frameborder="0" allowfullscreen></iframe></panel>
+      <panel type="seamless" header="%%:tv: Early termination%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xJLj6fWfw6k?rel=0&showinfo=0&start=155&end=223&version=3" frameborder="0" allowfullscreen></iframe></panel>
     </div>
     <hr>
     <hr>

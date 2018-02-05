@@ -30,7 +30,8 @@
         </blockquote>
         <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
         <tip-box>
-          <p>Example:</p><img src="/website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
+          <p>Example:</p>
+          <img src="/website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
           <p></p>
         </tip-box>
       </div>
@@ -112,6 +113,7 @@
       </div>
     </div>
   </panel>
+
   <panel type="seamless" header="**Structure Code Logically**" alt="structure logically">
     <div>
       <div>
@@ -169,6 +171,7 @@ displayResult();
 </code></pre>
         </tip-box>
         <modal title="" id="modal:slap-abstraction">
+        
           <div>
             <div></div>
             <p></p>
@@ -212,6 +215,7 @@ displayResult();
       </div>
     </div>
   </panel>
+
   <panel type="seamless" header="**Make the Happy Path Prominent**" alt="happy path">
     <div>
       <div>
@@ -295,8 +299,8 @@ exit();
         <p><strong>Distinguish clearly between single valued and multivalued variables.</strong></p>
         <tip-box>
           <p>Examples:</p>
-          <p><code>Person student</code><br><code>ArrayList&lt;Person&gt; students</code></p>
-          <p></p>
+          <p><code>Person student</code><br>
+            <code>ArrayList&lt;Person&gt; students</code></p>
         </tip-box>
       </div>
     </div>
@@ -304,10 +308,11 @@ exit();
   <panel type="seamless" header="**Use Standard Words**" alt="standard words">
     <div>
       <div>
-        <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong><span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
+        <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong> <span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
       </div>
     </div>
   </panel>
+
   <panel type="seamless" header="**Use Name to Explain**" alt="name explain">
     <div>
       <div>
@@ -400,7 +405,7 @@ exit();
           <p>This is misleading because <code>colorBlue</code> is named similar to <code>colorWhite</code> and <code>colorBlack</code> but has a different purpose while <code>hexForRed</code> is named differently but has very similar purpose to the first
             two variables. The following is better:</p>
           <ul>
-            <li><code>hexForBlack</code><code>hexForWhite</code><code>hexForRed</code></li>
+            <li><code>hexForBlack</code> <code>hexForWhite</code> <code>hexForRed</code></li>
             <li><code>blueColorCount</code></li>
           </ul>
         </tip-box>
@@ -428,13 +433,13 @@ exit();
                 <td>Hard to pronounce</td>
               </tr>
               <tr>
-                <td><code>right</code><code>left</code><code>wrong</code></td>
-                <td><code>rightDirection</code><code>leftDirection</code><code>wrongResponse</code></td>
+                <td><code>right</code> <code>left</code> <code>wrong</code></td>
+                <td><code>rightDirection</code> <code>leftDirection</code> <code>wrongResponse</code></td>
                 <td><code>right</code> is for 'correct' or 'opposite of 'left'?</td>
               </tr>
               <tr>
-                <td><code>redBooks</code><code>readBooks</code></td>
-                <td><code>redColorBooks</code><code>booksRead</code></td>
+                <td><code>redBooks</code> <code>readBooks</code></td>
+                <td><code>redColorBooks</code> <code>booksRead</code></td>
                 <td><code>red</code> and <code>read</code> (past tense) sounds the same</td>
               </tr>
               <tr>
@@ -510,13 +515,14 @@ exit();
       </div>
     </div>
   </panel>
+
   <panel type="seamless" header="**Minimise Scope of Variables**" alt="variable scope">
     <div>
       <div>
         <p><strong>Minimize global variables</strong>. Global variables may be the most convenient way to pass information around, but they do create implicit links between code segments that use the global variable. Avoid them as much as possible.</p>
         <p><strong>Define variables in the least possible scope</strong>. For example, if the variable is used only within the <code>if</code> block of the conditional statement, it should be declared inside that <code>if</code> block.</p>
         <blockquote>
-          <p><strong>The most powerful technique for minimizing the scope of a local variable is to declare it where it is first used.</strong><sub>-- <em>Effective Java</em>, by Joshua Bloch</sub></p>
+          <p><strong>The most powerful technique for minimizing the scope of a local variable is to declare it where it is first used.</strong> <sub>-- <em>Effective Java</em>, by Joshua Bloch</sub></p>
         </blockquote>
         <p>📎 Resources:</p>
         <ul>
@@ -587,7 +593,7 @@ trimInput();
       <div>
         <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class or
           an operation to explain its purpose.</p>
-        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"><span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
         <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
@@ -602,6 +608,7 @@ trimInput();
       </div>
     </div>
   </panel>
+
   <panel type="seamless" header="**Explain WHAT and WHY, not HOW**" alt="explain what why how">
     <div>
       <div>
@@ -625,11 +632,11 @@ compact(input);
         <p>👎 <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
         <tip-box>
           <p>📦 Example:</p>
-          <p><img src="/website/book/images/Bad.png" alt="" title="Bad"><span class="dimmed">Reason: Comment explains how the code works.</span></p>
+          <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
           <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
 <span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);
 </code></pre>
-          <p><img src="/website/book/images/Good.png" alt="" title="Good"><span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
+          <p><img src="/website/book/images/Good.png" alt="" title="Good"> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
           <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;
 <span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;

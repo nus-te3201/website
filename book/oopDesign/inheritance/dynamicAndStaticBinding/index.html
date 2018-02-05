@@ -29,6 +29,7 @@
     <div id="main">
       <div>
         <tip-box type="definition">
+        
           <div>
             <p><strong>Dynamic Binding</strong> (
               <tooltip content="There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document">aka late binding</tooltip>) : a mechanism where method calls in code are
@@ -37,8 +38,8 @@
           </div>
         </tip-box>
         <p><strong><trigger trigger="click" for="modal:dynamicAndStatic-overriding">Overridden methods</trigger> are resolved using dynamic binding, and therefore resolves to the implementation in the actual type of the object.</strong></p>
-        <modal large=""
-          title="Textbook »" id="modal:dynamicAndStatic-overriding">
+        <modal large="" title="Textbook »" id="modal:dynamicAndStatic-overriding">
+        
           <div>
             <div>
               <p>
@@ -103,7 +104,8 @@
                     <div>
                       <panel header=":lock::key: Which methods override?">
                         <question>
-                          <p>Which of these methods override another method?</p><img src="/website/book/oopImplementation/overriding/images/overriding.png" height="220">
+                          <p>Which of these methods override another method?</p>
+                          <img src="/website/book/oopImplementation/overriding/images/overriding.png" height="220">
                           <p></p>
                           <ul class="task-list">
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
@@ -126,8 +128,8 @@
           </div>
         </modal>
         <tip-box>
-          <p>📦 Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code> class is invoked.</p><img src="/website/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png"
-            height="150">
+          <p>📦 Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code> class is invoked.</p>
+          <img src="/website/book/oopDesign/inheritance/dynamicAndStaticBinding/images/staff.png" height="150">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
     <span class="hljs-keyword">for</span> (Staff s: staff) {
@@ -139,12 +141,14 @@
             operation, the operation defined in the immediate superclass (in this case, <code>Staff</code> class) will be called.</p>
         </tip-box>
         <tip-box type="definition">
+        
           <div>
             <p><strong>Static binding</strong> (aka early binding): When a method call is resolved at compile time.</p>
           </div>
         </tip-box>
         <p><strong>In contrast, <trigger trigger="click" for="modal:dynamicAndStatic-overloading">overloaded</trigger> methods are resolved using static binding.</strong></p>
         <modal large="" title="Textbook »" id="modal:dynamicAndStatic-overloading">
+        
           <div>
             <div>
               <p>

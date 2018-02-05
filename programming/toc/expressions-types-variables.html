@@ -13,6 +13,20 @@
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/website/programming/css/programming.css">
 <div class="website-content">
+  <div id="toc">
+    <ul>
+      <li><a href="#expressions-data-types-variables"><strong>Expressions, Data Types, Variables</strong></a>
+        <ul>
+          <li><a href="#computer-programs">Computer Programs</a></li>
+          <li><a href="#setting-up-the-programming-environment">Setting up the Programming Environment</a></li>
+          <li><a href="#working-with-an-interactive-shell">Working with an Interactive Shell</a></li>
+          <li><a href="#operators">Operators</a></li>
+          <li><a href="#data-types">Data Types</a></li>
+          <li><a href="#variables">Variables</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
   <div id="main">
     <h1 id="expressions-data-types-variables">Expressions, Data Types, Variables</h1>
     <div>
@@ -34,6 +48,7 @@
       <h3 id="setting-up-the-programming-environment">Setting up the Programming Environment</h3>
       <p><strong>Programming requires certain specialized tools</strong> most of which are specific to the programming language being used. While some of these tools may come pre-installed in your computer, often you need to install and configure them yourself.</p>
       <tabs>
+      
         <tab header="Python">
           <p><strong>Option 1. use an online python programming environment</strong></p>
           <p>In the initial stages you can use an online programming environment to practice Python.</p>
@@ -51,6 +66,7 @@
           </panel>
           <p></p>
         </tab>
+      
         <tab header="Java">
           <p>Programming in Java requires minimally the <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html"><em>Java Development Kit (JDK)</em></a> to be installed in your computer. The JDK includes tools useful
             for developing and testing programs written in the Java programming language and running on the Java platform.</p>
@@ -71,7 +87,8 @@
 24
 &gt;&gt;&gt;
 </code></pre>
-      <panel type="seamless" header="%%:tv: Python interactive shell in action:%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
+      <panel type="seamless" header="%%:tv: Python interactive shell in action:%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&end=128&version=3" frameborder="0" allowfullscreen></iframe></panel>
     </div>
     <hr>
     <hr>
@@ -138,10 +155,11 @@
 &gt;&gt;&gt; (2 + 4) * 5
 30
 </code></pre>
-      <panel type="seamless" header="%%:tv: Operators%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
+      <panel type="seamless" header="%%:tv: Operators%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&showinfo=0&start=128&end=316&version=3" frameborder="0" allowfullscreen></iframe></panel>
       <panel type="seamless" header="%%:computer: Try some expressions using an online interactive shell%%">
-        <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p><iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%"
-          height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+        <p>Type an expression in the shell below and press enter. You can reload the previous expression using the up arrow key.</p>
+        <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
     </div>
     <hr>
     <hr>
@@ -170,7 +188,7 @@
           <tr>
             <td><code>str</code></td>
             <td>sequence of characters (strings)</td>
-            <td><code>adam</code><code>What can it be?</code>, <code>x</code></td>
+            <td><code>adam</code> <code>What can it be?</code>, <code>x</code></td>
           </tr>
         </tbody>
       </table>
@@ -188,8 +206,10 @@
 &gt;&gt;&gt; 'Bye' + ('!' * 10)
 'Bye!!!!!!!!!!'
 </code></pre>
-      <panel type="seamless" header="%%:tv: Data types%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
-      <panel type="seamless" header="%%:computer: Try your own%%"><iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+      <panel type="seamless" header="%%:tv: Data types%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=317&end=416&version=3" frameborder="0" allowfullscreen></iframe></panel>
+      <panel type="seamless" header="%%:computer: Try your own%%">
+        <iframe src="https://trinket.io/embed/python3/7b27e216a7?toggleCode=true&runOption=console&start=result&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
     </div>
     <hr>
     <hr>
@@ -231,7 +251,8 @@
 &gt;&gt;&gt; price - discount
 9.5
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe src="https://trinket.io/embed/python/3d7b1ae52f?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
       </tip-box>
       <p><strong>Python variable names (by convention) use lower case letters with <code>_</code> separating words.</strong></p>
       <pre><code class="hljs python">long_variable_name = <span class="hljs-number">56</span>
@@ -272,9 +293,11 @@ NameError: name 'Height' is not defined
 &gt;&gt;&gt; width
 5
 </code></pre>
-        <panel type="seamless" header="%%:computer: Try your own%%"><iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
+        <panel type="seamless" header="%%:computer: Try your own%%">
+          <iframe src="https://trinket.io/embed/python/900dbf4e77?outputOnly=true&runOption=console&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></panel>
       </tip-box>
-      <panel type="seamless" header="%%:tv: Variables%%"><iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
+      <panel type="seamless" header="%%:tv: Variables%%">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7qHMXu99d88?rel=0&start=417&end=614&version=3" frameborder="0" allowfullscreen></iframe>
         <p></p>
       </panel>
       <p></p>

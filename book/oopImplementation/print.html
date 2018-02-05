@@ -43,7 +43,8 @@
         <p></p>
         <p><strong>We use instance level variables to implement associations.</strong></p>
         <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
-        <tip-box><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
+        <tip-box>
+          <img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Minefield minefield;
@@ -56,7 +57,8 @@
 </code></pre>
         </tip-box>
         <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
-        <tip-box><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
+        <tip-box>
+          <img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
@@ -65,7 +67,8 @@
 </code></pre>
         </tip-box>
         <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
-        <tip-box><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
+        <tip-box>
+          <img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
     Bar bar;
@@ -104,7 +107,8 @@
     }
 }
 </code></pre>
-          <p>The code above results in this dependency.</p><img src="/website/book/oopImplementation/dependencies/images/taxProcessorTaxable.png" height="40">
+          <p>The code above results in this dependency.</p>
+          <img src="/website/book/oopImplementation/dependencies/images/taxProcessorTaxable.png" height="40">
           <p></p>
           <p>The code does not indicate an association between the two classes because the <code>TaxProcessor</code> object does not keep the <code>Taxable</code> object (i.e. it’s only a short-term interaction)</p>
         </tip-box>
@@ -118,7 +122,8 @@
         <p><strong>Composition too is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of the ‘whole’
           object.</p>
         <tip-box>
-          <p>Example:</p><img src="/website/book/oopImplementation/composition/images/carEngine.png" height="40">
+          <p>Example:</p>
+          <img src="/website/book/oopImplementation/composition/images/carEngine.png" height="40">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
     <span class="hljs-keyword">private</span> Engine engine;
@@ -135,7 +140,8 @@
       <div>
         <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
         <tip-box>
-          <p>📦 Example:</p><img src="/website/book/oopImplementation/aggregation/images/carPerson.png" height="40">
+          <p>📦 Example:</p>
+          <img src="/website/book/oopImplementation/aggregation/images/carPerson.png" height="40">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
     Person driver;
@@ -155,9 +161,11 @@
       <div>
         <p>Note that while a special notation is used to indicate an association class, there is no special way to implement an association class.</p>
         <tip-box>
-          <p>Example:</p><img src="/website/book/oopImplementation/associationClasses/images/manWoman.png" height="140">
+          <p>Example:</p>
+          <img src="/website/book/oopImplementation/associationClasses/images/manWoman.png" height="140">
           <p></p>
-          <p>At implementation level, an association class is most likely implemented as follows.</p><img src="/website/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="140">
+          <p>At implementation level, an association class is most likely implemented as follows.</p>
+          <img src="/website/book/oopImplementation/associationClasses/images/manWomanImplementation.png" height="140">
           <p></p>
           <p>
             <panel type="seamless" src="/website\book\oopImplementation\associationClasses\code-marriage._include_.html" header="%%See code%%" isOpen="false" no-close="true" no-switch="true"></panel>
@@ -171,12 +179,14 @@
       </div>
       <div>
         <tabs>
+        
           <tab header=":abc:">
             <p>To learn how to implement inheritance in Java, you can follow [<a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a>]</p>
             <p>
               <hr>
             </p>
           </tab>
+        
           <tab header=":tv:">
             <p>A very beginner-friendly video about implementing Java inheritance.</p>
             <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/9JpNY-XAseg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
@@ -273,13 +283,14 @@
       <div>
         <p><strong>Java allows multiple inheritance among interfaces. A Java class can <em>implement</em> multiple interfaces</strong> (and inherit from one class).</p>
         <tip-box>
-          <p>📦 The design below is allowed by Java.</p><img src="/website/book/oopDesign/inheritance/interfaces/images/studentStaff.png" height="250">
+          <p>📦 The design below is allowed by Java.</p>
+          <img src="/website/book/oopDesign/inheritance/interfaces/images/studentStaff.png" height="250">
           <p></p>
           <ol>
             <li><code>Staff</code> interface inherits (note the solid lines) the interfaces <code>TaxPayer</code> and <code>Citizen</code>.</li>
             <li><code>TA</code> class implements both <code>Student</code> interface and the <code>Staff</code> interface.</li>
             <li>Because of point 1 above, <code>TA</code> class has to implement all methods in the interfaces <code>TaxPayer</code> and <code>Citizen</code>.</li>
-            <li>Because of points 1,2,3, a <code>TA</code><em>is a</em><code>Staff</code>, <em>is a</em><code>TaxPayer</code> and <em>is a</em><code>Citizen</code>.</li>
+            <li>Because of points 1,2,3, a <code>TA</code> <em>is a</em> <code>Staff</code>, <em>is a</em> <code>TaxPayer</code> and <em>is a</em> <code>Citizen</code>.</li>
           </ol>
         </tip-box>
         <p><strong>Java uses the <code>interface</code> keyword to declare interfaces and <code>implements</code> keyword to indicate that a class implements a given interface.</strong> Inheritance among interfaces uses the <code>extends</code> keyword,
@@ -335,7 +346,8 @@
       <div>
         <p><strong>Use the <code>abstract</code> keyword to identify abstract classes/methods.</strong></p>
         <tip-box>
-          <p>📦 Partial code below gives an example of how to declare abstract classes/methods.</p><img src="/website/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
+          <p>📦 Partial code below gives an example of how to declare abstract classes/methods.</p>
+          <img src="/website/book/oopDesign/inheritance/abstractClasses/images/account.png" height="220">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     
@@ -370,6 +382,7 @@
           <p>📦 Continuing with the example given in [
             <trigger trigger="click" for="modal:oopImpl-polymorphism">🎓 OOP → Polymorphism → Introduction </trigger>], given below is the minimum code for <code>Staff</code>, <code>Admin</code>, and <code>Academic</code> classes that achieves the desired polymorphism.</p>
           <modal title="" id="modal:oopImpl-polymorphism">
+          
             <div>
               <div></div>
               <p></p>
@@ -394,7 +407,8 @@
                     be executed whenever the university initiates a salary adjustment for its staff. However, the adjustment formula is different for different staff categories, say admin and academic. Here is one possible way of designing the classes
                     in the <code>Payroll</code> system.</p>
                   <tip-box>
-                    <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p><img src="/website/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
+                    <p>📦 Calling <code>adjustSalary()</code> method for each Staff type:</p>
+                    <img src="/website/book/oopDesign/polymorphism/introduction/images/payroll.png" height="150">
                     <p></p>
                     <p>Here is the implementation of the <code>adjustSalary(int)</code> operation from the above design.</p>
                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll1</span> </span>{
@@ -448,7 +462,8 @@
                 <div></div>
               </div>
             </div>
-          </modal><img src="/website/book/oopImplementation/polymorphism/images/polymorphicPayroll.png" height="200">
+          </modal>
+          <img src="/website/book/oopImplementation/polymorphism/images/polymorphicPayroll.png" height="200">
           <p></p>
           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Staff</span> </span>{
     String name;

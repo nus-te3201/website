@@ -15,32 +15,12 @@
 </tip-box>
 
 **Table of contents**
+<include src="toc/expressions-types-variables.md#toc" />
+<include src="toc/programs.md#toc" />
+<include src="toc/flowcontrol.md#toc" />
+<include src="toc/functions.md#toc" />
+<include src="toc/lists.md#toc" />
 
-* [**Expressions, Data Types, Variables**](#expressions-data-types-variables)
-  * [Computer Programs](#computer-programs)
-  * [Setting up the Programming Environment](#setting-up-the-programming-environment)
-  * [Working with an Interactive Shell](#working-with-an-interactive-shell)
-  * [Operators](#operators)
-  * [Data Types](#data-types)
-  * [Variables](#variables)
-* [**Python Programs**](#python-programs)
-  * [Scripts (Programs)](#scripts-programs)
-  * [Comments](#comments)
-  * [Using Functions](#using-functions)
-* [**Program Flow Control**](#program-flow-control)
-  * [Booleans](#booleans)
-  * [`if` Statements](#if-statements)
-  * [`while` Statements](#while-statements)
-  * [`for` Statements](#for-statements)
-  * [Importing Modules](#importing-modules)
-  * [Early Termination](#early-termination)
-* [**Functions**](#functions)
-  * [Writing Functions](#writing-functions)
-  * [Function Parameters](#function-parameters)
-  * [Return Value](#return-value)
-  * [Local and Global Scope](#local-and-global-scope)
-* [**Lists**](#lists)
-  * [The List Data Structure](#the-list-data-structure)
 * More topics to be added ...
 
 
@@ -48,9 +28,6 @@
 <include src="toc/programs.md#main" />
 <include src="toc/flowcontrol.md#main" />
 <include src="toc/functions.md#main" />
-
-# Lists
-
-<include src="lists-intro/text.md" /><hr><hr>
+<include src="toc/lists.md#main" />
 
 </div>

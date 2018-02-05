@@ -16,7 +16,8 @@
     <p></p>
     <p><strong>We use instance level variables to implement associations.</strong></p>
     <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
-    <tip-box><img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
+    <tip-box>
+      <img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
       <p></p>
       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Minefield minefield;
@@ -29,7 +30,8 @@
 </code></pre>
     </tip-box>
     <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
-    <tip-box><img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
+    <tip-box>
+      <img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
       <p></p>
       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
@@ -38,7 +40,8 @@
 </code></pre>
     </tip-box>
     <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
-    <tip-box><img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
+    <tip-box>
+      <img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
       <p></p>
       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
     Bar bar;
@@ -117,15 +120,16 @@
 }
 
 </code></pre>
-              <div slot="answer"><img src="/website/book/oopImplementation/associations/images/classDiagramForCodeAnswer.png" width="600"></div>
-              <p></p>
+              <div slot="answer">
+                <img src="/website/book/oopImplementation/associations/images/classDiagramForCodeAnswer.png" width="600"></div>
             </question>
           </panel>
         </div>
         <div>
           <panel header=":lock: Object Diagrams for Class Diagram">
             <question>
-              <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+              <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
+              <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
               <p></p>
               <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
               <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagarm 1 → [diagarm 2] and so on.</p>
@@ -147,14 +151,16 @@
                 </li>
               </ol>
               <div slot="hint">
-                <p>After step 2, the diagram should be like this:</p><img src="/website/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
+                <p>After step 2, the diagram should be like this:</p>
+                <img src="/website/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
             </question>
           </panel>
         </div>
         <div>
           <panel header=":lock: Implement Class Diagram">
             <question>
-              <p>Implement the class structure given below:</p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+              <p>Implement the class structure given below:</p>
+              <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
               <p></p>
             </question>
           </panel>

@@ -5,13 +5,13 @@
 The `bool` data type can hold only two values `True` and `False` (case sensitive).
 ```
 >>> type(True)
-< class 'bool' >
+<class 'bool'>
 
 >>> type(False)
-< class 'bool' >
+<class 'bool'>
 
 >>> type('True')
-< class 'str' >
+<class 'str'>
 
 >>> type(true)
 ...
@@ -24,10 +24,10 @@ Operator | Meaning
 -------- | -------
 `==` | Equal to (different from the assignment operator `=`)
 `!=` | Not equal to
-` < ` | Less than
-` > ` | Greater than
-`< =` | Less than or equal to ==(no space between the two symbols)==
-`> =` | Greater than or equal to ==(no space between the two symbols)==
+`<` | Less than
+`>` | Greater than
+`<=` | Less than or equal to
+`>=` | Greater than or equal to
 
 :package: Here are some examples
 
