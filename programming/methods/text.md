@@ -48,7 +48,7 @@ Some methods return an object. In such cases another method can be called on the
   <td>
 
 ```python
-print('aa bb cc  '.strip().replace(' ', '_').uppper())
+print('aa bb cc  '.strip().replace(' ', '_').upper())
 ```
   </td>
   <td>&nbsp;→&nbsp;</td>

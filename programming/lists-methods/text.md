@@ -101,3 +101,60 @@ for animal in pets:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z9IxxW7428A?rel=0&showinfo=0&start=11&end=666&version=11" frameborder="0" allowfullscreen></iframe>
 
 </panel><p/>
+
+Note that **some methods <tooltip content="changes the value(s) of the object">mutates</tooltip> the object while other methods don't**.
+
+<tip-box> 
+
+:package: In the example below, `lower()` (a _non-mutating_ method) returns a new string that is in lower case while the original string remains unchanged. However, `sort()` (a _mutating_ method) changes the list object it is attached to (and does not return anything).
+
+<table> 
+<tr>
+  <td>
+
+```python
+name = 'JOHN DOE'
+print(name.lower()) # lower() is a non-mutating method
+print(name) 
+```
+  </td>
+  <td>&nbsp;→&nbsp;</td>
+  <td>
+
+```
+
+
+john doe
+JOHN DOE
+```
+  </td>
+</tr>
+<tr>
+  <td>
+
+```python
+names = ['Zoe', 'Adam', 'Norm']
+names.sort() # sort() is a mutating method
+print(names)
+```
+  </td>
+  <td>&nbsp;→&nbsp;</td>
+  <td>
+
+```
+
+
+
+['Adam', 'Norm', 'Zoe']
+```
+  </td>
+</tr>
+</table>
+
+<panel type="seamless" header="%%:computer: Try your own%%">
+
+<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/methods-mutating?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+</panel>
+
+</tip-box>
