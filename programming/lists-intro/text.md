@@ -27,6 +27,10 @@ print(everything)
 
 </panel><p/>
 
+<panel type="danger" header=":muscle: Exercise: Countries" expanded no-close>
+  <include src="e-countries.md" />
+</panel><p/>
+
 **You can use the notation `list_name[index_of_item]` to access an item of a list.** List indexes start from `0` i.e., the first item in a list has the index `0`.
 
 <tip-box>
@@ -123,6 +127,10 @@ print(list_of_lists[2][0])
 
 </panel><p/>
 
+<panel type="danger" header=":muscle: Exercise: Get Head, Get Tail" expanded no-close>
+  <include src="e-getHeadTail.md" />
+</panel><p/>
+
 **You can use the _slice_ notation `list_name[start_index:end_index]` to copy a _<tooltip content="a portion of a list">sublist</tooltip>_ into a new list.**
 
 <tip-box> 
@@ -193,6 +201,10 @@ sub list     : ['0a', '1b']
 
 </panel><p/>
 
+<panel type="danger" header=":muscle: Exercise: Get Body" expanded no-close>
+  <include src="e-getBody.md" />
+</panel><p/>
+
 **You can use `del` to delete an item at a specific position of a list.**
 
 <tip-box>
@@ -233,4 +245,8 @@ print(spam)
 <panel type="seamless" header="%%:tv: Deleting items from a list%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=534&end=581&version=11" frameborder="0" allowfullscreen></iframe>
 
+</panel><p/>
+
+<panel type="danger" header=":muscle: Exercise: Delete Head, Delete Tail" expanded no-close>
+  <include src="e-deleteHead.md" />
 </panel><p/>
