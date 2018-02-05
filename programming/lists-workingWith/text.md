@@ -33,6 +33,10 @@ Length is: 2
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Get Mid" expanded no-close>
+  <include src="e-getMid.md" />
+</panel><p/>
+
 **You can use the `+` operator to combine two lists into a new list.**
 
 <tip-box> 
@@ -108,6 +112,10 @@ print(walking)
 <panel type="seamless" header="%%:tv: Length of a list, list concatenation, list replication%%">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5n6o1MaXDoE?rel=0&showinfo=0&start=581&end=635&version=11" frameborder="0" allowfullscreen></iframe>
 
+</panel><p/>
+
+<panel type="danger" header=":muscle: Exercise: Expand to Fill" expanded no-close>
+  <include src="e-expandToFill.md" />
 </panel><p/>
 
 **You can use `in` or `not in` to check if an item is in a list**. 
