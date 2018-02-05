@@ -158,3 +158,10 @@ print(names)
 </panel>
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Anagram Checker" expanded no-close>
+  <include src="e-anagramChecker.md" />
+</panel><p/>
+<panel type="danger" header=":muscle: Exercise: Word Game" expanded no-close>
+  <include src="e-wordGame.md" />
+</panel><p/>

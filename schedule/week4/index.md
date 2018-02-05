@@ -48,6 +48,6 @@
 
 <panel header=" Evidence of achieving the LO" no-close>
 
-**Exercise from `W4._d`:**<br>
-  ...<p/>
+**Exercise from `W4.2d`:**<br>
+  <include src="../../programming/lists-methods/e-wordGame.md" /><p/>
 </panel>

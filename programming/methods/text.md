@@ -70,5 +70,9 @@ AA_BB_CC
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Remove Extra Spaces" expanded no-close>
+  <include src="e-removeExtraSpaces.md" />
+</panel><p/>
+
  
 
