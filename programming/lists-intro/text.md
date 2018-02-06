@@ -130,6 +130,9 @@ print(list_of_lists[2][0])
 <panel type="danger" header=":muscle: Exercise: Get Head, Get Tail" expanded no-close>
   <include src="e-getHeadTail.md" />
 </panel><p/>
+<panel type="danger" header=":muscle: Exercise: Swap Ends" expanded no-close>
+  <include src="e-swapEnds.md" />
+</panel><p/>
 
 **You can use the _slice_ notation `list_name[start_index:end_index]` to copy a _<tooltip content="a portion of a list">sublist</tooltip>_ into a new list.**
 
