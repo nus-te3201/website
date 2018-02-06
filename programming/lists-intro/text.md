@@ -143,7 +143,7 @@ print(list_of_lists[2][0])
 ```python
 letters = ['0a', '1b', '2c', '3d', '4e']
 sublist = letters[0:3]
-print(sublist]) # print items 0, 1, 2
+print(sublist) # print items 0, 1, 2
 print(letters[:3]) # same as above (first 3 items)
 print(letters[1:4]) # print items 1, 2, 3
 print(letters[3:]) # print from item 3 till end
