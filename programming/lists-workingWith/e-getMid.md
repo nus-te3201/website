@@ -17,16 +17,12 @@ print(get_mid(['a', 'b', 'c']))
 print(get_mid([1, 2, 3, 4]))
 ```
   </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+  <td><br><br><br>&nbsp;→&nbsp;</td>
+  <td><br><br><br>
   
 ```
-
-
-
 b
 3
-
 ```
   </td>
 </tr>

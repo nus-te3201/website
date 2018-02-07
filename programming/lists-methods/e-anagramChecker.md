@@ -19,16 +19,12 @@ print(is_anagram('santa', 'damith'))
 print(is_anagram('santa', 'satan'))
 ```
   </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+  <td><br><br><br>&nbsp;→&nbsp;</td>
+  <td><br><br><br>
   
 ```
-
-
-
 False
 True
-
 ```
   </td>
 </tr>

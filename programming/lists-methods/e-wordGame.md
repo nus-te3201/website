@@ -21,14 +21,14 @@ What's the next word?  people
 Not a four-letter word
 What's the next word?  team
 What's the next word?  puck
-Repeated word! puck is number  2 in the accepted words list.
+Repeated word! puck is number 2 in the accepted words list.
 puck is no longer an accepted word and is banned
 What's the next word?  bust
 What's the next word?  puck
 puck is banned!
 What's the next word?  meat
 What's the next word?  team
-Repeated word! team is number  2 in the accepted words list.
+Repeated word! team is number 2 in the accepted words list.
 team is no longer an accepted word and is banned
 What's the next word?  end
 ========================================================

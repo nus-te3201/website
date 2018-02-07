@@ -22,15 +22,11 @@ def remove_extra_spaces(text):
 print('[' + remove_extra_spaces('  aaa bbb   ccc  ') + ']')
 ```
   </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+  <td><br><br><br>&nbsp;→&nbsp;</td>
+  <td><br><br><br>
   
 ```
-
-
-
 [aaa bbb ccc]
-
 ```
   </td>
 </tr>

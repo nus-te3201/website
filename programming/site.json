@@ -4,6 +4,26 @@
     {
       "src": "index.md",
       "title": "Programming Basics"
+    },
+    {
+      "src": "toc/expressions-types-variables.md",
+      "title": "TE3201 Programming Basics: Expressions, Types, Variables"
+    },
+    {
+      "src": "toc/programs.md",
+      "title": "TE3201 Programming Basics: Programs"
+    },
+    {
+      "src": "toc/flowcontrol.md",
+      "title": "TE3201 Programming Basics: Flow Control"
+    },
+    {
+      "src": "toc/functions.md",
+      "title": "TE3201 Programming Basics: Functions"
+    },
+    {
+      "src": "toc/lists.md",
+      "title": "TE3201 Programming Basics: Lists"
     }
   ],
   "ignore": [
