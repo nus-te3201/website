@@ -134,7 +134,7 @@ print(list_of_lists[2][0])
   <include src="e-swapEnds.md" />
 </panel><p/>
 
-**You can use the _slice_ notation `list_name[start_index:end_index]` to copy a _<tooltip content="a portion of a list">sublist</tooltip>_ into a new list.**
+**You can use the _slice_ notation `list_name[start_index:end_index]` to copy a _<tooltip content="a portion of a list">sublist</tooltip>_ into a new list.** If the `start_index` is omitted, it means 'from the beginning of the list'. If the `end_index` is omitted, it means 'till the end of the list'.
 
 <tip-box> 
 

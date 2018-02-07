@@ -5,7 +5,7 @@ Complete the functions as described below:
 
 :bulb: hints
 * full_repetitions_needed = `length` `//` length_of_item_list
-* return `item_list` `*` full_repetitions_needed `+` slice_of_item_list
+* return `item_list` `*` full_repetitions_needed `+` portion_of_item_list
  
 
 ```python
@@ -13,11 +13,13 @@ def expand_to_fill(item_list, length):
   return
 
 meals = ['Rice', 'Bread', 'Noodles']
+print(expand_to_fill(meals, 5))
 print(expand_to_fill(meals, 7))
 ```
 :arrow_heading_down:
   
 ```
+['Rice', 'Bread', 'Noodles', 'Rice', 'Bread']
 ['Rice', 'Bread', 'Noodles', 'Rice', 'Bread', 'Noodles', 'Rice']
 
 ```

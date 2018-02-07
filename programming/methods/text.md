@@ -2,7 +2,7 @@
 
 **In Python, everything is an object.** For example, `'Hello'` (is a string object),  `14` is an integer object, `[2.0, 3.5]` is a list object that contains two float objects, and so on.
 
-Accordingly, **most Python objects have _methods_**. Methods represent what the object can do. They are functions attached to an object and are executed in relation to the attached object. Methods are executed using `object.method_name` notation. The methods an object has depends on the type of object %%&nbsp;e.g., methods a string object will have are different from the methods a list object will have%%.
+Accordingly, **most Python objects have _methods_**. Methods represent what the object can do. They are functions attached to an object and are executed in relation to the attached object. Methods are executed using `object.method_name` notation. The methods an object will have depend on the _type_ of object %%&nbsp;e.g., methods a string object will have are different from the methods a list object will have%%.
 
 <tip-box> 
 

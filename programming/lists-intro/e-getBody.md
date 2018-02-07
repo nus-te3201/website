@@ -11,37 +11,36 @@ Complete the functions as described below:
 
 ```python
 def get_body(item_list):
-  return
+  return # ADD CODE HERE
   
 def get_without_head(item_list):
-  return
+  return # ADD CODE HERE
   
 def get_without_tail(item_list):
-  return
+  return # ADD CODE HERE
   
 print(get_body([0, 1, 2, 3, 4]))
 print(get_without_head([0, 1, 2, 3, 4]))
 print(get_without_tail([0, 1, 2, 3, 4]))
 ```
   </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+  <td><br><br><br><br><br><br><br><br><br>&nbsp;→&nbsp;</td>
+  <td><br><br><br><br><br><br><br><br><br>
   
 ```
-
-
-
-
-
-
-
-
-
 [1, 2, 3]
 [1, 2, 3, 4]
 [0, 1, 2, 3]
-
 ```
   </td>
 </tr>
 </table>
+
+<panel type="seamless" header="%%:bulb: Partial solution%%">
+
+```python
+def get_without_head(item_list):
+  return item_list[1:]
+```
+
+</panel>
