@@ -15,19 +15,36 @@
 </tip-box>
 
 **Table of contents**
-<include src="toc/expressions-types-variables.md#toc" />
-<include src="toc/programs.md#toc" />
-<include src="toc/flowcontrol.md#toc" />
-<include src="toc/functions.md#toc" />
-<include src="toc/lists.md#toc" />
-
+* [**Expressions, Data Types, Variables**](toc/expressions-types-variables.html)
+  * [Computer Programs](toc/expressions-types-variables.html#computer-programs)
+  * [Setting up the Programming Environment](toc/expressions-types-variables.html#setting-up-the-programming-environment)
+  * [Working with an Interactive Shell](toc/expressions-types-variables.html#working-with-an-interactive-shell)
+  * [Operators](toc/expressions-types-variables.html#operators)
+  * [Data Types](toc/expressions-types-variables.html#data-types)
+  * [Variables](toc/expressions-types-variables.html#variables)
+* [**Python Programs**](toc/programs.html)
+  * [Scripts (Programs)](toc/programs.html#scripts-programs)
+  * [Comments](toc/programs.html#comments)
+  * [Using Functions](toc/programs.html#using-functions)
+* [**Program Flow Control**](toc/flowcontrol.html)
+  * [Booleans](toc/flowcontrol.html#booleans)
+  * [`if` Statements](toc/flowcontrol.html#if-statements)
+  * [`while` Statements](toc/flowcontrol.html#while-statements)
+  * [`for` Statements](toc/flowcontrol.html#for-statements)
+  * [Importing Modules](toc/flowcontrol.html#importing-modules)
+  * [Early Termination](toc/flowcontrol.html#early-termination)
+* [**Functions**](toc/functions.html)
+  * [Writing Functions](toc/functions.html#writing-functions)
+  * [Function Parameters](toc/functions.html#function-parameters)
+  * [Return Value](toc/functions.html#return-value)
+  * [Local and Global Scope](toc/functions.html#local-and-global-scope)
+* [**Lists**](toc/lists.html)
+  * [The List Data Structure](toc/lists.html#the-list-data-structure)
+  * [Working with Lists](toc/lists.html#working-with-lists)
+  * [Methods](toc/lists.html#methods)
+  * [List Methods](toc/lists.html#list-methods)
 * More topics to be added ...
 
 
-<include src="toc/expressions-types-variables.md#main" />
-<include src="toc/programs.md#main" />
-<include src="toc/flowcontrol.md#main" />
-<include src="toc/functions.md#main" />
-<include src="toc/lists.md#main" />
 
 </div>

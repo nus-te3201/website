@@ -3,6 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
+[⮌ Go back to full Table of Contents](../index.html)
 * [**Lists**](#lists)
   * [The List Data Structure](#the-list-data-structure)
   * [Working with Lists](#working-with-lists)

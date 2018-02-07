@@ -3,6 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
+[⮌ Go back to full Table of Contents](../index.html)
 * [**Functions**](#functions)
   * [Writing Functions](#writing-functions)
   * [Function Parameters](#function-parameters)
