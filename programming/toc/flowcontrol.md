@@ -3,7 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
-[⮌ Go back to full Table of Contents](../index.html)
+[← Go back to full Table of Contents](../index.html)
 * [**Program Flow Control**](#program-flow-control)
   * [Booleans](#booleans)
   * [`if` Statements](#if-statements)

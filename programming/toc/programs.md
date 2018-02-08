@@ -3,7 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
-[⮌ Go back to full Table of Contents](../index.html)
+[← Go back to full Table of Contents](../index.html)
 * [**Python Programs**](#python-programs)
   * [Scripts (Programs)](#scripts-programs)
   * [Comments](#comments)
