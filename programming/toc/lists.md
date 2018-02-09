@@ -3,7 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
-[← Go back to full Table of Contents](../index.html)
+<span style="float:right">[<span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑](../index.html)</span>
 * [**Lists**](#lists)
   * [The List Data Structure](#the-list-data-structure)
   * [Working with Lists](#working-with-lists)

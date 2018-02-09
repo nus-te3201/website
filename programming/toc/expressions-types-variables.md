@@ -3,7 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
-[← Go back to full Table of Contents](../index.html)
+<span style="float:right">[<span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑](../index.html)</span>
 * [**Expressions, Data Types, Variables**](#expressions-data-types-variables)
   * [Computer Programs](#computer-programs)
   * [Setting up the Programming Environment](#setting-up-the-programming-environment)

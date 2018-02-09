@@ -3,7 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
-[← Go back to full Table of Contents](../index.html)
+<span style="float:right">[<span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑](../index.html)</span>
 * [**Python Programs**](#python-programs)
   * [Scripts (Programs)](#scripts-programs)
   * [Comments](#comments)
