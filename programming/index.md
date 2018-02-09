@@ -40,6 +40,7 @@
   * [Local and Global Scope](toc/functions.html#local-and-global-scope)
 * [**Lists**](toc/lists.html)
   * [The List Data Structure](toc/lists.html#the-list-data-structure)
+  * [Object References](toc/lists.html#object-references)
   * [Working with Lists](toc/lists.html#working-with-lists)
   * [Methods](toc/lists.html#methods)
   * [List Methods](toc/lists.html#list-methods)
