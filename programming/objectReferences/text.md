@@ -2,25 +2,18 @@
 
 **Objects of some Python _types_ are _immutable_.** An immutable object, once created, cannot be modified.
 
-Some immutable types:
+Some immutable types| &nbsp; | &nbsp; | &nbsp;
+--- | ----------------------- | ------ | ------
+`int` | `float` | `decimal` | `complex` |
+ `bool` | `string` | `tuple` | `range` | 
+`frozenset` |`bytes` |
 
-* int
-* float
-* decimal
-* complex
-* bool
-* string
-* tuple
-* range
-* frozenset
-* bytes
 
 **Objects of some other Python types are _mutable_.** A mutable object can be modified during its lifetime.
 
-* list
-* dict
-* set
-* bytearray
+Some mutable types| &nbsp; | &nbsp; | &nbsp;
+--- | ----------------------- | ------ | ------
+`list` | `dict` | `set` | `bytearray` |
 
 <tip-box> 
 
@@ -41,13 +34,15 @@ However, lists are mutable. Therefore, `numbers[0] = 4` is changing the existing
 
 </tip-box>
 
- **An _object reference_ is the address of the memory location where an object is currently stored.** A variable is a _name_ that is bound to an object reference. We can think of it as the variable _pointing to_ an object that is stored at the object reference.
+ **An _object reference_ is the address of the memory location where an object is currently stored. A variable is a _name_ that is bound to an object reference.** We can think of it as the variable _pointing to_ an object that is stored at the object reference.
 
 <tip-box> 
 
 :package: The variable `spam` is bound to the object reference `57207444` which is the memory location of the list object `[0, 1, 2, 3, 4, 5]`. i.e., `spam` is pointing to the object `[0, 1, 2, 3, 4, 5]` using the object reference `57207444`.
 
-`spam = [0, 1, 2, 3, 4, 5]`<br>
+```python
+spam = [0, 1, 2, 3, 4, 5]
+```
 ![](https://automatetheboringstuff.com/images/000081.jpg)<br>
 <sub>Image credit: [AtBSwP](https://automatetheboringstuff.com)</sub>
 
@@ -60,7 +55,6 @@ However, lists are mutable. Therefore, `numbers[0] = 4` is changing the existing
 :package: Continuing with the previous example, `cheese = spam` results in the object reference stored in `spam` being copied into the variable `cheese`. The end result is both variables are now pointing to the same list object.
 
 ```python
-spam = [0, 1, 2, 3, 4, 5]
 cheese = spam
 ```
 
@@ -74,7 +68,6 @@ This means any change to the list pointed by `cheese` will be reflected as a cha
   <td>
 
 ```python
-spam = [0, 1, 2, 3, 4, 5]
 cheese [1] = 'Hello!'
 print('spam is:', spam)
 print('cheese is:', cheese)
@@ -103,15 +96,20 @@ However, the behavior is different when we do a similar variable assignment and 
 ```python
 spam = 5
 cheese = spam
+print('spam is:', spam)
+print('cheese is:', cheese)
+
 cheese = cheese + 1
 print('spam is:', spam)
 print('cheese is:', cheese)
 ```
   </td>
-  <td><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br>
+  <td><br><br><br><br>&nbsp;→&nbsp;</td>
+  <td><br><br><br><br>
 
 ```
+spam is: 5
+cheese is: 5
 spam is: 5
 cheese is: 6
 ```
@@ -125,7 +123,7 @@ cheese is: 6
 
 <tip-box> 
 
-:package: Note how the `foo` function below is able to modify the list object that is passed in, and the change remains in the list even after the function has finished.
+:package: In the `foo` function below, when `foo(original)` is executed, the object reference of the argument `original` is copied to the parameter `items`.  Now the function is able to modify the list object now being pointed to by both `original` and `items`, and the changes remain in the list even after the function has finished.
 
 <table> 
 <tr>
@@ -142,7 +140,9 @@ print('after foo:', original)
 ```
   </td>
   <td><br><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br><br>
+  <td><br><br><br>
+
+==<trigger trigger="click" for="modal:foo_items-pyTutor">[Visualize]</trigger>==%%[<a target="_blank" href="https://goo.gl/2E2uvp">alt link</a>]%%<br>
 
 ```
 inside foo: ['Hi', 2, 3]
@@ -151,6 +151,12 @@ after foo: ['Hi', 2, 3]
   </td>
 </tr>
 </table>
+
+<modal large title="`foo(items)`" id="modal:foo_items-pyTutor">
+
+<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20foo%28items%29%3A%0A%20%20items%5B0%5D%20%3D%20'Hi'%0A%20%20print%28'inside%20foo%3A',%20items%29%0A%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Afoo%28original%29%0Aprint%28'after%20foo%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</modal>
 
 Contrast the above example with the one below. The `bar(items)` function assigns a new list to `items` parameter. That means `items` is not longer pointing to the list object that was passed in as the argument. After the function is executed, the `original` list remains the same as before. 
 
@@ -169,7 +175,9 @@ print('after bar:', original)
 ```
   </td>
   <td><br><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br><br>
+  <td><br><br><br>
+
+%%<trigger trigger="click" for="modal:bar_items-pyTutor">[Visualize]</trigger>[<a target="_blank" href="https://goo.gl/4KHpPR">alt link</a>]%%<br>
 
 ```
 inside bar: ['a', 'b', 'c']
@@ -178,6 +186,12 @@ after bar: [1, 2, 3]
   </td>
 </tr>
 </table>
+
+<modal large title="`bar(items)`" id="modal:bar_items-pyTutor">
+
+<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20bar%28items%29%3A%0A%20%20items%20%3D%20%5B'a',%20'b',%20'c'%5D%0A%20%20print%28'inside%20bar%3A',%20items%29%0A%20%20%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Abar%28original%29%0Aprint%28'after%20bar%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</modal>
 
 </tip-box>
 
@@ -203,7 +217,9 @@ print('new age:', new_age)
 ```
   </td>
   <td><br><br><br><br><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br><br><br><br><br>
+  <td><br><br><br><br><br>
+
+%%<trigger trigger="click" for="modal:increment_v-pyTutor">[Visualize]</trigger>[<a target="_blank" href="https://goo.gl/9uR4eR">alt link</a>]%%<br>
 
 ```
 age: 25
@@ -213,4 +229,14 @@ new age: 26
 </tr>
 </table>
 
+<modal large title="`increment(v)`" id="modal:increment_v-pyTutor">
+
+<iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20increment%28v%29%3A%0A%20%20v%20%3D%20v%20%2B%201%0A%20%20return%20v%0A%20%20%0Aage%20%3D%2025%0Anew_age%20%3D%20increment%28age%29%0Aprint%28'age%3A',%20age%29%0Aprint%28'new%20age%3A',%20new_age%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</modal>
+
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Swap Ends" expanded no-close>
+  <include src="e-swapEnds.md" />
+</panel><p/>
