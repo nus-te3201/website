@@ -30,6 +30,9 @@
   <panel type="warning" header="`W4.2a` Can define, read, and write lists" no-close>
     <include src="../../programming/lists-intro/text.md" />
   </panel>
+  <panel type="warning" header="`W4.2ab` Can write code that involves object references" no-close>
+    <include src="../../programming/objectReferences/text.md" />
+  </panel>
   <panel type="warning" header="`W4.2b` Can perform operations on lists" no-close>
     <include src="../../programming/lists-workingWith/text.md" />
   </panel>
