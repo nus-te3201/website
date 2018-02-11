@@ -44,6 +44,10 @@
   * [Working with Lists](toc/lists.html#working-with-lists)
   * [Methods](toc/lists.html#methods)
   * [List Methods](toc/lists.html#list-methods)
+* [**Error Handling**](toc/errors.html)
+  * [Introduction to Errors](toc/errors.html#introdution-to-errors)
+  * [Syntax Errors](toc/errors.html#syntax-errors)
+  * [Handling Exceptions](toc/errors.html#handling-exceptions)
 * More topics to be added ...
 
 
