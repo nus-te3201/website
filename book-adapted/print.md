@@ -229,6 +229,7 @@
 <include src="../book/documentation/guidelines/documentMinimally/what/print.md" />
 <include src="../book/documentation/guidelines/documentMinimally/how/print.md" />
 
+<div id="handout-errors">
 
 # Error Handling
 
@@ -242,6 +243,7 @@
 <include src="../book/errorHandling/exceptions/how/print.md" />
 <include src="../book/errorHandling/exceptions/when/print.md" />
 
+</div>
 
 # Reuse
 
