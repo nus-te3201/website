@@ -68,7 +68,9 @@ divide2(3, 1.5)
 ```
   </td>
   <td>&nbsp;→&nbsp;</td>
-  <td><br><br><br><br>
+  <td><br><br>
+
+[<a target="_blank" href="https://goo.gl/rc8X9h">visualize</a>]<br>
 
 ```
 Starting calculation
@@ -274,5 +276,15 @@ Something wrong
 
 </tip-box>
 
+<panel type="seamless" header="%%:computer: Try your own%%">
+
+<iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-handling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+</panel>
+
 :paperclip: **Resources**:
 * [Python built-in exceptions](https://www.tutorialspoint.com/python/standard_exceptions.htm)
+
+<panel type="danger" header=":muscle: Exercise: Enter Integer" expanded no-close>
+  <include src="e-enterInteger.md" />
+</panel><p/>

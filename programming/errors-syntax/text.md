@@ -33,7 +33,7 @@ SyntaxError: invalid syntax
 
 </tip-box>
 
-Some Python editors (e.g., REPL) even points out syntax errors even before you run the program.
+Some Python editors (e.g., REPL) flag syntax errors even before you run the code.
 
 <tip-box> 
 
