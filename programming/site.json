@@ -24,6 +24,10 @@
     {
       "src": "toc/lists.md",
       "title": "TE3201 Programming Basics: Lists"
+    },
+    {
+      "src": "toc/errors.md",
+      "title": "TE3201 Programming Basics: Error Handline"
     }
   ],
   "ignore": [

@@ -42,6 +42,10 @@
       "title": "TE3201 Programming Basics: Lists"
     },
     {
+      "src": "programming/toc/errors.md",
+      "title": "TE3201 Programming Basics: Error Handling"
+    },
+    {
       "src": "common/outcomes.md",
       "title": "TE3201 Learning Outcomes"
     },
