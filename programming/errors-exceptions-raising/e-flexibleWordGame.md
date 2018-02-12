@@ -1,7 +1,13 @@
 #### Exercise : Flexible Word Game
 
-Implement a word game similar to the one you implement in the Word Game Exercise, but with the following difference:
-* The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size. 
+Implement a word game similar to the one you implement in the <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:
+* The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.
+ 
+
+
+<modal large title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
+  <include src="../lists-methods/e-wordGame.md"/>
+</modal>
  
 Given below is a sample session. Try to follow the exact output format in your implementation:
 ```

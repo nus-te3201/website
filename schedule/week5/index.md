@@ -48,3 +48,13 @@
   </panel>
 
 </panel>
+
+<br><br>
+
+:dart: At the end of this week you should be able to do something similar to the exercise given below (in your programming language/environment of choice):
+
+<panel header=" Evidence of achieving the LO" no-close>
+
+**Exercise from `W5.2d`:**<br>
+  <include src="../../programming/errors-exceptions-raising/e-flexibleWordGame.md" /><p/>
+</panel>
