@@ -28,9 +28,9 @@
 <panel header="`W4.2ab` Can write code that involves object references" no-close>
 
 ==This LO is more related to previous week's topics than this week's topics==
+<include src="../../programming/objectReferences/text.md" />
 
-  <include src="../../programming/objectReferences/text.md" />
-</panel><p>
+</panel><p/>
 
 <panel type="warning" header="**`W5.2` Can use exceptions**" expanded no-close>
 
