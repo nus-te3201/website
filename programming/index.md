@@ -48,6 +48,7 @@
   * [Introduction to Errors](toc/errors.html#introdution-to-errors)
   * [Syntax Errors](toc/errors.html#syntax-errors)
   * [Handling Exceptions](toc/errors.html#handling-exceptions)
+  * [Raising Exceptions](toc/errors.html#raising-exceptions)
 * More topics to be added ...
 
 

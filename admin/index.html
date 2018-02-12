@@ -223,13 +223,128 @@
     <p>📊 <strong>Slides</strong> will be uploaded to IVLE <em>after</em> the lecture. Note that lecture slides are to assist in lecture delivery only; they are <mark>not suitable for printing or as an exam reference</mark>.</p>
   </div>
   <h2 id="project">Project</h2>
-  <p>To be done in teams of 3-4 members.</p>
-  <p>Programming language: The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.</p>
-  <p>Software to build: A simple text-based desktop software. More details to be released later.</p>
-  <p><strong>Deliverables</strong>:</p>
+  <p>To be done in individually, or teams of 2-3 members.</p>
+  <p><strong>Programming language</strong>: The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.</p>
+  <h3 id="software-to-build">Software to build</h3>
+  <p>You will be building a personal assistant chat-bot software named <em>PAC</em> (<em>PAC</em> is a temporary name; you should give a different name to your own chat bot)</p>
+  <p><strong><em>Basic</em> Functionality for PAC</strong>:</p>
+  <ol>
+    <li>
+      <p>PAC interface can be text-based (i.e., no need for a graphical UI)</p>
+    </li>
+    <li>
+      <p>PAC helps with storing and retrieving one type of data that is useful to the user. e.g. details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between PAC and the user.</p>
+      <pre class="hljs"><code>&gt;&gt; Hi, I'm PAC. What can I do for you?
+
+add todo Return library book
+&gt;&gt; TODO added: Return library book&quot;
+
+list todo
+&gt;&gt; Here are the list of TODOs you have:
+1. Return library book
+2. Do TE3201 exercises
+3. Call back Jina
+
+delete 2
+&gt;&gt; TODO deleted: Do TE3201 exercises
+
+are you single?
+&gt;&gt; Sorry. I did not understand your request.
+
+help
+&gt;&gt; Here are the requests I understand.
+add todo {todo description} : adds a todo to the list
+list todo : lists all todos
+...
+
+</code></pre>
+    </li>
+    <li>
+      <p>There is no need for PAC to be able to understand natural language sentences. It is fine for the user requests to follow a strict format. Defining the request format is part of the project. The example interaction given above is just a guideline
+        only.</p>
+    </li>
+    <li>
+      <p>PAC should support adding, deleting, listing, searching (by keyword) of data items.</p>
+    </li>
+    <li>
+      <p>The data should be stored in the hard disk. For example, restarting PAC should not cause a loss of data entered in a previous session. The data files should be in a human-readable format such as <code>.csv</code> (recommended), <code>xml</code>,
+        <code>json</code>, plain text, etc.</p>
+    </li>
+  </ol>
+  <p>Basic functionality given above counts as 2 <em>units</em> of functionality. On top of that, you are required to add some more <em>additional functionality</em> (of your own choice). The total amount of functionality required is given below.</p>
+  <table class="markbind-table table">
+    <thead>
+      <tr>
+        <th>Team size</th>
+        <th>Total amount of functionality</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1-person</td>
+        <td>3-4 units</td>
+      </tr>
+      <tr>
+        <td>2-persons</td>
+        <td>4-5 units</td>
+      </tr>
+      <tr>
+        <td>3-persons</td>
+        <td>5-6 units</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong><em>Additional</em> Functionality</strong>:</p>
+  <p>Some suggestions for <em>additional functionality</em>:</p>
   <ul>
-    <li>2 Intermediate submissions: around week 4 and week 9</li>
-    <li>Final submission: week 13</li>
+    <li>More attributes for data items e.g., priorities, tags, birthdays</li>
+    <li>Multiple data item types e.g., support saving TODOs, appointments, and deadlines
+      <ul>
+        <li>Support connections between data items e.g., ability to assign a TODO to a contact</li>
+      </ul>
+    </li>
+    <li>Multi-user support e.g., assume the software is installed in a common computer in your office and allow multiple users to interact with it</li>
+    <li>More ways to query data e.g., find contacts that has a birthday in next 2 days, find all TODOs with high priority, etc.</li>
+    <li>Any other feature (get approval from prof before implementing)</li>
+  </ul>
+  <h3 id="constraints">Constraints</h3>
+  <ol>
+    <li>You should not use relational/SQL databases e.g., MySQL</li>
+    <li>The software should work in a Windows computer that has the latest releases of Java, .NET, and Python 3.
+      <ol>
+        <li>If your software need other software to be installed (e.g., third-party libraries), please get prof's permission first.</li>
+      </ol>
+    </li>
+  </ol>
+  <h3 id="deliverables">Deliverables</h3>
+  <ul>
+    <li>
+      <p><strong>Week 8</strong> (mid-term submission): 10%</p>
+      <ul>
+        <li>Functionality: at least most of the basic requirements are fulfilled
+          <ul>
+            <li>Submission: demo during lecture in week 8</li>
+          </ul>
+        </li>
+        <li>Documentation:
+          <ul>
+            <li>User stories covering all current and future functionalities, some use cases, some non-functional requirements, at least one activity diagram related to the product</li>
+            <li>Submission: upload to IVLE</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Week 13</strong> (final submission): 30%</p>
+      <ul>
+        <li>Functionality: all intended functionality
+          <ul>
+            <li>Submission: Upload to IVLE, demo during lecture in week 13</li>
+          </ul>
+        </li>
+        <li>Documentation: TBD</li>
+      </ul>
+    </li>
   </ul>
   <h2 id="exam">Exam</h2>
   <ul>

@@ -23,6 +23,7 @@
           <li><a href="#introdution-to-errors">Introduction to Errors</a></li>
           <li><a href="#syntax-errors">Syntax Errors</a></li>
           <li><a href="#handling-exceptions">Handling Exceptions</a></li>
+          <li><a href="#raising-exceptions">Raising Exceptions</a></li>
         </ul>
       </li>
     </ul>
@@ -358,6 +359,183 @@ You entered 6
 print(<span class="hljs-string">'You entered'</span>, value)
 </code></pre>
           </panel>
+        </div>
+      </panel>
+      <p></p>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="raising-exceptions">Raising Exceptions</h3>
+      <p><strong>You can <code>raise</code> an exception yourself to indicate an error</strong>.</p>
+      <tip-box>
+        <p>📦 The <code>get_body(items)</code> function below raises an exception when it receives a list that has fewer than 3 items. That exception is 'caught' and handled by the <code>hide_ends(items)</code> function. <br> 💡 Also note how an <code>except</code>          clause can assign a name to the exception using <code>as temporary_name</code> (as done by <code>except ValueError as e:</code>) so that the exception object can be referenced later (as done in <code>print('Cannot hide ends', str(e))</code>)</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_body</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">if</span> len(items) &lt; <span class="hljs-number">3</span>:
+    <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Not enough items'</span>)
+  
+  <span class="hljs-keyword">return</span> items[<span class="hljs-number">1</span>:<span class="hljs-number">-1</span>]
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    body = get_body(items)
+    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))
+
+hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])
+hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br><br><br><br><br><br><br><br><br><br> → </td>
+          
+            <td><br><br><br><br><br><br><br><br><br><br><br>
+              <p>[<a target="_blank" href="https://goo.gl/tsteqe">visualize</a>]<br></p>
+              <pre class="hljs"><code>Cannot hide ends: Not enough items
+['_', 1, 2, 3, '_']
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><strong>It is also possible to catch an exception, do something, and then raise it again</strong> so that the exception propagates to the caller.</p>
+      <tip-box>
+        <p>📦 The code <code>hide_ends2(items)</code> function below catches the <code>ValueError</code> exception, prints an error message, and raises it again so that the code that called the function can catch the exception again. Also note how the line
+          <code>hide_ends2([0, 1, 2, 3, 4])</code> is never executed due to the exception raised by the line just above it.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends2</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    body = get_body(items)
+    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))
+    <span class="hljs-keyword">raise</span>
+  
+<span class="hljs-keyword">try</span>:
+  hide_ends2([<span class="hljs-number">0</span>])
+  hide_ends2([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+<span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+  print(<span class="hljs-string">'hide_ends2 failed:'</span>, str(e))
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br><br><br><br><br><br> → </td>
+          
+            <td><br><br><br><br><br><br><br><br><br>
+              <p>[<a target="_blank" href="https://goo.gl/EGkxAW">visualize</a>]<br></p>
+              <pre class="hljs"><code>Cannot hide ends: Not enough items
+hide_ends2 failed: Not enough items
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <panel type="seamless" header="%%:computer: Try your own%%">
+        <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+      <panel type="danger" header=":muscle: Exercise: Flexible Word Game" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game</h4>
+          <p>Implement a word game similar to the one you implement in the
+            <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:</p>
+          <ul>
+            <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
+          </ul>
+          <modal large="" title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
+          
+            <div>
+              <h4 id="exercise-word-game">Exercise : Word Game</h4>
+              <p>Implement a word game with the following rules:</p>
+              <ul>
+                <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
+                <li>If the player inputs the same word multiple times, that word is <em>banned</em>.</li>
+                <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code>end</code></li>
+                <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
+              </ul>
+              <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+              <pre class="hljs"><code>========================================================
+Welcome to the WORD GAME
+Give all four-letter words you know, one word at a time
+Enter the word 'end' to exit
+========================================================
+What's the next word?  park
+What's the next word?  puck
+What's the next word?  cut
+Not a four-letter word
+What's the next word?  people
+Not a four-letter word
+What's the next word?  team
+What's the next word?  puck
+Repeated word! puck is number 2 in the accepted words list.
+puck is no longer an accepted word and is banned
+What's the next word?  bust
+What's the next word?  puck
+puck is banned!
+What's the next word?  meat
+What's the next word?  team
+Repeated word! team is number 2 in the accepted words list.
+team is no longer an accepted word and is banned
+What's the next word?  end
+========================================================
+Your score: 3
+Accepted words (in order of entry): park bust meat
+Accepted words (in sorted order): bust meat park
+Banned words (in sorted order): puck team
+Thank you for playing the WORD GAME
+========================================================
+</code></pre>
+              <p>💡 Implementation suggestions:</p>
+              <ul>
+                <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
+                <li>When a word is entered for the second time, move it from the <em>accepted words</em> list to the <em>banned words</em> list.</li>
+              </ul>
+            </div>
+          </modal>
+          <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+          <pre class="hljs"><code>========================================================
+Welcome to the FLEXIBLE WORD GAME
+Enter the word size (4 to 8): xyz
+That is not a number. Try again
+Enter the word size (4 to 8): 3
+Number not in correct range. Try again
+Enter the word size (4 to 8): 5
+Give all 5-letter words you know, one word at a time
+Enter the word 'end' to exit
+========================================================
+What's the next word?  frame
+What's the next word?  great
+What's the next word?  treat
+What's the next word?  fat
+Not a 5-letter word
+What's the next word?  creamy
+Not a 5-letter word
+What's the next word?  treat
+Repeated word! treat is number 3 in the accepted words list.
+treat is no longer an accepted word and is banned
+What's the next word?  crime
+What's the next word?  treat
+treat is banned!
+What's the next word?  end
+========================================================
+Your score: 3
+Accepted words (in order of entry): frame great crime
+Accepted words (in sorted order): crime frame great
+Banned words (in sorted order): treat
+Thank you for playing the WORD GAME
+========================================================
+</code></pre>
+          <p>💡 Tip: Take the code you wrote in the previous exercise and modify it to fit the new requirements.</p>
         </div>
       </panel>
       <p></p>
