@@ -227,19 +227,20 @@
   <p><strong>Programming language</strong>: The recommended language is Python but another Object-Oriented language (e.g. Java, C#, C++, ...) is acceptable if there is consensus among team members.</p>
   <h3 id="software-to-build">Software to build</h3>
   <p>You will be building a personal assistant chat-bot software named <em>PAC</em> (<em>PAC</em> is a temporary name; you should give a different name to your own chat bot)</p>
-  <p><strong><em>Basic</em> Functionality for PAC</strong>:</p>
+  <p><strong><em>Basic</em> Functionality</strong>:</p>
   <ol>
     <li>
       <p>PAC interface can be text-based (i.e., no need for a graphical UI)</p>
     </li>
     <li>
-      <p>PAC helps with storing and retrieving one type of data that is useful to the user. e.g. details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between PAC and the user.</p>
-      <pre class="hljs"><code>&gt;&gt; Hi, I'm PAC. What can I do for you?
+      <p>PAC helps with storing and retrieving one type of data that is useful to the user. e.g. details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a PAC
+        that deals with TODO items:</p>
+      <pre class="hljs"><code>&gt;&gt; Hi, I'm PAC. What can I do to help you with your TODOs?
 
-add todo Return library book
-&gt;&gt; TODO added: Return library book&quot;
+add Return library book
+&gt;&gt; TODO added: Return library book
 
-list todo
+list
 &gt;&gt; Here are the list of TODOs you have:
 1. Return library book
 2. Do TE3201 exercises
@@ -253,22 +254,24 @@ are you single?
 
 help
 &gt;&gt; Here are the requests I understand.
-add todo {todo description} : adds a todo to the list
-list todo : lists all todos
+add {TODO description} : adds a TODO to the list
+list : lists all TODOs
 ...
 
 </code></pre>
     </li>
     <li>
-      <p>There is no need for PAC to be able to understand natural language sentences. It is fine for the user requests to follow a strict format. Defining the request format is part of the project. The example interaction given above is just a guideline
-        only.</p>
+      <p>There is no need for PAC to be able to understand natural language sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an
+        example only. Hint: try to design a request format that is easy to remember and type.</p>
     </li>
     <li>
       <p>PAC should support adding, deleting, listing, searching (by keyword) of data items.</p>
     </li>
     <li>
-      <p>The data should be stored in the hard disk. For example, restarting PAC should not cause a loss of data entered in a previous session. The data files should be in a human-readable format such as <code>.csv</code> (recommended), <code>xml</code>,
-        <code>json</code>, plain text, etc.</p>
+      <p>The data should be stored in the hard disk so that restarting PAC should not cause a loss of data entered in a previous session.</p>
+      <ol>
+        <li>The data files should be in a human-readable format such as <code>.csv</code> (recommended), <code>xml</code>, <code>json</code>, plain text, etc.</li>
+      </ol>
     </li>
   </ol>
   <p>Basic functionality given above counts as 2 <em>units</em> of functionality. On top of that, you are required to add some more <em>additional functionality</em> (of your own choice). The total amount of functionality required is given below.</p>
@@ -337,7 +340,7 @@ list todo : lists all todos
     <li>
       <p><strong>Week 13</strong> (final submission): 30%</p>
       <ul>
-        <li>Functionality: all intended functionality
+        <li>Functionality: all functionality
           <ul>
             <li>Submission: Upload to IVLE, demo during lecture in week 13</li>
           </ul>
