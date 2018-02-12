@@ -91,3 +91,7 @@ hide_ends2 failed: Not enough items
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 </panel>
+
+<panel type="danger" header=":muscle: Exercise: Flexible Word Game" expanded no-close>
+  <include src="e-flexibleWordGame.md" />
+</panel><p/>
