@@ -43,5 +43,8 @@
   <panel type="warning" header="`W5.2c` Can handle exceptions" no-close>
     <include src="../../programming/errors-exceptions-handling/text.md" />
   </panel>
+  <panel type="warning" header="`W5.2d` Can raise exceptions" no-close>
+    <include src="../../programming/errors-exceptions-raising/text.md" />
+  </panel>
 
 </panel>
