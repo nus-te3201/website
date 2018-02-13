@@ -40,7 +40,7 @@ Your score: 3
 Accepted words (in order of entry): frame great crime
 Accepted words (in sorted order): crime frame great
 Banned words (in sorted order): treat
-Thank you for playing the WORD GAME
+Thank you for playing the FLEXIBLE WORD GAME
 ========================================================
 ```
 
