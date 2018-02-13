@@ -444,6 +444,96 @@ hide_ends2 failed: Not enough items
       </tip-box>
       <panel type="seamless" header="%%:computer: Try your own%%">
         <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+      <panel type="danger" header=":muscle: Exercise: Is Even-Integer in Range" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range</h4>
+          <p>Complete the functions in the code below to behave as follows:</p>
+          <ul>
+            <li><code>confirm_is_int(number)</code>: Raises a <code>ValueError</code> if the <code>number</code> is not an integer.<br> 💡 You can use the <code>type(value) is type_name</code> and <code>type(value) is not type_name</code> to check if a <code>value</code>              is of type <code>type_name</code><br>e.g., <code>type('x') is not float</code> evaluates to <code>True</code> because <code>'x'</code> is not a <code>float</code>. [<a href="https://www.poftut.com/python-type-function-examples/">more examples ...</a>]</li>
+            <li><code>confirm_range_correct(start, end)</code>: Raises a <code>ValueError</code> if <code>end</code> or <code>start</code> are not integers or if <code>start</code> is greater than <code>end</code>.</li>
+          </ul>
+          <p>These functions have been implemented fully. Their behavior:</p>
+          <ul>
+            <li><code>is_even_int(number)</code>: Returns <code>True</code> if the <code>number</code> is an even integer. Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
+            <li><code>is_in_range(number, start, end)</code>: Returns <code>True</code> if the <code>number</code> is in the range <code>start</code> to <code>end</code> (<mark>including <code>start</code> but excluding <code>end</code></mark>, as per how
+              Python define <em>ranges</em>). Raises a <code>ValueError</code> if if the <code>number</code> is not an integer or <code>start</code> and <code>end</code> do not specify a range correctly.</li>
+            <li><code>is_even_int_in_range(number, start, end)</code>: Returns <code>'Yes'</code> if <code>number</code> is an even integer in the range <code>start</code> to <code>end</code>. Returns <code>'No'</code> otherwise. Returns an error message
+              if any of the inputs are incorrect. The example output given below has the output of the error message.</li>
+          </ul>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_range_correct</span><span class="hljs-params">(start, end)</span>:</span>
+  confirm_is_int(start)
+  confirm_is_int(end)
+  <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
+
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int</span><span class="hljs-params">(number)</span>:</span>
+  confirm_is_int(number)
+  <span class="hljs-keyword">return</span> int(number)%<span class="hljs-number">2</span> == <span class="hljs-number">0</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+  confirm_is_int(number)
+  confirm_range_correct(start, end)
+  <span class="hljs-keyword">return</span> number &gt;= start <span class="hljs-keyword">and</span> number &lt; end
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">if</span> is_even_int(number) <span class="hljs-keyword">and</span> is_in_range(number, start, end):
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Yes'</span>
+    <span class="hljs-keyword">else</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'No'</span>
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">if</span> is_even_int(number) <span class="hljs-keyword">and</span> is_in_range(number, start, end):
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Yes'</span>
+    <span class="hljs-keyword">else</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'No'</span>
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span>
+  print(number, <span class="hljs-string">'is an int in range'</span>, start, <span class="hljs-string">'-'</span>, end, <span class="hljs-string">'?'</span>, is_even_int_in_range(number, start, end))
+
+
+<span class="hljs-comment"># some examples of using is_even_int_in_range</span>
+check(<span class="hljs-string">'x'</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>)
+check(<span class="hljs-number">3</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>) <span class="hljs-comment"># False (3 is not even)</span>
+check(<span class="hljs-number">2</span>, <span class="hljs-number">3.4</span>, <span class="hljs-number">5</span>)
+check(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, [])
+check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>)
+check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">5</span>)
+check(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
+check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>) <span class="hljs-comment"># False ( range 1 to 4 excludes 4)</span>
+check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
+</code></pre>
+          <p>⤵️</p>
+          <pre class="hljs"><code>x is an int in range y - z ? Value error: x is not an integer
+3 is an int in range y - z ? No
+2 is an int in range 3.4 - 5 ? Value error: 3.4 is not an integer
+2 is an int in range 3 - [] ? Value error: [] is not an integer
+2 is an int in range 5 - 1 ? Value error: start is smaller than end
+2 is an int in range 5 - 5 ? No
+3 is an int in range 1 - 5 ? No
+4 is an int in range 1 - 4 ? No
+4 is an int in range 1 - 5 ? Yes
+</code></pre>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+  <span class="hljs-keyword">if</span> type(number) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> int:
+    <span class="hljs-keyword">raise</span> ValueError(str(number) + <span class="hljs-string">' is not an integer'</span>)
+</code></pre>
+          </panel>
+        </div>
+      </panel>
       <panel type="danger" header=":muscle: Exercise: Flexible Word Game" expanded="" no-close="">
         <div>
           <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game</h4>
