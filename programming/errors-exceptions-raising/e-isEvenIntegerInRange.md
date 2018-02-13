@@ -40,16 +40,7 @@ def is_even_int_in_range(number, start, end):
       return 'No'
   except ValueError as e:
     return 'Value error: ' + str(e)
-
-
-def is_even_int_in_range(number, start, end):
-  try:
-    if is_even_int(number) and is_in_range(number, start, end):
-      return 'Yes'
-    else:
-      return 'No'
-  except ValueError as e:
-    return 'Value error: ' + str(e)
+    
 
 def check(number, start, end):
   print(number, 'is an int in range', start, '-', end, '?', is_even_int_in_range(number, start, end))
