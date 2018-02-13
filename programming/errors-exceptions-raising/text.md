@@ -92,6 +92,9 @@ hide_ends2 failed: Not enough items
 
 </panel>
 
+<panel type="danger" header=":muscle: Exercise: Is Even-Integer in Range" expanded no-close>
+  <include src="e-isEvenIntegerInRange.md" />
+</panel>
 <panel type="danger" header=":muscle: Exercise: Flexible Word Game" expanded no-close>
   <include src="e-flexibleWordGame.md" />
 </panel><p/>
