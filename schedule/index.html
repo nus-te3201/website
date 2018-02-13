@@ -941,16 +941,7 @@ hide_ends2 failed: Not enough items
       <span class="hljs-keyword">return</span> <span class="hljs-string">'No'</span>
   <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
     <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
-  <span class="hljs-keyword">try</span>:
-    <span class="hljs-keyword">if</span> is_even_int(number) <span class="hljs-keyword">and</span> is_in_range(number, start, end):
-      <span class="hljs-keyword">return</span> <span class="hljs-string">'Yes'</span>
-    <span class="hljs-keyword">else</span>:
-      <span class="hljs-keyword">return</span> <span class="hljs-string">'No'</span>
-  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
-    <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)
+    
 
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span>
   print(number, <span class="hljs-string">'is an int in range'</span>, start, <span class="hljs-string">'-'</span>, end, <span class="hljs-string">'?'</span>, is_even_int_in_range(number, start, end))
