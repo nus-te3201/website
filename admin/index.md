@@ -39,7 +39,7 @@ You will be building a personal assistant chat-bot software named _PAC_ (_PAC_ i
 **_Basic_ Functionality**:
 
 1. PAC interface can be text-based (i.e., no need for a graphical UI)
-1. PAC helps with storing and retrieving one type of data that is useful to the user. e.g. details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a PAC that deals with TODO items:
+1. PAC helps with storing and retrieving at least **one type of data** that is useful to the user. e.g. details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a PAC that deals with TODO items:
    ```
    >> Hi, I'm PAC. What can I do to help you with your TODOs?
    
@@ -66,9 +66,9 @@ You will be building a personal assistant chat-bot software named _PAC_ (_PAC_ i
    
    ```
 
-1. There is no need for PAC to be able to understand natural language sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an example only. Hint: try to design a request format that is easy to remember and type.
-1. PAC should support adding, deleting, listing, searching (by keyword) of data items.
-1. The data should be stored in the hard disk so that restarting PAC should not cause a loss of data entered in a previous session. 
+1. There is **no need for PAC to be able to understand natural language** sentences. It is fine for the user requests to need to follow a strict format. Defining the request format is part of the project. The example interaction given above is just an example only. Hint: try to design a request format that is easy to remember and type.
+1. PAC should support **adding, deleting, listing, searching** (by keyword) of data items.
+1. _Persistence_: The data should be **stored in the hard disk** so that restarting PAC should not cause a loss of data entered in a previous session. 
    1. The data files should be in a human-readable format such as `.csv` (recommended), `xml`, `json`, plain text, etc.
 
 
@@ -99,7 +99,7 @@ Some suggestions for _additional functionality_:
 ### Deliverables
 
 * **Week 8** (mid-term submission): 10%
-  * Functionality: at least most of the basic requirements are fulfilled
+  * Functionality: at least most of the basic requirements are fulfilled (you may leave out the _persistence_ requirement)
     * Submission: demo during lecture in week 8
   * Documentation: 
     * User stories covering all current and future functionalities, some use cases, some non-functional requirements, at least one activity diagram related to the product
