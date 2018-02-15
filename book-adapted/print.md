@@ -169,6 +169,22 @@
 
 # SECTION: IMPLEMENTATION
 
+<div id="handout-errors">
+
+# Error Handling
+
+## Introduction
+
+<include src="../book/errorHandling/introduction/what/print.md" />
+
+## Exceptions
+
+<include src="../book/errorHandling/exceptions/what/print.md" />
+<include src="../book/errorHandling/exceptions/how/print.md" />
+<include src="../book/errorHandling/exceptions/when/print.md" />
+
+</div>
+
 # IDEs
 
 ## Introduction
@@ -228,22 +244,6 @@
 
 <include src="../book/documentation/guidelines/documentMinimally/what/print.md" />
 <include src="../book/documentation/guidelines/documentMinimally/how/print.md" />
-
-<div id="handout-errors">
-
-# Error Handling
-
-## Introduction
-
-<include src="../book/errorHandling/introduction/what/print.md" />
-
-## Exceptions
-
-<include src="../book/errorHandling/exceptions/what/print.md" />
-<include src="../book/errorHandling/exceptions/how/print.md" />
-<include src="../book/errorHandling/exceptions/when/print.md" />
-
-</div>
 
 # Reuse
 
@@ -365,10 +365,6 @@
 
 # SECTION: PROJECT MANAGEMENT
 
-# Revision Control
-
-<include src="../book/revisionControl/what/print.md" />
-
 # Project Planning
 
 <include src="../book/projectPlanning/workBreakdownStructure/print.md" />
@@ -402,6 +398,10 @@
 ## More
 
 <include src="../book/processModels/more/cmmi/print.md" />
+
+# Revision Control
+
+<include src="../book/revisionControl/what/print.md" />
 
 <hr>
 

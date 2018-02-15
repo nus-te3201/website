@@ -167,6 +167,18 @@
 
 # SECTION: IMPLEMENTATION
 
+# Error Handling
+
+## Introduction
+
+<include src="../book/errorHandling/introduction/what/full.md" />
+
+## Exceptions
+
+<include src="../book/errorHandling/exceptions/what/full.md" />
+<include src="../book/errorHandling/exceptions/how/full.md" />
+<include src="../book/errorHandling/exceptions/when/full.md" />
+
 # IDEs
 
 ## Introduction
@@ -226,20 +238,6 @@
 
 <include src="../book/documentation/guidelines/documentMinimally/what/full.md" />
 <include src="../book/documentation/guidelines/documentMinimally/how/full.md" />
-
-
-# Error Handling
-
-## Introduction
-
-<include src="../book/errorHandling/introduction/what/full.md" />
-
-## Exceptions
-
-<include src="../book/errorHandling/exceptions/what/full.md" />
-<include src="../book/errorHandling/exceptions/how/full.md" />
-<include src="../book/errorHandling/exceptions/when/full.md" />
-
 
 # Reuse
 
@@ -361,10 +359,6 @@
 
 # SECTION: PROJECT MANAGEMENT
 
-# Revision Control
-
-<include src="../book/revisionControl/what/full.md" />
-
 # Project Planning
 
 <include src="../book/projectPlanning/workBreakdownStructure/full.md" />
@@ -398,6 +392,10 @@
 ## More
 
 <include src="../book/processModels/more/cmmi/full.md" />
+
+# Revision Control
+
+<include src="../book/revisionControl/what/full.md" />
 
 <hr>
 
