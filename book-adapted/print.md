@@ -362,6 +362,7 @@
 
 <hr>
 
+<div id="handout-projectMgt-teamwork">
 
 # SECTION: PROJECT MANAGEMENT
 
@@ -371,14 +372,18 @@
 <include src="../book/projectPlanning/milestones/print.md" />
 <include src="../book/projectPlanning/buffers/print.md" />
 <include src="../book/projectPlanning/issueTrackers/print.md" />
+<p style="page-break-after: always;">&nbsp;</p>
 <include src="../book/projectPlanning/ganttCharts/print.md" />
+<p style="page-break-after: always;">&nbsp;</p>
 <include src="../book/projectPlanning/pertCharts/print.md" />
 
+<p style="page-break-after: always;">&nbsp;</p>
 
 # Teamwork
 
 <include src="../book/teamwork/teamStructures/print.md" />
 
+</div>
 
 # SDLC Process Models
 
