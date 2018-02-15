@@ -169,6 +169,22 @@
 
 # SECTION: IMPLEMENTATION
 
+<div id="handout-errors">
+
+# Error Handling
+
+## Introduction
+
+<include src="../book/errorHandling/introduction/what/print.md" />
+
+## Exceptions
+
+<include src="../book/errorHandling/exceptions/what/print.md" />
+<include src="../book/errorHandling/exceptions/how/print.md" />
+<include src="../book/errorHandling/exceptions/when/print.md" />
+
+</div>
+
 # IDEs
 
 ## Introduction
@@ -228,22 +244,6 @@
 
 <include src="../book/documentation/guidelines/documentMinimally/what/print.md" />
 <include src="../book/documentation/guidelines/documentMinimally/how/print.md" />
-
-<div id="handout-errors">
-
-# Error Handling
-
-## Introduction
-
-<include src="../book/errorHandling/introduction/what/print.md" />
-
-## Exceptions
-
-<include src="../book/errorHandling/exceptions/what/print.md" />
-<include src="../book/errorHandling/exceptions/how/print.md" />
-<include src="../book/errorHandling/exceptions/when/print.md" />
-
-</div>
 
 # Reuse
 
@@ -362,12 +362,9 @@
 
 <hr>
 
+<div id="handout-projectMgt-teamwork">
 
 # SECTION: PROJECT MANAGEMENT
-
-# Revision Control
-
-<include src="../book/revisionControl/what/print.md" />
 
 # Project Planning
 
@@ -375,14 +372,18 @@
 <include src="../book/projectPlanning/milestones/print.md" />
 <include src="../book/projectPlanning/buffers/print.md" />
 <include src="../book/projectPlanning/issueTrackers/print.md" />
+<p style="page-break-after: always;">&nbsp;</p>
 <include src="../book/projectPlanning/ganttCharts/print.md" />
+<p style="page-break-after: always;">&nbsp;</p>
 <include src="../book/projectPlanning/pertCharts/print.md" />
 
+<p style="page-break-after: always;">&nbsp;</p>
 
 # Teamwork
 
 <include src="../book/teamwork/teamStructures/print.md" />
 
+</div>
 
 # SDLC Process Models
 
@@ -402,6 +403,10 @@
 ## More
 
 <include src="../book/processModels/more/cmmi/print.md" />
+
+# Revision Control
+
+<include src="../book/revisionControl/what/print.md" />
 
 <hr>
 

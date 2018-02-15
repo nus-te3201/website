@@ -46,11 +46,11 @@
         </li>
         <li><a href="#section-implementation"><strong>SECTION 4: IMPLEMENTATION</strong></a>
           <ul>
-            <li><a href="#ides">Ch 1. IDEs</a></li>
-            <li><a href="#code-quality">Ch 2. Code Quality</a></li>
-            <li><a href="#refactoring">Ch 3. Refactoring</a></li>
-            <li><a href="#documentation">Ch 4. Documentation</a></li>
-            <li><a href="#error-handling">Ch 5. Error Handling</a></li>
+            <li><a href="#error-handling">Ch 1. Error Handling</a></li>
+            <li><a href="#ides">Ch 2. IDEs</a></li>
+            <li><a href="#code-quality">Ch 3. Code Quality</a></li>
+            <li><a href="#refactoring">Ch 4. Refactoring</a></li>
+            <li><a href="#documentation">Ch 5. Documentation</a></li>
             <li><a href="#reuse">Ch 6. Reuse</a></li>
           </ul>
         </li>
@@ -63,10 +63,10 @@
         </li>
         <li><a href="#section-project-management"><strong>SECTION 6: PROJECT MANAGEMENT</strong></a>
           <ul>
-            <li><a href="#revision-control">Ch 1. Revision Control</a></li>
-            <li><a href="#project-planning">Ch 2. Project Planning</a></li>
-            <li><a href="#teamwork">Ch 3. Teamwork</a></li>
-            <li><a href="#sdlc-process-models">Ch 4. SDLC Process Models</a></li>
+            <li><a href="#project-planning">Ch 1. Project Planning</a></li>
+            <li><a href="#teamwork">Ch 2. Teamwork</a></li>
+            <li><a href="#sdlc-process-models">Ch 3. SDLC Process Models</a></li>
+            <li><a href="#revision-control">Ch 4. Revision Control</a></li>
           </ul>
         </li>
         <li><a href="#section-tools"><strong>SECTION 7: TOOLS</strong></a>
@@ -2457,11 +2457,11 @@
             <panel header=":muscle: Exercises" expandable="">
 
               <div>
-                <panel header=":lock::key: Describe objects in the given scenario">
+                <panel header=":lock: Describe objects in the given scenario">
                   <question has-input="true">
                     <p>Consider the following real-world scenario.</p>
                     <tip-box>
-                      <p>Tom read a Software Engineering textbook (he has been assigned to read the book) and highlighted some of the text in it.
+                      <p>Tom read a Software Engineering textbook and highlighted some of the text in it.
                       </p>
                     </tip-box>
                     <p>Explain the following statements about OOP using the above scenario as an example.</p>
@@ -2472,93 +2472,6 @@
                       <li>Objects interact by sending messages.</li>
                       <li>OOP does not demand that the virtual world object network follow the real world exactly.</li>
                     </ol>
-                    <div slot="answer">
-                      <blockquote>
-                        <p>[1] Object Oriented Programming (OOP) views the world as a network of interacting objects.</p>
-                      </blockquote>
-                      <p>Interacting objects in the scenario: <code>Tom</code>, <code>SE Text Book</code> (<code>Book</code> for short), <code>Text</code>, (possibly) <code>Highlighter</code></p>
-                      <p>💡 objects usually match nouns in the description</p>
-                      <blockquote>
-                        <p>[2]Every object has both state (data) and behavior (operations on data).</p>
-                      </blockquote>
-                      <table class="markbind-table table">
-                        <thead>
-                          <tr>
-                            <th>Object</th>
-                            <th>Examples of state</th>
-                            <th>Examples of behavior</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><code>Tom</code></td>
-                            <td>memory of the text read</td>
-                            <td>read</td>
-                          </tr>
-                          <tr>
-                            <td><code>Book</code></td>
-                            <td>title</td>
-                            <td>show text</td>
-                          </tr>
-                          <tr>
-                            <td><code>Text</code></td>
-                            <td>font size</td>
-                            <td>get highlighted</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <blockquote>
-                        <p>[3] Every object has an interface and an implementation.</p>
-                      </blockquote>
-                      <ul>
-                        <li>Interface of an object consists of how other objects interact with it i.e., what other objects can do to that object</li>
-                        <li>Implementation consist of internals of the object that facilitate the interactions but not visible to other objects.</li>
-                      </ul>
-                      <table class="markbind-table table">
-                        <thead>
-                          <tr>
-                            <th>Object</th>
-                            <th>Examples of interface</th>
-                            <th>Examples of implementation</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><code>Tom</code></td>
-                            <td>receive reading assignment</td>
-                            <td>understand/memorize the text read, remember the reading assignment</td>
-                          </tr>
-                          <tr>
-                            <td><code>Book</code></td>
-                            <td>show text, turn page</td>
-                            <td>how pages are bound to the spine</td>
-                          </tr>
-                          <tr>
-                            <td><code>Text</code></td>
-                            <td>read</td>
-                            <td>how characters/words are connected together or fixed to the book</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <blockquote>
-                        <p>[4] Objects interact by sending messages.</p>
-                      </blockquote>
-                      <p>Examples:</p>
-                      <ul>
-                        <li><code>Tom</code> sends message <code>turn page</code> to the <code>Book</code></li>
-                        <li><code>Tom</code> sends message <code>show text</code> to the <code>Book</code>. When the <code>Book</code> shows the <code>Text</code>, <code>Tom</code> sends the message <code>read</code> to the <code>Text</code> which returns
-                          the text content to <code>Tom</code>.</li>
-                        <li><code>Tom</code> sends message <code>highlight</code> to the <code>Highlighter</code> while specifying which <code>Text</code> to highlight. Then the <code>Highlighter</code> sends the message <code>highlight</code> to the specified
-                          <code>Text</code>.</li>
-                      </ul>
-                      <blockquote>
-                        <p>[5] OOP does not demand that the virtual world object network follow the real world exactly.</p>
-                      </blockquote>
-                      <p>Examples:</p>
-                      <ul>
-                        <li>A virtual world simulation of the above scenario can omit the <code>Highlighter</code> object. Instead, we can teach <code>Text</code> to highlight themselves when requested.</li>
-                      </ul>
-                    </div>
                   </question>
                 </panel>
               </div>
@@ -4213,14 +4126,158 @@
     </div>
     <hr>
     <h1 id="section-implementation">SECTION: IMPLEMENTATION</h1>
-    <h1 id="ides">IDEs</h1>
+    <h1 id="error-handling">Error Handling</h1>
     <h2 id="introduction-4">Introduction</h2>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Introduction →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one-9">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <blockquote>
+            <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme
+              cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">(source)</a></sub></p>
+          </blockquote>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <h2 id="exceptions">Exceptions</h2>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one-10">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
+          <tip-box type="definition">
+            <div>
+              <p><strong>Exception</strong>:</p>
+              <blockquote>
+                <p>An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
+              </blockquote>
+            </div>
+          </tip-box>
+          <tip-box>
+            <p>📦 Examples:</p>
+            <ul>
+              <li>A network connection encounters a timeout due to a slow server.</li>
+              <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
+            </ul>
+          </tip-box>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Most languages allow a method to encapsulate the unusual situation in an Exception object and 'throw'/'raise' that object so that another piece of code can 'catch' it and deal with it.</strong> This is especially useful when code segment
+            that encountered the unusual situation does not know how to deal with it.</p>
+          <p><strong>Exception objects can propagate up the method/function call hierarchy until it is dealt with.</strong> Usually, an exception thrown by a method is caught by the caller method. If the called method does not know how to deal with the exception
+            it caught, it can throw/raise the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the method call stack until it is received by the main method and thrown
+            to the runtime, thus halting the system.</p>
+          <tip-box>
+            <tabs>
+            
+              <tab header="Java">
+                <p>📦 In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method inside a <code>try{ }</code>                  block and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
+                <img src="/website/book/errorHandling/exceptions/how/images/processInput.png" width="400">
+                <p></p>
+                <p></p>
+              </tab>
+            
+              <tab header="Python">
+                <p>📦 In the code given below, <code>process_array</code> function can potentially raise a <code>ValueError</code> exception. Because of that, <code>process_input</code> function invokes <code>process_array</code> function inside a <code>try</code>                  clause and has a <code>except</code> clause to specify what to do if the exception is actually raised.</p>
+                <img src="/website/book/errorHandling/exceptions/how/images/example-python.png" width="400">
+                <p></p>
+              </tab>
+            </tabs>
+            <hr>
+          </tip-box>
+          <p>Advantages of exception handling in this way:</p>
+          <ul>
+            <li>The ability to propagate error information through the call stack.</li>
+            <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <panel header=":paperclip: Resources" expandable="">
+              <ul>
+                <li><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/">Java Exceptions Tutorial from Oracle</a></li>
+              </ul>
+            </panel>
+          </div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Benefit of exceptions">
+                  <question>
+                    <p>Which are benefits of exceptions?</p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
+                    </ul>
+                    <div slot="answer">
+                      <p>(a) (c)</p>
+                      <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <h1 id="ides">IDEs</h1>
+    <h2 id="introduction-5">Introduction</h2>
     <div>
       <p><span class="dimmed"><strong><span>IDEs → Introduction →</span></strong>
         </span>
       </p>
       <div>
-        <h4 id="what-one-9">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/ides/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+        <h4 id="what-one-11">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/ides/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
       </div>
       <div id="main">
         <div>
@@ -4276,7 +4333,7 @@
         </span>
       </p>
       <div>
-        <h4 id="what-one-10">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        <h4 id="what-one-12">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -4306,7 +4363,7 @@
       </div>
     </div>
     <h1 id="code-quality">Code Quality</h1>
-    <h2 id="introduction-5">Introduction</h2>
+    <h2 id="introduction-6">Introduction</h2>
     <div>
       <div></div>
       <p></p>
@@ -4733,7 +4790,7 @@ trimInput();
         </span>
       </p>
       <div>
-        <h4 id="what-one-11">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        <h4 id="what-one-13">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -4866,7 +4923,7 @@ send();
       </div>
     </div>
     <h1 id="documentation">Documentation</h1>
-    <h2 id="introduction-6">Introduction</h2>
+    <h2 id="introduction-7">Introduction</h2>
     <div>
       <div></div>
       <p></p>
@@ -4875,7 +4932,7 @@ send();
         </span>
       </p>
       <div>
-        <h4 id="what-one-12">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -4945,7 +5002,7 @@ send();
         </span>
       </p>
       <div>
-        <h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        <h4 id="how-two-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -4994,7 +5051,7 @@ send();
         </span>
       </p>
       <div>
-        <h4 id="what-one-13">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -5015,156 +5072,12 @@ send();
         </span>
       </p>
       <div>
-        <h4 id="how-two-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        <h4 id="how-two-3">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
           <p>Anything that is already clear in the code need not be described in words. Instead, <strong>focus on providing higher level information that is not readily visible in the code or comments</strong>.</p>
           <p>Refrain from duplicating chunks or text. When describing several similar algorithms/designs/APIs, etc., do not simply duplicate large chunks of text. Instead, <strong>describe the similarity in one place and emphasize only the differences in other places.</strong>            It is very annoying to see pages and pages of similar text without any indication as to how they differ from each other.</p>
-        </div>
-        <div></div>
-      </div>
-    </div>
-    <h1 id="error-handling">Error Handling</h1>
-    <h2 id="introduction-7">Introduction</h2>
-    <div>
-      <div></div>
-      <p></p>
-      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Introduction →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div id="main">
-        <div>
-          <blockquote>
-            <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme
-              cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">(source)</a></sub></p>
-          </blockquote>
-        </div>
-        <div></div>
-      </div>
-    </div>
-    <h2 id="exceptions">Exceptions</h2>
-    <div>
-      <div></div>
-      <p></p>
-      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
-          <tip-box type="definition">
-            <div>
-              <p><strong>Exception</strong>:</p>
-              <blockquote>
-                <p>An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
-              </blockquote>
-            </div>
-          </tip-box>
-          <tip-box>
-            <p>📦 Examples:</p>
-            <ul>
-              <li>A network connection encounters a timeout due to a slow server.</li>
-              <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
-            </ul>
-          </tip-box>
-        </div>
-        <div></div>
-      </div>
-    </div>
-    <div>
-      <div></div>
-      <p></p>
-      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="how-two-3">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p><strong>Most languages allow a method to encapsulate the unusual situation in an Exception object and 'throw'/'raise' that object so that another piece of code can 'catch' it and deal with it.</strong> This is especially useful when code segment
-            that encountered the unusual situation does not know how to deal with it.</p>
-          <p><strong>Exception objects can propagate up the method/function call hierarchy until it is dealt with.</strong> Usually, an exception thrown by a method is caught by the caller method. If the called method does not know how to deal with the exception
-            it caught, it can throw/raise the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the method call stack until it is received by the main method and thrown
-            to the runtime, thus halting the system.</p>
-          <tip-box>
-            <tabs>
-            
-              <tab header="Java">
-                <p>📦 In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method inside a <code>try{ }</code>                  block and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
-                <img src="/website/book/errorHandling/exceptions/how/images/processInput.png" width="400">
-                <p></p>
-                <p></p>
-              </tab>
-            
-              <tab header="Python">
-                <p>📦 In the code given below, <code>process_array</code> function can potentially raise a <code>ValueError</code> exception. Because of that, <code>process_input</code> function invokes <code>process_array</code> function inside a <code>try</code>                  clause and has a <code>except</code> clause to specify what to do if the exception is actually raised.</p>
-                <img src="/website/book/errorHandling/exceptions/how/images/example-python.png" width="400">
-                <p></p>
-              </tab>
-            </tabs>
-            <hr>
-          </tip-box>
-          <p>Advantages of exception handling in this way:</p>
-          <ul>
-            <li>The ability to propagate error information through the call stack.</li>
-            <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
-          </ul>
-        </div>
-        <div>
-          <div>
-            <panel header=":paperclip: Resources" expandable="">
-              <ul>
-                <li><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/">Java Exceptions Tutorial from Oracle</a></li>
-              </ul>
-            </panel>
-          </div>
-          <div>
-            <panel header=":muscle: Exercises" expandable="">
-              <div>
-                <panel header=":lock::key: Benefit of exceptions">
-                  <question>
-                    <p>Which are benefits of exceptions?</p>
-                    <ul class="task-list">
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
-                    </ul>
-                    <div slot="answer">
-                      <p>(a) (c)</p>
-                      <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div></div>
-      <p></p>
-      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
         </div>
         <div></div>
       </div>
@@ -7044,104 +6957,6 @@ Enter side 1:
     </div>
     <hr>
     <h1 id="section-project-management">SECTION: PROJECT MANAGEMENT</h1>
-    <h1 id="revision-control">Revision Control</h1>
-    <div>
-      <p><span class="dimmed"><strong><span>Project Management → Revision Control →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="what-one-30">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/revisionControl/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
-          <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
-          <tabs>
-            <tab header=":abc:">
-              <blockquote>
-                <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that contains
-                  a number, each one higher than the number of the preceding version.</p>
-                <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to help a single
-                  user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best modern revision control
-                  tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
-                <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have a log of
-                  who made it; why they made it; when they made it; and what the change was.</p>
-                <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software will help
-                  you to identify and resolve those conflicts.</p>
-                <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even help
-                  you to efficiently figure out exactly when a problem was introduced.</p>
-                <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
-                  or with a hundred other people.</p>
-                <p>-- [adapted from
-                  <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
-              </blockquote>
-              <hr>
-            </tab>
-            <tab header=":tv:">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              <hr>
-            </tab>
-          </tabs>
-          <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
-            <div slot="content">
-              <div>
-                <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
-              </div>
-            </div>
-          </popover>
-        </div>
-        <div>
-          <div>
-            <panel header=":muscle: Exercises" expandable="">
-              <div>
-                <panel header=":lock::key: What does RCS stand for?">
-                  <question has-input="true">
-                    <div slot="answer">
-                      <p>Revision Control Software</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-              <div>
-                <panel header=":lock::key: What is a Revision?">
-                  <question has-input="true">
-                    <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
-                    <div slot="answer">
-                      <p>Versions of a piece of information. For example, take a file containing program code. If you modify the code and save the file, you have a new version of that file.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-              <div>
-                <panel header=":lock::key: Which of these is not considered a benefit of a typical RCS?">
-                  <question>
-                    <ul class="task-list">
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Help a developer recover from a incorrect modification to a code file</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Makes it easier for a group of developers to collaborate on a project</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Manage the drift between multiple versions of your project</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Detect when multiple developers make incompatible changes to the same file</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. All of them are benefits of RCS</li>
-                    </ul>
-                    <div slot="answer">
-                      <p>f</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-              <div>
-                <panel header=":lock: Explain RCS in a team project context">
-                  <question has-input="true">
-                    <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </div>
-        </div>
-      </div>
-    </div>
     <h1 id="project-planning">Project Planning</h1>
     <div>
       <div></div>
@@ -7308,13 +7123,13 @@ Enter side 1:
               <div>
                 <panel header=":lock::key: Which one is not a well-defined task?">
                   <question>
-                    <p>Which one these is not well-defined task? Context: These are tasks to be put in the issue tracker of your project.</p>
-                    <ul radio-group="00c6e" class="radio-list">
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="00c6e" type="radio"> a. Implement the ‘delete’ feature.</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="00c6e" type="radio"> b. Fix Issue 23 in the bug tracker.</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="00c6e" type="radio"> c. Do some more testing.</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="00c6e" type="radio"> d. Choose a tool to draw UML diagrams.</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="00c6e" type="radio"> e. Clarify submission requirements with the professor.</label></li>
+                    <p>Which one these project tasks is not well-defined?</p>
+                    <ul radio-group="9211e" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> a. Implement the 'delete' feature.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> b. Fix bug #12315.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> c. Do some more testing.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> d. Choose a tool to draw UML diagrams.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> e. Clarify submission requirements with the customer.</label></li>
                     </ul>
                     <div slot="answer">
                       <p>(c)</p>
@@ -7344,7 +7159,6 @@ Enter side 1:
           <tip-box>
             <p>📦 Each intermediate product release is a milestone.</p>
           </tip-box>
-          For example,
           <p>In some projects, it is not practical to have a very detailed plan for the whole project due to the uncertainty and unavailability of required information. In such cases, we can use a high-level plan for the whole project and a detailed plan
             for the next few milestones.</p>
           <tip-box>
@@ -7390,7 +7204,7 @@ Enter side 1:
         <div>
           <p><strong>A <em>buffer</em> is a time set aside to absorb any unforeseen delays.</strong> It is very important to include buffers in a software project schedule because effort/time estimations for software development is notoriously hard. However,
             <strong>do not inflate task estimates to create hidden buffers</strong>; have explicit buffers instead. <span class="dimmed"> Reason: With explicit buffers it is easier to detect incorrect effort estimates which can serve as a feedback to improve future effort estimates.</span></p>
-          <img src="/website/book/projectPlanning/buffers/images/schedule.png" height="100"></div>
+          <img src="/website/book/projectPlanning/buffers/images/schedule.png" height="120"></div>
         <div></div>
       </div>
     </div>
@@ -7406,39 +7220,18 @@ Enter side 1:
       </div>
       <div id="main">
         <div>
+          <p>Keeping track of project tasks <span class="dimmed">(who is doing what, which tasks are ongoing, which tasks are done etc.)</span> is an essential part of project management. In small projects it may be possible to track tasks using simple tools
+            as online spreadsheets or general-purpose/light-weight tasks tracking tools such as Trello. Bigger projects need more sophisticated task tracking tools.</p>
           <p><strong>Issue trackers (sometimes called bug trackers) are commonly used to track task assignment and progress.</strong> Most online project management software such as GitHub, SourceForge, and BitBucket come with an integrated issue tracker.</p>
           <div v-closeable="" alt="Jira screenshot">
             <tip-box>
-              <p>📦 A screenshot from the Jira Issue tracker software:</p>
-              <img src="/website/book/projectPlanning/issueTrackers/images/xjira.png" height="500">
+              <p>📦 A screenshot from the Jira Issue tracker software <span class="dimmed">(Jira is part of the BitBucket project management tool suite)</span>:</p>
+              <img src="/website/book/projectPlanning/issueTrackers/images/xjira.png" height="350">
               <p></p>
             </tip-box>
           </div>
-          <p>Issue trackers can also be used as <em>task trackers</em>, i.e. to define tasks to be done, to track who is doing what, and the status of each task.</p>
         </div>
-        <div>
-          <div>
-            <panel header=":muscle: Exercises" expandable="">
-              <div>
-                <panel header=":lock::key: Pick the odd one out.">
-                  <question>
-                    <p>Pick the odd one out.</p>
-                    <ul class="task-list">
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. GitHub</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. SourceForge</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. BitBucket</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. SubVersion</li>
-                    </ul>
-                    <div slot="answer">
-                      <p>(d)</p>
-                      <p>Explanation: SubVersion is a revision control software (similar to Git). The others are online project management platforms.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </div>
-        </div>
+        <div></div>
       </div>
     </div>
     <div>
@@ -7482,7 +7275,7 @@ Enter side 1:
             <li>Arrow depicts the precedence between tasks</li>
           </ul>
           <tip-box>
-            <p>📦 a PERT chart for the Minesweeper project</p>
+            <p>📦 an example PERT chart for a simple software project</p>
             <p><img src="/website/book/projectPlanning/pertCharts/images/pert.jpg" height="320"><br>
               <code>md</code> = man days</p>
           </tip-box>
@@ -7518,8 +7311,8 @@ Enter side 1:
           <img src="/website/book/teamwork/teamStructures/images/diagram.png" height="150">
           <p></p>
           <p><strong>Egoless team</strong></p>
-          <p>In this structure, <strong>every team member is equal in terms of responsibility and accountability</strong>. When any decision is required, consensus must be reached. This team structure is also known as a democratic team structure. This team
-            structure usually finds a good solution to a relatively hard problem as all team members contribute ideas.</p>
+          <p>In this structure, <strong>every team member is equal in terms of responsibility and accountability</strong>. When any decision is required, consensus must be reached. This team structure is also known as a <em>democratic</em> team structure.
+            This team structure usually finds a good solution to a relatively hard problem as all team members contribute ideas.</p>
           <p>However, the democratic nature of the team structure bears a higher risk of falling apart due to the absence of an authority figure to manage the team and resolve conflicts.</p>
           <p><strong>Chief programmer team</strong></p>
           <p>Frederick Brooks proposed that software engineers learn from the medical surgical team in an operating room. In such a team, there is always a chief surgeon, assisted by experts in other areas. Similarly, in a chief programmer team structure,
@@ -7547,7 +7340,8 @@ Enter side 1:
                     </ul>
                     <div slot="answer">
                       <p>(a)</p>
-                      <p>Explanation: Given that students are all peers and beginners, Egoless team structure seems most suitable for the class project.</p>
+                      <p>Explanation: Given that students are all peers and beginners, Egoless team structure seems most suitable for a school project. However, given school projects are low-stakes, short-lived, and small, even the other two team structures
+                        can be used for them.</p>
                     </div>
                   </question>
                 </panel>
@@ -7567,7 +7361,7 @@ Enter side 1:
         </span>
       </p>
       <div>
-        <h4 id="what-one-31">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        <h4 id="what-one-30">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -7924,6 +7718,104 @@ Enter side 1:
           <p></p>
         </div>
         <div></div>
+      </div>
+    </div>
+    <h1 id="revision-control">Revision Control</h1>
+    <div>
+      <p><span class="dimmed"><strong><span>Project Management → Revision Control →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one-31">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/revisionControl/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
+          <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
+          <tabs>
+            <tab header=":abc:">
+              <blockquote>
+                <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that contains
+                  a number, each one higher than the number of the preceding version.</p>
+                <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to help a single
+                  user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best modern revision control
+                  tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
+                <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have a log of
+                  who made it; why they made it; when they made it; and what the change was.</p>
+                <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software will help
+                  you to identify and resolve those conflicts.</p>
+                <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even help
+                  you to efficiently figure out exactly when a problem was introduced.</p>
+                <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
+                  or with a hundred other people.</p>
+                <p>-- [adapted from
+                  <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
+              </blockquote>
+              <hr>
+            </tab>
+            <tab header=":tv:">
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              <hr>
+            </tab>
+          </tabs>
+          <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
+            <div slot="content">
+              <div>
+                <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
+              </div>
+            </div>
+          </popover>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: What does RCS stand for?">
+                  <question has-input="true">
+                    <div slot="answer">
+                      <p>Revision Control Software</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock::key: What is a Revision?">
+                  <question has-input="true">
+                    <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
+                    <div slot="answer">
+                      <p>Versions of a piece of information. For example, take a file containing program code. If you modify the code and save the file, you have a new version of that file.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock::key: Which of these is not considered a benefit of a typical RCS?">
+                  <question>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Help a developer recover from a incorrect modification to a code file</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Makes it easier for a group of developers to collaborate on a project</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Manage the drift between multiple versions of your project</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Detect when multiple developers make incompatible changes to the same file</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. All of them are benefits of RCS</li>
+                    </ul>
+                    <div slot="answer">
+                      <p>f</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock: Explain RCS in a team project context">
+                  <question has-input="true">
+                    <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
+        </div>
       </div>
     </div>
     <hr>
