@@ -49,6 +49,8 @@
   * [Syntax Errors](toc/errors.html#syntax-errors)
   * [Handling Exceptions](toc/errors.html#handling-exceptions)
   * [Raising Exceptions](toc/errors.html#raising-exceptions)
+* [**Dictionaries**](toc/dictionaries.html)
+  * [The Dictionary Data Structure](toc/dictionaries.html#the-dictionary-datastructure)
 * More topics to be added ...
 
 

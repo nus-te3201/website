@@ -28,6 +28,10 @@
     {
       "src": "toc/errors.md",
       "title": "TE3201 Programming Basics: Error Handline"
+    },
+    {
+      "src": "toc/dictionaries.md",
+      "title": "TE3201 Programming Basics: Dictionaries"
     }
   ],
   "ignore": [
