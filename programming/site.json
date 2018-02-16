@@ -32,6 +32,10 @@
     {
       "src": "toc/dictionaries.md",
       "title": "TE3201 Programming Basics: Dictionaries"
+    },
+    {
+      "src": "toc/strings.md",
+      "title": "TE3201 Programming Basics: Strings"
     }
   ],
   "ignore": [

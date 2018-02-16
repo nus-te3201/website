@@ -50,6 +50,10 @@
       "title": "TE3201 Programming Basics: Dictionaries"
     },
     {
+      "src": "programming/toc/strings.md",
+      "title": "TE3201 Programming Basics: Strings"
+    },
+    {
       "src": "common/outcomes.md",
       "title": "TE3201 Learning Outcomes"
     },
