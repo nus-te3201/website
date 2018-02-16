@@ -1,6 +1,6 @@
 ### The Dictionary Data Structure
 
-**A _dictionary_ is a collection of many values that can be indexed by any objects**, unlike lists that are automatically indexed by integers. **Indexes for dictionaries are called _keys_**, and a key with its associated value is called a _key-value pair_.
+**A _dictionary_ (python type: `dict`) is a collection of many values that can be indexed by any object type**, unlike lists that are automatically indexed by integers. **Indexes for dictionaries are called _keys_**, and a key with its associated value is called a _key-value pair_.
 
 <tip-box> 
 
@@ -34,4 +34,19 @@ Key | Value
 
 As you can see in the example above, Python **dictionaries use curly braces notation `{ key1: value1, key2: value2, ...}`**.
 
-Unlike lists which contain an ordered sequence of items, **dictionaries are not ordered** i.e., we cannot force a key-value pair in a dictionary to be at a specific position %%e.g., in the example above, there is no guarantee that `'name'`:`'john'` pair will be at the first position of the dictionary%%.
+<tip-box> 
+
+:package: Some examples of defining dictionaries.
+
+
+```python
+friends = {} # empty dictionary
+grades = {'TE3201': 'A'}
+numbers = {1: 'one', 2: 'two', 3: 'three'}
+is_nice = {'jane': False, 'hakim': True, 'ravi': True}
+prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
+```
+
+</tip-box>
+
+Unlike lists which contain an ordered sequence of items, **dictionaries are not ordered** i.e., we cannot force a key-value pair in a dictionary to be at a specific position %%e.g., in the example above, there is no guarantee that `'bread'`:`'3.50'` pair will be at the first position of the dictionary `prices` after adding more key-value pairs to it%%.

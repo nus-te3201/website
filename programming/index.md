@@ -51,6 +51,8 @@
   * [Raising Exceptions](toc/errors.html#raising-exceptions)
 * [**Dictionaries**](toc/dictionaries.html)
   * [The Dictionary Data Structure](toc/dictionaries.html#the-dictionary-datastructure)
+  * [Working with Dictionaries](toc/dictionaries.html#working-with-dictionaries)
+  * [Nested Dictionaries](toc/dictionaries.html#nested-dictionaries)
 * More topics to be added ...
 
 
