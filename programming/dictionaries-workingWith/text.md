@@ -58,6 +58,9 @@ After deleting: {'TE3201': 'A+'}
 </table>
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Get Set Delete Score" expanded no-close>
+  <include src="e-getSetDeleteScore.md" />
+</panel><p/>
 
 **Trying to access a value for a non-existent key raises a `KeyError` exception.**
 
@@ -87,6 +90,10 @@ KeyError: 'santa'
 </table>
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Get Score with Error Handling" expanded no-close>
+  <include src="e-getScoreWithErrorHandling.md" />
+</panel><p/>
 
 **You can use `keys()` and `values()` methods to iterate through keys and values of a dictionary, respectively.**
 
@@ -166,6 +173,10 @@ butter -> 5.0
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Print Scorecard" expanded no-close>
+  <include src="e-printScorecard.md" />
+</panel><p/>
+
 As usual, you can **use `in` and `not in` to check whether a key or a value is in a dictionary**.
 
 <tip-box> 
@@ -218,3 +229,7 @@ False
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 </panel>
+
+<panel type="danger" header=":muscle: Exercise: Add Bonus" expanded no-close>
+  <include src="e-addBonus.md" />
+</panel><p/>

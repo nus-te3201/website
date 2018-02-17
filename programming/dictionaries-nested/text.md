@@ -39,6 +39,10 @@ total tasks to do: 4
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Detailed Scores" expanded no-close>
+  <include src="e-detailedScores.md" />
+</panel><p/>
+
 <tip-box> 
 
 :package: This dictionary uses dictionaries as values (i.e., nesting dictionaries inside dictionaries). It stores details of a group of persons.
@@ -76,3 +80,7 @@ Betsy Sims
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/dictionaries-nested?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 </panel>
+
+<panel type="danger" header=":muscle: Exercise: Player Stats" expanded no-close>
+  <include src="e-playerStats.md" />
+</panel><p/>
