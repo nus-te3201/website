@@ -46,6 +46,14 @@
       "title": "TE3201 Programming Basics: Error Handling"
     },
     {
+      "src": "programming/toc/dictionaries.md",
+      "title": "TE3201 Programming Basics: Dictionaries"
+    },
+    {
+      "src": "programming/toc/strings.md",
+      "title": "TE3201 Programming Basics: Strings"
+    },
+    {
       "src": "common/outcomes.md",
       "title": "TE3201 Learning Outcomes"
     },

@@ -49,6 +49,13 @@
   * [Syntax Errors](toc/errors.html#syntax-errors)
   * [Handling Exceptions](toc/errors.html#handling-exceptions)
   * [Raising Exceptions](toc/errors.html#raising-exceptions)
+* [**Dictionaries**](toc/dictionaries.html)
+  * [Working with Dictionaries](toc/dictionaries.html#working-with-dictionaries)
+  * [Nested Dictionaries](toc/dictionaries.html#nested-dictionaries)
+  * [The Dictionary Data Structure](toc/dictionaries.html#the-dictionary-datastructure)
+* [**Strings**](toc/strings.html)
+  * [String Literals](toc/strings.html#string-literals)
+  * [Working with Strings](toc/strings.html#working-with-strings)
 * More topics to be added ...
 
 
