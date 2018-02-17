@@ -56,6 +56,7 @@
 * [**Strings**](toc/strings.html)
   * [String Literals](toc/strings.html#string-literals)
   * [Working with Strings](toc/strings.html#working-with-strings)
+  * [String Methods](toc/strings.html#string-methods)
 * More topics to be added ...
 
 

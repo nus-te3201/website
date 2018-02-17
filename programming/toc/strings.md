@@ -7,14 +7,16 @@
 * [**Strings**](#lists)
   * [String Literals](#string-literals)
   * [Working with Strings](#working-with-strings)
+  * [String Methods](#string-methods)
   
 </div>
 <div id="main">
 
-# Lists
+# Strings
 
 <include src="../strings-literals/text.md" /><hr><hr>
 <include src="../strings-workingWith/text.md" /><hr><hr>
+<include src="../strings-methods/text.md" /><hr><hr>
 
 </div>
 </div>
