@@ -136,6 +136,36 @@ for v in prices.values():
 
 </tip-box>
 
+You can **use the `sorted()` function to sort the keys/values before iterating through them**.
+
+<tip-box> 
+
+:package: The code below shows how to iterate through keys/values of a dictionary.
+
+<table> 
+<tr>
+  <td>
+
+```python
+for k in sorted(prices.keys()):
+  print(k, '->', prices[k])
+```
+  </td>
+  <td>&nbsp;→&nbsp;</td>
+  <td>
+
+```
+banana -> 0.15
+bread -> 3.5
+butter -> 5.0
+```
+
+  </td>
+</tr> 
+</table>
+
+</tip-box>
+
 As usual, you can **use `in` and `not in` to check whether a key or a value is in a dictionary**.
 
 <tip-box> 
