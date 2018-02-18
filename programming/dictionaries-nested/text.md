@@ -39,8 +39,8 @@ total tasks to do: 4
 
 </tip-box>
 
-<panel type="danger" header=":muscle: Exercise: Detailed Scores" expanded no-close>
-  <include src="e-detailedScores.md" />
+<panel type="danger" header=":muscle: Exercise: Inning-Scores" expanded no-close>
+  <include src="e-inningScores.md" />
 </panel><p/>
 
 <tip-box> 
@@ -83,4 +83,7 @@ Betsy Sims
 
 <panel type="danger" header=":muscle: Exercise: Player Stats" expanded no-close>
   <include src="e-playerStats.md" />
+</panel>
+<panel type="danger" header=":muscle: Exercise: Grade Report" expanded no-close>
+  <include src="e-gradeReport.md" />
 </panel><p/>
