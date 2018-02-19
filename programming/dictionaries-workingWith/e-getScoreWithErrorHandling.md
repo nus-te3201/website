@@ -16,7 +16,7 @@ print(get_score1(game1_scores, 'brown'))
 ```
 :arrow_heading_down:
 ```
-5
+30
 brown is not in the game!
 ```
 

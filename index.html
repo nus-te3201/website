@@ -457,7 +457,7 @@
             <div>
               <h3 id="the-dictionary-data-structure">The Dictionary Data Structure</h3>
               <p><strong>A <em>dictionary</em> (python type: <code>dict</code>) is a collection of many values that can be indexed by any object type</strong>, unlike lists that are automatically indexed by integers. <strong>Indexes for dictionaries are called <em>keys</em></strong>,
-                and a key with its associated value is called a <em>key-value pair</em>.</p>
+                and a key with its associated value is called a <em>key-value pair</em>. Python <strong>dictionaries use curly braces notation <code>{ key1: value1, key2: value2, ...}</code></strong>.</p>
               <tip-box>
                 <p>📦 A list containing names of animals <code>['cat', 'dog', 'hen', 'fish']</code></p>
                 <table class="markbind-table table">
@@ -486,7 +486,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <p>📦 A dictionary containing ages of three people <code>{'john': 12, 'sara': 14.5, 'colin': 13}</code></p>
+                <p>📦 A dictionary containing ages of three people <code>{'john': 12, 'sara': 14.5, 'colin': 13}</code>. <code>john</code>-<code>12</code> is a key-value pair.</p>
                 <table class="markbind-table table">
                   <thead>
                     <tr>
@@ -537,7 +537,6 @@
                   </tbody>
                 </table>
               </tip-box>
-              <p>As you can see in the example above, Python <strong>dictionaries use curly braces notation <code>{ key1: value1, key2: value2, ...}</code></strong>.</p>
               <tip-box>
                 <p>📦 Some examples of defining dictionaries.</p>
                 <pre><code class="hljs python">friends = {} <span class="hljs-comment"># empty dictionary</span>
@@ -717,7 +716,7 @@ print(get_score1(game1_scores, <span class="hljs-string">'charlie'</span>))
 print(get_score1(game1_scores, <span class="hljs-string">'brown'</span>))
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>5
+                  <pre class="hljs"><code>30
 brown is not in the game!
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
@@ -894,7 +893,7 @@ False
                       the value <code>bonus</code>.</li>
                   </ul>
                   <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_bonus</span><span class="hljs-params">(scores, player, bonus)</span>:</span>
-  <span class="hljs-comment">#pass #REPLACE WITH YOUR CODE!</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
 
 
 game3_scores = {<span class="hljs-string">'amy'</span>: <span class="hljs-number">35</span>, <span class="hljs-string">'betty'</span>: <span class="hljs-number">36</span>, <span class="hljs-string">'charlie'</span>: <span class="hljs-number">30</span>}    
@@ -1033,14 +1032,14 @@ Betsy Sims
                 <span class="hljs-string">'betty'</span>: [{<span class="hljs-number">0</span>:<span class="hljs-number">2</span>, <span class="hljs-number">1</span>:<span class="hljs-number">2</span>, <span class="hljs-number">4</span>:<span class="hljs-number">2</span>, <span class="hljs-number">6</span>:<span class="hljs-number">0</span>}],
                 <span class="hljs-string">'charlie'</span>: []}
           
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(player_stats, player, inning, hit_size)</span>:</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(stats, player, inning, hit_size)</span>:</span>
   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE!</span>
   
 print(get_player_hit_count(player_stats, <span class="hljs-string">'amy'</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>))
 print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>))
 </code></pre>
                   <p>⤵️</p>
-                  <pre class="hljs"><code>0
+                  <pre class="hljs"><code>5
 2
 </code></pre>
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
@@ -1049,6 +1048,17 @@ print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span
   <span class="hljs-keyword">return</span> player_stats[...][inning+<span class="hljs-number">1</span>][...]
 </code></pre>
                   </panel>
+                  <hr>
+                  <pre><code> ~ Welcome to Grade Report System ~
+</code></pre>
+                  <ul>
+                    <li>Enter one entry at a time in the format NAME GRADE</li>
+                    <li>NAME should be one word</li>
+                    <li>Enter an empty line to proceed to printing report</li>
+                  </ul>
+                  <hr>
+                  <p>Student name and grade?Student name and grade?Student name and grade?Invalid input! Entry rejected. Student name and grade?Invalid input! Entry rejected. Student name and grade?Student name and grade?Student name and grade?Student name
+                    and grade?Student name and grade? ============ Grade Report =============== amy : A A+ D ben : B A charlie : F</p>
                 </div>
               </panel>
               <panel type="danger" header=":muscle: Exercise: Grade Report" expanded="" no-close="">
