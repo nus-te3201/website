@@ -1045,7 +1045,7 @@ print(get_player_hit_count(player_stats, <span class="hljs-string">'betty'</span
                   <panel type="seamless" header="%%:bulb: Partial solution%%">
                     <pre><code class="hljs python">
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_player_hit_count</span><span class="hljs-params">(player_stats, player, inning, hit_size)</span>:</span>
-  <span class="hljs-keyword">return</span> player_stats[...][inning+<span class="hljs-number">1</span>][...]
+  <span class="hljs-keyword">return</span> player_stats[...][inning<span class="hljs-number">-1</span>][...]
 </code></pre>
                   </panel>
                 </div>

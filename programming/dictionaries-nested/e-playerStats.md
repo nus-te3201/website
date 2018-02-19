@@ -31,7 +31,7 @@ print(get_player_hit_count(player_stats, 'betty', 1, 4))
 ```python
 
 def get_player_hit_count(player_stats, player, inning, hit_size):
-  return player_stats[...][inning+1][...]
+  return player_stats[...][inning-1][...]
 ```
 
 </panel>
