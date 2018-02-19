@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Programming Basics: Strings</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website/programming/css/programming.css">
+<div class="website-content">
+  <div id="toc">
+    <p><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a>
+      </span>
+    </p>
+    <ul>
+      <li><a href="#lists"><strong>Strings</strong></a>
+        <ul>
+          <li><a href="#string-literals">String Literals</a></li>
+          <li><a href="#working-with-strings">Working with Strings</a></li>
+          <li><a href="#string-methods">String Methods</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div id="main">
+    <h1 id="strings">Strings</h1>
+    <div>
+      <h3 id="string-literals">String Literals</h3>
+      <p>A
+        <tooltip content="a string value, not a variable">string literal</tooltip> can normally be specified by enclosing it within a pair of <code>''</code> or a pair of <code>&quot;&quot;</code> <span class="dimmed">e.g., <code>'How is life?'</code></span>. However, this will not work if the string
+        has a
+        <tooltip content="a character that has special meaning in Python">special character</tooltip> in it <span class="dimmed">e.g., <code>'How's life?'</code> is not acceptable to Python because it contains a <code>'</code> which has the special meaning 'end of string', confusing Python as to which <code>'</code> of the string literal indicates the end of the string. This is similarly confusing: <code>&quot;Say &quot;wow&quot;&quot;</code></span>.</p>
+      <p>You can <strong>use the <code>\'</code> <em>escape sequence</em>  to have a <code>'</code> in strings</strong>. An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. Given below
+        are some commonly used escape sequences</p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>Escape Sequence</th>
+            <th>Meaning</th>
+            <th>Example</th>
+            <th>Output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>\'</code></td>
+            <td>single quote</td>
+            <td><code>print('How\'s Life')</code></td>
+            <td><code>How's Life?</code></td>
+          </tr>
+          <tr>
+            <td><code>\&quot;</code></td>
+            <td>single quote</td>
+            <td><code>print(&quot;Say \&quot;wow\&quot;&quot;)</code></td>
+            <td><code>Say &quot;wow&quot;</code></td>
+          </tr>
+          <tr>
+            <td><code>\t</code></td>
+            <td>horizontal tab</td>
+            <td><code>print('aaa\tbbb')</code></td>
+            <td><code>aaa</code> <code></code> <code>bbb</code></td>
+          </tr>
+          <tr>
+            <td><code>\n</code></td>
+            <td>line break</td>
+            <td><code>print('hi\nthere!')</code></td>
+            <td><code>hi</code><br><code>there!</code></td>
+          </tr>
+          <tr>
+            <td><code>\\</code></td>
+            <td>back slash</td>
+            <td><code>print('files\\text')</code></td>
+            <td><code>files\text</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>You can <strong>use a pair of triple quotes to indicate a multi-line string literal</strong>.</p>
+      <tip-box>
+        <p>📦 Here is an example multi-line string that uses triple quotes.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">print(<span class="hljs-string">'''Hi,
+How's life?
+bye!
+-me'''</span>)
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br> → </td>
+          
+            <td><br>
+              <pre class="hljs"><code>Hi,
+How's life?
+bye!
+-me
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p>It is optional to escape <code>'</code> and <code>&quot;</code> inside a mult-line string within triple quotes e.g., <code>How's life?</code> in the example above.</p>
+      <p><strong>Triple double-quotes (<code>&quot;&quot;&quot;</code>) are commonly used to show documentation of code. Such comments are called <em>docstrings</em>.</strong></p>
+      <tip-box>
+        <p>📦 The <code>remove_head(items)</code> function below has a docstring that explains its behavior.</p>
+        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_head</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-string">"""Removes the first item of the items.
+  Expects the list to have at least one item.
+  Arguments:
+    items (list): the list of items to be modified
+  """</span>
+  <span class="hljs-keyword">del</span> items[<span class="hljs-number">0</span>]
+  
+numbers = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>]
+remove_head(numbers)
+print(numbers)
+</code></pre>
+      </tip-box>
+      <panel type="seamless" header="%%:computer: Try your own%%">
+        <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-literals?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="working-with-strings">Working with Strings</h3>
+      <p>As you have seen before, you can use <code>+</code> and <code>*</code> operators to concatenate and replicate strings<br>
+        <span class="dimmed">e.g., <code>'abc' + '!'*5</code> evaluates to <code>'abc!!!!!'</code></span>.</p>
+      <p>You can <strong>use indexes and slices to access characters of a string</strong>, just like if a string is a simply a list of characters.</p>
+      <p>i.e., <code>'Hi there'</code> is same as a list:</p>
+      <table class="markbind-table table">
+        <thead>
+          <tr>
+            <th>H</th>
+            <th>i</th>
+            <th></th>
+            <th>t</th>
+            <th>h</th>
+            <th>e</th>
+            <th>r</th>
+            <th>e</th>
+            <th>!</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+          </tr>
+        </tbody>
+      </table>
+      <tip-box>
+        <p>📦 The code below shows how to use index and slice notations to get parts of a string.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
+print(s[<span class="hljs-number">0</span>])
+print(s[<span class="hljs-number">-1</span>])
+print(s[<span class="hljs-number">3</span>:<span class="hljs-number">6</span>])
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br> → </td>
+          
+            <td><br><br>
+              <pre class="hljs"><code>H
+!
+the
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p>❗️ Strings are immutable. The following code will not work: <code>s[0] = 'h'</code></p>
+      <p>You can <strong>use the <code>in</code> and <code>not in</code> operator to see if one string is a sub-string of another</strong>.</p>
+      <tip-box>
+        <p>📦</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
+print(<span class="hljs-string">'Hi'</span> <span class="hljs-keyword">in</span> s)
+print(<span class="hljs-string">'hi'</span> <span class="hljs-keyword">in</span> s) <span class="hljs-comment">#matching is case-sensitive</span>
+print(<span class="hljs-string">'Hello'</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> s)
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br> → </td>
+          
+            <td><br><br>
+              <pre class="hljs"><code>True
+False
+True
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <panel type="seamless" header="%%:computer: Try your own%%">
+        <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="string-methods">String Methods</h3>
+      <p>String objects have many methods (the full list is <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">here</a>).</p>
+      <p>Here are some string methods related to the nature of the string.</p>
+      <ul>
+        <li><code>upper()</code>: returns a string with all characters in upper case</li>
+        <li><code>lower()</code>: returns a string with all characters in lower case</li>
+        <li><code>isupper()</code>: returns <code>True</code> if all characters are in upper case</li>
+        <li><code>islower()</code>: returns <code>True</code> if all characters are in lower case</li>
+        <li><code>isalpha()</code>: returns <code>True</code> if the string consists only of letters and is not blank.</li>
+        <li><code>isalnum()</code>: returns <code>True</code> if the string consists only of letters and numbers and is not blank.</li>
+        <li><code>isdecimal()</code>: returns <code>True</code> if the string consists only of numeric characters and is not blank.</li>
+        <li><code>isspace()</code>: returns <code>True</code> if the string consists only of spaces, tabs, and new-lines and is not blank.</li>
+        <li><code>startswith(s)</code>: returns <code>True</code> if the substring <code>s</code> appears at the start of the string</li>
+        <li><code>endswith(s)</code>: returns <code>True</code> if the substring <code>s</code> appears at the end of the string</li>
+      </ul>
+      <tip-box>
+        <p>📦 Examples of string methods mentioned above:</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">print(<span class="hljs-string">'Hi there!'</span>.upper())
+print(<span class="hljs-string">'Hi there!'</span>.lower())
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br> → </td>
+          
+            <td><br>
+              <pre class="hljs"><code>HI THERE!
+hi there!
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">print(<span class="hljs-string">'ABC'</span>.isupper(), <span class="hljs-string">'Abc'</span>.isupper())
+print(<span class="hljs-string">'abc'</span>.islower(), <span class="hljs-string">'Abc'</span>.islower())
+print(<span class="hljs-string">'abc'</span>.isalpha(), <span class="hljs-string">'A12'</span>.isalpha())
+print(<span class="hljs-string">'A23'</span>.isalnum(), <span class="hljs-string">'A+1'</span>.isalnum())
+print(<span class="hljs-string">'123'</span>.isdecimal(), <span class="hljs-string">'A12'</span>.isdecimal())
+print(<span class="hljs-string">' \t\n'</span>.isspace(), <span class="hljs-string">'a b'</span>.isspace())
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br> → </td>
+          
+            <td><br>
+              <pre class="hljs"><code>True False
+True False
+True False
+True False
+True False
+True False
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
+print(s.startswith(<span class="hljs-string">'Hi'</span>), s.startswith(<span class="hljs-string">'hi'</span>))
+print(s.endswith(<span class="hljs-string">'!'</span>), s.endswith(<span class="hljs-string">'?'</span>))
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br> → </td>
+          
+            <td><br><br>
+              <pre class="hljs"><code>True False
+True False
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><strong>The <code>join()</code> method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.</strong></p>
+      <tip-box>
+        <p>📦 Exampls of the <code>join()</code> method:</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">print(<span class="hljs-string">', '</span>.join([<span class="hljs-string">'tom'</span>, <span class="hljs-string">'dick'</span>, <span class="hljs-string">'harry'</span>]))
+print(<span class="hljs-string">'-'</span>.join([<span class="hljs-string">'one'</span>, <span class="hljs-string">'to'</span>, <span class="hljs-string">'one'</span>]))
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br> → </td>
+          
+            <td><br>
+              <pre class="hljs"><code>tom, dick, harry
+one-to-one
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><strong>The <code>split()</code> method is the opposite of <code>join()</code>.</strong> It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any
+        <tooltip content="space, tab, or newline characters">whitespace</tooltip> in the string are used as delimiters.</p>
+      <tip-box>
+        <p>📦</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">print(<span class="hljs-string">'hi, how are you?'</span>.split())
+print(<span class="hljs-string">'A1\t\tA2\nA3'</span>.split())
+print(<span class="hljs-string">'''Todo:
+1. eat
+2. sleep'''</span>.split(<span class="hljs-string">'\n'</span>)) <span class="hljs-comment"># split into lines</span>
+print(<span class="hljs-string">'1-to-1-talk'</span>.split(<span class="hljs-string">'-'</span>))
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br> → </td>
+          
+            <td><br><br><br>
+              <pre class="hljs"><code>['hi,', 'how', 'are', 'you?']
+['A1', 'A2', 'A3']
+['Todo:', '1. eat', '2. sleep']
+['1', 'to', '1', 'talk']
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><strong>There are some string methods to help you to align text.</strong></p>
+      <tip-box>
+        <p>📦 Examples of aligning text using string methods:</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">print(<span class="hljs-string">'Here:'</span>.rjust(<span class="hljs-number">20</span>, <span class="hljs-string">'&gt;'</span>)) <span class="hljs-comment"># right-justify</span>
+print(<span class="hljs-string">'Price'</span>.ljust(<span class="hljs-number">20</span>, <span class="hljs-string">'='</span>)) <span class="hljs-comment"># left-justify</span>
+print(<span class="hljs-string">'Title'</span>.center(<span class="hljs-number">20</span>, <span class="hljs-string">':'</span>)) <span class="hljs-comment"># center</span>
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br> → </td>
+          
+            <td><br>
+              <pre class="hljs"><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Here:
+Price===============
+:::::::Title::::::::
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><strong>There are some string methods to help you to strip trailing/leading spaces.</strong></p>
+      <tip-box>
+        <p>📦 Examples of stripping leading/trailing spaces from a string:</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">s = <span class="hljs-string">'  hello  there!  '</span>
+print(<span class="hljs-string">'['</span>+ s.strip() + <span class="hljs-string">']'</span>)
+print(<span class="hljs-string">'['</span>+ s.lstrip() + <span class="hljs-string">']'</span>) <span class="hljs-comment">#left side strip</span>
+print(<span class="hljs-string">'['</span>+ s.rstrip() + <span class="hljs-string">']'</span>) <span class="hljs-comment">#right side strip</span>
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br> → </td>
+          
+            <td><br><br>
+              <pre class="hljs"><code>[hello  there!]
+[hello  there!  ]
+[  hello  there!]
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <panel type="seamless" header="%%:computer: Try your own%%">
+        <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+    </div>
+    <hr>
+    <hr>
+  </div>
+</div>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>

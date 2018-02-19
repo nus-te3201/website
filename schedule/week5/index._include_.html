@@ -1,0 +1,1157 @@
+<h3 id="learning-outcomes">Learning Outcomes</h3>
+<h4 id="error-handling">Error Handling</h4>
+<panel type="success" header="**`W5.1` Can use exceptions**" expanded="" no-close="">
+  <panel type="success" header="`W5.1a` Can explain error handling" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Introduction →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <blockquote>
+            <p>Well-written applications include error-handling code that allows them to recover gracefully from unexpected errors. When an error occurs, the application may need to request user intervention, or it may be able to recover on its own. In extreme
+              cases, the application may log the user off or shut down the system. --<sub><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms679320(v=vs.85).aspx">(source)</a></sub></p>
+          </blockquote>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+  <panel type="success" header="`W5.1b` Can explain exceptions" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
+          <tip-box type="definition">
+            <div>
+              <p><strong>Exception</strong>:</p>
+              <blockquote>
+                <p>An <em>exception</em> is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions. –- Java Tutorial (Oracle Inc.)</p>
+              </blockquote>
+            </div>
+          </tip-box>
+          <tip-box>
+            <p>📦 Examples:</p>
+            <ul>
+              <li>A network connection encounters a timeout due to a slow server.</li>
+              <li>The code tries to read a file from the hard disk but the file is corrupted and cannot be read.</li>
+            </ul>
+          </tip-box>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+  <panel type="success" header="`W5.1c` Can do exception handling in code" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="how-two">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Most languages allow a method to encapsulate the unusual situation in an Exception object and 'throw'/'raise' that object so that another piece of code can 'catch' it and deal with it.</strong> This is especially useful when code segment
+            that encountered the unusual situation does not know how to deal with it.</p>
+          <p><strong>Exception objects can propagate up the method/function call hierarchy until it is dealt with.</strong> Usually, an exception thrown by a method is caught by the caller method. If the called method does not know how to deal with the exception
+            it caught, it can throw/raise the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the method call stack until it is received by the main method and thrown
+            to the runtime, thus halting the system.</p>
+          <tip-box>
+            <tabs>
+            
+              <tab header="Java">
+                <p>📦 In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method inside a <code>try{ }</code>                  block and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
+                <img src="/website/book/errorHandling/exceptions/how/images/processInput.png" width="400">
+                <p></p>
+                <p></p>
+              </tab>
+            
+              <tab header="Python">
+                <p>📦 In the code given below, <code>process_array</code> function can potentially raise a <code>ValueError</code> exception. Because of that, <code>process_input</code> function invokes <code>process_array</code> function inside a <code>try</code>                  clause and has a <code>except</code> clause to specify what to do if the exception is actually raised.</p>
+                <img src="/website/book/errorHandling/exceptions/how/images/example-python.png" width="400">
+                <p></p>
+              </tab>
+            </tabs>
+            <hr>
+          </tip-box>
+          <p>Advantages of exception handling in this way:</p>
+          <ul>
+            <li>The ability to propagate error information through the call stack.</li>
+            <li>The separation of code that deals with 'unusual' situations from the code that does the 'usual' work.</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <panel header=":paperclip: Resources" expandable="">
+              <ul>
+                <li><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/">Java Exceptions Tutorial from Oracle</a></li>
+              </ul>
+            </panel>
+          </div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Benefit of exceptions">
+                  <question>
+                    <p>Which are benefits of exceptions?</p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Exceptions allow us to separate normal code from error handling code.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Exceptions can prevent problems that happen in the environment.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Exceptions allow us to handle in one location an error raised in another location.</li>
+                    </ul>
+                    <div slot="answer">
+                      <p>(a) (c)</p>
+                      <p>Explanation: Exceptions cannot <em>prevent</em> problems in the environment. They can only be used to handle and recover from such problems.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
+        </div>
+      </div>
+    </div>
+  </panel>
+  <panel type="success" header="`W5.1d` Can avoid using exceptions to control normal workflow" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Error Handling → Exceptions →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="when-three">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p>In general, use exceptions only for 'unusual' conditions. Use normal <code>return</code> statements to pass control to the caller for conditions that are 'normal'.</p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+</panel>
+<h4 id="programing-basics">Programing Basics</h4>
+<panel header="`W4.2ab` Can write code that involves object references" no-close="">
+  <p><mark>This LO is more related to previous week's topics than this week's topics</mark></p>
+  <div>
+    <h3 id="object-references">Object References</h3>
+    <p><strong>Objects of some Python <em>types</em> are <em>immutable</em>.</strong> An immutable object, once created, cannot be modified.</p>
+    <table class="markbind-table table">
+      <thead>
+        <tr>
+          <th>Some immutable types</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>int</code></td>
+          <td><code>float</code></td>
+          <td><code>decimal</code></td>
+          <td><code>complex</code></td>
+        </tr>
+        <tr>
+          <td><code>bool</code></td>
+          <td><code>string</code></td>
+          <td><code>tuple</code></td>
+          <td><code>range</code></td>
+        </tr>
+        <tr>
+          <td><code>frozenset</code></td>
+          <td><code>bytes</code></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>Objects of some other Python types are <em>mutable</em>.</strong> A mutable object can be modified during its lifetime.</p>
+    <table class="markbind-table table">
+      <thead>
+        <tr>
+          <th>Some mutable types</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>list</code></td>
+          <td><code>dict</code></td>
+          <td><code>set</code></td>
+          <td><code>bytearray</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <tip-box>
+      <p>📦 In the example below, <code>i = 5</code> assigns an integer to <code>i</code>. Because integers are immutable, <code>i = i + 1</code> is not mutating the integer object <code>5</code>; rather, it is simply creating a new integer object <code>6</code>        and assigning that to <code>i</code>. Similarly, <code>s = s + ' World!'</code> is not adding more letters to the existing string object <code>Hello</code>; ratehr, it is creating a new string object <code>'Hello World!'</code> and assigning that
+        to <code>s</code>.</p>
+      <pre><code class="hljs python">i = <span class="hljs-number">5</span>
+i = i + <span class="hljs-number">1</span> <span class="hljs-comment"># i is assigned a new integer object 6</span>
+
+s = <span class="hljs-string">'Hello'</span>
+s = s + <span class="hljs-string">'  World!'</span> <span class="hljs-comment"># s is assigned a new string objet 'Hello World!'</span>
+
+numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+numbers[<span class="hljs-number">0</span>] = <span class="hljs-number">4</span> <span class="hljs-comment"># the existing list is being modified</span>
+</code></pre>
+      <p>However, lists are mutable. Therefore, <code>numbers[0] = 4</code> is changing the existing list <code>[1, 2, 3]</code> rather than creating a new list object.</p>
+    </tip-box>
+    <p><strong>An <em>object reference</em> is the address of the memory location where an object is currently stored. A variable is a <em>name</em> that is bound to an object reference.</strong> We can think of it as the variable <em>pointing to</em> an
+      object that is stored at the object reference.</p>
+    <tip-box>
+      <p>📦 The variable <code>spam</code> is bound to the object reference <code>57207444</code> which is the memory location of the list object <code>[0, 1, 2, 3, 4, 5]</code>. i.e., <code>spam</code> is pointing to the object <code>[0, 1, 2, 3, 4, 5]</code>        using the object reference <code>57207444</code>.</p>
+      <pre><code class="hljs python">spam = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+</code></pre>
+      <p><img src="https://automatetheboringstuff.com/images/000081.jpg" alt=""><br>
+        <sub>Image credit: <a href="https://automatetheboringstuff.com">AtBSwP</a></sub></p>
+    </tip-box>
+    <p><strong>When you assign variables as <code>v1 = v2</code>, if <code>v2</code> is pointing to a mutable object, its object reference is copied to <code>v1</code></strong> so that now both <code>v1</code> and <code>v2</code> are pointing to the same
+      object. However, <strong>if <code>v2</code> is pointing to a mutable object, <code>v1 = v2</code> results in each variable pointing to its own copy of the object</strong>.</p>
+    <tip-box>
+      <p>📦 Continuing with the previous example, <code>cheese = spam</code> results in the object reference stored in <code>spam</code> being copied into the variable <code>cheese</code>. The end result is both variables are now pointing to the same list
+        object.</p>
+      <pre><code class="hljs python">cheese = spam
+</code></pre>
+      <p><img src="http://automatetheboringstuff.com/images/000082.jpg" alt=""><br>
+        <sub>Image credit: <a href="https://automatetheboringstuff.com">AtBSwP</a></sub></p>
+      <p>This means any change to the list pointed by <code>cheese</code> will be reflected as a change to the list pointed to by <code>spam</code> (because both are pointing to the same list object!).</p>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python">cheese [<span class="hljs-number">1</span>] = <span class="hljs-string">'Hello!'</span>
+print(<span class="hljs-string">'spam is:'</span>, spam)
+print(<span class="hljs-string">'cheese is:'</span>, cheese)
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td><br><br> → </td>
+        
+          <td><br><br>
+            <pre class="hljs"><code>spam is: [0, 'Hello!', 2, 3, 4, 5]
+cheese is: [0, 'Hello!', 2, 3, 4, 5]
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+      <p><img src="http://automatetheboringstuff.com/images/000071.jpg" alt=""><br>
+        <sub>Image credit: <a href="https://automatetheboringstuff.com">AtBSwP</a></sub></p>
+      <p>However, the behavior is different when we do a similar variable assignment and update using integers instead of lists. Because integers are immutable, <code>cheese</code> points to a <em>copy</em> of the integer pointed to by <code>spam</code>,
+        not the same object.</p>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python">spam = <span class="hljs-number">5</span>
+cheese = spam
+print(<span class="hljs-string">'spam is:'</span>, spam)
+print(<span class="hljs-string">'cheese is:'</span>, cheese)
+
+cheese = cheese + <span class="hljs-number">1</span>
+print(<span class="hljs-string">'spam is:'</span>, spam)
+print(<span class="hljs-string">'cheese is:'</span>, cheese)
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td><br><br><br><br> → </td>
+        
+          <td><br><br><br><br>
+            <pre class="hljs"><code>spam is: 5
+cheese is: 5
+spam is: 5
+cheese is: 6
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+    </tip-box>
+    <p><strong>The behavior for passing arguments to a function is similar to that of assigning one variable to another.</strong> If the argument is mutable, its object reference is assigned to the parameter. That means the code inside the function is able
+      to modify the object passed as the argument and such changes remain after the function execution is over.</p>
+    <tip-box>
+      <p>📦 In the <code>foo</code> function below, when <code>foo(original)</code> is executed, the object reference of the argument <code>original</code> is copied to the parameter <code>items</code>. Now the function is able to modify the list object
+        now being pointed to by both <code>original</code> and <code>items</code>, and the changes remain in the list even after the function has finished.</p>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span><span class="hljs-params">(items)</span>:</span>
+  items[<span class="hljs-number">0</span>] = <span class="hljs-string">'Hi'</span>
+  print(<span class="hljs-string">'inside foo:'</span>, items)
+
+original = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+foo(original)
+print(<span class="hljs-string">'after foo:'</span>, original)
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td><br><br><br><br> → </td>
+        
+          <td><br><br><br>
+            <p><mark><trigger trigger="click" for="modal:foo_items-pyTutor">[Visualize]</trigger></mark><span class="dimmed">[<a target="_blank" href="https://goo.gl/2E2uvp">alt link</a>]</span><br></p>
+            <pre class="hljs"><code>inside foo: ['Hi', 2, 3]
+after foo: ['Hi', 2, 3]
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+      <modal large="" title="`foo(items)`" id="modal:foo_items-pyTutor">
+        <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20foo%28items%29%3A%0A%20%20items%5B0%5D%20%3D%20'Hi'%0A%20%20print%28'inside%20foo%3A',%20items%29%0A%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Afoo%28original%29%0Aprint%28'after%20foo%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+      <p>Contrast the above example with the one below. The <code>bar(items)</code> function assigns a new list to <code>items</code> parameter. That means <code>items</code> is not longer pointing to the list object that was passed in as the argument. After
+        the function is executed, the <code>original</code> list remains the same as before.</p>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bar</span><span class="hljs-params">(items)</span>:</span>
+  items = [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>]
+  print(<span class="hljs-string">'inside bar:'</span>, items)
+  
+original = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+bar(original)
+print(<span class="hljs-string">'after bar:'</span>, original)
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td><br><br><br><br> → </td>
+        
+          <td><br><br><br>
+            <p><span class="dimmed"><trigger trigger="click" for="modal:bar_items-pyTutor">[Visualize]</trigger>[<a target="_blank" href="https://goo.gl/4KHpPR">alt link</a>]</span><br></p>
+            <pre class="hljs"><code>inside bar: ['a', 'b', 'c']
+after bar: [1, 2, 3]
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+      <modal large="" title="`bar(items)`" id="modal:bar_items-pyTutor">
+        <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20bar%28items%29%3A%0A%20%20items%20%3D%20%5B'a',%20'b',%20'c'%5D%0A%20%20print%28'inside%20bar%3A',%20items%29%0A%20%20%0Aoriginal%20%3D%20%5B1,%202,%203%5D%0Abar%28original%29%0Aprint%28'after%20bar%3A',%20original%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+    </tip-box>
+    <p>If the argument passed to a function is of an immutable type, the function receives the reference to a <em>copy</em> of the argument. That means the code inside the function is unable to modify the object passed as the argument. However, it can return
+      a new object that is based on the given object copy.</p>
+    <tip-box>
+      <p>📦 In this example, the function <code>increment(age)</code> is given an immutable object <code>25</code> as the argument. Although the parameter <code>v</code> that received the argument is assigned a new object (i.e., <code>v = v + 1</code>) inside
+        the function, that change is not reflected in the argument <code>age</code>. That is because <code>v</code> is given a reference to a <em>copy</em> of <code>age</code>, not a reference to the actual object in <code>age</code>.</p>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">increment</span><span class="hljs-params">(v)</span>:</span>
+  v = v + <span class="hljs-number">1</span>
+  <span class="hljs-keyword">return</span> v
+  
+age = <span class="hljs-number">25</span>
+new_age = increment(age)
+print(<span class="hljs-string">'age:'</span>, age)
+print(<span class="hljs-string">'new age:'</span>, new_age)
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td><br><br><br><br><br><br> → </td>
+        
+          <td><br><br><br><br><br>
+            <p><span class="dimmed"><trigger trigger="click" for="modal:increment_v-pyTutor">[Visualize]</trigger>[<a target="_blank" href="https://goo.gl/9uR4eR">alt link</a>]</span><br></p>
+            <pre class="hljs"><code>age: 25
+new age: 26
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+      <modal large="" title="`increment(v)`" id="modal:increment_v-pyTutor">
+        <iframe width="800" height="500" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=def%20increment%28v%29%3A%0A%20%20v%20%3D%20v%20%2B%201%0A%20%20return%20v%0A%20%20%0Aage%20%3D%2025%0Anew_age%20%3D%20increment%28age%29%0Aprint%28'age%3A',%20age%29%0Aprint%28'new%20age%3A',%20new_age%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=false&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"></iframe></modal>
+    </tip-box>
+    <panel type="seamless" header="%%:computer: Try your own%%">
+      <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/objectReferences?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      <p></p>
+    </panel>
+    <p></p>
+    <panel type="danger" header=":muscle: Exercise: Swap Ends" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-swap-ends">Exercise : Swap Ends</h4>
+        <p>Complete the functions as described below:</p>
+        <ul>
+          <li><code>swap_ends(item_list)</code>: swaps the first and the last items of the <code>item_list</code>. Note that the function should modify the given <code>item_list</code> list, not return a new list.</li>
+        </ul>
+        <p>Notes:</p>
+        <ul>
+          <li>You can follow the example of <code>set_head(item_list, new_head)</code> function which modifies the given <code>item_list</code> by setting its first element to <code>new_head</code>.</li>
+          <li><code>pass</code> is a dummy statement that does nothing. We use it here because Python does not accept empty functions. You should replace it with your own implementation of the function.</li>
+        </ul>
+        <table>
+          <tr>
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_head</span><span class="hljs-params">(item_list, new_head)</span>:</span>
+  item_list[<span class="hljs-number">0</span>] = new_head
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">swap_ends</span><span class="hljs-params">(item_list)</span>:</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE THIS WITH YOUR CODE</span>
+
+pets = [<span class="hljs-string">'cat'</span>, <span class="hljs-string">'fish'</span>, <span class="hljs-string">'dog'</span>, <span class="hljs-string">'rock'</span>]
+set_head(pets, <span class="hljs-string">'parrot'</span>)
+print(pets)
+swap_ends(pets)
+print(pets)
+</code></pre>
+            </td>
+            <td><br><br><br><br><br><br><br><br>&nbsp;→&nbsp;</td>
+            <td><br><br><br><br><br><br><br><br>
+              <pre class="hljs"><code>['parrot', 'fish', 'dog', 'rock']
+['rock', 'fish', 'dog', 'parrot']
+</code></pre>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </panel>
+    <p></p>
+  </div>
+  <p></p>
+</panel>
+<p></p>
+<panel type="warning" header="**`W5.2` Can use exceptions**" expanded="" no-close="">
+  <panel type="warning" header="`W5.2a` Can explain errors in programming" no-close="">
+    <div>
+      <h3 id="introduction-to-errors">Introduction to Errors</h3>
+      <p><strong>In Python, there are (at least) two kinds of errors: <em>syntax errors</em> and <em>exceptions</em>.</strong></p>
+    </div>
+  </panel>
+  <panel type="warning" header="`W5.2b` Can explain syntax errors" no-close="">
+    <div>
+      <h3 id="syntax-errors">Syntax Errors</h3>
+      <p><strong>A <em>syntax error</em>, also known as a <em>parsing error</em>, is when your code does not follow rules for writing Python code.</strong> Python interpreter shows an error message when it encounters a syntax error.</p>
+      <tip-box>
+        <p>📦 The code below has a syntax error because it breaks the Python rule that requires a <code>:</code> to follow the condition of an <code>if</code> statement.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">4</span>
+  print(<span class="hljs-string">'Greater'</span>)
+  
+  
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td> → </td>
+          
+            <td>
+              <pre class="hljs"><code>Traceback (most recent call last):
+  File &quot;python&quot;, line 1
+    if 5 &gt; 4
+           ^
+SyntaxError: invalid syntax
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p>Some Python editors (e.g., REPL) flag syntax errors even before you run the code.</p>
+      <tip-box>
+        <p>📦 Note how REPL Python editor points out the syntax error using a red ❌ in the <em><tooltip content="the column on the extreme left of the editor">gutter</tooltip></em> of the editor.</p>
+        <p><img src="/website/programming/errors-syntax/images/syntaxErrorInRepl.png" alt="" width="250"></p>
+      </tip-box>
+    </div>
+  </panel>
+  <panel type="warning" header="`W5.2c` Can handle exceptions" no-close="">
+    <div>
+      <h3 id="handling-exceptions">Handling Exceptions</h3>
+      <p><strong>Errors detected during execution are called <em>exceptions</em>.</strong> Even if the code is syntactically correct, it may cause an error during execution. Python <em><tooltip content="_throw_ and _raise_  are two terms used to describe an exception being encountered">throws/raises</tooltip></em>        different types of exceptions; the type of exception used depends on the tye nature of the error.</p>
+      <tip-box>
+        <p>📦 The code below raises an exception when it attempts to divide a number by <code>0</code>. The type of the exception raised is <code>ZeroDivisionError</code>, as mentioned in the last line of the error message.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide</span><span class="hljs-params">(number, divisor)</span>:</span>
+  print(<span class="hljs-string">'Starting calculation'</span>)
+  result = number/divisor
+  print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)
+  print(<span class="hljs-string">'Calculation over!........'</span>)
+  
+divide(<span class="hljs-number">50</span>, <span class="hljs-number">5</span>)
+divide(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td> → <br><br><br><br></td>
+          
+            <td>
+              <pre class="hljs"><code>Starting calculation
+50 / 5 = 10.0
+Calculation over!........
+</code></pre>
+              <pre class="hljs"><code>Starting calculation
+Traceback (most recent call last):
+  File &quot;python&quot;, line 9, in &lt;module&gt;
+  File &quot;python&quot;, line 4, in divide
+ZeroDivisionError: division by zero
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p>It is not desirable for programs to 'crash' every time an exception occurs. You can <strong>use the <code>try-except</code> syntax to specify how to handle exceptions</strong>. The <code>try</code> clause contains the code that can possibly raise
+        an exception while the <code>except</code> clause contains the code that handles the exception.</p>
+      <tip-box>
+        <p>📦 The code below specifies what to do if the <code>ZeroDivisionError</code> is raised, thereby avoiding a program crash in such an event.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide2</span><span class="hljs-params">(number, divisor)</span>:</span>
+  print(<span class="hljs-string">'Starting calculation'</span>)
+  <span class="hljs-keyword">try</span>:
+    result = number/divisor
+    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)
+  <span class="hljs-keyword">except</span> ZeroDivisionError:
+    print(<span class="hljs-string">'Cannot divide by zero'</span>)
+  print(<span class="hljs-string">'Calculation over!........'</span>)
+  
+divide2(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
+divide2(<span class="hljs-number">3</span>, <span class="hljs-number">1.5</span>)
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td> → </td>
+          
+            <td><br><br>
+              <p>[<a target="_blank" href="https://goo.gl/rc8X9h">visualize</a>]<br></p>
+              <pre class="hljs"><code>Starting calculation
+Cannot divide by zero
+Calculation over!........
+
+</code></pre>
+              <pre class="hljs"><code>Starting calculation
+3 / 1.5 = 2.0
+Calculation over!........
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p>When the code in a <code>try</code> clause raises an error, the program execution immediately moves to the code in the <code>except</code> clause, provided the exception that happened matches the exception the <code>except</code> clause is supposed
+        to <em><tooltip content="_Catch_ is term often used to describe a clause that respondes to a specific exception.">catch</tooltip></em>. After running the code in the <code>except</code> clause, the execution continues as normal.</p>
+      <p>If the exception does not match the <code>except</code> clause, the program crashes.</p>
+      <tip-box>
+        <p>📦 The code below crashes because the actual exception <span class="dimmed">(caused by passing a string when an foloating point number is expected)</span> does not match the specified exception <code>ZeroDivisionError</code>.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">divide2(<span class="hljs-number">5</span>, <span class="hljs-string">'abc'</span>)
+</code></pre>
+              <p><br><br></p>
+            </td>
+          
+            <td>&nbsp;→&nbsp;<br><br><br><br></td>
+          
+            <td>
+              <pre class="hljs"><code>Starting calculation
+Traceback (most recent call last):
+  File &quot;python&quot;, line 24, in &lt;module&gt;
+  File &quot;python&quot;, line 16, in divide2
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><strong>You can specify multiple <code>except</code> clauses</strong>, one for each type of exception expected.</p>
+      <tip-box>
+        <p>📦 The code below handles two types of exceptions: <code>ZeroDivisionError</code> and <code>ValueError</code>.</p>
+        <p>💡 The <code>ValueError</code> is raised when the string <code>abc</code> is being converted to a float using <code>float(divisor)</code>.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide3</span><span class="hljs-params">(number, divisor)</span>:</span>
+  print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)
+  <span class="hljs-keyword">try</span>:
+    result = float(number)/float(divisor)
+    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)
+  <span class="hljs-keyword">except</span> ZeroDivisionError:
+    print(<span class="hljs-string">'Cannot divide by zero'</span>)
+  <span class="hljs-keyword">except</span> ValueError:
+    print(<span class="hljs-string">'Cannot divide non-numbers'</span>)
+  print(<span class="hljs-string">'Calculation over!........'</span>)
+  
+divide3(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
+divide3(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td> → </td>
+          
+            <td><br><br><br><br><br><br>
+              <pre class="hljs"><code>Calculating 3 / 0
+Cannot divide by zero
+Calculation over!........
+</code></pre>
+              <pre class="hljs"><code>Calculating 3 / abc
+Cannot divide non-numbers
+Calculation over!........
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><strong>It is possible to specify multiple exception types in one <code>except</code> clause.</strong></p>
+      <tip-box>
+        <p>📦 The code below handles both <code>ZeroDivisionError</code> and <code>ValueError</code> in the same <code>except</code> clause.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divide4</span><span class="hljs-params">(number, divisor)</span>:</span>
+  print(<span class="hljs-string">'Calculating'</span>, number, <span class="hljs-string">'/'</span>, divisor)
+  <span class="hljs-keyword">try</span>:
+    result = float(number)/float(divisor)
+    print(number, <span class="hljs-string">'/'</span>, divisor, <span class="hljs-string">'='</span>, result)
+  <span class="hljs-keyword">except</span> (ZeroDivisionError, ValueError):
+    print(<span class="hljs-string">'Incorrect inputs'</span>)
+  print(<span class="hljs-string">'Calculation over!........'</span>)
+  
+divide4(<span class="hljs-number">3</span>, <span class="hljs-number">0</span>)
+divide4(<span class="hljs-number">3</span>, <span class="hljs-string">'abc'</span>)
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td> → </td>
+          
+            <td><br><br><br><br>
+              <pre class="hljs"><code>Calculating 3 / 0
+Incorrect inputs
+Calculation over!........
+</code></pre>
+              <pre class="hljs"><code>Calculating 3 / abc
+Incorrect inputs
+Calculation over!........
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><a href="https://docs.python.org/3/library/exceptions.html#IndexError"><code>IndexError</code></a> is an exception thrown when you try to access an index (e.g., when reading values form a list) that does not exist.</p>
+      <tip-box>
+        <p>📦</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]
+  <span class="hljs-keyword">except</span> IndexError:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'List too short'</span>
+    
+print(get_head([]))
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br><br><br><br> → </td>
+          
+            <td><br><br><br><br><br><br>
+              <pre class="hljs"><code>List too short
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p>It is also possible to <strong>use <code>except Exception</code> to catch any kind of exception</strong>. However, that practice is discouraged.</p>
+      <tip-box>
+        <p>📦 The code below handles both <code>ZeroDivisionError</code> and <code>ValueError</code> in the same <code>except</code> clause.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_head2</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">return</span> items[<span class="hljs-number">0</span>]
+  <span class="hljs-keyword">except</span> Exception:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Something wrong'</span>
+    
+print(get_head2(<span class="hljs-number">2</span>))
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br><br><br><br> → </td>
+          
+            <td><br><br><br><br><br><br>
+              <pre class="hljs"><code>Something wrong
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <panel type="seamless" header="%%:computer: Try your own%%">
+        <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-handling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+      <p>📎 <strong>Resources</strong>:</p>
+      <ul>
+        <li><a href="https://www.tutorialspoint.com/python/standard_exceptions.htm">Python built-in exceptions</a></li>
+      </ul>
+      <panel type="danger" header=":muscle: Exercise: Enter Integer" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-enter-integer">Exercise : Enter Integer</h4>
+          <p>The code below assumes the entered string will always represent an integer.</p>
+          <pre><code class="hljs python">value = input(<span class="hljs-string">'Input an integer:'</span>)
+print(<span class="hljs-string">'You entered'</span>, value)
+</code></pre>
+          <p>However, users may not follow that assumption. If the user were to enter a non-integer string, the program crashes. To avoid such crashes, programs need to do <em>input validation</em> i.e., perform checks on inputs to ensure their validity.</p>
+          <p>Update the above code so that it accepts integers only, and produces the behavior given below.</p>
+          <pre class="hljs"><code>Input an integer: x
+That is not an integer, try again
+Input an integer: 5.5
+That is not an integer, try again
+Input an integer: 6
+You entered 6
+</code></pre>
+          <panel type="seamless" header="%%:bulb: Hint%%">
+            <ul>
+              <li><a href="https://www.programiz.com/python-programming/methods/built-in/int">The <code>int(s)</code> function</a> raises a <code>ValueError</code> when the string <code>s</code> does not represent an integer.</li>
+              <li>You can use a <code>while True</code> loop to repeatedly ask for an input until the user enters an integer.
+              </li>
+            </ul>
+          </panel>
+
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+  <span class="hljs-keyword">try</span>:
+    value = int(input(<span class="hljs-string">'Input an integer:'</span>))
+    <span class="hljs-comment"># YOUR CODE HERE! print? break? continue?</span>
+  <span class="hljs-keyword">except</span> ValueError:
+    <span class="hljs-comment"># YOUR CODE HERE!</span>
+    
+print(<span class="hljs-string">'You entered'</span>, value)
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
+    </div>
+  </panel>
+  <panel type="warning" header="`W5.2d` Can raise exceptions" no-close="">
+    <div>
+      <h3 id="raising-exceptions">Raising Exceptions</h3>
+      <p><strong>You can <code>raise</code> an exception yourself to indicate an error</strong>.</p>
+      <tip-box>
+        <p>📦 The <code>get_body(items)</code> function below raises an exception when it receives a list that has fewer than 3 items. That exception is 'caught' and handled by the <code>hide_ends(items)</code> function. <br> 💡 Also note how an <code>except</code>          clause can assign a name to the exception using <code>as temporary_name</code> (as done by <code>except ValueError as e:</code>) so that the exception object can be referenced later (as done in <code>print('Cannot hide ends', str(e))</code>)</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_body</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">if</span> len(items) &lt; <span class="hljs-number">3</span>:
+    <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">'Not enough items'</span>)
+  
+  <span class="hljs-keyword">return</span> items[<span class="hljs-number">1</span>:<span class="hljs-number">-1</span>]
+  
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    body = get_body(items)
+    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))
+
+hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>])
+hide_ends([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br><br><br><br><br><br><br><br><br><br> → </td>
+          
+            <td><br><br><br><br><br><br><br><br><br><br><br>
+              <p>[<a target="_blank" href="https://goo.gl/tsteqe">visualize</a>]<br></p>
+              <pre class="hljs"><code>Cannot hide ends: Not enough items
+['_', 1, 2, 3, '_']
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><strong>It is also possible to catch an exception, do something, and then raise it again</strong> so that the exception propagates to the caller.</p>
+      <tip-box>
+        <p>📦 The code <code>hide_ends2(items)</code> function below catches the <code>ValueError</code> exception, prints an error message, and raises it again so that the code that called the function can catch the exception again. Also note how the line
+          <code>hide_ends2([0, 1, 2, 3, 4])</code> is never executed due to the exception raised by the line just above it.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hide_ends2</span><span class="hljs-params">(items)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    body = get_body(items)
+    print([<span class="hljs-string">'_'</span>] + body + [<span class="hljs-string">'_'</span>])
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    print(<span class="hljs-string">'Cannot hide ends:'</span>, str(e))
+    <span class="hljs-keyword">raise</span>
+  
+<span class="hljs-keyword">try</span>:
+  hide_ends2([<span class="hljs-number">0</span>])
+  hide_ends2([<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+<span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+  print(<span class="hljs-string">'hide_ends2 failed:'</span>, str(e))
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br><br><br><br><br><br> → </td>
+          
+            <td><br><br><br><br><br><br><br><br><br>
+              <p>[<a target="_blank" href="https://goo.gl/EGkxAW">visualize</a>]<br></p>
+              <pre class="hljs"><code>Cannot hide ends: Not enough items
+hide_ends2 failed: Not enough items
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <panel type="seamless" header="%%:computer: Try your own%%">
+        <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/errors-exceptions-raising?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+      <panel type="danger" header=":muscle: Exercise: Is Even-Integer in Range" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-is-even-integer-in-range">Exercise : Is Even-Integer in Range</h4>
+          <tip-box>
+            <p>❗️ This exercise has a long description because it explains how the given code is structured. It is important for you to learn how to break down code into smaller functions like the ones given in this exercise.</p>
+          </tip-box>
+          <p>The function given below checks if a given input is an even integer in a given range.</p>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(number, start, end)</span>:</span>
+  print(number, <span class="hljs-string">'is an int in range'</span>, start, <span class="hljs-string">'-'</span>, end, <span class="hljs-string">'?'</span>, is_even_int_in_range(number, start, end))
+</code></pre>
+          <p>Some example inputs and outputs are given below:</p>
+          <pre><code class="hljs python">check(<span class="hljs-string">'x'</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>)
+check(<span class="hljs-number">3</span>, <span class="hljs-string">'y'</span>, <span class="hljs-string">'z'</span>) <span class="hljs-comment"># False (3 is not even)</span>
+check(<span class="hljs-number">2</span>, <span class="hljs-number">3.4</span>, <span class="hljs-number">5</span>)
+check(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, [])
+check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>)
+check(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>, <span class="hljs-number">5</span>)
+check(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
+check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">4</span>) <span class="hljs-comment"># False ( range 1 to 4 excludes 4)</span>
+check(<span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
+</code></pre>
+          <p>⤵️</p>
+          <pre class="hljs"><code>x is an int in range y - z ? Value error: x is not an integer
+3 is an int in range y - z ? No
+2 is an int in range 3.4 - 5 ? Value error: 3.4 is not an integer
+2 is an int in range 3 - [] ? Value error: [] is not an integer
+2 is an int in range 5 - 1 ? Value error: end is smaller than start
+2 is an int in range 5 - 5 ? No
+3 is an int in range 1 - 5 ? No
+4 is an int in range 1 - 4 ? No
+4 is an int in range 1 - 5 ? Yes
+</code></pre>
+          <p>Note how the <code>check</code> function uses an <code>is_even_int_in_range</code> functions whose code and the behavior are given below.</p>
+          <p><strong><code>is_even_int_in_range(number, start, end)</code></strong>:</p>
+          <ul>
+            <li>Returns <code>'Yes'</code> if <code>number</code> is an even integer in the range <code>start</code> to <code>end</code>. Returns <code>'No'</code> otherwise.</li>
+            <li>Returns an error message if any of the inputs are incorrect.</li>
+            <li>Code:
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+  <span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">if</span> is_even_int(number) <span class="hljs-keyword">and</span> is_in_range(number, start, end):
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'Yes'</span>
+    <span class="hljs-keyword">else</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">'No'</span>
+  <span class="hljs-keyword">except</span> ValueError <span class="hljs-keyword">as</span> e:
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Value error: '</span> + str(e)
+</code></pre>
+            </li>
+          </ul>
+          <p>Note how the above function uses two other functions <code>is_even_int</code> and <code>is_in_range</code> given below:</p>
+          <p><strong><code>is_even_int(number)</code></strong>:</p>
+          <ul>
+            <li>Returns <code>True</code> if the <code>number</code> is an even integer. <code>False</code> otherwise.</li>
+            <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
+            <li>Code:
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_even_int</span><span class="hljs-params">(number)</span>:</span>
+  confirm_is_int(number)
+  <span class="hljs-keyword">return</span> int(number)%<span class="hljs-number">2</span> == <span class="hljs-number">0</span>
+</code></pre>
+            </li>
+          </ul>
+          <p><strong><code>is_in_range(number, start, end)</code></strong>:</p>
+          <ul>
+            <li>Returns <code>True</code> if the <code>number</code> is in the range <code>start</code> to <code>end</code> (<mark>including <code>start</code> but excluding <code>end</code></mark>, as per how Python define <em>ranges</em>). <code>False</code>              otherwise.</li>
+            <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer or <code>start</code> and <code>end</code> do not specify a range correctly.</li>
+            <li>Code:
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_in_range</span><span class="hljs-params">(number, start, end)</span>:</span>
+  confirm_is_int(number)
+  confirm_range_correct(start, end)
+  <span class="hljs-keyword">return</span> number &gt;= start <span class="hljs-keyword">and</span> number &lt; end
+</code></pre>
+            </li>
+          </ul>
+          <p>Note how the above two functions use two other functions <code>confirm_is_int</code> and <code>confirm_range_correct</code>. Their expected behavior and partial code is given below. <strong>Your job is to complete those two functions</strong>.</p>
+          <p><strong><code>confirm_is_int(number)</code></strong>:</p>
+          <ul>
+            <li>Raises a <code>ValueError</code> if the <code>number</code> is not an integer.</li>
+            <li>Partial code:
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
+</code></pre>
+            </li>
+            <li>💡 You can use the <code>type(value) is type_name</code> and <code>type(value) is not type_name</code> to check if a <code>value</code> is of type <code>type_name</code><br> e.g., <code>type('x') is not float</code> evaluates to <code>True</code>              because <code>'x'</code> is not a <code>float</code>.<br> [
+              <a href="https://www.poftut.com/python-type-function-examples/">more examples ...</a>]</li>
+          </ul>
+          <p><strong><code>confirm_range_correct(start, end)</code></strong>:</p>
+          <ul>
+            <li>Raises a <code>ValueError</code> if <code>end</code> or <code>start</code> are not integers. This behavior is already implemented by the code given below, using two calls to the <code>confirm_in_int</code> function.</li>
+            <li>Raises a <code>ValueError('end is smaller than start)</code> if <code>end</code> is smaller than <code>start</code>. You need to implement this behavior.</li>
+            <li>Partial code:
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_range_correct</span><span class="hljs-params">(start, end)</span>:</span>
+  confirm_is_int(start)
+  confirm_is_int(end)
+  <span class="hljs-comment"># ADD YOUR CODE HERE!</span>
+</code></pre>
+            </li>
+          </ul>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">confirm_is_int</span><span class="hljs-params">(number)</span>:</span>
+  <span class="hljs-keyword">if</span> type(number) <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> int:
+    <span class="hljs-keyword">raise</span> ValueError(str(number) + <span class="hljs-string">' is not an integer'</span>)
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <panel type="danger" header=":muscle: Exercise: Flexible Word Game" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-flexible-word-game">Exercise : Flexible Word Game</h4>
+          <p>Implement a word game similar to the one you implement in the
+            <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:</p>
+          <ul>
+            <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
+          </ul>
+          <modal large="" title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
+          
+            <div>
+              <h4 id="exercise-word-game">Exercise : Word Game</h4>
+              <p>Implement a word game with the following rules:</p>
+              <ul>
+                <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
+                <li>If the player inputs the same word multiple times, that word is <em>banned</em>.</li>
+                <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code>end</code></li>
+                <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
+              </ul>
+              <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+              <pre class="hljs"><code>========================================================
+Welcome to the WORD GAME
+Give all four-letter words you know, one word at a time
+Enter the word 'end' to exit
+========================================================
+What's the next word?  park
+What's the next word?  puck
+What's the next word?  cut
+Not a four-letter word
+What's the next word?  people
+Not a four-letter word
+What's the next word?  team
+What's the next word?  puck
+Repeated word! puck is number 2 in the accepted words list.
+puck is no longer an accepted word and is banned
+What's the next word?  bust
+What's the next word?  puck
+puck is banned!
+What's the next word?  meat
+What's the next word?  team
+Repeated word! team is number 2 in the accepted words list.
+team is no longer an accepted word and is banned
+What's the next word?  end
+========================================================
+Your score: 3
+Accepted words (in order of entry): park bust meat
+Accepted words (in sorted order): bust meat park
+Banned words (in sorted order): puck team
+Thank you for playing the WORD GAME
+========================================================
+</code></pre>
+              <p>💡 Implementation suggestions:</p>
+              <ul>
+                <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
+                <li>When a word is entered for the second time, move it from the <em>accepted words</em> list to the <em>banned words</em> list.</li>
+              </ul>
+            </div>
+          </modal>
+          <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+          <pre class="hljs"><code>========================================================
+Welcome to the FLEXIBLE WORD GAME
+Enter the word size (4 to 8): xyz
+That is not a number. Try again
+Enter the word size (4 to 8): 3
+Number not in correct range. Try again
+Enter the word size (4 to 8): 5
+Give all 5-letter words you know, one word at a time
+Enter the word 'end' to exit
+========================================================
+What's the next word?  frame
+What's the next word?  great
+What's the next word?  treat
+What's the next word?  fat
+Not a 5-letter word
+What's the next word?  creamy
+Not a 5-letter word
+What's the next word?  treat
+Repeated word! treat is number 3 in the accepted words list.
+treat is no longer an accepted word and is banned
+What's the next word?  crime
+What's the next word?  treat
+treat is banned!
+What's the next word?  end
+========================================================
+Your score: 3
+Accepted words (in order of entry): frame great crime
+Accepted words (in sorted order): crime frame great
+Banned words (in sorted order): treat
+Thank you for playing the FLEXIBLE WORD GAME
+========================================================
+</code></pre>
+        </div>
+      </panel>
+      <p></p>
+    </div>
+  </panel>
+</panel>
+<p><br><br></p>
+<p>🎯 At the end of this week you should be able to do something similar to the exercise given below (in your programming language/environment of choice):</p>
+<panel header=" Evidence of achieving the LO" no-close="">
+  <p><strong>Exercise from <code>W5.2d</code>:</strong><br></p>
+  <div>
+    <h4 id="exercise-flexible-word-game-2">Exercise : Flexible Word Game</h4>
+    <p>Implement a word game similar to the one you implement in the
+      <trigger trigger="click" for="modal:flexibleWordGame-wordGame">previous Word Game Exercise</trigger>, but with the following difference:</p>
+    <ul>
+      <li>The player is asked to choose the word size. The word size can only be 4 to 8 (both inclusive). If the user entry is not an integer or not in the range 4..8, the program keeps asking for the word size.</li>
+    </ul>
+    <modal large="" title="%%Programming Basics → Lists → List Methods%%" id="modal:flexibleWordGame-wordGame">
+    
+      <div>
+        <h4 id="exercise-word-game-2">Exercise : Word Game</h4>
+        <p>Implement a word game with the following rules:</p>
+        <ul>
+          <li>The player inputs four-letter words. Words that are not four letters are rejected.</li>
+          <li>If the player inputs the same word multiple times, that word is <em>banned</em>.</li>
+          <li>When the player cannot think of any more suitable words, he/she can end the game by entering the word <code>end</code></li>
+          <li>The score is the number of words entered by the player and accepted by the game (i.e., banned words are not counted)</li>
+        </ul>
+        <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+        <pre class="hljs"><code>========================================================
+Welcome to the WORD GAME
+Give all four-letter words you know, one word at a time
+Enter the word 'end' to exit
+========================================================
+What's the next word?  park
+What's the next word?  puck
+What's the next word?  cut
+Not a four-letter word
+What's the next word?  people
+Not a four-letter word
+What's the next word?  team
+What's the next word?  puck
+Repeated word! puck is number 2 in the accepted words list.
+puck is no longer an accepted word and is banned
+What's the next word?  bust
+What's the next word?  puck
+puck is banned!
+What's the next word?  meat
+What's the next word?  team
+Repeated word! team is number 2 in the accepted words list.
+team is no longer an accepted word and is banned
+What's the next word?  end
+========================================================
+Your score: 3
+Accepted words (in order of entry): park bust meat
+Accepted words (in sorted order): bust meat park
+Banned words (in sorted order): puck team
+Thank you for playing the WORD GAME
+========================================================
+</code></pre>
+        <p>💡 Implementation suggestions:</p>
+        <ul>
+          <li>Maintain two lists: one to keep accepted words, one to keep banned words</li>
+          <li>When a word is entered for the second time, move it from the <em>accepted words</em> list to the <em>banned words</em> list.</li>
+        </ul>
+      </div>
+    </modal>
+    <p>Given below is a sample session. Try to follow the exact output format in your implementation:</p>
+    <pre class="hljs"><code>========================================================
+Welcome to the FLEXIBLE WORD GAME
+Enter the word size (4 to 8): xyz
+That is not a number. Try again
+Enter the word size (4 to 8): 3
+Number not in correct range. Try again
+Enter the word size (4 to 8): 5
+Give all 5-letter words you know, one word at a time
+Enter the word 'end' to exit
+========================================================
+What's the next word?  frame
+What's the next word?  great
+What's the next word?  treat
+What's the next word?  fat
+Not a 5-letter word
+What's the next word?  creamy
+Not a 5-letter word
+What's the next word?  treat
+Repeated word! treat is number 3 in the accepted words list.
+treat is no longer an accepted word and is banned
+What's the next word?  crime
+What's the next word?  treat
+treat is banned!
+What's the next word?  end
+========================================================
+Your score: 3
+Accepted words (in order of entry): frame great crime
+Accepted words (in sorted order): crime frame great
+Banned words (in sorted order): treat
+Thank you for playing the FLEXIBLE WORD GAME
+========================================================
+</code></pre>
+  </div>
+  <p></p>
+</panel>
