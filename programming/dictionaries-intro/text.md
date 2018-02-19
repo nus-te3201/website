@@ -1,6 +1,6 @@
 ### The Dictionary Data Structure
 
-**A _dictionary_ (python type: `dict`) is a collection of many values that can be indexed by any object type**, unlike lists that are automatically indexed by integers. **Indexes for dictionaries are called _keys_**, and a key with its associated value is called a _key-value pair_.
+**A _dictionary_ (python type: `dict`) is a collection of many values that can be indexed by any object type**, unlike lists that are automatically indexed by integers. **Indexes for dictionaries are called _keys_**, and a key with its associated value is called a _key-value pair_. Python **dictionaries use curly braces notation `{ key1: value1, key2: value2, ...}`**.
 
 <tip-box> 
 
@@ -13,7 +13,7 @@ Index | Value
 `2` | `'hen'`
 `3` | `'fish'`
 
-:package: A dictionary containing ages of three people `{'john': 12, 'sara': 14.5, 'colin': 13}`
+:package: A dictionary containing ages of three people `{'john': 12, 'sara': 14.5, 'colin': 13}`. `john`-`12` is a key-value pair.
 
 Key | Value
 ----- | -----
@@ -31,8 +31,6 @@ Key | Value
 `'citizen'` | `True`
 
 </tip-box>
-
-As you can see in the example above, Python **dictionaries use curly braces notation `{ key1: value1, key2: value2, ...}`**.
 
 <tip-box> 
 

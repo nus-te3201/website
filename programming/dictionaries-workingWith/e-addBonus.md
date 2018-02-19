@@ -8,7 +8,7 @@ Given the parameter`scores` is a dictionary of the format `{'amy': 35, 'betty': 
 
 ```python
 def add_bonus(scores, player, bonus):
-  #pass #REPLACE WITH YOUR CODE!
+  pass #REPLACE WITH YOUR CODE!
 
 
 game3_scores = {'amy': 35, 'betty': 36, 'charlie': 30}    

@@ -14,7 +14,7 @@ player_stats = {'amy': [{0:0, 1:1, 4:1, 6:0},  # amy's first inning stats
                 'betty': [{0:2, 1:2, 4:2, 6:0}],
                 'charlie': []}
           
-def get_player_hit_count(player_stats, player, inning, hit_size):
+def get_player_hit_count(stats, player, inning, hit_size):
   return 0 #REPLACE WITH YOUR CODE!
   
 print(get_player_hit_count(player_stats, 'amy', 2, 1))
@@ -22,7 +22,7 @@ print(get_player_hit_count(player_stats, 'betty', 1, 4))
 ```
 :arrow_heading_down:
 ```
-0
+5
 2
 ```
 
@@ -35,3 +35,17 @@ def get_player_hit_count(player_stats, player, inning, hit_size):
 ```
 
 </panel>
+
+-----------------------------------------------------
+     ~ Welcome to Grade Report System ~
+* Enter one entry at a time in the format NAME GRADE
+* NAME should be one word
+* Enter an empty line to proceed to printing report
+-----------------------------------------------------
+Student name and grade?Student name and grade?Student name and grade?Invalid input! Entry rejected.
+Student name and grade?Invalid input! Entry rejected.
+Student name and grade?Student name and grade?Student name and grade?Student name and grade?Student name and grade? 
+============ Grade Report ===============
+amy : A A+ D
+ben : B A
+charlie : F
