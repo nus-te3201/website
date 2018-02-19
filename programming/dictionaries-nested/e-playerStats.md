@@ -35,17 +35,3 @@ def get_player_hit_count(player_stats, player, inning, hit_size):
 ```
 
 </panel>
-
------------------------------------------------------
-     ~ Welcome to Grade Report System ~
-* Enter one entry at a time in the format NAME GRADE
-* NAME should be one word
-* Enter an empty line to proceed to printing report
------------------------------------------------------
-Student name and grade?Student name and grade?Student name and grade?Invalid input! Entry rejected.
-Student name and grade?Invalid input! Entry rejected.
-Student name and grade?Student name and grade?Student name and grade?Student name and grade?Student name and grade? 
-============ Grade Report ===============
-amy : A A+ D
-ben : B A
-charlie : F
