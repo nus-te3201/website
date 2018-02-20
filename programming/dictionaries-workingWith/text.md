@@ -37,6 +37,7 @@ one
   <td>
 
 ```python
+grades = {'TE3201': 'A'}
 grades['CS2103'] = 'B'
 print('After adding:',grades)
 grades['TE3201'] = 'A+'
@@ -106,6 +107,7 @@ KeyError: 'santa'
   <td>
 
 ```python
+prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 for k in prices.keys():
   print(k, '->', prices[k])
 ```
@@ -125,6 +127,7 @@ banana -> 0.15
   <td>
 
 ```python
+prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 for v in prices.values():
   print(v)
 ```
@@ -154,6 +157,7 @@ You can **use the `sorted()` function to sort the keys/values before iterating t
   <td>
 
 ```python
+prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 for k in sorted(prices.keys()):
   print(k, '->', prices[k])
 ```
@@ -188,6 +192,7 @@ As usual, you can **use `in` and `not in` to check whether a key or a value is i
   <td>
 
 ```python
+prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 print('bread' in prices.keys())
 print('sugar' not in prices.keys())
 ```
@@ -206,6 +211,7 @@ True
   <td>
 
 ```python
+prices = {'bread': 3.5, 'butter': 5.0, 'banana': 0.15}
 print(3.5 in prices.values())
 print(6.0 in prices.values())
 ```

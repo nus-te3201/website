@@ -608,7 +608,8 @@ one
                   <tr>
                   
                     <td>
-                      <pre><code class="hljs python">grades[<span class="hljs-string">'CS2103'</span>] = <span class="hljs-string">'B'</span>
+                      <pre><code class="hljs python">grades = {<span class="hljs-string">'TE3201'</span>: <span class="hljs-string">'A'</span>}
+grades[<span class="hljs-string">'CS2103'</span>] = <span class="hljs-string">'B'</span>
 print(<span class="hljs-string">'After adding:'</span>,grades)
 grades[<span class="hljs-string">'TE3201'</span>] = <span class="hljs-string">'A+'</span>
 print(<span class="hljs-string">'After updating:'</span>,grades)
@@ -737,7 +738,8 @@ brown is not in the game!
                   <tr>
                   
                     <td>
-                      <pre><code class="hljs python"><span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> prices.keys():
+                      <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> prices.keys():
   print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])
 </code></pre>
                       <p></p>
@@ -756,7 +758,8 @@ banana -&gt; 0.15
                   <tr>
                   
                     <td>
-                      <pre><code class="hljs python"><span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> prices.values():
+                      <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+<span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> prices.values():
   print(v)
 </code></pre>
                       <p></p>
@@ -781,7 +784,8 @@ banana -&gt; 0.15
                   <tr>
                   
                     <td>
-                      <pre><code class="hljs python"><span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(prices.keys()):
+                      <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> sorted(prices.keys()):
   print(k, <span class="hljs-string">'-&gt;'</span>, prices[k])
 </code></pre>
                       <p></p>
@@ -844,7 +848,8 @@ total = 75
                   <tr>
                   
                     <td>
-                      <pre><code class="hljs python">print(<span class="hljs-string">'bread'</span> <span class="hljs-keyword">in</span> prices.keys())
+                      <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+print(<span class="hljs-string">'bread'</span> <span class="hljs-keyword">in</span> prices.keys())
 print(<span class="hljs-string">'sugar'</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> prices.keys())
 </code></pre>
                       <p></p>
@@ -863,7 +868,8 @@ True
                   <tr>
                   
                     <td>
-                      <pre><code class="hljs python">print(<span class="hljs-number">3.5</span> <span class="hljs-keyword">in</span> prices.values())
+                      <pre><code class="hljs python">prices = {<span class="hljs-string">'bread'</span>: <span class="hljs-number">3.5</span>, <span class="hljs-string">'butter'</span>: <span class="hljs-number">5.0</span>, <span class="hljs-string">'banana'</span>: <span class="hljs-number">0.15</span>}
+print(<span class="hljs-number">3.5</span> <span class="hljs-keyword">in</span> prices.values())
 print(<span class="hljs-number">6.0</span> <span class="hljs-keyword">in</span> prices.values())
 </code></pre>
                       <p></p>
