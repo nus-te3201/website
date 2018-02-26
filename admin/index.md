@@ -39,7 +39,7 @@ You will be building a personal assistant chat-bot software named _PAC_ (_PAC_ i
 **_Basic_ Functionality**:
 
 1. PAC interface can be text-based (i.e., no need for a graphical UI)
-1. PAC helps with storing and retrieving at least **one type of data** that is useful to the user. e.g. details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a PAC that deals with TODO items:
+1. PAC helps with storing and retrieving at least **one type of data** that is useful to the user. Some examples of different types of data (you can pick one of them): details of contacts, todo items, appointments, deadlines, reminders, technical terms to remember, etc. Here is an example interaction between a user and a PAC that deals with TODO items:
    ```
    >> Hi, I'm PAC. What can I do to help you with your TODOs?
    
@@ -99,11 +99,17 @@ Some suggestions for _additional functionality_:
 ### Deliverables
 
 * **Week 8** (mid-term submission): 10%
+  * Deadline: Week 8, Tuesday 6pm
   * Functionality: at least most of the basic requirements are fulfilled (you may leave out the _persistence_ requirement)
     * Submission: demo during lecture in week 8
   * Documentation: 
-    * User stories covering all current and future functionalities, some use cases, some non-functional requirements, at least one activity diagram related to the product
-    * Submission: upload to IVLE
+    * Sections to include:
+      * Cover page: Include product name, names of team members 
+      * User stories: Give user stories to cover all current and future functionalities
+      * Use cases: Give 2-3 use case descriptions. Choose use cases that require most number of steps or most complicated.
+      * Non-functional requirements: Give 5-10 NFRs for the project. Try to include a diverse range of NFRs.
+      * Activity Diagrams: Give at least one activity diagram related to the product e.g., an AD that explains a workflow of how the user uses your product or an algorithm in the code. You can use any drawing software (e.g. PowerPoint), or hand-sketch and photograph/scan the diagrams.
+    * Submission: upload to IVLE as a `.docx` or `.pdf` file. File name should contain team member names. e.g., `John Doe, Sarah Tan, Viet Ngoc.docx`
 
 * **Week 13** (final submission): 30%
   * Functionality: all functionality
