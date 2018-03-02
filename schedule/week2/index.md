@@ -17,19 +17,19 @@
 
 <panel type="warning" header="`W2.2` **Can write a program with conditional execution paths**" no-close>
 
-<panel type="warning" header="`W2.2a` Can explain scripts/programs" no-close>
+<panel type="warning" header="`W2.2a` Can explain scripts/programs" expanded no-close>
   <include src="../../programming/scripts/text.md" />
 </panel>
-<panel type="warning" header="`W2.2b` Can use comments" no-close>
+<panel type="warning" header="`W2.2b` Can use comments" expanded no-close>
   <include src="../../programming/comments/text.md" />
 </panel>
-<panel type="warning" header="`W2.2c` Can use existing functions" no-close>
+<panel type="warning" header="`W2.2c` Can use existing functions" expanded no-close>
   <include src="../../programming/usingFunctions/text.md" />
 </panel>
-<panel type="warning" header="`W2.2d` Can use booleans" no-close>
+<panel type="warning" header="`W2.2d` Can use booleans" expanded no-close>
   <include src="../../programming/booleans/text.md" />
 </panel>
-<panel type="warning" header="`W2.2e` Can use `if` statements" no-close>
+<panel type="warning" header="`W2.2e` Can use `if` statements" expanded no-close>
   <include src="../../programming/if/text.md" />
 </panel>
 <p/>

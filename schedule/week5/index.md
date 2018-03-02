@@ -2,21 +2,21 @@
 
 #### Error Handling
 
-<panel type="success" header="**`W5.1` Can use exceptions**" expanded no-close>
+<panel type="success" header="**`W5.1` Can use exceptions**" no-close>
 
-  <panel type="success" header="`W5.1a` Can explain error handling" no-close>
+  <panel type="success" header="`W5.1a` Can explain error handling" expanded no-close>
     <include src="../../book/errorHandling/introduction/what/full.md" />
   </panel>
   
-  <panel type="success" header="`W5.1b` Can explain exceptions" no-close>
+  <panel type="success" header="`W5.1b` Can explain exceptions" expanded no-close>
     <include src="../../book/errorHandling/exceptions/what/full.md" />
   </panel>
   
-  <panel type="success" header="`W5.1c` Can do exception handling in code" no-close>
+  <panel type="success" header="`W5.1c` Can do exception handling in code" expanded no-close>
     <include src="../../book/errorHandling/exceptions/how/full.md" />
   </panel>
   
-  <panel type="success" header="`W5.1d` Can avoid using exceptions to control normal workflow" no-close>
+  <panel type="success" header="`W5.1d` Can avoid using exceptions to control normal workflow" expanded no-close>
     <include src="../../book/errorHandling/exceptions/when/full.md" />
   </panel>
 
@@ -32,18 +32,18 @@
 
 </panel><p/>
 
-<panel type="warning" header="**`W5.2` Can use exceptions**" expanded no-close>
+<panel type="warning" header="**`W5.2` Can use exceptions**" no-close>
 
-  <panel type="warning" header="`W5.2a` Can explain errors in programming" no-close>
+  <panel type="warning" header="`W5.2a` Can explain errors in programming" expanded no-close>
     <include src="../../programming/errors-intro/text.md" />
   </panel>
-  <panel type="warning" header="`W5.2b` Can explain syntax errors" no-close>
+  <panel type="warning" header="`W5.2b` Can explain syntax errors" expanded no-close>
     <include src="../../programming/errors-syntax/text.md" />
   </panel>
-  <panel type="warning" header="`W5.2c` Can handle exceptions" no-close>
+  <panel type="warning" header="`W5.2c` Can handle exceptions" expanded no-close>
     <include src="../../programming/errors-exceptions-handling/text.md" />
   </panel>
-  <panel type="warning" header="`W5.2d` Can raise exceptions" no-close>
+  <panel type="warning" header="`W5.2d` Can raise exceptions" expanded no-close>
     <include src="../../programming/errors-exceptions-raising/text.md" />
   </panel>
 
