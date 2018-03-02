@@ -57,6 +57,8 @@
   * [String Literals](toc/strings.html#string-literals)
   * [Working with Strings](toc/strings.html#working-with-strings)
   * [String Methods](toc/strings.html#string-methods)
+* [**Files**](toc/files.html)
+  * [Paths](toc/files.html#files-paths)
 * More topics to be added ...
 
 

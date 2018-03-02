@@ -36,6 +36,10 @@
     {
       "src": "toc/strings.md",
       "title": "TE3201 Programming Basics: Strings"
+    },
+    {
+      "src": "toc/files.md",
+      "title": "TE3201 Programming Basics: Files"
     }
   ],
   "ignore": [

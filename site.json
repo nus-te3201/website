@@ -54,6 +54,10 @@
       "title": "TE3201 Programming Basics: Strings"
     },
     {
+      "src": "programming/toc/files.md",
+      "title": "TE3201 Programming Basics: Files"
+    },
+    {
       "src": "common/outcomes.md",
       "title": "TE3201 Learning Outcomes"
     },

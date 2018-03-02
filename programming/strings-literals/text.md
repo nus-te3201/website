@@ -2,15 +2,24 @@
 
 A <tooltip content="a string value, not a variable">string literal</tooltip> can normally be specified by enclosing it within a pair of `''` or a pair of `""` %%e.g., `'How is life?'`%%. However, this will not work if the string has a <tooltip content="a character that has special meaning in Python">special character</tooltip> in it %%e.g., `'How's life?'` is not acceptable to Python because it contains a `'` which has the special meaning 'end of string', confusing Python as to which `'` of the string literal indicates the end of the string. This is similarly confusing: `"Say "wow""`%%.
 
-You can **use the `\'` _escape sequence_  to have a `'` in strings**. An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. Given below are some commonly used escape sequences
+<div id="strings-escape">
+
+An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can **use an _escape sequence_  to include a special character in a string literal** without interpreting it as a special character.  Given below are some examples:
 
 Escape Sequence | Meaning | Example | Output
 --------------- | ------- | ------- | ------
 `\'` | single quote | `print('How\'s Life')` | `How's Life?`
-`\"` | single quote | `print("Say \"wow\"")` | `Say "wow"`
+`\"` | double quote | `print("Say \"wow\"")` | `Say "wow"`
+`\\` | back slash | `print('files\\text')` | `files\text`
+
+Another use of escape sequences is to give a special meaning to a character that normally does not have a special meaning. Here are some examples:
+
+Escape Sequence | Meaning | Example | Output
+--------------- | ------- | ------- | ------
 `\t` | horizontal tab | `print('aaa\tbbb')` | `aaa` `  ` `bbb`
 `\n` | line break | `print('hi\nthere!')` | `hi`<br>`there!`
-`\\` | back slash | `print('files\\text')` | `files\text`
+
+</div>
 
 You can **use a pair of triple quotes to indicate a multi-line string literal**. 
 
