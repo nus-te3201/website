@@ -184,6 +184,7 @@
 <include src="../book/errorHandling/exceptions/when/print.md" />
 
 </div>
+<div id="handout-ides-documentation">
 
 # IDEs
 
@@ -195,6 +196,29 @@
 
 <include src="../book/ides/debugging/what/print.md" />
 
+<p style="page-break-after: always;">&nbsp;</p>
+
+# Documentation
+
+## Introduction
+
+<include src="../book/documentation/introduction/what/print.md" />
+
+## Guidelines
+
+<include src="../book/documentation/guidelines/intro.md" />
+
+### Guideline: Aim for Comprehensibility
+
+<include src="../book/documentation/guidelines/aimForComprehensibility/what/print.md" />
+<include src="../book/documentation/guidelines/aimForComprehensibility/how/print.md" />
+
+### Guideline: Document Minimally, but Sufficiently
+
+<include src="../book/documentation/guidelines/documentMinimally/what/print.md" />
+<include src="../book/documentation/guidelines/documentMinimally/how/print.md" />
+
+</div>
 
 # Code Quality
 
@@ -226,24 +250,6 @@
 # Refactoring
 
 <include src="../book/refactoring/what/print.md" />
-
-# Documentation
-
-## Introduction
-
-<include src="../book/documentation/introduction/what/print.md" />
-
-## Guidelines
-
-### Guideline: Aim for Comprehensibility
-
-<include src="../book/documentation/guidelines/aimForComprehensibility/what/print.md" />
-<include src="../book/documentation/guidelines/aimForComprehensibility/how/print.md" />
-
-### Guideline: Document Minimally, but Sufficiently
-
-<include src="../book/documentation/guidelines/documentMinimally/what/print.md" />
-<include src="../book/documentation/guidelines/documentMinimally/how/print.md" />
 
 # Reuse
 
