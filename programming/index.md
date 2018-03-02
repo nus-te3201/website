@@ -58,7 +58,9 @@
   * [Working with Strings](toc/strings.html#working-with-strings)
   * [String Methods](toc/strings.html#string-methods)
 * [**Files**](toc/files.html)
-  * [Paths](toc/files.html#files-paths)
+  * [File Paths](toc/files.html#file-paths)
+  * [Reading from Files](toc/files.html#reading-from-files)
+  * [Writing to Files](toc/files.html#writing-to-files)
 * More topics to be added ...
 
 

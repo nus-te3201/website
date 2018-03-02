@@ -1,4 +1,4 @@
-### Paths
+### File Paths
 
 A file has a _filename_ and a _path_. **The _path_ specifies the location of a file on the computer**, as a hierarchy of folders (also called directories).
 
