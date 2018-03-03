@@ -69,10 +69,8 @@ def remove_head(items):
   Arguments:
   items -- (type: list) the list of items to be modified
   """
-  
-numbers = [0, 1]
-remove_head(numbers)
-print(numbers)
+  print('removing head of list ', items)
+  del items[0]
 ```
 
 Some 

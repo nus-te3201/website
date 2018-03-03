@@ -117,7 +117,7 @@ one-to-one
 
 <tip-box> 
 
-:package: 
+:package: Some examples of using the `split()` method:
 
 <table> 
 <tr>
@@ -145,7 +145,27 @@ print('1-to-1-talk'.split('-'))
 </tr>
 </table>
 
-</tip-box> 
+</tip-box>
+
+**The `replace()` method can replace a character (or a phrase) with another character/phrase**. 
+
+<tip-box> 
+
+:package: Some example of using `replace()` method:
+
+```python
+print('face to face'.replace(' ', '-'))  # replace space with a dash
+print('1,2,3,4'.replace(',', '\t'))  # replace comma with a tab
+print('Yup, Yup, I agree'.replace('Yup', 'Yes'))
+```
+:arrow_heading_down:
+```
+face-to-face
+1	2	3	4
+Yes, Yes, I agree
+```
+
+</tip-box>
 
 **There are some string methods to help you to align text.**
 
