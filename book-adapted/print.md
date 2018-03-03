@@ -184,7 +184,7 @@
 <include src="../book/errorHandling/exceptions/when/print.md" />
 
 </div>
-<div id="handout-ides-documentation">
+<div id="handout-ides">
 
 # IDEs
 
@@ -195,28 +195,6 @@
 ## Debugging
 
 <include src="../book/ides/debugging/what/print.md" />
-
-<p style="page-break-after: always;">&nbsp;</p>
-
-# Documentation
-
-## Introduction
-
-<include src="../book/documentation/introduction/what/print.md" />
-
-## Guidelines
-
-<include src="../book/documentation/guidelines/intro.md" />
-
-### Guideline: Aim for Comprehensibility
-
-<include src="../book/documentation/guidelines/aimForComprehensibility/what/print.md" />
-<include src="../book/documentation/guidelines/aimForComprehensibility/how/print.md" />
-
-### Guideline: Document Minimally, but Sufficiently
-
-<include src="../book/documentation/guidelines/documentMinimally/what/print.md" />
-<include src="../book/documentation/guidelines/documentMinimally/how/print.md" />
 
 </div>
 
@@ -280,6 +258,26 @@
 
 <include src="../book/reuse/cloudComputing/what/print.md" />
 <include src="../book/reuse/cloudComputing/services/print.md" />
+
+# Documentation
+
+## Introduction
+
+<include src="../book/documentation/introduction/what/print.md" />
+
+## Guidelines
+
+<include src="../book/documentation/guidelines/intro.md" />
+
+### Guideline: Aim for Comprehensibility
+
+<include src="../book/documentation/guidelines/aimForComprehensibility/what/print.md" />
+<include src="../book/documentation/guidelines/aimForComprehensibility/how/print.md" />
+
+### Guideline: Document Minimally, but Sufficiently
+
+<include src="../book/documentation/guidelines/documentMinimally/what/print.md" />
+<include src="../book/documentation/guidelines/documentMinimally/how/print.md" />
 
 <hr>
 
@@ -390,6 +388,7 @@
 <include src="../book/teamwork/teamStructures/print.md" />
 
 </div>
+<div id="handout-sdlc">
 
 # SDLC Process Models
 
@@ -409,6 +408,8 @@
 ## More
 
 <include src="../book/processModels/more/cmmi/print.md" />
+
+</div>
 
 # Revision Control
 

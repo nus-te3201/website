@@ -63,17 +63,19 @@ It is optional to escape `'` and `"` inside a mult-line string within triple quo
 
 ```python
 def remove_head(items):
-  """Removes the first item of the items.
-  Expects the list to have at least one item.
+  """Remove the first item of the items.
+
+  The list should have at least one item.
   Arguments:
-    items (list): the list of items to be modified
+  items -- (type: list) the list of items to be modified
   """
-  del items[0]
   
 numbers = [0, 1]
 remove_head(numbers)
 print(numbers)
 ```
+
+Some 
 
 </tip-box>
 
