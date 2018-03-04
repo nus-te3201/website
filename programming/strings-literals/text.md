@@ -21,6 +21,10 @@ Escape Sequence | Meaning | Example | Output
 
 </div>
 
+<panel type="danger" header=":muscle: Exercise: Escape Sequences" expanded no-close>
+  <include src="e-escapeSequences.md" />
+</panel><p/>
+
 You can **use a pair of triple quotes to indicate a multi-line string literal**. 
 
 <tip-box> 
@@ -55,6 +59,10 @@ bye!
 
 It is optional to escape `'` and `"` inside a mult-line string within triple quotes e.g., `How's life?` in the example above.
 
+<panel type="danger" header=":muscle: Exercise: Multi-Line String" expanded no-close>
+  <include src="e-multiLineString.md" />
+</panel><p/>
+
 **Triple double-quotes (`"""`) are commonly used to show documentation of code. Such comments are called _docstrings_.**
 
 <tip-box> 
@@ -73,9 +81,10 @@ def remove_head(items):
   del items[0]
 ```
 
-Some 
 
 </tip-box>
+
+:paperclip: Vist [this page](https://www.python.org/dev/peps/pep-0257/) to learn more about docstrings
 
 <panel type="seamless" header="%%:computer: Try your own%%">
 
