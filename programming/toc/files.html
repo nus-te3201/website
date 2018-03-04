@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Programming Basics: Files</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website/programming/css/programming.css">
+<div class="website-content">
+  <div id="toc">
+    <p><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a>
+      </span>
+    </p>
+    <ul>
+      <li><a href="#files"><strong>Files</strong></a>
+        <ul>
+          <li><a href="#file-paths">File Paths</a></li>
+          <li><a href="#reading-from-files">Reading from Files</a></li>
+          <li><a href="#writing-to-files">Writing to Files</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div id="main">
+    <h1 id="files">Files</h1>
+    <div>
+      <h3 id="file-paths">File Paths</h3>
+      <p>A file has a <em>filename</em> and a <em>path</em>. <strong>The <em>path</em> specifies the location of a file on the computer</strong>, as a hierarchy of folders (also called directories).</p>
+      <tip-box>
+        <tabs>
+        
+          <tab header="Windows">
+            <p>📦 File <code>C:\photos\2018\home.jpg</code></p>
+            <ul>
+              <li>Filename: <code>home.jpg</code></li>
+              <li>Path: <code>C:\photos\2018</code> (Windows uses the back slash <code>\</code> as the <em>separator</em> symbol in paths )</li>
+              <li>Folders in the path (<code>C:</code> is called the <em>root folder</em>):
+                <pre class="hljs"><code>C: {root}
+  ˪ photos
+      ˪ 2018
+</code></pre>
+              </li>
+            </ul>
+            <p>❗️ Windows file names and paths are not case sensitive. <code>C:\photos\2018\home.jpg</code> is same as <code>C:\PHOTOS\2018\HOME.JPG</code></p>
+          </tab>
+        
+          <tab header="OS-X/Linux">
+            <p>📦 File <code>/Users/john/home.jpg</code></p>
+            <ul>
+              <li>Filename: <code>home.jpg</code></li>
+              <li>Path: <code>/Users/john</code> (Windows uses the forward slash <code>/</code> as the <em>separator</em> symbol in paths )</li>
+              <li>Folders in the path (the <code>/</code> at the start of the path is considered the <em>root folder</em>):
+                <pre class="hljs"><code>/ {root}
+  ˪ Users
+      ˪ john
+</code></pre>
+              </li>
+            </ul>
+            <p>❗️ OS-X/Linux file names and paths are case sensitive. <code>/Users/john/home.jpg</code> is not the same as <code>/USERS/JOHN/HOME.JPG</code></p>
+            <p></p>
+          </tab>
+        </tabs>
+      </tip-box>
+      <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the
+        <tooltip content="each program has a _working directory_">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
+      <tip-box>
+        <p>📦</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+
+cwd = os.getcwd() <span class="hljs-comment"># store current working dir</span>
+print(cwd) <span class="hljs-comment"># print current working dir</span>
+os.chdir(<span class="hljs-string">'C:\\temp\\python'</span>) <span class="hljs-comment"># change director</span>
+print(os.getcwd()) <span class="hljs-comment"># print current working dir</span>
+os.chdir(cwd) <span class="hljs-comment"># change working dir back to original</span>
+print(os.getcwd())
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br><br><br> → </td>
+          
+            <td><br><br><br><br><br>
+              <pre class="hljs"><code>C:\modules\te3201
+C:\temp\python
+C:\modules\te3201
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+        <p>💡 Note how the path <code>'C:\\temp\\python'</code> uses double slash to
+          <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the <code>\</code>. In OS-X or Linux, it can be something like <code>/user/john/python</code> (no need for double slash).</p>
+        <modal large="" title="**Escape Sequences** %%(extraxt from Strings → String Literals)%%" id="modal:filePaths-stringsEscape">
+          <div>
+            <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em>  to include a special character in a string literal</strong> without
+              interpreting it as a special character. Given below are some examples:</p>
+            <table class="markbind-table table">
+              <thead>
+                <tr>
+                  <th>Escape Sequence</th>
+                  <th>Meaning</th>
+                  <th>Example</th>
+                  <th>Output</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>\'</code></td>
+                  <td>single quote</td>
+                  <td><code>print('How\'s Life')</code></td>
+                  <td><code>How's Life?</code></td>
+                </tr>
+                <tr>
+                  <td><code>\&quot;</code></td>
+                  <td>double quote</td>
+                  <td><code>print(&quot;Say \&quot;wow\&quot;&quot;)</code></td>
+                  <td><code>Say &quot;wow&quot;</code></td>
+                </tr>
+                <tr>
+                  <td><code>\\</code></td>
+                  <td>back slash</td>
+                  <td><code>print('files\\text')</code></td>
+                  <td><code>files\text</code></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Another use of escape sequences is to give a special meaning to a character that normally does not have a special meaning. Here are some examples:</p>
+            <table class="markbind-table table">
+              <thead>
+                <tr>
+                  <th>Escape Sequence</th>
+                  <th>Meaning</th>
+                  <th>Example</th>
+                  <th>Output</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>\t</code></td>
+                  <td>horizontal tab</td>
+                  <td><code>print('aaa\tbbb')</code></td>
+                  <td><code>aaa</code> <code></code> <code>bbb</code></td>
+                </tr>
+                <tr>
+                  <td><code>\n</code></td>
+                  <td>line break</td>
+                  <td><code>print('hi\nthere!')</code></td>
+                  <td><code>hi</code><br><code>there!</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </modal>
+      </tip-box>
+      <p><strong>A path that specifies all folders starting from the root is an <em>absolute path</em>. A path that is specified relative to the current working directory is a <em>relative</em> path.</strong></p>
+      <tip-box>
+        <p>📦 Assume the current working directory is <code>C:\modules\te3201</code> and you created a new folder inside it named <code>exercises</code> and put a <code>ex.txt</code> file in that folder.</p>
+        <ul>
+          <li>Absolute path: <code>C:\modules\te3201\exercises\ex1.txt</code></li>
+          <li>Relative path: <code>exercises\ex1.txt</code></li>
+        </ul>
+      </tip-box>
+      <p>In a path, you can use the dot <code>.</code> as a shorthand to refer to the current working directory. Similarly, <code>..</code> can be used to refer to the parent directory.</p>
+      <tip-box>
+        <p>📦 If the current working directory is <code>C:\modules\te3201</code>, you can use any of the following to refer to <code>C:\modules\te3201\exercises\ex1.txt</code>.</p>
+        <ul>
+          <li><code>exercises\ex1.txt</code></li>
+          <li><code>.\exercises\ex1.txt</code></li>
+          <li><code>..\te3201\exercises\ex1.txt</code></li>
+          <li><code>..\..\modules\te3201\exercises\ex1.txt</code></li>
+        </ul>
+        <panel type="seamless" header="%%another example%%">
+          <p><img src="https://automatetheboringstuff.com/images/000032.jpg" alt=""></p>
+        </panel>
+      </tip-box>
+      <p>You can use <code>os.mkdir()</code> function to create folders and <code>os.removedirs()</code> to delete folders.</p>
+      <tip-box>
+        <p>📦</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">print(os.getcwd())
+os.makedirs(<span class="hljs-string">'ex\\w1'</span>)
+os.chdir(<span class="hljs-string">'ex\\w1'</span>)
+print(os.getcwd())
+os.chdir(<span class="hljs-string">'..'</span>) <span class="hljs-comment"># go to parent dir</span>
+print(os.getcwd())
+os.chdir(<span class="hljs-string">'..'</span>)
+os.removedirs(<span class="hljs-string">'ex\\w1'</span>)
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br><br><br> → </td>
+          
+            <td><br><br><br><br><br>
+              <pre class="hljs"><code>C:\repos\nus-te3201\sample-code
+C:\repos\nus-te3201\sample-code\ex\w1
+C:\repos\nus-te3201\sample-code\ex
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <p><code>os.path</code> module has many functions that can help with paths. For example, <code>os.paths.join()</code> function can be used to generate file path that matches the current operating system.</p>
+      <tip-box>
+        <p>📦 Consider the code below:</p>
+        <pre><code class="hljs python">cwd = os.getcwd()
+print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs-string">'w2'</span>))
+</code></pre>
+        <p>If you run it on a Windows computer in the folder <code>C:\modules\te3201</code>, it prints <code>C:\modules\te3201\ex\w2</code>.<br> If your run it on a OS-X computer in the folder <code>/Users/john</code>, it prints <code>/Users/john/ex/w2</code>.</p>
+      </tip-box>
+      <p>❗️ To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard coding the
+        <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.</p>
+      <tip-box>
+        <p>📦 This code will work on Windows but not on OS-X:</p>
+        <table class="markbind-table table">
+          <thead>
+            <tr>
+              <th>Works only on Windows</th>
+              <th>Works on both Windows and OS-X</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>os.makedirs('ex\\w1')</code></td>
+              <td><code>os.makedirs(os.path.join('ex', 'w1'))</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </tip-box>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="reading-from-files">Reading from Files</h3>
+      <p>This section focuses on reading from text-based files (i.e., not binary files).</p>
+      <p><strong>There are three steps to reading or writing files in Python:</strong></p>
+      <ul>
+        <li>Call the <strong><code>open()</code></strong> function to receive <code>File</code> object.</li>
+        <li>Call the <strong><code>read()</code></strong> method on the <code>File</code> object to receive file content.</li>
+        <li>Close the file by calling the <strong><code>close()</code></strong> method on the <code>File</code> object.</li>
+      </ul>
+      <tip-box>
+        <p>📦 The code below shows how to read from a text file.</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+f = open(file_path, <span class="hljs-string">'r'</span>) <span class="hljs-comment"># open in read mode</span>
+items = f.read()
+print(items)
+f.close()
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br> → </td>
+          
+            <td><br><br> Output (contents of the <code>items.txt</code>):
+              <pre class="hljs"><code>first line
+second line
+third line
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+        <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened in read mode.</p>
+      </tip-box>
+      <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
+      <tip-box>
+        <p>📦 The code below shows how to read file content as a list of lines.</p>
+        <pre><code class="hljs python">f = open(file_path, <span class="hljs-string">'r'</span>)
+items = f.readlines()
+print(items) <span class="hljs-comment"># print as a list</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> items: <span class="hljs-comment"># print each item</span>
+  print(i.strip()) <span class="hljs-comment"># strip to remove linebreak</span>
+f.close()
+</code></pre>
+        <p>⤵️</p>
+        <pre class="hljs"><code>['first line\n', 'second line\n', 'third line\n']
+first line
+second line
+third line
+</code></pre>
+        <p>💡 Note how each line ends with a <code>\n</code> which represents the line break. It can be removed using the <code>strip()</code> method.</p>
+      </tip-box>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      <h3 id="writing-to-files">Writing to Files</h3>
+      <p>Similar to reading from a file, writing to a file too is a three step process. One main difference is <strong>the file needs to be opened in <code>write mode</code>.</strong></p>
+      <tip-box>
+        <p>📦 The code below shows how to write to a text file.</p>
+        <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+f = open(file_path, <span class="hljs-string">'w'</span>)  <span class="hljs-comment"># open in write mode</span>
+f.write(<span class="hljs-string">'first line\n'</span>)
+f.write(<span class="hljs-string">'second line\n'</span>)
+f.close()
+</code></pre>
+        <p>⤵️ contents of the <code>items.txt</code>:</p>
+        <pre class="hljs"><code>first line
+second line
+</code></pre>
+        <ul>
+          <li>💡 The <code>'w'</code> argument indicates that the file should be opened in write mode.</li>
+          <li>💡 Unlike the <code>print()</code> function that prints content in a new line every time, the <code>write</code> function does not add an automatic line break at the end. You need to add a <code>\n</code> at each place you want a line break
+            to appear in the file.</li>
+        </ul>
+      </tip-box>
+      <p>Opening a file in write mode and writing to it results in overwriting the content of the file contained before it was opened. To preserve original content and add to it, open the file in <em>append mode</em>.</p>
+      <tip-box>
+        <p>📦 The code below shows how to append to a file.</p>
+        <pre><code class="hljs python">f = open(file_path, <span class="hljs-string">'a'</span>)  <span class="hljs-comment"># open in append mode</span>
+f.write(<span class="hljs-string">'third line\n'</span>)
+f.close()
+</code></pre>
+        <p>⤵️ contents of the <code>items.txt</code>:</p>
+        <pre class="hljs"><code>first line
+second line
+third line
+</code></pre>
+      </tip-box>
+    </div>
+    <hr>
+    <hr>
+  </div>
+</div>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>

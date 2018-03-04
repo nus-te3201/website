@@ -85,11 +85,53 @@ True False
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Rectify Case" expanded no-close>
+  <include src="e-rectifyCase.md" />
+</panel><p/>
+<panel type="danger" header=":muscle: Exercise: Is Doctor" expanded no-close>
+  <include src="e-isDoctor.md" />
+</panel><p/>
+
+**The `find(s)` method gives index of `s` in the string**, if it is found. It returns `-1` if `s` is not found.
+
+<tip-box> 
+
+:package: Examples of the `find()` method:
+
+<table> 
+<tr>
+  <td>
+
+```python
+s = 'Monty Python'
+print(s.find('Monty'))
+print(s.find('Python'))
+print(s.find('Spam'))
+```
+  </td>
+  <td><br><br>&nbsp;→&nbsp;</td>
+  <td><br><br>
+
+```
+0
+6
+-1
+```
+  </td>
+</tr>
+</table>
+
+</tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Remove From Word" expanded no-close>
+  <include src="e-removeFromWord.md" />
+</panel><p/>
+
 **The `join()` method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.**
 
 <tip-box> 
 
-:package: Exampls of the `join()` method:
+:package: Examples of the `join()` method:
 
 <table> 
 <tr>
@@ -117,7 +159,7 @@ one-to-one
 
 <tip-box> 
 
-:package: 
+:package: Some examples of using the `split()` method:
 
 <table> 
 <tr>
@@ -140,36 +182,6 @@ print('1-to-1-talk'.split('-'))
 ['A1', 'A2', 'A3']
 ['Todo:', '1. eat', '2. sleep']
 ['1', 'to', '1', 'talk']
-```
-  </td>
-</tr>
-</table>
-
-</tip-box> 
-
-**There are some string methods to help you to align text.**
-
-<tip-box> 
-
-:package: Examples of aligning text using string methods:
-
-<table> 
-<tr>
-  <td>
-
-```python
-print('Here:'.rjust(20, '>')) # right-justify
-print('Price'.ljust(20, '=')) # left-justify
-print('Title'.center(20, ':')) # center
-```
-  </td>
-  <td><br>&nbsp;→&nbsp;</td>
-  <td><br>
-
-```
->>>>>>>>>>>>>>>Here:
-Price===============
-:::::::Title::::::::
 ```
   </td>
 </tr>
@@ -209,8 +221,68 @@ print('['+ s.rstrip() + ']') #right side strip
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Get Part" expanded no-close>
+  <include src="e-getPart.md" />
+</panel><p/>
+
+**The `replace()` method can replace a character (or a phrase) with another character/phrase**. 
+
+<tip-box> 
+
+:package: Some examples of using `replace()` method:
+
+```python
+print('face to face'.replace(' ', '-'))  # replace space with a dash
+print('1,2,3,4'.replace(',', '\t'))  # replace comma with a tab
+print('Yup, Yup, I agree'.replace('Yup', 'Yes'))
+```
+:arrow_heading_down:
+```
+face-to-face
+1	2	3	4
+Yes, Yes, I agree
+```
+
+</tip-box>
+
+**There are some string methods to help you to align text.**
+
+<tip-box> 
+
+:package: Examples of aligning text using string methods:
+
+<table> 
+<tr>
+  <td>
+
+```python
+print('Here:'.rjust(20, '>')) # right-justify
+print('Price'.ljust(20, '=')) # left-justify
+print('Title'.center(20, ':')) # center
+```
+  </td>
+  <td><br>&nbsp;→&nbsp;</td>
+  <td><br>
+
+```
+>>>>>>>>>>>>>>>Here:
+Price===============
+:::::::Title::::::::
+```
+  </td>
+</tr>
+</table>
+
+</tip-box>
+
+
+
 <panel type="seamless" header="%%:computer: Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 </panel>
+
+<panel type="danger" header=":muscle: Exercise: Print Formatted Item" expanded no-close>
+  <include src="e-printFormattedItem.md" />
+</panel><p/>

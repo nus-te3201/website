@@ -4309,10 +4309,15 @@ studentList.addUi(statusUi);
             <li>A debugger that allows the developer to execute the program one step at a time to observe the run-time behavior in order to locate bugs.</li>
             <li>Other tools that aid various aspects of coding e.g. support for automated testing, drag-and-drop construction of UI components, version management support, simulation of the target runtime platform, and modeling support.</li>
           </ul>
-          <p>Examples of popular IDEs: Eclipse, Intellij IDEA, NetBeans, Visual Studio, DevC++, DrJava, XCode</p>
-          <tip-box>
-            <p>Note: Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. <a href="http://www.gnu.org/software/emacs/">Emacs</a>) over heavier IDEs.</p>
-          </tip-box>
+          <p>Examples of popular IDEs:</p>
+          <ul>
+            <li>Java: Eclipse, Intellij IDEA, NetBeans</li>
+            <li>C#, C++: Visual Studio</li>
+            <li>Swift: XCode</li>
+            <li>Python: PyCharm</li>
+          </ul>
+          <p>Some Web-based IDEs have appeared in recent times too e.g., Amazon's <a href="https://aws.amazon.com/cloud9/">Cloud9 IDE</a>.</p>
+          <p>Some experienced developers, in particular those with a UNIX background, prefer lightweight yet powerful text editors with scripting capabilities (e.g. <a href="http://www.gnu.org/software/emacs/">Emacs</a>) over heavier IDEs.</p>
         </div>
       </div>
       <h2 id="debugging">Debugging</h2>
@@ -4333,9 +4338,10 @@ studentList.addUi(statusUi);
               </ul>
             </li>
             <li>
-              <p>👎 <strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than a 'quick try') due to these reasons:</p>
+              <p>👎 <strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than as a 'quick try') due to these reasons:</p>
               <ul>
-                <li>It is difficult, time consuming, and error-prone technique. If you didn't spot the error while writing code, you might not spot the error when reading code too.</li>
+                <li>It is difficult, time consuming, and error-prone technique.</li>
+                <li>If you didn't spot the error while writing code, you might not spot the error when reading code too.</li>
               </ul>
             </li>
             <li>
@@ -5314,17 +5320,44 @@ send();
         <div>
           <p><strong>Developer-to-developer documentation can be in one of two forms:</strong></p>
           <ol>
-            <li>
-              <p><strong>Documentation for <em>developer-as-user</em></strong>: Software components are written by developers and used by other developers. Therefore, there is a need to document how the components are to be used. API documents form the bulk
-                of this category. Writing documentation of this kind is easier because a component with a well-defined API exposes functionality in small-sized, independent and easy-to-use chunks. Examples of such documentation can be found in the
-                <a
-                  href="http://download.oracle.com/javase/8/docs/api/">Java API</a>.</p>
-            </li>
-            <li>
-              <p><strong>Documentation for <em>developer-as-maintainer</em></strong>: There is a need to document how a system or a component is designed, implemented and tested so that other developers can maintain and evolve the code. Writing documentation
-                of the this type is harder because of the need to explain complex internal details of a non-trivial system.</p>
+            <li><strong>Documentation for <em>developer-as-user</em></strong>: Software components are written by developers and reused by other developers, which means there is a need to document how such components are to be used. Such documentation can
+              take several forms:
+              <ul>
+                <li>API documentation: APIs expose functionality in small-sized, independent and easy-to-use chunks, each of which can be documented systematically.</li>
+                <li>Tutorial-style instructional documentation: In addition to explaining functions/methods independently, some higher-level explanations of how to use an API can be useful.</li>
+              </ul>
             </li>
           </ol>
+          <tip-box>
+            <tabs>
+            
+              <tab header="Java">
+                <ul>
+                  <li>📦 Example of API Documentation: <a href="http://download.oracle.com/javase/8/docs/api/">String API</a>.</li>
+                  <li>📦 Example of tutorial-style documentation: <a href="https://docs.oracle.com/javase/tutorial/i18n/index.html">Java Intenatioanalization Tutorial</a></li>
+                </ul>
+                <p></p>
+              </tab>
+            
+              <tab header="Python">
+                <ul>
+                  <li>📦 Example of API Documentation: <a href="https://docs.python.org/3/library/string.html">string API</a>.</li>
+                  <li>📦 Example of tutorial-style documentation: <a href="https://docs.python.org/3/howto/regex.html">How to use Regular Expressions in Python</a></li>
+                </ul>
+                <p></p>
+              </tab>
+            </tabs>
+          </tip-box>
+          <ol start="2">
+            <li><strong>Documentation for <em>developer-as-maintainer</em></strong>: There is a need to document how a system or a component is designed, implemented and tested so that other developers can maintain and evolve the code. Writing documentation
+              of this type is harder because of the need to explain complex internal details. However, given that readers of this type of documentation usually have access to the source code itself, only <em>some</em> information need to be included in
+              the documentation, as code (and code comments) can also serve as a complementary source of information.</li>
+          </ol>
+          <tip-box>
+            <ul>
+              <li>📦 An example: <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">se-edu/addressbook-level4 Developer Guide</a>.</li>
+            </ul>
+          </tip-box>
         </div>
       </div>
       <h2 id="guidelines">Guidelines</h2>
@@ -5414,7 +5447,7 @@ send();
           <p><strong>Aim for 'just enough' developer documentation.</strong></p>
           <ul>
             <li>Writing and maintaining developer documents is an overhead. You should try to minimize that overhead.</li>
-            <li>The readers are developers who will eventually read the code. The documentation complements the code and can provide only just enough guidance to get started.</li>
+            <li>If the readers are developers who will eventually read the code, the documentation should complement the code and should provide only just enough guidance to get started.</li>
           </ul>
         </div>
       </div>
@@ -9598,7 +9631,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <li>Strong emphasis on complete transparency and responsibility sharing among the team members. The team is responsible together for the delivery of the product. Team members are accountable, and regularly and openly share progress with each other
               and with the user.</li>
           </ul>
-          <p><strong>There are a number of agile processes in the development world today. eXtreme Programming (XP) and Scrum are two of the well-known ones.</strong></p>
+          <p><strong>There are a number of agile processes in the development world today. <em>eXtreme Programming (XP)</em> and <em>Scrum</em> are two of the well-known ones.</strong></p>
         </div>
       </div>
       <h2 id="example-process-models">Example Process Models</h2>
@@ -9667,11 +9700,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </ul>
             <p>...</p>
             <p>The daily scrum meeting is not used as a problem-solving or issue resolution meeting. <strong>Issues that are raised are taken offline and usually dealt with by the relevant subgroup immediately after the meeting.</strong></p>
+            <panel type="seamless" header=":tv: Intro to Scrum in Under 10 Minutes">
+              <p><sub>(This is not an endorsement of the product mentioned in the video)</sub></p>
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/XU0llRltyFM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            </panel>
           </tip-box>
-          <div v-closeable="" alt="Scrum video">
-            <p>📺 Intro to Scrum in Under 10 Minutes <sub>(This is not an endorsement of the product mentioned in the video)</sub></p>
-            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/XU0llRltyFM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-          </div>
         </div>
       </div>
       <div>
@@ -9771,7 +9804,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <div>
           <tip-box type="definition">
             <p>CMMI (Capability Maturity Model Integration) is a process improvement approach defined by Software Engineering Institute at Carnegie Melon University. CMMI provides organizations with the essential elements of effective processes, which will
-              improve their performance. CMMI-based process improvement includes identifying an organization’s process strengths and weaknesses and making process changes to turn weaknesses into strengths. <sub>-- adapted from <a href="http://www.sei.cmu.edu/cmmi/">http://www.sei.cmu.edu/cmmi/</a></sub></p>
+              improve their performance. <sub>-- adapted from <a href="http://www.sei.cmu.edu/cmmi/">http://www.sei.cmu.edu/cmmi/</a></sub></p>
           </tip-box>
           <p><strong>CMMI defines five maturity levels for a process and provides criteria to determine if the process of an organization is at a certain maturity level.</strong> The diagram below [taken from Wikipedia] gives an overview of the five levels.</p>
           <img src="/website/book/processModels/more/cmmi/images/diagram.png" height="250">

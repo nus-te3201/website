@@ -42,12 +42,16 @@ the
 
 :exclamation: Strings are immutable. The following code will not work: `s[0] = 'h'`
 
+<panel type="danger" header=":muscle: Exercise: Shorten String" expanded no-close>
+  <include src="e-shortenString.md" />
+</panel><p/>
+
 
 You can **use the `in` and `not in` operator to see if one string is a sub-string of another**.
 
 <tip-box> 
 
-:package: 
+:package: Examples of checking for the existence of a sub-string:
 
 <table> 
 <tr>
@@ -56,7 +60,7 @@ You can **use the `in` and `not in` operator to see if one string is a sub-strin
 ```python
 s = 'Hi there!'
 print('Hi' in s)
-print('hi' in s) #matching is case-sensitive
+print('hi' in s) # matching is case-sensitive
 print('Hello' not in s)
 ```
   </td>
@@ -79,3 +83,7 @@ True
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 </panel>
+
+<panel type="danger" header=":muscle: Exercise: Has All Characters" expanded no-close>
+  <include src="e-hasAllCharacters.md" />
+</panel><p/>

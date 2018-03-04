@@ -2,15 +2,28 @@
 
 A <tooltip content="a string value, not a variable">string literal</tooltip> can normally be specified by enclosing it within a pair of `''` or a pair of `""` %%e.g., `'How is life?'`%%. However, this will not work if the string has a <tooltip content="a character that has special meaning in Python">special character</tooltip> in it %%e.g., `'How's life?'` is not acceptable to Python because it contains a `'` which has the special meaning 'end of string', confusing Python as to which `'` of the string literal indicates the end of the string. This is similarly confusing: `"Say "wow""`%%.
 
-You can **use the `\'` _escape sequence_  to have a `'` in strings**. An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. Given below are some commonly used escape sequences
+<div id="strings-escape">
+
+An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can **use an _escape sequence_  to include a special character in a string literal** without interpreting it as a special character.  Given below are some examples:
 
 Escape Sequence | Meaning | Example | Output
 --------------- | ------- | ------- | ------
 `\'` | single quote | `print('How\'s Life')` | `How's Life?`
-`\"` | single quote | `print("Say \"wow\"")` | `Say "wow"`
+`\"` | double quote | `print("Say \"wow\"")` | `Say "wow"`
+`\\` | back slash | `print('files\\text')` | `files\text`
+
+Another use of escape sequences is to give a special meaning to a character that normally does not have a special meaning. Here are some examples:
+
+Escape Sequence | Meaning | Example | Output
+--------------- | ------- | ------- | ------
 `\t` | horizontal tab | `print('aaa\tbbb')` | `aaa` `  ` `bbb`
 `\n` | line break | `print('hi\nthere!')` | `hi`<br>`there!`
-`\\` | back slash | `print('files\\text')` | `files\text`
+
+</div>
+
+<panel type="danger" header=":muscle: Exercise: Escape Sequences" expanded no-close>
+  <include src="e-escapeSequences.md" />
+</panel><p/>
 
 You can **use a pair of triple quotes to indicate a multi-line string literal**. 
 
@@ -46,6 +59,10 @@ bye!
 
 It is optional to escape `'` and `"` inside a mult-line string within triple quotes e.g., `How's life?` in the example above.
 
+<panel type="danger" header=":muscle: Exercise: Multi-Line String" expanded no-close>
+  <include src="e-multiLineString.md" />
+</panel><p/>
+
 **Triple double-quotes (`"""`) are commonly used to show documentation of code. Such comments are called _docstrings_.**
 
 <tip-box> 
@@ -54,19 +71,20 @@ It is optional to escape `'` and `"` inside a mult-line string within triple quo
 
 ```python
 def remove_head(items):
-  """Removes the first item of the items.
-  Expects the list to have at least one item.
+  """Remove the first item of the items.
+
+  The list should have at least one item.
   Arguments:
-    items (list): the list of items to be modified
+  items -- (type: list) the list of items to be modified
   """
+  print('removing head of list ', items)
   del items[0]
-  
-numbers = [0, 1]
-remove_head(numbers)
-print(numbers)
 ```
 
+
 </tip-box>
+
+:paperclip: Vist [this page](https://www.python.org/dev/peps/pep-0257/) to learn more about docstrings
 
 <panel type="seamless" header="%%:computer: Try your own%%">
 

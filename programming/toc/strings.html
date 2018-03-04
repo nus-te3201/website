@@ -35,50 +35,86 @@
         <tooltip content="a string value, not a variable">string literal</tooltip> can normally be specified by enclosing it within a pair of <code>''</code> or a pair of <code>&quot;&quot;</code> <span class="dimmed">e.g., <code>'How is life?'</code></span>. However, this will not work if the string
         has a
         <tooltip content="a character that has special meaning in Python">special character</tooltip> in it <span class="dimmed">e.g., <code>'How's life?'</code> is not acceptable to Python because it contains a <code>'</code> which has the special meaning 'end of string', confusing Python as to which <code>'</code> of the string literal indicates the end of the string. This is similarly confusing: <code>&quot;Say &quot;wow&quot;&quot;</code></span>.</p>
-      <p>You can <strong>use the <code>\'</code> <em>escape sequence</em>  to have a <code>'</code> in strings</strong>. An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. Given below
-        are some commonly used escape sequences</p>
-      <table class="markbind-table table">
-        <thead>
-          <tr>
-            <th>Escape Sequence</th>
-            <th>Meaning</th>
-            <th>Example</th>
-            <th>Output</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>\'</code></td>
-            <td>single quote</td>
-            <td><code>print('How\'s Life')</code></td>
-            <td><code>How's Life?</code></td>
-          </tr>
-          <tr>
-            <td><code>\&quot;</code></td>
-            <td>single quote</td>
-            <td><code>print(&quot;Say \&quot;wow\&quot;&quot;)</code></td>
-            <td><code>Say &quot;wow&quot;</code></td>
-          </tr>
-          <tr>
-            <td><code>\t</code></td>
-            <td>horizontal tab</td>
-            <td><code>print('aaa\tbbb')</code></td>
-            <td><code>aaa</code> <code></code> <code>bbb</code></td>
-          </tr>
-          <tr>
-            <td><code>\n</code></td>
-            <td>line break</td>
-            <td><code>print('hi\nthere!')</code></td>
-            <td><code>hi</code><br><code>there!</code></td>
-          </tr>
-          <tr>
-            <td><code>\\</code></td>
-            <td>back slash</td>
-            <td><code>print('files\\text')</code></td>
-            <td><code>files\text</code></td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="strings-escape">
+        <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em>  to include a special character in a string literal</strong> without interpreting
+          it as a special character. Given below are some examples:</p>
+        <table class="markbind-table table">
+          <thead>
+            <tr>
+              <th>Escape Sequence</th>
+              <th>Meaning</th>
+              <th>Example</th>
+              <th>Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>\'</code></td>
+              <td>single quote</td>
+              <td><code>print('How\'s Life')</code></td>
+              <td><code>How's Life?</code></td>
+            </tr>
+            <tr>
+              <td><code>\&quot;</code></td>
+              <td>double quote</td>
+              <td><code>print(&quot;Say \&quot;wow\&quot;&quot;)</code></td>
+              <td><code>Say &quot;wow&quot;</code></td>
+            </tr>
+            <tr>
+              <td><code>\\</code></td>
+              <td>back slash</td>
+              <td><code>print('files\\text')</code></td>
+              <td><code>files\text</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Another use of escape sequences is to give a special meaning to a character that normally does not have a special meaning. Here are some examples:</p>
+        <table class="markbind-table table">
+          <thead>
+            <tr>
+              <th>Escape Sequence</th>
+              <th>Meaning</th>
+              <th>Example</th>
+              <th>Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>\t</code></td>
+              <td>horizontal tab</td>
+              <td><code>print('aaa\tbbb')</code></td>
+              <td><code>aaa</code> <code></code> <code>bbb</code></td>
+            </tr>
+            <tr>
+              <td><code>\n</code></td>
+              <td>line break</td>
+              <td><code>print('hi\nthere!')</code></td>
+              <td><code>hi</code><br><code>there!</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <panel type="danger" header=":muscle: Exercise: Escape Sequences" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-escape-sequences">Exercise : Escape Sequences</h4>
+          <p>Write a <mark>single <code>print</code> statement</mark> that outputs the following line.<br> Note that these words are separated by tabs, not normal spaces:<code>&quot;oops&quot;</code><span class="dimmed">{tab here}</span><code>&quot;ok&quot;</code>
+            <span
+              class="dimmed">{tab here}</span><code>&quot;oh?&quot;</code></p>
+          <pre class="hljs"><code>Which word didn't he/she say? [&quot;oops&quot; &quot;ok&quot; &quot;oh?&quot;]
+</code></pre>
+          <panel type="seamless" header="%%:bulb: Tips%%">
+            <ul>
+              <li>Use <code>\t</code> to print a tab character.</li>
+              <li>Use <code>\'</code> to print a single quote inside a string.</li>
+            </ul>
+          </panel>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python">print(<span class="hljs-string">'Which word didn\'t ...."oops"\t"ok".'</span>)
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
       <p>You can <strong>use a pair of triple quotes to indicate a multi-line string literal</strong>.</p>
       <tip-box>
         <p>📦 Here is an example multi-line string that uses triple quotes.</p>
@@ -108,22 +144,44 @@ bye!
         </table>
       </tip-box>
       <p>It is optional to escape <code>'</code> and <code>&quot;</code> inside a mult-line string within triple quotes e.g., <code>How's life?</code> in the example above.</p>
+      <panel type="danger" header=":muscle: Exercise: Multi-Line String" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-multi-line-string">Exercise : Multi-Line String</h4>
+          <p>Write a <mark>single <code>print</code> statement</mark> that outputs the following text exactly as given.<br></p>
+          <pre class="hljs"><code>Which word didn't he/she say?
+* &quot;oops&quot;
+  * &quot;ok&quot;
+    * &quot;oh?&quot;
+</code></pre>
+          <panel type="seamless" header="%%:bulb: Tips%%">
+            <ul>
+              <li>Use <code>'''</code> to indicate multi-line strings.</li>
+            </ul>
+          </panel>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python">print(<span class="hljs-string">'''Which word didn't he/she say?
+
+'''</span>)
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
       <p><strong>Triple double-quotes (<code>&quot;&quot;&quot;</code>) are commonly used to show documentation of code. Such comments are called <em>docstrings</em>.</strong></p>
       <tip-box>
         <p>📦 The <code>remove_head(items)</code> function below has a docstring that explains its behavior.</p>
         <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_head</span><span class="hljs-params">(items)</span>:</span>
-  <span class="hljs-string">"""Removes the first item of the items.
-  Expects the list to have at least one item.
+  <span class="hljs-string">"""Remove the first item of the items.
+
+  The list should have at least one item.
   Arguments:
-    items (list): the list of items to be modified
+  items -- (type: list) the list of items to be modified
   """</span>
+  print(<span class="hljs-string">'removing head of list '</span>, items)
   <span class="hljs-keyword">del</span> items[<span class="hljs-number">0</span>]
-  
-numbers = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>]
-remove_head(numbers)
-print(numbers)
 </code></pre>
       </tip-box>
+      <p>📎 Vist <a href="https://www.python.org/dev/peps/pep-0257/">this page</a> to learn more about docstrings</p>
       <panel type="seamless" header="%%:computer: Try your own%%">
         <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-literals?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
     </div>
@@ -190,16 +248,66 @@ the
         </table>
       </tip-box>
       <p>❗️ Strings are immutable. The following code will not work: <code>s[0] = 'h'</code></p>
+      <panel type="danger" header=":muscle: Exercise: Shorten String" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-shorten-string">Exercise : Shorten String</h4>
+          <p>Complete the function given below, to behave as described by its docstring.</p>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">shorten</span><span class="hljs-params">(text)</span>:</span>
+  <span class="hljs-string">""" Return a 10-character version of the string if it is longer.
+  
+  If text is longer than 10 characters, return the first four characters 
+  followed by '..' followed by the last four characters.
+  If text is not longer than 10 characters, returns text.
+  
+  Example:
+  shorten('1234567890abcd') returns '1234..abcd'
+  """</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+
+</code></pre>
+          <p>Example usage:</p>
+          <table>
+            <tr>
+            
+              <td>
+                <pre><code class="hljs python">print(shorten(<span class="hljs-string">'1234'</span>))    
+print(shorten(<span class="hljs-string">'1234567890'</span>))
+print(shorten(<span class="hljs-string">'1234567890abcd'</span>))
+</code></pre>
+                <p></p>
+              </td>
+            
+              <td><br> → </td>
+            
+              <td><br>
+                <pre class="hljs"><code>1234
+1234567890
+1234..abcd
+</code></pre>
+                <p></p>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python">  <span class="hljs-keyword">if</span> len(text) &gt; <span class="hljs-number">10</span>:
+    <span class="hljs-keyword">return</span> text[:<span class="hljs-number">4</span>] + <span class="hljs-string">'..'</span> <span class="hljs-comment"># ...</span>
+  <span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">return</span> text
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
       <p>You can <strong>use the <code>in</code> and <code>not in</code> operator to see if one string is a sub-string of another</strong>.</p>
       <tip-box>
-        <p>📦</p>
+        <p>📦 Examples of checking for the existence of a sub-string:</p>
         <table>
           <tr>
           
             <td>
               <pre><code class="hljs python">s = <span class="hljs-string">'Hi there!'</span>
 print(<span class="hljs-string">'Hi'</span> <span class="hljs-keyword">in</span> s)
-print(<span class="hljs-string">'hi'</span> <span class="hljs-keyword">in</span> s) <span class="hljs-comment">#matching is case-sensitive</span>
+print(<span class="hljs-string">'hi'</span> <span class="hljs-keyword">in</span> s) <span class="hljs-comment"># matching is case-sensitive</span>
 print(<span class="hljs-string">'Hello'</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> s)
 </code></pre>
               <p></p>
@@ -219,6 +327,48 @@ True
       </tip-box>
       <panel type="seamless" header="%%:computer: Try your own%%">
         <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-workingWith?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+      <panel type="danger" header=":muscle: Exercise: Has All Characters" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-has-all-characters">Exercise : Has All Characters</h4>
+          <p>Complete the function given below so that it returns <code>True</code> if <code>text</code> has all the characters in the list <code>characters</code>.</p>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">has_all_characters</span><span class="hljs-params">(text, characters)</span>:</span>
+  <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
+
+</code></pre>
+          <p>Example usage:</p>
+          <table>
+            <tr>
+            
+              <td>
+                <pre><code class="hljs python">print(has_all_characters(<span class="hljs-string">'abccde'</span>, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'c'</span>]))
+print(has_all_characters(<span class="hljs-string">'ab cde'</span>, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'a'</span>, <span class="hljs-string">' '</span>]))
+print(has_all_characters(<span class="hljs-string">'apple'</span>, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'f'</span>]))
+</code></pre>
+                <p></p>
+              </td>
+            
+              <td><br> → </td>
+            
+              <td><br>
+                <pre class="hljs"><code>True
+True
+False
+</code></pre>
+                <p></p>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">has_all_characters</span><span class="hljs-params">(text, characters)</span>:</span>
+  <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> characters:
+    <span class="hljs-keyword">if</span> ...
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">False</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span>
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
     </div>
     <hr>
     <hr>
@@ -306,9 +456,187 @@ True False
           </tr>
         </table>
       </tip-box>
+      <panel type="danger" header=":muscle: Exercise: Rectify Case" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-rectify-case">Exercise : Rectify Case</h4>
+          <p>Complete the <code>rectify_case(text)</code> function given below, to behave as follows:</p>
+          <ul>
+            <li>If <code>text</code> is all upper case, return <code>text</code> in lower case</li>
+            <li>If <code>text</code> is all lower case, return <code>text</code> in upper case</li>
+            <li>Return <code>text</code> otherwise</li>
+          </ul>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">rectify_case</span><span class="hljs-params">(text)</span>:</span>
+  <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
+
+</code></pre>
+          <p>Example usage:</p>
+          <table>
+            <tr>
+            
+              <td>
+                <pre><code class="hljs python">print(rectify_case(<span class="hljs-string">'Mrs. Fox'</span>))
+print(rectify_case(<span class="hljs-string">'MR. FOX'</span>))
+print(rectify_case(<span class="hljs-string">'baby fox'</span>))
+</code></pre>
+                <p></p>
+              </td>
+            
+              <td><br> → </td>
+            
+              <td><br>
+                <pre class="hljs"><code>Mrs. Fox
+mr. fox
+BABY FOX
+</code></pre>
+                <p></p>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python">  <span class="hljs-keyword">if</span> text.isupper(): 
+    <span class="hljs-keyword">return</span> text.lower()
+  ...
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
+      <panel type="danger" header=":muscle: Exercise: Is Doctor" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-is-doctor">Exercise : Is Doctor</h4>
+          <p>Complete the <code>is_doctor(name)</code> function to return <code>True</code> for the following cases:</p>
+          <ul>
+            <li>If <code>name</code> has a <code>Dr.</code> at the start</li>
+            <li>If <code>name</code> has a <code>(Dr)</code> at the end</li>
+          </ul>
+          <p>Note that the matching should be <mark>case-insensitive</mark>.</p>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_doctor</span><span class="hljs-params">(name)</span>:</span>
+  <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
+</code></pre>
+          <p>Example usage:</p>
+          <table>
+            <tr>
+            
+              <td>
+                <pre><code class="hljs python">print(is_doctor(<span class="hljs-string">'Dr. Jekyll'</span>))
+print(is_doctor(<span class="hljs-string">'DR. Jekyll'</span>))
+print(is_doctor(<span class="hljs-string">'dR. Jekyll'</span>))
+print(is_doctor(<span class="hljs-string">'dr. Jekyll'</span>))
+print(is_doctor(<span class="hljs-string">'Jekyll (Dr)'</span>))
+print(is_doctor(<span class="hljs-string">'Jekyll (DR)'</span>))
+print(is_doctor(<span class="hljs-string">'Jekyll (dr)'</span>))
+print(is_doctor(<span class="hljs-string">'Mr. Hyde'</span>))
+print(is_doctor(<span class="hljs-string">'Miss Dr. B.more'</span>))
+</code></pre>
+                <p></p>
+              </td>
+            
+              <td><br> → </td>
+            
+              <td><br>
+                <pre class="hljs"><code>True
+True
+True
+True
+True
+True
+True
+False
+False
+</code></pre>
+                <p></p>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Tips%%">
+            <p>Convert the <code>name</code> to lower case and match with <code>dr.</code> or <code>(dr)</code> using string methods <code>startswith()</code>/<code>endswith()</code></p>
+          </panel>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python">  name = name.lower()
+  <span class="hljs-keyword">return</span> name.startswith(<span class="hljs-string">'dr.'</span>) ...
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
+      <p><strong>The <code>find(s)</code> method gives index of <code>s</code> in the string</strong>, if it is found. It returns <code>-1</code> if <code>s</code> is not found.</p>
+      <tip-box>
+        <p>📦 Examples of the <code>find()</code> method:</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">s = <span class="hljs-string">'Monty Python'</span>
+print(s.find(<span class="hljs-string">'Monty'</span>))
+print(s.find(<span class="hljs-string">'Python'</span>))
+print(s.find(<span class="hljs-string">'Spam'</span>))
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br> → </td>
+          
+            <td><br><br>
+              <pre class="hljs"><code>0
+6
+-1
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
+      <panel type="danger" header=":muscle: Exercise: Remove From Word" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-remove-from-word">Exercise : Remove From Word</h4>
+          <p>Complete the <code>remove_from_word</code> function given below, to behave as follows:</p>
+          <ul>
+            <li>If <code>text</code> is all upper case, return <code>text</code> in lower case</li>
+            <li>If <code>text</code> is all lower case, return <code>text</code> in upper case</li>
+            <li>Return <code>text</code> otherwise</li>
+          </ul>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_from_word</span><span class="hljs-params">(text, tail_start_word)</span>:</span>
+  <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
+
+</code></pre>
+          <p>Example usage:</p>
+          <table>
+            <tr>
+            
+              <td>
+                <pre><code class="hljs python">print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'red'</span>))
+print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'hot'</span>))
+print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'lava'</span>))
+</code></pre>
+                <p></p>
+              </td>
+            
+              <td><br> → </td>
+            
+              <td><br>
+                <pre class="hljs"><code>&gt;
+&gt;red-
+&gt;red-hot-
+</code></pre>
+                <p></p>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_from_word</span><span class="hljs-params">(text, tail_start_word)</span>:</span>
+  tail_start_position = text.find(tail_start_word)
+  <span class="hljs-keyword">if</span> tail_start_position != <span class="hljs-number">-1</span>:
+    <span class="hljs-keyword">return</span> ...
+  <span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">return</span> ...
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
       <p><strong>The <code>join()</code> method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.</strong></p>
       <tip-box>
-        <p>📦 Exampls of the <code>join()</code> method:</p>
+        <p>📦 Examples of the <code>join()</code> method:</p>
         <table>
           <tr>
           
@@ -333,7 +661,7 @@ one-to-one
       <p><strong>The <code>split()</code> method is the opposite of <code>join()</code>.</strong> It splits a string into a list of strings based on a given delimiter string. If no delimiter is given, any
         <tooltip content="space, tab, or newline characters">whitespace</tooltip> in the string are used as delimiters.</p>
       <tip-box>
-        <p>📦</p>
+        <p>📦 Some examples of using the <code>split()</code> method:</p>
         <table>
           <tr>
           
@@ -355,32 +683,6 @@ print(<span class="hljs-string">'1-to-1-talk'</span>.split(<span class="hljs-str
 ['A1', 'A2', 'A3']
 ['Todo:', '1. eat', '2. sleep']
 ['1', 'to', '1', 'talk']
-</code></pre>
-              <p></p>
-            </td>
-          </tr>
-        </table>
-      </tip-box>
-      <p><strong>There are some string methods to help you to align text.</strong></p>
-      <tip-box>
-        <p>📦 Examples of aligning text using string methods:</p>
-        <table>
-          <tr>
-          
-            <td>
-              <pre><code class="hljs python">print(<span class="hljs-string">'Here:'</span>.rjust(<span class="hljs-number">20</span>, <span class="hljs-string">'&gt;'</span>)) <span class="hljs-comment"># right-justify</span>
-print(<span class="hljs-string">'Price'</span>.ljust(<span class="hljs-number">20</span>, <span class="hljs-string">'='</span>)) <span class="hljs-comment"># left-justify</span>
-print(<span class="hljs-string">'Title'</span>.center(<span class="hljs-number">20</span>, <span class="hljs-string">':'</span>)) <span class="hljs-comment"># center</span>
-</code></pre>
-              <p></p>
-            </td>
-          
-            <td><br> → </td>
-          
-            <td><br>
-              <pre class="hljs"><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Here:
-Price===============
-:::::::Title::::::::
 </code></pre>
               <p></p>
             </td>
@@ -414,8 +716,159 @@ print(<span class="hljs-string">'['</span>+ s.rstrip() + <span class="hljs-strin
           </tr>
         </table>
       </tip-box>
+      <panel type="danger" header=":muscle: Exercise: Get Part" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-get-part">Exercise : Get Part</h4>
+          <p>Complete the <code>get_part(text, index)</code> function given below, to behave as follows:</p>
+          <ol>
+            <li>Split <code>text</code> using <code>|</code> as the delimiter</li>
+            <li>Return the part indicated by the <code>index</code></li>
+          </ol>
+          <p>The return value should not have leading/trailing spaces.</p>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_part</span><span class="hljs-params">(text, index)</span>:</span>
+  <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
+  <span class="hljs-keyword">return</span> text.split(<span class="hljs-string">'|'</span>)[index].strip()
+</code></pre>
+          <p>Example usage:</p>
+          <table>
+            <tr>
+            
+              <td>
+                <pre><code class="hljs python">print(get_part(<span class="hljs-string">' John Doe | Male |    X'</span>, <span class="hljs-number">0</span>))
+print(get_part(<span class="hljs-string">'John Doe | Male |    X'</span>, <span class="hljs-number">2</span>))
+print(get_part(<span class="hljs-string">'Dog|Cat'</span>, <span class="hljs-number">0</span>))
+</code></pre>
+                <p></p>
+              </td>
+            
+              <td><br> → </td>
+            
+              <td><br>
+                <pre class="hljs"><code>John Doe
+X
+Dog
+</code></pre>
+                <p></p>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-keyword">return</span> text.split(<span class="hljs-string">'|'</span>)...
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
+      <p><strong>The <code>replace()</code> method can replace a character (or a phrase) with another character/phrase</strong>.</p>
+      <tip-box>
+        <p>📦 Some examples of using <code>replace()</code> method:</p>
+        <pre><code class="hljs python">print(<span class="hljs-string">'face to face'</span>.replace(<span class="hljs-string">' '</span>, <span class="hljs-string">'-'</span>))  <span class="hljs-comment"># replace space with a dash</span>
+print(<span class="hljs-string">'1,2,3,4'</span>.replace(<span class="hljs-string">','</span>, <span class="hljs-string">'\t'</span>))  <span class="hljs-comment"># replace comma with a tab</span>
+print(<span class="hljs-string">'Yup, Yup, I agree'</span>.replace(<span class="hljs-string">'Yup'</span>, <span class="hljs-string">'Yes'</span>))
+</code></pre>
+        <p>⤵️</p>
+        <pre class="hljs"><code>face-to-face
+1	2	3	4
+Yes, Yes, I agree
+</code></pre>
+      </tip-box>
+      <p><strong>There are some string methods to help you to align text.</strong></p>
+      <tip-box>
+        <p>📦 Examples of aligning text using string methods:</p>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python">print(<span class="hljs-string">'Here:'</span>.rjust(<span class="hljs-number">20</span>, <span class="hljs-string">'&gt;'</span>)) <span class="hljs-comment"># right-justify</span>
+print(<span class="hljs-string">'Price'</span>.ljust(<span class="hljs-number">20</span>, <span class="hljs-string">'='</span>)) <span class="hljs-comment"># left-justify</span>
+print(<span class="hljs-string">'Title'</span>.center(<span class="hljs-number">20</span>, <span class="hljs-string">':'</span>)) <span class="hljs-comment"># center</span>
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br> → </td>
+          
+            <td><br>
+              <pre class="hljs"><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;Here:
+Price===============
+:::::::Title::::::::
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
+      </tip-box>
       <panel type="seamless" header="%%:computer: Try your own%%">
         <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></panel>
+      <panel type="danger" header=":muscle: Exercise: Print Formatted Item" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-print-formatted-item">Exercise : Print Formatted Item</h4>
+          <p>Complete the <code>print_formatted_item(name, count, width)</code> function given below, to behave as follows:</p>
+          <ul>
+            <li>Print <code>name</code> and <code>count</code> in the format <code>name.................: count</code></li>
+            <li>Width used for printing should be <code>width</code> (counted in number of characters)</li>
+            <li>Use 3 spaces for <code>count</code> i.e., assume <code>count</code> is <code>0..999</code></li>
+            <li>Left-justify the <code>name</code> and right-justify the <code>count</code></li>
+            <li>Replace any square brackets <code>[]</code> in the <code>name</code> with normal brackets <code>()</code></li>
+          </ul>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_formatted_item</span><span class="hljs-params">(name, count, width)</span>:</span>
+  print(<span class="hljs-string">''</span>) <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+</code></pre>
+          <p>Example usage:</p>
+          <table>
+            <tr>
+            
+              <td>
+                <pre><code class="hljs python">w = <span class="hljs-number">25</span>
+print_formatted_item(<span class="hljs-string">'pens'</span>, <span class="hljs-number">2</span>, w)
+print_formatted_item(<span class="hljs-string">'books[old]'</span>, <span class="hljs-number">50</span>, w)
+print_formatted_item(<span class="hljs-string">'pins[new]'</span>, <span class="hljs-number">110</span>, w)
+</code></pre>
+                <p></p>
+              </td>
+            
+              <td><br><br> → </td>
+            
+              <td><br><br>
+                <pre class="hljs"><code>pens.................:  2
+books(old)...........: 50
+pins(new)............:110
+</code></pre>
+                <p></p>
+              </td>
+            </tr>
+            <tr>
+            
+              <td>
+                <pre><code class="hljs python">w = <span class="hljs-number">20</span>
+print_formatted_item(<span class="hljs-string">'pens'</span>, <span class="hljs-number">2</span>, w)
+print_formatted_item(<span class="hljs-string">'books[old]'</span>, <span class="hljs-number">50</span>, w)
+print_formatted_item(<span class="hljs-string">'pins[new]'</span>, <span class="hljs-number">110</span>, w)
+
+</code></pre>
+                <p></p>
+              </td>
+            
+              <td><br><br> → </td>
+            
+              <td><br><br>
+                <pre class="hljs"><code>pens............:  2
+books(old)......: 50
+pins(new).......:110
+</code></pre>
+                <p></p>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_formatted_item</span><span class="hljs-params">(name, count, width)</span>:</span>
+  name = name.replace(<span class="hljs-string">'['</span>, <span class="hljs-string">'('</span>).replace(...)
+  print(name.ljust(width<span class="hljs-number">-4</span>, <span class="hljs-string">'.'</span>) + ...)
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
     </div>
     <hr>
     <hr>

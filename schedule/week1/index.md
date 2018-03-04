@@ -18,22 +18,22 @@
 
 <panel type="warning" header="`W1.2` **Can perfom small computations programmatically**" no-close>
 
-<panel type="warning" header="`W1.2a` Can explain computer programs" no-close>
+<panel type="warning" header="`W1.2a` Can explain computer programs" expanded no-close>
   <include src="../../programming/programs/text.md" />
 </panel>
-<panel type="warning" header="`W1.2b` Can set up a programming environment" no-close>
+<panel type="warning" header="`W1.2b` Can set up a programming environment" expanded no-close>
   <include src="../../programming/environment/text.md" />
 </panel>
-<panel type="warning" header="`W1.2c` Can work with an interactive shell" no-close>
+<panel type="warning" header="`W1.2c` Can work with an interactive shell" expanded no-close>
   <include src="../../programming/shell/text.md" />
 </panel>
-<panel type="warning" header="`W1.2d` Can use basic operators" no-close>
+<panel type="warning" header="`W1.2d` Can use basic operators" expanded no-close>
   <include src="../../programming/operators/text.md" />
 </panel>
-<panel type="warning" header="`W1.2e` Can use basic data types" no-close>
+<panel type="warning" header="`W1.2e` Can use basic data types" expanded no-close>
   <include src="../../programming/types/text.md" />
 </panel>
-<panel type="warning" header="`W1.2f` Can use variables" no-close>
+<panel type="warning" header="`W1.2f` Can use variables" expanded no-close>
   <include src="../../programming/variables/text.md" />
 </panel><p/>
 

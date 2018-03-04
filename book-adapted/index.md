@@ -189,7 +189,6 @@
 
 <include src="../book/ides/debugging/what/full.md" />
 
-
 # Code Quality
 
 ## Introduction
@@ -221,23 +220,6 @@
 
 <include src="../book/refactoring/what/full.md" />
 
-# Documentation
-
-## Introduction
-
-<include src="../book/documentation/introduction/what/full.md" />
-
-## Guidelines
-
-### Guideline: Aim for Comprehensibility
-
-<include src="../book/documentation/guidelines/aimForComprehensibility/what/full.md" />
-<include src="../book/documentation/guidelines/aimForComprehensibility/how/full.md" />
-
-### Guideline: Document Minimally, but Sufficiently
-
-<include src="../book/documentation/guidelines/documentMinimally/what/full.md" />
-<include src="../book/documentation/guidelines/documentMinimally/how/full.md" />
 
 # Reuse
 
@@ -268,6 +250,26 @@
 
 <include src="../book/reuse/cloudComputing/what/full.md" />
 <include src="../book/reuse/cloudComputing/services/full.md" />
+
+# Documentation
+
+## Introduction
+
+<include src="../book/documentation/introduction/what/full.md" />
+
+## Guidelines
+
+<include src="../book/documentation/guidelines/intro.md" />
+
+### Guideline: Aim for Comprehensibility
+
+<include src="../book/documentation/guidelines/aimForComprehensibility/what/full.md" />
+<include src="../book/documentation/guidelines/aimForComprehensibility/how/full.md" />
+
+### Guideline: Document Minimally, but Sufficiently
+
+<include src="../book/documentation/guidelines/documentMinimally/what/full.md" />
+<include src="../book/documentation/guidelines/documentMinimally/how/full.md" />
 
 <hr>
 

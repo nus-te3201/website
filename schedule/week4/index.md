@@ -2,21 +2,21 @@
 
 #### Object-Oriented Programming
 
-<panel type="success" header="`W4.1` **Can explain objects in OOP**" expanded no-close>
+<panel type="success" header="`W4.1` **Can explain objects in OOP**" no-close>
 
-  <panel type="success" header="`W4.1a` Can describe OOP at a higher level" no-close>
+  <panel type="success" header="`W4.1a` Can describe OOP at a higher level" expanded no-close>
     <include src="../../book/oopDesign/introduction/full.md" />
   </panel>
   
-  <panel type="success" header="`W4.1b` Can describe how OOP relates to the real world" no-close>
+  <panel type="success" header="`W4.1b` Can describe how OOP relates to the real world" expanded no-close>
     <include src="../../book/oopDesign/objects/basic/full.md" />
   </panel>
   
-  <panel type="success" header="`W4.1c` Can explain the abstraction aspect of OOP" no-close>
+  <panel type="success" header="`W4.1c` Can explain the abstraction aspect of OOP" expanded no-close>
     <include src="../../book/oopDesign/objects/abstraction/full.md" />
   </panel>
   
-  <panel type="success" header="`W4.1d` Can explain the encapsulation aspect of OOP" no-close>
+  <panel type="success" header="`W4.1d` Can explain the encapsulation aspect of OOP" expanded no-close>
     <include src="../../book/oopDesign/objects/encapsulation/full.md" />
   </panel>
 
@@ -25,21 +25,21 @@
 #### Programing Basics
 
 
-<panel type="warning" header="`W4.2` **Can use list data structure**" expanded no-close>
+<panel type="warning" header="`W4.2` **Can use list data structure**" no-close>
 
-  <panel type="warning" header="`W4.2a` Can define, read, and write lists" no-close>
+  <panel type="warning" header="`W4.2a` Can define, read, and write lists" expanded no-close>
     <include src="../../programming/lists-intro/text.md" />
   </panel>
-  <panel type="warning" header="`W4.2ab` Can write code that involves object references" no-close>
+  <panel type="warning" header="`W4.2ab` Can write code that involves object references" expanded no-close>
     <include src="../../programming/objectReferences/text.md" />
   </panel>
-  <panel type="warning" header="`W4.2b` Can perform operations on lists" no-close>
+  <panel type="warning" header="`W4.2b` Can perform operations on lists" expanded no-close>
     <include src="../../programming/lists-workingWith/text.md" />
   </panel>
-  <panel type="warning" header="`W4.2c` Can explain methods" no-close>
+  <panel type="warning" header="`W4.2c` Can explain methods" expanded no-close>
     <include src="../../programming/methods/text.md" />
   </panel>
-  <panel type="warning" header="`W4.2d` Can use methods of list objects" no-close>
+  <panel type="warning" header="`W4.2d` Can use methods of list objects" expanded no-close>
     <include src="../../programming/lists-methods/text.md" />
   </panel>
 
