@@ -285,4 +285,7 @@ Price===============
 
 <panel type="danger" header=":muscle: Exercise: Print Formatted Item" expanded no-close>
   <include src="e-printFormattedItem.md" />
+</panel>
+<panel type="danger" header=":muscle: Exercise: Inventory Report" expanded no-close>
+  <include src="e-inventoryReport.md" />
 </panel><p/>
