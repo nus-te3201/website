@@ -85,11 +85,53 @@ True False
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Rectify Case" expanded no-close>
+  <include src="e-rectifyCase.md" />
+</panel><p/>
+<panel type="danger" header=":muscle: Exercise: Is Doctor" expanded no-close>
+  <include src="e-isDoctor.md" />
+</panel><p/>
+
+**The `find(s)` method gives index of `s` in the string**, if it is found. It returns `-1` if `s` is not found.
+
+<tip-box> 
+
+:package: Examples of the `find()` method:
+
+<table> 
+<tr>
+  <td>
+
+```python
+s = 'Monty Python'
+print(s.find('Monty'))
+print(s.find('Python'))
+print(s.find('Spam'))
+```
+  </td>
+  <td><br><br>&nbsp;→&nbsp;</td>
+  <td><br><br>
+
+```
+0
+6
+-1
+```
+  </td>
+</tr>
+</table>
+
+</tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Remove From Word" expanded no-close>
+  <include src="e-removeFromWord.md" />
+</panel><p/>
+
 **The `join()` method joins a list of string items while using the <tooltip content="the string object upon which the method was called">target string object</tooltip> as a <tooltip content="the string that is placed in between each pair of items">delimiter</tooltip>.**
 
 <tip-box> 
 
-:package: Exampls of the `join()` method:
+:package: Examples of the `join()` method:
 
 <table> 
 <tr>
@@ -147,11 +189,47 @@ print('1-to-1-talk'.split('-'))
 
 </tip-box>
 
+
+**There are some string methods to help you to strip trailing/leading spaces.**
+
+<tip-box> 
+
+:package: Examples of stripping leading/trailing spaces from a string:
+
+<table> 
+<tr>
+  <td>
+
+```python
+s = '  hello  there!  '
+print('['+ s.strip() + ']')
+print('['+ s.lstrip() + ']') #left side strip
+print('['+ s.rstrip() + ']') #right side strip
+```
+  </td>
+  <td><br><br>&nbsp;→&nbsp;</td>
+  <td><br><br>
+
+```
+[hello  there!]
+[hello  there!  ]
+[  hello  there!]
+```
+  </td>
+</tr>
+</table>
+
+</tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Get Part" expanded no-close>
+  <include src="e-getPart.md" />
+</panel><p/>
+
 **The `replace()` method can replace a character (or a phrase) with another character/phrase**. 
 
 <tip-box> 
 
-:package: Some example of using `replace()` method:
+:package: Some examples of using `replace()` method:
 
 ```python
 print('face to face'.replace(' ', '-'))  # replace space with a dash
@@ -198,39 +276,13 @@ Price===============
 </tip-box>
 
 
-**There are some string methods to help you to strip trailing/leading spaces.**
-
-<tip-box> 
-
-:package: Examples of stripping leading/trailing spaces from a string:
-
-<table> 
-<tr>
-  <td>
-
-```python
-s = '  hello  there!  '
-print('['+ s.strip() + ']')
-print('['+ s.lstrip() + ']') #left side strip
-print('['+ s.rstrip() + ']') #right side strip
-```
-  </td>
-  <td><br><br>&nbsp;→&nbsp;</td>
-  <td><br><br>
-
-```
-[hello  there!]
-[hello  there!  ]
-[  hello  there!]
-```
-  </td>
-</tr>
-</table>
-
-</tip-box>
 
 <panel type="seamless" header="%%:computer: Try your own%%">
 
 <iframe height="400px" width="100%" src="https://repl.it/@pythonbasics/strings-methods?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 </panel>
+
+<panel type="danger" header=":muscle: Exercise: Print Formatted Item" expanded no-close>
+  <include src="e-printFormattedItem.md" />
+</panel><p/>
