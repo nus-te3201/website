@@ -1,12 +1,11 @@
 #### Exercise : Remove From Word
 
-Complete the `remove_from_word` function given below, to behave as follows:
-* If `text` is all upper case, return `text` in lower case
-* If `text` is all lower case, return `text` in upper case
+Complete the `remove_from_word(text, word)` function given below, to behave as follows:
+* If `word` is found in `text`, return `text` minus the `word` (its first appearance) and any characters that appears after the `word`
 * Return `text` otherwise
 
 ```python
-def remove_from_word(text, tail_start_word):
+def remove_from_word(text, word):
   #pass # REPLACE WITH YOUR CODE
 
 ```
@@ -20,6 +19,8 @@ Example usage:
 print('>' + remove_from_word('red-hot-lava', 'red'))
 print('>' + remove_from_word('red-hot-lava', 'hot'))
 print('>' + remove_from_word('red-hot-lava', 'lava'))
+print('>' + remove_from_word('red-hot-lava', 'bat'))
+print('>' + remove_from_word('red-hot-lava', '-'))
 ```
   </td>
   <td><br>&nbsp;→&nbsp;</td>
@@ -29,6 +30,8 @@ print('>' + remove_from_word('red-hot-lava', 'lava'))
 >
 >red-
 >red-hot-
+>red-hot-lava
+>red
 ```
   </td>
 </tr>
