@@ -1,8 +1,14 @@
 #### Exercise : Escape Sequences
 
-Write a ==single `print` statement== that outputs the following line.<br>
+Modify the `get_string()` function so that the code prints the given output.<br>
 Note that these words are separated by tabs, not normal spaces:`"oops"`%%{tab here}%%`"ok"`%%{tab here}%%`"oh?"`
+```python
+def get_string():
+  return '' # REPLACE WITH YOUR CODE
 
+print(get_string())
+```
+:arrow_heading_down:
 ```
 Which word didn't he/she say? ["oops" "ok" "oh?"]
 ```
@@ -16,7 +22,10 @@ Which word didn't he/she say? ["oops" "ok" "oh?"]
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 
 ```python
-print('Which word didn\'t ...."oops"\t"ok".')
+def get_string():
+  return 'Which word didn\'t he/she say? ...'
+
+print(get_string())
 ```
 
 </panel>

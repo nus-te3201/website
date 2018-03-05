@@ -1,7 +1,14 @@
 #### Exercise : Multi-Line String
 
-Write a ==single `print` statement== that outputs the following text exactly as given.<br>
+Modify the `get_multiline_string()` function so that the code prints the given output exactly as given.<br>
 
+```python
+def get_multiline_string():
+  return '' #REPLACE WITH YOUR CODE
+    
+print(get_multiline_string()) 
+```
+:arrow_heading_down:
 ```
 Which word didn't he/she say?
 * "oops"
@@ -17,9 +24,9 @@ Which word didn't he/she say?
 <panel type="seamless" header="%%:bulb: Partial solution%%">
 
 ```python
-print('''Which word didn't he/she say?
+return '''Which word didn't he/she say?
 
-''')
+'''
 ```
 
 </panel>

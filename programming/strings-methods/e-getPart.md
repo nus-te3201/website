@@ -9,7 +9,6 @@ The return value should not have leading/trailing spaces.
 ```python
 def get_part(text, index):
   #pass # REPLACE WITH YOUR CODE
-  return text.split('|')[index].strip()
 ```
 
 Example usage:

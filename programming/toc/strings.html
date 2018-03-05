@@ -97,9 +97,15 @@
       <panel type="danger" header=":muscle: Exercise: Escape Sequences" expanded="" no-close="">
         <div>
           <h4 id="exercise-escape-sequences">Exercise : Escape Sequences</h4>
-          <p>Write a <mark>single <code>print</code> statement</mark> that outputs the following line.<br> Note that these words are separated by tabs, not normal spaces:<code>&quot;oops&quot;</code><span class="dimmed">{tab here}</span><code>&quot;ok&quot;</code>
+          <p>Modify the <code>get_string()</code> function so that the code prints the given output.<br> Note that these words are separated by tabs, not normal spaces:<code>&quot;oops&quot;</code><span class="dimmed">{tab here}</span><code>&quot;ok&quot;</code>
             <span
               class="dimmed">{tab here}</span><code>&quot;oh?&quot;</code></p>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_string</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-string">''</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
+
+print(get_string())
+</code></pre>
+          <p>⤵️</p>
           <pre class="hljs"><code>Which word didn't he/she say? [&quot;oops&quot; &quot;ok&quot; &quot;oh?&quot;]
 </code></pre>
           <panel type="seamless" header="%%:bulb: Tips%%">
@@ -109,7 +115,10 @@
             </ul>
           </panel>
           <panel type="seamless" header="%%:bulb: Partial solution%%">
-            <pre><code class="hljs python">print(<span class="hljs-string">'Which word didn\'t ...."oops"\t"ok".'</span>)
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_string</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-string">'Which word didn\'t he/she say? ...'</span>
+
+print(get_string())
 </code></pre>
           </panel>
         </div>
@@ -147,7 +156,13 @@ bye!
       <panel type="danger" header=":muscle: Exercise: Multi-Line String" expanded="" no-close="">
         <div>
           <h4 id="exercise-multi-line-string">Exercise : Multi-Line String</h4>
-          <p>Write a <mark>single <code>print</code> statement</mark> that outputs the following text exactly as given.<br></p>
+          <p>Modify the <code>get_multiline_string()</code> function so that the code prints the given output exactly as given.<br></p>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_multiline_string</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-string">''</span> <span class="hljs-comment">#REPLACE WITH YOUR CODE</span>
+    
+print(get_multiline_string()) 
+</code></pre>
+          <p>⤵️</p>
           <pre class="hljs"><code>Which word didn't he/she say?
 * &quot;oops&quot;
   * &quot;ok&quot;
@@ -159,9 +174,9 @@ bye!
             </ul>
           </panel>
           <panel type="seamless" header="%%:bulb: Partial solution%%">
-            <pre><code class="hljs python">print(<span class="hljs-string">'''Which word didn't he/she say?
+            <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-string">'''Which word didn't he/she say?
 
-'''</span>)
+'''</span>
 </code></pre>
           </panel>
         </div>
@@ -589,13 +604,12 @@ print(s.find(<span class="hljs-string">'Spam'</span>))
       <panel type="danger" header=":muscle: Exercise: Remove From Word" expanded="" no-close="">
         <div>
           <h4 id="exercise-remove-from-word">Exercise : Remove From Word</h4>
-          <p>Complete the <code>remove_from_word</code> function given below, to behave as follows:</p>
+          <p>Complete the <code>remove_from_word(text, word)</code> function given below, to behave as follows:</p>
           <ul>
-            <li>If <code>text</code> is all upper case, return <code>text</code> in lower case</li>
-            <li>If <code>text</code> is all lower case, return <code>text</code> in upper case</li>
+            <li>If <code>word</code> is found in <code>text</code>, return <code>text</code> minus the <code>word</code> (its first appearance) and any characters that appears after the <code>word</code></li>
             <li>Return <code>text</code> otherwise</li>
           </ul>
-          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_from_word</span><span class="hljs-params">(text, tail_start_word)</span>:</span>
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">remove_from_word</span><span class="hljs-params">(text, word)</span>:</span>
   <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
 
 </code></pre>
@@ -607,6 +621,8 @@ print(s.find(<span class="hljs-string">'Spam'</span>))
                 <pre><code class="hljs python">print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'red'</span>))
 print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'hot'</span>))
 print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'lava'</span>))
+print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'bat'</span>))
+print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hljs-string">'red-hot-lava'</span>, <span class="hljs-string">'-'</span>))
 </code></pre>
                 <p></p>
               </td>
@@ -617,6 +633,8 @@ print(<span class="hljs-string">'&gt;'</span> + remove_from_word(<span class="hl
                 <pre class="hljs"><code>&gt;
 &gt;red-
 &gt;red-hot-
+&gt;red-hot-lava
+&gt;red
 </code></pre>
                 <p></p>
               </td>
@@ -727,7 +745,6 @@ print(<span class="hljs-string">'['</span>+ s.rstrip() + <span class="hljs-strin
           <p>The return value should not have leading/trailing spaces.</p>
           <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_part</span><span class="hljs-params">(text, index)</span>:</span>
   <span class="hljs-comment">#pass # REPLACE WITH YOUR CODE</span>
-  <span class="hljs-keyword">return</span> text.split(<span class="hljs-string">'|'</span>)[index].strip()
 </code></pre>
           <p>Example usage:</p>
           <table>
