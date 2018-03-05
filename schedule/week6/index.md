@@ -64,6 +64,6 @@
 
 <panel header=" Evidence of achieving the LO" no-close>
 
-**Exercise from `W6.2c`:**<br>
+**Exercise from `W6.3c`:**<br>
   <include src="../../programming/dictionaries-nested/e-gradeReport.md" /><p/>
 </panel>
