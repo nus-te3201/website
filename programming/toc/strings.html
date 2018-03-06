@@ -151,6 +151,34 @@ bye!
             </td>
           </tr>
         </table>
+        <table>
+          <tr>
+          
+            <td>
+              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_email_body</span><span class="hljs-params">()</span>:</span>
+  body = <span class="hljs-string">'''This is the first line of the email.
+This is the second line.
+This is the third line.
+          - bye!'''</span>
+  <span class="hljs-keyword">return</span> body
+
+print(get_email_body())
+</code></pre>
+              <p></p>
+            </td>
+          
+            <td><br><br><br><br> → </td>
+          
+            <td><br><br><br><br>
+              <pre class="hljs"><code>This is the first line of the email.
+This is the second line.
+This is the third line.
+          - bye!
+</code></pre>
+              <p></p>
+            </td>
+          </tr>
+        </table>
       </tip-box>
       <p>It is optional to escape <code>'</code> and <code>&quot;</code> inside a mult-line string within triple quotes e.g., <code>How's life?</code> in the example above.</p>
       <panel type="danger" header=":muscle: Exercise: Multi-Line String" expanded="" no-close="">
