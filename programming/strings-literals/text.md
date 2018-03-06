@@ -55,6 +55,34 @@ bye!
 </tr>
 </table>
 
+<table> 
+<tr>
+  <td>
+
+```python
+def get_email_body():
+  body = '''This is the first line of the email.
+This is the second line.
+This is the third line.
+          - bye!'''
+  return body
+
+print(get_email_body())
+```
+  </td>
+  <td><br><br><br><br>&nbsp;→&nbsp;</td>
+  <td><br><br><br><br>
+
+```
+This is the first line of the email.
+This is the second line.
+This is the third line.
+          - bye!
+```
+  </td>
+</tr>
+</table>
+
 </tip-box>
 
 It is optional to escape `'` and `"` inside a mult-line string within triple quotes e.g., `How's life?` in the example above.
