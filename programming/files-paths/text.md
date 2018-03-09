@@ -54,7 +54,7 @@ import os
 
 cwd = os.getcwd() # store current working dir
 print(cwd) # print current working dir
-os.chdir('C:\\temp\\python') # change director
+os.chdir('C:\\temp\\python') # change dir
 print(os.getcwd()) # print current working dir
 os.chdir(cwd) # change working dir back to original
 print(os.getcwd())
