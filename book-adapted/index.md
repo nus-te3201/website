@@ -275,33 +275,22 @@
 
 # SECTION: QUALITY ASSURANCE
 
-# Quality Assurance
-
-## Introduction
-
-<include src="../book/qualityAssurance/introduction/what/full.md" />
-<include src="../book/qualityAssurance/introduction/validationVsVerification/full.md" />
-
-## Code Reviews
-
-<include src="../book/qualityAssurance/codeReviews/what/full.md" />
-
-## Static Analysis
-
-<include src="../book/qualityAssurance/staticAnalysis/what/full.md" />
-
-## Formal Verification
-
-<include src="../book/qualityAssurance/formalVerification/what/full.md" />
-
-
 # Testing
 
 ## Introduction
 
 <include src="../book/testing/introduction/what/full.md" />
 
+## Test Automation
+
+<include src="../book/testing/testAutomation/what/full.md" />
+<include src="../book/testing/testAutomation/testingTextUis/full.md" />
+
 ## Testing Types
+
+### Regression Testing
+
+<include src="../book/testing/testingTypes/regressionTesting/what/full.md" />
 
 ### Unit Testing
 
@@ -329,15 +318,6 @@
 <include src="../book/testing/testingTypes/acceptanceTesting/what/full.md" />
 <include src="../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" />
 
-### Regression Testing
-
-<include src="../book/testing/testingTypes/regressionTesting/what/full.md" />
-
-## Test Automation
-
-<include src="../book/testing/testAutomation/what/full.md" />
-<include src="../book/testing/testAutomation/testingTextUis/full.md" />
-
 # Test Case Design
 
 ## Introduction
@@ -355,6 +335,25 @@
 
 <include src="../book/testCaseDesign/boundaryValueAnalysis/what/full.md" />
 <include src="../book/testCaseDesign/boundaryValueAnalysis/how/full.md" />
+
+# Quality Assurance
+
+## Introduction
+
+<include src="../book/qualityAssurance/introduction/what/full.md" />
+<include src="../book/qualityAssurance/introduction/validationVsVerification/full.md" />
+
+## Code Reviews
+
+<include src="../book/qualityAssurance/codeReviews/what/full.md" />
+
+## Static Analysis
+
+<include src="../book/qualityAssurance/staticAnalysis/what/full.md" />
+
+## Formal Verification
+
+<include src="../book/qualityAssurance/formalVerification/what/full.md" />
 
 <hr>
 
