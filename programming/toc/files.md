@@ -3,7 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
-<span style="float:right">[<span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑](../index.html)</span>
+{{home↑}}
 * [**Files**](#files)
   * [File Paths](#file-paths)
   * [Reading from Files](#reading-from-files)
