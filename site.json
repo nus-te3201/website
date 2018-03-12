@@ -11,11 +11,15 @@
     },
     {
       "src": "book-adapted/index.md",
-      "title": "TE3201 Text Book"
+      "title": "TE3201 Text Book - Full Text"
     },
     {
       "src": "book-adapted/print.md",
       "title": "TE3201 Text Book - Printer Friendly"
+    },
+    {
+      "src": "common/search.md",
+      "title": "Search this website"
     },
     {
       "src": "programming/index.md",
