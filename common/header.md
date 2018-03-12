@@ -10,5 +10,8 @@
   <dropdown text="Links">
     <li><a href="https://ivle.nus.edu.sg/v1/Module/Student/Default.aspx?CourseID=FF217BC6-774A-447B-BA4E-7248AB488EC7" target="_blank">IVLE</a></li>
     <li><a href="http://www.comp.nus.edu.sg/~damithch" target="_blank">Instructor</a></li> 
-  </dropdown>    
+  </dropdown>
+  <li>
+    <a href="{{baseUrl}}/common/search.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+  </li>  
 </navbar>

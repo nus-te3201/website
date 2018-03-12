@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TE3201 Text Book</title>
+    <title>TE3201 Text Book - Full Text</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
@@ -56,9 +56,9 @@
         </li>
         <li><a href="#section-quality-assurance"><strong>SECTION 5: QUALITY ASSURANCE</strong></a>
           <ul>
-            <li><a href="#quality-assurance">Ch 1. Quality Assurance</a></li>
-            <li><a href="#testing">Ch 2. Testing</a></li>
-            <li><a href="#test-case-design">Ch 3. Test Case Design</a></li>
+            <li><a href="#testing">Ch 1. Testing</a></li>
+            <li><a href="#test-case-design">Ch 2. Test Case Design</a></li>
+            <li><a href="#quality-assurance">Ch 3. Quality Assurance</a></li>
           </ul>
         </li>
         <li><a href="#section-project-management"><strong>SECTION 6: PROJECT MANAGEMENT</strong></a>
@@ -329,7 +329,7 @@
                   <question has-input="true">
                     <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
                     <div slot="answer">
-                      <table class="markbind-table table">
+                      <table class="markbind-table table table-bordered table-striped">
                         <thead>
                           <tr>
                             <th style="text-align:center">Buildings</th>
@@ -1137,7 +1137,7 @@
           <p><strong>User stories can capture non-functional requirements too</strong> because even NFRs must benefit some stakeholder.</p>
           <tip-box>
             <p>📦 An example of a NFR captured as a user story:</p>
-            <table class="markbind-table table">
+            <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
                   <th>As a</th>
@@ -2204,7 +2204,7 @@
             <p><sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</sub></p>
           </blockquote>
           <p>Some other examples of programming paradigms are:</p>
-          <table class="markbind-table table">
+          <table class="markbind-table table table-bordered table-striped">
             <thead>
               <tr>
                 <th>Paradigm</th>
@@ -2323,7 +2323,7 @@
           </tip-box>
           <p><strong>Every object has both state (data) and behavior (operations on data).</strong></p>
           <tip-box>
-            <table class="markbind-table table">
+            <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
                   <th style="text-align:center">Object</th>
@@ -2404,7 +2404,7 @@
             result can vary based on which object received the message, even if the message is identical <span class="dimmed">(see rows 1 and 2 in the example below)</span>.</p>
           <tip-box>
             <p>Examples:</p>
-            <table class="markbind-table table">
+            <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
                   <th style="text-align:center">World</th>
@@ -2481,7 +2481,7 @@
                       <blockquote>
                         <p>[2]Every object has both state (data) and behavior (operations on data).</p>
                       </blockquote>
-                      <table class="markbind-table table">
+                      <table class="markbind-table table table-bordered table-striped">
                         <thead>
                           <tr>
                             <th>Object</th>
@@ -2514,7 +2514,7 @@
                         <li>Interface of an object consists of how other objects interact with it i.e., what other objects can do to that object</li>
                         <li>Implementation consist of internals of the object that facilitate the interactions but not visible to other objects.</li>
                       </ul>
-                      <table class="markbind-table table">
+                      <table class="markbind-table table table-bordered table-striped">
                         <thead>
                           <tr>
                             <th>Object</th>
@@ -2686,7 +2686,7 @@
                       John gave a checque to the Cashier pay for the LoTR and GoT books he bought.
                     </tip-box>
                     <div slot="hint">
-                      <table class="markbind-table table">
+                      <table class="markbind-table table table-bordered table-striped">
                         <thead>
                           <tr>
                             <th>Class</th>
@@ -3065,7 +3065,7 @@
 }
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span>{
-    <span class="hljs-keyword">private</span> List&lt;Box&gt; previousBoxes = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-keyword">private</span> List&lt;box cwf=<span class="hljs-string">"C:\repos\nus-te3201\website\book\oopImplementation\associations\q-essay-classDiagramForCode.md"</span>&gt; previousBoxes = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
     <span class="hljs-keyword">private</span> Card mainCard = <span class="hljs-keyword">null</span>;
     <span class="hljs-keyword">private</span> Card subCard = <span class="hljs-keyword">null</span>;
 
@@ -3089,6 +3089,7 @@
 </code></pre>
                     <div slot="answer">
                       <img src="/website/book/oopImplementation/associations/images/classDiagramForCodeAnswer.png" width="600"></div>
+                    <p></p>
                   </question>
                 </panel>
               </div>
@@ -3477,7 +3478,7 @@
                       <div>
                         <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                         <panel type="seamless" header="%%Examples%%">
-                          <table class="markbind-table table">
+                          <table class="markbind-table table table-bordered table-striped">
                             <thead>
                               <tr>
                                 <th style="text-align:center">Method</th>
@@ -3629,7 +3630,7 @@
             <div>
               <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
               <panel type="seamless" header="%%Examples%%">
-                <table class="markbind-table table">
+                <table class="markbind-table table table-bordered table-striped">
                   <thead>
                     <tr>
                       <th style="text-align:center">Method</th>
@@ -4607,7 +4608,7 @@
                 <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”).</p>
                 <tip-box>
                   <p>Example:</p>
-                  <table class="markbind-table table">
+                  <table class="markbind-table table table-bordered table-striped">
                     <thead>
                       <tr>
                         <th><img src="/website/book/images/Bad.png" alt="" title="Bad"></th>
@@ -4762,7 +4763,7 @@
                 <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
                 <tip-box>
                   <p>Examples:</p>
-                  <table class="markbind-table table">
+                  <table class="markbind-table table table-bordered table-striped">
                     <thead>
                       <tr>
                         <th>Name for a</th>
@@ -4788,7 +4789,8 @@
                 <tip-box>
                   <p>Examples:</p>
                   <p><code>Person student</code><br>
-                    <code>ArrayList&lt;Person&gt; students</code></p>
+                    <code>ArrayList&lt;person cwf=&quot;C:\repos\nus-te3201\website\book\codeQuality\practices\nounsAndVerbsAsNames\text.md&quot;&gt; students</code></p>
+                  <p></p>
                 </tip-box>
               </div>
             </div>
@@ -5614,246 +5616,15 @@ send();
     </div>
     <hr>
     <h1 id="section-quality-assurance">SECTION: QUALITY ASSURANCE</h1>
-    <h1 id="quality-assurance">Quality Assurance</h1>
-    <h2 id="introduction-9">Introduction</h2>
-    <div>
-      <div></div>
-      <p></p>
-      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Introduction →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="what-one-20">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p><strong>Software <em>Quality Assurance</em> (QA) is the process of ensuring that the software being built has the required levels of quality.</strong></p>
-          <p>While testing is the most common activity used in QA, there are other complementary techniques such as <em>static analysis, code reviews,</em> and <em>formal verification</em>.</p>
-        </div>
-        <div></div>
-      </div>
-    </div>
-    <div>
-      <div></div>
-      <p></p>
-      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Introduction →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="validation-vs-verification-two">Validation vs Verification <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p><strong>Quality Assurance = Validation + Verification</strong></p>
-          <p>QA involves checking two aspects:</p>
-          <ol>
-            <li>Validation: are we <em>building the right system</em> i.e., are the requirements correct?</li>
-            <li>Verification: are we <em>building the system right</em> i.e., are the requirements implemented correctly?</li>
-          </ol>
-          <p>Whether something belongs under validation or verification is not that important. What is more important is both are done, instead of limiting to verification (i.e., remember that the requirements can be wrong too).</p>
-        </div>
-        <div>
-          <div>
-            <panel header=":muscle: Exercises" expandable="">
-              <div>
-                <panel header=":lock::key: statements about validation and verification.">
-                  <question>
-                    <p>Choose the correct statements about validation and verification.</p>
-                    <ul class="task-list">
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Validation: Are we building the right product?, Verification: Are we building the product right?</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is very important to clearly distinguish between validation and verification.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The important thing about validation and verification is to remember to pay adequate attention to both.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Developer-testing is more about verification than validation.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. QA covers both validation and verification.</li>
-                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. A system crash is more likely to be a verification failure than a validation failure.</li>
-                    </ul>
-                    <div slot="answer">
-                      <p>(a)<s>(b)</s>(c)(d)(e)(f)</p>
-                      <p>Explanation:</p>
-                      <p>Whether something belongs under validation or verification is not that important. What is more important is that we do both.</p>
-                      <p>Developer testing is more about bugs in code, rather than bugs in the requirements.</p>
-                      <p>In QA, system testing is more about verification (does the system follow the specification?) and acceptance testings is more about validation (does the system solve the user’s problem?).</p>
-                      <p>A system crash is more likely to be a bug in the code, not in the requirements.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </div>
-        </div>
-      </div>
-    </div>
-    <h2 id="code-reviews">Code Reviews</h2>
-    <div>
-      <div></div>
-      <p></p>
-      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Code Reviews →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="what-one-21">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p><strong>Code review is the systematic examination code with the intention of finding where the code can be improved.</strong></p>
-          <p>Reviews can be done in various forms. Some examples below:</p>
-          <ul>
-            <li>
-              <p><strong>In <trigger trigger="click" for="modal:codeReview-pairProgramming">pair programming</trigger></strong></p>
-              <ul>
-                <li>As pair programming involves two programmers working on the same code at the same time, there is an implicit review of the code by the other member of the pair.</li>
-              </ul>
-            </li>
-          </ul>
-          <modal large="" title="Pair Programming" id="modal:codeReview-pairProgramming">
-            <tip-box type="definition">
-              <div>
-                <p><strong>Pair Programming</strong>:</p>
-                <blockquote>
-                  <p>Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed
-                    in. The two programmers switch roles frequently. <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">source: Wikipedia</a>]</sub></p>
-                </blockquote>
-              </div>
-            </tip-box>
-            <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pair_programming_1.jpg" width="400"><br>
-              <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">image credit: Wikipedia</a>]</sub></p>
-            <p>📺 A good introduction to pair programming:</p>
-            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-          </modal>
-          <ul>
-            <li>
-              <p><strong>Pull Request reviews</strong></p>
-              <ul>
-                <li>Project Management Platforms such as GitHub and BitBucket allows the new code to be proposed as Pull Requests and provides the ability for others to review the code in the PR.</li>
-              </ul>
-            </li>
-            <li>
-              <p><strong>Formal inspections</strong></p>
-              <ul>
-                <li>
-                  <p>Inspections involve a group of people systematically examining a project artifacts to discover defects. Members of the inspection team play various roles during the process, such as:</p>
-                  <ul>
-                    <li>the author - the creator of the artifact</li>
-                    <li>the moderator - the planner and executor of the inspection meeting</li>
-                    <li>the secretary - the recorder of the findings of the inspection</li>
-                    <li>the inspector/reviewer - the one who inspects/reviews the artifact.</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <p>Advantages of code reviews over testing:</p>
-          <ul>
-            <li>It can detect functionality defects as well as other problems such as coding standard violations.</li>
-            <li>Can verify non-code artifacts and incomplete code</li>
-            <li>Do not require test drivers or stubs.</li>
-          </ul>
-          <p>Disadvantages:</p>
-          <ul>
-            <li>It is a manual process and therefore, error prone.</li>
-          </ul>
-        </div>
-        <div></div>
-      </div>
-    </div>
-    <h2 id="static-analysis">Static Analysis</h2>
-    <div>
-      <div></div>
-      <p></p>
-      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Static Analysis →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="what-two-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div id="main">
-        <div>
-          <tip-box type="definition">
-            <div>
-              <p><strong>Static analysis</strong>: Static analysis is the analysis of code without actually executing the code.</p>
-            </div>
-          </tip-box>
-          <p>Static analysis of code can find useful information such unused variables, unhandled exceptions, style errors, and statistics. Most modern IDEs come with some inbuilt static analysis capabilities. For example, an IDE can highlight unused variables
-            as you type the code into the editor.</p>
-          <p>Higher-end static analyzer tools can perform for more complex analysis such as locating potential bugs, memory leaks, inefficient code structures etc.</p>
-          <tip-box>
-            <p>📦 Some example static analyzer for Java:</p>
-            <ul>
-              <li><a href="http://checkstyle.sourceforge.net/">CheckStyle</a></li>
-              <li><a href="http://findbugs.sourceforge.net/">PMD</a></li>
-              <li><a href="https://pmd.github.io/">FindBugs</a></li>
-            </ul>
-          </tip-box>
-          <p><em>Linters</em> are a subset of static analyzers that specifically aim to locate areas where the code can be made 'cleaner'.</p>
-        </div>
-        <div></div>
-      </div>
-    </div>
-    <h2 id="formal-verification">Formal Verification</h2>
-    <div>
-      <div></div>
-      <p></p>
-      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Formal Verification →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="what-two-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
-          <div v-closeable="" alt="">
-            <p>📺 An introduction to Formal Methods by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
-            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-          </div>
-          <p>Advantages:</p>
-          <ul>
-            <li><strong>Formal verification can be used to prove the absence of errors</strong>. In contrast, testing can only prove the presence of error, not their absence.</li>
-          </ul>
-          <p>Disadvantages:</p>
-          <ul>
-            <li>It only proves the compliance with the specification, but not the actual utility of the software.</li>
-            <li>It requires highly specialized notations and knowledge which makes it an expensive technique to administer. Therefore, <strong>formal verifications are more commonly used in safety-critical software such as flight control systems</strong>.</li>
-          </ul>
-        </div>
-        <div>
-          <div>
-            <panel header=":muscle: Exercises" expandable="">
-              <div>
-                <panel header=":lock::key: Absence of errors">
-                  <question>
-                    <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
-                    <ul radio-group="cefed" class="radio-list">
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> True</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> False</label></li>
-                    </ul>
-                    <div slot="answer">
-                      <p>True</p>
-                      <p>Explanation: While using formal methods is more expensive than testing, it indeed can prove the correctness of a piece of software conclusively, in certain contexts. Getting such proof via testing requires exhaustive testing, which
-                        is not practical to do in most cases.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </div>
-        </div>
-      </div>
-    </div>
     <h1 id="testing">Testing</h1>
-    <h2 id="introduction-10">Introduction</h2>
+    <h2 id="introduction-9">Introduction</h2>
     <div>
       <p><span class="dimmed"><strong><span>Quality Assurance → Testing →
 </span></strong>
         </span>
       </p>
       <div>
-        <h4 id="what-one-22">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+        <h4 id="what-one-20">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
       </div>
       <div id="main">
         <div>
@@ -5893,7 +5664,7 @@ send();
           </ol>
           <p><strong>A test case <em>failure</em> is a mismatch between the expected behavior and the actual behavior. A failure is caused by a <em>defect</em> (or a bug).</strong></p>
           <tip-box>
-            <p>📦 Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading ‘longfile.html’. The defect/bug causing that failure could be an uninitialized variable.</p>
+            <p>📦 Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing that failure could be an uninitialized variable.</p>
           </tip-box>
           <panel header="%%A deeper look at the definition of testing :three:%%" type="seamless">
             <p>Here is another definition of testing:</p>
@@ -5917,7 +5688,7 @@ send();
               <div>
                 <panel header=":lock: Relate testing, test cases, failure, and defect">
                   <question has-input="">
-                    <p>Explain how the concepts of testing, test case, test failure, and defect are related to each other.</p>
+                    <p>Explain how the concepts of <em>testing</em>, <em>test case</em>, <em>test failure</em>, and <em>defect</em> are related to each other.</p>
                   </question>
                 </panel>
               </div>
@@ -5926,7 +5697,181 @@ send();
         </div>
       </div>
     </div>
+    <h2 id="test-automation">Test Automation</h2>
+    <div>
+      <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one-21">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+      </div>
+      <div id="main">
+        <div>
+          <tabs>
+          
+            <tab header=":abc:">
+              <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests repeatedly
+                and increases precision of testing (because manual testing is susceptible to human errors).</p>
+              <p>
+                <hr>
+              </p>
+            </tab>
+          
+            <tab header=":tv:">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe>
+              <p>
+                <hr>
+              </p>
+            </tab>
+          </tabs>
+        </div>
+        <div>
+          <div>
+            <panel header=":paperclip: Resources">
+              <p><strong>Side readings:</strong></p>
+              <ul>
+                <li>[Quora post] <a href="href=%22http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
+                <li>[Quora post] <a href="http://www.quora.com/What-kind-of-automated-testing-should-a-startup-have-from-the-beginning-through-the-first-six-months-of-live-operation/answer/Zach-Brock">Is automated testing relevant to startups?</a></li>
+              </ul>
+            </panel>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="automated-testing-of-cli-apps-one">Automated Testing of CLI Apps <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/testAutomation/testingTextUis/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>A simple way to semi-automate testing of a CLI(Command Line Interface) app is by using input/output re-direction.</strong></p>
+          <ul>
+            <li>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</li>
+            <li>Next, we compare the actual output file with another file containing the expected output.</li>
+          </ul>
+          <p>Let us assume we are testing a CLI app called <code>AddressBook</code>. Here are the detailed steps:</p>
+          <ol>
+            <li>
+              <p>Store the test input in the text file <code>input.txt</code>.</p>
+              <panel header="%%:package: Example `input.txt`%%" type="seamless">
+                <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
+add Valid Name 12345 e/valid@email.butPhonePrefixMissing
+</code></pre>
+              </panel>
+            </li>
+            <li>
+              <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
+              <panel header="%%:package: Example `expected.txt`%%" type="seamless">
+                <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
+Invalid command format: add 
+
+Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
+Invalid command format: add 
+</code></pre>
+              </panel>
+            </li>
+            <li>
+              <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
+              <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+</code></pre>
+              <ul>
+                <li>
+                  <p>💡 The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code> file, use the command<br>
+                    <code>python AddressBook.py &lt; input.txt &gt; output.txt</code></p>
+                </li>
+                <li>
+                  <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
+                </li>
+              </ul>
+              <panel header="%%More on the `>` operator and the `<` operator. :zero:%%" alt="I/O redirection info" type="seamless">
+                <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators.
+                  For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
+                <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+</code></pre>
+                <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other filename)
+                  makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
+                <tip-box>
+                  <p>📎 Resources:</p>
+                  <ul>
+                    <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
+                  </ul>
+                </tip-box>
+                <p></p>
+              </panel>
+              <p></p>
+            </li>
+            <li>
+              <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as <em>WinMerge</em>.</p>
+              <pre class="hljs"><code>FC output.txt expected.txt
+</code></pre>
+            </li>
+          </ol>
+          <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
+          <div>
+            <popover id="pop:cli" placement="top">
+              <div slot="content">
+                <div>
+                  <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
+                </div>
+              </div>
+            </popover>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
     <h2 id="testing-types">Testing Types</h2>
+    <h3 id="regression-testing">Regression Testing</h3>
+    <div>
+      <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Regression Testing →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one-22">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>When we modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
+          <p><strong><em>Regression testing</em> is re-testing the software to detect regressions.</strong> Note that to detect regressions, we need to retest all related components, even if they were tested before.</p>
+          <p>Regression testing is more effective when it is done frequently, after each small change. However, doing so can be prohibitively expensive if testing is done manually. Hence, <strong>regression testing is more practical when it is automated</strong>.</p>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Regression Testing defintion T/F?">
+                  <question>
+                    <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
+                    <ul radio-group="63d56" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> a. True</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> b. False</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> c. Partially true</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>c.</p>
+                      <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock: Explain regression testing">
+                  <question has-input="">
+                    <p>Explain why and when you would do regression testing in a software project.</p>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
+        </div>
+      </div>
+    </div>
     <h3 id="unit-testing">Unit Testing</h3>
     <div>
       <div></div>
@@ -5975,7 +5920,17 @@ send();
 </code></pre>
           </tip-box>
         </div>
-        <div></div>
+        <div>
+          <div>
+            <panel header=":paperclip: Resources">
+              <p><strong>Side readings:</strong></p>
+              <ul>
+                <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> - A short article about what makes a good unit test.</li>
+                <li><a href="http://avandeursen.com/2014/02/22/gotofail-security/">Learning from Apple’s #gotofail Security Bug</a> - How unit testing (and other good coding practices) could have prevented a major security bug.</li>
+              </ul>
+            </panel>
+          </div>
+        </div>
       </div>
     </div>
     <h3 id="integration-testing">Integration Testing</h3>
@@ -6072,7 +6027,7 @@ send();
         </span>
       </p>
       <div>
-        <h4 id="what-two-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        <h4 id="what-two-5">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -6195,7 +6150,7 @@ send();
         <div>
           <p>Acceptance testing comes after system testing. Similar to system testing, acceptance testing involves testing the whole system.</p>
           <p>Some differences between system testing and acceptance testing:</p>
-          <table class="markbind-table table">
+          <table class="markbind-table table table-bordered table-striped">
             <thead>
               <tr>
                 <th style="text-align:left">System Testing</th>
@@ -6225,7 +6180,7 @@ send();
           <tip-box>
             <p><strong>Requirement Specification vs System Specification</strong></p>
             <p>The requirement specification need not be the same as the system specification. Some example differences:</p>
-            <table class="markbind-table table">
+            <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
                   <th style="text-align:left">Requirements Specification</th>
@@ -6284,259 +6239,8 @@ send();
         </div>
       </div>
     </div>
-    <h3 id="regression-testing">Regression Testing</h3>
-    <div>
-      <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Regression Testing →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="what-one-27">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p><strong>When we modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
-          <p><strong><em>Regression testing</em> is re-testing the <trigger for="pop:sut">SUT</trigger> to detect regressions.</strong> Noted that to detect regressions, we need to retest all related components, even if they were tested before.</p>
-          <p>Regression testing is more effective when it is done frequently, after each small change. However, doing so can be prohibitively expensive if testing is done manually. Hence, <strong>regression testing is more practical when it is automated</strong>.</p>
-          <div>
-            <popover id="pop:sut" placement="top">
-              <div slot="content">
-                <div>
-                  <div id="def-stub">
-                    <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of
-                      predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
-                  </div>
-                  <div id="def-sut">
-                    <p><strong>SUT</strong>: Software Under Test</p>
-                  </div>
-                  <h2 id="t">T</h2>
-                  <div id="def-testing">
-                    <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
-                  </div>
-                  <div id="def-type-signature">
-                    <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
-                    <panel type="seamless" header="%%Examples%%">
-                      <table class="markbind-table table">
-                        <thead>
-                          <tr>
-                            <th style="text-align:center">Method</th>
-                            <th style="text-align:center">Type Signature</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td style="text-align:center"><code>int add(int X, int Y)</code></td>
-                            <td style="text-align:center"><code>(int, int)</code></td>
-                          </tr>
-                          <tr>
-                            <td style="text-align:center"><code>void add(int A, int B)</code></td>
-                            <td style="text-align:center"><code>(int, int)</code></td>
-                          </tr>
-                          <tr>
-                            <td style="text-align:center"><code>void m(int X, double Y)</code></td>
-                            <td style="text-align:center"><code>(int, double)</code></td>
-                          </tr>
-                          <tr>
-                            <td style="text-align:center"><code>void m(double X, int Y)</code></td>
-                            <td style="text-align:center"><code>(double, int)</code></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </panel>
-                  </div>
-                  <h2 id="u">U</h2>
-                  <div id="def-uml">
-                    <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
-                      Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
-                      in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
-                  </div>
-                  <div id="def-use-case">
-                    <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
-                      <trigger for="pop:actor">actor</trigger>.[ 📖 :
-                      <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
-                      </popover>]</p>
-                    <popover id="pop:actor" title=":mag:" placement="top">
-                      <div slot="content">
-                        <div>
-                          <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
-                        </div>
-                      </div>
-                    </popover>
-                  </div>
-                  <div id="def-user-story">
-                    <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
-                  </div>
-                  <div id="def-user-story-format">
-                    <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
-                  </div>
-                  <h2 id="w">W</h2>
-                  <div id="def-working-directory">
-                    <p><strong>Working directory</strong>: The directory the repo is based in is called the <em>working directory</em>.</p>
-                  </div>
-                  <h2 id="y">Y</h2>
-                  <div id="def-yagni-principle">
-                    <p><strong>YAGNI (You Aren't Gonna Need It!) Principle</strong>: Do not add code simply because ‘you might need it in the future’.</p>
-                  </div>
-                  <hr>
-                </div>
-              </div>
-            </popover>
-          </div>
-        </div>
-        <div>
-          <div>
-            <panel header=":muscle: Exercises" expandable="">
-              <div>
-                <panel header=":lock::key: Regression Testing defintion T/F?">
-                  <question>
-                    <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                    <ul radio-group="63d56" class="radio-list">
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> a. True</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> b. False</label></li>
-                      <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> c. Partially true</label></li>
-                    </ul>
-                    <div slot="answer">
-                      <p>c.</p>
-                      <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
-                    </div>
-                  </question>
-                </panel>
-              </div>
-              <div>
-                <panel header=":lock: Explain regression testing">
-                  <question has-input="">
-                    <p>Explain why and when you would do regression testing in a software project.</p>
-                  </question>
-                </panel>
-              </div>
-            </panel>
-          </div>
-        </div>
-      </div>
-    </div>
-    <h2 id="test-automation">Test Automation</h2>
-    <div>
-      <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="what-one-28">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
-      </div>
-      <div id="main">
-        <div>
-          <tabs>
-          
-            <tab header=":abc:">
-              <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests repeatedly
-                and increases precision of testing (because manual testing is susceptible to human errors).</p>
-              <p>
-                <hr>
-              </p>
-            </tab>
-          
-            <tab header=":tv:">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe>
-              <p>
-                <hr>
-              </p>
-            </tab>
-          </tabs>
-        </div>
-        <div>
-          <div>
-            <panel header=":paperclip: Resources">
-              <p><strong>Side readings:</strong></p>
-              <ul>
-                <li>[Quora post] <a href="href=%22http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
-                <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> - A short article about what makes a good unit test.</li>
-                <li>[Quora post] <a href="http://www.quora.com/What-kind-of-automated-testing-should-a-startup-have-from-the-beginning-through-the-first-six-months-of-live-operation/answer/Zach-Brock">Is automated testing relevant to startups?</a></li>
-                <li><a href="http://avandeursen.com/2014/02/22/gotofail-security/">Learning from Apple’s #gotofail Security Bug</a> - How unit testing (and other good coding practices) could have prevented a major security bug.</li>
-              </ul>
-            </panel>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
-</span></strong>
-        </span>
-      </p>
-      <div>
-        <h4 id="automated-testing-of-cli-apps-one">Automated Testing of CLI Apps <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/testAutomation/testingTextUis/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
-      </div>
-      <div id="main">
-        <div>
-          <p><strong>A simple way to semi-automate testing of a <trigger for="pop:cli">CLI</trigger> app is using input/output re-direction.</strong></p>
-          <ul>
-            <li><strong>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</strong><br> e.g., <code>java AddressBook &lt; input.txt &gt; output.txt</code></li>
-            <li><strong>Next, we compare the actual output file with another file containing the expected output.</strong><br> e.g., <code>FC output.txt expected.txt</code></li>
-          </ul>
-          <p>Let us assume we are testing a CLI app called <code>AddressBook</code> (Example: <a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1">se-edu/addressbook-level1</a>). Here are the detailed steps:</p>
-          <ol>
-            <li>
-              <p>Store the test input in the text file <code>input.txt</code>.</p>
-              <panel header="%%:package: Example `input.txt`%%" type="seamless">
-                <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
-add Valid Name 12345 e/valid@email.butPhonePrefixMissing
-</code></pre>
-              </panel>
-            </li>
-            <li>
-              <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-              <panel header="%%:package: Example `expected.txt`%%" type="seamless">
-                <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
-Invalid command format: add 
-
-Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
-Invalid command format: add 
-</code></pre>
-              </panel>
-            </li>
-            <li>
-              <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
-              <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
-</code></pre>
-              <panel header="%%More on the `>` operator and the `<` operator. :zero:%%" alt="I/O redirection info" type="seamless">
-                <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators.
-                  For example, if you run <code>AddressBook</code> in the DOS prompt, the output will be shown in the console, but if you run it like this,</p>
-                <pre><code class="hljs sh">java AddressBook &gt; output.txt 
-</code></pre>
-                <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other filename)
-                  makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
-                <tip-box>
-                  <p>📎 Resources:</p>
-                  <ul>
-                    <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
-                  </ul>
-                </tip-box>
-                <p></p>
-              </panel>
-              <p></p>
-            </li>
-            <li>
-              <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as Winmerge.</p>
-              <pre class="hljs"><code>FC output.txt expected.txt
-</code></pre>
-            </li>
-          </ol>
-          <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
-          <div>
-            <popover id="pop:cli" placement="top">
-              <div slot="content">
-                <div>
-                  <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
-                </div>
-              </div>
-            </popover>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
     <h1 id="test-case-design">Test Case Design</h1>
-    <h2 id="introduction-11">Introduction</h2>
+    <h2 id="introduction-10">Introduction</h2>
     <div>
       <div></div>
       <p></p>
@@ -6545,7 +6249,7 @@ Invalid command format: add
         </span>
       </p>
       <div>
-        <h4 id="what-two-8">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        <h4 id="what-two-6">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -6728,7 +6432,7 @@ Enter side 1:
         </span>
       </p>
       <div>
-        <h4 id="what-two-9">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        <h4 id="what-two-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -6970,7 +6674,7 @@ Enter side 1:
         </span>
       </p>
       <div>
-        <h4 id="what-one-29">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        <h4 id="what-one-27">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
       </div>
       <div id="main">
         <div>
@@ -7075,6 +6779,237 @@ Enter side 1:
         <div></div>
       </div>
     </div>
+    <h1 id="quality-assurance">Quality Assurance</h1>
+    <h2 id="introduction-11">Introduction</h2>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Introduction →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one-28">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Software <em>Quality Assurance</em> (QA) is the process of ensuring that the software being built has the required levels of quality.</strong></p>
+          <p>While testing is the most common activity used in QA, there are other complementary techniques such as <em>static analysis, code reviews,</em> and <em>formal verification</em>.</p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Introduction →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="validation-vs-verification-two">Validation vs Verification <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Quality Assurance = Validation + Verification</strong></p>
+          <p>QA involves checking two aspects:</p>
+          <ol>
+            <li>Validation: are we <em>building the right system</em> i.e., are the requirements correct?</li>
+            <li>Verification: are we <em>building the system right</em> i.e., are the requirements implemented correctly?</li>
+          </ol>
+          <p>Whether something belongs under validation or verification is not that important. What is more important is both are done, instead of limiting to verification (i.e., remember that the requirements can be wrong too).</p>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: statements about validation and verification.">
+                  <question>
+                    <p>Choose the correct statements about validation and verification.</p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Validation: Are we building the right product?, Verification: Are we building the product right?</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is very important to clearly distinguish between validation and verification.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The important thing about validation and verification is to remember to pay adequate attention to both.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Developer-testing is more about verification than validation.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. QA covers both validation and verification.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. A system crash is more likely to be a verification failure than a validation failure.</li>
+                    </ul>
+                    <div slot="answer">
+                      <p>(a)<s>(b)</s>(c)(d)(e)(f)</p>
+                      <p>Explanation:</p>
+                      <p>Whether something belongs under validation or verification is not that important. What is more important is that we do both.</p>
+                      <p>Developer testing is more about bugs in code, rather than bugs in the requirements.</p>
+                      <p>In QA, system testing is more about verification (does the system follow the specification?) and acceptance testings is more about validation (does the system solve the user’s problem?).</p>
+                      <p>A system crash is more likely to be a bug in the code, not in the requirements.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 id="code-reviews">Code Reviews</h2>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Code Reviews →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one-29">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Code review is the systematic examination code with the intention of finding where the code can be improved.</strong></p>
+          <p>Reviews can be done in various forms. Some examples below:</p>
+          <ul>
+            <li>
+              <p><strong>In <trigger trigger="click" for="modal:codeReview-pairProgramming">pair programming</trigger></strong></p>
+              <ul>
+                <li>As pair programming involves two programmers working on the same code at the same time, there is an implicit review of the code by the other member of the pair.</li>
+              </ul>
+            </li>
+          </ul>
+          <modal large="" title="Pair Programming" id="modal:codeReview-pairProgramming">
+            <tip-box type="definition">
+              <div>
+                <p><strong>Pair Programming</strong>:</p>
+                <blockquote>
+                  <p>Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed
+                    in. The two programmers switch roles frequently. <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">source: Wikipedia</a>]</sub></p>
+                </blockquote>
+              </div>
+            </tip-box>
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Pair_programming_1.jpg" width="400"><br>
+              <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">image credit: Wikipedia</a>]</sub></p>
+            <p>📺 A good introduction to pair programming:</p>
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </modal>
+          <ul>
+            <li>
+              <p><strong>Pull Request reviews</strong></p>
+              <ul>
+                <li>Project Management Platforms such as GitHub and BitBucket allows the new code to be proposed as Pull Requests and provides the ability for others to review the code in the PR.</li>
+              </ul>
+            </li>
+            <li>
+              <p><strong>Formal inspections</strong></p>
+              <ul>
+                <li>
+                  <p>Inspections involve a group of people systematically examining a project artifacts to discover defects. Members of the inspection team play various roles during the process, such as:</p>
+                  <ul>
+                    <li>the author - the creator of the artifact</li>
+                    <li>the moderator - the planner and executor of the inspection meeting</li>
+                    <li>the secretary - the recorder of the findings of the inspection</li>
+                    <li>the inspector/reviewer - the one who inspects/reviews the artifact.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p>Advantages of code reviews over testing:</p>
+          <ul>
+            <li>It can detect functionality defects as well as other problems such as coding standard violations.</li>
+            <li>Can verify non-code artifacts and incomplete code</li>
+            <li>Do not require test drivers or stubs.</li>
+          </ul>
+          <p>Disadvantages:</p>
+          <ul>
+            <li>It is a manual process and therefore, error prone.</li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <h2 id="static-analysis">Static Analysis</h2>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Static Analysis →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-two-8">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <tip-box type="definition">
+            <div>
+              <p><strong>Static analysis</strong>: Static analysis is the analysis of code without actually executing the code.</p>
+            </div>
+          </tip-box>
+          <p>Static analysis of code can find useful information such unused variables, unhandled exceptions, style errors, and statistics. Most modern IDEs come with some inbuilt static analysis capabilities. For example, an IDE can highlight unused variables
+            as you type the code into the editor.</p>
+          <p>Higher-end static analyzer tools can perform for more complex analysis such as locating potential bugs, memory leaks, inefficient code structures etc.</p>
+          <tip-box>
+            <p>📦 Some example static analyzer for Java:</p>
+            <ul>
+              <li><a href="http://checkstyle.sourceforge.net/">CheckStyle</a></li>
+              <li><a href="http://findbugs.sourceforge.net/">PMD</a></li>
+              <li><a href="https://pmd.github.io/">FindBugs</a></li>
+            </ul>
+          </tip-box>
+          <p><em>Linters</em> are a subset of static analyzers that specifically aim to locate areas where the code can be made 'cleaner'.</p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <h2 id="formal-verification">Formal Verification</h2>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Quality Assurance → Quality Assurance → Formal Verification →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-two-9">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
+          <div v-closeable="" alt="">
+            <p>📺 An introduction to Formal Methods by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
+            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+          </div>
+          <p>Advantages:</p>
+          <ul>
+            <li><strong>Formal verification can be used to prove the absence of errors</strong>. In contrast, testing can only prove the presence of error, not their absence.</li>
+          </ul>
+          <p>Disadvantages:</p>
+          <ul>
+            <li>It only proves the compliance with the specification, but not the actual utility of the software.</li>
+            <li>It requires highly specialized notations and knowledge which makes it an expensive technique to administer. Therefore, <strong>formal verifications are more commonly used in safety-critical software such as flight control systems</strong>.</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Absence of errors">
+                  <question>
+                    <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
+                    <ul radio-group="cefed" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> True</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="cefed" type="radio"> False</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>True</p>
+                      <p>Explanation: While using formal methods is more expensive than testing, it indeed can prove the correctness of a piece of software conclusively, in certain contexts. Getting such proof via testing requires exhaustive testing, which
+                        is not practical to do in most cases.</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
+        </div>
+      </div>
+    </div>
     <hr>
     <h1 id="section-project-management">SECTION: PROJECT MANAGEMENT</h1>
     <h1 id="project-planning">Project Planning</h1>
@@ -7094,7 +7029,7 @@ Enter side 1:
             tasks can be further split into subtasks. In complex projects a WBS can also include prerequisite tasks and effort estimates for each task.</p>
           <tip-box>
             <p>📦 The high level tasks for a single iteration of a small project could look like the following:</p>
-            <table class="markbind-table table">
+            <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
                   <th>Task ID</th>
@@ -7217,7 +7152,7 @@ Enter side 1:
           <p><strong>All tasks should be well-defined.</strong> In particular, it should be clear as to when the task will be considered <em>done</em>.</p>
           <tip-box>
             <p>📦 Some examples of ill-defined tasks and their better-defined counterparts:</p>
-            <table class="markbind-table table">
+            <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
                   <th>👎 Not good</th>
@@ -7283,7 +7218,7 @@ Enter side 1:
             for the next few milestones.</p>
           <tip-box>
             <p>📦 Milestones for the Minesweeper project, iteration 1</p>
-            <table class="markbind-table table">
+            <table class="markbind-table table table-bordered table-striped">
               <thead>
                 <tr>
                   <th>Day</th>
@@ -8056,7 +7991,7 @@ Enter side 1:
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
     
     Engine engine;
-    <span class="hljs-keyword">private</span> List&lt;Wheel&gt;[] wheels = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> List&lt;wheel cwf=<span class="hljs-string">"C:\repos\nus-te3201\website\book\uml\classDiagrams\classes\what\q-essay-drawCarClass.md"</span>&gt;[] wheels = <span class="hljs-keyword">null</span>;
     <span class="hljs-keyword">public</span> String model;
     
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
@@ -8069,6 +8004,7 @@ Enter side 1:
 }
 
 </code></pre>
+                    <p></p>
                   </question>
                 </panel>
               </div>
@@ -8167,9 +8103,10 @@ Enter side 1:
             <img src="/website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
             <p></p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
-    List&lt;Student&gt; charges;
+    List&lt;student cwf=<span class="hljs-string">"C:\repos\nus-te3201\website\book\uml\classDiagrams\associations\roles\text.md"</span>&gt; charges;
 }
 </code></pre>
+            <p></p>
           </tip-box>
         </div>
         <div></div>

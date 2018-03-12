@@ -281,27 +281,9 @@
 
 <hr>
 
+<div id="handout-testing-automation-regressions">
+
 # SECTION: QUALITY ASSURANCE
-
-# Quality Assurance
-
-## Introduction
-
-<include src="../book/qualityAssurance/introduction/what/print.md" />
-<include src="../book/qualityAssurance/introduction/validationVsVerification/print.md" />
-
-## Code Reviews
-
-<include src="../book/qualityAssurance/codeReviews/what/print.md" />
-
-## Static Analysis
-
-<include src="../book/qualityAssurance/staticAnalysis/what/print.md" />
-
-## Formal Verification
-
-<include src="../book/qualityAssurance/formalVerification/what/print.md" />
-
 
 # Testing
 
@@ -309,7 +291,18 @@
 
 <include src="../book/testing/introduction/what/print.md" />
 
+## Test Automation
+
+<include src="../book/testing/testAutomation/what/print.md" />
+<include src="../book/testing/testAutomation/testingTextUis/print.md" />
+
 ## Testing Types
+
+### Regression Testing
+
+<include src="../book/testing/testingTypes/regressionTesting/what/print.md" />
+
+</div>
 
 ### Unit Testing
 
@@ -337,15 +330,6 @@
 <include src="../book/testing/testingTypes/acceptanceTesting/what/print.md" />
 <include src="../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/print.md" />
 
-### Regression Testing
-
-<include src="../book/testing/testingTypes/regressionTesting/what/print.md" />
-
-## Test Automation
-
-<include src="../book/testing/testAutomation/what/print.md" />
-<include src="../book/testing/testAutomation/testingTextUis/print.md" />
-
 # Test Case Design
 
 ## Introduction
@@ -363,6 +347,26 @@
 
 <include src="../book/testCaseDesign/boundaryValueAnalysis/what/print.md" />
 <include src="../book/testCaseDesign/boundaryValueAnalysis/how/print.md" />
+
+
+# Quality Assurance
+
+## Introduction
+
+<include src="../book/qualityAssurance/introduction/what/print.md" />
+<include src="../book/qualityAssurance/introduction/validationVsVerification/print.md" />
+
+## Code Reviews
+
+<include src="../book/qualityAssurance/codeReviews/what/print.md" />
+
+## Static Analysis
+
+<include src="../book/qualityAssurance/staticAnalysis/what/print.md" />
+
+## Formal Verification
+
+<include src="../book/qualityAssurance/formalVerification/what/print.md" />
 
 <hr>
 

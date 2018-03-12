@@ -2,8 +2,8 @@
 
 This section focuses on reading from text-based files (i.e., not binary files).
 
-**There are three steps to reading or writing files in Python:**
-* Call the **`open()`** function to receive `File` object.
+**There are three steps to reading files in Python:**
+* Call the **`open()`** function to receive a `File` object.
 * Call the **`read()`** method on the `File` object to receive file content.
 * Close the file by calling the **`close()`** method on the `File` object.
 
@@ -35,7 +35,7 @@ third line
 </tr>
 </table>
 
-:bulb: The `'r'` argument in `open(file_path, 'r')` indicates that the file should be opened in read mode. 
+:bulb: The `'r'` argument in `open(file_path, 'r')` indicates that the file should be opened <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>. 
 
 </tip-box>
 
@@ -50,7 +50,7 @@ f = open(file_path, 'r')
 items = f.readlines()
 print(items) # print as a list
 for i in items: # print each item
-  print(i.strip()) # strip to remove linebreak
+  print(i.strip()) # use strip() to remove linebreak at the end of each line
 f.close()
 ```
 :arrow_heading_down:
@@ -63,3 +63,7 @@ third line
 :bulb: Note how each line ends with a `\n` which represents the line break. It can be removed using the `strip()` method.
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: File Stats" expanded no-close>
+  <include src="e-fileStats.md" />
+</panel><p/>

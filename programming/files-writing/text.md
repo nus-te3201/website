@@ -41,3 +41,7 @@ second line
 third line
 ```
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Add Line Numbers" expanded no-close>
+  <include src="e-addLineNumbers.md" />
+</panel><p/>

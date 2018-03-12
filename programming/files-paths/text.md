@@ -1,6 +1,6 @@
 ### File Paths
 
-A file has a _filename_ and a _path_. **The _path_ specifies the location of a file on the computer**, as a hierarchy of folders (also called directories).
+A file has a _filename_ and a _path_. **The _path_ specifies the location of a file on the computer**, as a hierarchy of _folders_ (also called _directories_).
 
 <tip-box> 
 
@@ -18,28 +18,28 @@ A file has a _filename_ and a _path_. **The _path_ specifies the location of a f
         ˪ 2018
   ```
   
-:exclamation: Windows file names and paths are not case sensitive. `C:\photos\2018\home.jpg` is same as `C:\PHOTOS\2018\HOME.JPG`
+:exclamation: Windows file names and paths are not case sensitive: `C:\photos\2018\home.jpg` is same as `C:\PHOTOS\2018\HOME.JPG`.
   </tab>
   <tab header="OS-X/Linux">
 
 :package: File `/Users/john/home.jpg`
 
 * Filename: `home.jpg`
-* Path: `/Users/john` (Windows uses the forward slash `/` as the _separator_ symbol in paths )
+* Path: `/Users/john` (OS-X/Linux uses the forward slash `/` as the _separator_ symbol in paths )
 * Folders in the path (the `/` at the start of the path is considered the _root folder_): 
   ```
   / {root}
     ˪ Users
         ˪ john
   ```
-:exclamation: OS-X/Linux file names and paths are case sensitive. `/Users/john/home.jpg` is not the same as `/USERS/JOHN/HOME.JPG`
+:exclamation: OS-X/Linux file names and paths are case sensitive. `/Users/john/home.jpg` is NOT the same as `/USERS/JOHN/HOME.JPG`
 
   </tab>
 </tabs>
 
 </tip-box>
 
-The Python module `os` contains functions for dealing with files and folders. For example, you can use `os.getcwd()` to get the <tooltip content="each program has a _working directory_">current working directory</tooltip> and `os.chdir()` to change the working directory to a different location.
+The Python module `os` contains functions for dealing with files and folders. For example, you can use `os.getcwd()` to get the <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and `os.chdir()` to change the working directory to a different location.
 
 <tip-box> 
 
@@ -54,7 +54,7 @@ import os
 
 cwd = os.getcwd() # store current working dir
 print(cwd) # print current working dir
-os.chdir('C:\\temp\\python') # change director
+os.chdir('C:\\temp\\python') # change dir
 print(os.getcwd()) # print current working dir
 os.chdir(cwd) # change working dir back to original
 print(os.getcwd())
@@ -74,7 +74,7 @@ C:\modules\te3201
 
 :bulb: Note how the path `'C:\\temp\\python'` uses double slash to <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the `\`. In OS-X or Linux, it can be something like `/user/john/python` (no need for double slash).
 
-<modal large title="**Escape Sequences** %%(extraxt from Strings → String Literals)%%" id="modal:filePaths-stringsEscape">
+<modal large title="**Escape Sequences** %%(extrat from Strings → String Literals)%%" id="modal:filePaths-stringsEscape">
   <include src="../strings-literals\text.md#strings-escape"/>
 </modal>
 
@@ -86,8 +86,8 @@ C:\modules\te3201
 
 :package: Assume the current working directory is `C:\modules\te3201` and you created a new folder inside it named `exercises` and put a `ex.txt` file in that folder.
 
-* Absolute path: `C:\modules\te3201\exercises\ex1.txt`
-* Relative path: `exercises\ex1.txt`
+* Absolute path of the file: `C:\modules\te3201\exercises\ex1.txt`
+* Relative path of the file: `exercises\ex1.txt`
 
 </tip-box>
 
@@ -160,14 +160,18 @@ If your run it on a OS-X computer in the folder `/Users/john`, it prints `/Users
 
 </tip-box>
 
-:exclamation: To ensure that your code can work on any OS, you are advised to use `os.path.join()` function instead of hard coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.
+:exclamation: To ensure that your code can work on any OS, you are advised to use `os.path.join()` function instead of hard-coding the <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.
 
 <tip-box> 
 
-:package: This code will work on Windows but not on OS-X:
+:package: contrasting hard-coding the separator vs using `os.path.join()`:
 
-Works only on Windows | Works on both Windows and OS-X
+:x: Works only on Windows | :white_check_mark: Works on both Windows and OS-X
 --------------------- | ------------------------------
 `os.makedirs('ex\\w1')` | `os.makedirs(os.path.join('ex', 'w1'))`
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Create Directory" expanded no-close>
+  <include src="e-createDir.md" />
+</panel><p/>
