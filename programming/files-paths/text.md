@@ -171,3 +171,7 @@ If your run it on a OS-X computer in the folder `/Users/john`, it prints `/Users
 `os.makedirs('ex\\w1')` | `os.makedirs(os.path.join('ex', 'w1'))`
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Create Directory" expanded no-close>
+  <include src="e-createDir.md" />
+</panel><p/>

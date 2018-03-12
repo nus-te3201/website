@@ -127,3 +127,6 @@ bananas,3,2.0,False
 * :bulb: The keyword argument `newline=''` need to be used when opening a CSV file in Windows. The reasoning behind it is beyond the scope of this book.
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Calcluate GST" expanded no-close>
+  <include src="e-calculateGst.md" />
+</panel><p/>

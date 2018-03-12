@@ -63,3 +63,7 @@ third line
 :bulb: Note how each line ends with a `\n` which represents the line break. It can be removed using the `strip()` method.
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: File Stats" expanded no-close>
+  <include src="e-fileStats.md" />
+</panel><p/>

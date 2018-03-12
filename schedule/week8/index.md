@@ -49,6 +49,6 @@
 <panel header=" Evidence of achieving the LO" no-close>
 
 **Exercise from `W8.2d`:**<br>
-  <p/>
+  <include src="../../programming/files-csv/e-calculateGst.md" /><p/>
 </panel>
 
