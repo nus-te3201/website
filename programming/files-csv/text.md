@@ -45,11 +45,11 @@ Although CSV files are text files that can be read/written using normal file acc
 :package: The code below shows how to use the `csv` module to read contents of a CSV file named `deliveries.csv`:
 
 ```python
-deliveriesFile = open('deliveries.csv') # open file
-deliveriesReader = csv.reader(deliveriesFile) # create a Reader
-for row in deliveriesReader: # access each line using the Reader
+deliveries_file = open('deliveries.csv') # open file
+deliveries_reader = csv.reader(deliveries_file) # create a Reader
+for row in deliveries_reader: # access each line using the Reader
   print(row)
-deliveriesFile.close() # close file
+deliveries_file.close() # close file
 ```
 :arrow_heading_down:
 ```
@@ -84,18 +84,18 @@ Note that all values read from a CSV files come as strings. If they are meant to
 
 <tip-box> 
 
-:package: 
+:package: In this example the 3rd value of each row is converted to an int before adding them up.
 
 ```python
-deliveriesFile = open('deliveries.csv') 
-deliveriesReader = csv.reader(deliveriesFile) 
+deliveries_file = open('deliveries.csv') 
+deliveries_reader = csv.reader(deliveries_file) 
 total = 0
-for row in deliveriesReader:
+for row in deliveries_reader:
   # convert 3rd cell to an int and add to total
   total = total + int(row[2]) 
 
 print('Total quantity delivered:', total)
-deliveriesFile.close()
+deliveries_file.close()
 ```
 :arrow_heading_down:
 ```
@@ -111,11 +111,11 @@ Total quantity delivered: 34
 :package: The code below writes two rows to the `pricelist.csv` file.
 
 ```python
-outputFile = open('pricelist.csv', 'w', newline='') # open file in write mode
-outputWriter = csv.writer(outputFile) # get a Writer object
-outputWriter.writerow(['apples', '1', '1.5', 'True']) # write one row
-outputWriter.writerow(['bananas', '3', '2.0', 'False']) # write another row
-outputFile.close() # close file
+output_file = open('pricelist.csv', 'w', newline='') # open file in write mode
+output_writer = csv.writer(output_file) # get a Writer object
+output_writer.writerow(['apples', '1', '1.5', 'True']) # write one row
+output_writer.writerow(['bananas', '3', '2.0', 'False']) # write another row
+output_file.close() # close file
 ```
 The `pricelist.csv` file will now contain:
 ```
@@ -123,7 +123,7 @@ apples,1,1.5,True
 bananas,3,2.0,False
 ```
 
-* :bulb: You can open a file in append mode if you want to append to it instead of overwriting current content. <br> e.g., `outputFile = open('pricelist.csv', `==`'a',`==` newline='')`
+* :bulb: You can open a file in append mode if you want to append to it instead of overwriting current content. <br> e.g., `output_file = open('pricelist.csv', `==`'a',`==` newline='')`
 * :bulb: The keyword argument `newline=''` need to be used when opening a CSV file in Windows. The reasoning behind it is beyond the scope of this book.
 </tip-box>
 
