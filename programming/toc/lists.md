@@ -3,7 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
-{{home↑}}
+<span id="home↑"><span style="float:right">[<span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑](../index.html)</span></span>
 * [**Lists**](#lists)
   * [The List Data Structure](#the-list-data-structure)
   * [Object References](#object-references)

@@ -36,7 +36,7 @@
                 <li>Method to test: calculateGrade(participation, projectGrade, isAbsent, examScore)</li>
                 <li>Values to test (invalid values are <strong>bold</strong>)</li>
               </ul>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th>Input</th>
@@ -92,7 +92,7 @@
               <p>📦 Let's assume the SUT has the following three inputs and you have selected the given values for testing:</p>
               <p>SUT: <code>foo(p1 char, p2 int, p3 boolean)</code></p>
               <p>Selected values for each input:</p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Input</th>
@@ -118,7 +118,7 @@
             <p><strong>all combinations</strong>: generate test cases for each unique combination of test inputs</p>
             <tip-box>
               <p>📦 the strategy generates 3x3x2=18 test cases</p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Test Case</th>
@@ -164,7 +164,7 @@
             <p><strong>at least once</strong>: include each test input at least once.</p>
             <tip-box>
               <p>📦 this strategy generates 3 test cases.</p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Test Case</th>
@@ -202,7 +202,7 @@
               <p>📦 this strategy generates 9 test cases:</p>
               <panel type="seamless" header="see steps">
                 <p>Let's first consider inputs p1 and p2:</p>
-                <table class="markbind-table table table-bordered table-striped">
+                <table class="markbind-table table">
                   <thead>
                     <tr>
                       <th style="text-align:center">Input</th>
@@ -223,7 +223,7 @@
                 <p>These values can generate
                   <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
                 <p>Next, let's consider p1 and p3.</p>
-                <table class="markbind-table table table-bordered table-striped">
+                <table class="markbind-table table">
                   <thead>
                     <tr>
                       <th style="text-align:center">Input</th>
@@ -246,7 +246,7 @@
                 <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
                 <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
               </panel>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Test Case</th>
@@ -316,7 +316,7 @@
             <p>A variation of this strategy is to test all pairs of inputs but only for inputs that could influence each other.</p>
             <tip-box>
               <p>📦 Testing all pairs between p1 and p3 only while ensuring all p3 values are tested at least once</p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Test Case</th>
@@ -388,7 +388,7 @@
             <tip-box>
               <p>SUT: <code>printLabel(fruitName String, unitPrice int)</code></p>
               <p><strong>Selected values for</strong> <code>fruitName</code> (invalid values are marked with an ❗️ ):</p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th>Values</th>
@@ -415,7 +415,7 @@
                 </tbody>
               </table>
               <p><strong>Selected values for</strong> <code>unitPrice</code>:</p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th>Values</th>
@@ -444,7 +444,7 @@
             </tip-box>
             <p>Suppose these are the test cases being considered.</p>
             <tip-box>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Case</th>
@@ -487,7 +487,7 @@
               case. Here are the updated test cases after applying that heuristic.</p>
             <tip-box>
               <div id="heuristic-valid-test-case">
-                <table class="markbind-table table table-bordered table-striped">
+                <table class="markbind-table table">
                   <thead>
                     <tr>
                       <th style="text-align:center">Case</th>
@@ -553,7 +553,7 @@
               <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
             <modal large="" title="**Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case**" id="modal:heuristic-valid-test-case">
               <div>
-                <table class="markbind-table table table-bordered table-striped">
+                <table class="markbind-table table">
                   <thead>
                     <tr>
                       <th style="text-align:center">Case</th>
@@ -602,7 +602,7 @@
               message “invalid fruit”.</p>
             <p>In this case a useful heuristic to apply is <strong>no more than one invalid input in a test case</strong>. After applying that, we get the following test cases.</p>
             <tip-box>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Case</th>
@@ -713,7 +713,7 @@
             <p>To get the first cut of test cases, let’s apply the ‘at least once’ strategy.</p>
             <tip-box>
               <p><strong>Test cases for calculateGrade V1</strong></p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Case No.</th>
@@ -781,7 +781,7 @@
               and 5.2 to rectify that.</p>
             <tip-box>
               <p><strong>Test cases for calculateGrade V2</strong></p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Case No.</th>
@@ -856,7 +856,7 @@
             <p>Next, we apply the ‘no more than one invalid input in a test case’ heuristic. Test cases 5.2 and 6 don't follow that heuristic. Let's rectify the situation as follows:</p>
             <tip-box>
               <p><strong>Test cases for calculateGrade V3</strong></p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Case No.</th>
@@ -947,7 +947,7 @@
               we can add a new test case where <code>isAbsent=true</code> and <code>examScore!=0</code>. In addition, test cases 3-6.2 should have <code>isAbsent=false</code> so that the input remains valid.</p>
             <tip-box>
               <p><strong>Test cases for calculateGrade V4</strong></p>
-              <table class="markbind-table table table-bordered table-striped">
+              <table class="markbind-table table">
                 <thead>
                   <tr>
                     <th style="text-align:center">Case No.</th>
