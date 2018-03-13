@@ -83,7 +83,7 @@ def read_csv_lines(filename):
   read_csv_lines('file1.csv') returns [['item', 'price']['book', '10.0']]
   
   """
-  # return [] # REPLACE WITH YOUR CODE
+  return [] # REPLACE WITH YOUR CODE
   
   
 def write_to_csv_file(lines, filename):

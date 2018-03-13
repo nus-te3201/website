@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="/website/programming/css/programming.css">
 <div class="website-content">
   <div id="toc">
-    <p><span id="home↑"><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a>
-      </span>
+    <p><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a>
       </span>
     </p>
     <ul>
@@ -72,7 +71,7 @@
       <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the
         <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
       <tip-box>
-        <p>📦</p>
+        <p>📦 Example code showing how to print/change current working directory</p>
         <table>
           <tr>
           
@@ -187,7 +186,7 @@ C:\modules\te3201
       </tip-box>
       <p>You can use <code>os.mkdir()</code> function to create folders and <code>os.removedirs()</code> to delete folders.</p>
       <tip-box>
-        <p>📦</p>
+        <p>📦 Example code showing how to create/delete directories</p>
         <table>
           <tr>
           
@@ -375,7 +374,8 @@ third line
       <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
       <tip-box>
         <p>📦 The code below shows how to read file content as a list of lines.</p>
-        <pre><code class="hljs python">f = open(file_path, <span class="hljs-string">'r'</span>)
+        <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
+f = open(file_path, <span class="hljs-string">'r'</span>)
 items = f.readlines()
 print(items) <span class="hljs-comment"># print as a list</span>
 <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> items: <span class="hljs-comment"># print each item</span>
@@ -627,7 +627,9 @@ third line
       <p>Although CSV files are text files that can be read/written using normal file access techniques covered earlier, <strong>Python has an in-built module named <code>csv</code> that provides functions to deal with CSV files more conveniently.</strong>        For example, <strong>it provides a way to read a CSV file as a <code>Reader</code> object that knows how to interpret a CSV file.</strong></p>
       <tip-box>
         <p>📦 The code below shows how to use the <code>csv</code> module to read contents of a CSV file named <code>deliveries.csv</code>:</p>
-        <pre><code class="hljs python">deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) <span class="hljs-comment"># open file</span>
+        <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv 
+
+deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) <span class="hljs-comment"># open file</span>
 deliveries_reader = csv.reader(deliveries_file) <span class="hljs-comment"># create a Reader</span>
 <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader: <span class="hljs-comment"># access each line using the Reader</span>
   print(row)
@@ -811,7 +813,7 @@ bag,50.0,3.5
   read_csv_lines('file1.csv') returns [['item', 'price']['book', '10.0']]
   
   """</span>
-  <span class="hljs-comment"># return [] # REPLACE WITH YOUR CODE</span>
+  <span class="hljs-keyword">return</span> [] <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
   
   
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_to_csv_file</span><span class="hljs-params">(lines, filename)</span>:</span>

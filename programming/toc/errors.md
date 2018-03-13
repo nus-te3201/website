@@ -3,7 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
-<span id="home↑"><span style="float:right">[<span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑](../index.html)</span></span>
+{{home↑}}
 * [**Error Handling**](#lists)
   * [Introduction to Errors](#introdution-to-errors)
   * [Syntax Errors](#syntax-errors)

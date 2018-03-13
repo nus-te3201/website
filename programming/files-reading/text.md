@@ -46,6 +46,7 @@ It is also possible to read the file content as a list of lines, using the `read
 :package: The code below shows how to read file content as a list of lines.
 
 ```python
+file_path = os.path.join('data', 'items.txt')
 f = open(file_path, 'r')
 items = f.readlines()
 print(items) # print as a list

@@ -3,7 +3,7 @@
 <div class="website-content">
 <div id="toc">
 
-<span id="home↑"><span style="float:right">[<span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑](../index.html)</span></span>
+{{home↑}}
 * [**Dictionaries**](#lists)
   * [The Dictionary Data Structure](#the-dictionary-data-structure)
   * [Working with Dictionaries](#working-with-dictionaries)

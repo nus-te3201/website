@@ -45,6 +45,8 @@ Although CSV files are text files that can be read/written using normal file acc
 :package: The code below shows how to use the `csv` module to read contents of a CSV file named `deliveries.csv`:
 
 ```python
+import csv 
+
 deliveries_file = open('deliveries.csv') # open file
 deliveries_reader = csv.reader(deliveries_file) # create a Reader
 for row in deliveries_reader: # access each line using the Reader
