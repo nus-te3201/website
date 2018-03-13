@@ -109,7 +109,7 @@ In a path, you can use the  dot `.` as a shorthand to refer to the current worki
 
 </tip-box>
 
-You can use `os.mkdir()` function to create folders and `os.removedirs()` to delete folders.
+You can use `os.mkdirs()` function to create folders and `os.removedirs()` to delete folders.
 
 <tip-box> 
 
