@@ -1,4 +1,4 @@
-#### Exercise : Create Direcotry
+#### Exercise : Create Directory
 
 Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.
 
