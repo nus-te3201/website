@@ -62,6 +62,10 @@
       "title": "TE3201 Programming Basics: Files"
     },
     {
+      "src": "programming/toc/oop.md",
+      "title": "TE3201 Programming Basics: Object-Oriented Programming"
+    },
+    {
       "src": "common/outcomes.md",
       "title": "TE3201 Learning Outcomes"
     },

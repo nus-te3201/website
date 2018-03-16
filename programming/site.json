@@ -40,6 +40,10 @@
     {
       "src": "toc/files.md",
       "title": "TE3201 Programming Basics: Files"
+    },
+    {
+      "src": "toc/oop.md",
+      "title": "TE3201 Programming Basics: Object-Oriented Programming"
     }
   ],
   "ignore": [
