@@ -6,7 +6,7 @@
   * [Ch 3. Specifying Requirements](#specifying-requirements)
 * [**SECTION 3: DESIGN**](#section-design) 
   * [Ch 1. Design](#design)
-  * [Ch 2. Object-Orient Programming](#object-oriented-programming)
+  * [Ch 2. Object-Oriented Programming](#object-oriented-programming)
   * [Ch 3. Design Fundamentals](#design-fundamentals)
   * [Ch 4. Modeling](#modeling)
 * [**SECTION 4: IMPLEMENTATION**](#section-implementation) 
