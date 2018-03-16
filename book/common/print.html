@@ -291,19 +291,9 @@
                   <td style="text-align:center">Average age, Sum of ages</td>
                   <td style="text-align:center">Use other objects to calculate</td>
                 </tr>
-                <tr>
-                  <td style="text-align:center"></td>
-                </tr>
               </tbody>
             </table>
           </tip-box>
-          <td style="text-align:center"></td>
-          <td style="text-align:center"></td>
-          <td style="text-align:center"></td>
-          <td style="text-align:center"></td>
-
-
-
           <p><strong>Every object has an interface and an implementation.</strong></p>
           <p>Every real world object has an interface that other objects can interact with and an implementation that supports the interface but may not be accessible to the other object.</p>
           <tip-box>
@@ -424,8 +414,8 @@
 
           <p>Let us use the UML notation to illustrate classes and objects under discussion.</p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Classes" expanded=""></panel>
-            <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html" header=":mortar_board: UML → Object Diagrams → Objects" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Classes" expanded="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Object Diagrams → Objects" expanded="" fragment="title-and-body"></panel>
           </p>
           <p></p>
           <tip-box>
@@ -463,7 +453,7 @@
           <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code> to identify
             class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\classLevelMembers\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Class Level Members" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\classLevelMembers\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Class Level Members" expanded="" fragment="title-and-body"></panel>
           </p>
           <p></p>
           <p>📦 A <code>Student</code> class with a class-level attribute and a method:</p>
@@ -498,7 +488,7 @@
         <div>
           <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such <strong>connections between objects are called <em>associations</em>.</strong></p>
           <p>
-            <panel src="/website\book\uml\objectDiagrams\associations\what\full._include_.html" header=":mortar_board: UML → Object Diagrams → Associations → What" expanded=""></panel>
+            <panel src="/website\book\uml\objectDiagrams\associations\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Object Diagrams → Associations → What" expanded="" fragment="title-and-body"></panel>
           </p>
           <p></p>
           <tip-box>
@@ -512,7 +502,7 @@
           </tip-box>
           <p><strong>Associations among objects are reflected correspondingly in the class diagram too</strong>, as it is the class diagram that dictates the nature of the associations allowed in the object structures.</p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\associations\basic\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Basic" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\basic\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Associations → Basic" expanded="" fragment="title-and-body"></panel>
           </p>
           <tip-box>
             <p>📦 An example class diagram showing associations between classes.</p>
@@ -528,7 +518,7 @@
         <div>
           <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. <strong>The concept of which class in the association knows about the other class is called <em>navigability</em>.</strong></p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Navigability" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Navigability" expanded="" fragment="title-and-body"></panel>
           </p>
           <p></p>
         </div>
@@ -543,7 +533,7 @@
             <p>📦 This class diagram does not tell us multiplicities. For exaple, how many <code>Calculator</code> objects can be associated with one <code>Main</code> object? How many <code>Main</code> objects can be associated with one <code>Calculator</code>              object? and so on.</p>
             <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100"></tip-box>
           <p>
-            <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Multiplicity" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Multiplicity" expanded="" fragment="title-and-body"></panel>
           </p>
           <p></p>
         </div>
@@ -555,7 +545,7 @@
         <div>
           <p>Dependencies are objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\dependencies\what\full._include_.html" header=":mortar_board: UML: Class Diagrams: Dependencies" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\dependencies\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Dependencies" expanded="" fragment="title-and-body"></panel>
           </p>
           <p></p>
         </div>
@@ -567,7 +557,7 @@
         <div>
           <p><strong>A composition is an association that represents a strong <em>whole-part</em> relationship.</strong> When the <em>whole</em> is destroyed, <em>parts</em> are destroyed too.</p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\composition\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Composition" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\composition\what\full._include_.html#titel-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Composition" expanded="" fragment="titel-and-body"></panel>
           </p>
           <p></p>
           <tip-box>
@@ -590,7 +580,7 @@
         <div>
           <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Aggregation" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Aggregation" expanded="" fragment="title-and-body"></panel>
           </p>
           <p></p>
           <tip-box>
@@ -628,7 +618,7 @@
         <div>
           <p><strong>The OOP concept <em>Inheritance</em> allows you to define a new class based on an existing class.</strong> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code>            class so that the <code>EvaluationReport</code> class does not have to duplicate code that is already implemented in the <code>Report</code> class.</p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\classInheritance\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Inheritance" isOpen="false" no-close="true" no-switch="true"></panel>
+            <panel src="/website\book\uml\classDiagrams\classInheritance\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Inheritance" expanded="" fragment="title-and-body" isOpen="false" no-close="true" no-switch="true"></panel>
           </p>
           <p></p>
           <tip-box>
@@ -4792,7 +4782,7 @@ exit();
                 <tip-box>
                   <p>Examples:</p>
                   <p><code>Person student</code><br>
-                    <code>ArrayList&lt;Person cwf=&quot;C:\repos\nus-te3201\website\book\codeQuality\practices\nounsAndVerbsAsNames\text.md&quot;&gt; students</code></p>
+                    <code>ArrayList&lt;Person&gt; students</code></p>
                 </tip-box>
               </div>
             </div>
@@ -5474,7 +5464,7 @@ send();
  * Returns an Image object that can then be painted on the screen. 
  * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name
  * argument is a specifier that is relative to the url argument. 
- * &lt;p cwf="C:\repos\nus-te3201\website\book\documentation\tools\javaDoc\what\text.md"&gt;
+ * &lt;p&gt;
  * This method always returns immediately, whether or not the 
  * image exists. When this applet attempts to draw the image on
  * the screen, the data will be loaded. The graphics primitives 
@@ -9761,7 +9751,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
         <div>
           <p>The basic UML notations used to represent a <em>class</em>:<br></p>
-          <img src="/website/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="100">
+          <img src="/website/book/uml/classDiagrams/classes/what/images/basicNotation.png" height="130">
           <p></p>
           <tip-box>
             <p>📦 A <code>Table</code> class shown in UML notation:</p>
@@ -9870,7 +9860,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <img src="/website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
             <p></p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
-    List&lt;Student cwf=<span class="hljs-string">"C:\repos\nus-te3201\website\book\uml\classDiagrams\associations\roles\text.md"</span>&gt; charges;
+    List&lt;Student&gt; charges;
 }
 </code></pre>
           </tip-box>
@@ -10655,7 +10645,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
 <span class="hljs-comment"># Initial commit</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Untracked files:</span>
-<span class="hljs-comment">#   (use "git add &lt;file cwf="C:\repos\nus-te3201\website\book\gitAndGithub\commit\cli_1.md"&gt;..." to include in what will be committed)</span>
+<span class="hljs-comment">#   (use "git add &lt;file&gt;..." to include in what will be committed)</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment">#   a.txt</span>
 nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)
@@ -10699,7 +10689,7 @@ git status
 <span class="hljs-comment"># Initial commit</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Changes to be committed:</span>
-<span class="hljs-comment">#   (use "git rm --cached &lt;file cwf="C:\repos\nus-te3201\website\book\gitAndGithub\commit\cli_2.md"&gt;..." to unstage)</span>
+<span class="hljs-comment">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment">#       new file:   fruits.txt</span>
 <span class="hljs-comment">#</span>
@@ -10906,14 +10896,14 @@ index 15b57f7..17f4528 100644
             </tab>
             <tab header="CLI">
               <div>
-                <p>Use the <code>checkout &lt;commit-identifier cwf=&quot;C:\repos\nus-te3201\website\book\gitAndGithub\checkout\cli_3.md&quot;&gt;</code> command to change the working directory to the state it was in at a specific past commit.</p>
+                <p>Use the <code>checkout &lt;commit-identifier&gt;</code> command to change the working directory to the state it was in at a specific past commit.</p>
                 <ul>
                   <li><code>git checkout v1.0</code>: loads the state as at commit tagged <code>v1.0</code></li>
                   <li><code>git checkout 0023cdd</code>: loads the state as at commit with the hash <code>0023cdd</code></li>
                   <li><code>git checkout HEAD~2</code>: loads the state that is 2 commits behind the most recent commit</li>
                 </ul>
                 <p>For now, you can ignore the warning about ‘detached HEAD’.</p>
-                <p>Use the <code>checkout &lt;branch-name cwf=&quot;C:\repos\nus-te3201\website\book\gitAndGithub\checkout\cli_3.md&quot;&gt;</code> to go back to the most recent commit of the current branch (the default branch in git is named <code>master</code>)</p>
+                <p>Use the <code>checkout &lt;branch-name&gt;</code> to go back to the most recent commit of the current branch (the default branch in git is named <code>master</code>)</p>
                 <ul>
                   <li><code>git checkout master</code></li>
                 </ul>

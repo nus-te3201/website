@@ -142,19 +142,9 @@
                 <td style="text-align:center">Average age, Sum of ages</td>
                 <td style="text-align:center">Use other objects to calculate</td>
               </tr>
-              <tr>
-                <td style="text-align:center"></td>
-              </tr>
             </tbody>
           </table>
         </tip-box>
-        <td style="text-align:center"></td>
-        <td style="text-align:center"></td>
-        <td style="text-align:center"></td>
-        <td style="text-align:center"></td>
-
-
-
         <p><strong>Every object has an interface and an implementation.</strong></p>
         <p>Every real world object has an interface that other objects can interact with and an implementation that supports the interface but may not be accessible to the other object.</p>
         <tip-box>
@@ -275,8 +265,8 @@
 
         <p>Let us use the UML notation to illustrate classes and objects under discussion.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Classes" expanded=""></panel>
-          <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html" header=":mortar_board: UML → Object Diagrams → Objects" expanded=""></panel>
+          <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Classes" expanded="" fragment="title-and-body"></panel>
+          <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Object Diagrams → Objects" expanded="" fragment="title-and-body"></panel>
         </p>
         <p></p>
         <tip-box>
@@ -314,7 +304,7 @@
         <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code> to identify
           class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\classLevelMembers\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Class Level Members" expanded=""></panel>
+          <panel src="/website\book\uml\classDiagrams\classLevelMembers\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Class Level Members" expanded="" fragment="title-and-body"></panel>
         </p>
         <p></p>
         <p>📦 A <code>Student</code> class with a class-level attribute and a method:</p>
@@ -349,7 +339,7 @@
       <div>
         <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such <strong>connections between objects are called <em>associations</em>.</strong></p>
         <p>
-          <panel src="/website\book\uml\objectDiagrams\associations\what\full._include_.html" header=":mortar_board: UML → Object Diagrams → Associations → What" expanded=""></panel>
+          <panel src="/website\book\uml\objectDiagrams\associations\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Object Diagrams → Associations → What" expanded="" fragment="title-and-body"></panel>
         </p>
         <p></p>
         <tip-box>
@@ -363,7 +353,7 @@
         </tip-box>
         <p><strong>Associations among objects are reflected correspondingly in the class diagram too</strong>, as it is the class diagram that dictates the nature of the associations allowed in the object structures.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\associations\basic\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Basic" expanded=""></panel>
+          <panel src="/website\book\uml\classDiagrams\associations\basic\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Associations → Basic" expanded="" fragment="title-and-body"></panel>
         </p>
         <tip-box>
           <p>📦 An example class diagram showing associations between classes.</p>
@@ -379,7 +369,7 @@
       <div>
         <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. <strong>The concept of which class in the association knows about the other class is called <em>navigability</em>.</strong></p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Navigability" expanded=""></panel>
+          <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Navigability" expanded="" fragment="title-and-body"></panel>
         </p>
         <p></p>
       </div>
@@ -394,7 +384,7 @@
           <p>📦 This class diagram does not tell us multiplicities. For exaple, how many <code>Calculator</code> objects can be associated with one <code>Main</code> object? How many <code>Main</code> objects can be associated with one <code>Calculator</code>            object? and so on.</p>
           <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100"></tip-box>
         <p>
-          <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Multiplicity" expanded=""></panel>
+          <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Multiplicity" expanded="" fragment="title-and-body"></panel>
         </p>
         <p></p>
       </div>
@@ -406,7 +396,7 @@
       <div>
         <p>Dependencies are objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\dependencies\what\full._include_.html" header=":mortar_board: UML: Class Diagrams: Dependencies" expanded=""></panel>
+          <panel src="/website\book\uml\classDiagrams\dependencies\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Dependencies" expanded="" fragment="title-and-body"></panel>
         </p>
         <p></p>
       </div>
@@ -418,7 +408,7 @@
       <div>
         <p><strong>A composition is an association that represents a strong <em>whole-part</em> relationship.</strong> When the <em>whole</em> is destroyed, <em>parts</em> are destroyed too.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\composition\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Composition" expanded=""></panel>
+          <panel src="/website\book\uml\classDiagrams\composition\what\full._include_.html#titel-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Composition" expanded="" fragment="titel-and-body"></panel>
         </p>
         <p></p>
         <tip-box>
@@ -441,7 +431,7 @@
       <div>
         <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Aggregation" expanded=""></panel>
+          <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Aggregation" expanded="" fragment="title-and-body"></panel>
         </p>
         <p></p>
         <tip-box>
@@ -480,7 +470,7 @@
         <p><strong>The OOP concept <em>Inheritance</em> allows you to define a new class based on an existing class.</strong> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code> class
           so that the <code>EvaluationReport</code> class does not have to duplicate code that is already implemented in the <code>Report</code> class.</p>
         <p>
-          <panel src="/website\book\uml\classDiagrams\classInheritance\what\full._include_.html" header=":mortar_board: UML → Class Diagrams → Inheritance" isOpen="false" no-close="true" no-switch="true"></panel>
+          <panel src="/website\book\uml\classDiagrams\classInheritance\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Inheritance" expanded="" fragment="title-and-body" isOpen="false" no-close="true" no-switch="true"></panel>
         </p>
         <p></p>
         <tip-box>
