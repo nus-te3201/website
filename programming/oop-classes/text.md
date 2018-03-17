@@ -5,7 +5,11 @@ As you have seen already, Python has some built in object types (i.e., classes) 
 The syntax for defining a class:
 ```python
 class ClassName:
-  # method definitions
+  # <statement-1>
+  .
+  .
+  .
+  # <statement-N>
 ```
 :bulb: It is customary to use <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.
 
@@ -33,7 +37,7 @@ print(type(john)) # print type of the john object
 alice = Employee()
 print(type(alice))
 ```
-:arrow_heading_down: %%Note how the type of each object is given as `class Employee`.%%
+:arrow_heading_down: %%Note how the type of each object is given as `<class 'Employee'>` i.e., a class with name `Employee`.%%
 ```
 <class 'Employee'>
 <class 'Employee'>
@@ -44,7 +48,9 @@ You can add methods to the class by defining them inside the class definition. N
 
 <tip-box> 
 
-:package: In the example below, `write(self, text)` method is called as `p.write('It was a dark night ...')`. This is how the arguments are matched with the parameters: 
+:package: In the example below,<br>
+`write(self, text)` method is called as `p.write('It was a dark night ...')`.<br>
+This is how the arguments are matched with the parameters: 
 * `self` → `p`
 * `text` → `'It was a dark night ...'`
 
@@ -62,8 +68,8 @@ p = Pen()
 p.write('It was a dark night ...')
 ```
   </td>
-  <td>&nbsp;→&nbsp;</td>
-  <td>
+  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+  <td valign="bottom">
 
 ```
 writing: It was a dark night ...
@@ -75,13 +81,19 @@ writing: It was a dark night ...
 </tip-box>
 
 **You can specify how to initialize an object of a class by defining an `__init__()` method in the class.** Here are the important things to note about the `__init__()` method: 
-1. There are two underscores in front and two behind the word `init`.
-1. Tt will be called every time you create an instance of the class.
+1. There are two underscores in front and two behind the word `init`.<br>
+   :x: `_init_()`<br>
+   :white_check_mark: `__init__()`
+1. It will be called every time you create an instance of the class.
 1. If it has parameters, you need to provide arguments for those parameters when you instantiate an object of that class.
 
 <tip-box> 
 
-:package: 
+:package: This example shows an `__init__` method added to a `Person` class.
+
+<table> 
+<tr>
+  <td>
 
 ```python
 class Person:
@@ -91,10 +103,16 @@ class Person:
     
 tom = Person('Tom')
 ```
-:arrow_heading_down:
+  </td>
+  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+  <td valign="bottom">
+
 ```
 Person object Tom initialized!
 ```
+  </td>
+</tr>
+</table>
 </tip-box>
 
 The code within a class needs to use the `self.` to refer to its own attributes and methods. Furthermore, the best place to initialize attributes is the `__init__()` method.
@@ -114,12 +132,82 @@ class Book:
   def describe(self):
     print('Book info:', self.title, '/by', self.author) # use attributes of the class
     
-b = Book('The Jungle Book', 'Leo Tolstoy')
-b = Book('The Art of War', 'Sun Tzu')
+book1 = Book('The Jungle Book', 'Leo Tolstoy')
+book2 = Book('The Art of War', 'Sun Tzu')
 ```
 :arrow_heading_down:
 ```
 Book info: The Jungle Book /by Leo Tolstoy
 Book info: The Art of War /by Sun Tzu
 ```
+</tip-box>
+
+Attributes and methods of the objects can be accessed using `objectname.` syntax, as you would do with objects of built-in classes.
+
+<tip-box> 
+
+:package: This example shows how you can access the attributes and methods of the `book1` object (an object of class `Book`) defined in a previous example:
+
+<table> 
+<tr>
+  <td>
+
+```python
+print('Title:', book1.title) 
+print('Author:', book1.author)
+book1.describe()
+```
+  </td>
+  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+  <td valign="bottom">
+
+```
+Title: The Jungle Book
+Author: Leo Tolstoy
+Book info: The Jungle Book /by Leo Tolstoy
+```
+  </td>
+</tr>
+</table>
+
+</tip-box>
+
+As to be expected, you can get your classes to work with each other.
+
+<tip-box> 
+
+:package: In this example we define a `ReadingList` class that can store a list of `Book` objects.
+<table> 
+<tr>
+  <td>
+
+```python
+class ReadingList:
+  
+  def __init__(self, initial_list):
+    self.books = initial_list
+    
+  def add_book(self, book):
+    self.books.append(book)
+    
+  def show_authors(self):
+    for b in self.books:
+      print(b.author)
+      
+my_list = ReadingList([book1]) # book1 defined in a previous example 
+my_list.add_book(book2) # book2 defined in a previous example
+my_list.show_authors()
+```
+  </td>
+  <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+  <td valign="bottom">
+
+```
+Leo Tolstoy
+Sun Tzu
+```
+  </td>
+</tr>
+</table>
+
 </tip-box>

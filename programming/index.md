@@ -64,6 +64,8 @@
   * [File Paths](toc/files.html#file-paths)
 * [**Object-Oriented Programming**](toc/oop.html)
   * [Classes](toc/oop.html#classes)
+  * [Class-Level Members](toc/oop.html#class-level-members)
+  * [Visibility](toc/oop.html#visibility)
 * More topics to be added ...
 
 
