@@ -58,10 +58,14 @@
   * [Working with Strings](toc/strings.html#working-with-strings)
   * [String Methods](toc/strings.html#string-methods)
 * [**Files**](toc/files.html)
-  * [File Paths](toc/files.html#file-paths)
   * [Reading from Files](toc/files.html#reading-from-files)
   * [Writing to Files](toc/files.html#writing-to-files)
   * [CSV Files](toc/files.html#csv-files)
+  * [File Paths](toc/files.html#file-paths)
+* [**Object-Oriented Programming**](toc/oop.html)
+  * [Classes](toc/oop.html#classes)
+  * [Class-Level Members](toc/oop.html#class-level-members)
+  * [Visibility](toc/oop.html#visibility)
 * More topics to be added ...
 
 
