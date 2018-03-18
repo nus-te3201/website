@@ -103,6 +103,7 @@
 <include src="../book/oopDesign/objects/encapsulation/print.md" />
 
 </div> <!-- handout--oop-objects -->
+<div id="handout-classes-associations">
 
 ## Classes
 
@@ -126,6 +127,8 @@
 
 <include src="../book/oopDesign/associations/aggregation/print.md" />
 <include src="../book/oopImplementation/aggregation/print.md" />
+
+</div><!-- handout--classes -->
 
 ## Inheritance
 
