@@ -11,9 +11,10 @@
 <dynamic-panel src="week5/index.md" header="{{iconDone}} Week 5 [Feb 12]" no-close />
 <dynamic-panel src="week6/index.md" header="{{iconDone}} Week 6 [Feb 19]" no-close />
 <dynamic-panel src="week7/index.md" header="{{iconDone}} Week 7 [Mar 5]" no-close />
+<dynamic-panel src="week8/index.md" header="{{iconDone}} Week 8 [Mar 12]" no-close />
 
-<panel header="{{iconCurrent}} Week 8 [Mar 12]" expanded no-close>
-  <include src="week8/index.md"/>
+<panel header="{{iconCurrent}} Week 9 [Mar 19]" expanded no-close>
+  <include src="week9/index.md"/>
 </panel><p/>
 
 %%:construction: Remaining weeks will be added incrementally over the semester.%%

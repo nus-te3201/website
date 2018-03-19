@@ -1,23 +1,67 @@
 ### Learning Outcomes
 
-#### Testing
+#### OOP
 
-<panel type="success" header="**`W8.1` Can semi-automate regression testing of CLI apps**" no-close>
+<panel type="success" header="**`W9.1` Can describe classes in an OOP design**" no-close>
 
-  <panel type="success" header="`W8.1a` Can explain testing" expanded no-close>
-    <include src="../../book/testing/introduction/what/full.md" />
+  <panel type="success" header="`W9.1a` Can explain classes" expanded no-close>
+    <include src="../../book/oopDesign/classes/basic/full.md" />
   </panel>
   
-  <panel type="success" header="`W8.1b` Can explain test automation" expanded no-close>
-    <include src="../../book/testing/testAutomation/what/full.md" />
+  <panel type="success" header="`W9.1b` Can implement basic classes" expanded no-close>
+    <include src="../../book/oopImplementation/classes/full.md" />
   </panel>  
   
-  <panel type="success" header="`W8.1b` Can semi-automate testing of a CLI" expanded no-close>
-    <include src="../../book/testing/testAutomation/testingTextUis/full.md" />
+  <panel type="success" header="`W9.1c` Can explain class-level members" expanded no-close>
+    <include src="../../book/oopDesign/classes/classLevelMembers/full.md" />
+  </panel>
+  
+  <panel type="success" header="`W9.1d` Can implement class-level members" expanded no-close>
+    <include src="../../book/oopImplementation/classLevelMembers/full.md" /> 
   </panel>  
   
-  <panel type="success" header="`W8.1b` Can explain regression testing" expanded no-close>
-    <include src="../../book/testing/testingTypes/regressionTesting/what/full.md" />
+</panel>
+
+<panel type="success" header="**`W9.2` Can describe associations in an OOP design**" no-close>
+
+  <panel type="success" header="`W9.2a` Can explain associations" expanded no-close>
+    <include src="../../book/oopDesign/associations/basic/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W9.2b` Can explain navigability" expanded no-close>
+    <include src="../../book/oopDesign/associations/navigability/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W9.2c` Can explain multiplicity" expanded no-close>
+    <include src="../../book/oopDesign/associations/multiplicity/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W9.2d` Can explain implement associations" expanded no-close>
+    <include src="../../book/oopImplementation/associations/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W9.2e` Can explain dependencies" expanded no-close>
+    <include src="../../book/oopDesign/associations/dependencies/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W9.2f` Can implement dependencies" expanded no-close>
+    <include src="../../book/oopImplementation/dependencies/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W9.2g` Can explain composition" expanded no-close>
+    <include src="../../book/oopDesign/associations/composition/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W9.2h` Can implement composition" expanded no-close>
+    <include src="../../book/oopImplementation/composition/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W9.2i` Can explain aggregation" expanded no-close>
+    <include src="../../book/oopDesign/associations/aggregation/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W9.2j` Can implment aggregation" expanded no-close>
+    <include src="../../book/oopImplementation/aggregation/full.md" />
   </panel>
 
 </panel>
@@ -25,30 +69,33 @@
 
 #### Programing Basics
 
-<panel type="warning" header="**`W8.2` Can work with files**" no-close>
+<panel type="warning" header="**`W9.3` Can implement a basic OOP design**" no-close>
 
-  <panel type="warning" header="`W8.2a` Can work with file paths" expanded no-close>
-    <include src="../../programming/files-paths/text.md" />
+  <panel type="warning" header="`W9.3a` Can implement classes" expanded no-close>
+    <include src="../../programming/oop-classes/text.md" />
   </panel>
-  <panel type="warning" header="`W8.2b` Can read from a text file" expanded no-close>
-    <include src="../../programming/files-reading/text.md" />
+  <panel type="warning" header="`W9.3b` Can implement class-level members" expanded no-close>
+    <include src="../../programming/oop-classLevelMembers/text.md" />
   </panel>
-  <panel type="warning" header="`W8.2c` Can write to a text file" expanded no-close>
-    <include src="../../programming/files-writing/text.md" />
-  </panel>
-  <panel type="warning" header="`W8.2d` Can work with CSV files" expanded no-close>
-    <include src="../../programming/files-csv/text.md" />
+  <panel type="warning" header="`W9.3c` Can implement member visibility" expanded no-close>
+    <include src="../../programming/oop-visibility/text.md" />
   </panel>
 
 </panel>
 
+<panel type="warning" header="**`W9.4` Can use third-party modules**" no-close>
+  <include src="../../programming/thirdparty/text.md" />
+</panel>
+
 <br><br>
 
-:dart: At the end of this week you should be able to do something similar to the exercise given below (in your programming language/environment of choice):
+:dart: At the end of this week you should be able to do the following (in your programming language/environment of choice):
 
 <panel header=" Evidence of achieving the LO" no-close>
 
-**Exercise from `W8.2d`:**<br>
-  <include src="../../programming/files-csv/e-calculateGst.md" /><p/>
+* Define and use multiple classes
+* Use class-level members
+* Use member visibility
+
 </panel>
 

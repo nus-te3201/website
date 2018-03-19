@@ -39,84 +39,91 @@
     <panel src="/website\schedule\week5\index._include_.html" header=":white_check_mark: Week 5 [Feb 12]" no-close="true" isOpen="false" no-switch="true"></panel>
     <panel src="/website\schedule\week6\index._include_.html" header=":white_check_mark: Week 6 [Feb 19]" no-close="true" isOpen="false" no-switch="true"></panel>
     <panel src="/website\schedule\week7\index._include_.html" header=":white_check_mark: Week 7 [Mar 5]" no-close="true" isOpen="false" no-switch="true"></panel>
+    <panel src="/website\schedule\week8\index._include_.html" header=":white_check_mark: Week 8 [Mar 12]" no-close="true" isOpen="false" no-switch="true"></panel>
   </p>
-  <panel header=":exclamation: Week 8 [Mar 12]" expanded="" no-close="">
+  <panel header=":exclamation: Week 9 [Mar 19]" expanded="" no-close="">
     <div>
       <h3 id="learning-outcomes">Learning Outcomes</h3>
-      <h4 id="testing">Testing</h4>
-      <panel type="success" header="**`W8.1` Can semi-automate regression testing of CLI apps**" no-close="">
-        <panel type="success" header="`W8.1a` Can explain testing" expanded="" no-close="">
+      <h4 id="oop">OOP</h4>
+      <panel type="success" header="**`W9.1` Can describe classes in an OOP design**" no-close="">
+        <panel type="success" header="`W9.1a` Can explain classes" expanded="" no-close="">
           <div>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing →
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Classes →
 </span></strong>
               </span>
             </p>
             <div>
-              <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/introduction/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+              <h4 id="basic-one">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
             </div>
             <div id="main">
               <div>
-                <tip-box type="definition">
-                  <div>
-                    <p><strong>Testing</strong>: Testing is operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
-                  </div>
-                </tip-box>
-                <img src="/website/book/testing/introduction/what/images/diagram.png" height="220">
-                <p></p>
-                <p><strong>When testing, we execute a set of <em>test cases</em>.</strong> A test case specifies how to perform a test. At a minimum, it specifies the input to the <em>software under test (SUT)</em> and the expected behavior.</p>
-                <tip-box>
-                  <p>📦 Example: A minimal test case for testing a browser:</p>
-                  <ul>
-                    <li><strong>Input</strong> – Start the browser using a blank page (vertical scrollbar disabled). Then, load <code>longfile.html</code> located in the <code>test data</code> folder.</li>
-                    <li><strong>Expected behavior</strong> – The scrollbar should be automatically enabled upon loading <code>longfile.html</code>.</li>
-                  </ul>
-                </tip-box>
-                <p><strong>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</strong></p>
-                <panel header="%%Other details a test case can contain :two:%%" type="seamless">
-                  <p>A more elaborate test case can have other details such as those given below.</p>
-                  <ul>
-                    <li>A unique identifier : <span class="dimmed">e.g. TC0034-a</span></li>
-                    <li>A descriptive name: <span class="dimmed">e.g. vertical scrollbar activation for long web pages</span></li>
-                    <li>Objectives: <span class="dimmed">e.g. to check whether the vertical scrollbar is correctly activated when a long web page is loaded to the browser</span></li>
-                    <li>Classification information: <span class="dimmed">e.g. priority - medium, category - UI features</span></li>
-                    <li>Cleanup, if any: <span class="dimmed">e.g. empty the browser cache.</span></li>
-                  </ul>
-                  <p></p>
-                </panel>
-                <p></p>
-                <p>For each test case we do the following:</p>
+                <p><strong>Writing an OOP program is essentially writing instructions that the computer uses to,</strong></p>
                 <ol>
-                  <li>Feed the input to the SUT</li>
-                  <li>Observe the actual output</li>
-                  <li>Compare actual output with the expected output</li>
+                  <li><strong>create the virtual world of object network, and</strong></li>
+                  <li><strong>provide it the inputs to produce the outcome we want.</strong></li>
                 </ol>
-                <p><strong>A test case <em>failure</em> is a mismatch between the expected behavior and the actual behavior. A failure is caused by a <em>defect</em> (or a bug).</strong></p>
+                <p><strong>A <mark><em>class</em></mark> contains instructions for creating a specific kind of objects</strong>. It turns out sometimes multiple objects have the same behavior because they are of the same kind. Instructions for creating a
+                  one kind (or ‘class’) of objects can be done in one go and use that same instructions to instantiate (i.e. create) objects of that kind. We call such instructions a <em>Class</em>.</p>
                 <tip-box>
-                  <p>📦 Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing that failure could be an uninitialized variable.</p>
+                  <p>📦 Classes and objects in an example scenario</p>
+                  <p>When writing an OOP program to calculate the average age of Adam, Beth, Charlie, and Daisy, instructions for creating objects <code>Adam</code>, <code>Beth</code>, <code>Charlie</code>, and <code>Daisy</code> will be very similar because
+                    they are all of the same kind : they all represent ‘persons’ with the same interface, the same kind of data (i.e. <code>name</code>, <code>DoB</code>, etc.), and the same kind of behavior (i.e. <code>getAge(Date)</code>, <code>getName()</code>,
+                    etc.). Therefore, we can have a class called <code>Person</code> containing instructions on how to create <code>Person</code> objects and use that class to instantiate objects <code>Adam</code>, <code>Beth</code>, <code>Charlie</code>,
+                    and <code>Daisy</code>. Similarly, we need classes <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> classes to instantiate one each of <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> objects.</p>
                 </tip-box>
-                <panel header="%%A deeper look at the definition of testing :three:%%" type="seamless">
-                  <p>Here is another definition of testing:</p>
-                  <blockquote>
-                    <p>Software testing consists of the <em>dynamic</em> verification that a program provides <em>expected</em> behaviors on a <em>finite</em> set of test cases, suitably <em>selected</em> from the usually infinite execution domain. <sub>-– source: <a href="https://www.computer.org/web/swebok/v3">Software Engineering Book of Knowledge V3</a></sub></p>
-                  </blockquote>
-                  <p>Some things to note (indicated by keywords in the above definition):</p>
-                  <ul>
-                    <li><em>Dynamic</em>: Testing involves executing the software. It is not by examining the code statically.</li>
-                    <li><em>Finite</em>: In most non-trivial cases there are potentially infinite test scenarios but resource constraints dictate that we can test only a finite number of scenarios.</li>
-                    <li><em>Selected</em>: In most cases it is not possible to test all scenarios. That means we need to select what scenarios to test.</li>
-                    <li><em>Expected</em>: Testing requires some knowledge of how the software is expected to behave.</li>
-                  </ul>
-                  <p></p>
-                </panel>
+
+                <p>Let us use the UML notation to illustrate classes and objects under discussion.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Classes" expanded="" fragment="title-and-body"></panel>
+                  <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Object Diagrams → Objects" expanded="" fragment="title-and-body"></panel>
+                </p>
                 <p></p>
+                <tip-box>
+                  <img src="/website/book/oopDesign/classes/basic/images/person.png" height="100">
+                  <p></p>
+                  <p><code>Person</code> class and some example instances of the <code>Person</code> class.</p>
+                </tip-box>
               </div>
               <div>
                 <div>
                   <panel header=":muscle: Exercises" expandable="">
                     <div>
-                      <panel header=":lock: Relate testing, test cases, failure, and defect">
-                        <question has-input="">
-                          <p>Explain how the concepts of <em>testing</em>, <em>test case</em>, <em>test failure</em>, and <em>defect</em> are related to each other.</p>
+                      <panel header=":lock: Identify Classes and Objects">
+                        <question>
+                          <p>Consider the following scenario. If you were to simulate this in an OOP program, what are the classes and the objects you would use? Use UML notation to give your answer.</p>
+                          <tip-box>
+                            John gave a checque to the Cashier to pay for the LoTR and GoT books he bought.
+                          </tip-box>
+                          <div slot="hint">
+                            <table class="markbind-table table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Class</th>
+                                  <th>Objects</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><code>Customer</code></td>
+                                  <td><code>John</code></td>
+                                </tr>
+                                <tr>
+                                  <td><code>Book</code></td>
+                                  <td><code>LoTR</code> <code>GoT</code></td>
+                                </tr>
+                                <tr>
+                                  <td><code>Cheque</code></td>
+                                  <td><code>checqueJohnGave</code></td>
+                                </tr>
+                                <tr>
+                                  <td><code>Cashier</code></td>
+                                  <td><code>bookshopCashier</code></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </question>
                       </panel>
                     </div>
@@ -126,174 +133,100 @@
             </div>
           </div>
         </panel>
-        <panel type="success" header="`W8.1b` Can explain test automation" expanded="" no-close="">
+        <panel type="success" header="`W9.1b` Can implement basic classes" expanded="" no-close="">
           <div>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
+            <div>
+              <p>
+                <panel src="/website\book\oopDesign\classes\basic\full._include_.html" header="%%:mortar_board: Design → OOP → Classes → Basic%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
 </span></strong>
               </span>
             </p>
             <div>
-              <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/testAutomation/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+              <h4 id="implementing-classes-one">Implementing Classes <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
             </div>
             <div id="main">
               <div>
+                <p>Given below are some resources on how to implement classes:</p>
                 <tabs>
                 
-                  <tab header=":abc:">
-                    <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests
-                      repeatedly and increases precision of testing (because manual testing is susceptible to human errors).</p>
-                    <p>
-                      <hr>
-                    </p>
+                  <tab header="Java">
+                    <ul>
+                      <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables</a> – Start from the linked page and follow the next few steps in the tutorial</li>
+                    </ul>
+                    <p></p>
                   </tab>
                 
-                  <tab header=":tv:">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe>
-                    <p>
-                      <hr>
-                    </p>
+                  <tab header="Python">
+                    <ul>
+                      <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#classes">Python Programming Basics: OOP: Classes</a> - Basics of writing classes using Python</li>
+                    </ul>
+                    <p></p>
                   </tab>
                 </tabs>
-              </div>
-              <div>
-                <div>
-                  <panel header=":paperclip: Resources">
-                    <p><strong>Side readings:</strong></p>
-                    <ul>
-                      <li>[Quora post] <a href="href=%22http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
-                      <li>[Quora post] <a href="http://www.quora.com/What-kind-of-automated-testing-should-a-startup-have-from-the-beginning-through-the-first-six-months-of-live-operation/answer/Zach-Brock">Is automated testing relevant to startups?</a></li>
-                    </ul>
-                  </panel>
-                </div>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="success" header="`W8.1b` Can semi-automate testing of a CLI" expanded="" no-close="">
-          <div>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
-</span></strong>
-              </span>
-            </p>
-            <div>
-              <h4 id="automated-testing-of-cli-apps-one">Automated Testing of CLI Apps <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/testAutomation/testingTextUis/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
-            </div>
-            <div id="main">
-              <div>
-                <p><strong>A simple way to semi-automate testing of a CLI(Command Line Interface) app is by using input/output re-direction.</strong></p>
-                <ul>
-                  <li>First, we feed the app with a sequence of test inputs that is stored in a file while redirecting the output to another file.</li>
-                  <li>Next, we compare the actual output file with another file containing the expected output.</li>
-                </ul>
-                <p>Let us assume we are testing a CLI app called <code>AddressBook</code>. Here are the detailed steps:</p>
-                <ol>
-                  <li>
-                    <p>Store the test input in the text file <code>input.txt</code>.</p>
-                    <panel header="%%:package: Example `input.txt`%%" type="seamless">
-                      <pre class="hljs"><code>add Valid Name p/12345 valid@email.butNoPrefix
-add Valid Name 12345 e/valid@email.butPhonePrefixMissing
-</code></pre>
-                    </panel>
-                  </li>
-                  <li>
-                    <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                    <panel header="%%:package: Example `expected.txt`%%" type="seamless">
-                      <pre class="hljs"><code>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
-Invalid command format: add 
-
-Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
-Invalid command format: add 
-</code></pre>
-                    </panel>
-                  </li>
-                  <li>
-                    <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
-                    <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
-</code></pre>
-                    <ul>
-                      <li>
-                        <p>💡 The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code> file, use the command<br>
-                          <code>python AddressBook.py &lt; input.txt &gt; output.txt</code></p>
-                      </li>
-                      <li>
-                        <p>💡 If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
-                      </li>
-                    </ul>
-                    <panel header="%%More on the `>` operator and the `<` operator. :zero:%%" alt="I/O redirection info" type="seamless">
-                      <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code>                        operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
-                      <pre><code class="hljs sh">java AddressBook &gt; output.txt 
-</code></pre>
-                      <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other
-                        filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
-                      <tip-box>
-                        <p>📎 Resources:</p>
-                        <ul>
-                          <li><a href="http://technet.microsoft.com/en-us/library/bb490982.aspx">Using command redirection operators in Windows</a></li>
-                        </ul>
-                      </tip-box>
-                      <p></p>
-                    </panel>
-                    <p></p>
-                  </li>
-                  <li>
-                    <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as <em>WinMerge</em>.</p>
-                    <pre class="hljs"><code>FC output.txt expected.txt
-</code></pre>
-                  </li>
-                </ol>
-                <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
-                <div>
-                  <popover id="pop:cli" placement="top">
-                    <div slot="content">
-                      <div>
-                        <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
-                      </div>
-                    </div>
-                  </popover>
-                </div>
+                <hr>
               </div>
               <div></div>
             </div>
           </div>
         </panel>
-        <panel type="success" header="`W8.1b` Can explain regression testing" expanded="" no-close="">
+        <panel type="success" header="`W9.1c` Can explain class-level members" expanded="" no-close="">
           <div>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Regression Testing →
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Classes →
 </span></strong>
               </span>
             </p>
             <div>
-              <h4 id="what-one-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/testing/testingTypes/regressionTesting/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+              <h4 id="class-level-members-two">Class Level Members <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
             </div>
             <div id="main">
               <div>
-                <p><strong>When we modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
-                <p><strong><em>Regression testing</em> is re-testing the software to detect regressions.</strong> Note that to detect regressions, we need to retest all related components, even if they were tested before.</p>
-                <p>Regression testing is more effective when it is done frequently, after each small change. However, doing so can be prohibitively expensive if testing is done manually. Hence, <strong>regression testing is more practical when it is automated</strong>.</p>
+                <p>While all objects of a class has the same attributes, each object has its own copy of the attribute value.</p>
+                <tip-box>
+                  <p>📦 All <code>Person</code> objects have the <code>Name</code> attribute but the value of that attribute varies between <code>Person</code> objects.</p>
+                </tip-box>
+                <p>However, some attributes are not suitable to be maintained by individual objects. Instead, they should be maintained centrally, shared by all objects of the class. They are like ‘global variables’ but attached to a specific class. Such
+                  <strong>variables whose value is shared by all instances of a class are called <mark><em>class level attributes</em></mark></strong>.</p>
+                <tip-box>
+                  <p>📦 The attribute <code>totalPersons</code> should be maintained centrally and shared by all <code>Person</code> objects rather than copied at each <code>Person</code> object.</p>
+                </tip-box>
+                <p>Similarly, when a normal method is being called, a message is being sent to the receiving object and the result may depend on the receiving object.</p>
+                <tip-box>
+                  <p>📦 Sending the <code>getName()</code> message to <code>Adam</code> object results in the response <code>&quot;Adam&quot;</code> while sending the same message to the <code>Beth</code> object gets the response <code>&quot;Beth&quot;</code>.</p>
+                </tip-box>
+                <p>However, there can be methods related to a specific class but not suitable for sending message to a specific object of that class. Such <strong>methods that are called using the class instead of a specific instance are called <mark><em>class-level methods</em></mark></strong>.</p>
+                <tip-box>
+                  <p>📦 The method <code>getTotalPersons()</code> is not suitable to send to a specific <code>Person</code> object <span class="dimmed">because a specific object of the <code>Person</code> class should not know about the total number of <code>Person</code> objects</span>.</p>
+                </tip-box>
+                <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code>                  to identify class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\classLevelMembers\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Class Level Members" expanded="" fragment="title-and-body"></panel>
+                  <p></p>
+                </p>
               </div>
               <div>
                 <div>
                   <panel header=":muscle: Exercises" expandable="">
                     <div>
-                      <panel header=":lock::key: Regression Testing defintion T/F?">
+                      <panel header=":lock::key: Suitable as a class-level variables">
                         <question>
-                          <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
-                          <ul radio-group="63d56" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> a. True</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> b. False</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> c. Partially true</label></li>
+                          <p>Which of these are suitable as class-level variables?</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pac Man game, Class: <code>Player</code>, variable: <code>totalScore</code></li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: <code>Course</code>, variable: <code>totalStudents</code></li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: <code>Task</code>, variable: <code>totalPendingTasks</code></li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: <code>ArrayList</code>, variable: <code>total</code> (i.e., total items in a given <code>ArrayList</code> object)</li>
                           </ul>
                           <div slot="answer">
-                            <p>c.</p>
-                            <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
+                            <p>(c)</p>
+                            <p>Explanation: <code>totalPendingTasks</code> should not be managed by individual <code>Task</code> objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance
+                              level as their value varies from instance to instance. e.g., <code>totalStudents</code> for one <code>Course</code> object will differ from <code>totalStudents</code> of another.</p>
                           </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header=":lock: Explain regression testing">
-                        <question has-input="">
-                          <p>Explain why and when you would do regression testing in a software project.</p>
                         </question>
                       </panel>
                     </div>
@@ -303,967 +236,1251 @@ Invalid command format: add
             </div>
           </div>
         </panel>
+        <panel type="success" header="`W9.1d` Can implement class-level members" expanded="" no-close="">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\oopDesign\classes\classLevelMembers\full._include_.html" header="%%:mortar_board: Design → OOP → Classes → Class-Level Members%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="implementing-class-level-members-one">Implementing Class-Level Members <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Some resources to learn how to implement class-level members:</p>
+                <tabs>
+                
+                  <tab header="Java">
+                    <ul>
+                      <li>
+                        <p><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html">Oracle’s official Java tutorial on class-level members</a></p>
+                      </li>
+                    </ul>
+                  </tab>
+                
+                  <tab header="Python">
+
+                    <li>
+                      <p><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#class-level-members">Python Programming Basics: OOP: Class-Level Members</a></p>
+                    </li>
+
+                    <p></p>
+                  </tab>
+                </tabs>
+                <hr>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+      </panel>
+      <panel type="success" header="**`W9.2` Can describe associations in an OOP design**" no-close="">
+        <panel type="success" header="`W9.2a` Can explain associations" expanded="" no-close="">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="basic-one-2">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such <strong>connections between objects are called <em>associations</em>.</strong></p>
+                <p>
+                  <panel src="/website\book\uml\objectDiagrams\associations\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Object Diagrams → Associations → What" expanded="" fragment="title-and-body"></panel>
+                </p>
+                <p></p>
+                <tip-box>
+                  <p>📦 An object diagram example showing associations among objects. <span class="dimmed">For example, there is an association between the <code>AgeList</code> object and the <code>Main</code> object.</span></p>
+                  <img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
+                <p><strong>Associations in an object structure can change over time</strong>.</p>
+                <tip-box>
+                  <p>📦 In this example, the associations in the object structure have changed <span class="dimmed">(from left to right) due to a new <code>Person</code> object being connected to the <code>Main</code> object.</span></p>
+                  <p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculator.png" height="100">   →
+                    <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorAdam.png" height="100"></p>
+                </tip-box>
+                <p><strong>Associations among objects are reflected correspondingly in the class diagram too</strong>, as it is the class diagram that dictates the nature of the associations allowed in the object structures.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\associations\basic\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Associations → Basic" expanded="" fragment="title-and-body"></panel>
+                </p>
+                <tip-box>
+                  <p>📦 An example class diagram showing associations between classes.</p>
+                  <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
+                  <p></p>
+                </tip-box>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Associations → Roles" expanded="" fragment="title-and-body"></panel>
+                  <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Associations → Labels" expanded="" fragment="title-and-body"></panel>
+                </p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W9.2b` Can explain navigability" expanded="" no-close="">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="navigability-one">Navigability <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>When two classes are linked by an association, it does not necessarily mean both classes know about each other. <strong>The concept of which class in the association knows about the other class is called <em>navigability</em>.</strong></p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Navigability" expanded="" fragment="title-and-body"></panel>
+                </p>
+                <p></p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: What does the navigability given by this diagram mean?">
+                        <question>
+                          <img src="/website/book/oopDesign/associations/navigability/images/unitItem.png" height="100">
+                          <p></p>
+                          <ul radio-group="6c65f" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="6c65f" type="radio"> a. A <code>Unit</code> object knows about the <code>Item</code> object it is linked to</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="6c65f" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="6c65f" type="radio"> c. Depends on the programming language</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(a)</p>
+                            <p>Explanation: The diagram indicates that <code>Unit</code> object should know about the <code>Item</code> object. In the implementation, the <code>Unit</code> object will hold a <code>Unit</code> object in one of its variables.</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W9.2c` Can explain multiplicity" expanded="" no-close="">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="multiplicity-two">Multiplicity <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>Multiplicity</em> is the aspect of an OOP solution that dictates how many objects take part in each association.</strong></p>
+                <tip-box>
+                  <p>📦 This class diagram does not tell us multiplicities. For exaple, how many <code>Calculator</code> objects can be associated with one <code>Main</code> object? How many <code>Main</code> objects can be associated with one <code>Calculator</code>                    object? and so on.</p>
+                  <img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100"></tip-box>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Multiplicity" expanded="" fragment="title-and-body"></panel>
+                </p>
+                <p></p>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which statement agrees with the  multiplicity shown in this diagram?">
+                        <question>
+                          <img src="/website/book/oopDesign/associations/multiplicity/images/unitItem.png" height="100">
+                          <p></p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Unit</code> object can be linked to any number of <code>Item</code> objects</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An <code>Item</code> object must be linked 1,2,3 or 4 <code>Unit</code> objects.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Unit</code> object must be linked 1,2,3, or 4 <code>Item</code> objects</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Item</code> object can be 0 or more <code>Unit</code> objects.</li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(c)(d)</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W9.2d` Can explain implement associations" expanded="" no-close="">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\modeling\modelingStructures\classDiagramsBasic\full._include_.html" header="%%:mortar_board: Design → Modelling Structure → Class Diagrams%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="implementing-associations-one">Implementing Associations <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p></p>
+                <p><strong>We use instance level variables to implement associations.</strong></p>
+                <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
+                <tip-box>
+                  <img src="/website/book/oopImplementation/associations/images/logicMinefield.png" height="40">
+                  <p></p>
+                  <div>
+                    <table>
+                      <tr>
+                      
+                        <td>
+                          <p>Java ⤵️</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
+    Minefield minefield;
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span></span>{
+    ...
+}
+
+
+
+</code></pre>
+                          <p></p>
+                        </td>
+                      
+                        <td valign="bottom">  <br><br></td>
+                      
+                        <td valign="bottom">
+                          <p>Python ⤵️</p>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
+    self.minefield = minefield
+    
+  <span class="hljs-comment"># ...</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
+  <span class="hljs-comment"># ...</span>
+</code></pre>
+                          <p></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </tip-box>
+                <p><strong>A variable can be used to implement a <code>1</code> multiplicity too</strong> (also called <em>compulsory associations</em>).</p>
+                <tip-box>
+                  <img src="/website/book/oopImplementation/associations/images/logicConfigGenerator.png" height="40">
+                  <p></p>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+    ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
+    ...
+}
+</code></pre>
+                      <p></p>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.config_gen = ConfigGenerator()
+</code></pre>
+                      <p></p>
+                    </tab>
+                  </tabs>
+                  <hr>
+                </tip-box>
+                <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
+                <tip-box>
+                  <img src="/website/book/oopImplementation/associations/images/fooBar.png" height="40">
+                  <p></p>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <p>Java ⤵️</p>
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+    Bar bar;
+    <span class="hljs-comment">//...</span>
+}
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
+    Foo foo;
+    <span class="hljs-comment">//...</span>
+}
+
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td valign="bottom">  <br><br></td>
+                    
+                      <td valign="bottom">
+                        <p>Python ⤵️</p>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, bar)</span>:</span>
+    self.bar = bar;
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, foo)</span>:</span>
+    self.foo = foo;
+    
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </tip-box>
+                <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
+                <tip-box>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <p>Java ⤵️</p>
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+    Cell[][] cell;
+    ...
+}
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td valign="bottom">  <br><br></td>
+                    
+                      <td valign="bottom">
+                        <p>Python ⤵️</p>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.cells = {<span class="hljs-number">1</span>:[], <span class="hljs-number">2</span>:[], <span class="hljs-number">3</span>:[]}
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Class Diagram for code">
+                        <question>
+                          <tabs>
+                          
+                            <tab header="Java">
+                              <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
+                              <ul>
+                                <li>Make the multiplicities as strict as possible without contradicting the code.</li>
+                                <li>You may omit the <code>Main</code> class from both diagrams.</li>
+                              </ul>
+                              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Item item1 = <span class="hljs-keyword">new</span> Item();
+        Item item2 = <span class="hljs-keyword">new</span> Item();
+        Box box1 = <span class="hljs-keyword">new</span> Box(item1);
+        Box box2 = <span class="hljs-keyword">new</span> Box(item2);
+        item2.setMainCard(<span class="hljs-keyword">new</span> Card());
+        item2.addPreviousBox(box1);
+        item2.addPreviousBox(box2);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span></span>{
+    <span class="hljs-keyword">private</span> Item item;
+    Box (Item item){
+        <span class="hljs-keyword">this</span>.item = item;
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span>{
+    <span class="hljs-keyword">private</span> List&lt;Box&gt; previousBoxes = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-keyword">private</span> Card mainCard = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">private</span> Card subCard = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setMainCard</span><span class="hljs-params">(Card card)</span></span>{
+        <span class="hljs-keyword">this</span>.mainCard = card;
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSubCard</span><span class="hljs-params">(Card card)</span></span>{
+        <span class="hljs-keyword">this</span>.subCard = card;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPreviousBox</span><span class="hljs-params">(Box previousBox)</span></span>{
+        previousBoxes.add(previousBox);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span></span>{
+    
+}
+</code></pre>
+                            </tab>
+                          
+                            <tab header="Python">
+                              <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running the code. Make the multiplicities as strict as possible without contradicting the code.</p>
+                              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, item)</span>:</span>
+    self.__item = item <span class="hljs-comment"># type: Item</span>
+    
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.__previous_boxes = [] <span class="hljs-comment"># type: list of Box objects</span>
+    self.__main_card = <span class="hljs-keyword">None</span>    <span class="hljs-comment"># type: Car</span>
+    self.__sub_card = <span class="hljs-keyword">None</span>     <span class="hljs-comment"># type: Card</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_main_card</span><span class="hljs-params">(self, card)</span>:</span>
+    self.__main_card = card <span class="hljs-comment"># type: Card</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_sub_card</span><span class="hljs-params">(self, card)</span>:</span>
+    self.__sub_card = card <span class="hljs-comment"># type: Card</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_previous_box</span><span class="hljs-params">(self, previous_box)</span>:</span>
+    self.__previous_boxes.append(previous_box)
+    
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span>:</span>
+  <span class="hljs-keyword">pass</span>
+
+
+item1 = Item();
+item2 = Item();
+box1 = Box(item1);
+box2 = Box(item2);
+item2.set_main_card(Card());
+item2.add_previous_box(box1);
+item2.add_previous_box(box2);
+</code></pre>
+                            </tab>
+                          </tabs>
+                          <hr>
+                          <div slot="answer">
+                            <img src="/website/book/oopImplementation/associations/images/classDiagramForCodeAnswer.png" width="600"></div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock: Object Diagrams for Class Diagram">
+                        <question>
+                          <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
+                          <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                          <p></p>
+                          <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
+                          <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagarm 1 → [diagarm 2] and so on.</p>
+                          <ol>
+                            <li>
+                              <p>There are no persons.</p>
+                            </li>
+                            <li>
+                              <p><code>Alfred</code> is the Guardian of <code>Bruce</code>.</p>
+                            </li>
+                            <li>
+                              <p><code>Bruce</code>'s contact number is the same as <code>Alfred</code>'s.</p>
+                            </li>
+                            <li>
+                              <p><code>Alfred</code> is also the guardian of another person. That person lists <code>Alfred</code>s home address as his home address as well as office address.</p>
+                            </li>
+                            <li>
+                              <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
+                            </li>
+                          </ol>
+                          <div slot="hint">
+                            <p>After step 2, the diagram should be like this:</p>
+                            <img src="/website/book/oopImplementation/associations/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header=":lock: Implement Class Diagram">
+                        <question>
+                          <p>Implement the class structure given below:</p>
+                          <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                          <p></p>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W9.2e` Can explain dependencies" expanded="" no-close="">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="dependencies-two">Dependencies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Dependencies are objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call <em>dependencies</em>.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\dependencies\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Dependencies" expanded="" fragment="title-and-body"></panel>
+                </p>
+                <p></p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W9.2f` Can implement dependencies" expanded="" no-close="">
+          <div>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="implementing-dependencies-two">Implementing Dependencies <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Dependencies result from interactions between objects that do not result in a long-term link between the said objects.</p>
+                <tip-box>
+                  <p>📦 In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
+                    <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <p>Java ⤵️</p>
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+    
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculate</span><span class="hljs-params">(Bar bar)</span></span>{
+        <span class="hljs-keyword">return</span> bar.getValue();
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{
+    <span class="hljs-keyword">int</span> value;
+    
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getValue</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> value;
+    }
+}
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td>  <br><br></td>
+                    
+                      <td valign="top">
+                        <p>Python ⤵️</p>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate</span><span class="hljs-params">(self, bar)</span>:</span>
+        <span class="hljs-keyword">return</span> bar.value;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span>:</span>
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, value)</span>:</span>
+      self.value = value
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                  <p>The code above results in this dependency.</p>
+                  <img src="/website/book/oopImplementation/dependencies/images/fooBarDependency.png" height="40"></tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W9.2g` Can explain composition" expanded="" no-close="">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="composition-two">Composition <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>A composition is an association that represents a strong <em>whole-part</em> relationship.</strong> When the <em>whole</em> is destroyed, <em>parts</em> are destroyed too.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\composition\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Composition" expanded="" fragment="title-and-body"></panel>
+                </p>
+                <p></p>
+                <tip-box>
+                  <p>📦 A <code>Board</code> (used for playing board games) consists of <code>Square</code> objects.</p>
+                  <img src="/website/book/oopDesign/associations/composition/images/boardSquare.png" height="50">
+                  <p></p>
+                </tip-box>
+                <p><strong>Composition also implies that there cannot be cyclical links</strong>.</p>
+                <tip-box>
+                  <p>📦 In this ‘sub-folder’ association, a <code>Folder</code> cannot be a sub-folder of itself. If the diamond is removed, it is no longer a composition relationship and technically, allows a folder to be sub-folder of itself.</p>
+                  <img src="/website/book/oopDesign/associations/composition/images/folder.png" height="80">
+                  <p></p>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W9.2h` Can implement composition" expanded="" no-close="">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="implementing-composition-two">Implementing Composition <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong>Composition too is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of the
+                  ‘whole’ object.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <img src="/website/book/oopImplementation/composition/images/carEngine.png" height="40">
+                  <p></p>
+                  <table>
+                    <tr>
+                    
+                      <td valign="top">
+                        <p>Java ⤵️</p>
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+    <span class="hljs-keyword">private</span> Engine engine;
+  ...
+}
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td>  <br><br></td>
+                    
+                      <td valign="top">
+                        <p>Python ⤵️</p>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.__engine = Engine()
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W9.2i` Can explain aggregation" expanded="" no-close="">
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Associations →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="aggregation-three">Aggregation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p><strong><em>Aggregation</em> represents a <em>container-contained</em> relationship.</strong> It is a weaker relationship than composition.</p>
+                <p>
+                  <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html#title-and-body" header=":mortar_board: Tools → UML → Class Diagrams → Aggregation" expanded="" fragment="title-and-body"></panel>
+                </p>
+                <p></p>
+                <tip-box>
+                  <p>📦 <code>Club</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>Club</code> object.</p>
+                  <img src="/website/book/oopDesign/associations/aggregation/images/clubPerson.png" height="80">
+                  <p></p>
+                </tip-box>
+                <tip-box type="tip">
+                  <p><strong>Aggregation vs Composition</strong></p>
+                  <p>The distinction between composition (◆) and aggregation (◇) is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether because using it adds more confusion than clarity.</p>
+                </tip-box>
+              </div>
+              <div>
+                <div>
+                  <panel header=":muscle: Exercises" expandable="">
+                    <div>
+                      <panel header=":lock::key: Which one is not recommended to use?">
+                        <question>
+                          <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
+                          <ul radio-group="29b56" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
+                          </ul>
+                          <div slot="answer">
+                            <p>(b)</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="success" header="`W9.2j` Can implment aggregation" expanded="" no-close="">
+          <div>
+            <div>
+              <p>
+                <panel src="/website\book\oopDesign\associations\aggregation\full._include_.html" header="%%:mortar_board: Design → OOP → Associations → Aggregation%%" isOpen="false" no-close="true" no-switch="true"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+              </span>
+            </p>
+            <div>
+              <h4 id="implementing-aggregation-two">Implementing Aggregation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+            </div>
+            <div id="main">
+              <div>
+                <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
+                <tip-box>
+                  <p>📦 Example:</p>
+                  <img src="/website/book/oopImplementation/aggregation/images/carPerson.png" height="40">
+                  <table>
+                    <tr>
+                    
+                      <td valign="top">
+                        <p>Java ⤵️</p>
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+    Person driver;
+    ...
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(Person p)</span> </span>{
+        driver = p;
+    }
+}
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td>  <br><br></td>
+                    
+                      <td valign="top">
+                        <p>Python ⤵️</p>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.__driver = <span class="hljs-keyword">None</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self, person)</span>:</span>
+    self.__driver = person
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </tip-box>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </panel>
       </panel>
       <h4 id="programing-basics">Programing Basics</h4>
-      <panel type="warning" header="**`W8.2` Can work with files**" no-close="">
-        <panel type="warning" header="`W8.2a` Can work with file paths" expanded="" no-close="">
+      <panel type="warning" header="**`W9.3` Can implement a basic OOP design**" no-close="">
+        <panel type="warning" header="`W9.3a` Can implement classes" expanded="" no-close="">
           <div>
-            <h3 id="file-paths">File Paths</h3>
-            <p>A file has a <em>filename</em> and a <em>path</em>. <strong>The <em>path</em> specifies the location of a file on the computer</strong>, as a hierarchy of <em>folders</em> (also called <em>directories</em>).</p>
-            <tip-box>
-              <tabs>
-              
-                <tab header="Windows">
-                  <p>📦 File <code>C:\photos\2018\home.jpg</code></p>
-                  <ul>
-                    <li>Filename: <code>home.jpg</code></li>
-                    <li>Path: <code>C:\photos\2018</code> (Windows uses the back slash <code>\</code> as the <em>separator</em> symbol in paths )</li>
-                    <li>Folders in the path (<code>C:</code> is called the <em>root folder</em>):
-                      <pre class="hljs"><code>C: {root}
-  ˪ photos
-      ˪ 2018
+            <h3 id="classes">Classes</h3>
+            <p>As you have seen already, Python has some built in object types (i.e., classes) such as <code>list</code>, <code>int</code>, <code>str</code>, etc. In addition, <strong>you can define your own classes</strong> in Python.</p>
+            <p>The syntax for defining a class:</p>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span>:</span>
+  <span class="hljs-comment"># &lt;statement-1&gt;</span>
+  .
+  .
+  .
+  <span class="hljs-comment"># &lt;statement-N&gt;</span>
 </code></pre>
-                    </li>
-                  </ul>
-                  <p>❗️ Windows file names and paths are not case sensitive: <code>C:\photos\2018\home.jpg</code> is same as <code>C:\PHOTOS\2018\HOME.JPG</code>.   </p>
-                </tab>
-              
-                <tab header="OS-X/Linux">
-                  <p>📦 File <code>/Users/john/home.jpg</code></p>
-                  <ul>
-                    <li>Filename: <code>home.jpg</code></li>
-                    <li>Path: <code>/Users/john</code> (OS-X/Linux uses the forward slash <code>/</code> as the <em>separator</em> symbol in paths )</li>
-                    <li>Folders in the path (the <code>/</code> at the start of the path is considered the <em>root folder</em>):
-                      <pre class="hljs"><code>/ {root}
-  ˪ Users
-      ˪ john
-</code></pre>
-                    </li>
-                  </ul>
-                  <p>❗️ OS-X/Linux file names and paths are case sensitive. <code>/Users/john/home.jpg</code> is NOT the same as <code>/USERS/JOHN/HOME.JPG</code></p>
-                  <p></p>
-                </tab>
-              </tabs>
-            </tip-box>
-            <p>The Python module <code>os</code> contains functions for dealing with files and folders. For example, you can use <code>os.getcwd()</code> to get the
-              <tooltip content="A program has a _working directory_ at any time; it can change over time">current working directory</tooltip> and <code>os.chdir()</code> to change the working directory to a different location.</p>
+            <p>💡 It is customary to use
+              <trigger trigger="click" for="modal:classes-camelcase">Upper Camel Case</trigger> for class names.</p>
+            <p>The syntax for <strong>creating (also called <em>instantiating</em>) an object</strong> of the class is <code>ClassName()</code>.</p>
+            <modal title="CamelCase" id="modal:classes-camelcase">
+              <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" alt="" width="200"><br></p>
+              <p>Camel Case refers to a styling text writing compound words or phrases such that each word or abbreviation in the middle of the phrase begins with a capital letter, with no intervening spaces or punctuation e.g., <code>freshAppleJuice</code>.
+                <em>Upper Camel Case</em> (also called <em>Pascal Case</em>) is similar to Camel Case except the first letter is capitalized as well e.g., <code>FreshAppleJuice</code>.</p>
+              <p><sub>[source: <a href="https://en.wikipedia.org/wiki/Camel_case">Wikipedia</a>]</sub></p>
+            </modal>
             <tip-box>
-              <p>📦 Example code showing how to print/change current working directory</p>
-              <table>
-                <tr>
-                
-                  <td>
-                    <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
+              <p>📦 The code below defines a class named <code>Employee</code>, creates two employee objects, and prints the class/type of each object.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span>:</span>
+  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># an empty class</span>
 
-cwd = os.getcwd() <span class="hljs-comment"># store current working dir</span>
-print(cwd) <span class="hljs-comment"># print current working dir</span>
-os.chdir(<span class="hljs-string">'C:\\temp\\python'</span>) <span class="hljs-comment"># change dir</span>
-print(os.getcwd()) <span class="hljs-comment"># print current working dir</span>
-os.chdir(cwd) <span class="hljs-comment"># change working dir back to original</span>
-print(os.getcwd())
+john = Employee() <span class="hljs-comment"># create an Employee object</span>
+print(type(john)) <span class="hljs-comment"># print type of the john object</span>
+alice = Employee()
+print(type(alice))
 </code></pre>
-                    <p></p>
-                  </td>
-                
-                  <td><br><br><br><br><br> → </td>
-                
-                  <td><br><br><br><br><br>
-                    <pre class="hljs"><code>C:\modules\te3201
-C:\temp\python
-C:\modules\te3201
+              <p>⤵️ <span class="dimmed">Note how the type of each object is given as <code>&lt;class 'Employee'&gt;</code> i.e., a class with name <code>Employee</code>.</span></p>
+              <pre class="hljs"><code>&lt;class 'Employee'&gt;
+&lt;class 'Employee'&gt;
 </code></pre>
-                    <p></p>
-                  </td>
-                </tr>
-              </table>
-              <p>💡 Note how the path <code>'C:\\temp\\python'</code> uses double slash to
-                <trigger trigger="click" for="modal:filePaths-stringsEscape">escape</trigger> the <code>\</code>. In OS-X or Linux, it can be something like <code>/user/john/python</code> (no need for double slash).</p>
-              <modal large="" title="**Escape Sequences** %%(extrat from Strings → String Literals)%%" id="modal:filePaths-stringsEscape">
-                <div>
-                  <p>An escape sequence is a sequence of characters in a string literal that is taken together and interpreted in a special way. You can <strong>use an <em>escape sequence</em>  to include a special character in a string literal</strong>                    without interpreting it as a special character. Given below are some examples:</p>
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Escape Sequence</th>
-                        <th>Meaning</th>
-                        <th>Example</th>
-                        <th>Output</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><code>\'</code></td>
-                        <td>single quote</td>
-                        <td><code>print('How\'s Life')</code></td>
-                        <td><code>How's Life?</code></td>
-                      </tr>
-                      <tr>
-                        <td><code>\&quot;</code></td>
-                        <td>double quote</td>
-                        <td><code>print(&quot;Say \&quot;wow\&quot;&quot;)</code></td>
-                        <td><code>Say &quot;wow&quot;</code></td>
-                      </tr>
-                      <tr>
-                        <td><code>\\</code></td>
-                        <td>back slash</td>
-                        <td><code>print('files\\text')</code></td>
-                        <td><code>files\text</code></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>Another use of escape sequences is to give a special meaning to a character that normally does not have a special meaning. Here are some examples:</p>
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Escape Sequence</th>
-                        <th>Meaning</th>
-                        <th>Example</th>
-                        <th>Output</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><code>\t</code></td>
-                        <td>horizontal tab</td>
-                        <td><code>print('aaa\tbbb')</code></td>
-                        <td><code>aaa</code> <code></code> <code>bbb</code></td>
-                      </tr>
-                      <tr>
-                        <td><code>\n</code></td>
-                        <td>line break</td>
-                        <td><code>print('hi\nthere!')</code></td>
-                        <td><code>hi</code><br><code>there!</code></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </modal>
             </tip-box>
-            <p><strong>A path that specifies all folders starting from the root is an <em>absolute path</em>. A path that is specified relative to the current working directory is a <em>relative</em> path.</strong></p>
+            <p>You can add methods to the class by defining them inside the class definition. Note that a method of a class always take <code>self</code> as the first parameter. <code>self</code> refers to the object itself. When calling the method, there
+              is no need to supply an argument for the <code>self</code> parameter as the target object is implicitly taken as the argument for that parameter.</p>
             <tip-box>
-              <p>📦 Assume the current working directory is <code>C:\modules\te3201</code> and you created a new folder inside it named <code>exercises</code> and put a <code>ex.txt</code> file in that folder.</p>
+              <p>📦 In the example below,<br>
+                <code>write(self, text)</code> method is called as <code>p.write('It was a dark night ...')</code>.<br> This is how the arguments are matched with the parameters:</p>
               <ul>
-                <li>Absolute path of the file: <code>C:\modules\te3201\exercises\ex1.txt</code></li>
-                <li>Relative path of the file: <code>exercises\ex1.txt</code></li>
+                <li><code>self</code> → <code>p</code></li>
+                <li><code>text</code> → <code>'It was a dark night ...'</code></li>
               </ul>
-            </tip-box>
-            <p>In a path, you can use the dot <code>.</code> as a shorthand to refer to the current working directory. Similarly, <code>..</code> can be used to refer to the parent directory.</p>
-            <tip-box>
-              <p>📦 If the current working directory is <code>C:\modules\te3201</code>, you can use any of the following to refer to <code>C:\modules\te3201\exercises\ex1.txt</code>.</p>
-              <ul>
-                <li><code>exercises\ex1.txt</code></li>
-                <li><code>.\exercises\ex1.txt</code></li>
-                <li><code>..\te3201\exercises\ex1.txt</code></li>
-                <li><code>..\..\modules\te3201\exercises\ex1.txt</code></li>
-              </ul>
-              <panel type="seamless" header="%%another example%%">
-                <p><img src="https://automatetheboringstuff.com/images/000032.jpg" alt=""></p>
-              </panel>
-            </tip-box>
-            <p>You can use <code>os.mkdirs()</code> function to create folders and <code>os.removedirs()</code> to delete folders.</p>
-            <tip-box>
-              <p>📦 Example code showing how to create/delete directories</p>
               <table>
                 <tr>
                 
                   <td>
-                    <pre><code class="hljs python">print(os.getcwd())
-os.makedirs(<span class="hljs-string">'ex\\w1'</span>)
-os.chdir(<span class="hljs-string">'ex\\w1'</span>)
-print(os.getcwd())
-os.chdir(<span class="hljs-string">'..'</span>) <span class="hljs-comment"># go to parent dir</span>
-print(os.getcwd())
-os.chdir(<span class="hljs-string">'..'</span>)
-os.removedirs(<span class="hljs-string">'ex\\w1'</span>)
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Pen</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, text)</span>:</span>
+    print(<span class="hljs-string">'writing:'</span>, text)
+    
+p = Pen()
+p.write(<span class="hljs-string">'It was a dark night ...'</span>)
 </code></pre>
                     <p></p>
                   </td>
                 
-                  <td><br><br><br><br><br> → </td>
-                
-                  <td><br><br><br><br><br>
-                    <pre class="hljs"><code>C:\repos\nus-te3201\sample-code
-C:\repos\nus-te3201\sample-code\ex\w1
-C:\repos\nus-te3201\sample-code\ex
+                  <td valign="bottom"> → <br><br></td>
+                  <td valign="bottom">
+                    <pre class="hljs"><code>writing: It was a dark night ...
 </code></pre>
                     <p></p>
                   </td>
                 </tr>
               </table>
             </tip-box>
-            <p><code>os.path</code> module has many functions that can help with paths. For example, <code>os.paths.join()</code> function can be used to generate file path that matches the current operating system.</p>
+            <p><strong>You can specify how to initialize an object of a class by defining an <code>__init__()</code> method in the class.</strong> Here are the important things to note about the <code>__init__()</code> method:</p>
+            <ol>
+              <li>There are two underscores in front and two behind the word <code>init</code>.<br> ❌ <code>_init_()</code><br> ✅ <code>__init__()</code></li>
+              <li>It will be called every time you create an instance of the class.</li>
+              <li>If it has parameters, you need to provide arguments for those parameters when you instantiate an object of that class.</li>
+            </ol>
             <tip-box>
-              <p>📦 Consider the code below:</p>
-              <pre><code class="hljs python">cwd = os.getcwd()
-print(os.path.join(cwd, <span class="hljs-string">'ex'</span>, <span class="hljs-string">'w2'</span>))
+              <p>📦 This example shows an <code>__init__</code> method added to a <code>Person</code> class.</p>
+              <table>
+                <tr>
+                
+                  <td>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    print(<span class="hljs-string">'Person object'</span>, name, <span class="hljs-string">'initialized!'</span>)
+    
+tom = Person(<span class="hljs-string">'Tom'</span>)
 </code></pre>
-              <p>If you run it on a Windows computer in the folder <code>C:\modules\te3201</code>, it prints <code>C:\modules\te3201\ex\w2</code>.<br> If your run it on a OS-X computer in the folder <code>/Users/john</code>, it prints <code>/Users/john/ex/w2</code>.</p>
-            </tip-box>
-            <p>❗️ To ensure that your code can work on any OS, you are advised to use <code>os.path.join()</code> function instead of hard-coding the
-              <tooltip content="i.e., `\\` on Windows and `/` on OS-X/Linux">path separators</tooltip>.</p>
-            <tip-box>
-              <p>📦 contrasting hard-coding the separator vs using <code>os.path.join()</code>:</p>
-              <table class="markbind-table table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>❌ Works only on Windows</th>
-                    <th>✅ Works on both Windows and OS-X</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><code>os.makedirs('ex\\w1')</code></td>
-                    <td><code>os.makedirs(os.path.join('ex', 'w1'))</code></td>
-                  </tr>
-                </tbody>
+                    <p></p>
+                  </td>
+                
+                  <td valign="bottom"> → <br><br></td>
+                
+                  <td valign="bottom">
+                    <pre class="hljs"><code>Person object Tom initialized!
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
               </table>
             </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Create Directory" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-create-directory">Exercise : Create Directory</h4>
-                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
-                <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
-  <span class="hljs-string">"""Create a directory dir_name in the current working directory
+            <p>The code within a class needs to use the <code>self.</code> to refer to its own attributes and methods. Furthermore, the best place to initialize attributes is the <code>__init__()</code> method.</p>
+            <tip-box>
+              <p>📦 Note how the <code>__init__()</code> method of the <code>Book</code> class initializes its two attributes and calls another of its own methods i.e., <code>self.describe()</code>.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
   
-  Example:
-  If the current directory is c:/foo/, create_dir('bar') creates 
-  a c:/foo/bar directory.
-  """</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE</span>
-  
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">change_dir</span><span class="hljs-params">(relative_path)</span>:</span>
-  <span class="hljs-string">"""Change to the directory dir_name relative to the current working directory
-  
-  Example:
-  If the current directory is c:/foo/, change_dir('bar') changes 
-  current working directory to c:/foo/bar
-  """</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE</span>
-  
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_current</span><span class="hljs-params">()</span>:</span>
-  <span class="hljs-string">"""Print current working directory"""</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE </span>
-  
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">change_to_parent_dir</span><span class="hljs-params">()</span>:</span>
-  <span class="hljs-string">"""Change to the parent directry of the current working directory
-  
-  Example:
-  If the current directory is c:/foo/bar, change_to_parent_dir() changes 
-  the working directory to c:/foo/
-  """</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE HERE</span>
-  
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">check</span><span class="hljs-params">(dir_name)</span>:</span>
-  create_dir(dir_name)
-  print_current()
-  change_dir(dir_name)
-  print_current()
-  change_to_parent_dir()
-  print_current()
-  
-check(<span class="hljs-string">'foo'</span>)
-check(<span class="hljs-string">'bar'</span>)
-
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, book_title, book_author)</span>:</span>
+    self.title = book_title <span class="hljs-comment"># initialize attribute title</span>
+    self.author = book_author <span class="hljs-comment"># initialize attribute author</span>
+    self.describe() <span class="hljs-comment"># call another method of the class</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">describe</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'Book info:'</span>, self.title, <span class="hljs-string">'/by'</span>, self.author) <span class="hljs-comment"># use attributes of the class</span>
+    
+book1 = Book(<span class="hljs-string">'The Jungle Book'</span>, <span class="hljs-string">'Leo Tolstoy'</span>)
+book2 = Book(<span class="hljs-string">'The Art of War'</span>, <span class="hljs-string">'Sun Tzu'</span>)
 </code></pre>
-                <p>⤵️ output when run in <a href="http://REPL.it">REPL.it</a></p>
-                <pre class="hljs"><code>/home/runner
-/home/runner/foo
-/home/runner
-/home/runner
-/home/runner/bar
-/home/runner
+              <p>⤵️</p>
+              <pre class="hljs"><code>Book info: The Jungle Book /by Leo Tolstoy
+Book info: The Art of War /by Sun Tzu
 </code></pre>
-                <p></p>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> os
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">create_dir</span><span class="hljs-params">(dir_name)</span>:</span>
-  <span class="hljs-string">"""Create a directory dir_name in the current working directory
-  
-  Example:
-  If the current directory is c:/foo/, create_dir('bar') creates 
-  a c:/foo/bar directory.
-  """</span>
-  os.makedirs(dir_name)
-  
-  
-...
-  
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_current</span><span class="hljs-params">()</span>:</span>
-  <span class="hljs-string">"""Print current working directory"""</span>
-  print(os.getcwd())
-  
-
+            </tip-box>
+            <p>Attributes and methods of the objects can be accessed using <code>objectname.</code> syntax, as you would do with objects of built-in classes.</p>
+            <tip-box>
+              <p>📦 This example shows how you can access the attributes and methods of the <code>book1</code> object (an object of class <code>Book</code>) defined in a previous example:</p>
+              <table>
+                <tr>
+                
+                  <td>
+                    <pre><code class="hljs python">print(<span class="hljs-string">'Title:'</span>, book1.title) 
+print(<span class="hljs-string">'Author:'</span>, book1.author)
+book1.describe()
 </code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
+                    <p></p>
+                  </td>
+                
+                  <td valign="bottom"> → <br><br></td>
+                
+                  <td valign="bottom">
+                    <pre class="hljs"><code>Title: The Jungle Book
+Author: Leo Tolstoy
+Book info: The Jungle Book /by Leo Tolstoy
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
+            <p>As to be expected, you can get your classes to work with each other.</p>
+            <tip-box>
+              <p>📦 In this example we define a <code>ReadingList</code> class that can store a list of <code>Book</code> objects.</p>
+              <table>
+                <tr>
+                
+                  <td>
+                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReadingList</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, initial_list)</span>:</span>
+    self.books = initial_list
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_book</span><span class="hljs-params">(self, book)</span>:</span>
+    self.books.append(book)
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">show_authors</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">for</span> b <span class="hljs-keyword">in</span> self.books:
+      print(b.author)
+      
+my_list = ReadingList([book1]) <span class="hljs-comment"># book1 defined in a previous example </span>
+my_list.add_book(book2) <span class="hljs-comment"># book2 defined in a previous example</span>
+my_list.show_authors()
+</code></pre>
+                    <p></p>
+                  </td>
+                
+                  <td valign="bottom"> → <br><br></td>
+                
+                  <td valign="bottom">
+                    <pre class="hljs"><code>Leo Tolstoy
+Sun Tzu
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+            </tip-box>
           </div>
         </panel>
-        <panel type="warning" header="`W8.2b` Can read from a text file" expanded="" no-close="">
+        <panel type="warning" header="`W9.3b` Can implement class-level members" expanded="" no-close="">
           <div>
-            <h3 id="reading-from-files">Reading from Files</h3>
-            <p>This section focuses on reading from text-based files (i.e., not binary files).</p>
-            <p><strong>There are three steps to reading files in Python:</strong></p>
+            <h3 id="class-level-members">Class-Level Members</h3>
+            <p><strong>Attributes initialized inside a class but outside of its methods are considered class-level attributes</strong> (attributes are also called <em>data</em> or <em>variables</em>) i.e., they are shared among all objects of that class
+              whereas attributed initialized inside the <code>__init__()</code> method are instance-level attributes i.e., their values vary from instance-to-instance. A class-level attribute is accessed using the <code>ClassName.</code> syntax.</p>
+            <tip-box>
+              <p>📦 The <code>Student</code> class below has one class-level attribute <code>total_students</code>. As it is meant to track the total number of <code>Student</code> objects created, it is incremented in the <code>__init__()</code> method.
+                <code>course_count</code> and <code>name</code> are instance-level attributes.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span>:</span>
+  
+  total_students = <span class="hljs-number">0</span> <span class="hljs-comment"># class-level attribute</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, student_name)</span>:</span>
+    self.name = student_name <span class="hljs-comment"># instance-level attribute</span>
+    Student.total_students = Student.total_students + <span class="hljs-number">1</span> <span class="hljs-comment"># update class-level attribute</span>
+    self.course_count = <span class="hljs-number">0</span> <span class="hljs-comment"># instance-level attribute</span>
+</code></pre>
+              <p>The code below creates two <code>Student</code> objects. Note how the class-level attribute <code>total_students</code>,</p>
+              <ul>
+                <li>can be accessed using the class name (i.e., <code>Student.total_students</code>) or the object (i.e., <code>amy.total_students</code>) and both give the same value.</li>
+                <li>is shared among all objects and correctly gives <code>2</code> after another <code>Student</code> object has been created.</li>
+              </ul>
+              <pre><code class="hljs python">amy = Student(<span class="hljs-string">"Amy"</span>)
+print(<span class="hljs-string">'total students:'</span>, Student.total_students) <span class="hljs-comment"># access via class name</span>
+print(<span class="hljs-string">'total students:'</span>, amy.total_students) <span class="hljs-comment"># access via object</span>
+print(<span class="hljs-string">'Amy course count:'</span>, amy.course_count)
+
+ben = Student(<span class="hljs-string">"Ben"</span>)
+print(<span class="hljs-string">'total students:'</span>, Student.total_students)
+print(<span class="hljs-string">'total students:'</span>, ben.total_students) 
+print(<span class="hljs-string">'Ben course count:'</span>, ben.course_count)
+</code></pre>
+              <p>⤵️</p>
+              <pre class="hljs"><code>total students: 1
+total students: 1
+Amy course count: 0
+total students: 2
+total students: 2
+Ben course count: 0
+</code></pre>
+            </tip-box>
+            <p><strong>It is possible to have class-level methods too.</strong> A class-level method definition should be annotated using a <code>@classmethod</code> annotation. In addition, <strong>a class-level method's first parameter should be <code>cls</code> which represents the class itself</strong>              <span class="dimmed">(similar to instance level methods' first parameter needing to be <code>self</code>)</span>.</p>
+            <tip-box>
+              <p>📦 The <code>Printer</code> class below has a class-level attribute <code>enabled</code> and class-level methods <code>enable()</code> and <code>disable()</code>.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Printer</span>:</span>
+  
+  enabled = <span class="hljs-keyword">True</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, new_text)</span>:</span>
+    self.text = new_text
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_text</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">if</span> Printer.enabled:
+      print(self.text)
+    
+<span class="hljs-meta">  @classmethod</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">disable</span><span class="hljs-params">(cls)</span>:</span>
+    Printer.enabled = <span class="hljs-keyword">False</span>
+    print(<span class="hljs-string">'All Printers disabled'</span>)
+  
+<span class="hljs-meta">  @classmethod</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">enable</span><span class="hljs-params">(cls)</span>:</span>
+    Printer.enabled = <span class="hljs-keyword">True</span>
+    print(<span class="hljs-string">'All Printers enabled'</span>)
+</code></pre>
+              <p>The code below uses the class-level method to enable/disable printing for all <code>Printer</code> objects.</p>
+              <table>
+                <tr>
+                
+                  <td>
+                    <pre><code class="hljs python">Printer.disable()
+p1 = Printer(<span class="hljs-string">'blah blah'</span>)
+p2 = Printer(<span class="hljs-string">'yak yak'</span>)
+p1.print_text() <span class="hljs-comment"># will not print</span>
+p2.print_text() <span class="hljs-comment"># will not print</span>
+
+Printer.enable() 
+p1.print_text()
+p2.print_text()
+</code></pre>
+                    <p></p>
+                  </td>
+                
+                  <td valign="bottom"> → <br><br></td>
+                
+                  <td valign="bottom">
+                    <pre class="hljs"><code>All Printers disabled
+All Printers enabled
+blah blah
+yak yak
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+              <p>💡 As you can see from the above code, class-level methods can be called even before any objects of that class have been created.
+              </p>
+            </tip-box>
+          </div>
+        </panel>
+        <panel type="warning" header="`W9.3c` Can implement member visibility" expanded="" no-close="">
+          <div>
+            <h3 id="visibility">Visibility</h3>
+            <p>The <em>encapsulation</em> aspect of OOP requires that an object should only allow controlled access to its members. For example, it should be able to make some of its attributes visible to other object while keeping others hidden. As a consequence
+              of Python's aim to be a very flexible and versatile language, it does not enforce encapsulation as strictly as some other OOP languages. However, it recommends some conventions, if followed, will maintain a reasonable level of encapsulation
+              in objects.</p>
             <ul>
-              <li>Call the <strong><code>open()</code></strong> function to receive a <code>File</code> object.</li>
-              <li>Call the <strong><code>read()</code></strong> method on the <code>File</code> object to receive file content.</li>
-              <li>Close the file by calling the <strong><code>close()</code></strong> method on the <code>File</code> object.</li>
+              <li>
+                <p><strong><em>Private</em> members: An attribute/method whose name has at least two leading underscores and at most one trailing underscore (e.g., <code>__foo</code>, <code>__bar_()</code>) cannot be accessed using its name by code outside the class.</strong>                  These are</p>
+              </li>
+              <li>
+                <p><strong><em>Protected</em> members: a name prefixed with a single underscore (e.g. <code>_foo</code>, <code>_bar()</code>) are -- by convention -- should not be accessed by code outside of the owner class</strong> as they are not meant
+                  to be part of the object's public interface.</p>
+              </li>
+              <li>
+                <p><strong><em>Public</em> members: other members are considered public and OK to be accessed by code outside the class.</strong></p>
+              </li>
             </ul>
             <tip-box>
-              <p>📦 The code below shows how to read from a text file.</p>
+              <p>📦 Consider the <code>Account</code> class below.</p>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span>:</span>
+  currency = <span class="hljs-string">'$'</span>   <span class="hljs-comment"># public</span>
+  _min = <span class="hljs-number">10.</span>       <span class="hljs-comment"># protected</span>
+  __max = <span class="hljs-number">1000.0</span>   <span class="hljs-comment"># private</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, person, amount)</span>:</span>
+    self.__balance = amount <span class="hljs-comment"># private</span>
+    self._owner = person    <span class="hljs-comment"># protected</span>
+    self.status = <span class="hljs-string">'OK'</span>      <span class="hljs-comment"># public</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_info</span><span class="hljs-params">(self)</span>:</span>       <span class="hljs-comment"># public</span>
+    <span class="hljs-keyword">return</span> [self.status]
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_loan_limit</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># public</span>
+    <span class="hljs-keyword">return</span> self.__get_income()*<span class="hljs-number">5</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_get_more_info</span><span class="hljs-params">(self)</span>:</span> <span class="hljs-comment"># protected</span>
+    <span class="hljs-keyword">return</span> self.get_info() + [self._owner]
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__get_income</span><span class="hljs-params">(self)</span>:</span>   <span class="hljs-comment"># private</span>
+    <span class="hljs-keyword">return</span> self.__balance + <span class="hljs-number">100</span>
+</code></pre>
+              <p>✅ The following code works fine because the members being accessed are public.</p>
               <table>
                 <tr>
                 
                   <td>
-                    <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
-f = open(file_path, <span class="hljs-string">'r'</span>) <span class="hljs-comment"># open in read mode</span>
-items = f.read()
-print(items)
-f.close()
+                    <pre><code class="hljs python">print(<span class="hljs-string">'currency:'</span>, Account.currency)
+a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
+print(<span class="hljs-string">'status:'</span>, a.status)
+print(<span class="hljs-string">'info:'</span>, a.get_info())
 </code></pre>
                     <p></p>
                   </td>
                 
-                  <td><br><br> → </td>
+                  <td valign="bottom"> → <br><br></td>
                 
-                  <td><br><br> Output (contents of the <code>items.txt</code>):
-                    <pre class="hljs"><code>first line
-second line
-third line
+                  <td valign="bottom">
+                    <pre class="hljs"><code>currency: $
+status: OK
+info: ['OK']
 </code></pre>
                     <p></p>
                   </td>
                 </tr>
               </table>
-              <p>💡 The <code>'r'</code> argument in <code>open(file_path, 'r')</code> indicates that the file should be opened
-                <tooltip content="when a file is open in read mode, you can read from it but cannot write to it">in read mode</tooltip>.</p>
-            </tip-box>
-            <p>It is also possible to read the file content as a list of lines, using the <code>readlines()</code> method.</p>
-            <tip-box>
-              <p>📦 The code below shows how to read file content as a list of lines.</p>
-              <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
-f = open(file_path, <span class="hljs-string">'r'</span>)
-items = f.readlines()
-print(items) <span class="hljs-comment"># print as a list</span>
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> items: <span class="hljs-comment"># print each item</span>
-  print(i.strip()) <span class="hljs-comment"># use strip() to remove linebreak at the end of each line</span>
-f.close()
-</code></pre>
-              <p>⤵️</p>
-              <pre class="hljs"><code>['first line\n', 'second line\n', 'third line\n']
-first line
-second line
-third line
-</code></pre>
-              <p>💡 Note how each line ends with a <code>\n</code> which represents the line break. It can be removed using the <code>strip()</code> method.</p>
-            </tip-box>
-            <panel type="danger" header=":muscle: Exercise: File Stats" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-file-stats">Exercise : File Stats</h4>
-                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output.</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
-  <span class="hljs-string">"""Return content of the file as a list of lines
-  
-  The file is expected to be in the current working directory.
-  The lines in the list contains trailing line breaks.
-  
-  Example:
-  If the a.txt has two lines 'aaa' and 'bbb', 
-  get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
-  """</span>
-  <span class="hljs-keyword">return</span> [] <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_stats</span><span class="hljs-params">(contents)</span>:</span>
-  <span class="hljs-string">"""Given a list of lines, return line count and letter count as a dictionary
-  
-  Trailing line breaks (if any) are not counted for letter count.
-  Spaces, even trailing spaces, are counted for letter count.
-  Example:
-  get_stats(['aaa\n', 'bbb']) returns {'lines': 2, 'letters': 6}
-  """</span>
-  stats = {}
-  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
-  <span class="hljs-keyword">return</span> stats
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">analyze_file</span><span class="hljs-params">(filename)</span>:</span> 
-  contents_as_list = get_file_content_as_list(filename)
-  print(<span class="hljs-string">'lines in file:'</span>, contents_as_list)
-  print(<span class="hljs-string">'stats:'</span>, get_stats(contents_as_list))
-  
-analyze_file(<span class="hljs-string">'file1.txt'</span>)
-analyze_file(<span class="hljs-string">'file2.txt'</span>)
-
-</code></pre>
-                <p><code>file1.txt</code> (2 lines, 22 letters):</p>
-                <pre class="hljs"><code>aaa bbb ccc
-ddd eee fff
-</code></pre>
-                <p><code>file2.txt</code> (4 lines, 10 letters -- note: the <mark>last line has a trailing space</mark>, which adds up to 10 letters):</p>
-                <pre class="hljs"><code>a
-bb
-ccc
-ddd 
-</code></pre>
-                <p>⤵️</p>
-                <pre class="hljs"><code>lines in file: ['aaa bbb ccc\n', 'ddd eee fff']
-stats: {'lines': 2, 'letters': 22}
-lines in file: ['a\n', 'bb\n', 'ccc\n', 'ddd ']
-stats: {'lines': 4, 'letters': 10}
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Tips%%">
-                  <ul>
-                    <li><code>strip()</code> removes trailing line breaks but also trailing spaces. <code>replace('\n', '')</code> will remove the trailing line break but will keep the trailing spaces.</li>
-                  </ul>
-                </panel>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
-  <span class="hljs-string">"""Return content of the file as a list of lines
-  
-  The file is expected to be in the current working directory.
-  The lines in the list contains trailing line breaks.
-  
-  Example:
-  If the a.txt has two lines 'aaa' and 'bbb', 
-  get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
-  """</span>
-  f = open(filename, <span class="hljs-string">'r'</span>)
-  lines = f.readlines()
-  f.close()
-  <span class="hljs-keyword">return</span> lines
-
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-        </panel>
-        <panel type="warning" header="`W8.2c` Can write to a text file" expanded="" no-close="">
-          <div>
-            <h3 id="writing-to-files">Writing to Files</h3>
-            <p>Similar to reading from a file, writing to a file too is a three step process. One main difference is <strong>the file needs to be opened in <code>write mode</code>.</strong></p>
-            <tip-box>
-              <p>📦 The code below shows how to write to a text file.</p>
-              <pre><code class="hljs python">file_path = os.path.join(<span class="hljs-string">'data'</span>, <span class="hljs-string">'items.txt'</span>)
-f = open(file_path, <span class="hljs-string">'w'</span>)  <span class="hljs-comment"># open in write mode</span>
-f.write(<span class="hljs-string">'first line\n'</span>)
-f.write(<span class="hljs-string">'second line\n'</span>)
-f.close()
-</code></pre>
-              <p>⤵️ contents of the <code>items.txt</code>:</p>
-              <pre class="hljs"><code>first line
-second line
-</code></pre>
-              <ul>
-                <li>💡 The <code>'w'</code> argument indicates that the file should be opened in write mode.</li>
-                <li>💡 Unlike the <code>print()</code> function that prints content in a new line every time, the <code>write</code> function does not add an automatic line break at the end. You need to add a <code>\n</code> at each place you want a line
-                  break to appear in the file.</li>
-              </ul>
-            </tip-box>
-            <p>Opening a file in write mode and writing to it results in overwriting the content of the file contained before it was opened. To preserve original content and add to it, open the file in <em>append mode</em>.</p>
-            <tip-box>
-              <p>📦 The code below shows how to append to a file.</p>
-              <pre><code class="hljs python">f = open(file_path, <span class="hljs-string">'a'</span>)  <span class="hljs-comment"># open in append mode</span>
-f.write(<span class="hljs-string">'third line\n'</span>)
-f.close()
-</code></pre>
-              <p>⤵️ contents of the <code>items.txt</code>:</p>
-              <pre class="hljs"><code>first line
-second line
-third line
-</code></pre>
-            </tip-box>
-            <panel type="danger" header=":muscle: Exercise: Add Line Numbers" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-add-line-numbers">Exercise : Add Line Numbers</h4>
-                <p>Complete the functions given below, to behave as described by their docstrings, so that the code produces the given output. Only one function needs to be modified.</p>
-                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_file_content_as_list</span><span class="hljs-params">(filename)</span>:</span>
-  <span class="hljs-string">"""Return content of the file as a list of lines
-  
-  The file is expected to be in the current working directory.
-  The lines in the list contains trailing line breaks.
-  
-  Example:
-  If the a.txt has two lines 'aaa' and 'bbb', 
-  get_file_content_as_list('a.txt') returns ['aaa\n', 'bbb']
-  """</span>
-  f = open(filename, <span class="hljs-string">'r'</span>)
-  lines = f.readlines()
-  f.close()
-  <span class="hljs-keyword">return</span> lines
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
-  <span class="hljs-string">"""Write the strings in lines to the file filename, after adding a line number to each line.
-  
-  Example:
-  write_with_line_numbers(['aaa\n', 'bbb'], 'out.txt') writes the following content to out.txt
-  1. aaa
-  2. bbb
-  """</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_file</span><span class="hljs-params">(sourcefile, targetfile)</span>:</span>
-  <span class="hljs-string">"""Copy the text in sourcefile to targetfile, but also add line numbers to each line.
-  
-  Example:
-  Assume a.txt has the following text:
-  aaa
-  bbb
-  process_file('a.txt', 'b.txt') results in b.txt having the following text:
-  1. aaa
-  2. bbb
-  """</span>
-  contents = get_file_content_as_list(sourcefile)
-  write_with_line_numbers(contents, targetfile)
-  print(get_file_content_as_list(targetfile))
-  
-process_file(<span class="hljs-string">'file1a.txt'</span>, <span class="hljs-string">'file1b.txt'</span>)
-process_file(<span class="hljs-string">'file2a.txt'</span>, <span class="hljs-string">'file2b.txt'</span>)
-
-</code></pre>
-                <p><code>file1a.txt</code>:</p>
-                <pre class="hljs"><code>first line
-
-second line
-third line
-</code></pre>
-                <p><code>file2a.txt</code>:</p>
-                <pre class="hljs"><code>hang in there
-</code></pre>
-                <p>⤵️</p>
-                <pre class="hljs"><code>['1. first line\n', '2. \n', '3. second line\n', '4. third line']
-['1. hang in there']
-</code></pre>
-                <panel type="seamless" header="%%:bulb: Partial solution%%">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_with_line_numbers</span><span class="hljs-params">(lines, filename)</span>:</span>
-  <span class="hljs-string">"""Write the strings in lines to the file filename, after adding a line number to each line.
-  
-  Example:
-  write_with_line_numbers(['aaa\n', 'bbb'], 'out.txt') writes the following content to out.txt
-  1. aaa
-  2. bbb
-  """</span>
-  <span class="hljs-keyword">for</span> n,line <span class="hljs-keyword">in</span> enumerate(lines):
-    f.write(str(n+<span class="hljs-number">1</span>) ... ) <span class="hljs-comment"># COMPLETE THIS LINE</span>
-  f.close()
-
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-        </panel>
-        <panel type="warning" header="`W8.2d` Can work with CSV files" expanded="" no-close="">
-          <div>
-            <h3 id="csv-files">CSV files</h3>
-            <p><strong>CSV files are often used as a simple way to save spreadsheet-like data.</strong> Each line in a CSV file represents a row in the spreadsheet, and commas separate the cells in the row. They usually have the <code>.csv</code> extension
-              and can be opened in spreadsheet programs such as Excel or in any text editor.</p>
-            <tip-box>
-              <p>📦 Here is the content of a simple CSV file <span class="dimmed">(click <a href="deliveries.csv">here</a> to download a copy)</span> and how it looks like when opened in Excel.</p>
+              <p>❗️ The following code works too. But they access protected members which is <mark>not a recommended practice</mark>.</p>
               <table>
                 <tr>
                 
                   <td>
-                    <pre class="hljs"><code>4/11/2017,Alice Bee,4
-5/11/2017,Chris Ding,12
-5/11/2017,Brenda Chew,13
-6/11/2017,Dan Pillai,5
+                    <pre><code class="hljs python">print(<span class="hljs-string">'minimum allowed:'</span>, Account._min) 
+a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
+print(<span class="hljs-string">'owner:'</span>, a._owner) 
+print(<span class="hljs-string">'more info:'</span>, a._get_more_info())
 </code></pre>
                     <p></p>
                   </td>
                 
-                  <td> → </td>
+                  <td valign="bottom"> → <br><br></td>
                 
-                  <td>
-                    <p><img src="/website/programming/files-csv/images/deliveries.png" alt="" width="250"></p>
+                  <td valign="bottom">
+                    <pre class="hljs"><code>minimum allowed: 10.0
+owner: Adam
+more info: ['OK', 'Adam']
+</code></pre>
+                    <p></p>
                   </td>
                 </tr>
               </table>
+              <p>❌ The following code will not work because they try to access private members.</p>
+              <table>
+                <tr>
+                
+                  <td>
+                    <pre><code class="hljs python">print(<span class="hljs-string">'maximum allowed:'</span>, Account.__max) <span class="hljs-comment"># error</span>
+a = Account(<span class="hljs-string">'Adam'</span>, <span class="hljs-number">100</span>)
+print(<span class="hljs-string">'balance:'</span>, a.__balance) <span class="hljs-comment"># error</span>
+print(<span class="hljs-string">'income:'</span>, a.__get_income()) <span class="hljs-comment"># error</span>
+</code></pre>
+                    <p></p>
+                  </td>
+                
+                  <td valign="bottom"> → <br><br></td>
+                
+                  <td valign="bottom">
+                    <pre class="hljs"><code>AttributeError: type object 'Account' has no attribute '__max'...
+AttributeError: 'Account' object has no attribute '__balance'...
+AttributeError: 'Account' object has no attribute '__get_income'...
+</code></pre>
+                    <p></p>
+                  </td>
+                </tr>
+              </table>
+              <p>💡 Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
+              </p>
             </tip-box>
-            <p>💡 If a value itself contains a comma <span class="dimmed">e.g., <code>Foo, Emily</code></span>, it can be enclosed in double quotes <span class="dimmed">e.g., <code>&quot;Foo, Emily&quot;</code></span>, to prevent it being misinterpreted
-              as multiple values.</p>
-            <tip-box>
-              <p>📦 This example shows how to use double quotes to handle commas inside a value:</p>
-              <ul>
-                <li><code>7/11/2017,&quot;Foo, Emily&quot;,5</code> interpreted as three values: <code>7/11/2017</code> and <code>Foo, Emily</code> and <code>5</code></li>
-                <li><code>7/11/2017,Foo, Emily,5</code> interpreted as four values: <code>7/11/2017</code> and <code>Foo</code> and <code>Emily</code> and <code>5</code></li>
-              </ul>
-            </tip-box>
-            <p>Although CSV files are text files that can be read/written using normal file access techniques covered earlier, <strong>Python has an in-built module named <code>csv</code> that provides functions to deal with CSV files more conveniently.</strong>              For example, <strong>it provides a way to read a CSV file as a <code>Reader</code> object that knows how to interpret a CSV file.</strong></p>
-            <tip-box>
-              <p>📦 The code below shows how to use the <code>csv</code> module to read contents of a CSV file named <code>deliveries.csv</code>:</p>
-              <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv 
-
-deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) <span class="hljs-comment"># open file</span>
-deliveries_reader = csv.reader(deliveries_file) <span class="hljs-comment"># create a Reader</span>
-<span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader: <span class="hljs-comment"># access each line using the Reader</span>
-  print(row)
-deliveries_file.close() <span class="hljs-comment"># close file</span>
-</code></pre>
-              <p>⤵️</p>
-              <pre class="hljs"><code>['4/11/2017', 'Alice Bee', '4']
-['5/11/2017', 'Chris Ding', '12']
-['5/11/2017', 'Brenda Chew', '13']
-['6/11/2017', 'Dan Pillai', '5']
-</code></pre>
-              <p>As you can see, <code>Reader</code> object returns content of a line as a list object with the value of each cell as an item in the list. Replacing the line,</p>
-              <pre><code class="hljs python">...
-print(row)
-...
-</code></pre>
-              <p>... with the following line,</p>
-              <pre><code class="hljs python">...
-print(<span class="hljs-string">'Date:'</span>, row[<span class="hljs-number">0</span>], <span class="hljs-string">'\tRecipient:'</span>, row[<span class="hljs-number">1</span>], <span class="hljs-string">'\tQuantity:'</span>, row[<span class="hljs-number">2</span>] )
-...
-</code></pre>
-              <p>... will give you the output shown below:</p>
-              <pre class="hljs"><code>Date: 4/11/2017 	Recipient: Alice Bee 	Quantity: 4
-Date: 5/11/2017 	Recipient: Chris Ding 	Quantity: 12
-Date: 5/11/2017 	Recipient: Brenda Chew 	Quantity: 13
-Date: 6/11/2017 	Recipient: Dan Pillai 	Quantity: 5
-</code></pre>
-            </tip-box>
-            <p>Note that all values read from a CSV files come as strings. If they are meant to represent other types, you need to convert the string to the correct type first.</p>
-            <tip-box>
-              <p>📦 In this example the 3rd value of each row is converted to an int before adding them up.</p>
-              <pre><code class="hljs python">deliveries_file = open(<span class="hljs-string">'deliveries.csv'</span>) 
-deliveries_reader = csv.reader(deliveries_file) 
-total = <span class="hljs-number">0</span>
-<span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> deliveries_reader:
-  <span class="hljs-comment"># convert 3rd cell to an int and add to total</span>
-  total = total + int(row[<span class="hljs-number">2</span>]) 
-
-print(<span class="hljs-string">'Total quantity delivered:'</span>, total)
-deliveries_file.close()
-</code></pre>
-              <p>⤵️</p>
-              <pre class="hljs"><code>Total quantity delivered: 34
-</code></pre>
-            </tip-box>
-            <p><strong>The <code>csv</code> module also provide an easy way to write to CSV files, one row at a time, using a <code>Write</code> object.</strong></p>
-            <tip-box>
-              <p>📦 The code below writes two rows to the <code>pricelist.csv</code> file.</p>
-              <pre><code class="hljs python">output_file = open(<span class="hljs-string">'pricelist.csv'</span>, <span class="hljs-string">'w'</span>, newline=<span class="hljs-string">''</span>) <span class="hljs-comment"># open file in write mode</span>
-output_writer = csv.writer(output_file) <span class="hljs-comment"># get a Writer object</span>
-output_writer.writerow([<span class="hljs-string">'apples'</span>, <span class="hljs-string">'1'</span>, <span class="hljs-string">'1.5'</span>, <span class="hljs-string">'True'</span>]) <span class="hljs-comment"># write one row</span>
-output_writer.writerow([<span class="hljs-string">'bananas'</span>, <span class="hljs-string">'3'</span>, <span class="hljs-string">'2.0'</span>, <span class="hljs-string">'False'</span>]) <span class="hljs-comment"># write another row</span>
-output_file.close() <span class="hljs-comment"># close file</span>
-</code></pre>
-              <p>The <code>pricelist.csv</code> file will now contain:</p>
-              <pre class="hljs"><code>apples,1,1.5,True
-bananas,3,2.0,False
-</code></pre>
-              <ul>
-                <li>💡 You can open a file in append mode if you want to append to it instead of overwriting current content. <br> e.g., <code>output_file = open('pricelist.csv',</code><mark><code>'a',</code></mark><code>newline='')</code></li>
-                <li>💡 The keyword argument <code>newline=''</code> need to be used when opening a CSV file in Windows. The reasoning behind it is beyond the scope of this book.
-                </li>
-              </ul>
-            </tip-box>
-
-            <panel type="danger" header=":muscle: Exercise: Calcluate GST" expanded="" no-close="">
-              <div>
-                <h4 id="exercise-calculate-gst">Exercise : Calculate GST</h4>
-                <p>Suppose there is a CSV file in this format:</p>
-                <table>
-                  <tr>
-                  
-                    <td>
-                      <p><code>itemlist1.csv</code>:</p>
-                      <pre class="hljs"><code>item,price
-book,10.0
-bag,50.0
-&quot;pens, pencils&quot;, 5.0
-</code></pre>
-                      <p></p>
-                    </td>
-                  
-                    <td> → </td>
-                  
-                    <td>
-                      <table class="markbind-table table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>item</th>
-                            <th>price</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>book</td>
-                            <td>10.0</td>
-                          </tr>
-                          <tr>
-                            <td>bag</td>
-                            <td>50.0</td>
-                          </tr>
-                          <tr>
-                            <td>pens, pencils</td>
-                            <td>5.0</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-                <p>Write a program to calculate GST for each item at 7% and give the value as an additional column. The ouput should be in a new file.</p>
-                <table>
-                  <tr>
-                  
-                    <td>
-                      <p><code>updated_itemlist1.csv</code>:</p>
-                      <pre class="hljs"><code>item,price,GST
-book,10.0,0.7
-bag,50.0,3.5
-&quot;pens, pencils&quot;, 5.0,0.35
-</code></pre>
-                      <p></p>
-                    </td>
-                  
-                    <td> → </td>
-                  
-                    <td>
-                      <table class="markbind-table table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>item</th>
-                            <th>price</th>
-                            <th>GST</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>book</td>
-                            <td>10.0</td>
-                            <td>0.7</td>
-                          </tr>
-                          <tr>
-                            <td>bag</td>
-                            <td>50.0</td>
-                            <td>3.5</td>
-                          </tr>
-                          <tr>
-                            <td>pens, pencils</td>
-                            <td>5.0</td>
-                            <td>0.35</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <p></p>
-                    </td>
-                  </tr>
-                </table>
-                <panel type="seamless" header="%%:bulb: Python hints%%">
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_GST</span><span class="hljs-params">(source_file, target_file)</span>:</span>
-  <span class="hljs-string">"""Read the data from the CSV file source_file and write 
-  the data, including the calculated GST values, to the CSV file target_file
-  """</span>
-  input_lines = read_csv_lines(source_file)
-  updated_lines = []
-  
-  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
-  
-  write_to_csv_file(updated_lines, target_file)
-   
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read_csv_lines</span><span class="hljs-params">(filename)</span>:</span>
-  <span class="hljs-string">"""Return the values in the csv file (specified by the filename) as a list of lists
-  each list representing a row of the file.
-  
-  Example: If the file file1.csv has the following contents,
-  item,price
-  book,10.0
-  read_csv_lines('file1.csv') returns [['item', 'price']['book', '10.0']]
-  
-  """</span>
-  <span class="hljs-keyword">return</span> [] <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
-  
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_to_csv_file</span><span class="hljs-params">(lines, filename)</span>:</span>
-  <span class="hljs-string">"""Write the given lines (a list of lists) to the CSV file (specified by filename)
-  
-  Example:
-  write_to_csv_file([['item', 'price', 'GST']['book', '10.0', '0.7']], 'file2.txt')
-  
-  """</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
-  
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process</span><span class="hljs-params">(source_file, target_file)</span>:</span>
-  
-  calculate_GST(source_file, target_file)
-  print(read_csv_lines(target_file))
-  
-  
-process(<span class="hljs-string">'itemlist1.csv'</span>, <span class="hljs-string">'updated_itemlist1.csv'</span>)
-process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-string">'updated_itemlist2.csv'</span>)
-</code></pre>
-                </panel>
-              </div>
-            </panel>
-            <p></p>
           </div>
         </panel>
       </panel>
-      <p><br><br></p>
-      <p>🎯 At the end of this week you should be able to do something similar to the exercise given below (in your programming language/environment of choice):</p>
-      <panel header=" Evidence of achieving the LO" no-close="">
-        <p><strong>Exercise from <code>W8.2d</code>:</strong><br></p>
+      <panel type="warning" header="**`W9.4` Can use third-party modules**" no-close="">
         <div>
-          <h4 id="exercise-calculate-gst-2">Exercise : Calculate GST</h4>
-          <p>Suppose there is a CSV file in this format:</p>
-          <table>
-            <tr>
-            
-              <td>
-                <p><code>itemlist1.csv</code>:</p>
-                <pre class="hljs"><code>item,price
-book,10.0
-bag,50.0
-&quot;pens, pencils&quot;, 5.0
+          <h1 id="appendix-a-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules</h1>
+          <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads
+            and installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
+          <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
+          <pre class="hljs"><code>pip --version
 </code></pre>
-                <p></p>
-              </td>
-            
-              <td> → </td>
-            
-              <td>
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>item</th>
-                      <th>price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>book</td>
-                      <td>10.0</td>
-                    </tr>
-                    <tr>
-                      <td>bag</td>
-                      <td>50.0</td>
-                    </tr>
-                    <tr>
-                      <td>pens, pencils</td>
-                      <td>5.0</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p></p>
-              </td>
-            </tr>
-          </table>
-          <p>Write a program to calculate GST for each item at 7% and give the value as an additional column. The ouput should be in a new file.</p>
-          <table>
-            <tr>
-            
-              <td>
-                <p><code>updated_itemlist1.csv</code>:</p>
-                <pre class="hljs"><code>item,price,GST
-book,10.0,0.7
-bag,50.0,3.5
-&quot;pens, pencils&quot;, 5.0,0.35
+          <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
+          <tip-box>
+            <p>📦 The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
+            <pre><code class="hljs bash">pip install colorama
 </code></pre>
-                <p></p>
-              </td>
-            
-              <td> → </td>
-            
-              <td>
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>item</th>
-                      <th>price</th>
-                      <th>GST</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>book</td>
-                      <td>10.0</td>
-                      <td>0.7</td>
-                    </tr>
-                    <tr>
-                      <td>bag</td>
-                      <td>50.0</td>
-                      <td>3.5</td>
-                    </tr>
-                    <tr>
-                      <td>pens, pencils</td>
-                      <td>5.0</td>
-                      <td>0.35</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p></p>
-              </td>
-            </tr>
-          </table>
-          <panel type="seamless" header="%%:bulb: Python hints%%">
-            <pre><code class="hljs python"><span class="hljs-keyword">import</span> csv
+            <p>⤵️</p>
+            <pre class="hljs"><code>Collecting colorama
+  Downloading colorama-0.3.9-py2.py3-none-any.whl
+Installing collected packages: colorama
+Successfully installed colorama-0.3.9
+</code></pre>
+            <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
+            <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_GST</span><span class="hljs-params">(source_file, target_file)</span>:</span>
-  <span class="hljs-string">"""Read the data from the CSV file source_file and write 
-  the data, including the calculated GST values, to the CSV file target_file
-  """</span>
-  input_lines = read_csv_lines(source_file)
-  updated_lines = []
-  
-  <span class="hljs-comment"># ADD YOUR CODE HERE</span>
-  
-  write_to_csv_file(updated_lines, target_file)
-   
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read_csv_lines</span><span class="hljs-params">(filename)</span>:</span>
-  <span class="hljs-string">"""Return the values in the csv file (specified by the filename) as a list of lists
-  each list representing a row of the file.
-  
-  Example: If the file file1.csv has the following contents,
-  item,price
-  book,10.0
-  read_csv_lines('file1.csv') returns [['item', 'price']['book', '10.0']]
-  
-  """</span>
-  <span class="hljs-keyword">return</span> [] <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
-  
-  
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_to_csv_file</span><span class="hljs-params">(lines, filename)</span>:</span>
-  <span class="hljs-string">"""Write the given lines (a list of lists) to the CSV file (specified by filename)
-  
-  Example:
-  write_to_csv_file([['item', 'price', 'GST']['book', '10.0', '0.7']], 'file2.txt')
-  
-  """</span>
-  <span class="hljs-keyword">pass</span> <span class="hljs-comment"># REPLACE WITH YOUR CODE</span>
-  
+colorama.init()  <span class="hljs-comment"># one-time initialization</span>
 
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process</span><span class="hljs-params">(source_file, target_file)</span>:</span>
-  
-  calculate_GST(source_file, target_file)
-  print(read_csv_lines(target_file))
-  
-  
-process(<span class="hljs-string">'itemlist1.csv'</span>, <span class="hljs-string">'updated_itemlist1.csv'</span>)
-process(<span class="hljs-string">'itemlist2.csv'</span>, <span class="hljs-string">'updated_itemlist2.csv'</span>)
+print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)
+print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)
+print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)
 </code></pre>
-          </panel>
+            <p>⤵️<br></p>
+            <img src="/website/programming/thirdparty/images/coloramaOutput.png"></tip-box>
+          <tip-box>
+            <p><strong>💡 Some useful third-party modules:</strong></p>
+            <ul>
+              <li><a href="https://pypi.python.org/pypi/colorama"><code>colorama</code></a>: For colorizing text printed in the console</li>
+              <li><a href="https://pypi.python.org/pypi/selenium"><code>selenium</code></a>: For automating the Browser</li>
+              <li><a href="http://www.magiksys.net/pyzmail/"><code>pyzmail</code></a>: For sending emails</li>
+              <li><a href="https://www.twilio.com/docs/libraries/python"><code>twilio</code></a>: For sending SMS</li>
+              <li><a href="https://pythonhosted.org/PyPDF2/"><code>PyPDF2</code></a>: For working with PDF files</li>
+              <li><a href="https://pypi.python.org/pypi/pyperclip/1.6.0"><code>pyperclip</code></a>: To access the clipboard of the operating system</li>
+              <li><a href="https://pypi.python.org/pypi/dateparser/0.7.0"><code>dateparser</code></a>: To parse natural language repsentation of dates e.g., <code>in 2 days</code>, <code>tomorrow</code></li>
+            </ul>
+          </tip-box>
+          <p><strong>📎 Resources</strong>:</p>
+          <ul>
+            <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
+          </ul>
         </div>
-        <p></p>
+      </panel>
+      <p><br><br></p>
+      <p>🎯 At the end of this week you should be able to do the following (in your programming language/environment of choice):</p>
+      <panel header=" Evidence of achieving the LO" no-close="">
+        <ul>
+          <li>Define and use multiple classes</li>
+          <li>Use class-level members</li>
+          <li>Use member visibility</li>
+        </ul>
       </panel>
     </div>
   </panel>

@@ -66,6 +66,7 @@
   * [Classes](toc/oop.html#classes)
   * [Class-Level Members](toc/oop.html#class-level-members)
   * [Visibility](toc/oop.html#visibility)
+* [**Appendix A: Installing 3rd Party Modules**](toc/thirdparty.html)
 * More topics to be added ...
 
 

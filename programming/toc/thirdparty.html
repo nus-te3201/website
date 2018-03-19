@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TE3201 Programming Basics: Appendix A: Installing 3rd Party Modules</title>
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <link rel="stylesheet" href="/website/programming/css/programming.css">
+<div class="website-content">
+  <div id="toc">
+    <p><span style="float:right"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ↑</a>
+      </span>
+    </p>
+  </div>
+  <div id="main">
+    <div>
+      <h1 id="appendix-a-installing-3rd-party-modules">Appendix A: Installing 3rd-Party Modules</h1>
+      <p>In addition to built-in modules you get with Python by default, there are many modules written by others that you can make use of. <strong>You can install third-party modules using Python’s <code>pip</code> tool</strong>. This tool downloads and
+        installs Python modules onto your computer from <a href="https://pypi.python.org/">https://pypi.python.org/</a> (aka <em>PyPi</em> or <em>Python Package Index</em>).</p>
+      <p>First, ensure that you have <code>pip</code> installed by running this command in a command shell (not Python interpreter shell), which should print out the version of the pip tool you have.</p>
+      <pre class="hljs"><code>pip --version
+</code></pre>
+      <p>After that, to install a third-party module (or <em>packages</em> as they are sometimes called), you can run the <code>pip install {packagename}</code> command.</p>
+      <tip-box>
+        <p>📦 The example below shows how to install the <code>colorama</code> module that allows you to colorize text printed out to the console.</p>
+        <pre><code class="hljs bash">pip install colorama
+</code></pre>
+        <p>⤵️</p>
+        <pre class="hljs"><code>Collecting colorama
+  Downloading colorama-0.3.9-py2.py3-none-any.whl
+Installing collected packages: colorama
+Successfully installed colorama-0.3.9
+</code></pre>
+        <p>After installing colorama, you can import it into your code and use its features to print colorized text.</p>
+        <pre><code class="hljs python"><span class="hljs-keyword">import</span> colorama
+
+colorama.init()  <span class="hljs-comment"># one-time initialization</span>
+
+print(colorama.Fore.YELLOW + <span class="hljs-string">' Some yellow text'</span>)
+print(colorama.Fore.BLUE + colorama.Back.WHITE + <span class="hljs-string">' Some blue text in a white background'</span>)
+print(colorama.Style.RESET_ALL + <span class="hljs-string">' Back to normal now'</span>)
+</code></pre>
+        <p>⤵️<br></p>
+        <img src="/website/programming/thirdparty/images/coloramaOutput.png"></tip-box>
+      <tip-box>
+        <p><strong>💡 Some useful third-party modules:</strong></p>
+        <ul>
+          <li><a href="https://pypi.python.org/pypi/colorama"><code>colorama</code></a>: For colorizing text printed in the console</li>
+          <li><a href="https://pypi.python.org/pypi/selenium"><code>selenium</code></a>: For automating the Browser</li>
+          <li><a href="http://www.magiksys.net/pyzmail/"><code>pyzmail</code></a>: For sending emails</li>
+          <li><a href="https://www.twilio.com/docs/libraries/python"><code>twilio</code></a>: For sending SMS</li>
+          <li><a href="https://pythonhosted.org/PyPDF2/"><code>PyPDF2</code></a>: For working with PDF files</li>
+          <li><a href="https://pypi.python.org/pypi/pyperclip/1.6.0"><code>pyperclip</code></a>: To access the clipboard of the operating system</li>
+          <li><a href="https://pypi.python.org/pypi/dateparser/0.7.0"><code>dateparser</code></a>: To parse natural language repsentation of dates e.g., <code>in 2 days</code>, <code>tomorrow</code></li>
+        </ul>
+      </tip-box>
+      <p><strong>📎 Resources</strong>:</p>
+      <ul>
+        <li><a href="https://automatetheboringstuff.com/appendixa/">More about installing 3rd-party modules</a></li>
+      </ul>
+    </div>
+    <hr>
+    <hr>
+  </div>
+</div>
+</div>
+</body>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\setup.js"></script>
+</html>
