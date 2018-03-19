@@ -66,6 +66,10 @@
       "title": "TE3201 Programming Basics: Object-Oriented Programming"
     },
     {
+      "src": "programming/toc/thirdparty.md",
+      "title": "TE3201 Programming Basics: Appendix A: Installing 3rd Party Modules"
+    },
+    {
       "src": "common/outcomes.md",
       "title": "TE3201 Learning Outcomes"
     },
