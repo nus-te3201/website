@@ -12,11 +12,11 @@
     <include src="../../book/testing/testAutomation/what/full.md" />
   </panel>  
   
-  <panel type="success" header="`W8.1b` Can semi-automate testing of a CLI" expanded no-close>
+  <panel type="success" header="`W8.1c` Can semi-automate testing of a CLI" expanded no-close>
     <include src="../../book/testing/testAutomation/testingTextUis/full.md" />
   </panel>  
   
-  <panel type="success" header="`W8.1b` Can explain regression testing" expanded no-close>
+  <panel type="success" header="`W8.1d` Can explain regression testing" expanded no-close>
     <include src="../../book/testing/testingTypes/regressionTesting/what/full.md" />
   </panel>
 
