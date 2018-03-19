@@ -3190,13 +3190,15 @@
               <div>
                 <panel header=":lock::key: Class Diagram for code">
                   <question>
-                    <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
-                    <ul>
-                      <li>Make the multiplicities as strict as possible without contradicting the code.</li>
-                      <li>You may omit the <code>Main</code> class from both diagrams.</li>
-                    </ul>
-                    <pre><code class="hljs java">
-<span class="hljs-keyword">import</span> java.util.ArrayList;
+                    <tabs>
+                    
+                      <tab header="Java">
+                        <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
+                        <ul>
+                          <li>Make the multiplicities as strict as possible without contradicting the code.</li>
+                          <li>You may omit the <code>Main</code> class from both diagrams.</li>
+                        </ul>
+                        <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;
 <span class="hljs-keyword">import</span> java.util.List;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -3239,8 +3241,48 @@
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span></span>{
     
 }
-
 </code></pre>
+                      </tab>
+                    
+                      <tab header="Python">
+                        <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running the code. Make the multiplicities as strict as possible without contradicting the code.</p>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, item)</span>:</span>
+    self.__item = item <span class="hljs-comment"># type: Item</span>
+    
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+    self.__previous_boxes = [] <span class="hljs-comment"># type: list of Box objects</span>
+    self.__main_card = <span class="hljs-keyword">None</span>    <span class="hljs-comment"># type: Car</span>
+    self.__sub_card = <span class="hljs-keyword">None</span>     <span class="hljs-comment"># type: Card</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_main_card</span><span class="hljs-params">(self, card)</span>:</span>
+    self.__main_card = card <span class="hljs-comment"># type: Card</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_sub_card</span><span class="hljs-params">(self, card)</span>:</span>
+    self.__sub_card = card <span class="hljs-comment"># type: Card</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_previous_box</span><span class="hljs-params">(self, previous_box)</span>:</span>
+    self.__previous_boxes.append(previous_box)
+    
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span>:</span>
+  <span class="hljs-keyword">pass</span>
+
+
+item1 = Item();
+item2 = Item();
+box1 = Box(item1);
+box2 = Box(item2);
+item2.set_main_card(Card());
+item2.add_previous_box(box1);
+item2.add_previous_box(box2);
+</code></pre>
+                      </tab>
+                    </tabs>
+                    <hr>
                     <div slot="answer">
                       <img src="/website/book/oopImplementation/associations/images/classDiagramForCodeAnswer.png" width="600"></div>
                   </question>
@@ -8372,9 +8414,11 @@ Enter side 1:
                 <div>
                   <panel header=":lock: Draw Car class">
                     <question>
-                      <p>Draw a UML diagram to represent the Car class as given below. Include visibilities.</p>
-                      <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+                      <p>Draw a UML diagram to represent the <code>Car</code> class as given below. Include visibilities.</p>
+                      <tabs>
+                      
+                        <tab header="Java">
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
     
     Engine engine;
     <span class="hljs-keyword">private</span> List&lt;Wheel&gt;[] wheels = <span class="hljs-keyword">null</span>;
@@ -8388,8 +8432,27 @@ Enter side 1:
         ...
     }
 }
-
 </code></pre>
+                        </tab>
+                      
+                        <tab header="Python">
+                          <p>💡 You may omit <code>self</code> from method signatures in the class diagram.</p>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model)</span>:</span>
+    self._engine = <span class="hljs-keyword">None</span> <span class="hljs-comment"># type: Engine</span>
+    self.__wheels = []  <span class="hljs-comment"># type: a list of Wheel objects</span>
+    self.model = model  <span class="hljs-comment"># type: string</span>
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self, speed)</span>:</span> <span class="hljs-comment"># speed is an int</span>
+      self.move(speed)
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__move</span><span class="hljs-params">(self, speed)</span>:</span>
+      <span class="hljs-keyword">pass</span>
+</code></pre>
+                        </tab>
+                      </tabs>
+                      <hr>
                     </question>
                   </panel>
                 </div>
@@ -8854,23 +8917,40 @@ Enter side 1:
                 <div>
                   <panel header=":lock: Draw Car object">
                     <question>
-                      <p>Draw a UML diagram to represent the Car object created by the following code.</p>
-                      <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+                      <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
+                      <tabs>
+                      
+                        <tab header="Java">
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
     
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
     
     Car(<span class="hljs-keyword">double</span> price, <span class="hljs-keyword">int</span> speed){
-        ...
+        <span class="hljs-comment">//...</span>
     }
 }
 
-<span class="hljs-comment">// somewhere else in the code base</span>
+<span class="hljs-comment">// somewhere else in the code</span>
 
 Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
-
 </code></pre>
+                        </tab>
+                      
+                        <tab header="Python">
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, price, speed)</span>:</span>
+    self.__price = price <span class="hljs-comment"># type: float</span>
+    self.__speed = speed <span class="hljs-comment"># type: int</span>
+    
+
+<span class="hljs-comment"># somewhere else in the code</span>
+my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);  
+</code></pre>
+                        </tab>
+                      </tabs>
+                      <hr>
                     </question>
                   </panel>
                 </div>
