@@ -212,6 +212,49 @@ Sun Tzu
           </tr>
         </table>
       </tip-box>
+      <panel type="danger" header=":muscle: Exercise: Create `StockItem` Class" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-create-stockitem-class">Exercise : Create <code>StockItem</code> Class</h4>
+          <p>Define the <code>StockItem</code> class missing in the code below so that the code produces the output given on the right.</p>
+          <table>
+            <tr>
+              <td>
+                <pre><code class="hljs python"><span class="hljs-comment"># ADD StockItem class here</span>
+<span class="hljs-comment"># It should have an attribute: name</span>
+<span class="hljs-comment"># It should have a method: info() </span>
+    
+a = StockItem(<span class="hljs-string">'Apple'</span>)
+print(a.info())
+print(a.name)
+b = StockItem(<span class="hljs-string">'Bag of Beans'</span>)
+print(b.info())
+b.name = <span class="hljs-string">'Bananas'</span>
+print(b.info())
+</code></pre>
+              </td>
+              <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+              <td valign="bottom">
+                <pre class="hljs"><code>Item info: Apple
+Apple
+Item info: Bag of Beans
+Item info: Bananas
+</code></pre>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = ...
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">return</span> ...
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
     </div>
     <hr>
     <hr>
@@ -311,6 +354,74 @@ yak yak
         <p>💡 As you can see from the above code, class-level methods can be called even before any objects of that class have been created.
         </p>
       </tip-box>
+      <panel type="danger" header=":muscle: Exercise: Add Class-Level Members to `Subject` Class" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-add-class-level-members-to-subject-class">Exercise : Add Class Level Members to <code>Subject</code> class</h4>
+          <p>Add the following members to the <code>Subject</code> class in the code below so that the code produces the output given on the right.</p>
+          <ul>
+            <li>a class-level attribute <code>total</code> (type: <code>int</code>) that tracks the total number of <code>Subject</code> objects created</li>
+            <li>a class-level method <code>limit_reached(limit)</code> that returns <code>True</code> (type: <code>bool</code>) if the <code>total</code> is greater than or equal to the specified <code>limit</code>.</li>
+          </ul>
+          <table>
+            <tr>
+              <td>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
+    self.name = name
+    self.code = code
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.code, <span class="hljs-string">':'</span>, self.name)
+    
+print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
+s1 = Subject(<span class="hljs-string">'TE3201'</span>, <span class="hljs-string">'Software Engineering'</span>) 
+print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
+print(Subject.limit_reached(<span class="hljs-number">1</span>))
+print(Subject.limit_reached(<span class="hljs-number">2</span>))
+s2 = Subject(<span class="hljs-string">'TEE3201'</span>, <span class="hljs-string">'Software Engineering'</span>)
+print(<span class="hljs-string">'total subjects:'</span>, Subject.total)
+print(Subject.limit_reached(<span class="hljs-number">2</span>))
+print(Subject.limit_reached(<span class="hljs-number">3</span>))
+Subject.total = <span class="hljs-number">100</span>
+print(Subject.limit_reached(<span class="hljs-number">100</span>))
+</code></pre>
+              </td>
+              <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+              <td valign="bottom">
+                <pre class="hljs"><code>total subjects: 0
+total subjects: 1
+True
+False
+total subjects: 2
+True
+False
+True
+</code></pre>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution and hints%%">
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subject</span>:</span>
+  
+  <span class="hljs-comment"># ADD `total` attribute here</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, code, name)</span>:</span>
+    self.name = name
+    self.code = code
+    Subject.total = Subject.total + <span class="hljs-number">1</span> <span class="hljs-comment"># Note this line</span>
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.code, <span class="hljs-string">':'</span>, self.name)
+    
+<span class="hljs-meta">  @classmethod</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">limit_reached</span><span class="hljs-params">(cls, limit)</span>:</span>
+    ... <span class="hljs-comment"># ADD implementation</span>
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
     </div>
     <hr>
     <hr>
@@ -430,6 +541,44 @@ AttributeError: 'Account' object has no attribute '__get_income'...
         <p>💡 Although this example does not have class-level methods, note that the same visibility conventions apply to them as well.
         </p>
       </tip-box>
+      <panel type="danger" header=":muscle: Exercise: Change Visibility of `School` Class Members" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-change-visibility-of-school-class-members">Exercise : Change Visibility of <code>School</code> Class Members</h4>
+          <p>Change the visibility of the members of the <code>School</code> class from private to public in the code below so that the code produces the output given on the right.</p>
+          <table>
+            <tr>
+              <td>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">School</span>:</span>
+  
+  __target = <span class="hljs-number">0.99</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, capital)</span>:</span>
+    self.__budget = capital
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__max_expenditure</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">return</span> self.__budget * School.__target
+    
+print(School.__target)
+s = School(<span class="hljs-number">100000</span>)
+print(s.__budget)
+print(s.__max_expenditure())
+</code></pre>
+              </td>
+              <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+              <td valign="bottom">
+                <pre class="hljs"><code>0.99
+100000
+99000.0
+</code></pre>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Hint%%">
+            <p>Remove the leading underscores of the member names e.g., <code>__target</code> → <code>target</code></p>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
     </div>
     <hr>
     <hr>

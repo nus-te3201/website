@@ -55,3 +55,7 @@ print(colorama.Style.RESET_ALL + ' Back to normal now')
 
 **:paperclip: Resources**:
 * [More about installing 3rd-party modules](https://automatetheboringstuff.com/appendixa/)
+
+<panel type="danger" header=":muscle: Exercise: Print Errors in Red" expanded no-close>
+  <include src="e-printErrorsInRed.md" />
+</panel><p/>
