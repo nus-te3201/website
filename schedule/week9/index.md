@@ -96,6 +96,7 @@
 * Define and use multiple classes
 * Use class-level members
 * Use member visibility
+* Use 3rd-party libraries
 
 </panel>
 
