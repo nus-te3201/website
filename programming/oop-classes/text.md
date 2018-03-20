@@ -211,3 +211,7 @@ Sun Tzu
 </table>
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Create `StockItem` Class" expanded no-close>
+  <include src="e-createStockItemClass.md" />
+</panel><p/>
