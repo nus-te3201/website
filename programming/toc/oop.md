@@ -8,6 +8,7 @@
   * [Classes](#classes)
   * [Class-Level Members](#class-level-members)
   * [Visibility](#visibility)
+  * [Inheritance](#inheritance)
 
   
 </div>
@@ -18,7 +19,7 @@
 <include src="../oop-classes/text.md" /><hr><hr>
 <include src="../oop-classLevelMembers/text.md" /><hr><hr>
 <include src="../oop-visibility/text.md" /><hr><hr>
-<include src="../oop-inheritence/text.md" /><hr><hr>
+<include src="../oop-inheritance/text.md" /><hr><hr>
 
 </div>
 </div>
