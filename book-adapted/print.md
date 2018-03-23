@@ -160,7 +160,6 @@
 
 <include src="../book/modeling/modelingStructures/classDiagramsBasic/print.md" />
 <include src="../book/modeling/modelingStructures/objectDiagrams/print.md" />
-<include src="../book/modeling/modelingStructures/objectOrientedDomainModels/print.md" />
 
 ## Modeling Behaviors
 
@@ -332,6 +331,11 @@
 
 <include src="../book/testing/testingTypes/acceptanceTesting/what/print.md" />
 <include src="../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/print.md" />
+
+### Exploratory vs Scripted Testing
+
+<include src="../book/testing/testingTypes/exploratoryVsScriptedTesting/what/print.md" />
+<include src="../book/testing/testingTypes/exploratoryVsScriptedTesting/when/print.md" />
 
 # Test Case Design
 
