@@ -18,6 +18,7 @@
 <include src="../oop-classes/text.md" /><hr><hr>
 <include src="../oop-classLevelMembers/text.md" /><hr><hr>
 <include src="../oop-visibility/text.md" /><hr><hr>
+<include src="../oop-inheritence/text.md" /><hr><hr>
 
 </div>
 </div>
