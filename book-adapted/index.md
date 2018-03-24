@@ -210,8 +210,6 @@
 <hr>
 <include src="../book/modeling/modelingStructures/objectDiagrams/full.md" />
 <hr>
-<include src="../book/modeling/modelingStructures/objectOrientedDomainModels/full.md" />
-<hr>
 
 ## Modeling Behaviors
 
@@ -219,7 +217,6 @@
 <hr>
 <include src="../book/modeling/modelingBehaviors/useCaseDiagrams/full.md" />
 <hr>
-
 
 <hr>
 
@@ -418,6 +415,13 @@
 <include src="../book/testing/testingTypes/acceptanceTesting/what/full.md" />
 <hr>
 <include src="../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" />
+<hr>
+
+### Exploratory vs Scripted Testing
+
+<include src="../book/testing/testingTypes/exploratoryVsScriptedTesting/what/full.md" />
+<hr>
+<include src="../book/testing/testingTypes/exploratoryVsScriptedTesting/when/full.md" />
 <hr>
 
 # Test Case Design

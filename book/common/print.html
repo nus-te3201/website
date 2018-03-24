@@ -653,7 +653,7 @@
             <img src="/website/book/oopDesign/inheritance/what/images/inheritanceTreesExamples.png" width="500">
             <p></p>
           </tip-box>
-          <p><strong><em>Multiple Inheritance</em> is when a class inherits <em>directly</em> from multiple classes.</strong> Multiple inheritance is allowed among C++ classes but not among Java classes.</p>
+          <p><strong><em>Multiple Inheritance</em> is when a class inherits <em>directly</em> from multiple classes.</strong> Multiple inheritance among classes is allowed in some languages (e.g., Python, C++) but not in other languages (e.g., Java, C#).</p>
           <tip-box>
             <p>📦 The <code>TA</code> class inherits from the <code>Staff</code> class <em>and</em> the <code>Student</code>.</p>
             <img src="/website/book/oopDesign/inheritance/what/images/studentStaff.png" height="200">
@@ -722,12 +722,11 @@
                       </div>
                     </tip-box>
                     <tip-box>
-                      <p>📦 In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int[])</code></p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RatingCalculator</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculate</span><span class="hljs-params">(String matric)</span> </span>{ ... }
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculate</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
-}
-</code></pre>
+                      <p>📦 In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int)</code></p>
+                      <ul>
+                        <li><code>calculate(String): void</code></li>
+                        <li><code>calculate(int): void</code></li>
+                      </ul>
                     </tip-box>
                   </div>
                   <div></div>
@@ -779,12 +778,11 @@
             </div>
           </tip-box>
           <tip-box>
-            <p>📦 In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int[])</code></p>
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RatingCalculator</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculate</span><span class="hljs-params">(String matric)</span> </span>{ ... }
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculate</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
-}
-</code></pre>
+            <p>📦 In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int)</code></p>
+            <ul>
+              <li><code>calculate(String): void</code></li>
+              <li><code>calculate(int): void</code></li>
+            </ul>
           </tip-box>
         </div>
       </div>
@@ -875,9 +873,13 @@
               <div id="main">
                 <div>
                   <p><strong>To override a method inherited from an ancestor class, simply re-implement the method in the target class.</strong></p>
-                  <tip-box>
-                    <p>📦 A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
-                    <pre><code class="hljs java">
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <div>
+                        <tip-box>
+                          <p>📦 A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                          <pre><code class="hljs java">
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
@@ -905,18 +907,79 @@
         evaluationReport.print(); <span class="hljs-comment">// prints "Printing evaluation report"</span>
     }
 }
-
 </code></pre>
-                  </tip-box>
+                        </tip-box>
+                        <p>📎 Resources:</p>
+                        <ul>
+                          <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+                        </ul>
+                      </div>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <div>
+                        <tip-box>
+                          <p>📦 In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                          <table>
+                            <tr>
+                            
+                              <td>
+                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'My name is'</span>, self.name)
+    
+</code></pre>
+                                <p></p>
+                              </td>
+                            
+                              <td valign="bottom">  <br><br></td>
+                            
+                              <td valign="bottom">
+                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
+    self.name = name
+    self.matric = matric
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is a student'</span>)
+</code></pre>
+                                <p></p>
+                              </td>
+                            </tr>
+                          </table>
+                          <table>
+                            <tr>
+                            
+                              <td>
+                                <pre><code class="hljs python">amy = Person(<span class="hljs-string">'Amy'</span>)
+amy.print_info()
+
+ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)
+ben.print_info()
+</code></pre>
+                                <p></p>
+                              </td>
+                            
+                              <td valign="bottom"> → <br><br></td>
+                            
+                              <td valign="bottom">
+                                <pre class="hljs"><code>My name is Amy
+Ben is a student
+</code></pre>
+                                <p></p>
+                              </td>
+                            </tr>
+                          </table>
+                        </tip-box>
+                      </div>
+                    </tab>
+                  </tabs>
+                  <hr>
                 </div>
                 <div>
-                  <div>
-                    <panel header=":paperclip: Resources" expanded="">
-                      <ul>
-                        <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
-                      </ul>
-                    </panel>
-                  </div>
                   <div>
                     <panel header=":muscle: Exercises" expandable="">
                       <div>
@@ -984,9 +1047,13 @@
               <div id="main">
                 <div>
                   <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-                  <tip-box>
-                    <p>📦 The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>. Furthermore, the <code>save</code>                      method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <div>
+                        <tip-box>
+                          <p>📦 The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>. Furthermore, the <code>save</code>                            method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
     }
@@ -1007,18 +1074,24 @@
     }
 }
 </code></pre>
-                  </tip-box>
+                        </tip-box>
+                        <p>📎 Resources:</p>
+                        <ul>
+                          <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javatpoint.com">javatpoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
+                        </ul>
+                      </div>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <div>
+                        <p>❗️ Python does not have direct support for method overloading.</p>
+                      </div>
+                    </tab>
+                  </tabs>
+                  <hr>
                   <p></p>
                 </div>
-                <div>
-                  <div>
-                    <panel header=":paperclip: Resources" expanded="">
-                      <ul>
-                        <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javatpoint.com">javatpoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
-                      </ul>
-                    </panel>
-                  </div>
-                </div>
+                <div></div>
               </div>
             </div>
           </modal>
@@ -1539,25 +1612,29 @@ AcademicStaff academicStaff = staff; // Not OK
         <div>
           <tabs>
           
-            <tab header=":abc:">
+            <tab header="Java">
               <p>To learn how to implement inheritance in Java, you can follow [<a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a>]</p>
+              <panel type="seamless" header=":tv: A very beginner-friendly video about implementing Java inheritance.">
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/9JpNY-XAseg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                <p></p>
+              </panel>
+              <p></p>
+              <p>💡 Java requires all classes to have a parent class. If you do not specify a parent class, Java automatically assigns the <code>Object</code> class as the parent class.</p>
               <p>
                 <hr>
               </p>
             </tab>
           
-            <tab header=":tv:">
-              <p>A very beginner-friendly video about implementing Java inheritance.</p>
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/9JpNY-XAseg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+            <tab header="Python">
+              <ul>
+                <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#inheritance">Python Programming Basics: OOP: Inheritance</a></li>
+              </ul>
+              <p>💡 Python automatically assigns the <code>object</code> class as the parent class.</p>
               <p>
                 <hr>
               </p>
             </tab>
           </tabs>
-          <tip-box type="tip">
-            <p>Java requires all class to have a parent class. If you do not specify a parent class, Java automatically assigns the <code>Object</code> class as the parent class.
-            </p>
-          </tip-box>
         </div>
       </div>
       <div>
@@ -1566,9 +1643,13 @@ AcademicStaff academicStaff = staff; // Not OK
         </div>
         <div>
           <p><strong>To override a method inherited from an ancestor class, simply re-implement the method in the target class.</strong></p>
-          <tip-box>
-            <p>📦 A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
-            <pre><code class="hljs java">
+          <tabs>
+          
+            <tab header="Java">
+              <div>
+                <tip-box>
+                  <p>📦 A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                  <pre><code class="hljs java">
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
@@ -1596,9 +1677,77 @@ AcademicStaff academicStaff = staff; // Not OK
         evaluationReport.print(); <span class="hljs-comment">// prints "Printing evaluation report"</span>
     }
 }
-
 </code></pre>
-          </tip-box>
+                </tip-box>
+                <p>📎 Resources:</p>
+                <ul>
+                  <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+                </ul>
+              </div>
+            </tab>
+          
+            <tab header="Python">
+              <div>
+                <tip-box>
+                  <p>📦 In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'My name is'</span>, self.name)
+    
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td valign="bottom">  <br><br></td>
+                    
+                      <td valign="bottom">
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
+    self.name = name
+    self.matric = matric
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is a student'</span>)
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <pre><code class="hljs python">amy = Person(<span class="hljs-string">'Amy'</span>)
+amy.print_info()
+
+ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)
+ben.print_info()
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td valign="bottom"> → <br><br></td>
+                    
+                      <td valign="bottom">
+                        <pre class="hljs"><code>My name is Amy
+Ben is a student
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </tip-box>
+              </div>
+            </tab>
+          </tabs>
+          <hr>
         </div>
       </div>
       <div>
@@ -1607,10 +1756,13 @@ AcademicStaff academicStaff = staff; // Not OK
         </div>
         <div>
           <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-          <tip-box>
-            <p>📦 The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>. Furthermore, the <code>save</code> method
-              in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+          <tabs>
+          
+            <tab header="Java">
+              <div>
+                <tip-box>
+                  <p>📦 The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>. Furthermore, the <code>save</code>                    method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Account () {
         ...
     }
@@ -1631,7 +1783,21 @@ AcademicStaff academicStaff = staff; // Not OK
     }
 }
 </code></pre>
-          </tip-box>
+                </tip-box>
+                <p>📎 Resources:</p>
+                <ul>
+                  <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javatpoint.com">javatpoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
+                </ul>
+              </div>
+            </tab>
+          
+            <tab header="Python">
+              <div>
+                <p>❗️ Python does not have direct support for method overloading.</p>
+              </div>
+            </tab>
+          </tabs>
+          <hr>
           <p></p>
         </div>
       </div>
@@ -4575,9 +4741,17 @@ studentList.addUi(statusUi);
           <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood,
             and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
           <tip-box>
-            <p>Example: The two code samples given below achieve the same functionality, but one is easier to read.</p>
-            <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
-            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
+            <p>📦 The two code samples given below achieve the same functionality, but one is easier to read.</p>
+            <tabs>
+            
+              <tab header="Java">
+                <div>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
         <span class="hljs-keyword">if</span> (!sub) {
@@ -4595,8 +4769,14 @@ studentList.addUi(statusUi);
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-            <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
-            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
+                        <p></p>
+                      </td>
+                    
+                      <td>  <br><br></td>
+                    
+                      <td valign="top">
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
         subsidy = REJECT_SENIOR;
@@ -4610,6 +4790,58 @@ studentList.addUi(statusUi);
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </tab>
+            
+              <tab header="Python">
+                <div>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
+                subsidy = <span class="hljs-number">500</span>
+            <span class="hljs-keyword">else</span>:
+                subsidy = <span class="hljs-number">250</span>
+        <span class="hljs-keyword">else</span>:
+            subsidy = <span class="hljs-number">250</span>
+    <span class="hljs-keyword">else</span>:
+        subsidy = <span class="hljs-number">-1</span>
+    <span class="hljs-keyword">return</span> subsidy
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td>  <br><br></td>
+                    
+                      <td valign="top">
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> is_senior:
+        <span class="hljs-keyword">return</span> REJECT_SENIOR
+    <span class="hljs-keyword">elif</span> is_already_subsidised:
+        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY
+    <span class="hljs-keyword">elif</span> is_parttime:
+        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </tab>
+            </tabs>
+            <hr>
           </tip-box>
         </div>
       </div>
@@ -4645,13 +4877,17 @@ studentList.addUi(statusUi);
               <div>
                 <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and use them to calculate
                   the final value).</p>
-                <tip-box>
-                  <p>Example:</p>
-                  <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
+                <tabs>
+                
+                  <tab header="Java">
+                    <div>
+                      <tip-box>
+                        <p>📦 Example:</p>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
-                  <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
-                  <pre><code class="hljs java">
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
 <span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
 <span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
@@ -4660,7 +4896,31 @@ studentList.addUi(statusUi);
 
 <span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
 </code></pre>
-                </tip-box>
+                      </tip-box>
+                    </div>
+                  </tab>
+                
+                  <tab header="Python">
+                    <div>
+                      <tip-box>
+                        <p>📦 Example:</p>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
+</code></pre>
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
+is_same_size = previous_size != length
+is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
+
+is_urgent = type_code == URGENT
+
+<span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
+</code></pre>
+                      </tip-box>
+                    </div>
+                  </tab>
+                </tabs>
+                <hr>
                 <blockquote>
                   <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. <sub>-- Edsger Dijkstra</sub></p>
                 </blockquote>
@@ -4670,32 +4930,83 @@ studentList.addUi(statusUi);
           <panel header="**Avoid Magic Numbers**" type="seamless" expanded="">
             <div>
               <div>
-                <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”).</p>
+                <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a
+                  <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
                 <tip-box>
-                  <p>Example:</p>
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th><img src="/website/book/images/Bad.png" alt="" title="Bad"></th>
-                        <th><img src="/website/book/images/Good.png" alt="" title="Good"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><code>return 3.14236;</code></td>
-                        <td><code>return PI</code></td>
-                      </tr>
-                      <tr>
-                        <td><code>return 9</code></td>
-                        <td><code>return MAX_SIZE-1</code></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <p>📦 Example:</p>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <div>
+                        <table>
+                          <tr>
+                          
+                            <td valign="top">
+                              <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                              <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+...
+<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
+</code></pre>
+                              <p></p>
+                            </td>
+                          
+                            <td>  <br><br></td>
+                          
+                            <td valign="top">
+                              <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                              <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
+...
+<span class="hljs-keyword">return</span> PI;
+...
+<span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
+</code></pre>
+                              <p></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <div>
+                        <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
+                        <table>
+                          <tr>
+                          
+                            <td valign="top">
+                              <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                              <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+...
+<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
+</code></pre>
+                              <p></p>
+                            </td>
+                          
+                            <td>  <br><br></td>
+                          
+                            <td valign="top">
+                              <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                              <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+MAX_SIZE = <span class="hljs-number">10</span>
+...
+<span class="hljs-keyword">return</span> PI
+...
+<span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
+</code></pre>
+                              <p></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </tab>
+                  </tabs>
+                  <hr>
                 </tip-box>
-                <p>Using a named constant makes the code easier to understand because the name tells us more about the meaning of the number. Similarly, we can have ‘magic’ values of other data types.</p>
+                <p>Similarly, we can have ‘magic’ values of other data types.</p>
                 <tip-box>
                   <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">return</span> “Error <span class="hljs-number">1432</span>”;  <span class="hljs-comment">// A magic string!</span>
+                  <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
                 </tip-box>
               </div>
@@ -4706,13 +5017,18 @@ studentList.addUi(statusUi);
               <div>
                 <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
                 <ul>
-                  <li>Use explicit type conversion instead of implicit type conversion.</li>
-                  <li>Use parentheses/braces to show grouping even when they can be skipped.</li>
-                  <li>Use enumerations when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled'
-                    respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
-                  <li>When statements should follow a particular order, try to make it obvious (with appropriate naming, or at least comments). For example, if you name two functions <code>'taskA()'</code> and <code>'taskB()'</code>, it is not obvious which
-                    one should be called first. Contrast this with naming the functions <code>'phaseOne()'</code> and <code>'phaseTwo()'</code> instead. This is especially important when statements in one function must be called before the other one.</li>
+                  <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
+                  <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
+                  <li>[<code>Java</code>, <code>Python</code>] Use
+                    <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and
+                    'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
                 </ul>
+                <modal title="More about enumerations" id="modal:obviousCode-enums">
+                  <ul>
+                    <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
+                    <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
+                  </ul>
+                </modal>
               </div>
             </div>
           </panel>
@@ -4925,7 +5241,11 @@ exit();
           <h4 id="basic-one-6">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <div>
-          <p>Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a> and learn the <em>basic</em> style rules.</p>
+          <p>Some coding standards you can adopt:</p>
+          <ul>
+            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard -- by OSS-Generic</a></li>
+            <li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></li>
+          </ul>
         </div>
       </div>
       <div>
@@ -4981,11 +5301,26 @@ exit();
                     </tbody>
                   </table>
                 </tip-box>
-                <p><strong>Distinguish clearly between single valued and multivalued variables.</strong></p>
+                <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
                 <tip-box>
-                  <p>Examples:</p>
-                  <p><code>Person student</code><br>
-                    <code>ArrayList&lt;Person&gt; students</code></p>
+                  <p>📦 Examples:</p>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                      <pre><code class="hljs java">Person student;
+ArrayList&lt;Person&gt; students;
+</code></pre>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                      <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
+students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
+</code></pre>
+                    </tab>
+                  </tabs>
+                  <hr>
                 </tip-box>
               </div>
             </div>
@@ -5324,18 +5659,43 @@ trimInput();
               <div>
                 <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class
                   or an operation to explain its purpose.</p>
-                <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+                <tip-box>
+                  <p>📦 Examples:</p>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <div>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                        <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
-                <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
-                <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
     ....
 }
 </code></pre>
+                      </div>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <div>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                        <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+    ...
+</code></pre>
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+<span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
+    ...
+</code></pre>
+                      </div>
+                    </tab>
+                  </tabs>
+                </tip-box>
               </div>
             </div>
           </panel>
@@ -5404,20 +5764,31 @@ compact(input);
               <li>improve performance (sometimes, simpler code runs faster than complex code because simpler code is easier for the compiler to optimize).</li>
             </ul>
           </tip-box>
-          <p>Given below are two common refactorings (taken from
-            <trigger trigger="click" for="modal:refactoring-catalog-what"> refactoring-catalog </trigger>).</p>
-          <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-what">
+          <p>Given below are two common refactorings (
+            <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
+          <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what">
             <div>
-              <p><a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring:
-                <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></p>
+              <ul>
+                <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on
+                  refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
+                <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
+              </ul>
             </div>
           </modal>
           <tip-box>
             <p>Refactoring Name: <strong>Consolidate Duplicate Conditional Fragments</strong></p>
             <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
             <p>Method: Move it outside of the expression.</p>
-            <p>Example:</p>
-            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
+            <p>📦 Example:</p>
+            <tabs>
+            
+              <tab header="Java">
+                <div>
+                  <table>
+                    <tr>
+                    
+                      <td valign="top">
+                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
     total = price * <span class="hljs-number">0.95</span>;
     send();
 } <span class="hljs-keyword">else</span> {
@@ -5425,21 +5796,72 @@ compact(input);
     send();
 }
 </code></pre>
-            <p>⤵️</p>
-            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
+                        <p></p>
+                      </td>
+                    
+                      <td valign="center"> → </td>
+                    
+                      <td valign="top">
+                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
     total = price * <span class="hljs-number">0.95</span>;
 } <span class="hljs-keyword">else</span> {
     total = price * <span class="hljs-number">0.98</span>;
 }
 send();
+
 </code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </tab>
+            
+              <tab header="Python">
+                <div>
+                  <table>
+                    <tr>
+                    
+                      <td valign="top">
+                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+    total = price * <span class="hljs-number">0.95</span>
+    send()
+<span class="hljs-keyword">else</span>:
+    total = price * <span class="hljs-number">0.98</span>
+    send()
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td valign="center"> → </td>
+                    
+                      <td valign="top">
+                        <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+    total = price * <span class="hljs-number">0.95</span>
+<span class="hljs-keyword">else</span>:
+    total = price * <span class="hljs-number">0.98</span>
+    
+send()
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </tab>
+            </tabs>
+            <hr>
           </tip-box>
           <tip-box>
             <p>Refactoring Name: <strong>Extract Method</strong></p>
             <p>Situation: You have a code fragment that can be grouped together.</p>
             <p>Method: Turn the fragment into a method whose name explains the purpose of the method.</p>
-            <p>Example:</p>
-            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+            <p>📦 Example:</p>
+            <tabs>
+            
+              <tab header="Java">
+                <div>
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
 
     <span class="hljs-comment">//print details</span>
@@ -5447,8 +5869,8 @@ send();
     System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
 }
 </code></pre>
-            <p>⤵️</p>
-            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+                  <p>⤵️</p>
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
     printBanner();
     printDetails(getOutstanding());
 }
@@ -5458,6 +5880,31 @@ send();
     System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
 }
 </code></pre>
+                </div>
+              </tab>
+            
+              <tab header="Python">
+                <div>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+    print_banner()
+
+    //<span class="hljs-keyword">print</span> details
+    print(<span class="hljs-string">"name:	"</span> + name)
+    print(<span class="hljs-string">"amount	"</span> + get_outstanding())
+</code></pre>
+                  <p>⤵️</p>
+                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+    print_banner()
+    print_details(get_outstanding())
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span>
+    print(<span class="hljs-string">"name:	"</span> + name)
+    print(<span class="hljs-string">"amount	"</span> + amount)
+</code></pre>
+                </div>
+              </tab>
+            </tabs>
+            <hr>
           </tip-box>
           <tip-box>
             <p>💡 Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
@@ -5476,8 +5923,11 @@ send();
             <trigger trigger="click" for="modal:refactoring-catalog-how"> refactoring-catalog </trigger>.</p>
           <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-how">
             <div>
-              <p><a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring:
-                <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></p>
+              <ul>
+                <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on
+                  refactoring: <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
+                <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
+              </ul>
             </div>
           </modal>
           <ol>
@@ -5761,11 +6211,11 @@ send();
           <h4 id="how-two-7">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
         </div>
         <div>
-          <p><strong>Most languages allow a method to encapsulate the unusual situation in an Exception object and 'throw'/'raise' that object so that another piece of code can 'catch' it and deal with it.</strong> This is especially useful when code segment
-            that encountered the unusual situation does not know how to deal with it.</p>
-          <p><strong>Exception objects can propagate up the method/function call hierarchy until it is dealt with.</strong> Usually, an exception thrown by a method is caught by the caller method. If the called method does not know how to deal with the exception
-            it caught, it can throw/raise the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the method call stack until it is received by the main method and thrown
-            to the runtime, thus halting the system.</p>
+          <p><strong>Most languages allow a method/function to encapsulate the unusual situation in an Exception object and 'throw'/'raise' that object so that another piece of code can 'catch' it and deal with it.</strong> This is especially useful when
+            code segment that encountered the unusual situation does not know how to deal with it.</p>
+          <p><strong>Exception objects can propagate up the function call hierarchy until it is dealt with.</strong> Usually, an exception thrown by a function is caught by the caller function. If the called function does not know how to deal with the exception
+            it caught, it can throw/raise the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the
+            <tooltip content="the hieararchy of function calls">function call stack</tooltip> until it is received by the main function and thrown to the runtime, thus halting the system.</p>
           <tip-box>
             <tabs>
             
