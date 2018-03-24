@@ -94,7 +94,7 @@
 
 <include src="../book/oopDesign/introduction/print.md" />
 
-<p style="page-break-after: always;">&nbsp;</p>
+{{pageBreak}}
 
 ## Objects
 
@@ -129,6 +129,7 @@
 <include src="../book/oopImplementation/aggregation/print.md" />
 
 </div><!-- handout--classes -->
+<div id="handout-inheritance" >
 
 ## Inheritance
 
@@ -141,6 +142,7 @@
 <include src="../book/oopDesign/inheritance/overloading/print.md" />
 <include src="../book/oopImplementation/overloading/print.md" />
 
+</div> <!-- handout-inheritance -->
 
 # Design Fundamentals
 
@@ -199,6 +201,8 @@
 <include src="../book/ides/debugging/what/print.md" />
 
 </div>
+<div id="handout-codeQuality-refactoring" >
+{{pageBreak}}
 
 # Code Quality
 
@@ -226,10 +230,13 @@
 <include src="../book/codeQuality/commentMinimally/introduction/print.md" />
 <include src="../book/codeQuality/commentMinimally/basic/print.md" />
 
+{{pageBreak}}
 
 # Refactoring
 
 <include src="../book/refactoring/what/print.md" />
+
+</div> <!-- handout-codeQuality-refactoring -->
 
 # Reuse
 
@@ -387,12 +394,11 @@
 <include src="../book/projectPlanning/milestones/print.md" />
 <include src="../book/projectPlanning/buffers/print.md" />
 <include src="../book/projectPlanning/issueTrackers/print.md" />
-<p style="page-break-after: always;">&nbsp;</p>
+{{pageBreak}}
 <include src="../book/projectPlanning/ganttCharts/print.md" />
-<p style="page-break-after: always;">&nbsp;</p>
+{{pageBreak}}
 <include src="../book/projectPlanning/pertCharts/print.md" />
-
-<p style="page-break-after: always;">&nbsp;</p>
+{{pageBreak}}
 
 # Teamwork
 
