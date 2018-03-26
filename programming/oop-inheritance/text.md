@@ -72,6 +72,10 @@ the name is Dan
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Add `Fish` Class" expanded no-close>
+  <include src="e-addFishClass.md" />
+</panel><p/>
+
 **A child class can _override_ a method defined in the parent class.** That way, a child object can change a behavior defined in the parent class.
 
 <tip-box> 
@@ -152,6 +156,10 @@ class Student(Person):
 
 </tip-box>
 
+<panel type="danger" header=":muscle: Exercise: Add `FlightlessBird` Class" expanded no-close>
+  <include src="e-addFlightlessBirdClass.md" />
+</panel><p/>
+
 
 **Note that all python classes automatically inherits from the built-in class `object`** even if you did not specify it as the parent class. The `object` class has a `__str__()` method that you can ovrride in your classes to customize how the `print` function will print an object of your class.
 
@@ -186,6 +194,11 @@ Book title: Python for Beginners
 </table>
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Override `__str__()` Method" expanded no-close>
+  <include src="e-overrideStr.md" />
+</panel><p/>
+
 
 **A class can inherit from multiple classes.** If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.
 
@@ -271,3 +284,7 @@ Elsie is grading
 As both `Teacher` and `Student` classes have the `print_info()` method, the method from the `Teacher` class will be used as it comes first in the inheritance order `(Teacher, Student)`; that is why you see `Elsie is a teacher` in the output instead of `Elsie is a student`.
 
 </tip-box>
+
+<panel type="danger" header=":muscle: Exercise: Add `SmartPhone` Class" expanded no-close>
+  <include src="e-addSmartPhoneClass.md" />
+</panel><p/>
