@@ -655,7 +655,50 @@ the name is Dan
           </tr>
         </table>
       </tip-box>
-      <p><strong>A child class can override a method defined in the parent class.</strong> That way, a child object can change a behavior defined in the parent class.</p>
+      <panel type="danger" header=":muscle: Exercise: Add `Fish` Class" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class</h4>
+          <p>Add a <code>Fish</code> class that inherits from the <code>Animal</code> class so that the code below produces the given output.</p>
+          <table>
+            <tr>
+              <td>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">"I'm a"</span>, self.name)
+    
+<span class="hljs-comment"># ADD YOUR CODE HERE</span>
+    
+tuna = Fish(<span class="hljs-string">'Tuna'</span>)
+tuna.info()
+tuna.move()
+guppy = Fish(<span class="hljs-string">'Guppy'</span>)
+guppy.info()
+guppy.move()
+</code></pre>
+              </td>
+              <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+              <td valign="bottom">
+                <pre class="hljs"><code>I'm a Tuna
+I'm swimming
+I'm a Guppy
+I'm swimming
+</code></pre>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fish</span><span class="hljs-params">(Animal)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
+    ...
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
+      <p><strong>A child class can <em>override</em> a method defined in the parent class.</strong> That way, a child object can change a behavior defined in the parent class.</p>
       <tip-box>
         <p>📦 Note how the <code>Student</code> class below overrides the <code>__init__()</code> method and the <code>print_info()</code> method of the parent class <code>Person</code>.</p>
         <table>
@@ -725,6 +768,67 @@ Ben is learning
           </tr>
         </table>
       </tip-box>
+      <panel type="danger" header=":muscle: Exercise: Add `FlightlessBird` Class" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class</h4>
+          <p>Do the following changes to the given code so that the code below produces the given output:</p>
+          <ol>
+            <li>update the <code>info()</code> method of the <code>Bird</code> to call the same method from the parent class</li>
+            <li>add a <code>FlightlessBird</code> class that inherits from the <code>Bird</code> class, and override the <code>move()</code> method</li>
+          </ol>
+          <table>
+            <tr>
+              <td>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">"I'm a"</span>, self.name)
+    
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bird</span><span class="hljs-params">(Animal)</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">"I'm flying"</span>)
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-comment"># CALL info() METHOD OF PARENT CLASS HERE </span>
+    print(<span class="hljs-string">"I have feathers"</span>)
+
+<span class="hljs-comment"># ADD FlightlessBird CLASS HERE</span>
+
+crow = Bird(<span class="hljs-string">'Crow'</span>)
+crow.info()
+crow.move()
+penguin = FlightlessBird(<span class="hljs-string">'Penguin'</span>)
+penguin.info()
+penguin.move()
+</code></pre>
+              </td>
+              <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+              <td valign="bottom">
+                <pre class="hljs"><code>I'm a Crow
+I have feathers
+I'm flying
+I'm a Penguin
+I have feathers
+I'm waddling
+</code></pre>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlightlessBird</span><span class="hljs-params">(Bird)</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
+    ...
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
       <p><strong>Note that all python classes automatically inherits from the built-in class <code>object</code></strong> even if you did not specify it as the parent class. The <code>object</code> class has a <code>__str__()</code> method that you can ovrride
         in your classes to customize how the <code>print</code> function will print an object of your class.</p>
       <tip-box>
@@ -756,7 +860,42 @@ print(book)
           </tr>
         </table>
       </tip-box>
-      <p><strong>A class can inherit from multiple classes.</strong> If multiple parent classes has the same method, the one that is given first (in the order of inheritance) will be used.</p>
+      <panel type="danger" header=":muscle: Exercise: Override `__str__()` Method" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method</h4>
+          <p>Override the <code>__str()__</code> of the <code>Person</code> class so that the code below produces the given output.</p>
+          <table>
+            <tr>
+              <td>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, age)</span>:</span>
+    self.name = name
+    self.age = age
+  
+  <span class="hljs-comment"># OVERRIDE __str__ METHOD HERE</span>
+    
+print(Person(<span class="hljs-string">'Amy'</span>, <span class="hljs-number">25</span>))
+print(Person(<span class="hljs-string">'Ben'</span>, <span class="hljs-number">26</span>))
+</code></pre>
+              </td>
+              <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+              <td valign="bottom">
+                <pre class="hljs"><code>Amy (25years)
+Ben (26years)
+</code></pre>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">return</span> self.name + ...
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
+      <p><strong>A class can inherit from multiple classes.</strong> If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.</p>
       <tip-box>
         <table>
           <tr>
@@ -827,8 +966,56 @@ Elsie is grading
           </tr>
         </table>
         <p>As both <code>Teacher</code> and <code>Student</code> classes have the <code>print_info()</code> method, the method from the <code>Teacher</code> class will be used as it comes first in the inheritance order <code>(Teacher, Student)</code>; that
-          is why you see <code>Elsie is a teacher</code> in the output instead of <code>Elsie is a student</code></p>
+          is why you see <code>Elsie is a teacher</code> in the output instead of <code>Elsie is a student</code>.</p>
       </tip-box>
+      <panel type="danger" header=":muscle: Exercise: Add `SmartPhone` Class" expanded="" no-close="">
+        <div>
+          <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class</h4>
+          <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
+          <table>
+            <tr>
+              <td>
+                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Camera</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">take_photo</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'taking photo'</span>)
+    
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Phone</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">make_call</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'making call'</span>)
+    
+<span class="hljs-comment"># ADD SmartPhone CLASS HERE</span>
+
+iphone = SmartPhone(<span class="hljs-string">'iPhone'</span>)
+iphone.take_photo()
+iphone.make_call()
+iphone.play_game()
+</code></pre>
+              </td>
+              <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+              <td valign="bottom">
+                <pre class="hljs"><code>My model: iPhone
+taking photo
+making call
+playing game
+</code></pre>
+              </td>
+            </tr>
+          </table>
+          <panel type="seamless" header="%%:bulb: Partial solution%%">
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmartPhone</span><span class="hljs-params">(Camera, Phone)</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    ...
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">play_game</span><span class="hljs-params">(self)</span>:</span>
+    ...
+</code></pre>
+          </panel>
+        </div>
+      </panel>
+      <p></p>
     </div>
     <hr>
     <hr>
