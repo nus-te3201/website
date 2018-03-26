@@ -72,7 +72,7 @@ the name is Dan
 
 </tip-box>
 
-**A child class can override a method defined in the parent class.** That way, a child object can change a behavior defined in the parent class.
+**A child class can _override_ a method defined in the parent class.** That way, a child object can change a behavior defined in the parent class.
 
 <tip-box> 
 
@@ -187,7 +187,7 @@ Book title: Python for Beginners
 
 </tip-box>
 
-**A class can inherit from multiple classes.** If multiple parent classes has the same method, the one that is given first (in the order of inheritance) will be used.
+**A class can inherit from multiple classes.** If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.
 
 <tip-box> 
 
@@ -268,6 +268,6 @@ Elsie is grading
 </tr>
 </table>
 
-As both `Teacher` and `Student` classes have the `print_info()` method, the method from the `Teacher` class will be used as it comes first in the inheritance order `(Teacher, Student)`; that is why you see `Elsie is a teacher` in the output instead of `Elsie is a student`
+As both `Teacher` and `Student` classes have the `print_info()` method, the method from the `Teacher` class will be used as it comes first in the inheritance order `(Teacher, Student)`; that is why you see `Elsie is a teacher` in the output instead of `Elsie is a student`.
 
 </tip-box>

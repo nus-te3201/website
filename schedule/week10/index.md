@@ -1,90 +1,66 @@
 ### Learning Outcomes
 
-#### OOP
+#### OOP - Inheritance
 
-<panel type="success" header="**`W9.1` Can describe classes in an OOP design**" no-close>
+<panel type="success" header="**`W10.1` Can use inheritance in a design**" no-close>
 
-  <panel type="success" header="`W9.1a` Can explain classes" expanded no-close>
-    <include src="../../book/oopDesign/classes/basic/full.md" />
-  </panel>
-  
-  <panel type="success" header="`W9.1b` Can implement basic classes" expanded no-close>
-    <include src="../../book/oopImplementation/classes/full.md" />
+  <panel type="success" header="`W10.1a` Can use inheritance" expanded no-close>
+    <include src="../../book/oopDesign/inheritance/what/full.md" />
+    <include src="../../book/oopImplementation/inheritance/full.md" />
   </panel>  
   
-  <panel type="success" header="`W9.1c` Can explain class-level members" expanded no-close>
-    <include src="../../book/oopDesign/classes/classLevelMembers/full.md" />
-  </panel>
+  <panel type="success" header="`W10.1b` Can use overriding" expanded no-close>
+    <include src="../../book/oopDesign/inheritance/overriding/full.md" />
+    <include src="../../book/oopImplementation/overriding/full.md" /> 
+  </panel>  
   
-  <panel type="success" header="`W9.1d` Can implement class-level members" expanded no-close>
-    <include src="../../book/oopImplementation/classLevelMembers/full.md" /> 
+  <panel type="success" header="`W10.1c` Can use overloading" expanded no-close>
+    <include src="../../book/oopDesign/inheritance/overloading/full.md" /> 
+    <include src="../../book/oopImplementation/overloading/full.md" /> 
   </panel>  
   
 </panel>
 
-<panel type="success" header="**`W9.2` Can describe associations in an OOP design**" no-close>
 
-  <panel type="success" header="`W9.2a` Can explain associations" expanded no-close>
-    <include src="../../book/oopDesign/associations/basic/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W9.2b` Can explain navigability" expanded no-close>
-    <include src="../../book/oopDesign/associations/navigability/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W9.2c` Can explain multiplicity" expanded no-close>
-    <include src="../../book/oopDesign/associations/multiplicity/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W9.2d` Can explain implement associations" expanded no-close>
-    <include src="../../book/oopImplementation/associations/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W9.2e` Can explain dependencies" expanded no-close>
-    <include src="../../book/oopDesign/associations/dependencies/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W9.2f` Can implement dependencies" expanded no-close>
-    <include src="../../book/oopImplementation/dependencies/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W9.2g` Can explain composition" expanded no-close>
-    <include src="../../book/oopDesign/associations/composition/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W9.2h` Can implement composition" expanded no-close>
-    <include src="../../book/oopImplementation/composition/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W9.2i` Can explain aggregation" expanded no-close>
-    <include src="../../book/oopDesign/associations/aggregation/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W9.2j` Can implment aggregation" expanded no-close>
-    <include src="../../book/oopImplementation/aggregation/full.md" />
-  </panel>
+<panel type="success" header="**`W10.2` Can improve code quality**" no-close>
 
+  <panel type="success" header="`W10.2a` Can explain code quality" expanded no-close>
+    <include src="../../book/codeQuality/introduction/basic/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W10.2b` Can improve code readbility" expanded no-close>
+    <include src="../../book/codeQuality/maximiseReadability/introduction/full.md" />
+    <include src="../../book/codeQuality/maximiseReadability/basic/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W10.2d` Can follow coding standards" expanded no-close>
+    <include src="../../book/codeQuality/followStandard/introduction/full.md" />
+    <include src="../../book/codeQuality/followStandard/basic/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W10.2f` Can use good naming to improve code quality" expanded no-close>
+    <include src="../../book/codeQuality/nameWell/introduction/full.md" />
+    <include src="../../book/codeQuality/nameWell/basic/full.md" />
+  </panel>  
+  
+  <panel type="success" header="`W10.2h` Can write good quality code" expanded no-close>
+    <include src="../../book/codeQuality/commentMinimally/introduction/full.md" />
+    <include src="../../book/codeQuality/commentMinimally/basic/full.md" />
+  </panel>  
+
+</panel>
+
+<panel type="success" header="**`W10.3` Can refactor code**" no-close>
+
+  <include src="../../book/refactoring/what/full.md" />
+  
 </panel>
 
 
 #### Programing Basics
 
-<panel type="warning" header="**`W9.3` Can implement a basic OOP design**" no-close>
-
-  <panel type="warning" header="`W9.3a` Can implement classes" expanded no-close>
-    <include src="../../programming/oop-classes/text.md" />
-  </panel>
-  <panel type="warning" header="`W9.3b` Can implement class-level members" expanded no-close>
-    <include src="../../programming/oop-classLevelMembers/text.md" />
-  </panel>
-  <panel type="warning" header="`W9.3c` Can implement member visibility" expanded no-close>
-    <include src="../../programming/oop-visibility/text.md" />
-  </panel>
-
-</panel>
-
-<panel type="warning" header="**`W9.4` Can use third-party modules**" no-close>
-  <include src="../../programming/thirdparty/text.md" />
+<panel type="warning" header="**`W10.4` Can implement inheritance**" no-close>
+  <include src="../../programming/oop-inheritance/text.md" />
 </panel>
 
 <br><br>
@@ -93,10 +69,7 @@
 
 <panel header=" Evidence of achieving the LO" no-close>
 
-* Define and use multiple classes
-* Use class-level members
-* Use member visibility
-* Use 3rd-party libraries
+* Use inheritance, overriding, and overloading (if supported in your language) in your code
 
 </panel>
 
