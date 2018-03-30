@@ -113,16 +113,79 @@ Some suggestions for _additional functionality_:
 
 * **Week 13** (final submission): 30%
   * Functionality: all functionality
-    * Submission: Upload to IVLE, demo during lecture in week 13
-  * Documentation: TBD
+    * Submission: 
+      * Zip up all source files, upload to IVLE. File name should contain member names. :alarm_clock: Deadline: week 13 Monday midnight.
+      * Demo the product during week 13 lecture. Each person should demo the features s/he implemented.
+  * Documentation: 
+    * Include all content included in mid-term submission. ==Refine as per feedback given.==
+    * Add a **class diagram** to represent the design of your software. If your software is not an OOP solution, draw the diagram to match how you _propose_ to design your software in an OOP approach, if you were to do the project again. [<trigger trigger="click" for="modal:finalSubmission-classDiagram">example</trigger>]
+    * Add an **object diagram** to represent the state of your software after the user has entered some data (assuming your software follows the class diagram above). [<trigger trigger="click" for="modal:finalSubmission-objectDiagram">example</trigger>]
+    * Give a sample of **test cases** you would use to test the software.
+      * <tooltip content="if you are a 2-person team, give 4 test cases">2 x TEAM_SIZE</tooltip> System test cases: Describe what feature is being tested, steps the tester should take, inputs at various steps, and expected outputs. These tests can be manual or automated. [<trigger trigger="click" for="modal:finalSubmission-systemTests">example</trigger>]
+      * Unit test cases for <tooltip content="if you are a 2-person team, give test cases for 2 functions">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary that for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output. [<trigger trigger="click" for="modal:finalSubmission-unitTests">example</trigger>]
+    * Submission: As before, upload to IVLE in docx or pdf format. File name should contain member names. :alarm_clock: Deadline: week 13 Monday midnight.
 
+<modal large title="Class diagram example" id="modal:finalSubmission-classDiagram">
+ 
+Your actual class diagram is ==likely to be simpler== than this example:
+
+<img src="{{baseUrl}}/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600" />
+
+</modal>
+
+<modal large title="Object diagram example" id="modal:finalSubmission-objectDiagram">
+ 
+<img src="{{baseUrl}}/book/oopDesign/associations/basic/images/completeStructure.png" height="120" />
+
+</modal>
+
+<modal large id="modal:finalSubmission-systemTests">
+
+## Sample System Tests
+ 
+**Test case 1: Launch without prior data**
+* Feature being tested : launch of app, without any prior data
+* Set up: 
+  1. Delete all files in the `/data/` folder.
+* Steps:
+  1. Run the app using the command `python main.py`
+  1. Confirm the the app shows a welcome screen and a summary of commands, as shown below:<br>
+     {screenshot here}
+
+**Test case 2: Add first contact**
+* Feature being tested : adding of a contact when there are no prior data
+* Set up: 
+  1. Launch app without any prior data (similar to `Test case 1` above).
+* Steps:
+  Input | Expected
+  ----- | --------
+  Enter command `add` | app shows error message and show the correct format of the `add` command
+  Enter command<br> `add John Doe` | app shows list of contacts containing only one person<br> {screenshot here}
+  
+</modal>
+
+<modal large id="modal:finalSubmission-unitTests">
+
+## Sample Unit Tests
+ 
+**Function being tested : `add_contact(current_contacts, new_contact)`**
+
+Description of the function: appends the `Person` object `new_contact` to the `current_contacts` (a list of `Person` objects) if it doesn't contain that person already.
+
+`current_contacts` | `new_contact` | Expected `current_contacts`
+---------------- | ----------- | --------
+`[]` | `Person('John')` | `[Person('John')]`
+`[Person('John')]` | `Person('John')` | `[Person('John')]`
+`[Person('John')]` | `Person('Amy')` | `[Person('John'), Person('Amy')]`
+  
+</modal>
 
 ## Exam
 
 * Total: 2 hours
   * Part 1: MCQ (1 hour)
   * Part 2: Essay (1 hour)
-* Open book
+* Open book (any printed or written materials are allowed)
 
 ## Grading
  

@@ -70,6 +70,10 @@
       "title": "TE3201 Programming Basics: Appendix A: Installing 3rd Party Modules"
     },
     {
+      "src": "programming/toc/unittesting.md",
+      "title": "TE3201 Programming Basics: Appendix B: Unit Testing"
+    },
+    {
       "src": "common/outcomes.md",
       "title": "TE3201 Learning Outcomes"
     },
