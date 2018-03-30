@@ -2,7 +2,9 @@
 <div class="website-content">
 <div id="main">
 
-<include src="../../book-adapted/print.md#handout-qa" />
+<sub>%%... continuing from the Testing chapter%%</sub>
+
+<include src="../../book-adapted/print.md#handout-qa-remainder" />
  
 </div>
 </div>
