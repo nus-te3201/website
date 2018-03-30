@@ -311,7 +311,8 @@
 
 <include src="../book/testing/testingTypes/regressionTesting/what/print.md" />
 
-</div>
+</div> <!-- handout-testing-automation-regressions -->
+<div id="handout-qa">
 
 ### Unit Testing
 
@@ -382,6 +383,7 @@
 
 <include src="../book/qualityAssurance/formalVerification/what/print.md" />
 
+</div> <!-- handout-qa -->
 <hr>
 
 <div id="handout-projectMgt-teamwork">
