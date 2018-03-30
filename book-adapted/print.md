@@ -311,7 +311,8 @@
 
 <include src="../book/testing/testingTypes/regressionTesting/what/print.md" />
 
-</div>
+</div> <!-- handout-testing-automation-regressions -->
+<div id="handout-qa-remainder">
 
 ### Unit Testing
 
@@ -329,6 +330,8 @@
 
 <include src="../book/testing/testingTypes/alphaBetaTesting/what/print.md" />
 
+{{pageBreak}}
+
 ### Developer Testing
 
 <include src="../book/testing/testingTypes/developerTesting/what/print.md" />
@@ -343,6 +346,8 @@
 
 <include src="../book/testing/testingTypes/exploratoryVsScriptedTesting/what/print.md" />
 <include src="../book/testing/testingTypes/exploratoryVsScriptedTesting/when/print.md" />
+
+{{pageBreak}}
 
 # Test Case Design
 
@@ -362,6 +367,7 @@
 <include src="../book/testCaseDesign/boundaryValueAnalysis/what/print.md" />
 <include src="../book/testCaseDesign/boundaryValueAnalysis/how/print.md" />
 
+{{pageBreak}}
 
 # Quality Assurance
 
@@ -382,6 +388,7 @@
 
 <include src="../book/qualityAssurance/formalVerification/what/print.md" />
 
+</div> <!-- handout-qa-remainder -->
 <hr>
 
 <div id="handout-projectMgt-teamwork">

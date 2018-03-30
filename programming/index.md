@@ -68,7 +68,7 @@
   * [Visibility](toc/oop.html#visibility)
   * [Inheritance](toc/oop.html#inheritance)
 * [**Appendix A: Installing 3rd Party Modules**](toc/thirdparty.html)
-* More topics to be added ...
+* [**Appendix B: Unit Testing**](toc/unittesting.html)
 
 
 
