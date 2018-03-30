@@ -27,7 +27,7 @@
     },
     {
       "src": "toc/errors.md",
-      "title": "TE3201 Programming Basics: Error Handline"
+      "title": "TE3201 Programming Basics: Error Handling"
     },
     {
       "src": "toc/dictionaries.md",
@@ -48,6 +48,10 @@
     {
       "src": "toc/thirdparty.md",
       "title": "TE3201 Programming Basics: Appendix A: Installing 3rd Party Modules"
+    },
+    {
+      "src": "toc/unittesting.md",
+      "title": "TE3201 Programming Basics: Appendix B: Unit Testing"
     }
   ],
   "ignore": [
