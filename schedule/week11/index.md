@@ -39,7 +39,7 @@
 
 #### Test Case Design
 
-<panel type="success" header="**`W11.2` Can used basic test case design techniques**" no-close>
+<panel type="success" header="**`W11.2` Can use basic test case design techniques**" no-close>
 
   <panel type="success" header="`W11.2a` Can explain test case design" expanded no-close>
     <include src="../../book/testCaseDesign/introduction/what/full.md" />
