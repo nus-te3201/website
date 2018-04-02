@@ -101,7 +101,7 @@ Some suggestions for _additional functionality_:
 * **Week 8** (mid-term submission): 10%
   * Deadline: Week 8, Tuesday 6pm
   * Functionality: at least most of the basic requirements are fulfilled (you may leave out the _persistence_ requirement)
-    * Submission: demo during lecture in week 8
+    * Submission: demo during lecture in week 8.
   * Documentation: 
     * Sections to include:
       * Cover page: Include product name, names of team members 
@@ -114,16 +114,16 @@ Some suggestions for _additional functionality_:
 * **Week 13** (final submission): 30%
   * Functionality: all functionality
     * Submission: 
-      * Zip up all source files, upload to IVLE. File name should contain member names. :alarm_clock: Deadline: week 13 Monday midnight.
-      * Demo the product during week 13 lecture. Each person should demo the features s/he implemented.
+      * Zip up all source files, upload to IVLE as a single `.zip` file (not `.rar`). File name should contain member names. :alarm_clock: Deadline: week 13 Monday midnight.
+      * Demo the product during week 13 lecture. Each person should demo the features s/he implemented. You can use your own computer to demo. Each person will get no more than 5-6 minutes of demo time. Demo schedule to be announced later.
   * Documentation: 
-    * Include all content included in mid-term submission. ==Refine as per feedback given.==
+    * Include all content included in mid-term submission. ==Refine as per feedback given. Update to match the final product.==
     * Add a **class diagram** to represent the design of your software. If your software is not an OOP solution, draw the diagram to match how you _propose_ to design your software in an OOP approach, if you were to do the project again. [<trigger trigger="click" for="modal:finalSubmission-classDiagram">example</trigger>]
     * Add an **object diagram** to represent the state of your software after the user has entered some data (assuming your software follows the class diagram above). [<trigger trigger="click" for="modal:finalSubmission-objectDiagram">example</trigger>]
     * Give a sample of **test cases** you would use to test the software.
       * <tooltip content="if you are a 2-person team, give 4 test cases">2 x TEAM_SIZE</tooltip> System test cases: Describe what feature is being tested, steps the tester should take, inputs at various steps, and expected outputs. These tests can be manual or automated. [<trigger trigger="click" for="modal:finalSubmission-systemTests">example</trigger>]
-      * Unit test cases for <tooltip content="if you are a 2-person team, give test cases for 2 functions">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary that for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output. [<trigger trigger="click" for="modal:finalSubmission-unitTests">example</trigger>]
-    * Submission: As before, upload to IVLE in docx or pdf format. File name should contain member names. :alarm_clock: Deadline: week 13 Monday midnight.
+      * Unit test cases for <tooltip content="if you are a 2-person team, give test cases for 2 functions">TEAM_SIZE</tooltip> functions/methods in the code: Give inputs and expected outputs. It is not necessary for you to actually implement these tests in code; just describe the purpose of the test case, inputs, and expected output. [<trigger trigger="click" for="modal:finalSubmission-unitTests">example</trigger>]
+    * Submission: As before, upload to IVLE in docx or pdf format as a single file. File name should contain member names. :alarm_clock: Deadline: week 13 Monday midnight.
 
 <modal large title="Class diagram example" id="modal:finalSubmission-classDiagram">
  
