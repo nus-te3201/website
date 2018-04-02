@@ -1,66 +1,99 @@
 ### Learning Outcomes
 
-#### OOP - Inheritance
+#### Testing Types (continued)
 
-<panel type="success" header="**`W10.1` Can use inheritance in a design**" no-close>
+<panel type="success" header="**`W11.1` Can explain common testing types**" no-close>
 
-  <panel type="success" header="`W10.1a` Can use inheritance" expanded no-close>
-    <include src="../../book/oopDesign/inheritance/what/full.md" />
-    <include src="../../book/oopImplementation/inheritance/full.md" />
+  <panel type="success" header="`W11.1a` Can explain unit testing" expanded no-close>
+    <include src="../../book/testing/testingTypes/unitTesting/what/full.md" />
   </panel>  
   
-  <panel type="success" header="`W10.1b` Can use overriding" expanded no-close>
-    <include src="../../book/oopDesign/inheritance/overriding/full.md" />
-    <include src="../../book/oopImplementation/overriding/full.md" /> 
+  <panel type="success" header="`W11.1b` Can explain integration testing" expanded no-close>
+    <include src="../../book/testing/testingTypes/integrationTesting/what/full.md" />
   </panel>  
   
-  <panel type="success" header="`W10.1c` Can use overloading" expanded no-close>
-    <include src="../../book/oopDesign/inheritance/overloading/full.md" /> 
-    <include src="../../book/oopImplementation/overloading/full.md" /> 
+  <panel type="success" header="`W11.1d` Can expalin system testing" expanded no-close>
+    <include src="../../book/testing/testingTypes/systemTesting/what/full.md" /> 
+  </panel>   
+  
+  <panel type="success" header="`W11.1e` Can expalin alpha and beta testing" expanded no-close>
+    <include src="../../book/testing/testingTypes/alphaBetaTesting/what/full.md" /> 
+  </panel>   
+  
+  <panel type="success" header="`W11.1f` Can explain developer testing" expanded no-close>
+    <include src="../../book/testing/testingTypes/developerTesting/what/full.md" /> 
+    <include src="../../book/testing/testingTypes/developerTesting/why/full.md" /> 
+  </panel>   
+  
+  <panel type="success" header="`W11.1g` Can expalin acceptance testing" expanded no-close>
+    <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" /> 
+    <include src="../../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" /> 
+  </panel>   
+  
+  <panel type="success" header="`W11.1h` Can explain exploratory and scripted testing" expanded no-close>
+    <include src="../../book/testing/testingTypes/exploratoryVsScriptedTesting/what/full.md" /> 
+    <include src="../../book/testing/testingTypes/exploratoryVsScriptedTesting/when/full.md" /> 
   </panel>  
   
 </panel>
 
+#### Test Case Design
 
-<panel type="success" header="**`W10.2` Can improve code quality**" no-close>
+<panel type="success" header="**`W11.2` Can used basic test case design techniques**" no-close>
 
-  <panel type="success" header="`W10.2a` Can explain code quality" expanded no-close>
-    <include src="../../book/codeQuality/introduction/basic/full.md" />
+  <panel type="success" header="`W11.2a` Can explain test case design" expanded no-close>
+    <include src="../../book/testCaseDesign/introduction/what/full.md" />
   </panel>  
   
-  <panel type="success" header="`W10.2b` Can improve code readbility" expanded no-close>
-    <include src="../../book/codeQuality/maximiseReadability/introduction/full.md" />
-    <include src="../../book/codeQuality/maximiseReadability/basic/full.md" />
+  <panel type="success" header="`W11.2b` Can explain different approaches to test case design" expanded no-close>
+    <include src="../../book/testCaseDesign/introduction/blackVsGlass/full.md" />
   </panel>  
   
-  <panel type="success" header="`W10.2d` Can follow coding standards" expanded no-close>
-    <include src="../../book/codeQuality/followStandard/introduction/full.md" />
-    <include src="../../book/codeQuality/followStandard/basic/full.md" />
+  <panel type="success" header="`W11.2d` Can follow coding standards" expanded no-close>
+    <include src="../../book/testCaseDesign/introduction/blackVsGlass/full.md" />
   </panel>  
   
-  <panel type="success" header="`W10.2f` Can use good naming to improve code quality" expanded no-close>
-    <include src="../../book/codeQuality/nameWell/introduction/full.md" />
-    <include src="../../book/codeQuality/nameWell/basic/full.md" />
+  <panel type="success" header="`W11.2f` Can use the Equivalence Partitioning technique" expanded no-close>
+    <include src="../../book/testCaseDesign/equivalencePartitions/what/full.md" />
+    <include src="../../book/testCaseDesign/equivalencePartitions/basic/full.md" />
+    <include src="../../book/testCaseDesign/equivalencePartitions/intermediate/full.md" />
   </panel>  
   
-  <panel type="success" header="`W10.2h` Can write good quality code" expanded no-close>
-    <include src="../../book/codeQuality/commentMinimally/introduction/full.md" />
-    <include src="../../book/codeQuality/commentMinimally/basic/full.md" />
+  <panel type="success" header="`W11.2h` Can use the Boundary Value Analysis technique" expanded no-close>
+    <include src="../../book/testCaseDesign/boundaryValueAnalysis/what/full.md" />
+    <include src="../../book/testCaseDesign/boundaryValueAnalysis/how/full.md" />
   </panel>  
 
 </panel>
 
-<panel type="success" header="**`W10.3` Can refactor code**" no-close>
+#### Quality Assurance
 
-  <include src="../../book/refactoring/what/full.md" />
+<panel type="success" header="**`W11.3` Can refactor code**" no-close>
+
+  <panel type="success" header="`W11.3a` Can expaling Quality Assurance" expanded no-close>
+    <include src="../../book/qualityAssurance/introduction/what/full.md" />
+    <include src="../../book/qualityAssurance/introduction/validationVsVerification/full.md" />
+  </panel>
+  
+  <panel type="success" header="`W11.3b` Can explain code reviews" expanded no-close>
+    <include src="../../book/qualityAssurance/codeReviews/what/full.md" />
+  </panel>
+  
+  <panel type="success" header="`W11.3c` Can expalin static analysis" expanded no-close>
+    <include src="../../book/qualityAssurance/staticAnalysis/what/full.md" />
+  </panel>
+  
+  <panel type="success" header="`W11.3d` Can explain formal verification" expanded no-close>
+    <include src="../../book/qualityAssurance/formalVerification/what/full.md" />
+  </panel>
   
 </panel>
 
 
 #### Programing Basics
 
-<panel type="warning" header="**`W10.4` Can implement inheritance**" no-close>
-  <include src="../../programming/oop-inheritance/text.md" />
+<panel type="warning" header="**`W11.4` Can implement unit tests**" no-close>
+  <include src="../../programming/unittesting/text.md" />
 </panel>
 
 <br><br>
@@ -69,7 +102,8 @@
 
 <panel header=" Evidence of achieving the LO" no-close>
 
-* Use inheritance, overriding, and overloading (if supported in your language) in your code
+* Design good test cases for the software
+* Optionally, implement automated unit tests 
 
 </panel>
 
