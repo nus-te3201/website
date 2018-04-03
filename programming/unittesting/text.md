@@ -47,6 +47,9 @@ class TestSearch(unittest.TestCase):
     self.assertEqual(search.get_first_name('Amy-Bernice'), 'Amy-Bernice')
     with self.assertRaises(IndexError):
       search.get_first_name('')
+
+# activate the test runner      
+unittest.main()
 ```
 When you run the above code, each method in the test class will be executed by a built-in _test runner_ and the result will be reported. An example is given below:
 ```
