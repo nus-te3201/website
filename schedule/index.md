@@ -13,7 +13,7 @@
 <dynamic-panel src="week7/index.md" header="{{iconDone}} Week 7 [Mar 5]" no-close />
 <dynamic-panel src="week8/index.md" header="{{iconDone}} Week 8 [Mar 12]" no-close />
 <dynamic-panel src="week9/index.md" header="{{iconDone}} Week 9 [Mar 19]" no-close />
-<dynamic-panel src="week9/index.md" header="{{iconDone}} Week 9 [Mar 26]" no-close />
+<dynamic-panel src="week10/index.md" header="{{iconDone}} Week 10 [Mar 26]" no-close />
 
 <panel header="{{iconCurrent}} Week 11 [Apr 2]" expanded no-close>
   <include src="week11/index.md"/>
