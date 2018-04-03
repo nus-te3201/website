@@ -1,0 +1,1771 @@
+<h3 id="learning-outcomes">Learning Outcomes</h3>
+<h4 id="oop-inheritance">OOP - Inheritance</h4>
+<panel type="success" header="**`W10.1` Can use inheritance in a design**" no-close="">
+  <panel type="success" header="`W10.1a` Can use inheritance" expanded="" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Inheritance →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="what-one">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>The OOP concept <em>Inheritance</em> allows you to define a new class based on an existing class.</strong> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code>            class so that the <code>EvaluationReport</code> class does not have to duplicate code that is already implemented in the <code>Report</code> class.</p>
+          <p>
+            <panel src="/website\book\uml\classDiagrams\classInheritance\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Inheritance" expanded="" fragment="title-and-body" isOpen="false" no-close="true" no-switch="true"></panel>
+          </p>
+          <p></p>
+          <tip-box>
+            <p>📦 Example: The <code>EvaluationReport</code> inherits the <code>wordCount</code> attribute and the <code>print()</code> method from the <em>base class</em> <code>Report</code>.</p>
+            <img src="/website/book/oopDesign/inheritance/what/images/report.png" height="120">
+            <p></p>
+          </tip-box>
+          <ul>
+            <li>Other names for Base class: <em>Parent</em> class, <em>Super</em> class</li>
+            <li>Other names for Derived class: <em>Child</em> class, <em>Sub</em> class, <em>Extended</em> class</li>
+          </ul>
+          <p><strong>A super class is said to be <em>more general</em> than the sub class.</strong> Conversely, a sub class is said to be more <em>specialized</em> than the super class.</p>
+          <p><strong>Applying inheritance on a group of similar classes can result in the common parts among classes being extracted into more general classes.</strong></p>
+          <tip-box>
+            <p>📦 <code>Man</code> and <code>Woman</code> behaves the same way for the 'owes money' association. However, the two classes cannot be simply replaced with a more general class <code>Person</code> because of the need to distinguish between <code>Man</code>              and <code>Woman</code> for the ‘marriage’ association. A solution is to add the <code>Person</code> class as a super class and let <code>Man</code> and <code>Woman</code> inherit from <code>Person</code>.</p>
+            <img src="/website/book/oopDesign/inheritance/what/images/manWoman.png" height="250">
+            <p></p>
+          </tip-box>
+          <p><strong>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an <em>is a</em> relationship.</strong></p>
+          <tip-box type="info">
+            <p>Inheritance does not necessarily mean a sub-type relationship exists. However, the two often go hand-in-hand. For simplicity, at this point let us assume inheritance implies a sub-type relationship.</p>
+          </tip-box>
+          <tip-box>
+            <p>📦 In this class diagrams of a <em>Snakes and Ladders</em> board game,</p>
+            <ul>
+              <li><code>SnakeHeadSquare</code> <em>is a</em> <code>Square</code> <span class="dimmed"> (a <code>SnakeHeadSquare</code> is a square in which the head of a snake appears)</span></li>
+              <li><code>SnakeTailSquare</code> <em>is a</em> <code>Square</code></li>
+            </ul>
+            <img src="/website/book/oopDesign/inheritance/what/images/boardSquare.png" height="250">
+            <p></p>
+          </tip-box>
+          <p><strong>Inheritance relationships through a chain of classes can result in inheritance <em>hierarchies</em> (aka inheritance <em>trees</em>).</strong></p>
+          <tip-box>
+            <p>📦 Two inheritance hierarchies/trees are given below. Note that <code>Parrot</code> <em>is a</em> <code>Bird</code> as well as it <em>is an</em> <code>Animal</code>.</p>
+            <img src="/website/book/oopDesign/inheritance/what/images/inheritanceTreesExamples.png" width="500">
+            <p></p>
+          </tip-box>
+          <p><strong><em>Multiple Inheritance</em> is when a class inherits <em>directly</em> from multiple classes.</strong> Multiple inheritance among classes is allowed in some languages (e.g., Python, C++) but not in other languages (e.g., Java, C#).</p>
+          <tip-box>
+            <p>📦 The <code>TA</code> class inherits from the <code>Staff</code> class <em>and</em> the <code>Student</code>.</p>
+            <img src="/website/book/oopDesign/inheritance/what/images/studentStaff.png" height="200">
+            <p></p>
+          </tip-box>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <p>
+          <panel src="/website\book\oopDesign\inheritance\what\full._include_.html" header="%%:mortar_board: Design → OOP → Inheritance → What%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="implementing-inheritance-one">Implementing Inheritance <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <tabs>
+          
+            <tab header="Java">
+              <p>To learn how to implement inheritance in Java, you can follow [<a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a>]</p>
+              <panel type="seamless" header=":tv: A very beginner-friendly video about implementing Java inheritance.">
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/9JpNY-XAseg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                <p></p>
+              </panel>
+              <p></p>
+              <p>💡 Java requires all classes to have a parent class. If you do not specify a parent class, Java automatically assigns the <code>Object</code> class as the parent class.</p>
+              <p>
+                <hr>
+              </p>
+            </tab>
+          
+            <tab header="Python">
+              <ul>
+                <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#inheritance">Python Programming Basics: OOP: Inheritance</a></li>
+              </ul>
+              <p>💡 Python automatically assigns the <code>object</code> class as the parent class.</p>
+              <p>
+                <hr>
+              </p>
+            </tab>
+          </tabs>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+  <panel type="success" header="`W10.1b` Can use overriding" expanded="" no-close="">
+    <div>
+      <div>
+        <p>
+          <panel src="/website\book\oopDesign\inheritance\what\full._include_.html" header="%%:mortar_board: OOP → Inheritance → What%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Design → Object Oriented Programming → Inheritance →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="overriding-one">Overriding <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Method <em>overriding</em> is when a sub-class changes the behavior inherited from the parent class</strong> by re-implementing the method. Overridden methods have the same name, same type signature, and same return type.</p>
+          <tip-box>
+            <p>📦 In the diagram below,</p>
+            <ul>
+              <li><code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method.</li>
+              <li><code>Report#write(String)</code> method is overridden by <code>EvaluationReport#write(String)</code> method.</li>
+              <li><code>Report#read():String</code> method is <strong>NOT</strong> overridden by <code>EvaluationReport#read(int):String</code> method. <span class="dimmed"> Reason: the two methods have different signatures; <code>EvaluationReport#read(int):String</code> <trigger trigger="click" for="modal:overriding-overloading"> <em>overloads</em></trigger> (rather than overrides) the <code>Report#read():String</code> method.</span></li>
+            </ul>
+            <modal title="**Overloading**" id="modal:overriding-overloading">
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+                  </span>
+                </p>
+                <div>
+                  <h4 id="overloading-two">Overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
+                    <tip-box type="primary">
+                      <div>
+                        <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+                        <panel type="seamless" header="%%Examples%%">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th style="text-align:center">Method</th>
+                                <th style="text-align:center">Type Signature</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                                <td style="text-align:center"><code>(int, int)</code></td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                                <td style="text-align:center"><code>(int, int)</code></td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                                <td style="text-align:center"><code>(int, double)</code></td>
+                              </tr>
+                              <tr>
+                                <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                                <td style="text-align:center"><code>(double, int)</code></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </panel>
+                      </div>
+                    </tip-box>
+                    <tip-box>
+                      <p>📦 In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int)</code></p>
+                      <ul>
+                        <li><code>calculate(String): void</code></li>
+                        <li><code>calculate(int): void</code></li>
+                      </ul>
+                    </tip-box>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </modal>
+            <img src="/website/book/oopDesign/inheritance/overriding/images/report.png" height="150">
+            <p></p>
+          </tip-box>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <p>
+          <panel src="/website\book\oopDesign\inheritance\overriding\full._include_.html" header="%%:mortar_board: OOP → Inheritance → Overriding%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="implementing-overriding-one">Implementing Overriding <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>To override a method inherited from an ancestor class, simply re-implement the method in the target class.</strong></p>
+          <tabs>
+          
+            <tab header="Java">
+              <div>
+                <tip-box>
+                  <p>📦 A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
+                  <pre><code class="hljs java">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
+        System.out.println(<span class="hljs-string">"Printing report"</span>);
+    }
+
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EvaluationReport</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Report</span></span>{
+
+    <span class="hljs-meta">@Override</span>  <span class="hljs-comment">// this annotation is optional</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
+        System.out.println(<span class="hljs-string">"Printing evaluation report"</span>);
+    }
+
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReportMain</span></span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
+        Report report = <span class="hljs-keyword">new</span> Report();
+        report.print(); <span class="hljs-comment">// prints "Printing report"</span>
+
+        EvaluationReport evaluationReport = <span class="hljs-keyword">new</span> EvaluationReport();
+        evaluationReport.print(); <span class="hljs-comment">// prints "Printing evaluation report"</span>
+    }
+}
+</code></pre>
+                </tip-box>
+                <p>📎 Resources:</p>
+                <ul>
+                  <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
+                </ul>
+              </div>
+            </tab>
+          
+            <tab header="Python">
+              <div>
+                <tip-box>
+                  <p>📦 In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'My name is'</span>, self.name)
+    
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td valign="bottom">  <br><br></td>
+                    
+                      <td valign="bottom">
+                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
+    self.name = name
+    self.matric = matric
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is a student'</span>)
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <pre><code class="hljs python">amy = Person(<span class="hljs-string">'Amy'</span>)
+amy.print_info()
+
+ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)
+ben.print_info()
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td valign="bottom"> → <br><br></td>
+                    
+                      <td valign="bottom">
+                        <pre class="hljs"><code>My name is Amy
+Ben is a student
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </tip-box>
+              </div>
+            </tab>
+          </tabs>
+          <hr>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: Which methods override?">
+                  <question>
+                    <p>Which of these methods override another method?</p>
+                    <img src="/website/book/oopImplementation/overriding/images/overriding.png" height="220">
+                    <p></p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e</li>
+                    </ul>
+                    <div slot="answer">
+                      <p>d</p>
+                      <p>Explanation: Method overriding requires a method in a <em>child class</em> to use the same method name and same parameter sequence used by one of its ancestors</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
+        </div>
+      </div>
+    </div>
+  </panel>
+  <panel type="success" header="`W10.1c` Can use overloading" expanded="" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Design → Object Oriented Programming →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="overloading-two-2">Overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
+          <tip-box type="primary">
+            <div>
+              <p><strong>Type Signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
+              <panel type="seamless" header="%%Examples%%">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center">Method</th>
+                      <th style="text-align:center">Type Signature</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align:center"><code>int add(int X, int Y)</code></td>
+                      <td style="text-align:center"><code>(int, int)</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>void add(int A, int B)</code></td>
+                      <td style="text-align:center"><code>(int, int)</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>void m(int X, double Y)</code></td>
+                      <td style="text-align:center"><code>(int, double)</code></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center"><code>void m(double X, int Y)</code></td>
+                      <td style="text-align:center"><code>(double, int)</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </panel>
+            </div>
+          </tip-box>
+          <tip-box>
+            <p>📦 In the class below, the <code>calculate</code> method is overloaded because the two methods have the same name but different type signatures <code>(String)</code> and <code>(int)</code></p>
+            <ul>
+              <li><code>calculate(String): void</code></li>
+              <li><code>calculate(int): void</code></li>
+            </ul>
+          </tip-box>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <p>
+          <panel src="/website\book\oopDesign\inheritance\overloading\full._include_.html" header=":mortar_board: %%OOP → Inheritance → Overloading%%" isOpen="false" no-close="true" no-switch="true"></panel>
+        </p>
+      </div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Object Oriented Programming →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="implementing-overloading-one">Implementing Overloading <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
+          <tabs>
+          
+            <tab header="Java">
+              <div>
+                <tip-box>
+                  <p>📦 The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>. Furthermore, the <code>save</code>                    method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+    Account () {
+        ...
+    }
+    
+    Account (String name, String number, <span class="hljs-keyword">double</span> balance) {
+        ...
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(<span class="hljs-keyword">int</span> amount)</span></span>{
+        ...
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SavingAccount</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Account</span></span>{
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(Double amount)</span></span>{
+        ...
+    }
+}
+</code></pre>
+                </tip-box>
+                <p>📎 Resources:</p>
+                <ul>
+                  <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javatpoint.com">javatpoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
+                </ul>
+              </div>
+            </tab>
+          
+            <tab header="Python">
+              <div>
+                <p>❗️ Python does not have direct support for method overloading.</p>
+              </div>
+            </tab>
+          </tabs>
+          <hr>
+          <p></p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+</panel>
+<panel type="success" header="**`W10.2` Can improve code quality**" no-close="">
+  <panel type="success" header="`W10.2a` Can explain code quality" expanded="" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Introduction →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="basic-one">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <blockquote>
+            <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
+          </blockquote>
+          <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
+          <popover id="pop:production-code" title=":mag: Production Code" placement="top">
+            <div slot="content">
+              Code being used in an actual product with actual users
+            </div>
+          </popover>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+  <panel type="success" header="`W10.2b` Can improve code readbility" expanded="" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <blockquote>
+            <p>Programs should be written and polished until they acquire publication quality. <sub>--<a href="https://en.wikipedia.org/wiki/Niklaus_Wirth">Niklaus Wirth</a></sub></p>
+          </blockquote>
+          <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood,
+            and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
+          <tip-box>
+            <p>📦 The two code samples given below achieve the same functionality, but one is easier to read.</p>
+            <tabs>
+            
+              <tab header="Java">
+                <div>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> subsidy;
+    <span class="hljs-keyword">if</span> (!age) {
+        <span class="hljs-keyword">if</span> (!sub) {
+            <span class="hljs-keyword">if</span> (!notFullTime) {
+                subsidy = <span class="hljs-number">500</span>;
+            } <span class="hljs-keyword">else</span> {
+                subsidy = <span class="hljs-number">250</span>;
+            }
+        } <span class="hljs-keyword">else</span> {
+            subsidy = <span class="hljs-number">250</span>;
+        }
+    } <span class="hljs-keyword">else</span> {
+        subsidy = -<span class="hljs-number">1</span>;
+    }
+    <span class="hljs-keyword">return</span> subsidy;
+}
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td>  <br><br></td>
+                    
+                      <td valign="top">
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> subsidy;
+    <span class="hljs-keyword">if</span> (isSenior) {
+        subsidy = REJECT_SENIOR;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {
+        subsidy = SUBSIDISED_SUBSIDY;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {
+        subsidy = FULLTIME_SUBSIDY * RATIO;
+    } <span class="hljs-keyword">else</span> {
+        subsidy = FULLTIME_SUBSIDY;
+    }
+    <span class="hljs-keyword">return</span> subsidy;
+}
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </tab>
+            
+              <tab header="Python">
+                <div>
+                  <table>
+                    <tr>
+                    
+                      <td>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
+                subsidy = <span class="hljs-number">500</span>
+            <span class="hljs-keyword">else</span>:
+                subsidy = <span class="hljs-number">250</span>
+        <span class="hljs-keyword">else</span>:
+            subsidy = <span class="hljs-number">250</span>
+    <span class="hljs-keyword">else</span>:
+        subsidy = <span class="hljs-number">-1</span>
+    <span class="hljs-keyword">return</span> subsidy
+</code></pre>
+                        <p></p>
+                      </td>
+                    
+                      <td>  <br><br></td>
+                    
+                      <td valign="top">
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> is_senior:
+        <span class="hljs-keyword">return</span> REJECT_SENIOR
+    <span class="hljs-keyword">elif</span> is_already_subsidised:
+        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY
+    <span class="hljs-keyword">elif</span> is_parttime:
+        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
+</code></pre>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </tab>
+            </tabs>
+            <hr>
+          </tip-box>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Readability →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="basic-one-2">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <panel header="**Avoid Long Methods**" type="seamless" expanded="">
+            <div>
+              <div>
+                <p>Be wary when a method is longer than the computer screen, and take corrective action when it goes beyond 30 LOC (lines of code). The bigger the haystack, the harder it is to find a needle.</p>
+              </div>
+            </div>
+          </panel>
+          <panel header="**Avoid Deep Nesting**" type="seamless" expanded="">
+            <div>
+              <div>
+                <blockquote>
+                  <p>If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program. <sub>--Linux 1.3.53 CodingStyle</sub></p>
+                </blockquote>
+                <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
+                <tip-box>
+                  <p>Example:</p>
+                  <img src="/website/book/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250">
+                  <p></p>
+                </tip-box>
+              </div>
+            </div>
+          </panel>
+          <panel header="**Avoid Complicated Expressions**" type="seamless" expanded="">
+            <div>
+              <div>
+                <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and use them to calculate
+                  the final value).</p>
+                <tabs>
+                
+                  <tab header="Java">
+                    <div>
+                      <tip-box>
+                        <p>📦 Example:</p>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
+</code></pre>
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs java">
+<span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
+<span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
+<span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
+
+<span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;
+
+<span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
+</code></pre>
+                      </tip-box>
+                    </div>
+                  </tab>
+                
+                  <tab header="Python">
+                    <div>
+                      <tip-box>
+                        <p>📦 Example:</p>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                        <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
+</code></pre>
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
+is_same_size = previous_size != length
+is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
+
+is_urgent = type_code == URGENT
+
+<span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
+</code></pre>
+                      </tip-box>
+                    </div>
+                  </tab>
+                </tabs>
+                <hr>
+                <blockquote>
+                  <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. <sub>-- Edsger Dijkstra</sub></p>
+                </blockquote>
+              </div>
+            </div>
+          </panel>
+          <panel header="**Avoid Magic Numbers**" type="seamless" expanded="">
+            <div>
+              <div>
+                <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a
+                  <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+                <tip-box>
+                  <p>📦 Example:</p>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <div>
+                        <table>
+                          <tr>
+                          
+                            <td valign="top">
+                              <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                              <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+...
+<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
+</code></pre>
+                              <p></p>
+                            </td>
+                          
+                            <td>  <br><br></td>
+                          
+                            <td valign="top">
+                              <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                              <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
+...
+<span class="hljs-keyword">return</span> PI;
+...
+<span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
+</code></pre>
+                              <p></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <div>
+                        <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
+                        <table>
+                          <tr>
+                          
+                            <td valign="top">
+                              <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                              <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+...
+<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
+</code></pre>
+                              <p></p>
+                            </td>
+                          
+                            <td>  <br><br></td>
+                          
+                            <td valign="top">
+                              <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                              <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+MAX_SIZE = <span class="hljs-number">10</span>
+...
+<span class="hljs-keyword">return</span> PI
+...
+<span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
+</code></pre>
+                              <p></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </tab>
+                  </tabs>
+                  <hr>
+                </tip-box>
+                <p>Similarly, we can have ‘magic’ values of other data types.</p>
+                <tip-box>
+                  <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                  <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+</code></pre>
+                </tip-box>
+              </div>
+            </div>
+          </panel>
+          <panel header="**Make the Code Obvious**" type="seamless" expanded="">
+            <div>
+              <div>
+                <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
+                <ul>
+                  <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
+                  <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
+                  <li>[<code>Java</code>, <code>Python</code>] Use
+                    <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and
+                    'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
+                </ul>
+                <modal title="More about enumerations" id="modal:obviousCode-enums">
+                  <ul>
+                    <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
+                    <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
+                  </ul>
+                </modal>
+              </div>
+            </div>
+          </panel>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+  <panel type="success" header="`W10.2d` Can follow coding standards" expanded="" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="introduction-one-2">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
+          <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening and
+            closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard is not generally inconsistent
+            with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
+          <tip-box type="tip">
+            <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+          </tip-box>
+        </div>
+        <div>
+          <div>
+            <panel header=":muscle: Exercises" expandable="">
+              <div>
+                <panel header=":lock::key: What is the recommended approach regarding coding standards?">
+                  <question>
+                    <p>What is the recommended approach regarding coding standards?</p>
+                    <ul radio-group="5c5a1" class="radio-list">
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                    </ul>
+                    <div slot="answer">
+                      <p>c</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+              <div>
+                <panel header=":lock: What is the aim? What is the value?">
+                  <question has-input="">
+                    <p>What is the aim of using a coding standard? How does it help?</p>
+                  </question>
+                </panel>
+              </div>
+            </panel>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="basic-one-3">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p>Some coding standards you can adopt:</p>
+          <ul>
+            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard -- by OSS-Generic</a></li>
+            <li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+  <panel type="success" header="`W10.2f` Can use good naming to improve code quality" expanded="" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="introduction-one-3">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
+          <blockquote>
+            <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
+          </blockquote>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Naming →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="basic-one-4">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <panel header="**Use Nouns for Things and Verbs for Actions**" type="seamless" alt="indentation" expanded="">
+            <div>
+              <div>
+                <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
+                <tip-box>
+                  <p>Examples:</p>
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Name for a</th>
+                        <th><img src="/website/book/images/Bad.png" alt="" title="Bad"></th>
+                        <th><img src="/website/book/images/Good.png" alt="" title="Good"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Class</td>
+                        <td><code>CheckLimit</code></td>
+                        <td><code>LimitChecker</code></td>
+                      </tr>
+                      <tr>
+                        <td>method</td>
+                        <td><code>result()</code></td>
+                        <td><code>calculate()</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </tip-box>
+                <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
+                <tip-box>
+                  <p>📦 Examples:</p>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                      <pre><code class="hljs java">Person student;
+ArrayList&lt;Person&gt; students;
+</code></pre>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                      <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
+students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
+</code></pre>
+                    </tab>
+                  </tabs>
+                  <hr>
+                </tip-box>
+              </div>
+            </div>
+          </panel>
+          <panel header="**Use Standard Words**" type="seamless" alt="indentation" expanded="">
+            <div>
+              <div>
+                <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong> <span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
+              </div>
+            </div>
+          </panel>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+  <panel type="success" header="`W10.2h` Can write good quality code" expanded="" no-close="">
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Comments →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="introduction-one-4">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <blockquote>
+            <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. <sub>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a>, Author of <em>Clean Code</em></sub></p>
+          </blockquote>
+          <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div></div>
+      <p></p>
+      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Comments →
+</span></strong>
+        </span>
+      </p>
+      <div>
+        <h4 id="basic-one-5">Basic <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <div id="main">
+        <div>
+          <panel header="**Do Not Repeat the Obvious**" type="seamless" alt="indentation" expanded="">
+            <div>
+              <div>
+                <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
+                <p><img src="/website/book/images/Bad.png" alt="" title="Bad"></p>
+                <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
+x++;
+
+<span class="hljs-comment">//trim the input</span>
+trimInput();
+</code></pre>
+              </div>
+            </div>
+          </panel>
+          <panel header="**Write to the Reader**" type="seamless" alt="indentation" expanded="">
+            <div>
+              <div>
+                <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class
+                  or an operation to explain its purpose.</p>
+                <tip-box>
+                  <p>📦 Examples:</p>
+                  <tabs>
+                  
+                    <tab header="Java">
+                      <div>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                        <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
+    ....
+}
+</code></pre>
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
+    ....
+}
+</code></pre>
+                      </div>
+                    </tab>
+                  
+                    <tab header="Python">
+                      <div>
+                        <p><img src="/website/book/images/Bad.png" alt="" title="Bad"> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
+                        <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+    ...
+</code></pre>
+                        <p><img src="/website/book/images/Good.png" alt="" title="Good"></p>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+<span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
+    ...
+</code></pre>
+                      </div>
+                    </tab>
+                  </tabs>
+                </tip-box>
+              </div>
+            </div>
+          </panel>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </panel>
+</panel>
+<panel type="success" header="**`W10.3` Can refactor code**" no-close="">
+  <div>
+    <p><span class="dimmed"><strong><span>Implementation → Refactoring →
+</span></strong>
+      </span>
+    </p>
+    <div>
+      <h4 id="what-one-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+    </div>
+    <div id="main">
+      <div>
+        <p>The first version of the code you write may not be of production quality. It is OK to first concentrate on making the code work, rather than worry over the quality of the code, as long as you improve the quality later. This process of <strong>improving a program's internal structure in small steps without modifying its external behavior is called <em>refactoring</em>.</strong></p>
+        <ul>
+          <li><strong>Refactoring is not rewriting</strong>: Discarding poorly-written code entirely and re-writing it from scratch is not refactoring because refactoring needs to be done in small steps.</li>
+          <li><strong>Refactoring is not bug fixing</strong>: By definition, refactoring is different from bug fixing or any other modifications that alter the external behavior (e.g. adding a feature) of the component in concern.</li>
+        </ul>
+        <tip-box>
+          <p>💡 Improving code structure can have many secondary benefits: e.g.</p>
+          <ul>
+            <li>hidden bugs become easier to spot</li>
+            <li>improve performance (sometimes, simpler code runs faster than complex code because simpler code is easier for the compiler to optimize).</li>
+          </ul>
+        </tip-box>
+        <p>Given below are two common refactorings (
+          <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
+        <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what">
+          <div>
+            <ul>
+              <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’ on refactoring:
+                <a href="https://martinfowler.com/books/#refactoring">Refactoring: Improving the Design of Existing Code</a></li>
+              <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
+            </ul>
+          </div>
+        </modal>
+        <tip-box>
+          <p>Refactoring Name: <strong>Consolidate Duplicate Conditional Fragments</strong></p>
+          <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
+          <p>Method: Move it outside of the expression.</p>
+          <p>📦 Example:</p>
+          <tabs>
+          
+            <tab header="Java">
+              <div>
+                <table>
+                  <tr>
+                  
+                    <td valign="top">
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
+    total = price * <span class="hljs-number">0.95</span>;
+    send();
+} <span class="hljs-keyword">else</span> {
+    total = price * <span class="hljs-number">0.98</span>;
+    send();
+}
+</code></pre>
+                      <p></p>
+                    </td>
+                  
+                    <td valign="center"> → </td>
+                  
+                    <td valign="top">
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
+    total = price * <span class="hljs-number">0.95</span>;
+} <span class="hljs-keyword">else</span> {
+    total = price * <span class="hljs-number">0.98</span>;
+}
+send();
+
+</code></pre>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </tab>
+          
+            <tab header="Python">
+              <div>
+                <table>
+                  <tr>
+                  
+                    <td valign="top">
+                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+    total = price * <span class="hljs-number">0.95</span>
+    send()
+<span class="hljs-keyword">else</span>:
+    total = price * <span class="hljs-number">0.98</span>
+    send()
+</code></pre>
+                      <p></p>
+                    </td>
+                  
+                    <td valign="center"> → </td>
+                  
+                    <td valign="top">
+                      <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
+    total = price * <span class="hljs-number">0.95</span>
+<span class="hljs-keyword">else</span>:
+    total = price * <span class="hljs-number">0.98</span>
+    
+send()
+</code></pre>
+                      <p></p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </tab>
+          </tabs>
+          <hr>
+        </tip-box>
+        <tip-box>
+          <p>Refactoring Name: <strong>Extract Method</strong></p>
+          <p>Situation: You have a code fragment that can be grouped together.</p>
+          <p>Method: Turn the fragment into a method whose name explains the purpose of the method.</p>
+          <p>📦 Example:</p>
+          <tabs>
+          
+            <tab header="Java">
+              <div>
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+    printBanner();
+
+    <span class="hljs-comment">//print details</span>
+    System.out.println(<span class="hljs-string">"name:	"</span> + name);
+    System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
+}
+</code></pre>
+                <p>⤵️</p>
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
+    printBanner();
+    printDetails(getOutstanding());
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printDetails</span> <span class="hljs-params">(<span class="hljs-keyword">double</span> outstanding)</span> </span>{
+    System.out.println(<span class="hljs-string">"name:	"</span> + name);
+    System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
+}
+</code></pre>
+              </div>
+            </tab>
+          
+            <tab header="Python">
+              <div>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+    print_banner()
+
+    //<span class="hljs-keyword">print</span> details
+    print(<span class="hljs-string">"name:	"</span> + name)
+    print(<span class="hljs-string">"amount	"</span> + get_outstanding())
+</code></pre>
+                <p>⤵️</p>
+                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
+    print_banner()
+    print_details(get_outstanding())
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span>
+    print(<span class="hljs-string">"name:	"</span> + name)
+    print(<span class="hljs-string">"amount	"</span> + amount)
+</code></pre>
+              </div>
+            </tab>
+          </tabs>
+          <hr>
+        </tip-box>
+        <tip-box>
+          <p>💡 Some IDEs have built in support for basic refactorings such as automatically renaming a variable/method/class in all places it has been used.</p>
+        </tip-box>
+        <tip-box type="important">
+          <p>Important: Refactoring, even if done with the aid of an IDE, may still result in regressions. Therefore, each small refactoring should be followed by regression testing.</p>
+        </tip-box>
+      </div>
+      <div>
+        <div>
+          <panel header=":muscle: Exercises" expandable="">
+            <div>
+              <panel header=":lock::key: Results of Refactoring">
+                <question>
+                  <p>Choose the correct statements</p>
+                  <ul class="task-list">
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Refactoring can improve understandability</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Refactoring can uncover bugs</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Refactoring can result in better performance</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Refactoring can change the number of methods/classes</li>
+                  </ul>
+                  <div slot="answer">
+                    <p>a, b, c, d</p>
+                    <p>Explanation:</p>
+                    <ul>
+                      <li>(a, b, c) Although the primary aim of refactoring is to improve internal code structure, there are other secondary benefits.</li>
+                      <li>(d) Some refactorings result in adding/removing methods/classes.</li>
+                    </ul>
+                  </div>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock::key: Do you agree with the following statement? Refactoring and regression testing">
+                <question has-input="true">
+                  <p>Do you agree with the following statement? Justify your answer.</p>
+                  <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
+                  <div slot="hint">
+                    <p>There are two flaws in the given statement.</p>
+                  </div>
+                  <div slot="answer">
+                    <p>DISAGREE.</p>
+                    <ol>
+                      <li>Even a minor change can have major repercussions on the system. We MUST do regression testing after each change, no matter how minor it is.</li>
+                      <li>Fixing bugs is technically not refactoring.</li>
+                    </ol>
+                  </div>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header=":lock: Explain Refactoring">
+                <question has-input="">
+                  <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
+                </question>
+              </panel>
+            </div>
+          </panel>
+        </div>
+      </div>
+    </div>
+  </div>
+</panel>
+<h4 id="programing-basics">Programing Basics</h4>
+<panel type="warning" header="**`W10.4` Can implement inheritance**" no-close="">
+  <div>
+    <h3 id="inheritance">Inheritance</h3>
+    <p><strong>You can make a class <tooltip content="define a new class based on an existing class">inherit</tooltip> from another class.</strong> If you do, it is as if the
+      <tooltip content="the new class"><em>child class</em></tooltip> already has all the attributes and methods of the
+      <tooltip content="the class that was inherited from"><em>parent class</em></tooltip>.</p>
+    <p>Syntax:</p>
+    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChildClassName</span><span class="hljs-params">(ParentClassName)</span>:</span>
+  <span class="hljs-comment"># statements of the class</span>
+</code></pre>
+    <tip-box>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'My name is'</span>, self.name)
+
+amy = Person(<span class="hljs-string">'Amy'</span>)
+amy.print_info()
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td valign="bottom"> → <br><br></td>
+        
+          <td valign="bottom">
+            <pre class="hljs"><code>My name is Amy
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+      <p>📦 Note how the <code>Teacher</code> class below inherits from the <code>Person</code> class given above. Observe how,</p>
+      <ul>
+        <li>a <code>Teacher</code> object can use the <code>print_info()</code> method defined in the parent class.</li>
+        <li>the statement <code>dan = Teacher('Dan')</code> invokes the <code>__init__()</code> method defined in the parent class too.</li>
+        <li>the statement <code>print('the name is', dan.name)</code> is accessing the attribute <code>name</code> from a <code>Teacher</code> object although the attribute is defined in the parent class.</li>
+        <li>the method <code>teach</code> accesses the attribute <code>name</code> using <code>self.name</code> although the attribute is defined in teh parent class.</li>
+      </ul>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">teach</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is teaching'</span>)
+
+dan = Teacher(<span class="hljs-string">'Dan'</span>)
+dan.print_info()
+dan.teach()
+print(<span class="hljs-string">'the name is'</span>, dan.name)
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td valign="bottom"> → <br><br></td>
+        
+          <td valign="bottom">
+            <pre class="hljs"><code>My name is Dan
+Dan is teaching
+the name is Dan
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+    </tip-box>
+    <panel type="danger" header=":muscle: Exercise: Add `Fish` Class" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-add-fish-class">Exercise : Add <code>Fish</code> Class</h4>
+        <p>Add a <code>Fish</code> class that inherits from the <code>Animal</code> class so that the code below produces the given output.</p>
+        <table>
+          <tr>
+            <td>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">"I'm a"</span>, self.name)
+    
+<span class="hljs-comment"># ADD YOUR CODE HERE</span>
+    
+tuna = Fish(<span class="hljs-string">'Tuna'</span>)
+tuna.info()
+tuna.move()
+guppy = Fish(<span class="hljs-string">'Guppy'</span>)
+guppy.info()
+guppy.move()
+</code></pre>
+            </td>
+            <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+            <td valign="bottom">
+              <pre class="hljs"><code>I'm a Tuna
+I'm swimming
+I'm a Guppy
+I'm swimming
+</code></pre>
+            </td>
+          </tr>
+        </table>
+        <panel type="seamless" header="%%:bulb: Partial solution%%">
+          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Fish</span><span class="hljs-params">(Animal)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
+    ...
+</code></pre>
+        </panel>
+      </div>
+    </panel>
+    <p></p>
+    <p><strong>A child class can <em>override</em> a method defined in the parent class.</strong> That way, a child object can change a behavior defined in the parent class.</p>
+    <tip-box>
+      <p>📦 Note how the <code>Student</code> class below overrides the <code>__init__()</code> method and the <code>print_info()</code> method of the parent class <code>Person</code>.</p>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
+    self.name = name
+    self.matric = matric
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">learn</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is learning'</span>)
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is a student'</span>)
+
+ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)
+ben.print_info()
+ben.learn()
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td valign="bottom"> → <br><br></td>
+        
+          <td valign="bottom">
+            <pre class="hljs"><code>Ben is a student
+Ben is learning
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+    </tip-box>
+    <p>When overriding methods, you can reuse the parent's definition of the same method using the <code>super().</code> prefix.</p>
+    <tip-box>
+      <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+</code></pre>
+      <p>📦 Given that <code>Person</code> class has the initializer method given above, the following two versions of the <code>Student</code> class are equivalent.</p>
+      <table>
+        <tr>
+        
+          <td>
+            <p>Override without reusing parent's method ⤵️</p>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
+    self.name = name
+    self.matric = matric
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td valign="bottom"> = <br><br></td>
+        
+          <td valign="bottom">
+            <p>Override but reuse parent's method ⤵️</p>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
+    super().__init__(name) <span class="hljs-comment"># reuse parent's method</span>
+    self.matric = matric
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+    </tip-box>
+    <panel type="danger" header=":muscle: Exercise: Add `FlightlessBird` Class" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-add-flightlessbird-class">Exercise : Add <code>FlightlessBird</code> Class</h4>
+        <p>Do the following changes to the given code so that the code below produces the given output:</p>
+        <ol>
+          <li>update the <code>info()</code> method of the <code>Bird</code> to call the same method from the parent class</li>
+          <li>add a <code>FlightlessBird</code> class that inherits from the <code>Bird</code> class, and override the <code>move()</code> method</li>
+        </ol>
+        <table>
+          <tr>
+            <td>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">"I'm a"</span>, self.name)
+    
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bird</span><span class="hljs-params">(Animal)</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">"I'm flying"</span>)
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">info</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-comment"># CALL info() METHOD OF PARENT CLASS HERE </span>
+    print(<span class="hljs-string">"I have feathers"</span>)
+
+<span class="hljs-comment"># ADD FlightlessBird CLASS HERE</span>
+
+crow = Bird(<span class="hljs-string">'Crow'</span>)
+crow.info()
+crow.move()
+penguin = FlightlessBird(<span class="hljs-string">'Penguin'</span>)
+penguin.info()
+penguin.move()
+</code></pre>
+            </td>
+            <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+            <td valign="bottom">
+              <pre class="hljs"><code>I'm a Crow
+I have feathers
+I'm flying
+I'm a Penguin
+I have feathers
+I'm waddling
+</code></pre>
+            </td>
+          </tr>
+        </table>
+        <panel type="seamless" header="%%:bulb: Partial solution%%">
+          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FlightlessBird</span><span class="hljs-params">(Bird)</span>:</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span><span class="hljs-params">(self)</span>:</span>
+    ...
+</code></pre>
+        </panel>
+      </div>
+    </panel>
+    <p></p>
+    <p><strong>Note that all python classes automatically inherits from the built-in class <code>object</code></strong> even if you did not specify it as the parent class. The <code>object</code> class has a <code>__str__()</code> method that you can ovrride
+      in your classes to customize how the <code>print</code> function will print an object of your class.</p>
+    <tip-box>
+      <p>📦 The <code>Book</code> class below overrides the <code>__str__()</code> method so that <code>Book</code> objects can be printed in a specific format.</p>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, title)</span>:</span>
+    self.title = title
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Book title: '</span> + self.title
+    
+book = Book(<span class="hljs-string">'Python for Beginners'</span>)
+print(book)
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td valign="bottom"> → <br><br></td>
+        
+          <td valign="bottom">
+            <pre class="hljs"><code>Book title: Python for Beginners
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+    </tip-box>
+    <panel type="danger" header=":muscle: Exercise: Override `__str__()` Method" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-override-str-method">Exercise : Override <code>__str__()</code> Method</h4>
+        <p>Override the <code>__str()__</code> of the <code>Person</code> class so that the code below produces the given output.</p>
+        <table>
+          <tr>
+            <td>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, age)</span>:</span>
+    self.name = name
+    self.age = age
+  
+  <span class="hljs-comment"># OVERRIDE __str__ METHOD HERE</span>
+    
+print(Person(<span class="hljs-string">'Amy'</span>, <span class="hljs-number">25</span>))
+print(Person(<span class="hljs-string">'Ben'</span>, <span class="hljs-number">26</span>))
+</code></pre>
+            </td>
+            <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+            <td valign="bottom">
+              <pre class="hljs"><code>Amy (25years)
+Ben (26years)
+</code></pre>
+            </td>
+          </tr>
+        </table>
+        <panel type="seamless" header="%%:bulb: Partial solution%%">
+          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+    <span class="hljs-keyword">return</span> self.name + ...
+</code></pre>
+        </panel>
+      </div>
+    </panel>
+    <p></p>
+    <p><strong>A class can inherit from multiple classes.</strong> If multiple parent classes have the same method, the one that is given first (in the order of inheritance) will be used.</p>
+    <tip-box>
+      <table>
+        <tr>
+        
+          <td>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    self.name = name
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'My name is'</span>, self.name)
+</code></pre>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span><span class="hljs-params">(Person)</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">teach</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is teaching'</span>)
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is a teacher'</span>)
+    
+</code></pre>
+          </td>
+          <td valign="bottom">&nbsp;&nbsp;<br><br></td>
+          <td>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
+    super().__init__(name)
+    self.matric = matric
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">learn</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is learning'</span>)
+    
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is a student'</span>)
+</code></pre>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeachingAssistant</span><span class="hljs-params">(Teacher, Student)</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">grade</span><span class="hljs-params">(self)</span>:</span>
+    print(self.name, <span class="hljs-string">'is grading'</span>)
+</code></pre>
+          </td>
+        </tr>
+      </table>
+      <p>📦 The <code>TeachingAssistant</code> class above inherits from both <code>Student</code> class and the <code>Parent</code> class both of which inherit from the <code>Person</code> class. That means a <code>TeachingAssistant</code> object can use
+        methods from classes <code>object</code>, <code>Person</code>, <code>Student</code>, <code>Teacher</code>, and <code>TeachingAssistant</code>.</p>
+      <table>
+        <tr>
+          <td>
+            <pre><code class="hljs python">elsie = TeachingAssistant(<span class="hljs-string">'Elsie'</span>, <span class="hljs-string">'A223344'</span>)
+elsie.print_info()
+elsie.teach()
+elsie.learn()
+elsie.grade()
+</code></pre>
+            <p></p>
+          </td>
+        
+          <td valign="bottom"> → <br><br></td>
+        
+          <td valign="bottom">
+            <pre class="hljs"><code>Elsie is a teacher
+Elsie is teaching
+Elsie is learning
+Elsie is grading
+</code></pre>
+            <p></p>
+          </td>
+        </tr>
+      </table>
+      <p>As both <code>Teacher</code> and <code>Student</code> classes have the <code>print_info()</code> method, the method from the <code>Teacher</code> class will be used as it comes first in the inheritance order <code>(Teacher, Student)</code>; that
+        is why you see <code>Elsie is a teacher</code> in the output instead of <code>Elsie is a student</code>.</p>
+    </tip-box>
+    <panel type="danger" header=":muscle: Exercise: Add `SmartPhone` Class" expanded="" no-close="">
+      <div>
+        <h4 id="exercise-add-smartphone-class">Exercise : Add <code>SmartPhone</code> Class</h4>
+        <p>Add a <code>SmartPhone</code> class to inherits from the <code>Camera</code> class and the <code>Phone</code> class so that the code below produces the given output.</p>
+        <table>
+          <tr>
+            <td>
+              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Camera</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">take_photo</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'taking photo'</span>)
+    
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Phone</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">make_call</span><span class="hljs-params">(self)</span>:</span>
+    print(<span class="hljs-string">'making call'</span>)
+    
+<span class="hljs-comment"># ADD SmartPhone CLASS HERE</span>
+
+iphone = SmartPhone(<span class="hljs-string">'iPhone'</span>)
+iphone.take_photo()
+iphone.make_call()
+iphone.play_game()
+</code></pre>
+            </td>
+            <td valign="bottom">&nbsp;→&nbsp;<br><br></td>
+            <td valign="bottom">
+              <pre class="hljs"><code>My model: iPhone
+taking photo
+making call
+playing game
+</code></pre>
+            </td>
+          </tr>
+        </table>
+        <panel type="seamless" header="%%:bulb: Partial solution%%">
+          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmartPhone</span><span class="hljs-params">(Camera, Phone)</span>:</span>
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
+    ...
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">play_game</span><span class="hljs-params">(self)</span>:</span>
+    ...
+</code></pre>
+        </panel>
+      </div>
+    </panel>
+    <p></p>
+  </div>
+</panel>
+<p><br><br></p>
+<p>🎯 At the end of this week you should be able to do the following (in your programming language/environment of choice):</p>
+<panel header=" Evidence of achieving the LO" no-close="">
+  <ul>
+    <li>Use inheritance, overriding, and overloading (if supported in your language) in your code</li>
+  </ul>
+</panel>
