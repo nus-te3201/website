@@ -1485,6 +1485,9 @@ Enter side 1:
     self.assertEqual(search.get_first_name(<span class="hljs-string">'Amy-Bernice'</span>), <span class="hljs-string">'Amy-Bernice'</span>)
     <span class="hljs-keyword">with</span> self.assertRaises(IndexError):
       search.get_first_name(<span class="hljs-string">''</span>)
+
+<span class="hljs-comment"># activate the test runner      </span>
+unittest.main()
 </code></pre>
           <p>When you run the above code, each method in the test class will be executed by a built-in <em>test runner</em> and the result will be reported. An example is given below:</p>
           <pre class="hljs"><code>...
