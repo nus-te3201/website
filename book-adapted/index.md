@@ -208,15 +208,18 @@
 
 <include src="../book/modeling/modelingStructures/classDiagramsBasic/full.md" />
 <hr>
+<include src="../book/modeling/modelingStructures/classDiagramsIntermediate/full.md" />
+<hr>
 <include src="../book/modeling/modelingStructures/objectDiagrams/full.md" />
 <hr>
 
 ## Modeling Behaviors
 
-<include src="../book/modeling/modelingBehaviors/activityDiagrams/full.md" />
-<hr>
 <include src="../book/modeling/modelingBehaviors/useCaseDiagrams/full.md" />
 <hr>
+<include src="../book/modeling/modelingBehaviors/activityDiagrams/full.md" />
+<hr>
+
 
 <hr>
 
