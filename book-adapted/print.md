@@ -13,6 +13,8 @@
 
 <include src="toc.md" />
 
+{{pageBreak}}
+
 # SECTION: INTRODUCTION
 
 # Software Engineering
@@ -20,6 +22,8 @@
 <include src="../book/softwareEngineering/prosAndCons/print.md" />
 
 <hr>
+
+{{pageBreak}}
 
 <div id="handout-requirements">
 
@@ -77,6 +81,8 @@
 </div>
 
 <hr>
+
+{{pageBreak}}
 
 <div id="handout-oop-objects">
 
@@ -143,12 +149,15 @@
 <include src="../book/oopImplementation/overloading/print.md" />
 
 </div> <!-- handout-inheritance -->
+<div id="handout-design-remainder">
 
 # Design Fundamentals
 
 ## Abstraction
 
 <include src="../book/designFundamentals/abstraction/what/print.md" />
+
+{{pageBreak}}
 
 # Modeling
 
@@ -161,15 +170,21 @@
 ## Modeling Structures
 
 <include src="../book/modeling/modelingStructures/classDiagramsBasic/print.md" />
+<include src="../book/modeling/modelingStructures/classDiagramsIntermediate/print.md" />
 <include src="../book/modeling/modelingStructures/objectDiagrams/print.md" />
+<include src="../book/modeling/modelingStructures/addingMoreInfo/print.md" />
 
 ## Modeling Behaviors
 
-<include src="../book/modeling/modelingBehaviors/activityDiagrams/print.md" />
 <include src="../book/modeling/modelingBehaviors/useCaseDiagrams/print.md" />
 
+</div> <!-- handout-design-remainder -->
+
+<include src="../book/modeling/modelingBehaviors/activityDiagrams/print.md" />
 
 <hr>
+
+{{pageBreak}}
 
 # SECTION: IMPLEMENTATION
 
@@ -237,6 +252,9 @@
 <include src="../book/refactoring/what/print.md" />
 
 </div> <!-- handout-codeQuality-refactoring -->
+<div id="handout-implementation-remainder">
+
+{{pageBreak}}
 
 # Reuse
 
@@ -268,6 +286,8 @@
 <include src="../book/reuse/cloudComputing/what/print.md" />
 <include src="../book/reuse/cloudComputing/services/print.md" />
 
+{{pageBreak}}
+
 # Documentation
 
 ## Introduction
@@ -289,6 +309,9 @@
 <include src="../book/documentation/guidelines/documentMinimally/how/print.md" />
 
 <hr>
+</div> <!-- handout-implementation-remainder -->
+
+{{pageBreak}}
 
 <div id="handout-testing-automation-regressions">
 
@@ -391,6 +414,8 @@
 </div> <!-- handout-qa-remainder -->
 <hr>
 
+{{pageBreak}}
+
 <div id="handout-projectMgt-teamwork">
 
 # SECTION: PROJECT MANAGEMENT
@@ -434,12 +459,19 @@
 <include src="../book/processModels/more/cmmi/print.md" />
 
 </div>
+<div id="handout-projectmgt-remainder">
+
+{{pageBreak}}
 
 # Revision Control
 
 <include src="../book/revisionControl/what/print.md" />
 
 <hr>
+
+</div><!-- handout-projectmgt-remainder -->
+
+{{pageBreak}}
 
 # SECTION: TOOLS
 

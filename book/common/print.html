@@ -3092,8 +3092,7 @@ Ben is a student
           <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
           <tip-box>
             <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-            <p></p>
-          </tip-box>For example,
+          </tip-box>
           <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
           <tip-box>
             <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
@@ -3261,8 +3260,7 @@ Ben is a student
                   <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
                   <tip-box>
                     <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-                    <p></p>
-                  </tip-box>For example,
+                  </tip-box>
                   <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
                   <tip-box>
                     <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
@@ -3300,11 +3298,60 @@ Ben is a student
           <tip-box>
             <p>📦 Some examples of using models to communicate:</p>
             <ol>
-              <li>An architect can use an architecture diagram to explain the high-level design of the software to developers.</li>
+              <li>We can use an
+                <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> to explain the high-level design of the software to developers.</li>
               <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
               <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
             </ol>
           </tip-box>
+          <modal large="" title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
+            <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
+            <div>
+              <tip-box>
+                <p>📦 Some example architecture diagrams:</p>
+                <tabs>
+                
+                  <tab header="TEAMMATES">
+                    <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                
+                  <tab header="se-edu/addressbook-level4">
+                    <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                
+                  <tab header="Example 1">
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
+                      <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                
+                  <tab header="Example 2">
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
+                      <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                
+                  <tab header="Example 3">
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
+                      <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                </tabs>
+              </tip-box>
+            </div>
+          </modal>
           <p>c) <strong>As a blueprint for creating software.</strong> Models can be used as instructions for building software.</p>
           <tip-box>
             <p>📦 Some examples of using models to as blueprints:</p>
@@ -3347,9 +3394,11 @@ Ben is a student
           <h4 id="class-diagrams-basics-one">Class Diagrams (Basics) <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <div>
-          <p><strong><em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
+          <p><strong>Classes form the basis of class diagrams. <em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
           <p>
-            <panel src="/website\book\oopDesign\associations\basic\full._include_.html" header=":mortar_board: OOP → Associations → Basic" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Classes → What" alt=":mortar_board: Classes" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\classLevelMembers\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Class-Level Members → What" alt=":mortar_board: Class-Level Members" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Basic" alt=":mortar_board: Associations" minimized="" fragment="title-and-body"></panel>
           </p>
           <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
           <tip-box>
@@ -3359,10 +3408,10 @@ Ben is a student
           </tip-box>
           <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
           <p>
-            <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Labels" expanded=""></panel>
-            <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Roles" expanded=""></panel>
-            <panel src="/website\book\oopDesign\associations\multiplicity\full._include_.html" header=":mortar_board: OOP → Associations → Multiplicity" expanded=""></panel>
-            <panel src="/website\book\oopDesign\associations\navigability\full._include_.html" header=":mortar_board: OOP → Associations → Navigability" expanded=""></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Labels" alt=":mortar_board: Labels" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Roles" alt=":mortar_board: Roles" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html#title-and-body" header=":mortar_board: OOP → Associations → Multiplicity" alt=":mortar_board: Multiplicity" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html#title-and-body" header=":mortar_board: OOP → Associations → Navigability" alt=":mortar_board: Navigability" minimized="" fragment="title-and-body"></panel>
           </p>
           <tip-box>
             <p>📦 Here is the same class diagram shown earlier but with some additional information included:</p>
@@ -3378,11 +3427,16 @@ Ben is a student
           <h4 id="object-diagrams-three">Object Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
         </div>
         <div>
+          <p><strong>An object diagrams shows the object structure (i.e., objects and their associations) at a specific time.</strong></p>
           <div>
             <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
             <tip-box>
               <img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
           </div>
+          <p>
+            <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html#title-and-body" header=":mortar_board: UML → Object Diagrams → Objects" alt=":mortar_board: Objects" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\objectDiagrams\associations\what\full._include_.html#title-and-body" header=":mortar_board: UML → Object Diagrams → Associations → What" alt=":mortar_board: Associations" minimized="" fragment="title-and-body"></panel>
+          </p>
         </div>
       </div>
       <div>
@@ -3925,9 +3979,9 @@ Ben is a student
         </div>
         <div>
           <p><strong>Architecture diagrams are free-form diagrams.</strong> There is no universally adopted standard notation for architecture diagrams. Any symbol that reasonably describes the architecture may be used.</p>
-          <div v-closeable="" alt="architecture diagram examples">
+          <div v-closeable="" alt="architecture diagram examples" id="architecture-diagram-examples">
             <tip-box>
-              <p>📦 Some example architecture diagrams from elsewhere:</p>
+              <p>📦 Some example architecture diagrams:</p>
               <tabs>
               
                 <tab header="TEAMMATES">
@@ -5146,8 +5200,7 @@ displayResult();
                         <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
                         <tip-box>
                           <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-                          <p></p>
-                        </tip-box>For example,
+                        </tip-box>
                         <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
                         <tip-box>
                           <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
@@ -6761,7 +6814,8 @@ jean.setBoyfriend(yong);
         <div>
           <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
           <tip-box>
-            <p>📦 The <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a> is a collection of public methods that you can invoke to make use of the <code>String</code> class.</p>
+            <p>📦 A class has an API (e.g., <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a>, <a href="https://docs.python.org/3.4/library/string.html">API of the Python <code>string</code> class</a>)
+              which is a collection of public methods that you can invoke to make use of the class.</p>
             <p>📦 The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program that interacts with GitHub through that API.</p>
           </tip-box>
           <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
@@ -6815,8 +6869,19 @@ jean.setBoyfriend(yong);
         <div>
           <p>A library is a collection of modular code that is general and can be used by other programs.</p>
           <tip-box>
-            <p>📦 Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
-            <p>📦 <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+            <tabs>
+            
+              <tab header="Java">
+                <p>📦 Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
+                <p>📦 <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+              </tab>
+            
+              <tab header="Python">
+                <p>📦 in-built modules you get with Python (such as <code>csv</code>, <code>unittest</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution.</p>
+                <p>📦 <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
+              </tab>
+            </tabs>
+            <hr>
           </tip-box>
         </div>
       </div>
@@ -6830,7 +6895,7 @@ jean.setBoyfriend(yong);
             <li>Read the documentation to confirm that its functionality fits your needs</li>
             <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
             <li>Download the library and make it accessible to your project. Alternatively, you can configure your
-              <tooltip content="e.g. Gradle">dependency management tool</tooltip> to do it for you.</li>
+              <tooltip content="e.g. _Gradle_ (for Java) and _Pipenv_ (for Python)">dependency management tool</tooltip> to do it for you.</li>
             <li>Call the library API from your code where you need to use the library functionality.</li>
           </ol>
         </div>
@@ -6863,14 +6928,13 @@ jean.setBoyfriend(yong);
           </tip-box>
           <p>Some frameworks cover only a specific components or an aspect.</p>
           <tip-box>
-            <p>📦 JavaFx a framework for creating Java GUIs.</p>
+            <p>📦 JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
           </tip-box>
           <tip-box>
             <p>📦 More examples of frameworks</p>
             <ul>
-              <li>Drupal: a framework for Web-based applications, content management systems in particular. Implemented using PHP</li>
-              <li>Ruby on Rails : another Web-application framework similar to Drupal but uses Ruby instead of PHP</li>
-              <li>JUnit: a framework for testing Java code.</li>
+              <li>Frameworks for Web-based applications: Drupal(PHP), Django(Python), Ruby on Rails (Ruby), Spring (Java)</li>
+              <li>Frameworks for testing: JUnit (Java), unittest (Python), Jest (Java Script)</li>
             </ul>
           </tip-box>
         </div>

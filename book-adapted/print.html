@@ -72,6 +72,7 @@
         </li>
       </ul>
     </div>
+    <p style="page-break-after: always;">&nbsp;</p>
     <h1 id="section-introduction">SECTION: INTRODUCTION</h1>
     <h1 id="software-engineering">Software Engineering</h1>
     <div>
@@ -143,6 +144,7 @@
       </div>
     </div>
     <hr>
+    <p style="page-break-after: always;">&nbsp;</p>
     <div id="handout-requirements">
       <h1 id="section-requirements">SECTION: REQUIREMENTS</h1>
       <h1 id="requirements">Requirements</h1>
@@ -1149,6 +1151,7 @@
       </div>
     </div>
     <hr>
+    <p style="page-break-after: always;">&nbsp;</p>
     <div id="handout-oop-objects">
       <h1 id="section-design">SECTION: DESIGN</h1>
       <h1 id="design">Design</h1>
@@ -2304,207 +2307,301 @@ Ben is a student
         </div>
       </div>
     </div>
-    <h1 id="design-fundamentals">Design Fundamentals</h1>
-    <h2 id="abstraction">Abstraction</h2>
-    <div>
+    <div id="handout-design-remainder">
+      <h1 id="design-fundamentals">Design Fundamentals</h1>
+      <h2 id="abstraction">Abstraction</h2>
       <div>
-        <h4 id="what-one-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div>
-        <tip-box type="definition">
-          <div>
-            <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant to that aspect).</p>
-          </div>
-        </tip-box>
-        <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details that
-          are relevant to the current perspective or the task at hand.</p>
-        <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
-        <tip-box>
-          <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as
-            they do not affect the task of that software component.</p>
-        </tip-box>
-        <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
-        <tip-box>
-          <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-          <p></p>
-        </tip-box>For example,
-        <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
-        <tip-box>
-          <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
-          <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
-        </tip-box>
-      </div>
-    </div>
-    <h1 id="modeling">Modeling</h1>
-    <h2 id="introduction-3">Introduction</h2>
-    <div>
-      <div>
-        <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div>
-        <p><strong>A <em>model</em> is a representation of something else.</strong></p>
-        <tip-box>
-          <p>📦 A
-            <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
-        </tip-box>
-        <modal large="" title="Class diagrams" id="modal:modellingIntro-classDiagram">
-          <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br> 📦 An example class diagram:<br></p>
-          <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
-        <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
-          <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
-        <modal large="" title="%%Textbook »%%" id="modal:modellingIntro-abstraction">
-        
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
-</span></strong>
-              </span>
-            </p>
+        <div>
+          <h4 id="what-one-7">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div>
+          <tip-box type="definition">
             <div>
-              <h4 id="what-one-8">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant to that
+                aspect).</p>
             </div>
-            <div id="main">
-              <div>
-                <tip-box type="definition">
-                  <div>
-                    <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant to
-                      that aspect).</p>
-                  </div>
-                </tip-box>
-                <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details
-                  that are relevant to the current perspective or the task at hand.</p>
-                <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
-                <tip-box>
-                  <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’
-                    as they do not affect the task of that software component.</p>
-                </tip-box>
-                <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
-                <tip-box>
-                  <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-                  <p></p>
-                </tip-box>For example,
-                <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
-                <tip-box>
-                  <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
-                  <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
-                </tip-box>
-              </div>
+          </tip-box>
+          <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details
+            that are relevant to the current perspective or the task at hand.</p>
+          <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+          <tip-box>
+            <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as
+              they do not affect the task of that software component.</p>
+          </tip-box>
+          <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+          <tip-box>
+            <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+          </tip-box>
+          <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+          <tip-box>
+            <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+            <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+          </tip-box>
+        </div>
+      </div>
+      <p style="page-break-after: always;">&nbsp;</p>
+      <h1 id="modeling">Modeling</h1>
+      <h2 id="introduction-3">Introduction</h2>
+      <div>
+        <div>
+          <h4 id="what-two">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>A <em>model</em> is a representation of something else.</strong></p>
+          <tip-box>
+            <p>📦 A
+              <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
+          </tip-box>
+          <modal large="" title="Class diagrams" id="modal:modellingIntro-classDiagram">
+            <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br> 📦 An example class diagram:<br></p>
+            <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
+          <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
+            <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
+          <modal large="" title="%%Textbook »%%" id="modal:modellingIntro-abstraction">
+          
+            <div>
               <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
+</span></strong>
+                </span>
+              </p>
+              <div>
+                <h4 id="what-one-8">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+              </div>
+              <div id="main">
+                <div>
+                  <tip-box type="definition">
+                    <div>
+                      <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant
+                        to that aspect).</p>
+                    </div>
+                  </tip-box>
+                  <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only
+                    details that are relevant to the current perspective or the task at hand.</p>
+                  <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                  <tip-box>
+                    <p>📦 Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted
+                      away’ as they do not affect the task of that software component.</p>
+                  </tip-box>
+                  <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                  <tip-box>
+                    <p>📦 <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                  </tip-box>
+                  <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+                  <tip-box>
+                    <p>📦 An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                    <p>📦 An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
+                  </tip-box>
+                </div>
+                <div></div>
+              </div>
             </div>
-          </div>
-        </modal>
-        <tip-box>
-          <p>📦 A class diagram captures the structure of the software design but not the behavior.</p>
-        </tip-box>
-        <p><strong>Multiple models of the same entity may be needed to capture it fully.</strong></p>
-        <tip-box>
-          <p>📦 In addition to a class diagram (or even multiple class diagrams), a number of other diagrams may be needed to capture various interesting aspects of the software.</p>
-        </tip-box>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <div>
-        <p><strong>In software development, models are useful in several ways:</strong></p>
-        <p>a) <strong>To analyze a complex entity related to software development.</strong></p>
-        <tip-box>
-          <p>📦 Some examples of using models for analysis:</p>
-          <ol>
-            <li>Models of the problem domain (i.e. the environment in which the software is expected to solve a problem) can be built to aid the understanding of the problem to be solved.</li>
-            <li>When planning a software solution, models can be created to figure out how the solution is to be built. An architecture diagram is such a model.</li>
-          </ol>
-        </tip-box>
-        <p>b) <strong>To communicate information among stakeholders.</strong> Models can be used as a visual aid in discussions and documentations.</p>
-        <tip-box>
-          <p>📦 Some examples of using models to communicate:</p>
-          <ol>
-            <li>An architect can use an architecture diagram to explain the high-level design of the software to developers.</li>
-            <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
-            <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
-          </ol>
-        </tip-box>
-        <p>c) <strong>As a blueprint for creating software.</strong> Models can be used as instructions for building software.</p>
-        <tip-box>
-          <p>📦 Some examples of using models to as blueprints:</p>
-          <ol>
-            <li>A senior developer draws a class diagram to propose a design for an OOP software and passes it to a junior programmer to implement.</li>
-            <li>A software tool allows users to draw UML models using its interface and the tool automatically generates the code based on the model.</li>
-          </ol>
-        </tip-box>
-        <tip-box>
-
-          <panel header="Model Driven Development :four:" type="seamless">
-            <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploits models as blueprints.</strong> MDD uses models as primary engineering artifacts
-              when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve manual translation
-              from model to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate code from models and maintain the link
-              between models and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise, but it is still an emerging technology</p>
-            <p>Further reading:</p>
-            <ul>
-              <li><a href="https://martinfowler.com/bliki/ModelDrivenSoftwareDevelopment.html">Martin Fowler's view on MDD</a> - TLDR: he is sceptical</li>
-              <li><a href="http://www.theenterprisearchitect.eu/blog/2009/03/31/5-types-of-model-driven-software-development/">5 types of Model Driven Software Development</a> - A more optimistic view, although an old article</li>
-            </ul>
-          </panel>
-        </tip-box>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="uml-models-four">UML Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
-      </div>
-      <div>
-        <p>The following diagram uses the class diagram notation to show the different types of UML diagrams.</p>
-        <tip-box>
-          <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/UML_diagrams_overview.svg" width="800"><br>
-            <sub>source:<a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">https://en.wikipedia.org/</a></sub></p>
-        </tip-box>
-      </div>
-    </div>
-    <h2 id="modeling-structures">Modeling Structures</h2>
-    <div>
-      <div>
-        <h4 id="class-diagrams-basics-one">Class Diagrams (Basics) <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div>
-        <p><strong><em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
-        <p>
-          <panel src="/website\book\oopDesign\associations\basic\full._include_.html" header=":mortar_board: OOP → Associations → Basic" expanded=""></panel>
-        </p>
-        <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
-        <tip-box>
-          <p>📦 An example class diagram showing associations between classes.</p>
-          <p></p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
-          <p></p>
-        </tip-box>
-        <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
-        <p>
-          <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Labels" expanded=""></panel>
-          <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html" header=":mortar_board: UML → Class Diagrams → Associations → Roles" expanded=""></panel>
-          <panel src="/website\book\oopDesign\associations\multiplicity\full._include_.html" header=":mortar_board: OOP → Associations → Multiplicity" expanded=""></panel>
-          <panel src="/website\book\oopDesign\associations\navigability\full._include_.html" header=":mortar_board: OOP → Associations → Navigability" expanded=""></panel>
-        </p>
-        <tip-box>
-          <p>📦 Here is the same class diagram shown earlier but with some additional information included:</p>
-          <p></p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPerson.png" width="450">
-          <p></p>
-        </tip-box>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="object-diagrams-three">Object Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+          </modal>
+          <tip-box>
+            <p>📦 A class diagram captures the structure of the software design but not the behavior.</p>
+          </tip-box>
+          <p><strong>Multiple models of the same entity may be needed to capture it fully.</strong></p>
+          <tip-box>
+            <p>📦 In addition to a class diagram (or even multiple class diagrams), a number of other diagrams may be needed to capture various interesting aspects of the software.</p>
+          </tip-box>
+        </div>
       </div>
       <div>
         <div>
-          <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
+          <h4 id="how-three">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>In software development, models are useful in several ways:</strong></p>
+          <p>a) <strong>To analyze a complex entity related to software development.</strong></p>
           <tip-box>
-            <img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
+            <p>📦 Some examples of using models for analysis:</p>
+            <ol>
+              <li>Models of the problem domain (i.e. the environment in which the software is expected to solve a problem) can be built to aid the understanding of the problem to be solved.</li>
+              <li>When planning a software solution, models can be created to figure out how the solution is to be built. An architecture diagram is such a model.</li>
+            </ol>
+          </tip-box>
+          <p>b) <strong>To communicate information among stakeholders.</strong> Models can be used as a visual aid in discussions and documentations.</p>
+          <tip-box>
+            <p>📦 Some examples of using models to communicate:</p>
+            <ol>
+              <li>We can use an
+                <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> to explain the high-level design of the software to developers.</li>
+              <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
+              <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
+            </ol>
+          </tip-box>
+          <modal large="" title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
+            <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
+            <div>
+              <tip-box>
+                <p>📦 Some example architecture diagrams:</p>
+                <tabs>
+                
+                  <tab header="TEAMMATES">
+                    <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                
+                  <tab header="se-edu/addressbook-level4">
+                    <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                
+                  <tab header="Example 1">
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
+                      <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                
+                  <tab header="Example 2">
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
+                      <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                
+                  <tab header="Example 3">
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
+                      <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
+                    <p>
+                      <hr>
+                    </p>
+                  </tab>
+                </tabs>
+              </tip-box>
+            </div>
+          </modal>
+          <p>c) <strong>As a blueprint for creating software.</strong> Models can be used as instructions for building software.</p>
+          <tip-box>
+            <p>📦 Some examples of using models to as blueprints:</p>
+            <ol>
+              <li>A senior developer draws a class diagram to propose a design for an OOP software and passes it to a junior programmer to implement.</li>
+              <li>A software tool allows users to draw UML models using its interface and the tool automatically generates the code based on the model.</li>
+            </ol>
+          </tip-box>
+          <tip-box>
+
+            <panel header="Model Driven Development :four:" type="seamless">
+              <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploits models as blueprints.</strong> MDD uses models as primary engineering artifacts
+                when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even involve manual translation
+                from model to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate code from models and maintain the link
+                between models and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise, but it is still an emerging technology</p>
+              <p>Further reading:</p>
+              <ul>
+                <li><a href="https://martinfowler.com/bliki/ModelDrivenSoftwareDevelopment.html">Martin Fowler's view on MDD</a> - TLDR: he is sceptical</li>
+                <li><a href="http://www.theenterprisearchitect.eu/blog/2009/03/31/5-types-of-model-driven-software-development/">5 types of Model Driven Software Development</a> - A more optimistic view, although an old article</li>
+              </ul>
+            </panel>
+          </tip-box>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4 id="uml-models-four">UML Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0034-20e3.png"></h4>
+        </div>
+        <div>
+          <p>The following diagram uses the class diagram notation to show the different types of UML diagrams.</p>
+          <tip-box>
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/UML_diagrams_overview.svg" width="800"><br>
+              <sub>source:<a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">https://en.wikipedia.org/</a></sub></p>
+          </tip-box>
+        </div>
+      </div>
+      <h2 id="modeling-structures">Modeling Structures</h2>
+      <div>
+        <div>
+          <h4 id="class-diagrams-basics-one">Class Diagrams (Basics) <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>Classes form the basis of class diagrams. <em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
+          <p>
+            <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Classes → What" alt=":mortar_board: Classes" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\classLevelMembers\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Class-Level Members → What" alt=":mortar_board: Class-Level Members" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\classes\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Basic" alt=":mortar_board: Associations" minimized="" fragment="title-and-body"></panel>
+          </p>
+          <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
+          <tip-box>
+            <p>📦 An example class diagram showing associations between classes.</p>
+            <p></p><img src="/website/book/oopDesign/associations/basic/images/ageListCalculatorPerson.png" height="100">
+            <p></p>
+          </tip-box>
+          <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
+          <p>
+            <panel src="/website\book\uml\classDiagrams\associations\labels\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Labels" alt=":mortar_board: Labels" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\roles\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Associations → Roles" alt=":mortar_board: Roles" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\multiplicity\full._include_.html#title-and-body" header=":mortar_board: OOP → Associations → Multiplicity" alt=":mortar_board: Multiplicity" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\associations\navigability\full._include_.html#title-and-body" header=":mortar_board: OOP → Associations → Navigability" alt=":mortar_board: Navigability" minimized="" fragment="title-and-body"></panel>
+          </p>
+          <tip-box>
+            <p>📦 Here is the same class diagram shown earlier but with some additional information included:</p>
+            <p></p><img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPerson.png" width="450">
+            <p></p>
+          </tip-box>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4 id="class-diagrams-intermediate-two">Class Diagrams - Intermediate <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>Compositions and Aggregations are stronger forms of associations while Dependencies are a weaker form of associations. Inheritance is another strong type of association between classes.</strong></p>
+          <p>
+            <panel src="/website\book\uml\classDiagrams\composition\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Composition → What" alt=":mortar_board: Composition" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\aggregation\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Aggregation → What" alt=":mortar_board: Aggregation" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\dependencies\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Dependencies → What" alt=":mortar_board: Dependencies" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\classDiagrams\classInheritance\what\full._include_.html#title-and-body" header=":mortar_board: UML → Class Diagrams → Inheritance → What" alt=":mortar_board: Inheritance" minimized="" fragment="title-and-body"></panel>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4 id="object-diagrams-three">Object Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>An object diagrams shows the object structure (i.e., objects and their associations) at a specific time.</strong></p>
+          <div>
+            <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
+            <tip-box>
+              <img src="/website/book/oopDesign/associations/basic/images/completeStructure.png" height="120"></tip-box>
+          </div>
+          <p>
+            <panel src="/website\book\uml\objectDiagrams\objects\full._include_.html#title-and-body" header=":mortar_board: UML → Object Diagrams → Objects" alt=":mortar_board: Objects" minimized="" fragment="title-and-body"></panel>
+            <panel src="/website\book\uml\objectDiagrams\associations\what\full._include_.html#title-and-body" header=":mortar_board: UML → Object Diagrams → Associations → What" alt=":mortar_board: Associations" minimized="" fragment="title-and-body"></panel>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4 id="adding-more-info-to-uml-models-one">Adding more info to UML Models <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>UML notes can be used to add more info to any UML model.</strong></p>
+          <p>
+            <panel src="/website\book\uml\notes\notes\full._include_.html#title-and-body" header=":mortar_board: UML → Notes" expanded="" fragment="title-and-body"></panel>
+          </p>
+        </div>
+      </div>
+      <h2 id="modeling-behaviors">Modeling Behaviors</h2>
+      <div>
+        <div>
+          <h4 id="use-case-diagrams-two">Use Case Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>Use case diagrams model the mapping between features of a system and its user roles.</strong></p>
+          <tip-box>
+            <p>📦 A simple use case diagram:</p>
+            <img src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250"></tip-box>
         </div>
       </div>
     </div>
-    <h2 id="modeling-behaviors">Modeling Behaviors</h2>
     <div>
       <div>
         <h4 id="activity-diagrams-two">Activity Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
@@ -2542,18 +2639,8 @@ Ben is a student
         </p>
       </div>
     </div>
-    <div>
-      <div>
-        <h4 id="use-case-diagrams-two">Use Case Diagrams <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div>
-        <p><strong>Use case diagrams model the mapping between features of a system and its user roles.</strong></p>
-        <tip-box>
-          <p>📦 A simple use case diagram:</p>
-          <img src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" height="250"></tip-box>
-      </div>
-    </div>
     <hr>
+    <p style="page-break-after: always;">&nbsp;</p>
     <h1 id="section-implementation">SECTION: IMPLEMENTATION</h1>
     <div id="handout-errors">
       <h1 id="error-handling">Error Handling</h1>
@@ -3373,298 +3460,315 @@ send()
         </div>
       </div>
     </div>
-    <h1 id="reuse">Reuse</h1>
-    <h2 id="introduction-7">Introduction</h2>
-    <div>
+    <div id="handout-implementation-remainder">
+      <p style="page-break-after: always;">&nbsp;</p>
+      <h1 id="reuse">Reuse</h1>
+      <h2 id="introduction-7">Introduction</h2>
       <div>
-        <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        <div>
+          <h4 id="what-one-14">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div>
+          <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components
+            come in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
+        </div>
       </div>
       <div>
-        <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components come
-          in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="when-two">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div>
-        <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
-        <ul>
-          <li>The reused code <strong>may be an overkill</strong> (think <em>using a sledgehammer to crack a nut</em>) increasing the size of, or/and degrading the performance of, your software.</li>
-          <li>The reused software <strong>may not be mature/stable enough</strong> to be used in an important product. That means the software can change drastically and rapidly, possibly in ways that break your software.</li>
-          <li>Non-mature software has the <strong>risk of dying off</strong> as fast as they emerged, leaving you with a dependency that is no longer maintained.</li>
-          <li>The license of the reused software (or its dependencies) <strong>restrict how you can use/develop your software</strong>.</li>
-          <li>The reused software <strong>might have bugs, missing features, or security vulnerabilities</strong> that are important to your product but not so important to the maintainers of that software, which means those flaws will not get fixed as fast
-            as you need them to.</li>
-          <li><strong>Malicious code can sneak into your product</strong> via compromised dependencies.</li>
-        </ul>
-      </div>
-    </div>
-    <h2 id="apis">APIs</h2>
-    <div>
-      <div>
-        <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div>
-        <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
-        <tip-box>
-          <p>📦 The <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a> is a collection of public methods that you can invoke to make use of the <code>String</code> class.</p>
-          <p>📦 The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program that interacts with GitHub through that API.</p>
-        </tip-box>
-        <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
-      </div>
-    </div>
-    <h2 id="libraries">Libraries</h2>
-    <div>
-      <div>
-        <h4 id="what-one-16">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div>
-        <p>A library is a collection of modular code that is general and can be used by other programs.</p>
-        <tip-box>
-          <p>📦 Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
-          <p>📦 <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
-        </tip-box>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="how-two-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div>
-        <p>These are the typical steps required to use a library.</p>
-        <ol>
-          <li>Read the documentation to confirm that its functionality fits your needs</li>
-          <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
-          <li>Download the library and make it accessible to your project. Alternatively, you can configure your
-            <tooltip content="e.g. Gradle">dependency management tool</tooltip> to do it for you.</li>
-          <li>Call the library API from your code where you need to use the library functionality.</li>
-        </ol>
-      </div>
-    </div>
-    <h2 id="frameworks">Frameworks</h2>
-    <div>
-      <div>
-        <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div>
-        <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
-        <tip-box>
-          <p>📦 Running example:</p>
-          <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
-        </tip-box>
-        <p><strong>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</strong></p>
-        <tip-box>
-          <p>📦 Running example:</p>
-          <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
-        </tip-box>
-        <p><strong>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</strong></p>
-        <tip-box>
-          <p>📦 Running example:</p>
-          <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
-        </tip-box>
-        <p><strong>A framework facilitates the adaptation and customization of some desired functionality.</strong></p>
-        <tip-box>
-          <p>📦 Running example:</p>
-          <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
-        </tip-box>
-        <p>Some frameworks cover only a specific components or an aspect.</p>
-        <tip-box>
-          <p>📦 JavaFx a framework for creating Java GUIs.</p>
-        </tip-box>
-        <tip-box>
-          <p>📦 More examples of frameworks</p>
+        <div>
+          <h4 id="when-two">When <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
           <ul>
-            <li>Drupal: a framework for Web-based applications, content management systems in particular. Implemented using PHP</li>
-            <li>Ruby on Rails : another Web-application framework similar to Drupal but uses Ruby instead of PHP</li>
-            <li>JUnit: a framework for testing Java code.</li>
+            <li>The reused code <strong>may be an overkill</strong> (think <em>using a sledgehammer to crack a nut</em>) increasing the size of, or/and degrading the performance of, your software.</li>
+            <li>The reused software <strong>may not be mature/stable enough</strong> to be used in an important product. That means the software can change drastically and rapidly, possibly in ways that break your software.</li>
+            <li>Non-mature software has the <strong>risk of dying off</strong> as fast as they emerged, leaving you with a dependency that is no longer maintained.</li>
+            <li>The license of the reused software (or its dependencies) <strong>restrict how you can use/develop your software</strong>.</li>
+            <li>The reused software <strong>might have bugs, missing features, or security vulnerabilities</strong> that are important to your product but not so important to the maintainers of that software, which means those flaws will not get fixed as
+              fast as you need them to.</li>
+            <li><strong>Malicious code can sneak into your product</strong> via compromised dependencies.</li>
           </ul>
-        </tip-box>
+        </div>
       </div>
-    </div>
-    <div>
+      <h2 id="apis">APIs</h2>
       <div>
-        <h4 id="frameworks-vs-libraries-three">Frameworks vs Libraries <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        <div>
+          <h4 id="what-one-15">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
+          <tip-box>
+            <p>📦 A class has an API (e.g., <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a>, <a href="https://docs.python.org/3.4/library/string.html">API of the Python <code>string</code> class</a>)
+              which is a collection of public methods that you can invoke to make use of the class.</p>
+            <p>📦 The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program that interacts with GitHub through that API.</p>
+          </tip-box>
+          <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
+        </div>
       </div>
+      <h2 id="libraries">Libraries</h2>
       <div>
-        <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
-        <ul>
-          <li>
-            <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong>
-              <span class="dimmed"> e.g., writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes to Drupal, and adding test cases to JUnit</span>.</p>
-          </li>
-          <li>
-            <p><strong>Your code calls the library code while the framework code calls your code.</strong>
-              <strong>Frameworks use a technique called <em>inversion of control</em>, aka the “Hollywood principle”</strong> (i.e. don’t call us, we’ll call you!). That is, you write code that will be called by the framework, <span class="dimmed"> e.g. writing test methods that will be called by the JUnit framework.</span>              In the case of libraries, your code calls libraries.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <h2 id="platforms">Platforms</h2>
-    <div>
-      <div>
-        <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div>
-        <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic
-          of a software platform is the presence of a runtime environment.</p>
-        <tip-box>
-          <p>📦 Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
-        </tip-box>
-        <tip-box>
-          <p>📦 <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop
-            <trigger for="modal:enterprise-application" trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise applications.
-            Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
-          <ul>
-            <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
-            <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
-          </ul>
-        </tip-box>
-        <modal title="**Enterprise Applications**" id="modal:enterprise-application">
-          <div>
-            <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness) than software
-              meant for individual use.</p>
-          </div>
-        </modal>
-      </div>
-    </div>
-    <h2 id="cloud-computing">Cloud Computing</h2>
-    <div>
-      <div>
-        <h4 id="what-one-17">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        <div>
+          <h4 id="what-one-16">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div>
+          <p>A library is a collection of modular code that is general and can be used by other programs.</p>
+          <tip-box>
+            <tabs>
+            
+              <tab header="Java">
+                <p>📦 Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
+                <p>📦 <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+              </tab>
+            
+              <tab header="Python">
+                <p>📦 in-built modules you get with Python (such as <code>csv</code>, <code>unittest</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution.</p>
+                <p>📦 <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
+              </tab>
+            </tabs>
+            <hr>
+          </tip-box>
+        </div>
       </div>
       <div>
-        <p><strong>Cloud computing is the delivery of computing as a service over the network</strong>, rather than a product running on a local machine. This means the actual hardware and software is located at a remote location, typically, at a large server
-          farm, while users access them over the network. Maintenance of the hardware and software is managed by the cloud provider while users typically pay for only the amount of services they use. This model is similar to the consumption of electricity;
-          the power company manages the power plant, while the consumers pay them only for the electricity used. The cloud computing model optimizes hardware and software utilization and reduces the cost to consumers. Furthermore, users can scale up/down
-          their utilization at will without having to upgrade their hardware and software. The traditional non-cloud model of computing is similar to everyone buying their own generators to create electricity for their own use.</p>
+        <div>
+          <h4 id="how-two-2">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p>These are the typical steps required to use a library.</p>
+          <ol>
+            <li>Read the documentation to confirm that its functionality fits your needs</li>
+            <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
+            <li>Download the library and make it accessible to your project. Alternatively, you can configure your
+              <tooltip content="e.g. _Gradle_ (for Java) and _Pipenv_ (for Python)">dependency management tool</tooltip> to do it for you.</li>
+            <li>Call the library API from your code where you need to use the library functionality.</li>
+          </ol>
+        </div>
       </div>
-    </div>
-    <div>
+      <h2 id="frameworks">Frameworks</h2>
       <div>
-        <h4 id="iaas-paas-and-saas-three">Iaas, PaaS, and SaaS <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
-      </div>
-      <div>
-        <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg" height="500"><br></p>
-        <p><sub>source:<a href="https://en.wikipedia.org/wiki/Cloud_computing">https://commons.wikimedia.org</a></sub></p>
-        <p>Cloud computing can deliver computing services at three levels:</p>
-        <ol>
-          <li>
-            <p><strong>Infrastructure as a service (IaaS) delivers computer infrastructure as a service.</strong> For example, a user can deploy virtual servers on the cloud instead of buying physical hardware and installing server software on them. Another
-              example would be a customer using storage space on the cloud for off-site storage of data. <span class="dimmed"> Rackspace is an example of an IaaS cloud provider. Amazon Elastic Compute Cloud (Amazon EC2) is another one.</span></p>
-          </li>
-          <li>
-            <p><strong>Platform as a service (PaaS) provides a platform on which developers can build applications.</strong> Developers do not have to worry about infrastructure issues such as deploying servers or load balancing as is required when using
-              IaaS. Those aspects are automatically taken care of by the platform. The price to pay is reduced flexibility; applications written on PaaS are limited to facilities provided by the platform. <span class="dimmed"> A PaaS example is the Google App Engine where developers can build applications using Java, Python, PHP, or Go whereas Amazon EC2 allows users to deploy application written in any language on their virtual servers.</span></p>
-          </li>
-          <li>
-            <p><strong>Software as a service (SaaS) allows applications to be accessed over the network</strong> instead of installing them on a local machine. <span class="dimmed"> For example, Google Docs is an SaaS word processing software, while Microsoft Word is a traditional word processing software.</span></p>
-          </li>
-        </ol>
-      </div>
-    </div>
-    <h1 id="documentation">Documentation</h1>
-    <h2 id="introduction-8">Introduction</h2>
-    <div>
-      <div>
-        <h4 id="what-one-18">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div>
-        <p><strong>Developer-to-developer documentation can be in one of two forms:</strong></p>
-        <ol>
-          <li><strong>Documentation for <em>developer-as-user</em></strong>: Software components are written by developers and reused by other developers, which means there is a need to document how such components are to be used. Such documentation can take
-            several forms:
+        <div>
+          <h4 id="what-two-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
+          <tip-box>
+            <p>📦 Running example:</p>
+            <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
+          </tip-box>
+          <p><strong>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</strong></p>
+          <tip-box>
+            <p>📦 Running example:</p>
+            <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
+          </tip-box>
+          <p><strong>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</strong></p>
+          <tip-box>
+            <p>📦 Running example:</p>
+            <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
+          </tip-box>
+          <p><strong>A framework facilitates the adaptation and customization of some desired functionality.</strong></p>
+          <tip-box>
+            <p>📦 Running example:</p>
+            <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
+          </tip-box>
+          <p>Some frameworks cover only a specific components or an aspect.</p>
+          <tip-box>
+            <p>📦 JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
+          </tip-box>
+          <tip-box>
+            <p>📦 More examples of frameworks</p>
             <ul>
-              <li>API documentation: APIs expose functionality in small-sized, independent and easy-to-use chunks, each of which can be documented systematically.</li>
-              <li>Tutorial-style instructional documentation: In addition to explaining functions/methods independently, some higher-level explanations of how to use an API can be useful.</li>
+              <li>Frameworks for Web-based applications: Drupal(PHP), Django(Python), Ruby on Rails (Ruby), Spring (Java)</li>
+              <li>Frameworks for testing: JUnit (Java), unittest (Python), Jest (Java Script)</li>
             </ul>
-          </li>
-        </ol>
-        <tip-box>
-          <tabs>
-          
-            <tab header="Java">
-              <ul>
-                <li>📦 Example of API Documentation: <a href="http://download.oracle.com/javase/8/docs/api/">String API</a>.</li>
-                <li>📦 Example of tutorial-style documentation: <a href="https://docs.oracle.com/javase/tutorial/i18n/index.html">Java Intenatioanalization Tutorial</a></li>
-              </ul>
-              <p></p>
-            </tab>
-          
-            <tab header="Python">
-              <ul>
-                <li>📦 Example of API Documentation: <a href="https://docs.python.org/3/library/string.html">string API</a>.</li>
-                <li>📦 Example of tutorial-style documentation: <a href="https://docs.python.org/3/howto/regex.html">How to use Regular Expressions in Python</a></li>
-              </ul>
-              <p></p>
-            </tab>
-          </tabs>
-        </tip-box>
-        <ol start="2">
-          <li><strong>Documentation for <em>developer-as-maintainer</em></strong>: There is a need to document how a system or a component is designed, implemented and tested so that other developers can maintain and evolve the code. Writing documentation
-            of this type is harder because of the need to explain complex internal details. However, given that readers of this type of documentation usually have access to the source code itself, only <em>some</em> information need to be included in
-            the documentation, as code (and code comments) can also serve as a complementary source of information.</li>
-        </ol>
-        <tip-box>
+          </tip-box>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4 id="frameworks-vs-libraries-three">Frameworks vs Libraries <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        </div>
+        <div>
+          <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
           <ul>
-            <li>📦 An example: <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">se-edu/addressbook-level4 Developer Guide</a>.</li>
+            <li>
+              <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong>
+                <span class="dimmed"> e.g., writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes to Drupal, and adding test cases to JUnit</span>.</p>
+            </li>
+            <li>
+              <p><strong>Your code calls the library code while the framework code calls your code.</strong>
+                <strong>Frameworks use a technique called <em>inversion of control</em>, aka the “Hollywood principle”</strong> (i.e. don’t call us, we’ll call you!). That is, you write code that will be called by the framework, <span class="dimmed"> e.g. writing test methods that will be called by the JUnit framework.</span>                In the case of libraries, your code calls libraries.</p>
+            </li>
           </ul>
-        </tip-box>
+        </div>
       </div>
+      <h2 id="platforms">Platforms</h2>
+      <div>
+        <div>
+          <h4 id="what-two-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic
+            of a software platform is the presence of a runtime environment.</p>
+          <tip-box>
+            <p>📦 Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
+          </tip-box>
+          <tip-box>
+            <p>📦 <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop
+              <trigger for="modal:enterprise-application" trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise applications.
+              Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
+            <ul>
+              <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
+              <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
+            </ul>
+          </tip-box>
+          <modal title="**Enterprise Applications**" id="modal:enterprise-application">
+            <div>
+              <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness) than
+                software meant for individual use.</p>
+            </div>
+          </modal>
+        </div>
+      </div>
+      <h2 id="cloud-computing">Cloud Computing</h2>
+      <div>
+        <div>
+          <h4 id="what-one-17">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>Cloud computing is the delivery of computing as a service over the network</strong>, rather than a product running on a local machine. This means the actual hardware and software is located at a remote location, typically, at a large
+            server farm, while users access them over the network. Maintenance of the hardware and software is managed by the cloud provider while users typically pay for only the amount of services they use. This model is similar to the consumption of
+            electricity; the power company manages the power plant, while the consumers pay them only for the electricity used. The cloud computing model optimizes hardware and software utilization and reduces the cost to consumers. Furthermore, users
+            can scale up/down their utilization at will without having to upgrade their hardware and software. The traditional non-cloud model of computing is similar to everyone buying their own generators to create electricity for their own use.</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4 id="iaas-paas-and-saas-three">Iaas, PaaS, and SaaS <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+        </div>
+        <div>
+          <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg" height="500"><br></p>
+          <p><sub>source:<a href="https://en.wikipedia.org/wiki/Cloud_computing">https://commons.wikimedia.org</a></sub></p>
+          <p>Cloud computing can deliver computing services at three levels:</p>
+          <ol>
+            <li>
+              <p><strong>Infrastructure as a service (IaaS) delivers computer infrastructure as a service.</strong> For example, a user can deploy virtual servers on the cloud instead of buying physical hardware and installing server software on them. Another
+                example would be a customer using storage space on the cloud for off-site storage of data. <span class="dimmed"> Rackspace is an example of an IaaS cloud provider. Amazon Elastic Compute Cloud (Amazon EC2) is another one.</span></p>
+            </li>
+            <li>
+              <p><strong>Platform as a service (PaaS) provides a platform on which developers can build applications.</strong> Developers do not have to worry about infrastructure issues such as deploying servers or load balancing as is required when using
+                IaaS. Those aspects are automatically taken care of by the platform. The price to pay is reduced flexibility; applications written on PaaS are limited to facilities provided by the platform. <span class="dimmed"> A PaaS example is the Google App Engine where developers can build applications using Java, Python, PHP, or Go whereas Amazon EC2 allows users to deploy application written in any language on their virtual servers.</span></p>
+            </li>
+            <li>
+              <p><strong>Software as a service (SaaS) allows applications to be accessed over the network</strong> instead of installing them on a local machine. <span class="dimmed"> For example, Google Docs is an SaaS word processing software, while Microsoft Word is a traditional word processing software.</span></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <p style="page-break-after: always;">&nbsp;</p>
+      <h1 id="documentation">Documentation</h1>
+      <h2 id="introduction-8">Introduction</h2>
+      <div>
+        <div>
+          <h4 id="what-one-18">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>Developer-to-developer documentation can be in one of two forms:</strong></p>
+          <ol>
+            <li><strong>Documentation for <em>developer-as-user</em></strong>: Software components are written by developers and reused by other developers, which means there is a need to document how such components are to be used. Such documentation can
+              take several forms:
+              <ul>
+                <li>API documentation: APIs expose functionality in small-sized, independent and easy-to-use chunks, each of which can be documented systematically.</li>
+                <li>Tutorial-style instructional documentation: In addition to explaining functions/methods independently, some higher-level explanations of how to use an API can be useful.</li>
+              </ul>
+            </li>
+          </ol>
+          <tip-box>
+            <tabs>
+            
+              <tab header="Java">
+                <ul>
+                  <li>📦 Example of API Documentation: <a href="http://download.oracle.com/javase/8/docs/api/">String API</a>.</li>
+                  <li>📦 Example of tutorial-style documentation: <a href="https://docs.oracle.com/javase/tutorial/i18n/index.html">Java Intenatioanalization Tutorial</a></li>
+                </ul>
+                <p></p>
+              </tab>
+            
+              <tab header="Python">
+                <ul>
+                  <li>📦 Example of API Documentation: <a href="https://docs.python.org/3/library/string.html">string API</a>.</li>
+                  <li>📦 Example of tutorial-style documentation: <a href="https://docs.python.org/3/howto/regex.html">How to use Regular Expressions in Python</a></li>
+                </ul>
+                <p></p>
+              </tab>
+            </tabs>
+          </tip-box>
+          <ol start="2">
+            <li><strong>Documentation for <em>developer-as-maintainer</em></strong>: There is a need to document how a system or a component is designed, implemented and tested so that other developers can maintain and evolve the code. Writing documentation
+              of this type is harder because of the need to explain complex internal details. However, given that readers of this type of documentation usually have access to the source code itself, only <em>some</em> information need to be included in
+              the documentation, as code (and code comments) can also serve as a complementary source of information.</li>
+          </ol>
+          <tip-box>
+            <ul>
+              <li>📦 An example: <a href="https://se-edu.github.io/addressbook-level4/DeveloperGuide.html#design">se-edu/addressbook-level4 Developer Guide</a>.</li>
+            </ul>
+          </tip-box>
+        </div>
+      </div>
+      <h2 id="guidelines">Guidelines</h2>
+      <div>
+        <p>Given below are some guidelines to write developer documentation.</p>
+      </div>
+      <h3 id="guideline-aim-for-comprehensibility">Guideline: Aim for Comprehensibility</h3>
+      <div>
+        <div>
+          <h4 id="what-two-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p>Technical documents exist to help others understand technical details. Therefore, <strong>it is not enough for the documentation to be accurate and comprehensive, it should also be comprehensible too</strong>.</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4 id="how-two-3">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p>Here are some tips on writing effective documentation.</p>
+          <ul>
+            <li><strong>Use plenty of diagrams</strong>: It is not enough to explain something in words; complement it with visual illustrations (e.g. a UML diagram).</li>
+            <li><strong>Use plenty of examples</strong>: When explaining algorithms, show a running example to illustrate each step of the algorithm, in parallel to worded explanations.</li>
+            <li><strong>Use simple and direct explanations</strong>: Convoluted explanations and fancy words will annoy readers. Avoid long sentences.</li>
+            <li><strong>Get rid of statements that do not add value</strong>: For example, 'We made sure our system works perfectly' (who didn't?), 'Component X has its own responsibilities' (of course it has!).</li>
+            <li><strong>It is not a good idea to have separate sections for each type of artifact</strong>, such as 'use cases', 'sequence diagrams', 'activity diagrams', etc. Such a structure, coupled with the indiscriminate inclusion of diagrams without
+              justifying their need, indicates a failure to understand the purpose of documentation. Include diagrams when they are needed to explain something. If you want to provide additional diagrams for completeness' sake, include them in the appendix
+              as a reference.</li>
+          </ul>
+        </div>
+      </div>
+      <h3 id="guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently</h3>
+      <div>
+        <div>
+          <h4 id="what-one-19">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+        </div>
+        <div>
+          <p><strong>Aim for 'just enough' developer documentation.</strong></p>
+          <ul>
+            <li>Writing and maintaining developer documents is an overhead. You should try to minimize that overhead.</li>
+            <li>If the readers are developers who will eventually read the code, the documentation should complement the code and should provide only just enough guidance to get started.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4 id="how-two-4">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
+        </div>
+        <div>
+          <p>Anything that is already clear in the code need not be described in words. Instead, <strong>focus on providing higher level information that is not readily visible in the code or comments</strong>.</p>
+          <p>Refrain from duplicating chunks or text. When describing several similar algorithms/designs/APIs, etc., do not simply duplicate large chunks of text. Instead, <strong>describe the similarity in one place and emphasize only the differences in other places.</strong>            It is very annoying to see pages and pages of similar text without any indication as to how they differ from each other.</p>
+        </div>
+      </div>
+      <hr>
     </div>
-    <h2 id="guidelines">Guidelines</h2>
-    <div>
-      <p>Given below are some guidelines to write developer documentation.</p>
-    </div>
-    <h3 id="guideline-aim-for-comprehensibility">Guideline: Aim for Comprehensibility</h3>
-    <div>
-      <div>
-        <h4 id="what-two-4">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div>
-        <p>Technical documents exist to help others understand technical details. Therefore, <strong>it is not enough for the documentation to be accurate and comprehensive, it should also be comprehensible too</strong>.</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="how-two-3">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div>
-        <p>Here are some tips on writing effective documentation.</p>
-        <ul>
-          <li><strong>Use plenty of diagrams</strong>: It is not enough to explain something in words; complement it with visual illustrations (e.g. a UML diagram).</li>
-          <li><strong>Use plenty of examples</strong>: When explaining algorithms, show a running example to illustrate each step of the algorithm, in parallel to worded explanations.</li>
-          <li><strong>Use simple and direct explanations</strong>: Convoluted explanations and fancy words will annoy readers. Avoid long sentences.</li>
-          <li><strong>Get rid of statements that do not add value</strong>: For example, 'We made sure our system works perfectly' (who didn't?), 'Component X has its own responsibilities' (of course it has!).</li>
-          <li><strong>It is not a good idea to have separate sections for each type of artifact</strong>, such as 'use cases', 'sequence diagrams', 'activity diagrams', etc. Such a structure, coupled with the indiscriminate inclusion of diagrams without justifying
-            their need, indicates a failure to understand the purpose of documentation. Include diagrams when they are needed to explain something. If you want to provide additional diagrams for completeness' sake, include them in the appendix as a reference.</li>
-        </ul>
-      </div>
-    </div>
-    <h3 id="guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently</h3>
-    <div>
-      <div>
-        <h4 id="what-one-19">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
-      </div>
-      <div>
-        <p><strong>Aim for 'just enough' developer documentation.</strong></p>
-        <ul>
-          <li>Writing and maintaining developer documents is an overhead. You should try to minimize that overhead.</li>
-          <li>If the readers are developers who will eventually read the code, the documentation should complement the code and should provide only just enough guidance to get started.</li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4 id="how-two-4">How <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0032-20e3.png"></h4>
-      </div>
-      <div>
-        <p>Anything that is already clear in the code need not be described in words. Instead, <strong>focus on providing higher level information that is not readily visible in the code or comments</strong>.</p>
-        <p>Refrain from duplicating chunks or text. When describing several similar algorithms/designs/APIs, etc., do not simply duplicate large chunks of text. Instead, <strong>describe the similarity in one place and emphasize only the differences in other places.</strong>          It is very annoying to see pages and pages of similar text without any indication as to how they differ from each other.</p>
-      </div>
-    </div>
-    <hr>
+    <p style="page-break-after: always;">&nbsp;</p>
     <div id="handout-testing-automation-regressions">
       <h1 id="section-quality-assurance">SECTION: QUALITY ASSURANCE</h1>
       <h1 id="testing">Testing</h1>
@@ -4629,6 +4733,7 @@ Invalid command format: add
       </div>
     </div>
     <hr>
+    <p style="page-break-after: always;">&nbsp;</p>
     <div id="handout-projectMgt-teamwork">
       <h1 id="section-project-management">SECTION: PROJECT MANAGEMENT</h1>
       <h1 id="project-planning">Project Planning</h1>
@@ -5177,50 +5282,54 @@ Invalid command format: add
         </div>
       </div>
     </div>
-    <h1 id="revision-control">Revision Control</h1>
-    <div>
+    <div id="handout-projectmgt-remainder">
+      <p style="page-break-after: always;">&nbsp;</p>
+      <h1 id="revision-control">Revision Control</h1>
       <div>
-        <h4 id="what-one-31">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/revisionControl/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
-      </div>
-      <div>
-        <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
-        <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
-        <tabs>
-          <tab header=":abc:">
-            <blockquote>
-              <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that contains a
-                number, each one higher than the number of the preceding version.</p>
-              <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to help a single
-                user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best modern revision control
-                tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
-              <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have a log of
-                who made it; why they made it; when they made it; and what the change was.</p>
-              <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software will help
-                you to identify and resolve those conflicts.</p>
-              <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even help you
-                to efficiently figure out exactly when a problem was introduced.</p>
-              <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself, or
-                with a hundred other people.</p>
-              <p>-- [adapted from
-                <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
-            </blockquote>
-            <hr>
-          </tab>
-          <tab header=":tv:">
-            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-            <hr>
-          </tab>
-        </tabs>
-        <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
-          <div slot="content">
-            <div>
-              <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
+        <div>
+          <h4 id="what-one-31">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"> <a href="/website/book/revisionControl/what/index.html"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></h4>
+        </div>
+        <div>
+          <p><strong><em>Revision Control Software (RCS)</em> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</strong></p>
+          <p>Revision control is also known as <em>Version Control Software (VCS)</em>, and a few other names. Here, we use the terms <em>revision</em> and <em>version</em> interchangeably.</p>
+          <tabs>
+            <tab header=":abc:">
+              <blockquote>
+                <p><em>Revision control</em> is the process of managing multiple versions of a piece of information. In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new name that contains
+                  a number, each one higher than the number of the preceding version.</p>
+                <p>Manually managing multiple versions of even a single file is an error-prone task, though, so software tools to help automate this process have long been available. The earliest automated revision control tools were intended to help a single
+                  user to manage revisions of a single file. Over the past few decades, the scope of revision control tools has expanded greatly; they now manage multiple files, and help multiple people to work together. The best modern revision control
+                  tools have no problem coping with thousands of people working together on projects that consist of hundreds of thousands of files.</p>
+                <p>There are a number of reasons why you or your team might want to use an automated revision control tool for a project. It will track the history and evolution of your project, so you don't have to. For every change, you'll have a log of
+                  who made it; why they made it; when they made it; and what the change was.</p>
+                <p>When you're working with other people, <strong>revision control software makes it easier for you to collaborate</strong>. For example, when people more or less simultaneously make potentially incompatible changes, the software will help
+                  you to identify and resolve those conflicts.</p>
+                <p><strong>It can help you to recover from mistakes</strong>. If you make a change that later turns out to be an error, you can revert to an earlier version of one or more files. In fact, a really good revision control tool will even help
+                  you to efficiently figure out exactly when a problem was introduced.</p>
+                <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
+                  or with a hundred other people.</p>
+                <p>-- [adapted from
+                  <trigger for="pop:bryan-mercurial-guide">bryan-mercurial-guide</trigger>]</p>
+              </blockquote>
+              <hr>
+            </tab>
+            <tab header=":tv:">
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+              <hr>
+            </tab>
+          </tabs>
+          <popover id="pop:bryan-mercurial-guide" title="bryan-mercurial-guide :mag:" placement="right">
+            <div slot="content">
+              <div>
+                <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
+              </div>
             </div>
-          </div>
-        </popover>
+          </popover>
+        </div>
       </div>
+      <hr>
     </div>
-    <hr>
+    <p style="page-break-after: always;">&nbsp;</p>
     <h1 id="section-tools">SECTION: TOOLS</h1>
     <h1 id="uml">UML</h1>
     <h2 id="class-diagrams">Class Diagrams</h2>

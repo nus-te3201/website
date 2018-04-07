@@ -50,7 +50,8 @@
       <div>
         <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
         <tip-box>
-          <p>📦 The <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a> is a collection of public methods that you can invoke to make use of the <code>String</code> class.</p>
+          <p>📦 A class has an API (e.g., <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">API of the Java <code>String</code> class</a>, <a href="https://docs.python.org/3.4/library/string.html">API of the Python <code>string</code> class</a>)
+            which is a collection of public methods that you can invoke to make use of the class.</p>
           <p>📦 The <a href="https://developer.github.com/v3/">GitHub API</a> is a collection of Web request formats GitHub server accepts and the corresponding responses. We can write a program that interacts with GitHub through that API.</p>
         </tip-box>
         <p>When developing large systems, if you define the API of each components early, the development team can develop the components in parallel <span class="dimmed"> because the future behavior of the other components are now more predictable</span>.</p>
@@ -104,8 +105,19 @@
       <div>
         <p>A library is a collection of modular code that is general and can be used by other programs.</p>
         <tip-box>
-          <p>📦 Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
-          <p>📦 <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+          <tabs>
+          
+            <tab header="Java">
+              <p>📦 Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
+              <p>📦 <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+            </tab>
+          
+            <tab header="Python">
+              <p>📦 in-built modules you get with Python (such as <code>csv</code>, <code>unittest</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution.</p>
+              <p>📦 <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
+            </tab>
+          </tabs>
+          <hr>
         </tip-box>
       </div>
     </div>
@@ -119,7 +131,7 @@
           <li>Read the documentation to confirm that its functionality fits your needs</li>
           <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
           <li>Download the library and make it accessible to your project. Alternatively, you can configure your
-            <tooltip content="e.g. Gradle">dependency management tool</tooltip> to do it for you.</li>
+            <tooltip content="e.g. _Gradle_ (for Java) and _Pipenv_ (for Python)">dependency management tool</tooltip> to do it for you.</li>
           <li>Call the library API from your code where you need to use the library functionality.</li>
         </ol>
       </div>
@@ -152,14 +164,13 @@
         </tip-box>
         <p>Some frameworks cover only a specific components or an aspect.</p>
         <tip-box>
-          <p>📦 JavaFx a framework for creating Java GUIs.</p>
+          <p>📦 JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
         </tip-box>
         <tip-box>
           <p>📦 More examples of frameworks</p>
           <ul>
-            <li>Drupal: a framework for Web-based applications, content management systems in particular. Implemented using PHP</li>
-            <li>Ruby on Rails : another Web-application framework similar to Drupal but uses Ruby instead of PHP</li>
-            <li>JUnit: a framework for testing Java code.</li>
+            <li>Frameworks for Web-based applications: Drupal(PHP), Django(Python), Ruby on Rails (Ruby), Spring (Java)</li>
+            <li>Frameworks for testing: JUnit (Java), unittest (Python), Jest (Java Script)</li>
           </ul>
         </tip-box>
       </div>
