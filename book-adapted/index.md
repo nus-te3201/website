@@ -17,20 +17,27 @@
 <include src="toc.md" />
 <hr>
 
-<include src="../book/about/acknowledgements.md#body" />
+<panel type="seamless" header="# Acknowledgements" expanded>
+ <include src="../book/about/acknowledgements.md#text-only" />
+</panel>
 
-<include src="../book-adapted/usage.md#body" />
+<panel type="seamless" header="# Using This Book" expanded>
+ <include src="../book-adapted/usage.md#text-only" />
+</panel>
 
-# SECTION: INTRODUCTION
+<panel type="seamless" header="# SECTION: INTRODUCTION" expanded>
+ <panel type="seamless" header="# Software Engineering" expanded>
 
-# Software Engineering
+  <include src="../book/softwareEngineering/prosAndCons/full.md" />
+  <hr>
 
-<include src="../book/softwareEngineering/prosAndCons/full.md" />
-<hr>
+ </panel>
+ <hr>
+</panel>
 
-<hr>
 
-# SECTION: REQUIREMENTS
+<panel type="seamless" header="# SECTION: REQUIREMENTS" expanded>
+
 
 # Requirements
 
@@ -104,9 +111,9 @@
 <hr>
 
 <hr>
+</panel>
 
-
-# SECTION: DESIGN
+<panel type="seamless" header="# SECTION: DESIGN" expanded>
 
 # Design
 
@@ -220,10 +227,10 @@
 <include src="../book/modeling/modelingBehaviors/activityDiagrams/full.md" />
 <hr>
 
-
 <hr>
+</panel>
 
-# SECTION: IMPLEMENTATION
+<panel type="seamless" header="# SECTION: IMPLEMENTATION" expanded>
 
 # Error Handling
 
@@ -362,8 +369,9 @@
 <hr>
 
 <hr>
+</panel>
 
-# SECTION: QUALITY ASSURANCE
+<panel type="seamless" header="# SECTION: QUALITY ASSURANCE" expanded>
 
 # Testing
 
@@ -477,9 +485,9 @@
 <hr>
 
 <hr>
+</panel>
 
-
-# SECTION: PROJECT MANAGEMENT
+<panel type="seamless" header="# SECTION: PROJECT MANAGEMENT" expanded>
 
 # Project Planning
 
@@ -496,12 +504,10 @@
 <include src="../book/projectPlanning/pertCharts/full.md" />
 <hr>
 
-
 # Teamwork
 
 <include src="../book/teamwork/teamStructures/full.md" />
 <hr>
-
 
 # SDLC Process Models
 
@@ -536,9 +542,9 @@
 <hr>
 
 <hr>
+</panel>
 
-# SECTION: TOOLS
-
+<panel type="seamless" header="# SECTION: TOOLS" expanded>
 
 # UML
 
@@ -623,7 +629,7 @@
 <hr>
 
 <hr>
-
+</panel>
 
 %%[END OF BOOK]%%
 

@@ -5,6 +5,8 @@
 
 # Using This Book
 
+<div id="text-only">
+
 * [Browser Compatibility](#browsers)
 * [Information Layers](#layers)
 * [Conventions Used](#conventions)
@@ -165,5 +167,6 @@ A printer-friendly version of the entire book can be found [here]({{baseUrl}}/bo
 
 </div>
 
+</div> <!-- text-only -->
 </div>
 </div>
