@@ -571,6 +571,8 @@
 
 <panel type="seamless" header="# UML" expanded>
 
+<div id="all-uml">
+
 ## Class Diagrams
 
 ### Introduction
@@ -650,6 +652,8 @@
 
 <include src="../book/uml/notes/notes/full.md" />
 <hr>
+
+</div> <!-- all-uml -->
 
 </panel>
 

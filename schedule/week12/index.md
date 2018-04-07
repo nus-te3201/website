@@ -1,92 +1,91 @@
 ### Learning Outcomes
 
-#### Testing Types (continued)
+#### Design
 
-<panel type="success" header="**`W11.1` Can explain common testing types**" no-close>
+<panel type="success" header="**`W12.1` Can explain abstraction**" no-close>
+   <include src="../../book/designFundamentals/abstraction/what/full.md" />
+</panel> 
 
-  <panel type="success" header="`W11.1a` Can explain unit testing" expanded no-close>
-    <include src="../../book/testing/testingTypes/unitTesting/what/full.md" />
+<panel type="success" header="**`W12.2` Modeling ...**" no-close>
+
+  <panel type="success" header="`W12.2a` Can explain modeling" expanded no-close>
+    <include src="../../book/modeling/introduction/what/full.md" />
+    <include src="../../book/modeling/introduction/how/full.md" />
+    <include src="../../book/modeling/introduction/umlModels/full.md" />
   </panel>  
   
-  <panel type="success" header="`W11.1b` Can explain integration testing" expanded no-close>
-    <include src="../../book/testing/testingTypes/integrationTesting/what/full.md" />
+  <panel type="success" header="`W12.2b` Can model structures" expanded no-close>
+    <include src="../../book/modeling/modelingStructures/classDiagramsBasic/full.md" />
+    <include src="../../book/modeling/modelingStructures/classDiagramsIntermediate/full.md" />
+    <include src="../../book/modeling/modelingStructures/objectDiagrams/full.md" />
   </panel>  
   
-  <panel type="success" header="`W11.1d` Can expalin system testing" expanded no-close>
-    <include src="../../book/testing/testingTypes/systemTesting/what/full.md" /> 
+  <panel type="success" header="`W12.2c` Can model behaviors" expanded no-close>
+    <include src="../../book/modeling/modelingBehaviors/useCaseDiagrams/full.md" /> 
+    <include src="../../book/modeling/modelingBehaviors/activityDiagrams/full.md" /> 
   </panel>   
+
   
-  <panel type="success" header="`W11.1e` Can expalin alpha and beta testing" expanded no-close>
-    <include src="../../book/testing/testingTypes/alphaBetaTesting/what/full.md" /> 
-  </panel>   
+</panel>
+
+
+#### Implementation
+
+<panel type="success" header="**`W12.3` Reuse ...**" no-close>
+
+  <panel type="success" header="`W12.3a` Can explain reuse" expanded no-close>
+    <include src="../../book/reuse/introduction/what/full.md" />
+    <include src="../../book/reuse/introduction/when/full.md" />
+  </panel>  
   
-  <panel type="success" header="`W11.1f` Can explain developer testing" expanded no-close>
-    <include src="../../book/testing/testingTypes/developerTesting/what/full.md" /> 
-    <include src="../../book/testing/testingTypes/developerTesting/why/full.md" /> 
-  </panel>   
-  
-  <panel type="success" header="`W11.1g` Can expalin acceptance testing" expanded no-close>
-    <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" /> 
-    <include src="../../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" /> 
-  </panel>   
-  
-  <panel type="success" header="`W11.1h` Can explain exploratory and scripted testing" expanded no-close>
-    <include src="../../book/testing/testingTypes/exploratoryVsScriptedTesting/what/full.md" /> 
-    <include src="../../book/testing/testingTypes/exploratoryVsScriptedTesting/when/full.md" /> 
+  <panel type="success" header="`W12.3b` Can explain some reuse mechanisms" expanded no-close>
+    <include src="../../book/reuse/apis/what/full.md" />
+    <include src="../../book/reuse/libraries/what/full.md" />
+    <include src="../../book/reuse/libraries/how/full.md" />
+    <include src="../../book/reuse/frameworks/what/full.md" />
+    <include src="../../book/reuse/frameworks/frameworksVsLibraries/full.md" />
+    <include src="../../book/reuse/platforms/what/full.md" />
   </panel>  
   
 </panel>
 
-#### Test Case Design
+<panel type="success" header="**`W12.4` Can explain Cloud computing**" no-close>
 
-<panel type="success" header="**`W11.2` Can use basic test case design techniques**" no-close>
+  <include src="../../book/reuse/cloudComputing/what/full.md" />
+  <include src="../../book/reuse/cloudComputing/services/full.md" />
+    
+</panel>
 
-  <panel type="success" header="`W11.2a` Can explain test case design" expanded no-close>
-    <include src="../../book/testCaseDesign/introduction/what/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W11.2b` Can explain different approaches to test case design" expanded no-close>
-    <include src="../../book/testCaseDesign/introduction/blackVsGlass/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W11.2d` Can follow coding standards" expanded no-close>
-    <include src="../../book/testCaseDesign/introduction/blackVsGlass/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W11.2f` Can use the Equivalence Partitioning technique" expanded no-close>
-    <include src="../../book/testCaseDesign/equivalencePartitions/what/full.md" />
-    <include src="../../book/testCaseDesign/equivalencePartitions/basic/full.md" />
-    <include src="../../book/testCaseDesign/equivalencePartitions/intermediate/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W11.2h` Can use the Boundary Value Analysis technique" expanded no-close>
-    <include src="../../book/testCaseDesign/boundaryValueAnalysis/what/full.md" />
-    <include src="../../book/testCaseDesign/boundaryValueAnalysis/how/full.md" />
-  </panel>  
+<panel type="success" header="**`W12.5` Can write good documentation**" no-close>
+
+  <include src="../../book/documentation/introduction/what/full.md" />
+  <include src="../../book/documentation/guidelines/intro.md" />
+  <include src="../../book/documentation/guidelines/aimForComprehensibility/what/full.md" />
+  <include src="../../book/documentation/guidelines/aimForComprehensibility/how/full.md" />
+  <include src="../../book/documentation/guidelines/documentMinimally/what/full.md" />
+  <include src="../../book/documentation/guidelines/documentMinimally/how/full.md" />
+    
+</panel>
+
+
+#### Project Management
+
+<panel type="success" header="**`W12.6` Can expain Revision Control**" no-close>
+
+  <include src="../../book/revisionControl/what/full.md" />
 
 </panel>
 
-#### Quality Assurance
+#### Tools
 
-<panel type="success" header="**`W11.3` Can refactor code**" no-close>
+<panel type="success" header="**`W12.7` Can use some UML diagrams**" no-close>
 
-  <panel type="success" header="`W11.3a` Can expaling Quality Assurance" expanded no-close>
-    <include src="../../book/qualityAssurance/introduction/what/full.md" />
-    <include src="../../book/qualityAssurance/introduction/validationVsVerification/full.md" />
-  </panel>
-  
-  <panel type="success" header="`W11.3b` Can explain code reviews" expanded no-close>
-    <include src="../../book/qualityAssurance/codeReviews/what/full.md" />
-  </panel>
-  
-  <panel type="success" header="`W11.3c` Can expalin static analysis" expanded no-close>
-    <include src="../../book/qualityAssurance/staticAnalysis/what/full.md" />
-  </panel>
-  
-  <panel type="success" header="`W11.3d` Can explain formal verification" expanded no-close>
-    <include src="../../book/qualityAssurance/formalVerification/what/full.md" />
-  </panel>
-  
+==UML notations given in the panel below are just for reference; they were covered in other sections already.==
+
+<panel header="%%Text book » SECTION: Tools » UML%%" no-close>
+
+  <include src="../../book-adapted/index.md#all-uml" />
+
 </panel>
 
 

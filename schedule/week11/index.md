@@ -12,25 +12,25 @@
     <include src="../../book/testing/testingTypes/integrationTesting/what/full.md" />
   </panel>  
   
-  <panel type="success" header="`W11.1d` Can expalin system testing" expanded no-close>
+  <panel type="success" header="`W11.1c` Can expalin system testing" expanded no-close>
     <include src="../../book/testing/testingTypes/systemTesting/what/full.md" /> 
   </panel>   
   
-  <panel type="success" header="`W11.1e` Can expalin alpha and beta testing" expanded no-close>
+  <panel type="success" header="`W11.1d` Can expalin alpha and beta testing" expanded no-close>
     <include src="../../book/testing/testingTypes/alphaBetaTesting/what/full.md" /> 
   </panel>   
   
-  <panel type="success" header="`W11.1f` Can explain developer testing" expanded no-close>
+  <panel type="success" header="`W11.1e` Can explain developer testing" expanded no-close>
     <include src="../../book/testing/testingTypes/developerTesting/what/full.md" /> 
     <include src="../../book/testing/testingTypes/developerTesting/why/full.md" /> 
   </panel>   
   
-  <panel type="success" header="`W11.1g` Can expalin acceptance testing" expanded no-close>
+  <panel type="success" header="`W11.1f` Can expalin acceptance testing" expanded no-close>
     <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" /> 
     <include src="../../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" /> 
   </panel>   
   
-  <panel type="success" header="`W11.1h` Can explain exploratory and scripted testing" expanded no-close>
+  <panel type="success" header="`W11.1g` Can explain exploratory and scripted testing" expanded no-close>
     <include src="../../book/testing/testingTypes/exploratoryVsScriptedTesting/what/full.md" /> 
     <include src="../../book/testing/testingTypes/exploratoryVsScriptedTesting/when/full.md" /> 
   </panel>  
