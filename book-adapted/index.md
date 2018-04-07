@@ -25,6 +25,8 @@
  <include src="../book-adapted/usage.md#text-only" />
 </panel>
 
+<hr>
+
 <panel type="seamless" header="# SECTION: INTRODUCTION" expanded>
  <panel type="seamless" header="# Software Engineering" expanded>
 
@@ -38,8 +40,7 @@
 
 <panel type="seamless" header="# SECTION: REQUIREMENTS" expanded>
 
-
-# Requirements
+<panel type="seamless" header="# Requirements" expanded>
 
 <include src="../book/requirements/introduction/full.md" />
 <hr>
@@ -50,7 +51,8 @@
 <include src="../book/requirements/quality/full.md" />
 <hr>
 
-# Gathering Requirements
+</panel>
+<panel type="seamless" header="# Gathering Requirements" expanded>
 
 <include src="../book/gatheringRequirements/brainstorming/full.md" />
 <hr>
@@ -67,8 +69,8 @@
 <include src="../book/gatheringRequirements/productSurveys/full.md" />
 <hr>
 
-
-# Specifying Requirements
+</panel>
+<panel type="seamless" header="# Specifying Requirements" expanded>
 
 ## Prose
 
@@ -110,19 +112,22 @@
 <include src="../book/specifyingRequirements/supplementaryRequirements/what/full.md" />
 <hr>
 
+</panel>
+
 <hr>
 </panel>
 
 <panel type="seamless" header="# SECTION: DESIGN" expanded>
 
-# Design
+<panel type="seamless" header="# Design" expanded>
 
 ## Introduction
 
 <include src="../book/design/introduction/what/full.md" />
 <hr>
 
-# Object-Oriented Programming
+</panel>
+<panel type="seamless" header="# Object-Oriented Programming" expanded>
 
 ## Introduction
 
@@ -192,15 +197,16 @@
 <include src="../book/oopImplementation/overloading/full.md" />
 <hr>
 
-
-# Design Fundamentals
+</panel>
+<panel type="seamless" header="# Design Fundamentals" expanded>
 
 ## Abstraction
 
 <include src="../book/designFundamentals/abstraction/what/full.md" />
 <hr>
 
-# Modeling
+</panel>
+<panel type="seamless" header="# Modeling" expanded>
 
 ## Introduction
 
@@ -227,12 +233,14 @@
 <include src="../book/modeling/modelingBehaviors/activityDiagrams/full.md" />
 <hr>
 
+</panel>
+
 <hr>
 </panel>
 
 <panel type="seamless" header="# SECTION: IMPLEMENTATION" expanded>
 
-# Error Handling
+<panel type="seamless" header="# Error Handling" expanded>
 
 ## Introduction
 
@@ -260,7 +268,8 @@
 <include src="../book/ides/debugging/what/full.md" />
 <hr>
 
-# Code Quality
+</panel>
+<panel type="seamless" header="# Code Quality" expanded>
 
 ## Introduction
 
@@ -295,14 +304,14 @@
 <include src="../book/codeQuality/commentMinimally/basic/full.md" />
 <hr>
 
-
-# Refactoring
+</panel>
+<panel type="seamless" header="# Refactoring" expanded>
 
 <include src="../book/refactoring/what/full.md" />
 <hr>
 
-
-# Reuse
+</panel>
+<panel type="seamless" header="# Reuse" expanded>
 
 ## Introduction
 
@@ -342,7 +351,8 @@
 <include src="../book/reuse/cloudComputing/services/full.md" />
 <hr>
 
-# Documentation
+</panel>
+<panel type="seamless" header="# Documentation" expanded>
 
 ## Introduction
 
@@ -368,12 +378,14 @@
 <include src="../book/documentation/guidelines/documentMinimally/how/full.md" />
 <hr>
 
+</panel>
+
 <hr>
 </panel>
 
 <panel type="seamless" header="# SECTION: QUALITY ASSURANCE" expanded>
 
-# Testing
+<panel type="seamless" header="# Testing" expanded>
 
 ## Introduction
 
@@ -435,7 +447,8 @@
 <include src="../book/testing/testingTypes/exploratoryVsScriptedTesting/when/full.md" />
 <hr>
 
-# Test Case Design
+</panel>
+<panel type="seamless" header="# Test Case Design" expanded>
 
 ## Introduction
 
@@ -460,7 +473,8 @@
 <include src="../book/testCaseDesign/boundaryValueAnalysis/how/full.md" />
 <hr>
 
-# Quality Assurance
+</panel>
+<panel type="seamless" header="# Quality Assurance" expanded>
 
 ## Introduction
 
@@ -484,12 +498,15 @@
 <include src="../book/qualityAssurance/formalVerification/what/full.md" />
 <hr>
 
+</panel>
+
 <hr>
 </panel>
 
 <panel type="seamless" header="# SECTION: PROJECT MANAGEMENT" expanded>
 
-# Project Planning
+
+<panel type="seamless" header="# Project Planning" expanded>
 
 <include src="../book/projectPlanning/workBreakdownStructure/full.md" />
 <hr>
@@ -504,12 +521,15 @@
 <include src="../book/projectPlanning/pertCharts/full.md" />
 <hr>
 
-# Teamwork
+</panel>
+<panel type="seamless" header="# Teamwork" expanded>
 
 <include src="../book/teamwork/teamStructures/full.md" />
 <hr>
 
-# SDLC Process Models
+</panel>
+<panel type="seamless" header="# SDLC Process Models" expanded>
+
 
 ## Introduction
 
@@ -536,17 +556,20 @@
 <include src="../book/processModels/more/cmmi/full.md" />
 <hr>
 
-# Revision Control
+</panel>
+<panel type="seamless" header="# Revision Control" expanded>
 
 <include src="../book/revisionControl/what/full.md" />
 <hr>
+
+</panel>
 
 <hr>
 </panel>
 
 <panel type="seamless" header="# SECTION: TOOLS" expanded>
 
-# UML
+<panel type="seamless" header="# UML" expanded>
 
 ## Class Diagrams
 
@@ -627,6 +650,8 @@
 
 <include src="../book/uml/notes/notes/full.md" />
 <hr>
+
+</panel>
 
 <hr>
 </panel>
