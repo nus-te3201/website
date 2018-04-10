@@ -12,11 +12,11 @@
     <include src="../../book/testing/testingTypes/integrationTesting/what/full.md" />
   </panel>  
   
-  <panel type="success" header="`W11.1c` Can expalin system testing" expanded no-close>
+  <panel type="success" header="`W11.1c` Can explain system testing" expanded no-close>
     <include src="../../book/testing/testingTypes/systemTesting/what/full.md" /> 
   </panel>   
   
-  <panel type="success" header="`W11.1d` Can expalin alpha and beta testing" expanded no-close>
+  <panel type="success" header="`W11.1d` Can explain alpha and beta testing" expanded no-close>
     <include src="../../book/testing/testingTypes/alphaBetaTesting/what/full.md" /> 
   </panel>   
   
@@ -25,7 +25,7 @@
     <include src="../../book/testing/testingTypes/developerTesting/why/full.md" /> 
   </panel>   
   
-  <panel type="success" header="`W11.1f` Can expalin acceptance testing" expanded no-close>
+  <panel type="success" header="`W11.1f` Can explain acceptance testing" expanded no-close>
     <include src="../../book/testing/testingTypes/acceptanceTesting/what/full.md" /> 
     <include src="../../book/testing/testingTypes/acceptanceTesting/acceptanceVsSystemTesting/full.md" /> 
   </panel>   
@@ -49,17 +49,13 @@
     <include src="../../book/testCaseDesign/introduction/blackVsGlass/full.md" />
   </panel>  
   
-  <panel type="success" header="`W11.2d` Can follow coding standards" expanded no-close>
-    <include src="../../book/testCaseDesign/introduction/blackVsGlass/full.md" />
-  </panel>  
-  
-  <panel type="success" header="`W11.2f` Can use the Equivalence Partitioning technique" expanded no-close>
+  <panel type="success" header="`W11.2c` Can use the Equivalence Partitioning technique" expanded no-close>
     <include src="../../book/testCaseDesign/equivalencePartitions/what/full.md" />
     <include src="../../book/testCaseDesign/equivalencePartitions/basic/full.md" />
     <include src="../../book/testCaseDesign/equivalencePartitions/intermediate/full.md" />
   </panel>  
   
-  <panel type="success" header="`W11.2h` Can use the Boundary Value Analysis technique" expanded no-close>
+  <panel type="success" header="`W11.2d` Can use the Boundary Value Analysis technique" expanded no-close>
     <include src="../../book/testCaseDesign/boundaryValueAnalysis/what/full.md" />
     <include src="../../book/testCaseDesign/boundaryValueAnalysis/how/full.md" />
   </panel>  
@@ -68,9 +64,9 @@
 
 #### Quality Assurance
 
-<panel type="success" header="**`W11.3` Can refactor code**" no-close>
+<panel type="success" header="**`W11.3` Quality Assurance ...**" no-close>
 
-  <panel type="success" header="`W11.3a` Can expaling Quality Assurance" expanded no-close>
+  <panel type="success" header="`W11.3a` Can explain Quality Assurance" expanded no-close>
     <include src="../../book/qualityAssurance/introduction/what/full.md" />
     <include src="../../book/qualityAssurance/introduction/validationVsVerification/full.md" />
   </panel>
@@ -79,7 +75,7 @@
     <include src="../../book/qualityAssurance/codeReviews/what/full.md" />
   </panel>
   
-  <panel type="success" header="`W11.3c` Can expalin static analysis" expanded no-close>
+  <panel type="success" header="`W11.3c` Can explain static analysis" expanded no-close>
     <include src="../../book/qualityAssurance/staticAnalysis/what/full.md" />
   </panel>
   
